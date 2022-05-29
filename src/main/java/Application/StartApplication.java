@@ -1,5 +1,6 @@
 package Application;
 
+import Data.SQLBase.SqlCommunicate;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -40,7 +41,7 @@ public class StartApplication extends Application {
     }
     public static void main(String[] args){
         try{
-           //  SqlCommunicate.connect("jdbc:postgresql://localhost:5432/postgres", "postgres", "1234");
+             SqlCommunicate.connect("jdbc:postgresql://localhost:5432/postgres", "postgres", "1234");
         }catch(Exception e) {
             e.printStackTrace();
         }
