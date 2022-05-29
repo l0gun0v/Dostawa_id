@@ -10,7 +10,8 @@ module Application.Dostawa.id {
     opens Application to javafx.fxml;
     exports Application;
 
-    exports Application.Controllers;
     opens Application.Controllers to javafx.fxml;
+    exports Application.Controllers;
+
 
 }

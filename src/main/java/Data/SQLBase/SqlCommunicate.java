@@ -3,29 +3,32 @@ package Data.SQLBase;
 import java.sql.*;
 import java.util.ArrayList;
 
-public class SqlCommunicate  {
+public class SqlCommunicate {
     private static Connection db = null;
+
     public static void connect(String serverAddres, String user, String password) throws Exception {
         try {
-            // Class.forName("com.postgresql.jdbc.Driver");
-            db = DriverManager.getConnection(serverAddres, user, password);            
-        } catch (Exception e) {            
-            e.printStackTrace();            
+            db = DriverManager.getConnection(serverAddres, user, password);
+        } catch (Exception e) {
+            e.printStackTrace();
             System.err.println("Error connecting to the database: " + e.getClass().getName() + e.getMessage());
             throw new Exception(e);
         }
         // Set connection
     }
+
     public static void disconnect() {
         try {
             db.close();
             db = null;
         } catch (Exception e) {
-            e.printStackTrace();;
+            e.printStackTrace();
+            ;
             System.err.println("Error disconnecting to the database: " + e.getClass().getName() + e.getMessage());
         }
         // Closes connection
     }
+
     public static ArrayList<ArrayList<String>> execute(String query) throws SQLException {
         Statement queryStatement = null;
         try {
@@ -38,7 +41,7 @@ public class SqlCommunicate  {
             for (int i = 1; i <= columnsNumber; ++i)
                 result.get(0).add(queryMeta.getColumnName(i));
             int rows = 1;
-            while(queryResult.next()) {
+            while (queryResult.next()) {
                 result.add(new ArrayList<String>());
                 for (int i = 1; i <= columnsNumber; ++i)
                     result.get(rows).add(queryResult.getString(i));
@@ -46,7 +49,8 @@ public class SqlCommunicate  {
             }
             return result;
         } catch (Exception e) {
-            e.printStackTrace();;
+            e.printStackTrace();
+            ;
             System.err.println("Error executing query [" + query + "]: " + e.getClass().getName() + e.getMessage());
             throw e;
         } finally {
@@ -54,13 +58,15 @@ public class SqlCommunicate  {
                 try {
                     queryStatement.close();
                 } catch (Exception e) {
-                    e.printStackTrace();;
+                    e.printStackTrace();
+                    ;
                     System.err.println("Error closing query [" + query + "]: " + e.getClass().getName() + e.getMessage());
                 }
             }
         }
         //Returns the result of the query, with the first ling contains column names
     }
+
     public static int update(String updateQuery) throws SQLException {
         Statement updateStamenet = null;
         try {

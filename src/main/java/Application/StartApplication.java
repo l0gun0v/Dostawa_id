@@ -6,6 +6,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import java.sql.*;
 
 import java.io.IOException;
 import Utills.LoadXML;
@@ -48,6 +49,6 @@ public class StartApplication extends Application {
 
         launch();
 
-     //   SqlCommunicate.disconnect();
+        SqlCommunicate.disconnect();
     }
 }
