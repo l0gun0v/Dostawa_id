@@ -1,6 +1,6 @@
 CREATE TABLE Loginy_hasla (
-    "login" VARCHAR(30)  NOT NULL,
     id_uzytkownika numeric(9)  NOT NULL,
+    "login" VARCHAR(30)  NOT NULL,
     hash_hasla numeric  NOT NULL,
     CONSTRAINT pk_Loginy_hasla PRIMARY KEY (
         id_uzytkownika
@@ -46,8 +46,8 @@ CREATE TABLE Klienci (
     id_klienta numeric(9) NOT NULL,
     imie VARCHAR(20)   NOT NULL,
     nazwisko VARCHAR(20)   NOT NULL,
-    mail VARCHAR(40)   NULL,
     numer_telefonu numeric(11)   NOT NULL check(numer_telefonu > 0),
+    mail VARCHAR(40)   NOT NULL,
     CONSTRAINT pk_Klienci PRIMARY KEY (
         id_klienta
      )
@@ -73,6 +73,7 @@ CREATE TABLE Restauracje (
     id_restauracji numeric(9)   NOT NULL,
     nazwa_restauracji VARCHAR(30)   NOT NULL,
     numer_telefonu numeric(11)   NOT NULL check(numer_telefonu > 0),
+    mail VARCHAR(40)   NOT NULL,
     adres VARCHAR(100)   NOT NULL,
     CONSTRAINT pk_Restauracje PRIMARY KEY (
         id_restauracji
@@ -85,6 +86,7 @@ CREATE TABLE Kurjery (
     imie VARCHAR(20)   NOT NULL,
     nazwisko VARCHAR(20)   NOT NULL,
     numer_telefonu numeric(11)   NOT NULL check(numer_telefonu > 0),
+    mail VARCHAR(40)   NOT NULL,
     CONSTRAINT pk_Kurjery PRIMARY KEY (
         id_kurjera
      )
@@ -334,17 +336,17 @@ create sequence seq_id_restauracji start with 900000000 INCREMENT BY 1 maxvalue 
 create or REPLACE function place_index_to_login_hasla() returns trigger as $place_index_to_login_hasla$
 begin
     if new.id_uzytkownika = -1 THEN
-        new.id_uzytkownika = nxtval('seq_id_user');
+        new.id_uzytkownika = nextval('seq_id_user');
         return new;
     end if;
 
     if new.id_uzytkownika = -2 THEN
-        new.id_uzytkownika = nxtval('seq_id_kuerjer');
+        new.id_uzytkownika = nextval('seq_id_kuerjer');
         return new;
     end if;
 
     if new.id_uzytkownika = -3 THEN
-        new.id_uzytkownika = nxtval('seq_id_restauracji');
+        new.id_uzytkownika = nextval('seq_id_restauracji');
         return new;
     end if;
     return null;

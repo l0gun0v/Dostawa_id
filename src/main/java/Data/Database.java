@@ -49,21 +49,30 @@ public class Database {
         }        
     }
 
-    static public void registerUser (String nickname, String password) throws Exception {
+    static public void registerUser (String nickname, String password, String name, String surname, String mail, String phone, int who) throws Exception {
         try{
            new Password(password);
         }catch(Exception e){
             throw e;
         }
-        String query = "select * from users where nickname = '" + nickname + "';";          
+        String query = "select * from Loginy_hasla where login = '" + nickname + "';";          
         if (SqlCommunicate.execute(query).size() - 1 > 0) {
             throw new UserAlreadyRegistred();
         }         
 
-        int id = SqlCommunicate.execute("select * from users;").size();
-
-        query = "insert into users values(" + id + ", '" + nickname + "', '" + password + "');";
-        
+        switch (who){
+            case 1:
+                query = "insert into Loginy_hasla values( -1 " + ", '" + nickname + "', getHash('" + password + "'));";
+                break;
+            case 2:
+                query = "insert into Loginy_hasla values( -2 " + ", '" + nickname + "', getHash('" + password + "'));";
+                break;
+            case 3:
+                query = "insert into Loginy_hasla values( -3 " + ", '" + nickname + "', getHash('" + password + "'));";
+                break;
+            default:
+                throw new Exception();
+        }
         SqlCommunicate.update(query);
 
     }
