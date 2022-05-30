@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.MenuButton?>
 <?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
@@ -27,9 +29,17 @@
             <TextField fx:id="mailField" prefHeight="36.0" prefWidth="253.0" promptText="Mail" />
             <TextField fx:id="nameField" prefHeight="36.0" prefWidth="253.0" promptText="Name" />
             <TextField fx:id="surnameField" prefHeight="36.0" prefWidth="253.0" promptText="Surname" />
+            <HBox fx:id="timeHBox" prefHeight="79.0" prefWidth="321.0" style="-fx-spacing: 18;">
+               <children>
+                  <ChoiceBox fx:id="inWeekDay" prefHeight="26.0" prefWidth="67.0" />
+                  <ChoiceBox fx:id="outWeekDay" prefHeight="26.0" prefWidth="67.0" />
+                  <ChoiceBox fx:id="inWeekEnd" prefHeight="26.0" prefWidth="67.0" />
+                  <ChoiceBox fx:id="outWeekEnd" prefHeight="26.0" prefWidth="67.0" />
+               </children>
+            </HBox>
          </children>
       </VBox>
-      <VBox layoutX="302.0" layoutY="559.0" prefHeight="108.0" prefWidth="196.0" style="-fx-spacing: 10;">
+      <VBox layoutX="302.0" layoutY="585.0" prefHeight="108.0" prefWidth="196.0" style="-fx-spacing: 10;">
          <children>
             <Label fx:id="exceptionLabel" prefHeight="34.0" prefWidth="196.0" style="-fx-text-alignment: center;" textAlignment="CENTER">
                <font>

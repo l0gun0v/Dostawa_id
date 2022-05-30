@@ -7,9 +7,9 @@ import javafx.geometry.Pos;
 import javafx.scene.control.MenuButton;
 import javafx.scene.control.MenuItem;
 import javafx.scene.control.TextField;
-import javafx.scene.text.TextAlignment;
+import javafx.scene.layout.HBox;
 import javafx.scene.control.Button;
-import javafx.scene.control.ContentDisplay;
+import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.Label;
 import Application.StartApplication;
 import Data.Database;
@@ -17,6 +17,21 @@ import Utills.LoadXML;
 import javafx.event.ActionEvent;
 
 public class SignUpController {
+
+    @FXML
+    private HBox timeHBox; 
+
+    @FXML
+    private ChoiceBox<String> inWeekDay;
+
+    @FXML
+    private ChoiceBox<String> outWeekDay;
+
+    @FXML
+    private ChoiceBox<String> inWeekEnd;
+
+    @FXML
+    private ChoiceBox<String> outWeekEnd;
     
     @FXML
     private TextField confPasswordField;
@@ -61,6 +76,14 @@ public class SignUpController {
         whoIAmChoose.getItems().add(mi2);
         whoIAmChoose.getItems().add(mi3);
 
+        for(int i = 0; i < 23; i++){
+            String time = (i<10?"0":"")+i+":00";
+            inWeekDay.getItems().add(time);
+            inWeekEnd.getItems().add(time);
+            outWeekDay.getItems().add(time);
+            outWeekEnd.getItems().add(time);
+        }
+
         visible = false;
 
         nameField.setVisible(false);
@@ -71,6 +94,7 @@ public class SignUpController {
         mailField.setVisible(false);
         phoneField.setVisible(false);
         surnameField.setVisible(false);
+        timeHBox.setVisible(false);
 
 
         EventHandler<ActionEvent> eventkli = new EventHandler<ActionEvent>() {
@@ -87,6 +111,7 @@ public class SignUpController {
                     nicknameField.setVisible(true);
                     visible = true;
                 }
+                timeHBox.setVisible(false);
                 whoIAmChoose.setText(((MenuItem)e.getSource()).getText());
                 surnameField.setText("");
                 surnameField.setVisible(true);
@@ -110,6 +135,7 @@ public class SignUpController {
                 whoIAmChoose.setText(((MenuItem)e.getSource()).getText());
                 surnameField.setText("");
                 surnameField.setVisible(true);
+                timeHBox.setVisible(false);
             }
         };
 
@@ -130,6 +156,9 @@ public class SignUpController {
                 whoIAmChoose.setText(((MenuItem)e.getSource()).getText());
                 surnameField.setText("");
                 surnameField.setVisible(false);
+                
+                timeHBox.setVisible(true);
+
             }
         };
         mi1.setOnAction(eventkli);

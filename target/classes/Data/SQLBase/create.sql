@@ -75,6 +75,11 @@ CREATE TABLE Restauracje (
     numer_telefonu numeric(11)   NOT NULL check(numer_telefonu > 0),
     mail VARCHAR(40)   NOT NULL,
     adres VARCHAR(100)   NOT NULL,
+    dzien_powszedni_czas_otwarcja time not null default '08:00',
+    dzien_powszedni_czas_zamkniecia time not null default '22:00',
+    dni_wolne_czas_otwarcja time not null default '09:00',
+    dni_wolne_czas_zamkniecia time not null default '20:00',
+    active boolean not null default false,
     CONSTRAINT pk_Restauracje PRIMARY KEY (
         id_restauracji
      )
@@ -104,6 +109,7 @@ CREATE TABLE Produkty (
     opis varchar(300)   NULL,
     nazwa varchar(50)   NOT NULL,
     wege boolean   NOT NULL,
+    active boolean not null default true,
     CONSTRAINT pk_Produkty PRIMARY KEY (
         id_produktu
      )
