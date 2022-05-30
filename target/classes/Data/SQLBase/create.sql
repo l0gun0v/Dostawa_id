@@ -1,6 +1,6 @@
 CREATE TABLE Loginy_hasla (
     "login" VARCHAR(30)  NOT NULL,
-    id_uzytkownika int  NOT NULL,
+    id_uzytkownika numeric(9)  NOT NULL,
     hash_hasla numeric  NOT NULL,
     CONSTRAINT pk_Loginy_hasla PRIMARY KEY (
         id_uzytkownika
@@ -43,7 +43,7 @@ CREATE TABLE Kategorie (
 );
 
 CREATE TABLE Klienci (
-    id_klienta int   NOT NULL,
+    id_klienta numeric(9) NOT NULL,
     imie VARCHAR(20)   NOT NULL,
     nazwisko VARCHAR(20)   NOT NULL,
     mail VARCHAR(40)   NULL,
@@ -70,7 +70,7 @@ CREATE TABLE Transport_kurjera (
 );
 
 CREATE TABLE Restauracje (
-    id_restauracji int   NOT NULL,
+    id_restauracji numeric(9)   NOT NULL,
     nazwa_restauracji VARCHAR(30)   NOT NULL,
     numer_telefonu numeric(11)   NOT NULL check(numer_telefonu > 0),
     adres VARCHAR(100)   NOT NULL,
@@ -80,7 +80,7 @@ CREATE TABLE Restauracje (
 );
 
 CREATE TABLE Kurjery (
-    id_kurjera int   NOT NULL,
+    id_kurjera numeric(9)   NOT NULL,
     id_transportu int   NOT NULL,
     imie VARCHAR(20)   NOT NULL,
     nazwisko VARCHAR(20)   NOT NULL,

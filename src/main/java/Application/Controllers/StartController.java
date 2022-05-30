@@ -25,8 +25,14 @@ public class StartController extends StartApplication {
     @FXML
     private Label errorOutput;
 
+    static public  int userIdPos = 7;
+    static public  int kurierIdPos = 8;
+    static public int restauracjaIdPos = 9;
+    static public int idConst = 100000000;
+
     public void changeSizes(){
 
+    
     }
 
     ChangeListener<Number> stageSizeListener = (observable, oldValue, newValue) ->{
@@ -45,11 +51,21 @@ public class StartController extends StartApplication {
 
     @FXML
     protected void onloginButtonClick() {
-        /*
         try {
             User.MainUser = Database.getUser(userLogin.getText(), userPassword.getText());
-            FXMLLoader loader = LoadXML.load("Scenes/ChatView/ChatView.fxml");
-            setScene(loader);
+            //int pos = User.MainUser.getId()/idConst;
+           // if(pos <= userIdPos){
+                FXMLLoader loader = LoadXML.load("Scenes/MainMenu.fxml");
+                setScene(loader);
+           // }
+           // else if(pos == kurierIdPos){
+                ///FXMLLoader loader = LoadXML.load("Scenes/ChatView/ChatView.fxml");
+                ///setScene(loader);
+           // }
+           // else{
+                ///FXMLLoader loader = LoadXML.load("Scenes/ChatView/ChatView.fxml");
+                ///setScene(loader);
+           // }
         }catch(Database.IncorrectPasswordException e) {
             errorOutput.setTextFill(Color.web("#dd0e0e", 0.8));
             errorOutput.setText("INCORRECT PASSWORD");
@@ -60,9 +76,6 @@ public class StartController extends StartApplication {
             e.printStackTrace();
             return;
         }
-
-
-         */
     }
 
 

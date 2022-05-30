@@ -13,6 +13,8 @@ public class Database {
     public static class UserAlreadyRegistred extends Exception {}
 
     static public User getUser(String nickname, String password) throws Exception{
+        return null;
+        /*
         try{
             new Password(password);
         }catch(Exception e){
@@ -28,6 +30,7 @@ public class Database {
             
         }
         throw new IncorrectUserException();
+        */
     }
 
     static public int getIdByNick(String nickname) throws Exception{        
