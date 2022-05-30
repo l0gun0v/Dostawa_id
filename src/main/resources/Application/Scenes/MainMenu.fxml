@@ -6,27 +6,22 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
 
-
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+<Pane maxHeight="800.0" maxWidth="800.0" minHeight="800.0" minWidth="800.0" prefHeight="800.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <Button layoutX="272.0" layoutY="532.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="128.0" text="Orders history" />
-      <Button layoutX="14.0" layoutY="532.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="128.0" text="Back to Log In page" />
-      <Button layoutX="150.0" layoutY="532.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="115.0" text="Settings" />
-      <Button layoutX="409.0" layoutY="532.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="177.0" text="Find!" />
-      <ScrollPane prefHeight="523.0" prefWidth="401.0">
+      <Button layoutX="395.0" layoutY="737.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="128.0" text="Orders history" />
+      <Button layoutX="38.0" layoutY="740.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="128.0" text="Back to Log In page" />
+      <Button layoutX="219.0" layoutY="741.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="115.0" text="Settings" />
+      <Button layoutX="542.0" layoutY="735.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="252.0" text="Find!" />
+      <ScrollPane layoutX="14.0" layoutY="18.0" prefHeight="709.0" prefWidth="509.0">
         <content>
-          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="520.0" prefWidth="409.0" />
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="711.0" prefWidth="504.0" />
         </content>
       </ScrollPane>
-      <Button layoutX="409.0" layoutY="10.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="177.0" text="Choose kategories" />
-      <ScrollPane layoutX="397.0" layoutY="52.0" prefHeight="471.0" prefWidth="200.0">
-        <content>
-          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="468.0" prefWidth="200.0">
-               <children>
-                  <VBox layoutY="-3.0" prefHeight="471.0" prefWidth="200.0" />
-               </children>
-            </AnchorPane>
-        </content>
+      <Button layoutX="549.0" layoutY="11.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="242.0" text="Choose kategories" />
+      <ScrollPane layoutX="542.0" layoutY="53.0" prefHeight="674.0" prefWidth="249.0">
+         <content>
+            <VBox prefHeight="534.0" prefWidth="246.0" />
+         </content>
       </ScrollPane>
    </children>
 </Pane>

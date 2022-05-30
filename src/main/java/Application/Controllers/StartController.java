@@ -82,7 +82,7 @@ public class StartController extends StartApplication {
     @FXML
     protected void onsignUpButtonClick() {
         try{
-            FXMLLoader loader = LoadXML.load("Scenes/LoginPage/SignUp.fxml");
+            FXMLLoader loader = LoadXML.load("Scenes/SignUp.fxml");
             setScene(loader);
         }catch(Exception e) {
             e.printStackTrace();

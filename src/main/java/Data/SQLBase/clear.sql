@@ -33,4 +33,3 @@ drop sequence seq_id_kuerjer;
 drop sequence seq_id_restauracji;
 
 drop function place_index_to_login_hasla;
-

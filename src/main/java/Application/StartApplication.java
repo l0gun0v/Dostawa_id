@@ -13,13 +13,19 @@ import Utills.LoadXML;
 
 public class StartApplication extends Application {
     public static Stage primaryStage;
-    public static double stageWidth = 600;
-    public static double stageHeight = 600;
+    public static double stageWidth = 800;
+    public static double stageHeight = 800;
 
 
     public static void setScene(FXMLLoader loader) {
         Parent root = loader.getRoot();
         ((Stage) primaryStage.getScene().getWindow()).setScene(new Scene(root, stageWidth, stageHeight));
+        
+        primaryStage.setMaxHeight(800);
+        primaryStage.setMinHeight(800);
+        primaryStage.setMaxWidth(800);
+        primaryStage.setMinWidth(800);
+        
     }
 
     public static void goBack() {
@@ -32,12 +38,12 @@ public class StartApplication extends Application {
         StartApplication.primaryStage = stage;
         FXMLLoader loader = LoadXML.load("Scenes/hello-view.fxml");
         Parent root = loader.getRoot();
-        primaryStage.setTitle("TCSsenger");
-        primaryStage.setScene(new Scene(root, 600, 600));
-        primaryStage.setMinWidth(600);
-        primaryStage.setMinHeight(600);
-        primaryStage.setHeight(600);
-        primaryStage.setWidth(600);
+        primaryStage.setTitle("Dostawa_od_Kostyana");
+        primaryStage.setScene(new Scene(root, 800, 800));
+        primaryStage.setMaxHeight(800);
+        primaryStage.setMinHeight(800);
+        primaryStage.setMaxWidth(800);
+        primaryStage.setMinWidth(800);
         primaryStage.show();
     }
     public static void main(String[] args){
