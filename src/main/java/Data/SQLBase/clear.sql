@@ -1,3 +1,7 @@
+---trigger
+
+drop trigger place_index_to_login_hasla ON Loginy_hasla; 
+
 DROP TABLE Loginy_hasla CASCADE;
 DROP TABLE Rabaty CASCADE;
 DROP TABLE Statusy CASCADE;
@@ -24,12 +28,9 @@ Drop function getRestRating;
 drop function getKurRating;
 drop function getHash;
 
+drop sequence seq_id_user;
+drop sequence seq_id_kuerjer;
+drop sequence seq_id_restauracji;
 
-
-
-
-
-
-
-
+drop function place_index_to_login_hasla;
 

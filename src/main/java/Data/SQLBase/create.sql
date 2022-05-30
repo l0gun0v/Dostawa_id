@@ -325,3 +325,33 @@ $$
 LANGUAGE plpgsql;
 
 ----
+
+create sequence seq_id_user start with 1 INCREMENT BY 1 maxvalue 799999999;
+create sequence seq_id_kuerjer start with 800000000 INCREMENT BY 1 maxvalue 899999999;
+create sequence seq_id_restauracji start with 900000000 INCREMENT BY 1 maxvalue 999999999;
+
+--- (-1) - user , (-2) - kurijer, (-3) - restauracja
+create or REPLACE function place_index_to_login_hasla() returns trigger as $place_index_to_login_hasla$
+begin
+    if new.id_uzytkownika = -1 THEN
+        new.id_uzytkownika = nxtval('seq_id_user');
+        return new;
+    end if;
+
+    if new.id_uzytkownika = -2 THEN
+        new.id_uzytkownika = nxtval('seq_id_kuerjer');
+        return new;
+    end if;
+
+    if new.id_uzytkownika = -3 THEN
+        new.id_uzytkownika = nxtval('seq_id_restauracji');
+        return new;
+    end if;
+    return null;
+end;
+$place_index_to_login_hasla$
+LANGUAGE plpgsql;
+
+create or replace trigger place_index_to_login_hasla 
+before insert on Loginy_hasla for each 
+row execute function place_index_to_login_hasla();
