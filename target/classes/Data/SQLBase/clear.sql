@@ -27,6 +27,7 @@ DROP TABLE Opinia_o_restauracjach CASCADE;
 Drop function getRestRating;
 drop function getKurRating;
 drop function getHash;
+drop function get_restaurans_by_kategory;
 
 drop sequence seq_id_user;
 drop sequence seq_id_kuerjer;

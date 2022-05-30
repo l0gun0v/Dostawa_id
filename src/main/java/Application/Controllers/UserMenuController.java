@@ -18,13 +18,18 @@ public class UserMenuController {
     private VBox vBoxKategories;
 
     public void initialize() throws Exception {
+        
         ArrayList < String > categories = new ArrayList<>(getCategories());
+        //System.out.println(categories);
+        
         for (String currentCategoryName: categories) {
             CheckBox currentCategory = new CheckBox(currentCategoryName);
             vBoxKategories.getChildren().add(currentCategory);
         }
+        
+        
     }
-
+    
     public ArrayList < String > getChosenCategories() {
         ArrayList < String > categories = new ArrayList<>();
         for (Node currentCheckBox: vBoxKategories.getChildren()) {
@@ -35,23 +40,27 @@ public class UserMenuController {
         }
         return categories;
     }
+    
 
-    @FXML
     public void findRestaurans() throws Exception {
+        
         ArrayList < String > categories = getChosenCategories();
         ArrayList < Integer > relevantedRestaurans = new ArrayList<>(getRestauran(categories));
         for (Integer currentRestauranID : relevantedRestaurans) {
 
         }
+        
     }
 
-    @FXML
+    
     public void backToLoginPage(){
+        
         try{
             FXMLLoader loader = LoadXML.load("Scenes/hello-view.fxml");
             StartApplication.setScene(loader);
         }catch(Exception e) {
             e.printStackTrace();
         }
+        
     }
 }

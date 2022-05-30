@@ -35,19 +35,21 @@ public class Database {
 
     static public ArrayList < String > getCategories() throws Exception {
         try {
-            String query = "select nazwa from Kategorie" +  ";";
+             String query = "select nazwa from Kategorie" +  ";";
              ArrayList<ArrayList<String>> queryTable = SqlCommunicate.execute(query);
+             queryTable.remove(0);
              ArrayList < String > categoriesNames = new ArrayList<>();
              for (ArrayList < String > currentCategory : queryTable) {
-                 categoriesNames.add(currentCategory.get(1));
+                 categoriesNames.add(currentCategory.get(0));
              }
              return categoriesNames;
+             //return null;
         }catch(Exception e) {
             e.printStackTrace();
             throw new Exception();
         }
     }
-
+    
     static public ArrayList < Integer > getRestauran(ArrayList < String > categories) throws Exception {
         HashSet < Integer > allRestaurans = new HashSet<>();
         for (String category : categories) {
