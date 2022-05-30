@@ -11,6 +11,9 @@ import javafx.scene.layout.HBox;
 import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.Label;
+
+import java.sql.Time;
+
 import Application.StartApplication;
 import Data.Database;
 import Utills.LoadXML;
@@ -168,8 +171,15 @@ public class SignUpController {
 
     @FXML
     public void trySighUp() {
+
+        boolean timecheck = false;
+        if((inWeekDay.getValue() == null) || (outWeekDay.getValue() == null) || outWeekEnd.getValue()==null || inWeekEnd.getValue()==null){
+            System.out.println(inWeekDay.getValue());
+            timecheck = true;
+        }
+
         if(nameField.getText()=="" || passwordField.getText() == "" || confPasswordField.getText()==""
-        || phoneField.getText()=="" || mailField.getText()=="" || nameField.getText()=="" || (surnameField.isVisible() && surnameField.getText()=="")){
+        || phoneField.getText()=="" || mailField.getText()=="" || nameField.getText()=="" || (surnameField.isVisible() && surnameField.getText()=="") || timecheck){
             exceptionLabel.setText("Not enough data");
             exceptionLabel.setAlignment(Pos.CENTER); 
             exceptionLabel.setMaxWidth(Double.MAX_VALUE);
@@ -183,6 +193,12 @@ public class SignUpController {
             System.out.println(confPasswordField.getText());
             return;
         }
+        if(inWeekDay.getValue().compareTo(outWeekDay.getValue()) > 0 || inWeekEnd.getValue().compareTo(outWeekEnd.getValue()) > 0){
+            exceptionLabel.setAlignment(Pos.CENTER); 
+            exceptionLabel.setMaxWidth(Double.MAX_VALUE);
+            exceptionLabel.setText("Opening time is longer than closing time");
+        }
+
         try{
             Database.registerUser(nicknameField.getText(), passwordField.getText(), nameField.getText(), surnameField.getText(), mailField.getText(), phoneField.getText(), who);
         }catch(Exception e){
