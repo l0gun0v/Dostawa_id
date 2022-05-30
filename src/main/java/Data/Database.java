@@ -33,11 +33,26 @@ public class Database {
         return Integer.parseInt(SqlCommunicate.execute(query).get(1).get(0));
     }
 
-    static public ArrayList < Integer > getRestauran(ArrayList < String > kategories) throws Exception {
+    static public ArrayList < String > getCategories() throws Exception {
+        try {
+            String query = "select nazwa from Kategorie" +  ";";
+             ArrayList<ArrayList<String>> queryTable = SqlCommunicate.execute(query);
+             ArrayList < String > categoriesNames = new ArrayList<>();
+             for (ArrayList < String > currentCategory : queryTable) {
+                 categoriesNames.add(currentCategory.get(1));
+             }
+             return categoriesNames;
+        }catch(Exception e) {
+            e.printStackTrace();
+            throw new Exception();
+        }
+    }
+
+    static public ArrayList < Integer > getRestauran(ArrayList < String > categories) throws Exception {
         HashSet < Integer > allRestaurans = new HashSet<>();
-        for (String kategory : kategories) {
+        for (String category : categories) {
             try {
-                String query = "select get_restaurans_by_kategory(" + kategory  + ")" + ";";
+                String query = "select get_restaurans_by_kategory(" + category  + ")" + ";";
                 ArrayList < ArrayList < String > > restauransWithThisKategory = SqlCommunicate.execute(query);
                 for (ArrayList < String > currentRestauran : restauransWithThisKategory) {
                     allRestaurans.add(Integer.parseInt(currentRestauran.get(1)));
