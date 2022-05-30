@@ -2,6 +2,7 @@ package Data;
 
 import Data.SQLBase.SqlCommunicate;
 import java.util.ArrayList;
+import java.util.HashSet;
 
 public class Database {
 
@@ -30,6 +31,23 @@ public class Database {
     static public int getIdByNick(String nickname) throws Exception{        
         String query = "select id_uzytkownika from Loguny_hasla where login = '" + nickname + "';";                        
         return Integer.parseInt(SqlCommunicate.execute(query).get(1).get(0));
+    }
+
+    static public ArrayList < Integer > getRestauran(ArrayList < String > kategories) throws Exception {
+        HashSet < Integer > allRestaurans = new HashSet<>();
+        for (String kategory : kategories) {
+            try {
+                String query = "select get_restaurans_by_kategory(" + kategory  + ")" + ";";
+                ArrayList < ArrayList < String > > restauransWithThisKategory = SqlCommunicate.execute(query);
+                for (ArrayList < String > currentRestauran : restauransWithThisKategory) {
+                    allRestaurans.add(Integer.parseInt(currentRestauran.get(1)));
+                }
+            }catch(Exception e) {
+                e.printStackTrace();
+                throw new Exception();
+            }
+        }
+        return new ArrayList<>(allRestaurans);
     }
 
     static public User getUserById(int id) throws Exception{        
@@ -86,5 +104,7 @@ public class Database {
         SqlCommunicate.update(query1);
 
     }
+
+
 
 }

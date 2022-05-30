@@ -313,6 +313,22 @@ LANGUAGE plpgsql;
 
 ----
 
+CREATE OR REPLACE FUNCTION get_restaurans_by_kategory(kategory TEXT)
+      RETURNS TABLE(A INT)
+AS
+$$
+BEGIN
+      RETURN QUERY SELECT DISTINCT r.id_restauracji FROM Produkty p
+                  LEFT JOIN Restauracje r ON(r.id_restauracji = p.id_restauracji)
+                  LEFT JOIN Kategorii_produktow kp ON(p.id_produktu = kp.id_produktu)
+                  LEFT JOIN Kategorie k ON(k.id_kategoria = kp.id_kategoria)
+                  WHERE ((k.nazwa = kategory) AND (p.active = true));
+END;
+$$
+LANGUAGE plpgsql;
+
+----
+
 CREATE OR REPLACE FUNCTION getKurRating(id_restauracji INT) 
     RETURNS NUMERIC
 AS
@@ -363,3 +379,4 @@ LANGUAGE plpgsql;
 create or replace trigger place_index_to_login_hasla 
 before insert on Loginy_hasla for each 
 row execute function place_index_to_login_hasla();
+
