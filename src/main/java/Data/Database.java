@@ -1,6 +1,8 @@
 package Data;
 
 import Data.SQLBase.SqlCommunicate;
+
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.HashSet;
 
@@ -120,6 +122,31 @@ public class Database {
         }
         SqlCommunicate.update(query1);
 
+    }
+
+
+    static public Dish getDishById(int id){
+        String query1 = "select * from Produkty where id_produktu = '" + id + "';"; 
+        String query2 = "select id_kategoria from Kategorii_produktow where id_produktu = " + id;
+        
+        try{
+            ArrayList < ArrayList < String > > ans1 = SqlCommunicate.execute(query1);
+            ArrayList < ArrayList < String > > ans2 = SqlCommunicate.execute(query2);
+            ans1.remove(0);
+            ans2.remove(0);
+            ArrayList<Integer> kategoris = new ArrayList<>();
+            for(ArrayList<String> kat : ans2){
+                kategoris.add(Integer.parseInt(kat.get(0)));
+            }
+            return new Dish(Integer.parseInt(ans1.get(0).get(0)), Integer.parseInt(ans1.get(1).get(0)), 
+            Double.parseDouble(ans1.get(2).get(0)), ans1.get(3).get(0), ans1.get(4).get(0),
+            Boolean.parseBoolean(ans1.get(5).get(0)), Boolean.parseBoolean(ans1.get(6).get(0)), kategoris);
+
+        }catch(Exception e){
+            System.out.println("Dish get exception");
+        }
+        
+        return null;
     }
 
 

@@ -52,7 +52,7 @@ public class StartController extends StartApplication {
     @FXML
     protected void onloginButtonClick() {
 
-        FXMLLoader loader = LoadXML.load("Scenes/UserMenu.fxml");
+        FXMLLoader loader = LoadXML.load("Scenes/RestMenu.fxml");
         setScene(loader);
 
         /*
