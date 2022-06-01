@@ -93,7 +93,7 @@ public class Database {
         }        
     }
 
-    static public void registerUser (String nickname, String password, String name, String surname, String mail, String phone, int who) throws Exception {
+    static public void registerUser (String nickname, String password, String name, String surname, String mail, String phone,ArrayList<String> time, int who) throws Exception {
         try{
            new Password(password);
         }catch(Exception e){
@@ -149,6 +149,16 @@ public class Database {
         return null;
     }
 
+    static public void updateDish(Dish dish){
 
+    }
+
+    static public void insertDish(Dish dish){
+
+    }
+
+    static public void updateRest(String nickname, String password, String name, String surname, String mail, String phone,ArrayList<String> time){
+        
+    }
 
 }

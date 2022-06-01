@@ -15,7 +15,11 @@
 
 <Pane maxHeight="800.0" maxWidth="800.0" minHeight="800.0" minWidth="800.0" prefHeight="800.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Application.Controllers.RestMenuController">
    <children>
-      <Button layoutX="19.0" layoutY="10.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="399.0" text="Name" />
+      <Button layoutX="19.0" layoutY="10.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="399.0" text="Name">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Button>
       <VBox fx:id="settingsMenu" layoutX="229.0" layoutY="154.0" prefHeight="434.0" prefWidth="331.0" style="-fx-spacing: 20;">
          <children>
             <TextField fx:id="nicknameField" prefHeight="36.0" prefWidth="253.0" promptText="Nickname" />
@@ -71,20 +75,27 @@
             <Button mnemonicParsing="false" prefHeight="41.0" prefWidth="345.0" text="save" />
          </children>
       </VBox>
-      <MenuButton fx:id="menuCoise" layoutX="437.0" layoutY="11.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="344.0" text="MenuButton">
+      <MenuButton fx:id="menuCoise" layoutX="437.0" layoutY="11.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="344.0" text="Choose Menu">
         <items>
           <MenuItem mnemonicParsing="false" text="Action 1" />
           <MenuItem mnemonicParsing="false" text="Action 2" />
         </items>
+         <font>
+            <Font size="22.0" />
+         </font>
       </MenuButton>
-      <Pane fx:id="dishMenu" layoutX="31.0" layoutY="73.0" prefHeight="735.0" prefWidth="750.0">
+      <Pane fx:id="dishMenu" layoutX="31.0" layoutY="47.0" prefHeight="761.0" prefWidth="750.0">
          <children>
             <ScrollPane layoutX="1.0" layoutY="54.0" prefHeight="561.0" prefWidth="740.0">
                <content>
                   <VBox prefHeight="557.0" prefWidth="734.0" />
                </content>
             </ScrollPane>
-            <Button layoutX="1.0" layoutY="630.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="744.0" text="add" />
+            <Button layoutX="1.0" layoutY="630.0" mnemonicParsing="false" onAction="#addDishButton" prefHeight="53.0" prefWidth="744.0" text="Add">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Button>
          </children>
       </Pane>
    </children>
