@@ -142,6 +142,7 @@ public class SignUpController {
             }
         };
 
+
         EventHandler<ActionEvent> eventr = new EventHandler<ActionEvent>() {
             public void handle(ActionEvent e)
             {
@@ -200,7 +201,7 @@ public class SignUpController {
         }
 
         try{
-            Database.registerUser(nicknameField.getText(), passwordField.getText(), nameField.getText(), surnameField.getText(), mailField.getText(), phoneField.getText(), who);
+           // Database.registerUser(nicknameField.getText(), passwordField.getText(), nameField.getText(), surnameField.getText(), mailField.getText(), phoneField.getText(), who);
         }catch(Exception e){
             e.printStackTrace();
         }

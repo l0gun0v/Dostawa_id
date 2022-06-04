@@ -314,7 +314,7 @@ LANGUAGE plpgsql;
 ----
 
 CREATE OR REPLACE FUNCTION get_restaurans_by_kategory(kategory TEXT)
-      RETURNS TABLE(A INT)
+      RETURNS TABLE(A NUMERIC(9, 0))
 AS
 $$
 BEGIN
@@ -337,13 +337,8 @@ DECLARE
     ans NUMERIC;
     k INT;
 BEGIN
-     ans = CAST((SELECT SUM(o.ocena) FROM Opinia_o_restauracjach o WHERE id_restauracji = (SELECT z.id_restauracii FROM Zamowienia z WHERE z.id_zamowienia = o.id_zamowienia)) AS NUMERIC);
-     k = CAST((SELECT COUNT(*) FROM Opinia_o_restauracjach o WHERE id_restauracji = (SELECT z.id_restauracii FROM Zamowienia z WHERE z.id_zamowienia = o.id_zamowienia) GROUP BY id_opinii) AS INT);
-    
-    IF (k = 0) THEN
-        RETURN 0;
-    END IF;
-    return ROUND(ans, 2);
+     ans = CAST((SELECT COALESCE(AVG(o.ocena), 0) FROM Opinia_o_restauracjach o WHERE id_restauracji = (SELECT z.id_restauracii FROM Zamowienia z WHERE z.id_zamowienia = o.id_zamowienia)) AS NUMERIC);
+     return ROUND(ans, 2);
 END;
 $$
 LANGUAGE plpgsql;
@@ -376,7 +371,7 @@ end;
 $place_index_to_login_hasla$
 LANGUAGE plpgsql;
 
-create or replace trigger place_index_to_login_hasla 
+create trigger place_index_to_login_hasla
 before insert on Loginy_hasla for each 
 row execute function place_index_to_login_hasla();
 

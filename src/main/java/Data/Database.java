@@ -5,6 +5,7 @@ import Data.SQLBase.SqlCommunicate;
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.Objects;
 
 public class Database {
 
@@ -51,15 +52,27 @@ public class Database {
             throw new Exception();
         }
     }
-    
+
+    static public String getRate(int restaurantID) throws Exception {
+        try {
+            String query = "select getKurRating(" + restaurantID + ")";
+            ArrayList< ArrayList< String > > avarage = SqlCommunicate.execute(query);
+            return avarage.get(1).get(0);
+        }catch(Exception e) {
+            e.printStackTrace();
+            throw new Exception();
+        }
+    }
+
     static public ArrayList < Integer > getRestauran(ArrayList < String > categories) throws Exception {
         HashSet < Integer > allRestaurans = new HashSet<>();
         for (String category : categories) {
             try {
-                String query = "select get_restaurans_by_kategory(" + category  + ")" + ";";
+                String query = "select get_restaurans_by_kategory('" + category  + "')" + ";";
                 ArrayList < ArrayList < String > > restauransWithThisKategory = SqlCommunicate.execute(query);
                 for (ArrayList < String > currentRestauran : restauransWithThisKategory) {
-                    allRestaurans.add(Integer.parseInt(currentRestauran.get(1)));
+                    String currentID = currentRestauran.get(0);
+                    if (!Objects.equals(currentID, "get_restaurans_by_kategory")) allRestaurans.add(Integer.parseInt(currentID));
                 }
             }catch(Exception e) {
                 e.printStackTrace();
@@ -67,6 +80,85 @@ public class Database {
             }
         }
         return new ArrayList<>(allRestaurans);
+    }
+
+    static public String getProductsName(int productsID) throws Exception {
+        try {
+            String query = "select nazwa from Produkty where id_produktu = (" + productsID + ")";
+            ArrayList< ArrayList< String > > productsName = SqlCommunicate.execute(query);
+            return productsName.get(1).get(0);
+        }catch(Exception e) {
+            e.printStackTrace();
+            throw new Exception();
+        }
+    }
+
+    static public String getProductsWeight(int productsID) throws Exception {
+        try {
+            String query = "select waga from Produkty where id_produktu = (" + productsID + ")";
+            ArrayList< ArrayList< String > > productsName = SqlCommunicate.execute(query);
+            return productsName.get(1).get(0);
+        }catch(Exception e) {
+            e.printStackTrace();
+            throw new Exception();
+        }
+    }
+
+    static public int getProductsCost(int productsID) throws Exception {
+        return 100000;
+    }
+    static public String getProductsDescription(int productsID) throws Exception {
+        try {
+            String query = "select opis from Produkty where id_produktu = (" + productsID + ")";
+            ArrayList< ArrayList< String > > productsName = SqlCommunicate.execute(query);
+            return productsName.get(1).get(0);
+        }catch(Exception e) {
+            e.printStackTrace();
+            throw new Exception();
+        }
+    }
+
+    static public boolean isVege(int productsID) throws Exception {
+        try {
+            String query = "select wege from Produkty where id_produktu = (" + productsID + ")";
+            ArrayList< ArrayList< String > > productsName = SqlCommunicate.execute(query);
+            System.out.println(productsName.get(1).get(0));
+            return (Objects.equals(productsName.get(1).get(0), "t"));
+        }catch(Exception e) {
+            e.printStackTrace();
+            throw new Exception();
+        }
+    }
+
+
+
+    static public ArrayList < Integer > getRestaurantProducts(int restaurantID) throws Exception {
+        ArrayList < Integer > allProducts = new ArrayList<>();
+        try {
+            String query = "select id_produktu FROM Produkty where active = true AND id_restauracji = " + restaurantID + ";";
+            ArrayList< ArrayList< String > > products = SqlCommunicate.execute(query);
+            for (ArrayList < String > currentProduct : products) {
+                if (Objects.equals(currentProduct.get(0), "id_produktu")) {
+                    continue;
+                }
+                allProducts.add(Integer.parseInt(currentProduct.get(0)));
+            }
+        }catch(Exception e) {
+            e.printStackTrace();
+            throw new Exception();
+        }
+        return allProducts;
+    }
+
+    static public String getRestaurantName(int restaurantID) throws Exception {
+        try {
+            String query = "select nazwa_restauracji from Restauracje where (" + restaurantID + " = id_restauracji)";
+            ArrayList< ArrayList< String > > restaurant = SqlCommunicate.execute(query);
+            return restaurant.get(1).get(0);
+        }catch(Exception e) {
+            e.printStackTrace();
+            throw new Exception();
+        }
     }
 
     static public User getUserById(int id) throws Exception{        
