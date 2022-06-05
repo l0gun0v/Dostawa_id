@@ -54,6 +54,51 @@ public class Database {
         }
     }
 
+    static public ArrayList < String > getDistricts() throws Exception {
+        try {
+            ArrayList < String > Districts = new ArrayList<>();
+            String query = "select nazwa from Wojewodstwa;";
+            ArrayList< ArrayList< String > > queryDistricts = SqlCommunicate.execute(query);
+            for (ArrayList < String > currentDistrict : queryDistricts) {
+                if (!Objects.equals(currentDistrict.get(0), "nazwa")) {
+                    Districts.add(currentDistrict.get(0));
+                }
+            }
+            return Districts;
+        }catch(Exception e) {
+            e.printStackTrace();
+            throw new Exception();
+        }
+    }
+
+    public static int getDistrictID(String districtName) throws Exception {
+        try {
+            String query = "select id_wojewodstwa from Wojewodstwa where nazwa = '" + districtName + "';";
+            ArrayList< ArrayList< String > > queryResult = SqlCommunicate.execute(query);
+            return Integer.parseInt(queryResult.get(1).get(0));
+        }catch(Exception e) {
+            e.printStackTrace();
+            throw new Exception();
+        }
+    }
+
+    static public ArrayList < String > getCity(int districtID) throws Exception {
+        try {
+            ArrayList < String > Districts = new ArrayList<>();
+            String query = "select nazwa from Miasta where id_wojewodstwa = " + districtID + ";";
+            ArrayList< ArrayList< String > > queryDistricts = SqlCommunicate.execute(query);
+            for (ArrayList < String > currentDistrict : queryDistricts) {
+                if (!Objects.equals(currentDistrict.get(0), "nazwa")) {
+                    Districts.add(currentDistrict.get(0));
+                }
+            }
+            return Districts;
+        }catch(Exception e) {
+            e.printStackTrace();
+            throw new Exception();
+        }
+    }
+
     static public String getRate(int restaurantID) throws Exception {
         try {
             String query = "select getKurRating(" + restaurantID + ")";
