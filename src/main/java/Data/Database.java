@@ -21,12 +21,12 @@ public class Database {
             throw e;
         }
         try {
-            String query = "select * from Login_hasla where login = '" + nickname + "' and hash_hasla = " + "getHash('" + password + "');";                        
+            String query = "select * from Loginy_hasla where login = '" + nickname + "' and hash_hasla = " + "getHash('" + password + "');";                        
             int id = Integer.parseInt(SqlCommunicate.execute(query).get(1).get(0));
             return Database.getUserById(id);
         }catch(Exception e) {
            //  throw new IncorrectUserException();
-           // e.printStackTrace();        
+            e.printStackTrace();        
             
         }
         throw new IncorrectUserException();
@@ -123,7 +123,7 @@ public class Database {
         try {
             String query = "select wege from Produkty where id_produktu = (" + productsID + ")";
             ArrayList< ArrayList< String > > productsName = SqlCommunicate.execute(query);
-            System.out.println(productsName.get(1).get(0));
+         //   System.out.println(productsName.get(1).get(0));
             return (Objects.equals(productsName.get(1).get(0), "t"));
         }catch(Exception e) {
             e.printStackTrace();
@@ -166,17 +166,36 @@ public class Database {
         String query;
         try {
             int pos = id/100000000;
+            System.out.println(pos);
             if(pos <= 7){
                 query = "select * from Klienci where id_klienta = " + id + ";";
                 ArrayList <String> A = SqlCommunicate.execute(query).get(1);
+
+                User x = new User(A.get(0), id);
+                x.mail = A.get(4);
+                x.name = A.get(1);
+                x.surname = A.get(2);
+                x.phone = A.get(3);
+                return x;
             }
-            else if(pos == 8){
+            else if(pos == 9){
                 query = "select * from Restauracje where id_restauracji = " + id + ";";
                 ArrayList <String> A = SqlCommunicate.execute(query).get(1);
+                User x = new User(A.get(0), id);
+                x.mail = A.get(3);
+                x.name = A.get(1);
+                x.phone = A.get(2);
+                x.inWD = A.get(4);
+                x.outWD = A.get(5);
+                x.inWE = A.get(6);
+                x.outWE = A.get(7);
+                x.active = Boolean.parseBoolean(A.get(8));
+                return x;
             }
             else{
                 query = "select * from Kurjery where id_kurjera = " + id + ";";
                 ArrayList <String> A = SqlCommunicate.execute(query).get(1);
+                //TO DO
             }
             return null;
             //return User.makeUserFromBase(A.get(1), id);
@@ -197,7 +216,7 @@ public class Database {
         if (SqlCommunicate.execute(query1).size() - 1 > 0) {
             throw new UserAlreadyRegistred();
         }         
-        System.out.println(who);
+       // System.out.println(who);
         switch (who){
             case 1:
                 try{
@@ -238,7 +257,7 @@ public class Database {
                 try{
                     query1 = "insert into Restauracje values(" + id + ",'" + name + "'," + Long.parseLong(phone) + ",'" +mail + "', '"
                     + time.get(0) +"', '" + time.get(1) +"', '" + time.get(2) +"', '" + time.get(3) +"', false" + ");";
-                    System.out.println(query1);
+                 //   System.out.println(query1);
                     SqlCommunicate.execute(query1);
                 }catch(Exception e){
 
@@ -315,7 +334,7 @@ public class Database {
         String query1 = "select id_wojewodstwa from Wojewodstwa where nazwa = '" + name + "';"; 
         try {
             ArrayList < ArrayList < String > > ans1 = SqlCommunicate.execute(query1);
-            System.out.println(query1 + " " + ans1);
+           // System.out.println(query1 + " " + ans1);
             ans1.remove(0);
             return Integer.parseInt(ans1.get(0).get(0));
         } catch (SQLException e) {
@@ -345,10 +364,10 @@ public class Database {
 
     static public Integer getMiastoId(String name){
         String query1 = "select id_miasta from Miasta where nazwa = '" + name + "';"; 
-        System.out.println(query1);
+      //  System.out.println(query1);
         try {
             ArrayList < ArrayList < String > > ans1 = SqlCommunicate.execute(query1);
-            System.out.println(query1 + " " + ans1);
+         //   System.out.println(query1 + " " + ans1);
             ans1.remove(0);
             return Integer.parseInt(ans1.get(0).get(0));
         } catch (SQLException e) {

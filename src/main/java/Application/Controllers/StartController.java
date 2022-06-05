@@ -62,7 +62,7 @@ public class StartController extends StartApplication {
             User.MainUser = Database.getUser(userLogin.getText(), userPassword.getText());
             int pos = User.MainUser.getId()/idConst;
             if(pos <= userIdPos){
-                FXMLLoader loader = LoadXML.load("Scenes/MainMenu.fxml");
+                FXMLLoader loader = LoadXML.load("Scenes/UserMenu.fxml");
                 setScene(loader);
                 return;
             }
@@ -71,7 +71,7 @@ public class StartController extends StartApplication {
            //     setScene(loader);
            // }
             else{
-                FXMLLoader loader = LoadXML.load("Scenes/ChatView/ChatView.fxml");
+                FXMLLoader loader = LoadXML.load("Scenes/RestMenu.fxml");
                 setScene(loader);
                 return;
             }

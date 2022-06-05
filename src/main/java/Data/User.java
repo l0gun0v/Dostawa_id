@@ -3,14 +3,20 @@ package Data;
 
 public class User {
     public static User MainUser = null;
-    private String nickname;
-    Integer id;
+    public String nickname;
+    public Integer id;
+    public String inWD;
+    public String inWE;
+    public String outWD, outWE;
+    public String name, surname;
+    public String adres, mail, phone;
+    public Boolean active;
 
     public Integer getId(){
         return id;
     }
 
-    private User(String Nickname, Integer id) {
+    User(String Nickname, Integer id) {
         this.nickname = Nickname;
         this.id = id;
     }
