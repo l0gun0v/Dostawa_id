@@ -90,11 +90,10 @@ CREATE TABLE Restauracje (
     nazwa_restauracji VARCHAR(30)   NOT NULL,
     numer_telefonu numeric(11)   NOT NULL check(numer_telefonu > 0),
     mail VARCHAR(40)   NOT NULL,
-    adres VARCHAR(100)   NOT NULL,
-    dzien_powszedni_czas_otwarcja time not null default '08:00',
-    dzien_powszedni_czas_zamkniecia time not null default '22:00',
-    dni_wolne_czas_otwarcja time not null default '09:00',
-    dni_wolne_czas_zamkniecia time not null default '20:00',
+    dzien_powszedni_czas_otwarcja time  default '08:00',
+    dzien_powszedni_czas_zamkniecia time default '22:00',
+    dni_wolne_czas_otwarcja time  default '09:00',
+    dni_wolne_czas_zamkniecia time  default '20:00',
     active boolean not null default false,
     CONSTRAINT pk_Restauracje PRIMARY KEY (
         id_restauracji
@@ -108,14 +107,15 @@ CREATE TABLE Kurjery (
     nazwisko VARCHAR(20)   NOT NULL,
     numer_telefonu numeric(11)   NOT NULL check(numer_telefonu > 0),
     mail VARCHAR(40)   NOT NULL,
+    id_miasta int not null,
     CONSTRAINT pk_Kurjery PRIMARY KEY (
         id_kurjera
      )
 );
 
-CREATE TABLE Adresy_klientow (
+CREATE TABLE Adresy_userow (
     id_adresu int   NOT NULL,
-    id_klienta int   NOT NULL
+    id_uzytkownika int   NOT NULL
 );
 
 CREATE TABLE Produkty (
@@ -156,7 +156,7 @@ CREATE TABLE Historia_cen(
 
 CREATE TABLE Zamowienia (
     id_zamowienia int   NOT NULL,
-    id_restauracii int   NOT NULL,
+    id_restauracji int   NOT NULL,
     id_klienta int   NOT NULL,
     id_kurjera int   NOT NULL,
     id_statusu int   NOT NULL,
@@ -220,7 +220,7 @@ REFERENCES Loginy_hasla (id_uzytkownika);
 ALTER TABLE Kurjery ADD CONSTRAINT fk_Kurjery_id_transportu FOREIGN KEY(id_transportu)
 REFERENCES Transport_kurjera (id_transportu);
 
-ALTER TABLE Adresy_klientow ADD CONSTRAINT fk_Adresy_klientow_id_adresu FOREIGN KEY(id_adresu)
+ALTER TABLE Adresy_userow ADD CONSTRAINT fk_Adresy_userow_id_adresu FOREIGN KEY(id_adresu)
 REFERENCES Adresy (id_adresu);
 
 ALTER TABLE Adresy ADD CONSTRAINT fk_Adresy FOREIGN KEY(id_miasta)
@@ -229,8 +229,9 @@ REFERENCES Miasta (id_miasta);
 ALTER TABLE Miasta ADD CONSTRAINT fk_Miasta FOREIGN KEY(id_wojewodstwa)
 REFERENCES Wojewodstwa (id_wojewodstwa);
 
-ALTER TABLE Adresy_klientow ADD CONSTRAINT fk_Adresy_klientow_id_klienta FOREIGN KEY(id_klienta)
-REFERENCES Klienci (id_klienta);
+ALTER TABLE Adresy_userow ADD CONSTRAINT fk_Adresy_userow_id_klienta FOREIGN KEY(id_uzytkownika)
+REFERENCES  Loginy_hasla(id_uzytkownika);
+
 
 ALTER TABLE Produkty ADD CONSTRAINT fk_Produkty_id_restauracji FOREIGN KEY(id_restauracji)
 REFERENCES Restauracje (id_restauracji);
@@ -256,7 +257,7 @@ REFERENCES Kategorie (id_kategoria);
 ALTER TABLE Historia_cen ADD CONSTRAINT fk_Historia_cen_id_produktu FOREIGN KEY(id_produktu)
 REFERENCES Produkty (id_produktu);
 
-ALTER TABLE Zamowienia ADD CONSTRAINT fk_Zamowienia_id_restauracii FOREIGN KEY(id_restauracii)
+ALTER TABLE Zamowienia ADD CONSTRAINT fk_Zamowienia_id_restauracji FOREIGN KEY(id_restauracji)
 REFERENCES Restauracje (id_restauracji);
 
 ALTER TABLE Zamowienia ADD CONSTRAINT fk_Zamowienia_id_klienta FOREIGN KEY(id_klienta)
@@ -323,8 +324,8 @@ DECLARE
     ans NUMERIC;
     k INT;
 BEGIN
-     ans = CAST((SELECT SUM(o.ocena) FROM Opinia_o_restauracjach o WHERE id_restauracji = (SELECT z.id_restauracii FROM Zamowienia z WHERE z.id_zamowienia = o.id_zamowienia)) AS NUMERIC);
-     k = CAST((SELECT COUNT(*) FROM Opinia_o_restauracjach o WHERE id_restauracji = (SELECT z.id_restauracii FROM Zamowienia z WHERE z.id_zamowienia = o.id_zamowienia) GROUP BY id_opinii) AS INT);
+     ans = CAST((SELECT SUM(o.ocena) FROM Opinia_o_restauracjach o WHERE id_restauracji = (SELECT z.id_restauracji FROM Zamowienia z WHERE z.id_zamowienia = o.id_zamowienia)) AS NUMERIC);
+     k = CAST((SELECT COUNT(*) FROM Opinia_o_restauracjach o WHERE id_restauracji = (SELECT z.id_restauracji FROM Zamowienia z WHERE z.id_zamowienia = o.id_zamowienia) GROUP BY id_opinii) AS INT);
     
     IF (k = 0) THEN
         RETURN 0;
@@ -360,7 +361,7 @@ DECLARE
     ans NUMERIC;
     k INT;
 BEGIN
-     ans = CAST((SELECT COALESCE(AVG(o.ocena), 0) FROM Opinia_o_restauracjach o WHERE id_restauracji = (SELECT z.id_restauracii FROM Zamowienia z WHERE z.id_zamowienia = o.id_zamowienia)) AS NUMERIC);
+     ans = CAST((SELECT COALESCE(AVG(o.ocena), 0) FROM Opinia_o_restauracjach o WHERE id_restauracji = (SELECT z.id_restauracji FROM Zamowienia z WHERE z.id_zamowienia = o.id_zamowienia)) AS NUMERIC);
      return ROUND(ans, 2);
 END;
 $$

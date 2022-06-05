@@ -12,7 +12,7 @@ DROP TABLE Rodzaj_reklamacji CASCADE;
 DROP TABLE Transport_kurjera CASCADE;
 DROP TABLE Restauracje CASCADE;
 DROP TABLE Kurjery CASCADE;
-DROP TABLE Adresy_klientow CASCADE;
+DROP TABLE Adresy_userow CASCADE;
 DROP TABLE Produkty CASCADE;
 DROP TABLE Rabaty_klienci CASCADE;
 DROP TABLE Rabaty_produkty CASCADE;
