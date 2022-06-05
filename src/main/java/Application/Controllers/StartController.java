@@ -50,14 +50,7 @@ public class StartController extends StartApplication {
     }
 
     @FXML
-    protected void onloginButtonClick() {
-
-//        FXMLLoader loader = LoadXML.load("Scenes/RestMenu.fxml");
- //       FXMLLoader loader = LoadXML.load("Scenes/UserMenu.fxml");
-
-//        setScene(loader);
-
-        
+    protected void onloginButtonClick() {   
         try {
             User.MainUser = Database.getUser(userLogin.getText(), userPassword.getText());
             int pos = User.MainUser.getId()/idConst;

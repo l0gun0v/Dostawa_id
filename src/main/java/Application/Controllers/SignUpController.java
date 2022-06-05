@@ -114,7 +114,7 @@ public class SignUpController {
 
         
 
-        for(int i = 0; i < 23; i++){
+        for(int i = 0; i <= 24; i++){
             String time = (i<10?"0":"")+i+":00";
             inWeekDay.getItems().add(time);
             inWeekEnd.getItems().add(time);

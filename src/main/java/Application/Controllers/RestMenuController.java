@@ -1,7 +1,11 @@
 package Application.Controllers;
 
+import java.util.ArrayList;
+
 import Application.StartApplication;
+import Data.Database;
 import Utills.LoadXML;
+import javafx.beans.value.ObservableValue;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
@@ -31,10 +35,10 @@ public class RestMenuController {
     private TextField nameField;
 
     @FXML
-    private TextField nicknameField;
+    private TextField nicknameField, adresField;
 
     @FXML
-    private ChoiceBox<String> outWeekDay;
+    public ChoiceBox<String> outWeekDay, wojeChoice, miastoChoice;
 
     @FXML
     private ChoiceBox<String> outWeekEnd;
@@ -46,7 +50,7 @@ public class RestMenuController {
     private TextField phoneField;
 
     @FXML
-    private HBox timeHBox;
+    private HBox timeHBox, adresHBox;
 
     @FXML
     private VBox settingsMenu;
@@ -72,6 +76,24 @@ public class RestMenuController {
         menuCoise.getItems().add(mi4);
         dishMenu.setVisible(false);
         settingsMenu.setVisible(false);
+
+
+        wojeChoice.getSelectionModel().selectedIndexProperty().addListener(
+            (ObservableValue<? extends Number> ov, Number old_val, Number new_val) -> {
+            //System.out.println("Action!!!");
+            miastoChoice.getItems().clear();
+           // System.out.println(new_val);
+                int x = (int)new_val;
+            ArrayList<String> miasta = Database.getMiasta(new String(wojeChoice.getItems().get(x)));
+            for(String m : miasta){
+                miastoChoice.getItems().add(m);
+            }
+      });
+      
+        ArrayList<String> woje = Database.getWoje();
+        for(String w : woje){
+            wojeChoice.getItems().add(w);
+        }
 
         for(int i = 0; i < 23; i++){
             String time = (i<10?"0":"")+i+":00";

@@ -21,7 +21,7 @@ public class Database {
             throw e;
         }
         try {
-            String query = "select * from Login_hasla where login = '" + nickname + "' and hash_hasla = " + "getHash('" + password + "');";                        
+            String query = "select * from Loginy_hasla where login = '" + nickname + "' and hash_hasla = " + "getHash('" + password + "');";                        
             int id = Integer.parseInt(SqlCommunicate.execute(query).get(1).get(0));
             return Database.getUserById(id);
         }catch(Exception e) {
@@ -210,17 +210,38 @@ public class Database {
         String query;
         try {
             int pos = id/100000000;
+            System.out.println(pos);
             if(pos <= 7){
                 query = "select * from Klienci where id_klienta = " + id + ";";
                 ArrayList <String> A = SqlCommunicate.execute(query).get(1);
+
+                User x = new User(A.get(0), id);
+                x.mail = A.get(4);
+                x.name = A.get(1);
+                x.surname = A.get(2);
+                x.phone = A.get(3);
+                return x;
             }
             else if(pos == 8){
+            }
+            else if(pos == 9){
                 query = "select * from Restauracje where id_restauracji = " + id + ";";
                 ArrayList <String> A = SqlCommunicate.execute(query).get(1);
+                User x = new User(A.get(0), id);
+                x.mail = A.get(3);
+                x.name = A.get(1);
+                x.phone = A.get(2);
+                x.inWD = A.get(4);
+                x.outWD = A.get(5);
+                x.inWE = A.get(6);
+                x.outWE = A.get(7);
+                x.active = Boolean.parseBoolean(A.get(8));
+                return x;
             }
             else{
                 query = "select * from Kurjery where id_kurjera = " + id + ";";
                 ArrayList <String> A = SqlCommunicate.execute(query).get(1);
+                //TO DO
             }
             return null;
             //return User.makeUserFromBase(A.get(1), id);
