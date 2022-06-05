@@ -51,40 +51,45 @@ public class StartController extends StartApplication {
 
     @FXML
     protected void onloginButtonClick() {
+        //        FXMLLoader loader = LoadXML.load("Scenes/RestMenu.fxml");
+               FXMLLoader loader = LoadXML.load("Scenes/UserMenu.fxml");
 
-//        FXMLLoader loader = LoadXML.load("Scenes/RestMenu.fxml");
- //       FXMLLoader loader = LoadXML.load("Scenes/UserMenu.fxml");
-
-//        setScene(loader);
-
-        
-        try {
-            User.MainUser = Database.getUser(userLogin.getText(), userPassword.getText());
-            int pos = User.MainUser.getId()/idConst;
-            if(pos <= userIdPos){
-                FXMLLoader loader = LoadXML.load("Scenes/MainMenu.fxml");
-                setScene(loader);
-                return;
-            }
-           // else if(pos == kurierIdPos){
-           //     FXMLLoader loader = LoadXML.load("Scenes/ChatView/ChatView.fxml");
-           //     setScene(loader);
-           // }
-            else{
-                FXMLLoader loader = LoadXML.load("Scenes/ChatView/ChatView.fxml");
-                setScene(loader);
-                return;
-            }
-        }catch(Database.IncorrectPasswordException e) {
-            errorOutput.setTextFill(Color.web("#dd0e0e", 0.8));
-            errorOutput.setText("INCORRECT PASSWORD");
-        }catch(Database.IncorrectUserException e) {
-            errorOutput.setTextFill(Color.web("#dd0e0e", 0.8));
-            errorOutput.setText("INCORRECT USER");
-        }catch(Exception e) {
-            e.printStackTrace();
-            return;
-        }
+        setScene(loader);
+        return;
+//
+////        FXMLLoader loader = LoadXML.load("Scenes/RestMenu.fxml");
+// //       FXMLLoader loader = LoadXML.load("Scenes/UserMenu.fxml");
+//
+////        setScene(loader);
+//
+//
+//        try {
+//            User.MainUser = Database.getUser(userLogin.getText(), userPassword.getText());
+//            int pos = User.MainUser.getId()/idConst;
+//            if(pos <= userIdPos){
+//                FXMLLoader loader = LoadXML.load("Scenes/MainMenu.fxml");
+//                setScene(loader);
+//                return;
+//            }
+//           // else if(pos == kurierIdPos){
+//           //     FXMLLoader loader = LoadXML.load("Scenes/ChatView/ChatView.fxml");
+//           //     setScene(loader);
+//           // }
+//            else{
+//                FXMLLoader loader = LoadXML.load("Scenes/ChatView/ChatView.fxml");
+//                setScene(loader);
+//                return;
+//            }
+//        }catch(Database.IncorrectPasswordException e) {
+//            errorOutput.setTextFill(Color.web("#dd0e0e", 0.8));
+//            errorOutput.setText("INCORRECT PASSWORD");
+//        }catch(Database.IncorrectUserException e) {
+//            errorOutput.setTextFill(Color.web("#dd0e0e", 0.8));
+//            errorOutput.setText("INCORRECT USER");
+//        }catch(Exception e) {
+//            e.printStackTrace();
+//            return;
+//        }
     
     }
 

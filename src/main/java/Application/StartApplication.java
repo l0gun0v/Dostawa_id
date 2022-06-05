@@ -34,6 +34,8 @@ public class StartApplication extends Application {
         setScene(loader);
     }
 
+
+
     @Override
     public void start(Stage stage) throws IOException {
         StartApplication.primaryStage = stage;

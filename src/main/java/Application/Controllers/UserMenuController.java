@@ -79,7 +79,7 @@ public class UserMenuController {
         vBoxRestaurans.getChildren().clear();
         ArrayList < String > categories = getChosenCategories();
         ArrayList < Integer > relevantedRestaurans = new ArrayList<>(getRestauran(categories));
-        //relevantedRestaurans.sort(Comparator.comparingInt(Database::getRate));
+       // relevantedRestaurans.sort(Comparator.comparingInt(Database::rateToInt));
         for (Integer currentRestauranID : relevantedRestaurans) {
             vBoxRestaurans.getChildren().add(makeRestaurantButton(currentRestauranID));
         }
