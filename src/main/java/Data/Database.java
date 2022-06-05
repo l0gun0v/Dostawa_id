@@ -3,6 +3,7 @@ package Data;
 import Data.SQLBase.SqlCommunicate;
 
 import java.lang.reflect.Array;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Objects;
@@ -32,7 +33,7 @@ public class Database {
     }
 
     static public int getIdByNick(String nickname) throws Exception{        
-        String query = "select id_uzytkownika from Loguny_hasla where login = '" + nickname + "';";                        
+        String query = "select id_uzytkownika from Loginy_hasla where login = '" + nickname + "';";                        
         return Integer.parseInt(SqlCommunicate.execute(query).get(1).get(0));
     }
 
@@ -185,7 +186,7 @@ public class Database {
         }        
     }
 
-    static public void registerUser (String nickname, String password, String name, String surname, String mail, String phone,ArrayList<String> time, int who) throws Exception {
+    static public void registerUser (String nickname, String password, String name, String surname, String mail, String phone,ArrayList<String> time, Integer woje, Integer miasto, String adres, int who) throws Exception {
         try{
            new Password(password);
         }catch(Exception e){
@@ -196,18 +197,58 @@ public class Database {
         if (SqlCommunicate.execute(query1).size() - 1 > 0) {
             throw new UserAlreadyRegistred();
         }         
-
+        System.out.println(who);
         switch (who){
             case 1:
-                query1 = "insert into Loginy_hasla values( -1 " + ", '" + nickname + "', getHash('" + password + "'));";
-                //int id = getIdByNick(nickname);
-                //query2 = "insert into Klienci values(" + id + "," + "" + ");";
+                try{
+                    query1 = "insert into Loginy_hasla values( -1 " + ", '" + nickname + "', getHash('" + password + "'));";
+                    SqlCommunicate.execute(query1);
+                }catch(Exception e){
+
+                }
+                int id = getIdByNick(nickname);
+                query1 = "select insert_adres('" + adres +"'," + miasto+");";
+                Integer id_adres = Integer.parseInt(SqlCommunicate.execute(query1).get(1).get(0));
+                try{
+                    query1 = "insert into Klienci values(" + id + ",'" + name + "','" + surname + "'," + Long.parseLong(phone) + ",'" +mail + "'" + ");";
+                    SqlCommunicate.execute(query1);
+                }catch(Exception e){
+
+                }
+                try{
+                    query1 = "insert into Adresy_userow values(" + id_adres +", " + id+");";
+                    SqlCommunicate.execute(query1);
+                }catch(Exception e){
+
+                }
                 break;
             case 2:
-                query1 = "insert into Loginy_hasla values( -2 " + ", '" + nickname + "', getHash('" + password + "'));";
+           
                 break;
             case 3:
-                query1 = "insert into Loginy_hasla values( -3 " + ", '" + nickname + "', getHash('" + password + "'));";
+                try{
+                    query1 = "insert into Loginy_hasla values( -3 " + ", '" + nickname + "', getHash('" + password + "'));";
+                    SqlCommunicate.execute(query1);
+                }catch(Exception e){
+
+                }
+                id = getIdByNick(nickname);
+                query1 = "select insert_adres('" + adres +"'," + miasto+");";
+                id_adres = Integer.parseInt(SqlCommunicate.execute(query1).get(1).get(0));
+                try{
+                    query1 = "insert into Restauracje values(" + id + ",'" + name + "'," + Long.parseLong(phone) + ",'" +mail + "', '"
+                    + time.get(0) +"', '" + time.get(1) +"', '" + time.get(2) +"', '" + time.get(3) +"', false" + ");";
+                    System.out.println(query1);
+                    SqlCommunicate.execute(query1);
+                }catch(Exception e){
+
+                }
+                try{
+                    query1 = "insert into Adresy_userow values(" + id_adres +", " + id+");";
+                    SqlCommunicate.execute(query1);
+                }catch(Exception e){
+
+                }
                 break;
             default:
                 throw new Exception();
@@ -251,6 +292,71 @@ public class Database {
 
     static public void updateRest(String nickname, String password, String name, String surname, String mail, String phone,ArrayList<String> time){
         
+    }
+
+    static public ArrayList<String> getWoje(){
+        ArrayList<String> woje = new ArrayList<>();
+        String query1 = "select nazwa from Wojewodstwa;"; 
+        try {
+            ArrayList < ArrayList < String > > ans1 = SqlCommunicate.execute(query1);
+            ans1.remove(0);
+            for(ArrayList<String> i: ans1){
+                woje.add(i.get(0));
+            }
+        } catch (SQLException e) {
+          
+            e.printStackTrace();
+        }
+        return woje;
+
+    }
+
+    static public Integer getWojeId(String name){
+        String query1 = "select id_wojewodstwa from Wojewodstwa where nazwa = '" + name + "';"; 
+        try {
+            ArrayList < ArrayList < String > > ans1 = SqlCommunicate.execute(query1);
+            System.out.println(query1 + " " + ans1);
+            ans1.remove(0);
+            return Integer.parseInt(ans1.get(0).get(0));
+        } catch (SQLException e) {
+          
+            e.printStackTrace();
+        }
+        return null;
+
+    }
+
+    static public ArrayList<String> getMiasta(String woje){
+        ArrayList<String> miasta = new ArrayList<>();
+        String query1 = "select nazwa from Miasta where id_wojewodstwa = " + getWojeId(woje) + ";"; 
+        try {
+            ArrayList < ArrayList < String > > ans1 = SqlCommunicate.execute(query1);
+            
+            ans1.remove(0);
+            for(ArrayList<String> i: ans1){
+                miasta.add(i.get(0));
+            }
+        } catch (SQLException e) {
+          
+            //e.printStackTrace();
+        }
+        return miasta;
+    }
+
+    static public Integer getMiastoId(String name){
+        String query1 = "select id_miasta from Miasta where nazwa = '" + name + "';"; 
+        System.out.println(query1);
+        try {
+            ArrayList < ArrayList < String > > ans1 = SqlCommunicate.execute(query1);
+            System.out.println(query1 + " " + ans1);
+            ans1.remove(0);
+            return Integer.parseInt(ans1.get(0).get(0));
+        } catch (SQLException e) {
+          
+            e.printStackTrace();
+        }
+        return null;
+
     }
 
 }

@@ -64,9 +64,9 @@ insert into Adresy_userow values(4, 900000000);
 insert into Adresy_userow values(5, 900000001);
 insert into Adresy_userow values(6, 900000002);
 
-insert into Restauracje values(900000000, 'MacDonalds', 2341345, 'macdonalds@mac.pl', null, null, null, null, false);
-insert into Restauracje values(900000001, 'BuegerKing', 1234124, 'burger.king@gmail.com', null, null, null, null, false);
-insert into Restauracje values(900000002, 'Makaron', 2341345, 'makaron@macaron.pl', null, null, null, null, false);
+insert into Restauracje values(900000000, 'MacDonalds', 2341345, 'macdonalds@mac.pl', default, default, default, default, false);
+insert into Restauracje values(900000001, 'BuegerKing', 1234124, 'burger.king@gmail.com', default, default, default, default, false);
+insert into Restauracje values(900000002, 'Makaron', 2341345, 'makaron@macaron.pl', default, default, default, default, false);
 
 insert into Produkty values(1, 900000000, 300, '', 'BigMac', false, true);
 insert into Produkty values(2, 900000000, 120, '', 'CheeseBurger', false, true);

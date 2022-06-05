@@ -53,26 +53,28 @@ public class StartController extends StartApplication {
     protected void onloginButtonClick() {
 
 //        FXMLLoader loader = LoadXML.load("Scenes/RestMenu.fxml");
-        FXMLLoader loader = LoadXML.load("Scenes/UserMenu.fxml");
+ //       FXMLLoader loader = LoadXML.load("Scenes/UserMenu.fxml");
 
-        setScene(loader);
+//        setScene(loader);
 
-        /*
+        
         try {
             User.MainUser = Database.getUser(userLogin.getText(), userPassword.getText());
-            //int pos = User.MainUser.getId()/idConst;
-           // if(pos <= userIdPos){
+            int pos = User.MainUser.getId()/idConst;
+            if(pos <= userIdPos){
                 FXMLLoader loader = LoadXML.load("Scenes/MainMenu.fxml");
                 setScene(loader);
-           // }
+                return;
+            }
            // else if(pos == kurierIdPos){
-                ///FXMLLoader loader = LoadXML.load("Scenes/ChatView/ChatView.fxml");
-                ///setScene(loader);
+           //     FXMLLoader loader = LoadXML.load("Scenes/ChatView/ChatView.fxml");
+           //     setScene(loader);
            // }
-           // else{
-                ///FXMLLoader loader = LoadXML.load("Scenes/ChatView/ChatView.fxml");
-                ///setScene(loader);
-           // }
+            else{
+                FXMLLoader loader = LoadXML.load("Scenes/ChatView/ChatView.fxml");
+                setScene(loader);
+                return;
+            }
         }catch(Database.IncorrectPasswordException e) {
             errorOutput.setTextFill(Color.web("#dd0e0e", 0.8));
             errorOutput.setText("INCORRECT PASSWORD");
@@ -83,7 +85,7 @@ public class StartController extends StartApplication {
             e.printStackTrace();
             return;
         }
-        */
+    
     }
 
 

@@ -25,6 +25,9 @@ DROP TABLE Opinie_o_kurjerach CASCADE;
 DROP TABLE Opinia_o_restauracjach CASCADE;
 DROP TABLE Wojewodstwa CASCADE;
 DROP TABLE Miasta CASCADE;
+DROP sequence seq_id_adresu;
+drop function insert_adres;
+
 
 Drop function getRestRating;
 drop function getKurRating;

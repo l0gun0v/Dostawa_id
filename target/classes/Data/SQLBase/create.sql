@@ -90,10 +90,10 @@ CREATE TABLE Restauracje (
     nazwa_restauracji VARCHAR(30)   NOT NULL,
     numer_telefonu numeric(11)   NOT NULL check(numer_telefonu > 0),
     mail VARCHAR(40)   NOT NULL,
-    dzien_powszedni_czas_otwarcja time  default '08:00',
-    dzien_powszedni_czas_zamkniecia time default '22:00',
-    dni_wolne_czas_otwarcja time  default '09:00',
-    dni_wolne_czas_zamkniecia time  default '20:00',
+    dzien_powszedni_czas_otwarcja time  default '08:00:00',
+    dzien_powszedni_czas_zamkniecia time default '22:00:00',
+    dni_wolne_czas_otwarcja time  default '09:00:00',
+    dni_wolne_czas_zamkniecia time  default '20:00:00',
     active boolean not null default false,
     CONSTRAINT pk_Restauracje PRIMARY KEY (
         id_restauracji
@@ -398,4 +398,29 @@ LANGUAGE plpgsql;
 create trigger place_index_to_login_hasla
 before insert on Loginy_hasla for each 
 row execute function place_index_to_login_hasla();
+
+create sequence seq_id_adresu start with 1 INCREMENT BY 1 maxvalue 999999999;
+
+create or REPLACE function place_index_to_adres() returns trigger as $$
+begin
+    new.id_adresu = nextval('seq_id_adresu');
+    return new;
+end;
+$$
+LANGUAGE plpgsql;
+
+create trigger place_index_to_adres
+before insert on Adresy for each 
+row execute function place_index_to_adres();
+
+
+create or REPLACE function insert_adres(adres text, id int) returns int as $$
+begin
+    insert into Adresy values(adres, nextval('seq_id_adresu'), id);
+    return currval('seq_id_adresu');
+end;
+$$
+LANGUAGE plpgsql;
+
+
 

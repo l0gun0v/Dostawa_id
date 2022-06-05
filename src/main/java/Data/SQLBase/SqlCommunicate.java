@@ -49,18 +49,15 @@ public class SqlCommunicate {
             }
             return result;
         } catch (Exception e) {
-            e.printStackTrace();
-            ;
-            System.err.println("Error executing query [" + query + "]: " + e.getClass().getName() + e.getMessage());
             throw e;
         } finally {
             if (queryStatement != null) {
                 try {
                     queryStatement.close();
                 } catch (Exception e) {
-                    e.printStackTrace();
+                   // e.printStackTrace();
                     ;
-                    System.err.println("Error closing query [" + query + "]: " + e.getClass().getName() + e.getMessage());
+                   System.err.println("Error closing query [" + query + "]: " + e.getClass().getName() + e.getMessage());
                 }
             }
         }
