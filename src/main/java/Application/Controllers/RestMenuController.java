@@ -1,9 +1,9 @@
 package Application.Controllers;
 
 import java.util.ArrayList;
-
 import Application.StartApplication;
 import Data.Database;
+import Data.Password;
 import Data.User;
 import Data.Database.IncorrectUserException;
 import Data.Database.UserAlreadyRegistred;
@@ -76,7 +76,7 @@ public class RestMenuController {
     private Pane dishMenu, orderMenu;
 
     static int choosenMenu = -1;
-
+    static Integer ida, idw, idm;
 
     static public class TakeDishHandler implements EventHandler<ActionEvent> {
         private final Integer dish;
@@ -147,6 +147,27 @@ public class RestMenuController {
         restName.setText(User.MainUser.name);
         
 
+        User.MainUser.inWD = User.MainUser.inWD.substring(0, 5);
+        User.MainUser.outWD = User.MainUser.outWD.substring(0, 5);
+        User.MainUser.inWE = User.MainUser.inWE.substring(0, 5);
+        User.MainUser.outWE = User.MainUser.outWE.substring(0, 5);
+
+        nicknameField.setText(User.MainUser.nickname);
+        nameField.setText(User.MainUser.name);
+        mailField.setText(User.MainUser.mail);
+        phoneField.setText(User.MainUser.phone);
+        inWeekDay.setValue(User.MainUser.inWD);
+        inWeekEnd.setValue(User.MainUser.inWE);
+        outWeekDay.setValue(User.MainUser.outWD);
+        outWeekEnd.setValue(User.MainUser.outWE);
+        activeCheck.setSelected(User.MainUser.active);
+        ida = Database.getIdAdresuByUserId(User.MainUser.id);
+         idm = Database.getIdMiastaByAdresId(ida);
+         idw = Database.getIdWojeByMiastoId(idm);
+        adresField.setText(Database.getAdresById(ida));
+        User.MainUser.adres = adresField.getText();
+        wojeChoice.setValue(Database.getWojeById(idw));
+        miastoChoice.setValue(Database.getMiastoById(idm));
 
         for (Integer currentProductID : Database.getRestaurantProducts(User.MainUser.getId())) {
             productList.getChildren().add(makeField(currentProductID));
@@ -309,19 +330,37 @@ public class RestMenuController {
             errorLabel.setAlignment(Pos.CENTER); 
             errorLabel.setMaxWidth(Double.MAX_VALUE);
             errorLabel.setText("Bad old password");
-        }catch(Exception e){
+        }catch(Database.IncorrectPasswordException e){
+            errorLabel.setAlignment(Pos.CENTER); 
+            errorLabel.setMaxWidth(Double.MAX_VALUE);
+            errorLabel.setText("Bad old password");
+        }
+        catch(Exception e){
             e.printStackTrace();
         }
 
         try{
-            if(newPasswordField.getText().compareTo("")!=0){
-                ///change_password(User.MainUser.getNickName(), newPasswordField.getText());
-            }
-            
+            if(newPasswordField.getText() != "")
+                new Password(newPasswordField.getText());
         }catch(Exception e){
-
+            errorLabel.setAlignment(Pos.CENTER); 
+            errorLabel.setMaxWidth(Double.MAX_VALUE);
+            errorLabel.setText("Bad new password");
         }
-
+        idm = Database.getMiastoId(miastoChoice.getValue());
+        idw = Database.getWojeId(wojeChoice.getValue());
+        try{
+            if(newPasswordField.getText().compareTo("") != 0){
+                Database.change_password(newPasswordField.getText());
+            }
+            Database.updateRest(nameField.getText(), mailField.getText(), phoneField.getText(), time, activeCheck.isSelected(), idw, idm, adresField.getText());
+            if(User.MainUser.getNickname() != nicknameField.getText()){
+                Database.change_nickname(nicknameField.getText());
+            }
+        }catch(Exception e){
+            e.printStackTrace();
+        }
+        errorLabel.setText("");
     }
     
 }

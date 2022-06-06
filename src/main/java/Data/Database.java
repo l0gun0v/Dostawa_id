@@ -6,6 +6,8 @@ import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Objects;
 
+import org.w3c.dom.NameList;
+
 import Application.Controllers.DishController;
 
 public class Database {
@@ -35,6 +37,12 @@ public class Database {
         return Integer.parseInt(SqlCommunicate.execute(query).get(1).get(0));
     }
 
+    static public String getNickById(int id) throws Exception{        
+        String query = "select login from Loginy_hasla where   id_uzytkownika = " + id + ";";                        
+        return (SqlCommunicate.execute(query).get(1).get(0));
+    }
+
+
     static public ArrayList < String > getDistricts() throws Exception {
         try {
             ArrayList < String > Districts = new ArrayList<>();
@@ -56,12 +64,12 @@ public class Database {
         String query;
         try {
             int pos = id/100000000;
-            System.out.println(pos);
+           
             if(pos <= 7){
                 query = "select * from Klienci where id_klienta = " + id + ";";
                 ArrayList <String> A = SqlCommunicate.execute(query).get(1);
 
-                User x = new User(A.get(0), id);
+                User x = new User(getNickById(id), id);
                 x.mail = A.get(4);
                 x.name = A.get(1);
                 x.surname = A.get(2);
@@ -71,7 +79,7 @@ public class Database {
             else if(pos == 8){
                 query = "select * from Kurjery where id_kurjera = " + id + ";";
                 ArrayList <String> A = SqlCommunicate.execute(query).get(1);
-                User x = new User(A.get(0), id);
+                User x = new User(getNickById(id), id);
                 x.transport = Integer.parseInt(A.get(1));
                 x.name = A.get(2);
                 x.surname = A.get(3);
@@ -83,7 +91,7 @@ public class Database {
             else if(pos == 9){
                 query = "select * from Restauracje where id_restauracji = " + id + ";";
                 ArrayList <String> A = SqlCommunicate.execute(query).get(1);
-                User x = new User(A.get(0), id);
+                User x = new User(getNickById(id), id);
                 x.mail = A.get(3);
                 x.name = A.get(1);
                 x.phone = A.get(2);
@@ -111,7 +119,7 @@ public class Database {
         if (SqlCommunicate.execute(query1).size() - 1 > 0) {
             throw new UserAlreadyRegistred();
         }         
-        System.out.println(who);
+    
         switch (who){
             case 1:
                 try{
@@ -166,7 +174,7 @@ public class Database {
                 try{
                     query1 = "insert into Restauracje values(" + id + ",'" + name + "'," + Long.parseLong(phone) + ",'" +mail + "', '"
                     + time.get(0) +"', '" + time.get(1) +"', '" + time.get(2) +"', '" + time.get(3) +"', false" + ");";
-                    System.out.println(query1);
+                 
                     SqlCommunicate.update(query1);
                 }catch(Exception e){
 
@@ -210,7 +218,7 @@ public class Database {
         String query1 = "select id_wojewodstwa from Wojewodstwa where nazwa = '" + name + "';"; 
         try {
             ArrayList < ArrayList < String > > ans1 = SqlCommunicate.execute(query1);
-            System.out.println(query1 + " " + ans1);
+         
             ans1.remove(0);
             return Integer.parseInt(ans1.get(0).get(0));
         } catch (SQLException e) {
@@ -240,10 +248,10 @@ public class Database {
 
     static public Integer getMiastoId(String name){
         String query1 = "select id_miasta from Miasta where nazwa = '" + name + "';"; 
-        System.out.println(query1);
+       
         try {
             ArrayList < ArrayList < String > > ans1 = SqlCommunicate.execute(query1);
-            System.out.println(query1 + " " + ans1);
+          
             ans1.remove(0);
             return Integer.parseInt(ans1.get(0).get(0));
         } catch (SQLException e) {
@@ -431,7 +439,7 @@ public class Database {
         try{
             ArrayList < ArrayList < String > > ans1 = SqlCommunicate.execute(query1);
             ArrayList < ArrayList < String > > ans2 = SqlCommunicate.execute(query2);
-            System.out.println(ans1);
+           
             ans1.remove(0);
             ans2.remove(0);
             ArrayList<Integer> kategoris = new ArrayList<>();
@@ -456,7 +464,6 @@ public class Database {
         try{
             query1 = "update Produkty set waga = " + "" + dish.weight + ",  opis = '" + 
             dish.opis + "', nazwa = '" + dish.name + "', wege = "+ dish.wege + ", active = " + dish.active + " where id_produktu = "+ dish.id + ";";
-            System.out.println(query1);
             SqlCommunicate.update(query1);
             ArrayList < String > categories = new ArrayList<>(Database.getCategories());
             int idk = 0, idp = DishController.mainDish.id;
@@ -470,7 +477,6 @@ public class Database {
                     }
                     else{
                         query1 = "insert into Kategorii_produktow values(" + idp + ", " + idk + ");";
-                        System.out.println(query1);
                         SqlCommunicate.update(query1);
                     }
                 }
@@ -543,9 +549,70 @@ public class Database {
         }
     }
 
-    static public void updateRest(String nickname, String password, String name, String surname, String mail, String phone, ArrayList<String> time, boolean active){
-        
+    static public void updateRest(String name, String mail, String phone, ArrayList<String> time, boolean active, Integer idw, Integer idm, String ida) throws SQLException{
+        User.MainUser.name = name;
+        User.MainUser.mail = phone;
+        User.MainUser.inWD = time.get(0);
+        User.MainUser.outWD = time.get(1);
+        User.MainUser.inWE = time.get(2);
+        User.MainUser.outWE = time.get(3);
+        User.MainUser.active = active;
+
+        System.out.println(User.MainUser.adres);
+        if(ida.compareTo(User.MainUser.adres) != 0 || getIdMiastaByAdresId(getIdAdresuByUserId(User.MainUser.id)) != idm){
+            SqlCommunicate.update("delete from Adresy_userow where id_uzytkownika = " + User.MainUser.id + ";");
+            String query1 = "select insert_adres('" + ida +"'," + idm+");";
+            Integer id_adres = Integer.parseInt(SqlCommunicate.execute(query1).get(1).get(0));
+            SqlCommunicate.update("insert into Adresy_userow values(" + id_adres + ", " + User.MainUser.id + ");");
+            User.MainUser.adres = ida;
+        }
+
+        SqlCommunicate.update("update Restauracje set nazwa_restauracji = '" + name +"', numer_telefonu = " + phone + ", mail = '" + mail + 
+        "', dzien_powszedni_czas_otwarcja = '" +  User.MainUser.inWD + "', dzien_powszedni_czas_zamkniecia = '" +  User.MainUser.outWD +
+        "', dni_wolne_czas_otwarcja = '" +  User.MainUser.inWE + "', dni_wolne_czas_zamkniecia = '" +  User.MainUser.outWE + "', active = " + active +
+          " where id_restauracji = " + User.MainUser.getId());
+        /* 
+        System.out.println("update Restauracje set nazwa_restauracji = '" + name +"', numer_telefonu = " + phone + ", mail = '" + mail + 
+        "', dzien_powszedni_czas_otwarcja = '" +  User.MainUser.inWD + "', dzien_powszedni_czas_zamkniecia = '" +  User.MainUser.outWD +
+        "', dni_wolne_czas_otwarcja = '" +  User.MainUser.inWE + "', dni_wolne_czas_zamkniecia = '" +  User.MainUser.outWE + "', active = " + active +
+          " where id_restauracji = " + User.MainUser.getId());
+          */
     }
+
+    static public void change_password(String password) throws SQLException{
+        SqlCommunicate.update("update Loginy_hasla set hash_hasla = getHash('" + password + "') where id_uzytkownika = " + User.MainUser.getId());
+    }
+
+    static public void change_nickname(String nickname) throws SQLException{
+        User.MainUser.nickname = nickname;
+        SqlCommunicate.update("update Loginy_hasla set login = '" + nickname + "' where id_uzytkownika = " + User.MainUser.getId());
+    }
+
+    static public Integer getIdAdresuByUserId(Integer id) throws NumberFormatException, SQLException{
+        return Integer.parseInt(SqlCommunicate.execute("select id_adresu from Adresy_userow where id_uzytkownika = " + id + ";").get(1).get(0));
+    }
+
+    static public Integer getIdMiastaByAdresId(Integer id)throws NumberFormatException, SQLException{
+        return Integer.parseInt(SqlCommunicate.execute("select id_miasta from Adresy where id_adresu = " + id + ";").get(1).get(0));
+    }
+
+    static public Integer getIdWojeByMiastoId(Integer id)throws NumberFormatException, SQLException{
+        return Integer.parseInt(SqlCommunicate.execute("select id_wojewodstwa from Miasta where id_miasta = " + id + ";").get(1).get(0));
+    }
+
+    static public String getAdresById(Integer id) throws SQLException{
+        return SqlCommunicate.execute("select adres_dostawy from Adresy where id_adresu = " + id + ";").get(1).get(0);
+    }
+
+    static public String getMiastoById(Integer id) throws SQLException{
+        return SqlCommunicate.execute("select nazwa from Miasta where id_miasta = " + id + ";").get(1).get(0);
+    }
+
+    static public String getWojeById(Integer id) throws SQLException{
+        return SqlCommunicate.execute("select nazwa from Wojewodstwa where id_wojewodstwa = " + id + ";").get(1).get(0);
+    }
+
+
     ///Dish
 
 }

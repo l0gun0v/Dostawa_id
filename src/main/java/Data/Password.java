@@ -22,7 +22,7 @@ public class Password {
     }
 
 
-    Password(String newPassword) throws Exception{        
+    public Password(String newPassword) throws Exception{        
         if(newPassword == null || newPassword.length() == 0 || newPassword.length() > 100){            
             throw new Database.IncorrectPasswordException();
         }
