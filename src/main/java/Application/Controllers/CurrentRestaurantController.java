@@ -10,8 +10,6 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.layout.*;
 
-import java.awt.*;
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Iterator;
 

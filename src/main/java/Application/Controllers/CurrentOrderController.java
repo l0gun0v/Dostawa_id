@@ -1,7 +1,6 @@
 package Application.Controllers;
 
 import Utills.LoadXML;
-import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
@@ -9,7 +8,6 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.control.Label;
 import javafx.scene.control.MenuButton;
 import javafx.scene.control.MenuItem;
-import javafx.stage.Stage;
 import Application.StartApplication;
 
 import java.util.Iterator;

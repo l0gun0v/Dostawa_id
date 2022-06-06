@@ -11,8 +11,6 @@ import javafx.scene.layout.HBox;
 import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.Label;
-
-import java.sql.Time;
 import java.util.ArrayList;
 
 import Application.StartApplication;

@@ -2,13 +2,13 @@ insert into Loginy_hasla values(-1, 'EatEat', getHash('123qweasd'));
 insert into Loginy_hasla values(-1, 'TimeLord', getHash('kl12jh34'));
 insert into Loginy_hasla values(-1, '12345678', getHash('12345678'));
 
-insert into Loginy_hasla values(-2, 'MacDonalds', getHash('secretPassworD'));
-insert into Loginy_hasla values(-2, 'BurgerKing', getHash('BiGwopper'));
-insert into Loginy_hasla values(-2, 'Makaron', getHash('spageTTi9'));
+insert into Loginy_hasla values(-3, 'MacDonalds', getHash('secretPassworD'));
+insert into Loginy_hasla values(-3, 'BurgerKing', getHash('BiGwopper'));
+insert into Loginy_hasla values(-3, 'Makaron', getHash('spageTTi9'));
 
-insert into Loginy_hasla values(-3, 'FastDeliver', getHash('FastDeliver'));
-insert into Loginy_hasla values(-3, 'RunWithYourFood', getHash('12345678'));
-insert into Loginy_hasla values(-3, 'Just', getHash('t8klou6'));
+insert into Loginy_hasla values(-2, 'FastDeliver', getHash('FastDeliver'));
+insert into Loginy_hasla values(-2, 'RunWithYourFood', getHash('12345678'));
+insert into Loginy_hasla values(-2, 'Just', getHash('t8klou6'));
 
 insert into Statusy values(1, 'Order placed');
 insert into Statusy values(2, 'Accepted');

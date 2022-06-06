@@ -399,6 +399,9 @@ create trigger place_index_to_login_hasla
 before insert on Loginy_hasla for each 
 row execute function place_index_to_login_hasla();
 
+----Loginy
+
+----adresy
 create sequence seq_id_adresu start with 1 INCREMENT BY 1 maxvalue 999999999;
 
 create or REPLACE function place_index_to_adres() returns trigger as $$
@@ -423,4 +426,190 @@ $$
 LANGUAGE plpgsql;
 
 
+----produkty
+create sequence seq_id_produktu start with 1 INCREMENT BY 1 maxvalue 999999999;
 
+create or REPLACE function place_index_to_produkt() returns trigger as $$
+begin
+    new.id_produktu = nextval('seq_id_produktu');
+    return new;
+end;
+$$
+LANGUAGE plpgsql;
+
+create trigger place_index_to_produkt
+before insert on Produkty for each 
+row execute function place_index_to_produkt();
+
+
+----Zamowienia
+create sequence seq_id_zamowienia start with 1 INCREMENT BY 1 maxvalue 999999999;
+
+create or REPLACE function place_index_to_zamowienia() returns trigger as $$
+begin
+    new.id_zamowienia = nextval('seq_id_zamowienia');
+    return new;
+end;
+$$
+LANGUAGE plpgsql;
+
+create trigger place_index_to_zamowienia
+before insert on Zamowienia for each 
+row execute function place_index_to_zamowienia();
+
+----
+
+----Statusy
+create sequence seq_id_statusy start with 1 INCREMENT BY 1 maxvalue 999999999;
+
+create or REPLACE function place_index_to_statusy() returns trigger as $$
+begin
+    new.id_statusu = nextval('seq_id_statusy');
+    return new;
+end;
+$$
+LANGUAGE plpgsql;
+
+create trigger place_index_to_statusy
+before insert on Statusy for each 
+row execute function place_index_to_statusy();
+
+----Wojewo
+create sequence seq_id_woje start with 1 INCREMENT BY 1 maxvalue 999999999;
+
+create or REPLACE function place_index_to_woje() returns trigger as $$
+begin
+    new.id_wojewodstwa = nextval('seq_id_woje');
+    return new;
+end;
+$$
+LANGUAGE plpgsql;
+
+create trigger place_index_to_woje
+before insert on Wojewodstwa for each 
+row execute function place_index_to_woje();
+
+----Miasto
+create sequence seq_id_miasto start with 1 INCREMENT BY 1 maxvalue 999999999;
+
+create or REPLACE function place_index_to_miasto() returns trigger as $$
+begin
+    new.id_miasta = nextval('seq_id_miasto');
+    return new;
+end;
+$$
+LANGUAGE plpgsql;
+
+create trigger place_index_to_miasto
+before insert on Miasta for each 
+row execute function place_index_to_miasto();
+
+----Rabaty
+create sequence seq_id_rabatu start with 1 INCREMENT BY 1 maxvalue 999999999;
+
+create or REPLACE function place_index_to_rabat() returns trigger as $$
+begin
+    new.id_rabatu = nextval('seq_id_rabatu');
+    return new;
+end;
+$$
+LANGUAGE plpgsql;
+
+create trigger place_index_to_rabat
+before insert on Rabaty for each 
+row execute function place_index_to_rabat();
+
+----Kategorie
+create sequence seq_id_kateg start with 1 INCREMENT BY 1 maxvalue 999999999;
+
+create or REPLACE function place_index_to_kateg() returns trigger as $$
+begin
+    new.id_kategoria = nextval('seq_id_kateg');
+    return new;
+end;
+$$
+LANGUAGE plpgsql;
+
+create trigger place_index_to_kateg
+before insert on Kategorie for each 
+row execute function place_index_to_kateg();
+
+----Opiniar
+create sequence seq_id_opinii_r start with 1 INCREMENT BY 1 maxvalue 999999999;
+
+create or REPLACE function place_index_to_opiniar() returns trigger as $$
+begin
+    new.id_opinii = nextval('seq_id_opinii_r');
+    return new;
+end;
+$$
+LANGUAGE plpgsql;
+
+create trigger place_index_to_opiniar
+before insert on Opinia_o_restauracjach for each 
+row execute function place_index_to_opiniar();
+
+----Opiniak
+create sequence seq_id_opinii_k start with 1 INCREMENT BY 1 maxvalue 999999999;
+
+create or REPLACE function place_index_to_opiniak() returns trigger as $$
+begin
+    new.id_opinii = nextval('seq_id_opinii_k');
+    return new;
+end;
+$$
+LANGUAGE plpgsql;
+
+create trigger place_index_to_opiniak
+before insert on Opinie_o_kurjerach for each 
+row execute function place_index_to_opiniak();
+
+----rodzaj
+create sequence seq_id_rodza start with 1 INCREMENT BY 1 maxvalue 999999999;
+
+create or REPLACE function place_index_to_rodz() returns trigger as $$
+begin
+    new.id_rodzaju = nextval('seq_id_rodza');
+    return new;
+end;
+$$
+LANGUAGE plpgsql;
+
+create trigger place_index_to_rodz
+before insert on Rodzaj_reklamacji for each 
+row execute function place_index_to_rodz();
+
+----Reklamacja
+create sequence seq_id_reklam start with 1 INCREMENT BY 1 maxvalue 999999999;
+
+create or REPLACE function place_index_to_reklam() returns trigger as $$
+begin
+    new.id_reklamacji = nextval('seq_id_reklam');
+    return new;
+end;
+$$
+LANGUAGE plpgsql;
+
+create trigger place_index_to_reklam
+before insert on Reklamacji for each 
+row execute function place_index_to_reklam();
+
+----Transport
+create sequence seq_id_trans start with 1 INCREMENT BY 1 maxvalue 999999999;
+
+create or REPLACE function place_index_to_trans() returns trigger as $$
+begin
+    new.id_transportu = nextval('seq_id_trans');
+    return new;
+end;
+$$
+LANGUAGE plpgsql;
+
+create trigger place_index_to_trans
+before insert on Transport_kurjera for each 
+row execute function place_index_to_trans();
+
+
+CREATE RULE kategorie_r AS ON delete TO Kategorie DO INSTEAD NOTHING;
+CREATE RULE zamowienia_r AS ON delete TO Zamowienia DO INSTEAD NOTHING;
+CREATE RULE loginy_hasla_r AS ON delete TO Loginy_hasla DO INSTEAD NOTHING;

@@ -1,5 +1,8 @@
 package Application.Controllers;
 
+
+import java.sql.SQLException;
+
 import Application.StartApplication;
 import Data.*;
 import Utills.LoadXML;
@@ -42,7 +45,7 @@ public class StartController extends StartApplication {
 
     };
 
-    public void initialize(){
+    public void initialize() throws SQLException{
         ///change_size
         StartApplication.primaryStage.widthProperty().addListener(stageSizeListener);
         StartApplication.primaryStage.heightProperty().addListener(stageSizeListener);

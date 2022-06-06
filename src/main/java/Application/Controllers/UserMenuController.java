@@ -1,7 +1,7 @@
 package Application.Controllers;
 
 import Application.StartApplication;
-import Data.Database;
+
 import Utills.LoadXML;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
@@ -13,7 +13,7 @@ import javafx.scene.control.CheckBox;
 import javafx.scene.layout.VBox;
 
 import java.util.ArrayList;
-import java.util.Comparator;
+
 
 import static Data.Database.*;
 

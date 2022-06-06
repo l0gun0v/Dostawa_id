@@ -4,13 +4,17 @@ import java.util.ArrayList;
 
 import Application.StartApplication;
 import Data.Database;
+import Data.User;
 import Utills.LoadXML;
 import javafx.beans.value.ObservableValue;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.chart.PieChart.Data;
+import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox;
+import javafx.scene.control.Label;
 import javafx.scene.control.MenuButton;
 import javafx.scene.control.MenuItem;
 import javafx.scene.control.TextField;
@@ -53,7 +57,7 @@ public class RestMenuController {
     private HBox timeHBox, adresHBox;
 
     @FXML
-    private VBox settingsMenu;
+    private VBox settingsMenu, productList;
 
     @FXML
     private MenuButton menuCoise;
@@ -64,7 +68,61 @@ public class RestMenuController {
     static int choosenMenu = -1;
 
 
-    public void initialize(){
+    static public class TakeDishHandler implements EventHandler<ActionEvent> {
+        private final Integer dish;
+        TakeDishHandler(Integer new_dish) {
+            this.dish = new_dish;
+        
+        }
+        @Override
+        public void handle(ActionEvent event) {            
+            try {
+                DishController.mainDish = Database.getDishById(dish);
+                FXMLLoader loader = LoadXML.load("Scenes/Dish.fxml");
+                StartApplication.setScene(loader);
+            } catch (Exception e) {
+    
+                e.printStackTrace();
+            }                    
+        }
+
+    }
+
+
+    static public Pane makeField(int ProductID) throws Exception {
+        String produktDescription = new String(Database.getProductsName(ProductID) + (Database.isVege(ProductID) ? " | VEGE " : "")
+                + " | "  +Database.getProductsWeight(ProductID) + "gr. | " + Database.getProductsDescription(ProductID) + " | " + Database.getProductsCost(ProductID) + '$');
+
+        
+        Button change = new Button("Change");
+        change.setOnAction(new TakeDishHandler(ProductID));
+
+        change.setMaxSize(150, 50);
+        change.setMinSize(150, 50);
+       
+        Pane productField = new Pane();
+        productField.setStyle("-fx-border-style:solid; -fx-padding: 1; -fx-background-color: pink;");
+        if( Database.isActive(ProductID)){
+            productField.setStyle("-fx-background-color: green;");
+        }
+
+        productField.setMaxSize(600, 50);
+        productField.setMinSize(600, 50);
+       
+        Label productInfoLabel = new Label(produktDescription);
+        productInfoLabel.setMaxSize(500, 50);
+        productInfoLabel.setMinSize(500, 50);
+        productInfoLabel.setLayoutX(productField.getLayoutX() + 85);
+        change.setLayoutX(productField.getLayoutX() + 550);
+        change.setLayoutY(productField.getLayoutY());
+        productInfoLabel.setLayoutY(productField.getLayoutY());
+        productField.getChildren().add(productInfoLabel);
+        productField.getChildren().add(change);
+        return productField;
+    }
+
+
+    public void initialize() throws Exception{
         menuCoise.getItems().clear();
         MenuItem mi1 = new MenuItem("Settings");
         MenuItem mi2 = new MenuItem("Dishes");
@@ -76,6 +134,15 @@ public class RestMenuController {
         menuCoise.getItems().add(mi4);
         dishMenu.setVisible(false);
         settingsMenu.setVisible(false);
+
+        
+
+
+        for (Integer currentProductID : Database.getRestaurantProducts(User.MainUser.getId())) {
+            productList.getChildren().add(makeField(currentProductID));
+            System.out.println(productList.getChildren().size());
+            //ProductsID.add(currentProductID);
+        }
 
 
         wojeChoice.getSelectionModel().selectedIndexProperty().addListener(
@@ -95,7 +162,7 @@ public class RestMenuController {
             wojeChoice.getItems().add(w);
         }
 
-        for(int i = 0; i < 23; i++){
+        for(int i = 0; i <= 24; i++){
             String time = (i<10?"0":"")+i+":00";
             inWeekDay.getItems().add(time);
             inWeekEnd.getItems().add(time);
