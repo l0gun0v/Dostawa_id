@@ -1,11 +1,11 @@
 package Data;
 
+import Application.Controllers.OrderHistoryController;
 import Data.SQLBase.SqlCommunicate;
+
+import java.sql.Date;
 import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.Objects;
-import java.util.Random;
+import java.util.*;
 
 import javafx.scene.control.IndexRange;
 import org.w3c.dom.NameList;
@@ -40,13 +40,46 @@ public class Database {
     public static ArrayList < Integer > getOrders(int userID) throws Exception {
         try {
             ArrayList < Integer > orders = new ArrayList<>();
-            String query = "select id_zamowienia from Zamowienia where id_klienta = " + userID + " order by data_zlozenia;";
+            String query = "select id_zamowienia from Zamowienia where id_klienta = " + userID + " order by data_zlozenia desc;";
             ArrayList< ArrayList< String > > queryResult = SqlCommunicate.execute(query);
             queryResult.remove(0);
             for (ArrayList < String > currentOrder : queryResult) {
                 orders.add(Integer.parseInt(currentOrder.get(0)));
             }
             return orders;
+        } catch (Exception e) {
+            e.printStackTrace();
+            throw new Exception();
+        }
+    }
+
+    public static String getStatusName(int statusID) throws Exception {
+        try {
+            String query = "select nazwa from Statusy where id_statusu = " + statusID + ";";
+            ArrayList< ArrayList< String > > queryResult = SqlCommunicate.execute(query);
+            queryResult.remove(0);
+            return (queryResult.get(0).get(0));
+        } catch (Exception e) {
+            e.printStackTrace();
+            throw new Exception();
+        }
+    }
+
+    public static OrderHistoryController.order getOrderFields(int orderID) throws Exception {
+        try {
+            String query = "select * from Zamowienia where id_zamowienia = " + orderID + ";";
+            ArrayList< ArrayList< String > > queryResult = SqlCommunicate.execute(query);
+            queryResult.remove(0);
+            OrderHistoryController.order currentOrder = new OrderHistoryController.order();
+            currentOrder.id = orderID;
+            currentOrder.restaurant = Integer.parseInt(queryResult.get(0).get(1));
+            currentOrder.client = Integer.parseInt(queryResult.get(0).get(2));
+            currentOrder.courier = Integer.parseInt(queryResult.get(0).get(3));
+            currentOrder.status = Integer.parseInt(queryResult.get(0).get(4));
+            currentOrder.address = Integer.parseInt(queryResult.get(0).get(5));
+            currentOrder.make = queryResult.get(0).get(6);
+            currentOrder.delivery = queryResult.get(0).get(7);
+            return currentOrder;
         } catch (Exception e) {
             e.printStackTrace();
             throw new Exception();
@@ -412,6 +445,16 @@ public class Database {
         }
     }
 
+    public static int getAddressByName(String addressName) throws Exception {
+        try {
+            String query = "select id_adresu from  Adresy where adres_dostawy = '" + addressName + "';";
+            ArrayList< ArrayList< String > > queryResult = SqlCommunicate.execute(query);
+            return Integer.parseInt(queryResult.get(1).get(0));
+        } catch (Exception e) {
+            e.printStackTrace();
+            throw new Exception();
+        }
+    }
     public static int getCityByName(String cityName) throws Exception {
         try {
             String query = "select id_miasta from Miasta where nazwa = '" + cityName + "';";
@@ -507,6 +550,65 @@ public class Database {
             throw new Exception();
         }
     }
+
+    static public String getCourierName(int courierID) throws Exception {
+        try {
+            String query = "select imie, nazwisko from Kurjery where id_kurjera = " + courierID + ";";
+            ArrayList< ArrayList< String > > queryResult = SqlCommunicate.execute(query);
+            return (queryResult.get(1).get(0) + " " + queryResult.get(1).get(1));
+        }catch(Exception e) {
+            e.printStackTrace();
+            throw new Exception();
+        }
+    }
+    static public String getCourierNumber(int courierID) throws Exception {
+        try {
+            String query = "select numer_telefonu from Kurjery where id_kurjera = " + courierID + ";";
+            ArrayList< ArrayList< String > > queryResult = SqlCommunicate.execute(query);
+            return (queryResult.get(1).get(0));
+        }catch(Exception e) {
+            e.printStackTrace();
+            throw new Exception();
+        }
+    }
+    static public String getRestaurantNumber(int restID) throws Exception {
+        try {
+            String query = "select numer_telefonu from Restauracje where id_restauracji = " + restID + ";";
+            ArrayList< ArrayList< String > > queryResult = SqlCommunicate.execute(query);
+            return (queryResult.get(1).get(0));
+        }catch(Exception e) {
+            e.printStackTrace();
+            throw new Exception();
+        }
+    }
+    static public String getRestaurantMail(int restID) throws Exception {
+        try {
+            String query = "select mail from Restauracje where id_restauracji = " + restID + ";";
+            ArrayList< ArrayList< String > > queryResult = SqlCommunicate.execute(query);
+            return (queryResult.get(1).get(0));
+        }catch(Exception e) {
+            e.printStackTrace();
+            throw new Exception();
+        }
+    }
+
+    public static HashMap< Integer, Integer > getOrderProducts(int orderID) throws Exception {
+        try {
+            String query = "select * from Produkty_zamowienia where id_zamowienia = " + orderID + ";";
+            ArrayList< ArrayList< String > > queryResult = SqlCommunicate.execute(query);
+            HashMap < Integer, Integer > products = new HashMap<>();
+            queryResult.remove(0);
+            for (ArrayList < String > currentProduct : queryResult) {
+                products.put(Integer.parseInt(currentProduct.get(0)), Integer.parseInt(currentProduct.get(2)));
+            }
+            return products;
+        }catch(Exception e) {
+            e.printStackTrace();
+            throw new Exception();
+        }
+    }
+
+
 
     static public ArrayList < String > getCategories() throws Exception {
         try {
