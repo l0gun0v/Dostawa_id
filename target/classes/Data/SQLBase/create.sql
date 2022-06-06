@@ -347,7 +347,7 @@ BEGIN
                   LEFT JOIN Restauracje r ON(r.id_restauracji = p.id_restauracji)
                   LEFT JOIN Kategorii_produktow kp ON(p.id_produktu = kp.id_produktu)
                   LEFT JOIN Kategorie k ON(k.id_kategoria = kp.id_kategoria)
-                  WHERE ((k.nazwa = kategory) AND (p.active = true));
+                  WHERE ((k.nazwa = kategory) AND (p.active = true) and (r.active = true));
 END;
 $$
 LANGUAGE plpgsql;

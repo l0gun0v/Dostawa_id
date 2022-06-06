@@ -5,14 +5,18 @@ import java.util.ArrayList;
 import Application.StartApplication;
 import Data.Database;
 import Data.User;
+import Data.Database.IncorrectUserException;
+import Data.Database.UserAlreadyRegistred;
 import Utills.LoadXML;
 import javafx.beans.value.ObservableValue;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.geometry.Pos;
 import javafx.scene.chart.PieChart.Data;
 import javafx.scene.control.Button;
+import javafx.scene.control.CheckBox;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.MenuButton;
@@ -25,6 +29,8 @@ import javafx.scene.layout.VBox;
 public class RestMenuController {
     @FXML
     private TextField confPasswordField;
+
+    public Label errorLabel;
 
     @FXML
     private ChoiceBox<String> inWeekDay;
@@ -51,7 +57,7 @@ public class RestMenuController {
     private TextField passwordField;
 
     @FXML
-    private TextField phoneField;
+    private TextField phoneField, newPasswordField;
 
     @FXML
     private HBox timeHBox, adresHBox;
@@ -63,6 +69,8 @@ public class RestMenuController {
     private MenuButton menuCoise;
 
     public Button restName;
+
+    public CheckBox activeCheck;
 
     @FXML
     private Pane dishMenu, orderMenu;
@@ -236,5 +244,84 @@ public class RestMenuController {
         StartApplication.setScene(loader);
     }
 
+
+    @FXML
+    void saveRest() {
+        boolean timecheck = false;
+        if((inWeekDay.getValue() == null) || (outWeekDay.getValue() == null) || outWeekEnd.getValue()==null || inWeekEnd.getValue()==null ){
+            timecheck = true;
+        }
+
+        if(nameField.getText()=="" || passwordField.getText() == ""
+        || phoneField.getText()=="" || mailField.getText()=="" || nameField.getText()=="" || timecheck){
+            errorLabel.setText("Not enough data");
+            errorLabel.setAlignment(Pos.CENTER); 
+            errorLabel.setMaxWidth(Double.MAX_VALUE);
+            return;
+        }
+
+        if(wojeChoice.getValue() == null || miastoChoice.getValue() == null){
+            errorLabel.setText("Not enough data");
+            errorLabel.setAlignment(Pos.CENTER); 
+            errorLabel.setMaxWidth(Double.MAX_VALUE);
+            return;
+        }
+
+        if(adresField.getText() == ""){
+            errorLabel.setText("Not enough data");
+            errorLabel.setAlignment(Pos.CENTER); 
+            errorLabel.setMaxWidth(Double.MAX_VALUE);
+            return;
+        }
+
+        if(newPasswordField.getText().compareTo(confPasswordField.getText()) != 0){
+            errorLabel.setAlignment(Pos.CENTER); 
+            errorLabel.setMaxWidth(Double.MAX_VALUE);
+            errorLabel.setText("Different passwords");
+            return;
+        }
+       
+        if(inWeekDay.getValue().compareTo(outWeekDay.getValue()) > 0 || inWeekEnd.getValue().compareTo(outWeekEnd.getValue()) > 0){
+            errorLabel.setAlignment(Pos.CENTER); 
+            errorLabel.setMaxWidth(Double.MAX_VALUE);
+            errorLabel.setText("Opening time is longer than closing time");
+            return;
+        }
+
+        for(int i = 0; i < phoneField.getText().length(); i++){
+            String s = phoneField.getText();
+            if(s.charAt(i) >= '0' && s.charAt(i) <= '9') continue;
+            errorLabel.setAlignment(Pos.CENTER); 
+            errorLabel.setMaxWidth(Double.MAX_VALUE);
+            errorLabel.setText("Phone number with mistakes");
+            return;
+        }
+
+        ArrayList<String> time = new ArrayList<>();
+        time.add(inWeekDay.getValue());
+        time.add(outWeekDay.getValue());
+        time.add(inWeekEnd.getValue());
+        time.add(outWeekEnd.getValue());
+
+        try{
+            Database.getUser(User.MainUser.getNickname(), passwordField.getText());
+        }catch(IncorrectUserException e){
+            errorLabel.setAlignment(Pos.CENTER); 
+            errorLabel.setMaxWidth(Double.MAX_VALUE);
+            errorLabel.setText("Bad old password");
+        }catch(Exception e){
+            e.printStackTrace();
+        }
+
+        try{
+            if(newPasswordField.getText().compareTo("")!=0){
+                ///change_password(User.MainUser.getNickName(), newPasswordField.getText());
+            }
+            
+        }catch(Exception e){
+
+        }
+
+    }
     
 }

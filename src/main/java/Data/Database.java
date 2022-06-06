@@ -543,7 +543,7 @@ public class Database {
         }
     }
 
-    static public void updateRest(String nickname, String password, String name, String surname, String mail, String phone,ArrayList<String> time){
+    static public void updateRest(String nickname, String password, String name, String surname, String mail, String phone, ArrayList<String> time, boolean active){
         
     }
     ///Dish
