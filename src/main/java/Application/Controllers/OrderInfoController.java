@@ -61,10 +61,7 @@ public class OrderInfoController {
         productField.setMinSize(700, 50);
         Button numberOfProduct = new Button(String.valueOf(number));
         numberOfProduct.setMinSize(50, 50);
-        numberOfProduct.setMaxSize(50, 50);Button numberOfProduct = new Button(String.valueOf(number));
-        numberOfProduct.setMinSize(50, 50);
         numberOfProduct.setMaxSize(50, 50);
-        productField.getChildren().add(numberOfProduct);
         productField.getChildren().add(numberOfProduct);
         Label productInfoLabel = new Label(produktDescription);
         productInfoLabel.setMaxSize(500, 50);
@@ -103,7 +100,7 @@ public class OrderInfoController {
                 printProduct(key, value);
             } catch (Exception e) {
                 e.printStackTrace();
-            }
+           }
         });
         costButton.setText(String.valueOf(orderCost) + "$");
     }
