@@ -457,7 +457,7 @@ public class Database {
             query1 = "update Produkty set waga = " + "" + dish.weight + ",  opis = '" + 
             dish.opis + "', nazwa = '" + dish.name + "', wege = "+ dish.wege + ", active = " + dish.active + " where id_produktu = "+ dish.id + ";";
             System.out.println(query1);
-            SqlCommunicate.execute(query1);
+            SqlCommunicate.update(query1);
             ArrayList < String > categories = new ArrayList<>(Database.getCategories());
             int idk = 0, idp = DishController.mainDish.id;
             for (;idk <= categories.size();) {
@@ -471,7 +471,7 @@ public class Database {
                     else{
                         query1 = "insert into Kategorii_produktow values(" + idp + ", " + idk + ");";
                         System.out.println(query1);
-                        SqlCommunicate.execute(query1);
+                        SqlCommunicate.update(query1);
                     }
                 }
                 else{
@@ -508,7 +508,7 @@ public class Database {
         try{
             query1 = "insert into Produkty values( 0," + User.MainUser.getId() + ", " + dish.weight + ", '" + 
             dish.opis + "', '" + dish.name + "', "+ dish.wege + ", " + dish.active + ");";
-            SqlCommunicate.execute(query1);
+            SqlCommunicate.update(query1);
             query1 = "select currval('seq_id_produktu')";
             int idp = Integer.parseInt( SqlCommunicate.execute(query1).get(1).get(0));
             DishController.mainDish = getDishById(idp);
@@ -524,7 +524,7 @@ public class Database {
                     }
                     else{
                         query1 = "insert into Kategorii_produktow values(" + idp + ", " + idk + ");";
-                        SqlCommunicate.execute(query1);
+                        SqlCommunicate.update(query1);
                     }
                 }
                 else{
@@ -533,7 +533,7 @@ public class Database {
                     }
                     else{
                         query1 = "delete from Kategorii_produktow where id_produktu = " + idp + " and id_kategoria = " + idk + ";";
-                        SqlCommunicate.execute(query1);
+                        SqlCommunicate.update(query1);
                     }
                 }
                 
