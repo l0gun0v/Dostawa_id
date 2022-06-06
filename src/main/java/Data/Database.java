@@ -5,13 +5,17 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Objects;
+import java.util.Random;
 
 import org.w3c.dom.NameList;
 
 import Application.Controllers.DishController;
 
+import javax.sound.midi.SysexMessage;
+
 public class Database {
 
+    public static int IDzamowienia;
     public static class IncorrectPasswordException extends Exception {}
     public static class IncorrectUserException extends Exception {}
     public static class UserAlreadyRegistred extends Exception {}
@@ -42,6 +46,22 @@ public class Database {
         return (SqlCommunicate.execute(query).get(1).get(0));
     }
 
+    static public ArrayList < String > getAddresses(int cityID) throws Exception {
+        try {
+            ArrayList < String > Addresses = new ArrayList<>();
+            String query = "select adres_dostawy from Adresy where id_miasta = " + cityID + ";";
+            ArrayList< ArrayList< String > > queryDistricts = SqlCommunicate.execute(query);
+            for (ArrayList < String > currentAddress : queryDistricts) {
+                if (!Objects.equals(currentAddress.get(0), "adres_dostawy")) {
+                    Addresses.add(currentAddress.get(0));
+                }
+            }
+            return Addresses;
+        } catch(Exception e) {
+            e.printStackTrace();
+            throw new Exception();
+        }
+    }
 
     static public ArrayList < String > getDistricts() throws Exception {
         try {
@@ -341,6 +361,65 @@ public class Database {
             ArrayList< ArrayList< String > > productsName = SqlCommunicate.execute(query);
             return productsName.get(1).get(0);
         }catch(Exception e) {
+            e.printStackTrace();
+            throw new Exception();
+        }
+    }
+
+    static public void createOrder(int id_zamowienia, int id_restauracji,
+    int id_klienta, int id_kurjera, int id_statusu, int id_adresu) throws Exception {
+        try {
+            String query = "select CURRENT_TIMESTAMP(0)";
+            ArrayList< ArrayList< String > > productsName = SqlCommunicate.execute(query);
+            String data = productsName.get(1).get(0);
+            query = "insert into Zamowienia(id_zamowienia, id_restauracji, id_klienta, id_kurjera, id_statusu, id_adresu, data_zlozenia, data_dostarczenia)" +
+                    " values(" + id_zamowienia + ", " + id_restauracji + ", " + id_klienta + ", "
+                    + id_kurjera + ", " + id_statusu + ", " + id_adresu + ", '" + data + "', '" + data + "');";
+            SqlCommunicate.update(query);
+            query = "select currval('seq_id_zamowienia')";
+            IDzamowienia = Integer.parseInt(SqlCommunicate.execute(query).get(1).get(0));
+        } catch (Exception e) {
+            e.printStackTrace();
+            throw new Exception();
+        }
+    }
+
+    static public void addProductToOrder(int currentProductID, int number) throws Exception {
+        try {
+            String query = "insert into Produkty_zamowienia(id_produktu, id_zamowienia, ilosc)" +
+                    " values(" + currentProductID + ", " + IDzamowienia + ", " + number + ");";
+            SqlCommunicate.update(query);
+        } catch (Exception e) {
+            e.printStackTrace();
+            throw new Exception();
+        }
+    }
+
+    public static int getCityByName(String cityName) throws Exception {
+        try {
+            String query = "select id_miasta from Miasta where nazwa = '" + cityName + "';";
+            ArrayList< ArrayList< String > > queryResult = SqlCommunicate.execute(query);
+            return Integer.parseInt(queryResult.get(1).get(0));
+        } catch (Exception e) {
+            e.printStackTrace();
+            throw new Exception();
+        }
+    }
+    static public int findCourier(int IDmiasta) throws Exception {
+        try {
+//            String query = "select id_kurjera from Kurjery where active = true and id_miasta = " + IDmiasta + ";";
+            String query = "select id_kurjera from Kurjery where id_miasta = " + IDmiasta + ";";
+            ArrayList< ArrayList< String > > couriers = SqlCommunicate.execute(query);
+            if (couriers.size() == 1) {
+                throw new Exception("no couriers founded");
+            }
+            Random rand = new Random();
+            int chosenCourier = rand.nextInt(couriers.size());
+            if (chosenCourier == 0) {
+                ++chosenCourier;
+            }
+            return Integer.parseInt(couriers.get(chosenCourier).get(0));
+        } catch (Exception e) {
             e.printStackTrace();
             throw new Exception();
         }
