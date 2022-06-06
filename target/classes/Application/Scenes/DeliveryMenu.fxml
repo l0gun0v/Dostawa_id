@@ -20,11 +20,12 @@
             <Font size="26.0" />
          </font>
       </Button>
-      <VBox fx:id="settingsMenu" layoutX="229.0" layoutY="154.0" prefHeight="561.0" prefWidth="331.0" style="-fx-spacing: 20;">
+      <VBox fx:id="settingsMenu" layoutX="229.0" layoutY="154.0" prefHeight="600.0" prefWidth="331.0" style="-fx-spacing: 20;">
          <children>
             <TextField fx:id="nicknameField" prefHeight="36.0" prefWidth="253.0" promptText="Nickname" />
             <TextField fx:id="passwordField" accessibleRole="PASSWORD_FIELD" prefHeight="36.0" prefWidth="253.0" promptText="Old Password" />
-            <TextField fx:id="confPasswordField" accessibleRole="PASSWORD_FIELD" prefHeight="36.0" prefWidth="253.0" promptText="New Password" />
+            <TextField fx:id="newPasswordField" accessibleRole="PASSWORD_FIELD" prefHeight="36.0" prefWidth="253.0" promptText="New Password" />
+            <TextField fx:id="confPasswordField" accessibleRole="PASSWORD_FIELD" prefHeight="36.0" prefWidth="253.0" promptText="Confirm New Password" />
             <TextField fx:id="phoneField" prefHeight="36.0" prefWidth="253.0" promptText="Phone" />
             <TextField fx:id="mailField" prefHeight="36.0" prefWidth="253.0" promptText="Mail" />
             <TextField fx:id="nameField" prefHeight="36.0" prefWidth="253.0" promptText="Name" />
@@ -67,12 +68,13 @@
                               <Font size="17.0" />
                            </font>
                         </Label>
-                        <ChoiceBox fx:id="miastoChoice1" layoutX="1.0" layoutY="1.0" prefHeight="26.0" prefWidth="149.0" />
+                        <ChoiceBox fx:id="transportChoise" layoutX="1.0" layoutY="1.0" prefHeight="26.0" prefWidth="149.0" />
                      </children>
                   </Pane>
                </children>
             </Pane>
-            <Button mnemonicParsing="false" prefHeight="41.0" prefWidth="345.0" text="save" />
+            <Button mnemonicParsing="false" onAction="#saveChanges" prefHeight="41.0" prefWidth="345.0" text="save" />
+            <Label fx:id="errorLabel" prefHeight="33.0" prefWidth="330.0" />
          </children>
       </VBox>
       <MenuButton fx:id="menuCoise" layoutX="437.0" layoutY="11.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="344.0" text="Choose Menu">

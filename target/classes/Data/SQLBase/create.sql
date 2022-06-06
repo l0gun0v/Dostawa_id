@@ -7,17 +7,6 @@ CREATE TABLE Loginy_hasla (
      )
 );
 
-CREATE TABLE Rabaty (
-    id_rabatu int   NOT NULL,
-    znizka numeric(5,2)   NOT NULL,
-    nazwa varchar(30)   NOT NULL,
-    data_od timestamp   NOT NULL,
-    data_do timestamp   NOT NULL,
-    CONSTRAINT pk_Rabaty PRIMARY KEY (
-        id_rabatu
-     )
-);
-
 CREATE TABLE Statusy (
     id_statusu int   NOT NULL,
     nazwa VARCHAR(22)   NOT NULL,
@@ -132,16 +121,20 @@ CREATE TABLE Produkty (
      )
 );
 
-CREATE TABLE Rabaty_klienci (
-    id_znizki int   NOT NULL,
-    id_klienta int   NOT NULL,
-    min_cena numeric(5,2)   NOT NULL
+CREATE TABLE Promocje(
+    id_promocji int   NOT NULL,
+    promocod varchar(15) NOT NULL,
+     znizka numeric(5,2)   NOT NULL,
+     CONSTRAINT pk_Promocje PRIMARY KEY (
+        id_promocji
+     )
 );
 
-CREATE TABLE Rabaty_produkty (
-    id_znizki int   NOT NULL,
-    id_produktu int   NOT NULL,
-    min_ilosc int   NOT NULL
+CREATE TABLE Promocje_klientow (
+    id_promocji int   NOT NULL,
+    id_klienta int NOT NULL,
+    data_od timestamp not null,
+    data_do timestamp not null
 );
 
 CREATE TABLE Kategorii_produktow (
@@ -233,21 +226,14 @@ REFERENCES Wojewodstwa (id_wojewodstwa);
 ALTER TABLE Adresy_userow ADD CONSTRAINT fk_Adresy_userow_id_klienta FOREIGN KEY(id_uzytkownika)
 REFERENCES  Loginy_hasla(id_uzytkownika);
 
-
 ALTER TABLE Produkty ADD CONSTRAINT fk_Produkty_id_restauracji FOREIGN KEY(id_restauracji)
 REFERENCES Restauracje (id_restauracji);
 
-ALTER TABLE Rabaty_klienci ADD CONSTRAINT fk_Rabaty_klienci_id_znizki FOREIGN KEY(id_znizki)
-REFERENCES Rabaty (id_rabatu);
+ALTER TABLE Promocje_klientow ADD CONSTRAINT fk_Rabaty_klienci_id_znizki FOREIGN KEY(id_promocji)
+REFERENCES Promocje (id_promocji);
 
-ALTER TABLE Rabaty_klienci ADD CONSTRAINT fk_Rabaty_klienci_id_klienta FOREIGN KEY(id_klienta)
+ALTER TABLE Promocje_klientow ADD CONSTRAINT fk_Rabaty_klienci_id_klienta FOREIGN KEY(id_klienta)
 REFERENCES Klienci (id_klienta);
-
-ALTER TABLE Rabaty_produkty ADD CONSTRAINT fk_Rabaty_produkty_id_znizki FOREIGN KEY(id_znizki)
-REFERENCES Rabaty (id_rabatu);
-
-ALTER TABLE Rabaty_produkty ADD CONSTRAINT fk_Rabaty_produkty_id_produktu FOREIGN KEY(id_produktu)
-REFERENCES Produkty (id_produktu);
 
 ALTER TABLE Kategorii_produktow ADD CONSTRAINT fk_Kategorii_produktow_id_produktu FOREIGN KEY(id_produktu)
 REFERENCES Produkty (id_produktu);
@@ -505,20 +491,20 @@ create trigger place_index_to_miasto
 before insert on Miasta for each 
 row execute function place_index_to_miasto();
 
-----Rabaty
-create sequence seq_id_rabatu start with 1 INCREMENT BY 1 maxvalue 999999999;
+----Promocje
+create sequence seq_id_promocji start with 1 INCREMENT BY 1 maxvalue 999999999;
 
-create or REPLACE function place_index_to_rabat() returns trigger as $$
+create or REPLACE function place_index_to_promo() returns trigger as $$
 begin
-    new.id_rabatu = nextval('seq_id_rabatu');
+    new.id_rabatu = nextval('seq_id_promocji');
     return new;
 end;
 $$
 LANGUAGE plpgsql;
 
-create trigger place_index_to_rabat
-before insert on Rabaty for each 
-row execute function place_index_to_rabat();
+create trigger place_index_to_promo
+before insert on Promocje for each 
+row execute function place_index_to_promo();
 
 ----Kategorie
 create sequence seq_id_kateg start with 1 INCREMENT BY 1 maxvalue 999999999;

@@ -11,6 +11,7 @@ public class Dish {
     public Boolean wege;
     public Boolean active;
     public ArrayList<Integer> karegoris;
+    public String cost;
 
     public Dish(int nid, int nid_res, double nweight, String nopis, String nname, boolean nwege, boolean nactive, ArrayList<Integer> nkategoris){
         id = nid;

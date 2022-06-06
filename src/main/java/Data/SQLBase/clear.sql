@@ -3,7 +3,6 @@
 drop trigger place_index_to_login_hasla ON Loginy_hasla; 
 
 DROP TABLE Loginy_hasla CASCADE;
-DROP TABLE Rabaty CASCADE;
 DROP TABLE Statusy CASCADE;
 DROP TABLE  Adresy CASCADE;
 DROP TABLE Kategorie CASCADE;
@@ -14,11 +13,11 @@ DROP TABLE Restauracje CASCADE;
 DROP TABLE Kurjery CASCADE;
 DROP TABLE Adresy_userow CASCADE;
 DROP TABLE Produkty CASCADE;
-DROP TABLE Rabaty_klienci CASCADE;
-DROP TABLE Rabaty_produkty CASCADE;
+DROP TABLE Promocje_klientow CASCADE;
+DROP TABLE Promocje CASCADE;
 DROP TABLE Kategorii_produktow CASCADE;
 DROP TABLE Historia_cen CASCADE;
-DROP TABLE  Zamowienia CASCADE;
+DROP TABLE Zamowienia CASCADE;
 DROP TABLE Produkty_zamowienia CASCADE;
 DROP TABLE Reklamacji CASCADE;
 DROP TABLE Opinie_o_kurjerach CASCADE;
@@ -44,13 +43,9 @@ drop sequence seq_id_opinii_k;
 drop sequence seq_id_opinii_r;
 drop sequence seq_id_rodza;
 drop sequence seq_id_produktu;
-drop sequence seq_id_rabatu;
+drop sequence seq_id_promocji;
 drop sequence seq_id_woje;
 drop sequence seq_id_miasto;
 drop sequence seq_id_kateg;
 drop sequence seq_id_statusy;
 drop sequence seq_id_zamowienia;
-
-
-
-
