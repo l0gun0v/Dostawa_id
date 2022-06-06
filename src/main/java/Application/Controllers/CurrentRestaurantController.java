@@ -49,7 +49,7 @@ public class CurrentRestaurantController {
         SpinnerValueFactory < Integer > rules = new SpinnerValueFactory.IntegerSpinnerValueFactory(0, 100);
         productCounter.setValueFactory(rules);
         Pane productField = new Pane();
-        productField.setStyle("-fx-border-style:solid; -fx-padding: 1; -fx-background-color: pink;");
+        productField.setStyle("-fx-border-style:solid; -fx-padding: 1; -fx-background-color: green;");
         productField.setMaxSize(600, 50);
         productField.setMinSize(600, 50);
         productField.getChildren().add(productCounter);

@@ -7,6 +7,7 @@ import java.util.HashSet;
 import java.util.Objects;
 import java.util.Random;
 
+import javafx.scene.control.IndexRange;
 import org.w3c.dom.NameList;
 
 import Application.Controllers.DishController;
@@ -34,6 +35,22 @@ public class Database {
         }catch(Exception e) {        
         }
         throw new IncorrectUserException();
+    }
+
+    public static ArrayList < Integer > getOrders(int userID) throws Exception {
+        try {
+            ArrayList < Integer > orders = new ArrayList<>();
+            String query = "select id_zamowienia from Zamowienia where id_klienta = " + userID + " order by data_zlozenia;";
+            ArrayList< ArrayList< String > > queryResult = SqlCommunicate.execute(query);
+            queryResult.remove(0);
+            for (ArrayList < String > currentOrder : queryResult) {
+                orders.add(Integer.parseInt(currentOrder.get(0)));
+            }
+            return orders;
+        } catch (Exception e) {
+            e.printStackTrace();
+            throw new Exception();
+        }
     }
 
     static public int getIdByNick(String nickname) throws Exception{        

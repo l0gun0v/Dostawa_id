@@ -6,16 +6,15 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
 
-
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Application.Controllers.OrderHistoryController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Application.Controllers.OrderHistoryController">
    <children>
-      <Button layoutX="25.0" layoutY="14.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="77.0" text="Back" />
-      <Button layoutX="111.0" layoutY="14.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="467.0" />
-      <ScrollPane layoutX="2.0" layoutY="74.0" prefHeight="528.0" prefWidth="600.0">
+      <Button layoutX="25.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#backToUserMenu" prefHeight="43.0" prefWidth="77.0" text="Back" />
+      <Button layoutX="111.0" layoutY="14.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="679.0" />
+      <ScrollPane layoutX="2.0" layoutY="74.0" prefHeight="730.0" prefWidth="800.0">
         <content>
-          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="532.0" prefWidth="602.0">
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="737.0" prefWidth="801.0">
                <children>
-                  <VBox fx:id="vBoxOrderList" prefHeight="528.0" prefWidth="600.0" />
+                  <VBox fx:id="vBoxOrderList" prefHeight="737.0" prefWidth="800.0" />
                </children>
             </AnchorPane>
         </content>

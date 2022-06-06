@@ -94,6 +94,14 @@ public class UserMenuController {
         }catch(Exception e) {
             e.printStackTrace();
         }
-        
+    }
+
+    public void goToOrderHistory() {
+        try {
+            FXMLLoader loader = LoadXML.load("Scenes/OrderHistory.fxml");
+            StartApplication.setScene(loader);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 }
