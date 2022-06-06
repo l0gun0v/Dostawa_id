@@ -100,7 +100,7 @@ public class CurrentOrderController {
         return getCityByName(City.getText());
     }
     public int getChosenAddress() throws Exception {
-        return 1;
+        return getAddressByName(Address.getText());
     }
     public void makeOrder() throws Exception {
         createOrder(0, chosenRestaurantID, MainUser.id, findCourier(getChosenCity()), 1, getChosenAddress());
