@@ -577,7 +577,7 @@ public class Database {
                     }
                     else{
                         query1 = "delete from Kategorii_produktow where id_produktu = " + idp + " and id_kategoria = " + idk + ";";
-                        SqlCommunicate.execute(query1);
+                        SqlCommunicate.update(query1);
                     }
                 }
                 
@@ -771,4 +771,9 @@ public class Database {
         }
         return ans;
     }
+
+    static public Double findLastCost(Integer id) throws NumberFormatException, SQLException{
+        return Double.parseDouble(SqlCommunicate.execute("select cena from Historia_cen where id_produktu = " + id +" order by data_wprowadzenia desc;").get(1).get(0));
+    }
+
 }

@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import Application.StartApplication;
 import Data.Database;
 import Data.Dish;
+import Data.SQLBase.SqlCommunicate;
 import Utills.LoadXML;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -35,7 +36,7 @@ public class DishController {
     private TextField dishText;
 
     @FXML
-    private TextField dishWeight;
+    private TextField dishWeight, costField;
 
     @FXML
     private VBox kategorisBox;
@@ -78,6 +79,8 @@ public class DishController {
         }
         Database.insertDish(new Dish(0, 0, Double.parseDouble( dishWeight.getText()), dishText.getText(), 
         dishName.getText(), wegeCheck.isSelected(), activeCheck.isSelected(), cat));
+        SqlCommunicate.update("insert into Historia_cen values(" + mainDish.id +", " + costField.getText() + ", current_timestamp");
+        goBackToMenu();
     }
 
     @FXML
@@ -109,6 +112,10 @@ public class DishController {
         mainDish.name =  dishName.getText();
         mainDish.opis = dishText.getText();
         Database.updateDish(mainDish);
+        if(mainDish.cost != costField.getText()){
+            SqlCommunicate.update("insert into Historia_cen values(" + mainDish.id +", " + costField.getText() + ", current_timestamp);");
+            mainDish.cost = costField.getText();
+        }
     }
 
 
@@ -127,13 +134,15 @@ public class DishController {
                 }
             }
         }
-
+       
 
         if(mainDish == null){
             addButton.setVisible(true);
             saveButton.setVisible(false);
         }
         else{
+            costField.setText(Database.findLastCost(mainDish.id).toString());
+            mainDish.cost = costField.getText();
             addButton.setVisible(false);
             saveButton.setVisible(true);
             dishName.setText(mainDish.name);
