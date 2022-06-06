@@ -5,7 +5,7 @@ import Utills.LoadXML;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.control.Label;
-import javafx.scene.layout.Pane;
+import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.VBox;
 
 import static Data.Database.getOrders;
@@ -23,8 +23,8 @@ public class OrderHistoryController {
         }
     }
 
-    public Pane makeField(int orderID) {
-        Pane currentOrder = new Pane();
+    public AnchorPane makeField(int orderID) {
+        AnchorPane currentOrder = new AnchorPane();
         currentOrder.setMinSize(600, 70);
         currentOrder.setMaxSize(600, 70);
         currentOrder.getChildren().add(new Label(String.valueOf(orderID)));

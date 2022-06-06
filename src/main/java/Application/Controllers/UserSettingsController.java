@@ -1,5 +1,6 @@
 package Application.Controllers;
 
+import java.sql.SQLException;
 import java.util.ArrayList;
 
 import Application.StartApplication;
@@ -7,27 +8,23 @@ import Data.Database;
 import Data.Password;
 import Data.User;
 import Data.Database.IncorrectUserException;
+import Data.SQLBase.SqlCommunicate;
 import Utills.LoadXML;
 import javafx.beans.value.ObservableValue;
-import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.geometry.Pos;
-import javafx.scene.control.Button;
-import javafx.scene.control.CheckBox;
+import javafx.scene.chart.PieChart.Data;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.Label;
-import javafx.scene.control.MenuButton;
-import javafx.scene.control.MenuItem;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.HBox;
-import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
 
-public class DeliverMenuController {
+public class UserSettingsController{
+
     @FXML
-    private CheckBox activeCheck;
+    private TextField adresField;
 
     @FXML
     private HBox adresHBox;
@@ -36,10 +33,10 @@ public class DeliverMenuController {
     private TextField confPasswordField;
 
     @FXML
-    private TextField mailField;
+    private Label errorLabel;
 
     @FXML
-    private MenuButton menuCoise;
+    private TextField mailField;
 
     @FXML
     private ChoiceBox<String> miastoChoice;
@@ -48,13 +45,10 @@ public class DeliverMenuController {
     private TextField nameField;
 
     @FXML
+    private TextField newPasswordField;
+
+    @FXML
     private TextField nicknameField;
-
-    @FXML
-    private VBox orderList;
-
-    @FXML
-    private Pane orderMenu;
 
     @FXML
     private TextField passwordField;
@@ -63,52 +57,30 @@ public class DeliverMenuController {
     private TextField phoneField;
 
     @FXML
-    private Button restName;
+    private VBox settingsMenu, adresVBox;
 
     @FXML
-    private VBox settingsMenu;
+    private TextField surnameField;
 
     @FXML
-    private TextField surnameField, newPasswordField;
-
-    public Label errorLabel;
-
-
-
-    @FXML
-    private ChoiceBox<String> wojeChoice, transportChoise;
+    private ChoiceBox<String> wojeChoice;
 
     public Integer idm, idw;
 
-    int choosenMenu = -1;
-
     public void initialize() throws Exception{
-        menuCoise.getItems().clear();
-        MenuItem mi1 = new MenuItem("Settings");
-        MenuItem mi3 = new MenuItem("Orders");
-        MenuItem mi4 = new MenuItem("Logout");
-        menuCoise.getItems().add(mi1);
-        menuCoise.getItems().add(mi3);
-        menuCoise.getItems().add(mi4);
-        settingsMenu.setVisible(false);
-        restName.setText(User.MainUser.name);
+       
         surnameField.setText(User.MainUser.surname);
-        
         nicknameField.setText(User.MainUser.nickname);
         nameField.setText(User.MainUser.name);
         mailField.setText(User.MainUser.mail);
         phoneField.setText(User.MainUser.phone);
-        activeCheck.setSelected(User.MainUser.active);
-        idm = User.MainUser.idm;
-        idw = Database.getIdWojeByMiastoId(idm);
-        wojeChoice.setValue(Database.getWojeById(idw));
-        miastoChoice.setValue(Database.getMiastoById(idm));
-
-        for(String t : Database.getAllTransport()){
-            transportChoise.getItems().add(t);
+        
+        for(Integer a : Database.getAllUserAddresses()){
+            idm = Database.getIdMiastaByAdresId(a);
+            idw = Database.getIdWojeByMiastoId(idm);
+            adresVBox.getChildren().add(new Label(Database.getWojeById(idw) + ", " + Database.getMiastoById(idm) + ", " + Database.getAdresById(a)));
         }
 
-        transportChoise.setValue(Database.getTransportByID(User.MainUser.transport));
 
         wojeChoice.getSelectionModel().selectedIndexProperty().addListener(
             (ObservableValue<? extends Number> ov, Number old_val, Number new_val) -> {
@@ -126,60 +98,13 @@ public class DeliverMenuController {
         for(String w : woje){
             wojeChoice.getItems().add(w);
         }
-
-        EventHandler<ActionEvent> events = new EventHandler<ActionEvent>() {
-            public void handle(ActionEvent e)
-            {
-                menuCoise.setText(((MenuItem)e.getSource()).getText());
-                settingsMenu.setVisible(true);
-                orderMenu.setVisible(false);
-                choosenMenu = 1;
-            }
-        };
-
-        EventHandler<ActionEvent> evento = new EventHandler<ActionEvent>() {
-            public void handle(ActionEvent e)
-            {
-                menuCoise.setText(((MenuItem)e.getSource()).getText());
-                settingsMenu.setVisible(false);
-                orderMenu.setVisible(true);
-                choosenMenu = 3;
-            }
-        };
-
-        EventHandler<ActionEvent> eventout = new EventHandler<ActionEvent>() {
-            public void handle(ActionEvent e)
-            {
-                choosenMenu = -1;
-                FXMLLoader loader = LoadXML.load("Scenes/hello-view.fxml");
-                StartApplication.setScene(loader);
-            }
-        };
-        mi1.setOnAction(events);
-        mi3.setOnAction(evento);
-        mi4.setOnAction(eventout);
-
-        if(choosenMenu == 1){
-            mi1.fire();
-        }
-        if(choosenMenu == 3){
-            mi3.fire();
-        }
-
     }
 
-    public void saveChanges(){
-        
 
+    @FXML
+    public void saveChanges() {
         if(nameField.getText()=="" || passwordField.getText() == ""
         || phoneField.getText()=="" || mailField.getText()=="" || nicknameField.getText()=="" ){
-            errorLabel.setText("Not enough data");
-            errorLabel.setAlignment(Pos.CENTER); 
-            errorLabel.setMaxWidth(Double.MAX_VALUE);
-            return;
-        }
-
-        if(wojeChoice.getValue() == null || miastoChoice.getValue() == null){
             errorLabel.setText("Not enough data");
             errorLabel.setAlignment(Pos.CENTER); 
             errorLabel.setMaxWidth(Double.MAX_VALUE);
@@ -227,13 +152,11 @@ public class DeliverMenuController {
             errorLabel.setMaxWidth(Double.MAX_VALUE);
             errorLabel.setText("Bad new password");
         }
-        idm = Database.getMiastoId(miastoChoice.getValue());
-        idw = Database.getWojeId(wojeChoice.getValue());
         try{
             if(newPasswordField.getText().compareTo("") != 0){
                 Database.change_password(newPasswordField.getText());
             }
-            Database.updateKurjer(nameField.getText(), mailField.getText(), phoneField.getText(), surnameField.getText(), activeCheck.isSelected(), idw, idm, Database.getIdTranporta(transportChoise.getValue()));
+            Database.updateUser(nameField.getText(), mailField.getText(), phoneField.getText(), surnameField.getText());
             if(User.MainUser.getNickname() != nicknameField.getText()){
                 Database.change_nickname(nicknameField.getText());
             }
@@ -243,4 +166,28 @@ public class DeliverMenuController {
         errorLabel.setText("");
     }
 
+    public void addAdresButton() throws NumberFormatException, SQLException {
+        String query1;
+        if(wojeChoice.getValue() == null || miastoChoice.getValue() == null || adresField.getText() == ""){
+            return;
+        }
+        query1 = "select insert_adres('" + adresField.getText() +"'," + Database.getMiastoId(miastoChoice.getValue())+");";
+        Integer id_adres = Integer.parseInt(SqlCommunicate.execute(query1).get(1).get(0));
+        try{
+            query1 = "insert into Adresy_userow values(" + id_adres +", " + User.MainUser.id +");";
+            SqlCommunicate.update(query1);
+        }catch(Exception e){
+
+        }
+        adresVBox.getChildren().add(new Label(wojeChoice.getValue() + ", " + miastoChoice.getValue() + ", " + adresField.getText()));
+    }
+
+    public void goBack() {
+        try{
+            FXMLLoader loader = LoadXML.load("Scenes/UserMenu.fxml");
+            StartApplication.setScene(loader);
+        } catch(Exception e) {
+            e.printStackTrace();
+        }
+    }
 }

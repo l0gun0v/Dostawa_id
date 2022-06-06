@@ -6,13 +6,7 @@ import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Objects;
 import java.util.Random;
-
-import javafx.scene.control.IndexRange;
-import org.w3c.dom.NameList;
-
 import Application.Controllers.DishController;
-
-import javax.sound.midi.SysexMessage;
 
 public class Database {
 
@@ -122,7 +116,8 @@ public class Database {
                 x.surname = A.get(3);
                 x.phone = A.get(4);
                 x.mail = A.get(5);
-                x.active =  (A.get(6).compareTo("t") == 0 ? true : false);
+                x.idm = Integer.parseInt(A.get(6));
+                x.active =  (A.get(7).compareTo("t") == 0 ? true : false);
                 return x;
             }
             else if(pos == 9){
@@ -648,6 +643,7 @@ public class Database {
     static public void updateRest(String name, String mail, String phone, ArrayList<String> time, boolean active, Integer idw, Integer idm, String ida) throws SQLException{
         User.MainUser.name = name;
         User.MainUser.mail = phone;
+        User.MainUser.phone = phone;
         User.MainUser.inWD = time.get(0);
         User.MainUser.outWD = time.get(1);
         User.MainUser.inWE = time.get(2);
@@ -666,13 +662,52 @@ public class Database {
         SqlCommunicate.update("update Restauracje set nazwa_restauracji = '" + name +"', numer_telefonu = " + phone + ", mail = '" + mail + 
         "', dzien_powszedni_czas_otwarcja = '" +  User.MainUser.inWD + "', dzien_powszedni_czas_zamkniecia = '" +  User.MainUser.outWD +
         "', dni_wolne_czas_otwarcja = '" +  User.MainUser.inWE + "', dni_wolne_czas_zamkniecia = '" +  User.MainUser.outWE + "', active = " + active +
-          " where id_restauracji = " + User.MainUser.getId());
+          " where id_restauracji = " + User.MainUser.getId()+ ";");
         /* 
         System.out.println("update Restauracje set nazwa_restauracji = '" + name +"', numer_telefonu = " + phone + ", mail = '" + mail + 
         "', dzien_powszedni_czas_otwarcja = '" +  User.MainUser.inWD + "', dzien_powszedni_czas_zamkniecia = '" +  User.MainUser.outWD +
         "', dni_wolne_czas_otwarcja = '" +  User.MainUser.inWE + "', dni_wolne_czas_zamkniecia = '" +  User.MainUser.outWE + "', active = " + active +
           " where id_restauracji = " + User.MainUser.getId());
           */
+    }
+
+    static public void updateKurjer(String name, String mail, String phone, String surname, boolean active, Integer idw, Integer idm, Integer transport) throws SQLException{
+        User.MainUser.name = name;
+        User.MainUser.mail = phone;
+        User.MainUser.active = active;
+        User.MainUser.surname = surname;
+        User.MainUser.phone = phone;
+        User.MainUser.transport = transport;
+
+        SqlCommunicate.update("update Kurjery set imie = '" + name +"', numer_telefonu = " + phone + ", mail = '" + mail + 
+        "', nazwisko = '" +  User.MainUser.surname + "', id_transportu = " +  User.MainUser.transport +
+         ", id_miasta = " +  idm + ", active = " + active +
+          " where id_kurjera = " + User.MainUser.getId() + ";");
+        /* 
+        System.out.println("update Kurjery set imie = '" + name +"', numer_telefonu = " + phone + ", mail = '" + mail + 
+        "', nazwisko = '" +  User.MainUser.surname + "', id_transportu = " +  User.MainUser.transport +
+         ", id_miasta = " +  idm + ", active = " + active +
+          " where id_kurjera = " + User.MainUser.getId()+ ";");
+          */
+          
+    }
+
+    static public void updateUser(String name, String mail, String phone, String surname) throws SQLException{
+        User.MainUser.name = name;
+        User.MainUser.mail = phone;
+        User.MainUser.surname = surname;
+        User.MainUser.phone = phone;
+
+        SqlCommunicate.update("update Klienci set imie = '" + name +"', numer_telefonu = " + phone + ", mail = '" + mail + 
+        "', nazwisko = '" +  User.MainUser.surname + "' " +
+          " where id_klienta = " + User.MainUser.getId() + ";");
+        /* 
+        System.out.println("update Kurjery set imie = '" + name +"', numer_telefonu = " + phone + ", mail = '" + mail + 
+        "', nazwisko = '" +  User.MainUser.surname + "', id_transportu = " +  User.MainUser.transport +
+         ", id_miasta = " +  idm + ", active = " + active +
+          " where id_kurjera = " + User.MainUser.getId()+ ";");
+          */
+          
     }
 
     static public void change_password(String password) throws SQLException{
@@ -708,7 +743,32 @@ public class Database {
         return SqlCommunicate.execute("select nazwa from Wojewodstwa where id_wojewodstwa = " + id + ";").get(1).get(0);
     }
 
+    static public ArrayList<String> getAllTransport() throws SQLException{
+        ArrayList<String> ans = new ArrayList<>();
+        ArrayList<ArrayList<String> > query = SqlCommunicate.execute("select nazwa_transportu from Transport_kurjera;");
+        query.remove(0);
+        for(ArrayList<String> i : query){
+            ans.add(i.get(0));
+        }
+        return ans;
+    }
+
+    static public Integer getIdTranporta(String name)throws Exception{
+        return Integer.parseInt(SqlCommunicate.execute("select id_transportu from Transport_kurjera where nazwa_transportu = '" + name + "';").get(1).get(0));
+    }
+
+    static public String getTransportByID(Integer id)throws Exception{
+        return SqlCommunicate.execute("select nazwa_transportu from Transport_kurjera where id_transportu = '" + id + "';").get(1).get(0);
+    }
 
     ///Dish
-
+    static public ArrayList<Integer> getAllUserAddresses() throws SQLException{
+        ArrayList<Integer> ans = new ArrayList<>();
+        ArrayList<ArrayList<String> > query = SqlCommunicate.execute("select id_adresu from Adresy_userow where id_uzytkownika = " + User.MainUser.id + ";");
+        query.remove(0);
+        for(ArrayList<String> i : query){
+            ans.add(Integer.parseInt(i.get(0)));
+        }
+        return ans;
+    }
 }

@@ -11,7 +11,7 @@ public class User {
     public String name, surname;
     public String adres, mail, phone;
     public Boolean active;
-    public Integer transport;
+    public Integer transport, idm;
 
     public Integer getId(){
         return id;

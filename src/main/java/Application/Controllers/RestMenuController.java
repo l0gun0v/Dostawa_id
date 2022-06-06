@@ -6,7 +6,6 @@ import Data.Database;
 import Data.Password;
 import Data.User;
 import Data.Database.IncorrectUserException;
-import Data.Database.UserAlreadyRegistred;
 import Utills.LoadXML;
 import javafx.beans.value.ObservableValue;
 import javafx.event.ActionEvent;
@@ -14,7 +13,6 @@ import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.geometry.Pos;
-import javafx.scene.chart.PieChart.Data;
 import javafx.scene.control.Button;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.ChoiceBox;
@@ -274,7 +272,7 @@ public class RestMenuController {
         }
 
         if(nameField.getText()=="" || passwordField.getText() == ""
-        || phoneField.getText()=="" || mailField.getText()=="" || nameField.getText()=="" || timecheck){
+        || phoneField.getText()=="" || mailField.getText()=="" ||  nicknameField.getText()=="" || timecheck){
             errorLabel.setText("Not enough data");
             errorLabel.setAlignment(Pos.CENTER); 
             errorLabel.setMaxWidth(Double.MAX_VALUE);

@@ -104,4 +104,14 @@ public class UserMenuController {
             e.printStackTrace();
         }
     }
+
+
+    public void goToSettings() {
+        try {
+            FXMLLoader loader = LoadXML.load("Scenes/UserSettings.fxml");
+            StartApplication.setScene(loader);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
 }

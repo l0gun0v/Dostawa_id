@@ -9,7 +9,7 @@
    <children>
       <Button layoutX="395.0" layoutY="740.0" mnemonicParsing="false" onMouseClicked="#goToOrderHistory" prefHeight="48.0" prefWidth="128.0" text="Orders history" />
       <Button layoutX="38.0" layoutY="740.0" mnemonicParsing="false" onAction="#backToLoginPage" prefHeight="48.0" prefWidth="157.0" text="Back to Log In page" />
-      <Button layoutX="239.0" layoutY="740.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="128.0" text="Settings" />
+      <Button layoutX="239.0" layoutY="740.0" mnemonicParsing="false" onAction="#goToSettings" prefHeight="48.0" prefWidth="128.0" text="Settings" />
       <Button layoutX="542.0" layoutY="735.0" mnemonicParsing="false" onAction="#findRestaurans" prefHeight="55.0" prefWidth="252.0" text="Find!" />
       <ScrollPane layoutX="14.0" layoutY="18.0" prefHeight="709.0" prefWidth="509.0">
          <content>
