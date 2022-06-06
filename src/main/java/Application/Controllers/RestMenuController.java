@@ -57,13 +57,15 @@ public class RestMenuController {
     private HBox timeHBox, adresHBox;
 
     @FXML
-    private VBox settingsMenu, productList;
+    private VBox settingsMenu, productList, orderList;
 
     @FXML
     private MenuButton menuCoise;
 
+    public Button restName;
+
     @FXML
-    private Pane dishMenu;
+    private Pane dishMenu, orderMenu;
 
     static int choosenMenu = -1;
 
@@ -134,7 +136,7 @@ public class RestMenuController {
         menuCoise.getItems().add(mi4);
         dishMenu.setVisible(false);
         settingsMenu.setVisible(false);
-
+        restName.setText(User.MainUser.name);
         
 
 
@@ -177,6 +179,7 @@ public class RestMenuController {
                 menuCoise.setText(((MenuItem)e.getSource()).getText());
                 dishMenu.setVisible(false);
                 settingsMenu.setVisible(true);
+                orderMenu.setVisible(false);
                 choosenMenu = 1;
             }
         };
@@ -187,6 +190,7 @@ public class RestMenuController {
                 menuCoise.setText(((MenuItem)e.getSource()).getText());
                 dishMenu.setVisible(true);
                 settingsMenu.setVisible(false);
+                orderMenu.setVisible(false);
                 choosenMenu = 2;
             }
         };
@@ -197,6 +201,7 @@ public class RestMenuController {
                 menuCoise.setText(((MenuItem)e.getSource()).getText());
                 dishMenu.setVisible(false);
                 settingsMenu.setVisible(false);
+                orderMenu.setVisible(true);
                 choosenMenu = 3;
             }
         };

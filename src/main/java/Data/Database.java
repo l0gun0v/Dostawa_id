@@ -70,8 +70,15 @@ public class Database {
             }
             else if(pos == 8){
                 query = "select * from Kurjery where id_kurjera = " + id + ";";
-              //  ArrayList <String> A = SqlCommunicate.execute(query).get(1);
-                //TO DO
+                ArrayList <String> A = SqlCommunicate.execute(query).get(1);
+                User x = new User(A.get(0), id);
+                x.transport = Integer.parseInt(A.get(1));
+                x.name = A.get(2);
+                x.surname = A.get(3);
+                x.phone = A.get(4);
+                x.mail = A.get(5);
+                x.active =  (A.get(6).compareTo("t") == 0 ? true : false);
+                return x;
             }
             else if(pos == 9){
                 query = "select * from Restauracje where id_restauracji = " + id + ";";
@@ -84,7 +91,7 @@ public class Database {
                 x.outWD = A.get(5);
                 x.inWE = A.get(6);
                 x.outWE = A.get(7);
-                x.active = Boolean.parseBoolean(A.get(8));
+                x.active =  (A.get(8).compareTo("t") == 0 ? true : false);
                 return x;
             }
             return null;
@@ -109,7 +116,7 @@ public class Database {
             case 1:
                 try{
                     query1 = "insert into Loginy_hasla values( -1 " + ", '" + nickname + "', getHash('" + password + "'));";
-                    SqlCommunicate.execute(query1);
+                    SqlCommunicate.update(query1);
                 }catch(Exception e){
 
                 }
@@ -118,24 +125,38 @@ public class Database {
                 Integer id_adres = Integer.parseInt(SqlCommunicate.execute(query1).get(1).get(0));
                 try{
                     query1 = "insert into Klienci values(" + id + ",'" + name + "','" + surname + "'," + Long.parseLong(phone) + ",'" +mail + "'" + ");";
-                    SqlCommunicate.execute(query1);
+                    SqlCommunicate.update(query1);
                 }catch(Exception e){
 
                 }
                 try{
                     query1 = "insert into Adresy_userow values(" + id_adres +", " + id+");";
-                    SqlCommunicate.execute(query1);
+                    SqlCommunicate.update(query1);
                 }catch(Exception e){
 
                 }
                 break;
             case 2:
-           
+            try{
+                query1 = "insert into Loginy_hasla values( -2 " + ", '" + nickname + "', getHash('" + password + "'));";
+                SqlCommunicate.update(query1);
+                }catch(Exception e){
+
+                }
+                id = getIdByNick(nickname);
+                
+                try{
+                    query1 = "insert into Kurjery values(" + id + ", 1 ,'" + name + "','" + surname + "'," + Long.parseLong(phone) + ",'" +mail + "', "+ miasto + ", false" + ");";
+                    SqlCommunicate.update(query1);
+                   
+                }catch(Exception e){
+
+                }
                 break;
             case 3:
                 try{
                     query1 = "insert into Loginy_hasla values( -3 " + ", '" + nickname + "', getHash('" + password + "'));";
-                    SqlCommunicate.execute(query1);
+                    SqlCommunicate.update(query1);
                 }catch(Exception e){
 
                 }
@@ -146,13 +167,13 @@ public class Database {
                     query1 = "insert into Restauracje values(" + id + ",'" + name + "'," + Long.parseLong(phone) + ",'" +mail + "', '"
                     + time.get(0) +"', '" + time.get(1) +"', '" + time.get(2) +"', '" + time.get(3) +"', false" + ");";
                     System.out.println(query1);
-                    SqlCommunicate.execute(query1);
+                    SqlCommunicate.update(query1);
                 }catch(Exception e){
 
                 }
                 try{
                     query1 = "insert into Adresy_userow values(" + id_adres +", " + id+");";
-                    SqlCommunicate.execute(query1);
+                    SqlCommunicate.update(query1);
                 }catch(Exception e){
 
                 }
@@ -160,8 +181,7 @@ public class Database {
             default:
                 throw new Exception();
         }
-        SqlCommunicate.update(query1);
-
+       // SqlCommunicate.update(query1);
     }
 
     ///user and reg

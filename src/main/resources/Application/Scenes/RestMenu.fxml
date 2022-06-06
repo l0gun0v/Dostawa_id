@@ -14,12 +14,12 @@
 
 <Pane maxHeight="800.0" maxWidth="800.0" minHeight="800.0" minWidth="800.0" prefHeight="800.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Application.Controllers.RestMenuController">
    <children>
-      <Button layoutX="19.0" layoutY="10.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="399.0" text="Name">
+      <Button fx:id="restName" layoutX="19.0" layoutY="10.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="399.0" text="Name">
          <font>
             <Font size="26.0" />
          </font>
       </Button>
-      <VBox fx:id="settingsMenu" layoutX="229.0" layoutY="154.0" prefHeight="561.0" prefWidth="331.0" style="-fx-spacing: 20;" visible="false">
+      <VBox fx:id="settingsMenu" layoutX="229.0" layoutY="154.0" prefHeight="561.0" prefWidth="331.0" style="-fx-spacing: 20;">
          <children>
             <TextField fx:id="nicknameField" prefHeight="36.0" prefWidth="253.0" promptText="Nickname" />
             <TextField fx:id="passwordField" accessibleRole="PASSWORD_FIELD" prefHeight="36.0" prefWidth="253.0" promptText="Old Password" />
@@ -120,6 +120,15 @@
                   <Font size="26.0" />
                </font>
             </Button>
+         </children>
+      </Pane>
+      <Pane fx:id="orderMenu" layoutX="31.0" layoutY="100.0" prefHeight="658.0" prefWidth="750.0">
+         <children>
+            <ScrollPane layoutX="1.0" layoutY="54.0" prefHeight="561.0" prefWidth="740.0">
+               <content>
+                  <VBox fx:id="orderList" prefHeight="557.0" prefWidth="734.0" />
+               </content>
+            </ScrollPane>
          </children>
       </Pane>
    </children>

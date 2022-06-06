@@ -62,10 +62,10 @@ public class StartController extends StartApplication {
                 setScene(loader);
                 return;
             }
-           // else if(pos == kurierIdPos){
-           //     FXMLLoader loader = LoadXML.load("Scenes/ChatView/ChatView.fxml");
-           //     setScene(loader);
-           // }
+            else if(pos == kurierIdPos){
+                FXMLLoader loader = LoadXML.load("Scenes/DeliveryMenu.fxml");
+                setScene(loader);
+            }
             else{
                 FXMLLoader loader = LoadXML.load("Scenes/RestMenu.fxml");
                 setScene(loader);

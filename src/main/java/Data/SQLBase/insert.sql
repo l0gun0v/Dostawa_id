@@ -29,9 +29,9 @@ insert into Transport_kurjera values(1, 'Car');
 insert into Transport_kurjera values(2, 'Motobake');
 insert into Transport_kurjera values(3, 'Bake');
 
-insert into Kurjery values(800000000, 1, 'Mikolaj', 'Sankewicz', 8800553535, 'fastdeliver@gmail.com', 1);
-insert into Kurjery values(800000001, 2, 'Kasia', 'Samsonawa', 8800553535, 'dostawapl@gmail.com', 1);
-insert into Kurjery values(800000002, 3, 'Andzej', 'Protasewicz', 8800553535, 'deliveryclubr@gmail.com', 1);
+insert into Kurjery values(800000000, 1, 'Mikolaj', 'Sankewicz', 8800553535, 'fastdeliver@gmail.com', 1, false);
+insert into Kurjery values(800000001, 2, 'Kasia', 'Samsonawa', 8800553535, 'dostawapl@gmail.com', 1, true);
+insert into Kurjery values(800000002, 3, 'Andzej', 'Protasewicz', 8800553535, 'deliveryclubr@gmail.com', 1, true);
 
 insert into Wojewodstwa values(1,'Małopolskie');
 insert into Wojewodstwa values(2,'Mazowieckie');

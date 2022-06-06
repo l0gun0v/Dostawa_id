@@ -50,9 +50,6 @@ public class SqlCommunicate {
             return result;
         } catch (Exception e) {
             System.out.println(e.getMessage());
-            if(e.getMessage().charAt(0) == 'З' || e.getMessage().charAt(0) == 'N'){
-                return null;
-            }
             throw e;
         } finally {
             if (queryStatement != null) {
@@ -60,8 +57,8 @@ public class SqlCommunicate {
                     queryStatement.close();
                 } catch (Exception e) {
                     if(e.getMessage() == "No results were returned by the query."){
-                        //e.printStackTrace();
-                    //    System.err.println("Error closing query [" + query + "]: " + e.getClass().getName() + e.getMessage());
+                        e.printStackTrace();
+                        System.err.println("Error closing query [" + query + "]: " + e.getClass().getName() + e.getMessage());
                     }
                 }
             }

@@ -108,6 +108,7 @@ CREATE TABLE Kurjery (
     numer_telefonu numeric(11)   NOT NULL check(numer_telefonu > 0),
     mail VARCHAR(40)   NOT NULL,
     id_miasta int not null,
+    active boolean not null,
     CONSTRAINT pk_Kurjery PRIMARY KEY (
         id_kurjera
      )
