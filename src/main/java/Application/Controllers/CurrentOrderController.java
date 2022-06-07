@@ -14,6 +14,8 @@ import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
 
 import java.util.Iterator;
+import java.util.Objects;
+
 import static Application.Controllers.CurrentRestaurantController.chosenProducts;
 import static Application.Controllers.CurrentRestaurantController.chosenProductsCount;
 import static Application.Controllers.UserMenuController.chosenRestaurantID;
@@ -133,10 +135,19 @@ public class CurrentOrderController {
         return getAddressByName(Address.getText());
     }
     public void makeOrder() throws Exception {
+        if (Objects.equals(Address.getText(), "Address")) {
+            return;
+        }
         createOrder(0, chosenRestaurantID, MainUser.id, findCourier(getChosenCity()), 1, getChosenAddress());
         Iterator < Integer > it = chosenProductsCount.iterator();
         for (Integer currentProductID : chosenProducts) {
             addProductToOrder(currentProductID, it.next());
+        }
+        try{
+            FXMLLoader loader = LoadXML.load("Scenes/UserMenu.fxml");
+            StartApplication.setScene(loader);
+        }catch(Exception e) {
+            e.printStackTrace();
         }
     }
 }

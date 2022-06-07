@@ -17,6 +17,8 @@ import java.util.Objects;
 import java.util.Random;
 import Application.Controllers.DishController;
 
+import static Application.Controllers.OrderHistoryController.orderForInfo;
+
 public class Database {
 
     public static int IDzamowienia;
@@ -68,6 +70,37 @@ public class Database {
         }
     }
 
+    public static void sendReview(int stars, String comment) throws Exception {
+        try {
+            String query = "select CURRENT_TIMESTAMP(0)";
+            ArrayList< ArrayList< String > > productsName = SqlCommunicate.execute(query);
+            String data = productsName.get(1).get(0);
+            query = "insert into Opinia_o_restauracjach(id_opinii, id_zamowienia, ocena, komentarz, data)" +
+                    " values(0, " + orderForInfo + ", " + stars + ", '"
+                    + comment + "', '" + data + "');";
+            SqlCommunicate.update(query);
+//            System.out.println(query);
+        } catch (Exception e) {
+            e.printStackTrace();
+            throw new Exception();
+        }
+    }
+
+    public static void sendReviewCourier(int stars, String comment) throws Exception {
+        try {
+            String query = "select CURRENT_TIMESTAMP(0)";
+            ArrayList< ArrayList< String > > productsName = SqlCommunicate.execute(query);
+            String data = productsName.get(1).get(0);
+            query = "insert into Opinie_o_kurjerach(id_opinii, id_zamowienia, ocena, opis_opinii, data)" +
+                    " values(0, " + orderForInfo + ", " + stars + ", '"
+                    + comment + "', '" + data + "');";
+            SqlCommunicate.update(query);
+//            System.out.println(query);
+        } catch (Exception e) {
+            e.printStackTrace();
+            throw new Exception();
+        }
+    }
     public static OrderHistoryController.order getOrderFields(int orderID) throws Exception {
         try {
             String query = "select * from Zamowienia where id_zamowienia = " + orderID + ";";
