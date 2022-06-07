@@ -1,6 +1,7 @@
 package Application.Controllers;
 
 import Application.StartApplication;
+import Data.Database;
 import Utills.LoadXML;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
@@ -8,21 +9,19 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
-import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
-
-import javax.swing.*;
-import java.util.Date;
-
 import static Data.Database.*;
 import static Data.User.MainUser;
+
+import java.sql.SQLException;
 
 public class OrderHistoryController {
     @FXML
     private VBox vBoxOrderList;
 
     static public int orderForInfo;
+    static public String orderTime;
 
     public static class order {
         public int id, restaurant, client, courier, status, address;
@@ -84,6 +83,12 @@ public class OrderHistoryController {
             @Override
             public void handle(ActionEvent actionEvent) {
                 orderForInfo = currentOrder.id;
+                try {
+                    orderTime = Database.getOrderTime(orderForInfo);
+                } catch (SQLException e1) {
+                    // TODO Auto-generated catch block
+                    e1.printStackTrace();
+                }
                 try{
                     FXMLLoader loader = LoadXML.load("Scenes/OrderInfo.fxml");
                     StartApplication.setScene(loader);
