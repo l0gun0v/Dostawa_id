@@ -33,6 +33,8 @@ public class RestaurantReviewsController {
 
 
         Pane review = new Pane();
+
+
         review.setStyle("-fx-border-style:solid; -fx-padding: 1; -fx-background-color: green;");
         review.setMinSize(700, 250);
         review.setMaxSize(700, 250);
