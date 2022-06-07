@@ -280,7 +280,7 @@ public class DeliverMenuController {
         try {
             orderStatus.setValue(Database.getStatusName(currentOrder.status));
         } catch (Exception e) {
-            // TODO Auto-generated catch block
+        
             e.printStackTrace();
         }
 
@@ -293,7 +293,7 @@ public class DeliverMenuController {
                         return;
                     }
                 } catch (Exception e2) {
-                    // TODO Auto-generated catch block
+                    
                     e2.printStackTrace();
                 }
 
@@ -301,7 +301,7 @@ public class DeliverMenuController {
                     currentOrder.status = Database.getIdStatusByName(orderStatus.getValue());
                     System.out.println(currentOrder.status);
                 } catch (Exception e1) {
-                    // TODO Auto-generated catch block
+                   
                     e1.printStackTrace();
                 }
                 orderStatus.getItems().clear();
@@ -311,7 +311,7 @@ public class DeliverMenuController {
                     Database.orderUpdateStatus(currentOrder.id, currentOrder.status);
                     Database.changeOrderDelTime(currentOrder.id);
                 } catch (Exception e) {
-                    // TODO Auto-generated catch block
+                    
                     e.printStackTrace();
                 }
                 if (currentOrder.status == 6) {
@@ -342,7 +342,7 @@ public class DeliverMenuController {
                 try {
                     orderTime = Database.getOrderTime(orderForInfo);
                 } catch (Exception e1) {
-                    // TODO Auto-generated catch block
+                  
                     e1.printStackTrace();
                 }
                 try{

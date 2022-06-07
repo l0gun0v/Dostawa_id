@@ -398,7 +398,7 @@ public class RestMenuController {
         try {
             orderStatus.setValue(Database.getStatusName(currentOrder.status));
         } catch (Exception e) {
-            // TODO Auto-generated catch block
+           
             e.printStackTrace();
         }
 
@@ -411,7 +411,7 @@ public class RestMenuController {
                         return;
                     }
                 } catch (Exception e2) {
-                    // TODO Auto-generated catch block
+                   
                     e2.printStackTrace();
                 }
 
@@ -419,7 +419,7 @@ public class RestMenuController {
                     currentOrder.status = Database.getIdStatusByName(orderStatus.getValue());
                     System.out.println(currentOrder.status);
                 } catch (Exception e1) {
-                    // TODO Auto-generated catch block
+                    
                     e1.printStackTrace();
                 }
                 orderStatus.getItems().clear();
@@ -429,15 +429,15 @@ public class RestMenuController {
                             orderStatus.getItems().add(s);
                     }
                 } catch (SQLException e) {
-                    // TODO Auto-generated catch block
+                    
                     e.printStackTrace();
                 }
                 try {
-                   // System.out.println(Database.getStatusName(currentOrder.status));
+                  
                     orderStatus.setValue(Database.getStatusName(currentOrder.status));
                     Database.orderUpdateStatus(currentOrder.id, currentOrder.status);
                 } catch (Exception e) {
-                    // TODO Auto-generated catch block
+            
                     e.printStackTrace();
                 }
                 if (currentOrder.status == 6) {
@@ -468,7 +468,7 @@ public class RestMenuController {
                 try {
                     orderTime = Database.getOrderTime(orderForInfo);
                 } catch (SQLException e1) {
-                    // TODO Auto-generated catch block
+                  
                     e1.printStackTrace();
                 }
                 try{
