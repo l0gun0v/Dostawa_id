@@ -99,6 +99,23 @@ public class OrderHistoryController {
         });
 
         Button toComplain = new Button("Complain");
+        if (!wasComplained(currentOrder.id)) {
+            toComplain.setOnAction(new EventHandler<ActionEvent>() {
+                @Override
+                public void handle(ActionEvent actionEvent) {
+                    try {
+                        orderForInfo = currentOrder.id;
+                        FXMLLoader loader = LoadXML.load("Scenes/ComplaintsMenu.fxml");
+                        StartApplication.setScene(loader);
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
+                }
+            });
+        } else {
+            toComplain.setText("Was complained");
+            toComplain.setStyle("-fx-border-style:solid; -fx-padding: 1; -fx-background-color: red;");
+        }
         toComplain.setMinSize(80, 50);
         toComplain.setMaxSize(80, 50);
         toComplain.setLayoutX(orderStatus.getLayoutX() + 390);

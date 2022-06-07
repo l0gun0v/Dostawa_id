@@ -112,4 +112,13 @@ public class OrderInfoController {
         });
         costButton.setText(String.valueOf(orderCost) + "$");
     }
+
+    public void reviewButton() throws Exception {
+        try{
+            FXMLLoader loader = LoadXML.load("Scenes/reviewMenu.fxml");
+            StartApplication.setScene(loader);
+        } catch(Exception e) {
+            e.printStackTrace();
+        }
+    }
 }

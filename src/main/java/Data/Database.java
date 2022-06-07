@@ -10,6 +10,8 @@ import java.util.Objects;
 import java.util.Random;
 import Application.Controllers.DishController;
 
+import static Application.Controllers.OrderHistoryController.orderForInfo;
+
 public class Database {
 
     public static int IDzamowienia;
@@ -96,6 +98,73 @@ public class Database {
         }
     }
 
+    public static void sendReview(int stars, String comment) throws Exception {
+        try {
+            String query = "select CURRENT_TIMESTAMP(0)";
+            ArrayList< ArrayList< String > > productsName = SqlCommunicate.execute(query);
+            String data = productsName.get(1).get(0);
+            query = "insert into Opinia_o_restauracjach(id_opinii, id_zamowienia, ocena, komentarz, data)" +
+                    " values(0, " + orderForInfo + ", " + stars + ", '"
+                    + comment + "', '" + data + "');";
+            SqlCommunicate.update(query);
+//            System.out.println(query);
+        } catch (Exception e) {
+            e.printStackTrace();
+            throw new Exception();
+        }
+    }
+
+    public static int getComplainType(String complainName) throws Exception {
+        try {
+            String query = "select id_rodzaju from Rodzaj_reklamacji where nazwa = '" + complainName + "';";
+            ArrayList< ArrayList< String > > queryResult= SqlCommunicate.execute(query);
+            return Integer.parseInt(queryResult.get(1).get(0));
+        } catch (Exception e) {
+            e.printStackTrace();
+            throw new Exception();
+        }
+    }
+    public static boolean wasComplained(int ID) throws Exception {
+        try {
+            String query = "select * from Reklamacji where id_zamowienia = " + ID + ";";
+            ArrayList< ArrayList< String > > queryResult = SqlCommunicate.execute(query);
+            return (queryResult.size() > 1);
+        } catch (Exception e) {
+            e.printStackTrace();
+            throw new Exception();
+        }
+    }
+    public static void submitComplain(int type, String comment) throws Exception {
+        try {
+            String query = "select CURRENT_TIMESTAMP(0)";
+            ArrayList< ArrayList< String > > productsName = SqlCommunicate.execute(query);
+            String data = productsName.get(1).get(0);
+            query = "insert into Reklamacji(id_reklamacji, id_zamowienia, id_rodzaju, komentarz, data_zlozenia)" +
+                    " values(0, " + orderForInfo + ", " + type + ", '"
+                    + comment + "', '" + data + "');";
+            SqlCommunicate.update(query);
+//            System.out.println(query);
+        } catch (Exception e) {
+            e.printStackTrace();
+            throw new Exception();
+        }
+    }
+
+    public static void sendReviewCourier(int stars, String comment) throws Exception {
+        try {
+            String query = "select CURRENT_TIMESTAMP(0)";
+            ArrayList< ArrayList< String > > productsName = SqlCommunicate.execute(query);
+            String data = productsName.get(1).get(0);
+            query = "insert into Opinie_o_kurjerach(id_opinii, id_zamowienia, ocena, opis_opinii, data)" +
+                    " values(0, " + orderForInfo + ", " + stars + ", '"
+                    + comment + "', '" + data + "');";
+            SqlCommunicate.update(query);
+//            System.out.println(query);
+        } catch (Exception e) {
+            e.printStackTrace();
+            throw new Exception();
+        }
+    }
     public static OrderHistoryController.order getOrderFields(int orderID) throws Exception {
         try {
             String query = "select * from Zamowienia where id_zamowienia = " + orderID + ";";
@@ -512,6 +581,22 @@ public class Database {
             }
             return Integer.parseInt(couriers.get(chosenCourier).get(0));
         } catch (Exception e) {
+            e.printStackTrace();
+            throw new Exception();
+        }
+    }
+
+    static public ArrayList < String > getComplains() throws Exception {
+        try {
+            String query = "select nazwa from Rodzaj_reklamacji;";
+            ArrayList< ArrayList< String > > queryResult = SqlCommunicate.execute(query);
+            ArrayList < String > complains = new ArrayList<>();
+            queryResult.remove(0);
+            for (ArrayList < String > currentComplain : queryResult) {
+                complains.add(currentComplain.get(0));
+            }
+            return complains;
+        }catch(Exception e) {
             e.printStackTrace();
             throw new Exception();
         }
