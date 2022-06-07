@@ -6,7 +6,7 @@ CREATE TABLE Loginy_hasla (
         id_uzytkownika
      )
 );
-
+--------------------------------------
 CREATE TABLE Statusy (
     id_statusu int   NOT NULL,
     nazwa VARCHAR(22)   NOT NULL,
@@ -17,7 +17,7 @@ CREATE TABLE Statusy (
 
 CREATE TABLE Wojewodstwa (
      id_wojewodstwa int NOT NULL,
-     nazwa VARCHAR(30),
+     nazwa VARCHAR(40),
      CONSTRAINT pk_Wojewodstwa PRIMARY KEY (
           id_wojewodstwa
     )
@@ -25,7 +25,7 @@ CREATE TABLE Wojewodstwa (
 CREATE TABLE Miasta (
     id_miasta int NOT NULL,
     id_wojewodstwa int NOT NULL,
-    nazwa VARCHAR(20),
+    nazwa VARCHAR(40),
     CONSTRAINT pk_Miasta PRIMARY KEY (
         id_miasta
     )
@@ -488,35 +488,6 @@ create trigger place_index_to_statusy
 before insert on Statusy for each 
 row execute function place_index_to_statusy();
 
-----Wojewo
-create sequence seq_id_woje start with 1 INCREMENT BY 1 maxvalue 999999999;
-
-create or REPLACE function place_index_to_woje() returns trigger as $$
-begin
-    new.id_wojewodstwa = nextval('seq_id_woje');
-    return new;
-end;
-$$
-LANGUAGE plpgsql;
-
-create trigger place_index_to_woje
-before insert on Wojewodstwa for each 
-row execute function place_index_to_woje();
-
-----Miasto
-create sequence seq_id_miasto start with 1 INCREMENT BY 1 maxvalue 999999999;
-
-create or REPLACE function place_index_to_miasto() returns trigger as $$
-begin
-    new.id_miasta = nextval('seq_id_miasto');
-    return new;
-end;
-$$
-LANGUAGE plpgsql;
-
-create trigger place_index_to_miasto
-before insert on Miasta for each 
-row execute function place_index_to_miasto();
 
 ----Promocje
 create sequence seq_id_promocji start with 1 INCREMENT BY 1 maxvalue 999999999;

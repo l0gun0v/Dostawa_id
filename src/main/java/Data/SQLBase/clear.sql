@@ -44,8 +44,6 @@ drop sequence seq_id_opinii_r;
 drop sequence seq_id_rodza;
 drop sequence seq_id_produktu;
 drop sequence seq_id_promocji;
-drop sequence seq_id_woje;
-drop sequence seq_id_miasto;
 drop sequence seq_id_kateg;
 drop sequence seq_id_statusy;
 drop sequence seq_id_zamowienia;
