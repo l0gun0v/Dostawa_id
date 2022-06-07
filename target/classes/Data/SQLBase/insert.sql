@@ -24,10 +24,32 @@ insert into Kategorie values(4, 'Spagetti');
 insert into Kategorie values(5, 'Drink');
 insert into Kategorie values(6, 'Sushi');
 insert into Kategorie values(7, 'Pizza');
+insert into Kategorie values(8, 'Asian');
+insert into Kategorie values(9, 'American');
+insert into Kategorie values(10, 'Pancakes');
+insert into Kategorie values(11, 'Middle Eastern');
+insert into Kategorie values(12, 'Bakery');
+insert into Kategorie values(13, 'Georgian');
+insert into Kategorie values(14, 'Desserts');
+insert into Kategorie values(15, 'European');
+insert into Kategorie values(16, 'Breakfast');
+insert into Kategorie values(17, 'Indian');
+insert into Kategorie values(18, 'Italian');
+insert into Kategorie values(19, 'Mexican');
+insert into Kategorie values(20, 'Seafood');
+insert into Kategorie values(21, 'Salads');
+insert into Kategorie values(22, 'Sweets');
+insert into Kategorie values(23, 'Sandwiches');
+insert into Kategorie values(24, 'Tea and Coffee');
+insert into Kategorie values(25, 'Kebabs');
+insert into Kategorie values(26, 'Snacks');
+insert into Kategorie values(27, 'Polish');
 
 insert into Transport_kurjera values(1, 'Car');
-insert into Transport_kurjera values(2, 'Motobake');
-insert into Transport_kurjera values(3, 'Bake');
+insert into Transport_kurjera values(2, 'Motobike');
+insert into Transport_kurjera values(3, 'Bike');
+insert into Transport_kurjera values(4, 'On foot');
+
 
 insert into Kurjery values(800000000, 1, 'Mikolaj', 'Sankewicz', 8800553535, 'fastdeliver@gmail.com', 1, false);
 insert into Kurjery values(800000001, 2, 'Kasia', 'Samsonawa', 8800553535, 'dostawapl@gmail.com', 1, true);
