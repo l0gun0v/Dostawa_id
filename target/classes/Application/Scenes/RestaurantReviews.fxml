@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Application.Controllers.RestaurantReviewsController">
+   <children>
+      <Button layoutX="24.0" layoutY="23.0" mnemonicParsing="false" onAction="#backButton" prefHeight="59.0" prefWidth="121.0" text="Back" />
+      <Button fx:id="name" layoutX="165.0" layoutY="23.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="476.0" text="Name" />
+      <Button fx:id="rate" layoutX="662.0" layoutY="23.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="105.0" text="Rate" />
+      <ScrollPane layoutX="14.0" layoutY="119.0" prefHeight="663.0" prefWidth="771.0">
+         <content>
+            <VBox fx:id="vBoxViews" prefHeight="667.0" prefWidth="773.0" />
+         </content>
+      </ScrollPane>
+   </children>
+</Pane>

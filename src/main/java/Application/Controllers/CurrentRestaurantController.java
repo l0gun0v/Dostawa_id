@@ -97,4 +97,13 @@ public class CurrentRestaurantController {
             }
         }
     }
+
+    public void goToReviews() {
+        try {
+            FXMLLoader loader = LoadXML.load("Scenes/RestaurantReviews.fxml");
+            StartApplication.setScene(loader);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
 }
