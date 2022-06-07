@@ -14,7 +14,7 @@ insert into Statusy values(1, 'Order placed');
 insert into Statusy values(2, 'Accepted');
 insert into Statusy values(3, 'In process');
 insert into Statusy values(4, 'Waiting for courier');
-insert into Statusy values(5, 'Dilivery');
+insert into Statusy values(5, 'Delivery');
 insert into Statusy values(6, 'Delivered');
 
 insert into Kategorie values(1, 'FastFood');

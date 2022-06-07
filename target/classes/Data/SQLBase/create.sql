@@ -156,7 +156,7 @@ CREATE TABLE Zamowienia (
     id_statusu int   NOT NULL,
     id_adresu int   NOT NULL,
     data_zlozenia timestamp   NOT NULL,
-    data_dostarczenia timestamp   NOT NULL,
+    data_dostarczenia timestamp ,
     CONSTRAINT pk_Zamowienia PRIMARY KEY (
         id_zamowienia
      )
@@ -348,7 +348,7 @@ declare
     ans numeric;
 BEGIN
     ans = 0;
-    for i in (select cena, data_wprowadzenia from Historia_cen where id_produktu = id order by data_wprowadzenia) loop 
+    for i in (select cena, data_wprowadzenia from Historia_cen where id_produktu = id order by data_wprowadzenia desc) loop 
         if i.data_wprowadzenia > tt then continue; end if;
         ans = i.cena;
         exit;

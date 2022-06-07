@@ -130,11 +130,11 @@
             </Button>
          </children>
       </Pane>
-      <Pane fx:id="orderMenu" layoutX="31.0" layoutY="100.0" prefHeight="658.0" prefWidth="750.0" visible="false">
+      <Pane fx:id="orderMenu" layoutX="10.0" layoutY="100.0" prefHeight="658.0" prefWidth="782.0" visible="false">
          <children>
-            <ScrollPane layoutX="1.0" layoutY="54.0" prefHeight="561.0" prefWidth="740.0">
+            <ScrollPane layoutX="-10.0" layoutY="54.0" prefHeight="561.0" prefWidth="761.0">
                <content>
-                  <VBox fx:id="orderList" prefHeight="557.0" prefWidth="734.0" />
+                  <VBox fx:id="orderList" prefHeight="557.0" prefWidth="760.0" />
                </content>
             </ScrollPane>
          </children>

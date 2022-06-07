@@ -86,9 +86,9 @@
             <Font size="22.0" />
          </font>
       </MenuButton>
-      <Pane fx:id="orderMenu" layoutX="31.0" layoutY="100.0" prefHeight="658.0" prefWidth="750.0" visible="false">
+      <Pane fx:id="orderMenu" layoutX="8.0" layoutY="100.0" prefHeight="658.0" prefWidth="780.0" visible="false">
          <children>
-            <ScrollPane layoutX="1.0" layoutY="54.0" prefHeight="561.0" prefWidth="740.0">
+            <ScrollPane layoutX="1.0" layoutY="-4.0" prefHeight="658.0" prefWidth="780.0">
                <content>
                   <VBox fx:id="orderList" prefHeight="557.0" prefWidth="734.0" />
                </content>
