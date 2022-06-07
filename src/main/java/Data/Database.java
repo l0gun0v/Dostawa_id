@@ -2,6 +2,8 @@ package Data;
 
 import Application.Controllers.OrderHistoryController;
 import Data.SQLBase.SqlCommunicate;
+
+import java.awt.im.InputMethodRequests;
 import java.sql.SQLException;
 import java.util.*;
 import java.util.ArrayList;
@@ -11,6 +13,7 @@ import java.util.Random;
 import Application.Controllers.DishController;
 
 import static Application.Controllers.OrderHistoryController.orderForInfo;
+import static Application.Controllers.UserMenuController.chosenRestaurantID;
 
 public class Database {
 
@@ -420,6 +423,66 @@ public class Database {
                 }
             }
             return Districts;
+        }catch(Exception e) {
+            e.printStackTrace();
+            throw new Exception();
+        }
+    }
+
+    static public ArrayList < Integer > getReview() throws Exception {
+        try {
+            String query = "select distinct o.id_opinii from Opinia_o_restauracjach o join Zamowienia z on(z.id_zamowienia = o.id_zamowienia and z.id_restauracji = " + chosenRestaurantID +" );";
+            ArrayList< ArrayList< String > > queryResult = SqlCommunicate.execute(query);
+            ArrayList < Integer > reviewsID = new ArrayList<>();
+            queryResult.remove(0);
+            for (ArrayList < String > currentReview : queryResult) {
+                reviewsID.add(Integer.parseInt(currentReview.get(0)));
+            }
+            return reviewsID;
+        }catch(Exception e) {
+            e.printStackTrace();
+            throw new Exception();
+        }
+    }
+
+    public static int getUserFromReview(int ID) throws Exception {
+        try {
+            String query = "select z.id_klienta from Opinia_o_restauracjach o join Zamowienia z on(z.id_zamowienia = o.id_zamowienia and o.id_opinii = " + ID +" );";
+            ArrayList< ArrayList< String > > queryResult = SqlCommunicate.execute(query);
+            return Integer.parseInt(queryResult.get(1).get(0));
+        }catch(Exception e) {
+            e.printStackTrace();
+            throw new Exception();
+        }
+    }
+
+    public static int getRateFromReview(int ID) throws Exception {
+        try {
+            String query = "select o.ocena from Opinia_o_restauracjach o join Zamowienia z on(z.id_zamowienia = o.id_zamowienia and o.id_opinii = " + ID +" );";
+            ArrayList< ArrayList< String > > queryResult = SqlCommunicate.execute(query);
+            return Integer.parseInt(queryResult.get(1).get(0));
+        }catch(Exception e) {
+            e.printStackTrace();
+            throw new Exception();
+        }
+    }
+
+    public static String getCommentFromReview(int ID) throws Exception {
+        try {
+            String query = "select o.komentarz from Opinia_o_restauracjach o join Zamowienia z on(z.id_zamowienia = o.id_zamowienia and o.id_opinii = " + ID +" );";
+            ArrayList< ArrayList< String > > queryResult = SqlCommunicate.execute(query);
+            return (queryResult.get(1).get(0));
+        }catch(Exception e) {
+            e.printStackTrace();
+            throw new Exception();
+        }
+    }
+
+    public static String getDateFromReview(int ID) throws Exception {
+        try {
+            String query = "select o.data from Opinia_o_restauracjach o join Zamowienia z on(z.id_zamowienia = o.id_zamowienia and o.id_opinii = " + ID +" );";
+            ArrayList< ArrayList< String > > queryResult = SqlCommunicate.execute(query);
+            return (queryResult.get(1).get(0));
         }catch(Exception e) {
             e.printStackTrace();
             throw new Exception();

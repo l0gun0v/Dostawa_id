@@ -13,6 +13,7 @@ import javafx.scene.control.CheckBox;
 import javafx.scene.layout.VBox;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 
 
 import static Data.Database.*;
@@ -68,7 +69,7 @@ public class UserMenuController {
     }
     public Button makeRestaurantButton(int restaurantID) throws Exception {
         Button restaurantButton = new Button();
-        restaurantButton.setText(getRestaurantName(restaurantID));
+        restaurantButton.setText(getRestaurantName(restaurantID) + " | Rate : " + getRate(restaurantID));
         restaurantButton.setMinSize(450, 50);
         restaurantButton.setMaxSize(450, 50);
         restaurantButton.setOnAction(new goToRestaurant(restaurantID));
@@ -79,7 +80,6 @@ public class UserMenuController {
         vBoxRestaurans.getChildren().clear();
         ArrayList < String > categories = getChosenCategories();
         ArrayList < Integer > relevantedRestaurans = new ArrayList<>(getRestauran(categories));
-       // relevantedRestaurans.sort(Comparator.comparingInt(Database::rateToInt));
         for (Integer currentRestauranID : relevantedRestaurans) {
             vBoxRestaurans.getChildren().add(makeRestaurantButton(currentRestauranID));
         }
