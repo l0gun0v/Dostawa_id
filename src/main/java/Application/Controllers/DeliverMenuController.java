@@ -1,7 +1,9 @@
 package Application.Controllers;
 
 import java.util.ArrayList;
-
+import Application.Controllers.OrderHistoryController.order;
+import static Application.Controllers.OrderHistoryController.orderForInfo;
+import static Application.Controllers.OrderHistoryController.orderTime;
 import Application.StartApplication;
 import Data.Database;
 import Data.Password;
@@ -80,7 +82,7 @@ public class DeliverMenuController {
 
     public Integer idm, idw;
 
-    int choosenMenu = -1;
+    static public int choosenMenu = -1;
 
     public void initialize() throws Exception{
         menuCoise.getItems().clear();
@@ -106,6 +108,11 @@ public class DeliverMenuController {
 
         for(String t : Database.getAllTransport()){
             transportChoise.getItems().add(t);
+        }
+
+
+        for (Integer currentOrderID : Database.getOrderKur(User.MainUser.id)) {
+            orderList.getChildren().add(makeOrdField(currentOrderID));
         }
 
         transportChoise.setValue(Database.getTransportByID(User.MainUser.transport));
@@ -241,6 +248,126 @@ public class DeliverMenuController {
             e.printStackTrace();
         }
         errorLabel.setText("");
+    }
+
+    public Pane makeOrdField(int orderID) throws Exception {
+        Pane orderPane = new Pane();
+        orderPane.setMinSize(750, 70);
+        orderPane.setMaxSize(750, 70);
+        orderPane.getChildren().add(new Label(String.valueOf(orderID)));
+        order currentOrder = new order(Database.getOrderFields(orderID));
+
+        Button makeDate = new Button("Made at : " + currentOrder.make);
+        makeDate.setMinSize(250, 30);
+        makeDate.setMaxSize(250, 30);
+        makeDate.setLayoutX(orderPane.getLayoutX() + 2);
+        makeDate.setLayoutY(orderPane.getLayoutY() + 4);
+        System.out.println(currentOrder.delivery);
+        Button deliveryDate = new Button("Delivered at : ???");
+        deliveryDate.setMinSize(250, 30);
+        deliveryDate.setMaxSize(250, 30);
+        deliveryDate.setLayoutX(orderPane.getLayoutX() + 2);
+        deliveryDate.setLayoutY(orderPane.getLayoutY() + 36);
+
+        ChoiceBox<String> orderStatus = new ChoiceBox<String>();
+
+        //System.out.println(Database.getStatusName(currentOrder.status).compareTo("Delivery") + " " + Database.getStatusName(currentOrder.status));
+
+        if(Database.getStatusName(currentOrder.status).compareTo("Delivery") <= 4){
+            orderStatus.getItems().add("Delivered");
+        }
+
+        try {
+            orderStatus.setValue(Database.getStatusName(currentOrder.status));
+        } catch (Exception e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+
+        orderStatus.setOnShowing(
+            (event) -> {
+               // System.out.println(event);
+               // System.out.println(orderStatus.getValue());
+                try {
+                    if(currentOrder.status ==  Database.getIdStatusByName(orderStatus.getValue())){
+                        return;
+                    }
+                } catch (Exception e2) {
+                    // TODO Auto-generated catch block
+                    e2.printStackTrace();
+                }
+
+                try {
+                    currentOrder.status = Database.getIdStatusByName(orderStatus.getValue());
+                    System.out.println(currentOrder.status);
+                } catch (Exception e1) {
+                    // TODO Auto-generated catch block
+                    e1.printStackTrace();
+                }
+                orderStatus.getItems().clear();
+                try {
+                   // System.out.println(Database.getStatusName(currentOrder.status));
+                    orderStatus.setValue(Database.getStatusName(currentOrder.status));
+                    Database.orderUpdateStatus(currentOrder.id, currentOrder.status);
+                    Database.changeOrderDelTime(currentOrder.id);
+                } catch (Exception e) {
+                    // TODO Auto-generated catch block
+                    e.printStackTrace();
+                }
+                if (currentOrder.status == 6) {
+                    orderPane.setStyle("-fx-border-style:solid; -fx-padding: 1; -fx-background-color: red;");
+                    deliveryDate.setText("Delivered at : " + currentOrder.delivery);
+                } else if (currentOrder.status == 1){
+                    orderPane.setStyle("-fx-border-style:solid; -fx-padding: 1; -fx-background-color: yellow;");
+                } else {
+                    orderPane.setStyle("-fx-border-style:solid; -fx-padding: 1; -fx-background-color: green;");
+                }
+            });
+
+       
+        orderStatus.setMinSize(250, 50);
+        orderStatus.setMaxSize(250, 50);
+        orderStatus.setLayoutX(orderPane.getLayoutX() + 270);
+        orderStatus.setLayoutY(orderPane.getLayoutY() + 10);
+
+        Button goToInfo = new Button("Order info");
+        goToInfo.setMinSize(100, 50);
+        goToInfo.setMaxSize(100, 50);
+        goToInfo.setLayoutX(orderStatus.getLayoutX() + 270);
+        goToInfo.setLayoutY(orderPane.getLayoutY() + 10);
+        goToInfo.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent actionEvent) {
+                orderForInfo = currentOrder.id;
+                try {
+                    orderTime = Database.getOrderTime(orderForInfo);
+                } catch (Exception e1) {
+                    // TODO Auto-generated catch block
+                    e1.printStackTrace();
+                }
+                try{
+                    FXMLLoader loader = LoadXML.load("Scenes/OrderInfo.fxml");
+                    StartApplication.setScene(loader);
+                } catch(Exception e) {
+                    e.printStackTrace();
+                }
+            }
+        });
+
+        if (currentOrder.status == 6) {
+            orderPane.setStyle("-fx-border-style:solid; -fx-padding: 1; -fx-background-color: red;");
+            deliveryDate.setText("Delivered at : " + currentOrder.delivery);
+        } else if (currentOrder.status == 1){
+            orderPane.setStyle("-fx-border-style:solid; -fx-padding: 1; -fx-background-color: yellow;");
+        } else {
+            orderPane.setStyle("-fx-border-style:solid; -fx-padding: 1; -fx-background-color: green;");
+        }
+        orderPane.getChildren().add(makeDate);
+        orderPane.getChildren().add(deliveryDate);
+        orderPane.getChildren().add(orderStatus);
+        orderPane.getChildren().add(goToInfo);
+       // orderPane.getChildren().add(toComplain);
+        return orderPane;
     }
 
 }

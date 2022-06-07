@@ -38,6 +38,41 @@ public class Database {
         throw new IncorrectUserException();
     }
 
+    
+
+    public static ArrayList < Integer > getOrderKur(int userID) throws Exception {
+        try {
+            ArrayList < Integer > orders = new ArrayList<>();
+            String query = "select id_zamowienia from Zamowienia where id_kurjera = " + userID + " order by data_zlozenia desc;";
+            ArrayList< ArrayList< String > > queryResult = SqlCommunicate.execute(query);
+            queryResult.remove(0);
+            for (ArrayList < String > currentOrder : queryResult) {
+                orders.add(Integer.parseInt(currentOrder.get(0)));
+            }
+            return orders;
+        } catch (Exception e) {
+            e.printStackTrace();
+            throw new Exception();
+        }
+    }
+
+
+    public static ArrayList < Integer > getOrderRest(int userID) throws Exception {
+        try {
+            ArrayList < Integer > orders = new ArrayList<>();
+            String query = "select id_zamowienia from Zamowienia where id_restauracji = " + userID + " order by data_zlozenia desc;";
+            ArrayList< ArrayList< String > > queryResult = SqlCommunicate.execute(query);
+            queryResult.remove(0);
+            for (ArrayList < String > currentOrder : queryResult) {
+                orders.add(Integer.parseInt(currentOrder.get(0)));
+            }
+            return orders;
+        } catch (Exception e) {
+            e.printStackTrace();
+            throw new Exception();
+        }
+    }
+
     public static ArrayList < Integer > getOrders(int userID) throws Exception {
         try {
             ArrayList < Integer > orders = new ArrayList<>();
@@ -553,7 +588,7 @@ public class Database {
             String data = productsName.get(1).get(0);
             query = "insert into Zamowienia(id_zamowienia, id_restauracji, id_klienta, id_kurjera, id_statusu, id_adresu, data_zlozenia, data_dostarczenia)" +
                     " values(" + id_zamowienia + ", " + id_restauracji + ", " + id_klienta + ", "
-                    + id_kurjera + ", " + id_statusu + ", " + id_adresu + ", '" + data + "', '" + data + "');";
+                    + id_kurjera + ", " + id_statusu + ", " + id_adresu + ", '" + data + "', current_timestamp + interval '2' year"  + ");";
             SqlCommunicate.update(query);
             query = "select currval('seq_id_zamowienia')";
             IDzamowienia = Integer.parseInt(SqlCommunicate.execute(query).get(1).get(0));
@@ -631,6 +666,7 @@ public class Database {
     }
 
     static public Double getProductsCost(int productsID) throws Exception {
+        System.out.println(SqlCommunicate.execute("select current_timestamp"));
         return Double.parseDouble(SqlCommunicate.execute("select get_product_cost( "+productsID + "," +User.MainUser.id +", current_timestamp);").get(1).get(0));
     }
 
@@ -1037,4 +1073,28 @@ public class Database {
     static public String getOrderTime(Integer id) throws SQLException{
         return SqlCommunicate.execute("select data_zlozenia from Zamowienia where id_zamowienia = " + id + ";").get(1).get(0);
     }
+
+    static public ArrayList<String> getStatusNamesAfter(Integer id) throws SQLException{
+        ArrayList<String> ans = new ArrayList<>();
+        ArrayList<ArrayList<String> > query = SqlCommunicate.execute("select nazwa from Statusy where id_statusu > " + id + ";");
+        query.remove(0);
+        for(ArrayList<String> i : query){
+            ans.add(i.get(0));
+        }
+        return ans;
+    }
+    
+
+    static public Integer getIdStatusByName(String name)throws Exception{
+        return Integer.parseInt(SqlCommunicate.execute("select id_statusu from Statusy where nazwa = '" + name + "';").get(1).get(0));
+    }
+
+    static public void orderUpdateStatus(Integer id, Integer status) throws SQLException{
+        SqlCommunicate.update("update Zamowienia set id_statusu = " + status + " where id_zamowienia = " + id + ";");
+    }
+    static public void changeOrderDelTime(Integer id) throws SQLException{
+        SqlCommunicate.update("update Zamowienia set data_dostarczenia = current_timestamp" +  " where id_zamowienia = " + id + ";");
+    }
+    
+
 }

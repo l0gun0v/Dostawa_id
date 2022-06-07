@@ -61,7 +61,7 @@ public class OrderHistoryController {
         makeDate.setMaxSize(250, 30);
         makeDate.setLayoutX(orderPane.getLayoutX() + 2);
         makeDate.setLayoutY(orderPane.getLayoutY() + 4);
-
+        System.out.println(currentOrder.delivery);
         Button deliveryDate = new Button("Delivered at : ???");
         deliveryDate.setMinSize(250, 30);
         deliveryDate.setMaxSize(250, 30);

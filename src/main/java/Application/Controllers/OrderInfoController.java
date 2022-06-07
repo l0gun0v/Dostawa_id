@@ -1,6 +1,7 @@
 package Application.Controllers;
 
 import Application.StartApplication;
+import Data.User;
 import Utills.LoadXML;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -40,8 +41,19 @@ public class OrderInfoController {
 
     public void backButton() {
         try{
-            FXMLLoader loader = LoadXML.load("Scenes/OrderHistory.fxml");
-            StartApplication.setScene(loader);
+            int pos = User.MainUser.id;
+            if(pos < 800000000){
+                FXMLLoader loader = LoadXML.load("Scenes/OrderHistory.fxml");
+                StartApplication.setScene(loader);
+            }
+            else if(pos < 900000000){
+                FXMLLoader loader = LoadXML.load("Scenes/DeliveryMenu.fxml");
+                StartApplication.setScene(loader);
+            }
+            else{
+                FXMLLoader loader = LoadXML.load("Scenes/RestMenu.fxml");
+                StartApplication.setScene(loader);
+            }
         } catch(Exception e) {
             e.printStackTrace();
         }
@@ -80,7 +92,7 @@ public class OrderInfoController {
         if (currentOrder.status != 6) {
             deliverButton.setText("Not delivered yet");
         } else {
-            deliverButton.setText("Delivered : " + currentOrder.make);
+            deliverButton.setText("Delivered : " + currentOrder.delivery);
         }
         restName.setText(getRestaurantName(currentOrder.restaurant));
 
