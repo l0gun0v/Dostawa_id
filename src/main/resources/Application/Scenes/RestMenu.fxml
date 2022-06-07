@@ -97,7 +97,7 @@
                   </Pane>
                </children>
             </HBox>
-            <TextField fx:id="adresField" prefHeight="36.0" prefWidth="253.0" promptText="Adres" />
+            <TextField fx:id="adresField" prefHeight="36.0" prefWidth="253.0" promptText="Address" />
             <CheckBox fx:id="activeCheck" mnemonicParsing="false" prefHeight="25.0" prefWidth="330.0" text="Active">
                <font>
                   <Font size="17.0" />
