@@ -485,6 +485,11 @@ public class Database {
     static public Double getProductsCost(int productsID) throws Exception {
         return Double.parseDouble(SqlCommunicate.execute("select get_product_cost( "+productsID + "," +User.MainUser.id +", current_timestamp);").get(1).get(0));
     }
+
+    static public Double getProductsCostAtTime(int productsID, String time) throws Exception {
+        return Double.parseDouble(SqlCommunicate.execute("select get_product_cost( "+productsID + "," +User.MainUser.id +",'"+ time +"' );").get(1).get(0));
+    }
+
     static public String getProductsDescription(int productsID) throws Exception {
         try {
             String query = "select opis from Produkty where id_produktu = (" + productsID + ")";
@@ -878,5 +883,10 @@ public class Database {
 
     static public Double findLastCost(Integer id) throws NumberFormatException, SQLException{
         return Double.parseDouble(SqlCommunicate.execute("select cena from Historia_cen where id_produktu = " + id +" order by data_wprowadzenia desc;").get(1).get(0));
+    }
+
+
+    static public String getOrderTime(Integer id) throws SQLException{
+        return SqlCommunicate.execute("select data_zlozenia from Zamowienia where id_zamowienia = " + id + ";").get(1).get(0);
     }
 }

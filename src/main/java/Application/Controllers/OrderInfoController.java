@@ -10,6 +10,7 @@ import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
 import java.util.HashMap;
 import static Application.Controllers.OrderHistoryController.orderForInfo;
+import static Application.Controllers.OrderHistoryController.orderTime;
 import static Data.Database.*;
 
 public class OrderInfoController {
@@ -48,7 +49,7 @@ public class OrderInfoController {
 
     public Pane makeField(int productID, int number) throws Exception {
         String produktDescription = new String(getProductsName(productID) + (isVege(productID) ? " | VEGE " : "")
-                + " | "  + getProductsWeight(productID) + "gr. | " + getProductsDescription(productID) + " | " + getProductsCost(productID) + '$');
+                + " | "  + getProductsWeight(productID) + "gr. | " + getProductsDescription(productID) + " | " + getProductsCostAtTime(productID, orderTime) + '$');
 
         Pane productField = new Pane();
         productField.setStyle("-fx-border-style:solid; -fx-padding: 1; -fx-background-color: green;");
@@ -64,7 +65,7 @@ public class OrderInfoController {
         productInfoLabel.setLayoutX(productField.getLayoutX() + 85);
         productInfoLabel.setLayoutY(productField.getLayoutY());
         productField.getChildren().add(productInfoLabel);
-        orderCost += number * getProductsCost(productID);
+        orderCost += number * getProductsCostAtTime(productID, orderTime);
         return productField;
     }
 

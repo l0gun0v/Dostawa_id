@@ -523,7 +523,7 @@ create sequence seq_id_promocji start with 1 INCREMENT BY 1 maxvalue 999999999;
 
 create or REPLACE function place_index_to_promo() returns trigger as $$
 begin
-    new.id_rabatu = nextval('seq_id_promocji');
+    new.id_promocji = nextval('seq_id_promocji');
     return new;
 end;
 $$
