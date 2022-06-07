@@ -79,7 +79,7 @@ public class DishController {
         }
         Database.insertDish(new Dish(0, 0, Double.parseDouble( dishWeight.getText()), dishText.getText(), 
         dishName.getText(), wegeCheck.isSelected(), activeCheck.isSelected(), cat));
-        SqlCommunicate.update("insert into Historia_cen values(" + mainDish.id +", " + costField.getText() + ", current_timestamp");
+        SqlCommunicate.update("insert into Historia_cen values(" + mainDish.id +", " + costField.getText() + ", current_timestamp);");
         goBackToMenu();
     }
 

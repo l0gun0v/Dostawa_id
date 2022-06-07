@@ -405,7 +405,7 @@ public class RestMenuController {
         orderStatus.setOnShowing(
             (event) -> {
                // System.out.println(event);
-               // System.out.println(orderStatus.getValue());
+                System.out.println(orderStatus.getValue());
                 try {
                     if(currentOrder.status ==  Database.getIdStatusByName(orderStatus.getValue())){
                         return;
@@ -417,7 +417,7 @@ public class RestMenuController {
 
                 try {
                     currentOrder.status = Database.getIdStatusByName(orderStatus.getValue());
-                    System.out.println(currentOrder.status);
+                    System.out.println(currentOrder.status + " status");
                 } catch (Exception e1) {
                     
                     e1.printStackTrace();
