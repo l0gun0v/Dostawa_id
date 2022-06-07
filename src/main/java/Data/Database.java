@@ -14,6 +14,7 @@ import Application.Controllers.DishController;
 
 import static Application.Controllers.OrderHistoryController.orderForInfo;
 import static Application.Controllers.UserMenuController.chosenRestaurantID;
+import static Data.User.MainUser;
 
 public class Database {
 
@@ -202,7 +203,7 @@ public class Database {
     static public ArrayList < String > getAddresses(int cityID) throws Exception {
         try {
             ArrayList < String > Addresses = new ArrayList<>();
-            String query = "select adres_dostawy from Adresy where id_miasta = " + cityID + ";";
+            String query = "select a.adres_dostawy from Adresy_userow u join Adresy a on (u.id_adresu = a.id_adresu) where a.id_miasta = " + cityID + " and u.id_uzytkownika = " + MainUser.id + ";";
             ArrayList< ArrayList< String > > queryDistricts = SqlCommunicate.execute(query);
             for (ArrayList < String > currentAddress : queryDistricts) {
                 if (!Objects.equals(currentAddress.get(0), "adres_dostawy")) {
@@ -667,11 +668,11 @@ public class Database {
 
     static public Double getProductsCost(int productsID) throws Exception {
         System.out.println(SqlCommunicate.execute("select current_timestamp"));
-        return Double.parseDouble(SqlCommunicate.execute("select get_product_cost( "+productsID + "," +User.MainUser.id +", current_timestamp);").get(1).get(0));
+        return Double.parseDouble(SqlCommunicate.execute("select get_product_cost( "+productsID + "," + MainUser.id +", current_timestamp);").get(1).get(0));
     }
 
     static public Double getProductsCostAtTime(int productsID, String time) throws Exception {
-        return Double.parseDouble(SqlCommunicate.execute("select get_product_cost( "+productsID + "," +User.MainUser.id +",'"+ time +"' );").get(1).get(0));
+        return Double.parseDouble(SqlCommunicate.execute("select get_product_cost( "+productsID + "," + MainUser.id +",'"+ time +"' );").get(1).get(0));
     }
 
     static public String getProductsDescription(int productsID) throws Exception {
@@ -896,7 +897,7 @@ public class Database {
     static public void insertDish(Dish dish){
         String query1;
         try{
-            query1 = "insert into Produkty values( 0," + User.MainUser.getId() + ", " + dish.weight + ", '" + 
+            query1 = "insert into Produkty values( 0," + MainUser.getId() + ", " + dish.weight + ", '" +
             dish.opis + "', '" + dish.name + "', "+ dish.wege + ", " + dish.active + ");";
             SqlCommunicate.update(query1);
             query1 = "select currval('seq_id_produktu')";
@@ -934,28 +935,28 @@ public class Database {
     }
 
     static public void updateRest(String name, String mail, String phone, ArrayList<String> time, boolean active, Integer idw, Integer idm, String ida) throws SQLException{
-        User.MainUser.name = name;
-        User.MainUser.mail = phone;
-        User.MainUser.phone = phone;
-        User.MainUser.inWD = time.get(0);
-        User.MainUser.outWD = time.get(1);
-        User.MainUser.inWE = time.get(2);
-        User.MainUser.outWE = time.get(3);
-        User.MainUser.active = active;
+        MainUser.name = name;
+        MainUser.mail = phone;
+        MainUser.phone = phone;
+        MainUser.inWD = time.get(0);
+        MainUser.outWD = time.get(1);
+        MainUser.inWE = time.get(2);
+        MainUser.outWE = time.get(3);
+        MainUser.active = active;
 
-        System.out.println(User.MainUser.adres);
-        if(ida.compareTo(User.MainUser.adres) != 0 || getIdMiastaByAdresId(getIdAdresuByUserId(User.MainUser.id)) != idm){
-            SqlCommunicate.update("delete from Adresy_userow where id_uzytkownika = " + User.MainUser.id + ";");
+        System.out.println(MainUser.adres);
+        if(ida.compareTo(MainUser.adres) != 0 || getIdMiastaByAdresId(getIdAdresuByUserId(MainUser.id)) != idm){
+            SqlCommunicate.update("delete from Adresy_userow where id_uzytkownika = " + MainUser.id + ";");
             String query1 = "select insert_adres('" + ida +"'," + idm+");";
             Integer id_adres = Integer.parseInt(SqlCommunicate.execute(query1).get(1).get(0));
-            SqlCommunicate.update("insert into Adresy_userow values(" + id_adres + ", " + User.MainUser.id + ");");
-            User.MainUser.adres = ida;
+            SqlCommunicate.update("insert into Adresy_userow values(" + id_adres + ", " + MainUser.id + ");");
+            MainUser.adres = ida;
         }
 
         SqlCommunicate.update("update Restauracje set nazwa_restauracji = '" + name +"', numer_telefonu = " + phone + ", mail = '" + mail + 
-        "', dzien_powszedni_czas_otwarcja = '" +  User.MainUser.inWD + "', dzien_powszedni_czas_zamkniecia = '" +  User.MainUser.outWD +
-        "', dni_wolne_czas_otwarcja = '" +  User.MainUser.inWE + "', dni_wolne_czas_zamkniecia = '" +  User.MainUser.outWE + "', active = " + active +
-          " where id_restauracji = " + User.MainUser.getId()+ ";");
+        "', dzien_powszedni_czas_otwarcja = '" +  MainUser.inWD + "', dzien_powszedni_czas_zamkniecia = '" +  MainUser.outWD +
+        "', dni_wolne_czas_otwarcja = '" +  MainUser.inWE + "', dni_wolne_czas_zamkniecia = '" +  MainUser.outWE + "', active = " + active +
+          " where id_restauracji = " + MainUser.getId()+ ";");
         /* 
         System.out.println("update Restauracje set nazwa_restauracji = '" + name +"', numer_telefonu = " + phone + ", mail = '" + mail + 
         "', dzien_powszedni_czas_otwarcja = '" +  User.MainUser.inWD + "', dzien_powszedni_czas_zamkniecia = '" +  User.MainUser.outWD +
@@ -965,17 +966,17 @@ public class Database {
     }
 
     static public void updateKurjer(String name, String mail, String phone, String surname, boolean active, Integer idw, Integer idm, Integer transport) throws SQLException{
-        User.MainUser.name = name;
-        User.MainUser.mail = phone;
-        User.MainUser.active = active;
-        User.MainUser.surname = surname;
-        User.MainUser.phone = phone;
-        User.MainUser.transport = transport;
+        MainUser.name = name;
+        MainUser.mail = phone;
+        MainUser.active = active;
+        MainUser.surname = surname;
+        MainUser.phone = phone;
+        MainUser.transport = transport;
 
         SqlCommunicate.update("update Kurjery set imie = '" + name +"', numer_telefonu = " + phone + ", mail = '" + mail + 
-        "', nazwisko = '" +  User.MainUser.surname + "', id_transportu = " +  User.MainUser.transport +
+        "', nazwisko = '" +  MainUser.surname + "', id_transportu = " +  MainUser.transport +
          ", id_miasta = " +  idm + ", active = " + active +
-          " where id_kurjera = " + User.MainUser.getId() + ";");
+          " where id_kurjera = " + MainUser.getId() + ";");
         /* 
         System.out.println("update Kurjery set imie = '" + name +"', numer_telefonu = " + phone + ", mail = '" + mail + 
         "', nazwisko = '" +  User.MainUser.surname + "', id_transportu = " +  User.MainUser.transport +
@@ -986,14 +987,14 @@ public class Database {
     }
 
     static public void updateUser(String name, String mail, String phone, String surname) throws SQLException{
-        User.MainUser.name = name;
-        User.MainUser.mail = phone;
-        User.MainUser.surname = surname;
-        User.MainUser.phone = phone;
+        MainUser.name = name;
+        MainUser.mail = phone;
+        MainUser.surname = surname;
+        MainUser.phone = phone;
 
         SqlCommunicate.update("update Klienci set imie = '" + name +"', numer_telefonu = " + phone + ", mail = '" + mail + 
-        "', nazwisko = '" +  User.MainUser.surname + "' " +
-          " where id_klienta = " + User.MainUser.getId() + ";");
+        "', nazwisko = '" +  MainUser.surname + "' " +
+          " where id_klienta = " + MainUser.getId() + ";");
         /* 
         System.out.println("update Kurjery set imie = '" + name +"', numer_telefonu = " + phone + ", mail = '" + mail + 
         "', nazwisko = '" +  User.MainUser.surname + "', id_transportu = " +  User.MainUser.transport +
@@ -1004,12 +1005,12 @@ public class Database {
     }
 
     static public void change_password(String password) throws SQLException{
-        SqlCommunicate.update("update Loginy_hasla set hash_hasla = getHash('" + password + "') where id_uzytkownika = " + User.MainUser.getId());
+        SqlCommunicate.update("update Loginy_hasla set hash_hasla = getHash('" + password + "') where id_uzytkownika = " + MainUser.getId());
     }
 
     static public void change_nickname(String nickname) throws SQLException{
-        User.MainUser.nickname = nickname;
-        SqlCommunicate.update("update Loginy_hasla set login = '" + nickname + "' where id_uzytkownika = " + User.MainUser.getId());
+        MainUser.nickname = nickname;
+        SqlCommunicate.update("update Loginy_hasla set login = '" + nickname + "' where id_uzytkownika = " + MainUser.getId());
     }
 
     static public Integer getIdAdresuByUserId(Integer id) throws NumberFormatException, SQLException{
@@ -1057,7 +1058,7 @@ public class Database {
     ///Dish
     static public ArrayList<Integer> getAllUserAddresses() throws SQLException{
         ArrayList<Integer> ans = new ArrayList<>();
-        ArrayList<ArrayList<String> > query = SqlCommunicate.execute("select id_adresu from Adresy_userow where id_uzytkownika = " + User.MainUser.id + ";");
+        ArrayList<ArrayList<String> > query = SqlCommunicate.execute("select id_adresu from Adresy_userow where id_uzytkownika = " + MainUser.id + ";");
         query.remove(0);
         for(ArrayList<String> i : query){
             ans.add(Integer.parseInt(i.get(0)));
