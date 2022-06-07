@@ -9,8 +9,6 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.control.MenuButton;
 import javafx.scene.control.MenuItem;
 import javafx.scene.control.TextArea;
-
-import java.util.ArrayList;
 import java.util.Objects;
 
 import static Data.Database.*;
