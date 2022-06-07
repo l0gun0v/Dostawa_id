@@ -5,7 +5,6 @@
 <?import javafx.scene.control.MenuButton?>
 <?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.ScrollPane?>
-<?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
 
@@ -25,13 +24,9 @@
          </items>
       </MenuButton>
       <ScrollPane layoutX="6.0" layoutY="89.0" prefHeight="618.0" prefWidth="800.0">
-        <content>
-          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="618.0" prefWidth="801.0">
-               <children>
-                  <VBox fx:id="vBoxProducts" layoutX="-3.0" prefHeight="618.0" prefWidth="800.0" />
-               </children>
-            </AnchorPane>
-        </content>
+         <content>
+            <VBox fx:id="vBoxProducts" prefHeight="619.0" prefWidth="802.0" />
+         </content>
       </ScrollPane>
       <Button layoutX="506.0" layoutY="719.0" mnemonicParsing="false" onMouseClicked="#makeOrder" prefHeight="44.0" prefWidth="271.0" text="Pay" />
       <Label fx:id="costOfOrder" layoutX="30.0" layoutY="719.0" prefHeight="44.0" prefWidth="271.0" text="Label" />

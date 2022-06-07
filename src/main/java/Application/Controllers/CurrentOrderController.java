@@ -5,10 +5,13 @@ import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.MenuButton;
 import javafx.scene.control.MenuItem;
 import Application.StartApplication;
+import javafx.scene.layout.Pane;
+import javafx.scene.layout.VBox;
 
 import java.util.Iterator;
 import static Application.Controllers.CurrentRestaurantController.chosenProducts;
@@ -28,6 +31,8 @@ public class CurrentOrderController {
     public Label costOfOrder;
     @FXML
     private MenuButton City;
+    @FXML
+    private VBox vBoxProducts;
     public int getOrderCost() throws Exception {
         Iterator < Integer > it = chosenProductsCount.iterator();
         int sum = 0;
@@ -35,6 +40,27 @@ public class CurrentOrderController {
             sum += getProductsCost(currentProductID) * it.next();
         }
         return sum;
+    }
+
+    public Pane makeField(int productID, int number) throws Exception {
+        String produktDescription = new String(getProductsName(productID) + (isVege(productID) ? " | VEGE " : "")
+                + " | "  + getProductsWeight(productID) + "gr. | " + getProductsDescription(productID) + " | " + getProductsCost(productID) + '$');
+
+        Pane productField = new Pane();
+        productField.setStyle("-fx-border-style:solid; -fx-padding: 1; -fx-background-color: green;");
+        productField.setMaxSize(700, 50);
+        productField.setMinSize(700, 50);
+        Button numberOfProduct = new Button(String.valueOf(number));
+        numberOfProduct.setMinSize(50, 50);
+        numberOfProduct.setMaxSize(50, 50);
+        productField.getChildren().add(numberOfProduct);
+        Label productInfoLabel = new Label(produktDescription);
+        productInfoLabel.setMaxSize(500, 50);
+        productInfoLabel.setMinSize(500, 50);
+        productInfoLabel.setLayoutX(productField.getLayoutX() + 85);
+        productInfoLabel.setLayoutY(productField.getLayoutY());
+        productField.getChildren().add(productInfoLabel);
+        return productField;
     }
 
     public void initialize() throws Exception {
@@ -84,6 +110,10 @@ public class CurrentOrderController {
                 }
             });
             District.getItems().add(currentDistrict);
+        }
+        Iterator < Integer > it = chosenProductsCount.iterator();
+        for (Integer currentProductID : chosenProducts) {
+            vBoxProducts.getChildren().add(makeField(currentProductID, it.next()));
         }
         costOfOrder.setText("Order cost is : " + String.valueOf(getOrderCost()) + '$');
     }
