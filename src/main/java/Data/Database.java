@@ -2,15 +2,8 @@ package Data;
 
 import Application.Controllers.OrderHistoryController;
 import Data.SQLBase.SqlCommunicate;
-
-import java.sql.Date;
 import java.sql.SQLException;
-
 import java.util.*;
-
-import javafx.scene.control.IndexRange;
-import org.w3c.dom.NameList;
-
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Objects;
@@ -489,8 +482,8 @@ public class Database {
         }
     }
 
-    static public int getProductsCost(int productsID) throws Exception {
-        return 100000;
+    static public Double getProductsCost(int productsID) throws Exception {
+        return Double.parseDouble(SqlCommunicate.execute("select get_product_cost( "+productsID + "," +User.MainUser.id +", current_timestamp);").get(1).get(0));
     }
     static public String getProductsDescription(int productsID) throws Exception {
         try {
@@ -886,5 +879,4 @@ public class Database {
     static public Double findLastCost(Integer id) throws NumberFormatException, SQLException{
         return Double.parseDouble(SqlCommunicate.execute("select cena from Historia_cen where id_produktu = " + id +" order by data_wprowadzenia desc;").get(1).get(0));
     }
-
 }

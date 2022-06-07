@@ -6,16 +6,11 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
-import javafx.scene.control.Spinner;
-import javafx.scene.control.SpinnerValueFactory;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
-
 import java.util.HashMap;
-
 import static Application.Controllers.OrderHistoryController.orderForInfo;
 import static Data.Database.*;
-import static Data.User.MainUser;
 
 public class OrderInfoController {
 

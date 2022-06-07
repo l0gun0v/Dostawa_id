@@ -25,7 +25,7 @@ DROP TABLE Opinia_o_restauracjach CASCADE;
 DROP TABLE Wojewodstwa CASCADE;
 DROP TABLE Miasta CASCADE;
 drop function insert_adres;
-
+drop function get_product_cost;
 
 Drop function getRestRating;
 drop function getKurRating;

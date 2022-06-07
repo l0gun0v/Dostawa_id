@@ -339,6 +339,33 @@ $$
 LANGUAGE plpgsql;
 
 ----
+CREATE OR REPLACE FUNCTION get_product_cost(id int, idkl int, tt timestamp with time zone) RETURNS numeric(5, 2)
+AS
+$$
+declare
+    i record;
+    j numeric;
+    ans numeric;
+BEGIN
+    ans = 0;
+    for i in (select cena, data_wprowadzenia from Historia_cen where id_produktu = id order by data_wprowadzenia) loop 
+        if i.data_wprowadzenia > tt then continue; end if;
+        ans = i.cena;
+        exit;
+    end loop;
+    for j in (select p.znizka from Promocje p join Promocje_klientow k 
+                on p.id_promocji = k.id_promocji 
+                where ((k.data_do is null) or (k.data_do >= tt)) and (tt >= k.data_od) and (idkl = k.id_klienta)
+                order by p.znizka desc) LOOP
+        ans = (ans * (100-j))/100;
+        exit;
+    end loop;
+    return ans;
+END;
+$$
+LANGUAGE plpgsql;
+
+----
 
 CREATE OR REPLACE FUNCTION getKurRating(id_restauracji INT) 
     RETURNS NUMERIC
