@@ -2,11 +2,13 @@ package Application.Controllers;
 
 import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.HashMap;
 import Application.StartApplication;
 import Data.Database;
 import Data.Password;
 import Data.User;
 import Data.Database.IncorrectUserException;
+import Data.SQLBase.SqlCommunicate;
 import Utills.LoadXML;
 import javafx.beans.value.ObservableValue;
 import javafx.event.ActionEvent;
@@ -29,10 +31,32 @@ import static Application.Controllers.OrderHistoryController.orderForInfo;
 import static Application.Controllers.OrderHistoryController.orderTime;
 
 public class RestMenuController {
+
+
+    public static HashMap<Integer, String> mapDay = new HashMap<>();
+    public static HashMap<String, Integer> Daymap = new HashMap<>();
+    static{
+        mapDay.put(1, "Monday");
+        mapDay.put(2, "Tuesday");
+        mapDay.put(3, "Wednesday");
+        mapDay.put(4, "Thursday");
+        mapDay.put(5, "Friday");
+        mapDay.put(6, "Saturday");
+        mapDay.put(7, "Sunday");
+        Daymap.put("Monday",1);
+        Daymap.put( "Tuesday",2);
+        Daymap.put( "Wednesday", 3);
+        Daymap.put( "Thursday", 4);
+        Daymap.put("Friday", 5);
+        Daymap.put( "Saturday", 6);
+        Daymap.put( "Sunday", 7);
+
+    }
+
     @FXML
     private TextField confPasswordField;
 
-    public Label errorLabel;
+    public Label errorLabel, errorLabelTime;
 
     @FXML
     private TextField mailField;
@@ -54,6 +78,8 @@ public class RestMenuController {
 
     @FXML
     private TextField passwordField;
+
+    public Button saveData;
 
     @FXML
     private TextField phoneField, newPasswordField;
@@ -151,8 +177,8 @@ public class RestMenuController {
         openSettings.setVisible(false);
         activeCheck.setSelected(User.MainUser.active);
         ida = Database.getIdAdresuByUserId(User.MainUser.id);
-         idm = Database.getIdMiastaByAdresId(ida);
-         idw = Database.getIdWojeByMiastoId(idm);
+        idm = Database.getIdMiastaByAdresId(ida);
+        idw = Database.getIdWojeByMiastoId(idm);
         adresField.setText(Database.getAdresById(ida));
         User.MainUser.adres = adresField.getText();
         wojeChoice.setValue(Database.getWojeById(idw));
@@ -166,15 +192,12 @@ public class RestMenuController {
         for (Integer currentProductID : Database.getRestaurantProducts(User.MainUser.getId())) {
             productList.getChildren().add(makeField(currentProductID));
             System.out.println(productList.getChildren().size());
-            //ProductsID.add(currentProductID);
         }
 
 
         wojeChoice.getSelectionModel().selectedIndexProperty().addListener(
             (ObservableValue<? extends Number> ov, Number old_val, Number new_val) -> {
-            //System.out.println("Action!!!");
             miastoChoice.getItems().clear();
-           // System.out.println(new_val);
                 int x = (int)new_val;
             ArrayList<String> miasta = Database.getMiasta(new String(wojeChoice.getItems().get(x)));
             for(String m : miasta){
@@ -186,13 +209,45 @@ public class RestMenuController {
         for(String w : woje){
             wojeChoice.getItems().add(w);
         }
+        timeHBox.setVisible(false);
+        saveData.setVisible(false);
+
+
+        selectDay.getItems().clear();
+        for(int i = 1; i <= 7; i++){
+            MenuItem item = new MenuItem(mapDay.get(i));
+            final int x = i;
+            item.setOnAction(new EventHandler<ActionEvent>() {
+                
+                public void handle(ActionEvent e)
+                {
+                    errorLabelTime.setText("");
+                    selectDay.setText(mapDay.get(x));
+                    timeHBox.setVisible(true);
+                    saveData.setVisible(true);
+                    try {
+                        ArrayList<String> times = Database.getTimeInOut(x);
+                        inTime.setValue(times.get(0).substring(0, 5));
+                        outTime.setValue(times.get(1).substring(0, 5));
+                        System.out.print(times.get(2));
+                        activeDay.setSelected(times.get(2).compareTo("t") == 0 ? true : false);
+                    } catch (SQLException e1) {
+                        e1.printStackTrace();
+                    }
+                    
+                }
+            });
+            selectDay.getItems().add(item);
+        
+    }
+
+       
 
         for(int i = 0; i <= 24; i++){
             String time = (i<10?"0":"")+i+":00";
             inTime.getItems().add(time);
             outTime.getItems().add(time);
         }
-
 
         EventHandler<ActionEvent> events = new EventHandler<ActionEvent>() {
             public void handle(ActionEvent e)
@@ -262,14 +317,8 @@ public class RestMenuController {
 
 
     @FXML
-    void saveRest() {
-        /* 
-        boolean timecheck = false;
-        if((inWeekDay.getValue() == null) || (outWeekDay.getValue() == null) || outWeekEnd.getValue()==null || inWeekEnd.getValue()==null ){
-            timecheck = true;
-        }
-        */
-
+    public void saveRest() {
+    
         if(nameField.getText()=="" || passwordField.getText() == ""
         || phoneField.getText()=="" || mailField.getText()=="" ||  nicknameField.getText()==""){
             errorLabel.setText("Not enough data");
@@ -298,14 +347,6 @@ public class RestMenuController {
             errorLabel.setText("Different passwords");
             return;
         }
-        /* 
-        if(inWeekDay.getValue().compareTo(outWeekDay.getValue()) > 0 || inWeekEnd.getValue().compareTo(outWeekEnd.getValue()) > 0){
-            errorLabel.setAlignment(Pos.CENTER); 
-            errorLabel.setMaxWidth(Double.MAX_VALUE);
-            errorLabel.setText("Opening time is longer than closing time");
-            return;
-        }
-        */
 
         for(int i = 0; i < phoneField.getText().length(); i++){
             String s = phoneField.getText();
@@ -352,8 +393,34 @@ public class RestMenuController {
         }catch(Exception e){
             e.printStackTrace();
         }
-        errorLabel.setText("");
+        errorLabel.setAlignment(Pos.CENTER); 
+        errorLabel.setMaxWidth(Double.MAX_VALUE);
+        errorLabel.setText("Success");
+        String title = "Congratulations sir";
+    
     }
+
+    public void saveData() {
+        
+        
+        
+        if(inTime.getValue().compareTo(outTime.getValue()) > 0){
+            errorLabelTime.setAlignment(Pos.CENTER); 
+            errorLabelTime.setMaxWidth(Double.MAX_VALUE);
+            errorLabelTime.setText("Opening time is longer than closing time");
+            return;
+        }
+        
+        try {
+            SqlCommunicate.update("update Harmonogram set czynny_od = '" + inTime.getValue() +"', czynny_do = '" + outTime.getValue() +"', active = " + activeDay.isSelected() + " where id_restauracji = " + User.MainUser.id + " and id_dnia = " + Daymap.get(selectDay.getText()) + ";");
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        errorLabelTime.setAlignment(Pos.CENTER); 
+        errorLabelTime.setMaxWidth(Double.MAX_VALUE);
+        errorLabelTime.setText("Success");
+    }
+
 
     public Pane makeOrdField(int orderID) throws Exception {
         Pane orderPane = new Pane();
@@ -464,13 +531,7 @@ public class RestMenuController {
                 }
             }
         });
-
-       // Button toComplain = new Button("Complain");
-       // toComplain.setMinSize(80, 50);
-      //  toComplain.setMaxSize(80, 50);
-      //  toComplain.setLayoutX(orderStatus.getLayoutX() + 390);
-      //  toComplain.setLayoutY(orderPane.getLayoutY() + 10);
-
+        
         if (currentOrder.status == 6) {
             orderPane.setStyle("-fx-border-style:solid; -fx-padding: 1; -fx-background-color: red;");
             deliveryDate.setText("Delivered at : " + currentOrder.delivery);

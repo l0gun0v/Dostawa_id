@@ -12,9 +12,7 @@ import javafx.scene.Node;
 import javafx.scene.control.Button;
 import javafx.scene.control.CheckBox;
 import javafx.scene.layout.VBox;
-
 import java.util.ArrayList;
-import java.util.Comparator;
 
 
 import static Data.Database.*;

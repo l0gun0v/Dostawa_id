@@ -1,43 +1,43 @@
-insert into Statusy values(1, 'Order placed');
-insert into Statusy values(2, 'Accepted');
-insert into Statusy values(3, 'In process');
-insert into Statusy values(4, 'Waiting for courier');
-insert into Statusy values(5, 'Delivery');
-insert into Statusy values(6, 'Delivered');
+insert into Statusy values(1, 'Order placed'),
+	(2, 'Accepted'),
+(3, 'In process'),
+(4, 'Waiting for courier'),
+(5, 'Delivery'),
+(6, 'Delivered');
 
-insert into Kategorie values(1, 'FastFood');
-insert into Kategorie values(2, 'Burger');
-insert into Kategorie values(3, 'Kebab');
-insert into Kategorie values(4, 'Spagetti');
-insert into Kategorie values(5, 'Drink');
-insert into Kategorie values(6, 'Sushi');
-insert into Kategorie values(7, 'Pizza');
-insert into Kategorie values(8, 'Asian');
-insert into Kategorie values(9, 'American');
-insert into Kategorie values(10, 'Pancakes');
-insert into Kategorie values(11, 'Middle Eastern');
-insert into Kategorie values(12, 'Bakery');
-insert into Kategorie values(13, 'Georgian');
-insert into Kategorie values(14, 'Desserts');
-insert into Kategorie values(15, 'European');
-insert into Kategorie values(16, 'Breakfast');
-insert into Kategorie values(17, 'Indian');
-insert into Kategorie values(18, 'Italian');
-insert into Kategorie values(19, 'Mexican');
-insert into Kategorie values(20, 'Seafood');
-insert into Kategorie values(21, 'Salads');
-insert into Kategorie values(22, 'Sweets');
-insert into Kategorie values(23, 'Sandwiches');
-insert into Kategorie values(24, 'Tea and Coffee');
-insert into Kategorie values(25, 'Kebabs');
-insert into Kategorie values(26, 'Snacks');
-insert into Kategorie values(27, 'Polish');
-insert into Kategorie values(28, 'Chicken');
+insert into Kategorie values(1, 'FastFood'),
+(2, 'Burger'),
+(3, 'Kebab'),
+(4, 'Spagetti'),
+(5, 'Drink'),
+(6, 'Sushi'),
+(7, 'Pizza'),
+(8, 'Asian'),
+(9, 'American'),
+(10, 'Pancakes'),
+(11, 'Middle Eastern'),
+(12, 'Bakery'),
+(13, 'Georgian'),
+(14, 'Desserts'),
+(15, 'European'),
+(16, 'Breakfast'),
+(17, 'Indian'),
+(18, 'Italian'),
+(19, 'Mexican'),
+(20, 'Seafood'),
+(21, 'Salads'),
+(22, 'Sweets'),
+(23, 'Sandwiches'),
+(24, 'Tea and Coffee'),
+(25, 'Kebabs'),
+(26, 'Snacks'),
+(27, 'Polish'),
+(28, 'Chicken');
 
-insert into Transport_kurjera values(1, 'Car');
-insert into Transport_kurjera values(2, 'Motobake');
-insert into Transport_kurjera values(3, 'Bake');
-insert into Transport_kurjera values(4, 'On foot');
+insert into Transport_kurjera values(1, 'Car'),
+(2, 'Motobake'),
+(3, 'Bake'),
+(4, 'On foot');
 
 
 INSERT INTO Wojewodstwa VALUES
@@ -1984,2207 +1984,1810 @@ Insert into Adresy values ( 'ul. Olejowa, 27', 0, 99)
 
 ---aaadddrrreeesssyyy
 
-insert into Loginy_hasla values(-1,  'linia27', getHash('DdlGCVjH')); 
-insert into Klienci values(1, 'TORRES', 'Lynch', 949846192 , 'TORRES.Lynch@gmail.com'); 
-insert into Loginy_hasla values(-1,  'stalker76', getHash('5lzMQXh9')); 
-insert into Klienci values(2, 'SANCHEZ', 'Lally', 206210499 , 'SANCHEZ.Lally@gmail.com'); 
-insert into Loginy_hasla values(-1,  'baby59', getHash('el9Z4gZW')); 
-insert into Klienci values(3, 'CRAWFORD', 'Lim', 806593138 , 'CRAWFORD.Lim@gmail.com'); 
-insert into Loginy_hasla values(-1,  'Schnuddel88', getHash('lb40WQol')); 
-insert into Klienci values(4, 'CASTRO', 'Littlefield', 857705981 , 'CASTRO.Littlefield@gmail.com'); 
-insert into Loginy_hasla values(-1,  'zero32', getHash('qZZbVWWp')); 
-insert into Klienci values(5, 'BRADLEY', 'Larkins', 191817666 , 'BRADLEY.Larkins@gmail.com'); 
-insert into Loginy_hasla values(-1,  'gold11', getHash('6BPjltVX')); 
-insert into Klienci values(6, 'RIOS', 'Leone', 338640982 , 'RIOS.Leone@gmail.com'); 
-insert into Loginy_hasla values(-1,  'fkleev44', getHash('aTzTatlH')); 
-insert into Klienci values(7, 'BROWN', 'Linder', 394951634 , 'BROWN.Linder@gmail.com'); 
-insert into Loginy_hasla values(-1,  'John76', getHash('uWZP4VVB')); 
-insert into Klienci values(8, 'LOPEZ', 'Lanza', 725807960 , 'LOPEZ.Lanza@gmail.com'); 
-insert into Loginy_hasla values(-1,  'guf82', getHash('UWrRNmfw')); 
-insert into Klienci values(9, 'HUGHES', 'Linden', 480019898 , 'HUGHES.Linden@gmail.com'); 
-insert into Loginy_hasla values(-1,  'Vell86', getHash('ldalk6Zr')); 
-insert into Klienci values(10, 'HENDERSON', 'Linn', 891453977 , 'HENDERSON.Linn@gmail.com'); 
-insert into Loginy_hasla values(-1,  'Vorona3449', getHash('dVakfli5')); 
-insert into Klienci values(11, 'WHEELER', 'Lazo', 220568178 , 'WHEELER.Lazo@gmail.com'); 
-insert into Loginy_hasla values(-1,  'klassik92', getHash('m8bRkAXU')); 
-insert into Klienci values(12, 'AUSTIN', 'Langer', 450671831 , 'AUSTIN.Langer@gmail.com'); 
-insert into Loginy_hasla values(-1,  'just90', getHash('lwNZkVkg')); 
-insert into Klienci values(13, 'PERKINS', 'Landeros', 983958892 , 'PERKINS.Landeros@gmail.com'); 
-insert into Loginy_hasla values(-1,  'kissme23', getHash('xVfeQZbY')); 
-insert into Klienci values(14, 'WILLIAMS', 'Lovejoy', 567902674 , 'WILLIAMS.Lovejoy@gmail.com'); 
-insert into Loginy_hasla values(-1,  'patti50', getHash('AJShDZUR')); 
-insert into Klienci values(15, 'MOORE', 'Lanham', 053763282 , 'MOORE.Lanham@gmail.com'); 
-insert into Loginy_hasla values(-1,  'killer33', getHash('iWfgJ4Xi')); 
-insert into Klienci values(16, 'ROGERS', 'Lomeli', 777631640 , 'ROGERS.Lomeli@gmail.com'); 
-insert into Loginy_hasla values(-1,  'black21', getHash('lRVjjMYX')); 
-insert into Klienci values(17, 'MILLS', 'Lenhart', 617493832 , 'MILLS.Lenhart@gmail.com'); 
-insert into Loginy_hasla values(-1,  'thefish23', getHash('2mlVusiV')); 
-insert into Klienci values(18, 'BARNES', 'Lafferty', 436589439 , 'BARNES.Lafferty@gmail.com'); 
-insert into Loginy_hasla values(-1,  'john84', getHash('3USdhVGA')); 
-insert into Klienci values(19, 'WAGNER', 'Loftus', 453892412 , 'WAGNER.Loftus@gmail.com'); 
-insert into Loginy_hasla values(-1,  'zvonok92', getHash('a4emIijX')); 
-insert into Klienci values(20, 'CHAPMAN', 'Lundquist', 485163840 , 'CHAPMAN.Lundquist@gmail.com'); 
-insert into Loginy_hasla values(-1,  'war30', getHash('YmVEdZdb')); 
-insert into Klienci values(21, 'JAMES', 'Landis', 372119110 , 'JAMES.Landis@gmail.com'); 
-insert into Loginy_hasla values(-1,  'baby10', getHash('YSSgrWjV')); 
-insert into Klienci values(22, 'SALAZAR', 'Leake', 331041165 , 'SALAZAR.Leake@gmail.com'); 
-insert into Loginy_hasla values(-1,  'snake11', getHash('iXahnVPV')); 
-insert into Klienci values(23, 'WILSON', 'Lightfoot', 839256500 , 'WILSON.Lightfoot@gmail.com'); 
-insert into Loginy_hasla values(-1,  'Marly50', getHash('bWhQlVal')); 
-insert into Klienci values(24, 'ROBERTS', 'Lessard', 871551317 , 'ROBERTS.Lessard@gmail.com'); 
-insert into Loginy_hasla values(-1,  'dusha87', getHash('YmYUOtbV')); 
-insert into Klienci values(25, 'BRYANT', 'Levitt', 040390586 , 'BRYANT.Levitt@gmail.com'); 
-insert into Loginy_hasla values(-1,  'duty13', getHash('jfpKdblQ')); 
-insert into Klienci values(26, 'RIOS', 'Lively', 493251519 , 'RIOS.Lively@gmail.com'); 
-insert into Loginy_hasla values(-1,  'gamer95', getHash('HlZh2kkR')); 
-insert into Klienci values(27, 'JOHNSON', 'Leger', 512215989 , 'JOHNSON.Leger@gmail.com'); 
-insert into Loginy_hasla values(-1,  'miller31', getHash('eigrbbmb')); 
-insert into Klienci values(28, 'GORDON', 'Littleton', 996449055 , 'GORDON.Littleton@gmail.com'); 
-insert into Loginy_hasla values(-1,  'yourdream23', getHash('ZYGd9t10')); 
-insert into Klienci values(29, 'PATEL', 'Louie', 826563974 , 'PATEL.Louie@gmail.com'); 
-insert into Loginy_hasla values(-1,  'rolcom92', getHash('XQ9WcTMx')); 
-insert into Klienci values(30, 'SCHMIDT', 'Lovelace', 201931234 , 'SCHMIDT.Lovelace@gmail.com'); 
-insert into Loginy_hasla values(-1,  'grey53', getHash('SZeLiUuE')); 
-insert into Klienci values(31, 'HUDSON', 'Lambert', 790596541 , 'HUDSON.Lambert@gmail.com'); 
-insert into Loginy_hasla values(-1,  'linia92', getHash('iWy3VAP4')); 
-insert into Klienci values(32, 'MILLS', 'Lawler', 108862916 , 'MILLS.Lawler@gmail.com'); 
-insert into Loginy_hasla values(-1,  'Flatson56', getHash('hIpWkTCd')); 
-insert into Klienci values(33, 'HERNANDEZ', 'Lafferty', 797687713 , 'HERNANDEZ.Lafferty@gmail.com'); 
-insert into Loginy_hasla values(-1,  'love86', getHash('UmZiBRRN')); 
-insert into Klienci values(34, 'SCHMIDT', 'Lundy', 929050158 , 'SCHMIDT.Lundy@gmail.com'); 
-insert into Loginy_hasla values(-1,  'koird78', getHash('SmKfWeAc')); 
-insert into Klienci values(35, 'BAKER', 'Lovato', 698731380 , 'BAKER.Lovato@gmail.com'); 
-insert into Loginy_hasla values(-1,  'yourdream91', getHash('WJcLhYia')); 
-insert into Klienci values(36, 'NGUYEN', 'Lizarraga', 213302359 , 'NGUYEN.Lizarraga@gmail.com'); 
-insert into Loginy_hasla values(-1,  'laky35', getHash('dzQ5ij4Q')); 
-insert into Klienci values(37, 'CAMPBELL', 'Lyons', 783835392 , 'CAMPBELL.Lyons@gmail.com'); 
-insert into Loginy_hasla values(-1,  'patti39', getHash('im6mfxca')); 
-insert into Klienci values(38, 'BROOKS', 'Leroy', 455919978 , 'BROOKS.Leroy@gmail.com'); 
-insert into Loginy_hasla values(-1,  'jorik72', getHash('dLkWussZ')); 
-insert into Klienci values(39, 'HARRISON', 'Lambert', 673032402 , 'HARRISON.Lambert@gmail.com'); 
-insert into Loginy_hasla values(-1,  'victor68', getHash('RVPYQeSF')); 
-insert into Klienci values(40, 'VASQUEZ', 'Lombardi', 061052645 , 'VASQUEZ.Lombardi@gmail.com'); 
-insert into Loginy_hasla values(-1,  'alexander13', getHash('kaaPb0b4')); 
-insert into Klienci values(41, 'RICE', 'Lock', 846569654 , 'RICE.Lock@gmail.com'); 
-insert into Loginy_hasla values(-1,  'Vizator14', getHash('USfYGkdV')); 
-insert into Klienci values(42, 'FOX', 'Lor', 516933717 , 'FOX.Lor@gmail.com'); 
-insert into Loginy_hasla values(-1,  'xtro5', getHash('bjRAV4Xw')); 
-insert into Klienci values(43, 'BERRY', 'Leonard', 831126225 , 'BERRY.Leonard@gmail.com'); 
-insert into Loginy_hasla values(-1,  'neznakomka43', getHash('VZgddpde')); 
-insert into Klienci values(44, 'MASON', 'Lett', 271426288 , 'MASON.Lett@gmail.com'); 
-insert into Loginy_hasla values(-1,  'xploit83', getHash('9WGeBQed')); 
-insert into Klienci values(45, 'WAGNER', 'Leyva', 071889320 , 'WAGNER.Leyva@gmail.com'); 
-insert into Loginy_hasla values(-1,  'vitatorg61', getHash('VUSj8mdX')); 
-insert into Klienci values(46, 'ALVARADO', 'Laporte', 612893305 , 'ALVARADO.Laporte@gmail.com'); 
-insert into Loginy_hasla values(-1,  'patti19', getHash('idDPW0Vb')); 
-insert into Klienci values(47, 'RICHARDSON', 'Leone', 569231053 , 'RICHARDSON.Leone@gmail.com'); 
-insert into Loginy_hasla values(-1,  'vip26', getHash('EpeQHPKU')); 
-insert into Klienci values(48, 'HENDERSON', 'Lapp', 681951584 , 'HENDERSON.Lapp@gmail.com'); 
-insert into Loginy_hasla values(-1,  'snake68', getHash('PdkgbN9a')); 
-insert into Klienci values(49, 'WASHINGTON', 'Loftis', 105868495 , 'WASHINGTON.Loftis@gmail.com'); 
-insert into Loginy_hasla values(-1,  'me31', getHash('fej9UkCj')); 
-insert into Klienci values(50, 'BLACK', 'Lively', 256493527 , 'BLACK.Lively@gmail.com'); 
-insert into Loginy_hasla values(-1,  'name99', getHash('kWsQQPpm')); 
-insert into Klienci values(51, 'MITCHELL', 'Loftis', 309919715 , 'MITCHELL.Loftis@gmail.com'); 
-insert into Loginy_hasla values(-1,  'Julia44', getHash('M0lf7Ugy')); 
-insert into Klienci values(52, 'ARNOLD', 'Leroy', 681880431 , 'ARNOLD.Leroy@gmail.com'); 
-insert into Loginy_hasla values(-1,  'dan21', getHash('gbkl3mCR')); 
-insert into Klienci values(53, 'GUTIERREZ', 'Lincoln', 934116509 , 'GUTIERREZ.Lincoln@gmail.com'); 
-insert into Loginy_hasla values(-1,  '1000871644', getHash('ilaaUgfa')); 
-insert into Klienci values(54, 'RILEY', 'Lussier', 684570774 , 'RILEY.Lussier@gmail.com'); 
-insert into Loginy_hasla values(-1,  'Elvis33', getHash('BdjWmJUY')); 
-insert into Klienci values(55, 'SPENCER', 'Leatherman', 073602868 , 'SPENCER.Leatherman@gmail.com'); 
-insert into Loginy_hasla values(-1,  'angel88', getHash('kgYdRVS1')); 
-insert into Klienci values(56, 'WELLS', 'Loredo', 845871323 , 'WELLS.Loredo@gmail.com'); 
-insert into Loginy_hasla values(-1,  'yourdream53', getHash('mlWgGEmY')); 
-insert into Klienci values(57, 'DUNCAN', 'Lipscomb', 400851436 , 'DUNCAN.Lipscomb@gmail.com'); 
-insert into Loginy_hasla values(-1,  'wolf2', getHash('iVOWkeiT')); 
-insert into Klienci values(58, 'MURPHY', 'Lowell', 465990322 , 'MURPHY.Lowell@gmail.com'); 
-insert into Loginy_hasla values(-1,  'Vell25', getHash('WP2gUU7Q')); 
-insert into Klienci values(59, 'FORD', 'Lowrey', 517324644 , 'FORD.Lowrey@gmail.com'); 
-insert into Loginy_hasla values(-1,  'lol93', getHash('V5YSgkxL')); 
-insert into Klienci values(60, 'GRAY', 'Leija', 061756792 , 'GRAY.Leija@gmail.com'); 
-insert into Loginy_hasla values(-1,  'tester49', getHash('iXxTaWch')); 
-insert into Klienci values(61, 'CRAWFORD', 'Lightner', 894203394 , 'CRAWFORD.Lightner@gmail.com'); 
-insert into Loginy_hasla values(-1,  'kent47', getHash('iWLP5Xmb')); 
-insert into Klienci values(62, 'HUGHES', 'Lombard', 721472316 , 'HUGHES.Lombard@gmail.com'); 
-insert into Loginy_hasla values(-1,  'victor17', getHash('eWdQdkxc')); 
-insert into Klienci values(63, 'STEVENS', 'Lowry', 889645420 , 'STEVENS.Lowry@gmail.com'); 
-insert into Loginy_hasla values(-1,  'Vampir65', getHash('WXQZYE7q')); 
-insert into Klienci values(64, 'PENA', 'Littlefield', 896640509 , 'PENA.Littlefield@gmail.com'); 
-insert into Loginy_hasla values(-1,  'andby14', getHash('h1WfRBIk')); 
-insert into Klienci values(65, 'SIMMONS', 'Libby', 014389254 , 'SIMMONS.Libby@gmail.com'); 
-insert into Loginy_hasla values(-1,  'Libra34', getHash('PSIf5PVp')); 
-insert into Klienci values(66, 'MATTHEWS', 'Lloyd', 481690405 , 'MATTHEWS.Lloyd@gmail.com'); 
-insert into Loginy_hasla values(-1,  'trustme62', getHash('XuqfblQT')); 
-insert into Klienci values(67, 'RODRIGUEZ', 'Lynn', 993543185 , 'RODRIGUEZ.Lynn@gmail.com'); 
-insert into Loginy_hasla values(-1,  'faraon44', getHash('WTdbPbQk')); 
-insert into Klienci values(68, 'REED', 'Lavelle', 972622758 , 'REED.Lavelle@gmail.com'); 
-insert into Loginy_hasla values(-1,  'zaika50', getHash('VitMVKcl')); 
-insert into Klienci values(69, 'LAWRENCE', 'Letourneau', 824851429 , 'LAWRENCE.Letourneau@gmail.com'); 
-insert into Loginy_hasla values(-1,  'fkleev20', getHash('TkZXjlbf')); 
-insert into Klienci values(70, 'BUTLER', 'Lovato', 966334230 , 'BUTLER.Lovato@gmail.com'); 
-insert into Loginy_hasla values(-1,  'wolf0', getHash('l0fvWPOd')); 
-insert into Klienci values(71, 'KING', 'Logan', 159410613 , 'KING.Logan@gmail.com'); 
-insert into Loginy_hasla values(-1,  'evanfe32', getHash('SZjVVgmV')); 
-insert into Klienci values(72, 'WEAVER', 'Leong', 371874518 , 'WEAVER.Leong@gmail.com'); 
-insert into Loginy_hasla values(-1,  'klassik50', getHash('enoSFx4z')); 
-insert into Klienci values(73, 'BRADLEY', 'Lowder', 606830432 , 'BRADLEY.Lowder@gmail.com'); 
-insert into Loginy_hasla values(-1,  'zaika6', getHash('5kGP48cJ')); 
-insert into Klienci values(74, 'RUIZ', 'Loving', 980448205 , 'RUIZ.Loving@gmail.com'); 
-insert into Loginy_hasla values(-1,  'Vortelio85', getHash('eEpdzUPe')); 
-insert into Klienci values(75, 'WAGNER', 'Levine', 779503673 , 'WAGNER.Levine@gmail.com'); 
-insert into Loginy_hasla values(-1,  'grey98', getHash('HVpamRKg')); 
-insert into Klienci values(76, 'REYNOLDS', 'Lester', 599770610 , 'REYNOLDS.Lester@gmail.com'); 
-insert into Loginy_hasla values(-1,  'wtf75', getHash('3XVIhJPz')); 
-insert into Klienci values(77, 'STEPHENS', 'Lazaro', 869610214 , 'STEPHENS.Lazaro@gmail.com'); 
-insert into Loginy_hasla values(-1,  'king75', getHash('Q3TYRhXi')); 
-insert into Klienci values(78, 'LEE', 'Leeper', 387300266 , 'LEE.Leeper@gmail.com'); 
-insert into Loginy_hasla values(-1,  'me77', getHash('iSPa0gAj')); 
-insert into Klienci values(79, 'COX', 'Lock', 714694832 , 'COX.Lock@gmail.com'); 
-insert into Loginy_hasla values(-1,  'redstaffer99', getHash('bVehQzBg')); 
-insert into Klienci values(80, 'MYERS', 'Landrum', 914587674 , 'MYERS.Landrum@gmail.com'); 
-insert into Loginy_hasla values(-1,  'yourdream86', getHash('XniDkXkA')); 
-insert into Klienci values(81, 'TRAN', 'Lawton', 194961369 , 'TRAN.Lawton@gmail.com'); 
-insert into Loginy_hasla values(-1,  'jorik96', getHash('PiL19oYp')); 
-insert into Klienci values(82, 'CARLSON', 'Littleton', 333171388 , 'CARLSON.Littleton@gmail.com'); 
-insert into Loginy_hasla values(-1,  'Vell35', getHash('4xiPBnL9')); 
-insert into Klienci values(83, 'REYES', 'Lange', 935755591 , 'REYES.Lange@gmail.com'); 
-insert into Loginy_hasla values(-1,  'sasuke14', getHash('buclVcXM')); 
-insert into Klienci values(84, 'SANCHEZ', 'Lander', 073660637 , 'SANCHEZ.Lander@gmail.com'); 
-insert into Loginy_hasla values(-1,  'region89', getHash('VgvSGnkm')); 
-insert into Klienci values(85, 'WEBB', 'Latta', 641573405 , 'WEBB.Latta@gmail.com'); 
-insert into Loginy_hasla values(-1,  'roman62', getHash('prb3mXAj')); 
-insert into Klienci values(86, 'WALKER', 'Lashley', 931978002 , 'WALKER.Lashley@gmail.com'); 
-insert into Loginy_hasla values(-1,  'agrorynok78', getHash('ymqz8S7Z')); 
-insert into Klienci values(87, 'NGUYEN', 'Lindberg', 584128564 , 'NGUYEN.Lindberg@gmail.com'); 
-insert into Loginy_hasla values(-1,  'Bob8', getHash('HkemhhFk')); 
-insert into Klienci values(88, 'HARPER', 'Leahy', 835844484 , 'HARPER.Leahy@gmail.com'); 
-insert into Loginy_hasla values(-1,  'jaguar9', getHash('lxZWtlVY')); 
-insert into Klienci values(89, 'NELSON', 'Langer', 458066214 , 'NELSON.Langer@gmail.com'); 
-insert into Loginy_hasla values(-1,  'gamer7', getHash('mXglmakQ')); 
-insert into Klienci values(90, 'KELLEY', 'Luna', 594588191 , 'KELLEY.Luna@gmail.com'); 
-insert into Loginy_hasla values(-1,  'denis29', getHash('ijiLNgcU')); 
-insert into Klienci values(91, 'WOODS', 'Lomax', 086638762 , 'WOODS.Lomax@gmail.com'); 
-insert into Loginy_hasla values(-1,  'jony91', getHash('jdZ4mXiV')); 
-insert into Klienci values(92, 'SIMMONS', 'Lawlor', 688237270 , 'SIMMONS.Lawlor@gmail.com'); 
-insert into Loginy_hasla values(-1,  'BurnPro70', getHash('fbmnYmpS')); 
-insert into Klienci values(93, 'STEVENS', 'Lanham', 610049724 , 'STEVENS.Lanham@gmail.com'); 
-insert into Loginy_hasla values(-1,  'rap19', getHash('jacMalhS')); 
-insert into Klienci values(94, 'BENNETT', 'Lawlor', 998189068 , 'BENNETT.Lawlor@gmail.com'); 
-insert into Loginy_hasla values(-1,  'lol29', getHash('GbyPXhbd')); 
-insert into Klienci values(95, 'KELLEY', 'Letourneau', 214897435 , 'KELLEY.Letourneau@gmail.com'); 
-insert into Loginy_hasla values(-1,  'happy99', getHash('bYZklPCf')); 
-insert into Klienci values(96, 'HOLMES', 'Legg', 281788489 , 'HOLMES.Legg@gmail.com'); 
-insert into Loginy_hasla values(-1,  'maloy61', getHash('RQZQzlf8')); 
-insert into Klienci values(97, 'BROWN', 'Lemoine', 782394484 , 'BROWN.Lemoine@gmail.com'); 
-insert into Loginy_hasla values(-1,  'xploit99', getHash('kdfgShhF')); 
-insert into Klienci values(98, 'RAMIREZ', 'Lacroix', 124264800 , 'RAMIREZ.Lacroix@gmail.com'); 
-insert into Loginy_hasla values(-1,  'helpinv82', getHash('dj7gUlDk')); 
-insert into Klienci values(99, 'HALL', 'Lay', 888269319 , 'HALL.Lay@gmail.com'); 
-insert into Loginy_hasla values(-1,  'airforlife92', getHash('ebaJfORX')); 
-insert into Klienci values(100, 'PENA', 'Lavigne', 386375856 , 'PENA.Lavigne@gmail.com'); 
-insert into Loginy_hasla values(-1,  'dinis69', getHash('d0TZMSdP')); 
-insert into Klienci values(101, 'BAILEY', 'Lees', 379613916 , 'BAILEY.Lees@gmail.com'); 
-insert into Loginy_hasla values(-1,  'stalker41', getHash('tbrlqEHo')); 
-insert into Klienci values(102, 'CUNNINGHAM', 'Laws', 255053271 , 'CUNNINGHAM.Laws@gmail.com'); 
-insert into Loginy_hasla values(-1,  'stalker0', getHash('IVicS6Fv')); 
-insert into Klienci values(103, 'RUSSELL', 'Loving', 724097413 , 'RUSSELL.Loving@gmail.com'); 
-insert into Loginy_hasla values(-1,  'xtro76', getHash('kfRbThkV')); 
-insert into Klienci values(104, 'RYAN', 'Lear', 891527219 , 'RYAN.Lear@gmail.com'); 
-insert into Loginy_hasla values(-1,  'supportpc14', getHash('YXQ7VQQY')); 
-insert into Klienci values(105, 'ESTRADA', 'Lawson', 293738628 , 'ESTRADA.Lawson@gmail.com'); 
-insert into Loginy_hasla values(-1,  'jaguar0', getHash('WjhPjafy')); 
-insert into Klienci values(106, 'DIXON', 'Levinson', 379748321 , 'DIXON.Levinson@gmail.com'); 
-insert into Loginy_hasla values(-1,  'killer99', getHash('g2kSVEt3')); 
-insert into Klienci values(107, 'WILLIS', 'Lapp', 938130839 , 'WILLIS.Lapp@gmail.com'); 
-insert into Loginy_hasla values(-1,  'etalon_admin50', getHash('fjQhwrVT')); 
-insert into Klienci values(108, 'HANSEN', 'Linder', 566605655 , 'HANSEN.Linder@gmail.com'); 
-insert into Loginy_hasla values(-1,  'narayana22', getHash('dVWCvhOl')); 
-insert into Klienci values(109, 'ADAMS', 'Lacey', 954618636 , 'ADAMS.Lacey@gmail.com'); 
-insert into Loginy_hasla values(-1,  'koruna11223358', getHash('aJkckSGT')); 
-insert into Klienci values(110, 'MALDONADO', 'Lange', 432127467 , 'MALDONADO.Lange@gmail.com'); 
-insert into Loginy_hasla values(-1,  'company0', getHash('P8iipKhh')); 
-insert into Klienci values(111, 'HENDERSON', 'Lentz', 080452209 , 'HENDERSON.Lentz@gmail.com'); 
-insert into Loginy_hasla values(-1,  'box02039', getHash('dUdtcTjU')); 
-insert into Klienci values(112, 'CLARK', 'Loftin', 278962121 , 'CLARK.Loftin@gmail.com'); 
-insert into Loginy_hasla values(-1,  'sweet87', getHash('SPFTItaP')); 
-insert into Klienci values(113, 'TRAN', 'Leslie', 977570236 , 'TRAN.Leslie@gmail.com'); 
-insert into Loginy_hasla values(-1,  'nport75', getHash('M2ewcNUw')); 
-insert into Klienci values(114, 'COOPER', 'Ladd', 247956105 , 'COOPER.Ladd@gmail.com'); 
-insert into Loginy_hasla values(-1,  'honey24', getHash('rdYpPiM4')); 
-insert into Klienci values(115, 'VALDEZ', 'Longo', 772915102 , 'VALDEZ.Longo@gmail.com'); 
-insert into Loginy_hasla values(-1,  'kill73', getHash('Qnf6aZKk')); 
-insert into Klienci values(116, 'FOSTER', 'Lovett', 646318726 , 'FOSTER.Lovett@gmail.com'); 
-insert into Loginy_hasla values(-1,  'gamer83', getHash('q9kDWmdH')); 
-insert into Klienci values(117, 'SPENCER', 'Lindstrom', 321756163 , 'SPENCER.Lindstrom@gmail.com'); 
-insert into Loginy_hasla values(-1,  'administrator95', getHash('aVUC3kkb')); 
-insert into Klienci values(118, 'FLORES', 'Larose', 318930039 , 'FLORES.Larose@gmail.com'); 
-insert into Loginy_hasla values(-1,  'judo90', getHash('ckZmpqJq')); 
-insert into Klienci values(119, 'DANIELS', 'Langford', 434298784 , 'DANIELS.Langford@gmail.com'); 
-insert into Loginy_hasla values(-1,  'zvonok58', getHash('UTkKRpXk')); 
-insert into Klienci values(120, 'OLSON', 'Landrum', 226711521 , 'OLSON.Landrum@gmail.com'); 
-insert into Loginy_hasla values(-1,  'zvonok68', getHash('xjUDVZRi')); 
-insert into Klienci values(121, 'WARREN', 'La', 459587337 , 'WARREN.La@gmail.com'); 
-insert into Loginy_hasla values(-1,  'supportpc58', getHash('aQSSSrdj')); 
-insert into Klienci values(122, 'SANTOS', 'Laplante', 038084449 , 'SANTOS.Laplante@gmail.com'); 
-insert into Loginy_hasla values(-1,  'webmaster80', getHash('hQYRqPSf')); 
-insert into Klienci values(123, 'SPENCER', 'Lazo', 905638207 , 'SPENCER.Lazo@gmail.com'); 
-insert into Loginy_hasla values(-1,  'supportpc66', getHash('PRJr4Zm6')); 
-insert into Klienci values(124, 'MCDONALD', 'Lira', 690835052 , 'MCDONALD.Lira@gmail.com'); 
-insert into Loginy_hasla values(-1,  'ira22', getHash('3lS6EVVb')); 
-insert into Klienci values(125, 'PEREZ', 'Lovell', 227283384 , 'PEREZ.Lovell@gmail.com'); 
-insert into Loginy_hasla values(-1,  'lost23', getHash('ZgmTczam')); 
-insert into Klienci values(126, 'SILVA', 'Lemus', 787649616 , 'SILVA.Lemus@gmail.com'); 
-insert into Loginy_hasla values(-1,  'master10', getHash('kUblrQdA')); 
-insert into Klienci values(127, 'SCHMIDT', 'Lussier', 657678377 , 'SCHMIDT.Lussier@gmail.com'); 
-insert into Loginy_hasla values(-1,  'gamer65', getHash('aRIuJdHv')); 
-insert into Klienci values(128, 'CRUZ', 'Leung', 453858453 , 'CRUZ.Leung@gmail.com'); 
-insert into Loginy_hasla values(-1,  'goblin1', getHash('ghfkEgYE')); 
-insert into Klienci values(129, 'KENNEDY', 'Ladd', 689110486 , 'KENNEDY.Ladd@gmail.com'); 
-insert into Loginy_hasla values(-1,  'tester52', getHash('1GhdejXs')); 
-insert into Klienci values(130, 'DOMINGUEZ', 'Lehr', 643169317 , 'DOMINGUEZ.Lehr@gmail.com'); 
-insert into Loginy_hasla values(-1,  'klassik85', getHash('gLbXaVgQ')); 
-insert into Klienci values(131, 'HERNANDEZ', 'Lundgren', 456195029 , 'HERNANDEZ.Lundgren@gmail.com'); 
-insert into Loginy_hasla values(-1,  'jusy41', getHash('GfGQlbX6')); 
-insert into Klienci values(132, 'CAMPBELL', 'Lowe', 957124627 , 'CAMPBELL.Lowe@gmail.com'); 
-insert into Loginy_hasla values(-1,  'heart14', getHash('KwknliPP')); 
-insert into Klienci values(133, 'SIMMONS', 'Lovell', 365367100 , 'SIMMONS.Lovell@gmail.com'); 
-insert into Loginy_hasla values(-1,  'neznakomka7', getHash('9YfRcHR1')); 
-insert into Klienci values(134, 'CHAPMAN', 'Lumpkin', 582369273 , 'CHAPMAN.Lumpkin@gmail.com'); 
-insert into Loginy_hasla values(-1,  'sexy34', getHash('cf7eKZWm')); 
-insert into Klienci values(135, 'WEAVER', 'Lampkin', 219647397 , 'WEAVER.Lampkin@gmail.com'); 
-insert into Loginy_hasla values(-1,  'koird68', getHash('mWRzCcdA')); 
-insert into Klienci values(136, 'MYERS', 'Lampkin', 183717881 , 'MYERS.Lampkin@gmail.com'); 
-insert into Loginy_hasla values(-1,  'lonely39', getHash('UghgZeV8')); 
-insert into Klienci values(137, 'MOORE', 'Labelle', 453954930 , 'MOORE.Labelle@gmail.com'); 
-insert into Loginy_hasla values(-1,  'dark83', getHash('QCU2cWsa')); 
-insert into Klienci values(138, 'DAVIS', 'Lawlor', 142211604 , 'DAVIS.Lawlor@gmail.com'); 
-insert into Loginy_hasla values(-1,  'X-man64', getHash('TmlRalZW')); 
-insert into Klienci values(139, 'CARLSON', 'Leathers', 250608928 , 'CARLSON.Leathers@gmail.com'); 
-insert into Loginy_hasla values(-1,  'admin9', getHash('XjMHkZPz')); 
-insert into Klienci values(140, 'RODRIGUEZ', 'Leone', 481176983 , 'RODRIGUEZ.Leone@gmail.com'); 
-insert into Loginy_hasla values(-1,  'www1', getHash('mQPSY4UX')); 
-insert into Klienci values(141, 'MORRIS', 'Leffler', 353291431 , 'MORRIS.Leffler@gmail.com'); 
-insert into Loginy_hasla values(-1,  'minherz69', getHash('ShYNXbJd')); 
-insert into Klienci values(142, 'JONES', 'Leake', 254792986 , 'JONES.Leake@gmail.com'); 
-insert into Loginy_hasla values(-1,  'Vorona342', getHash('UbnffLRk')); 
-insert into Klienci values(143, 'BAKER', 'Lerner', 691146497 , 'BAKER.Lerner@gmail.com'); 
-insert into Loginy_hasla values(-1,  'Bob7', getHash('XgBTf4W9')); 
-insert into Klienci values(144, 'ADAMS', 'Laplante', 539147109 , 'ADAMS.Laplante@gmail.com'); 
-insert into Loginy_hasla values(-1,  'Peter.Berghausen94', getHash('2VlWdczc')); 
-insert into Klienci values(145, 'JORDAN', 'Lindberg', 216718450 , 'JORDAN.Lindberg@gmail.com'); 
-insert into Loginy_hasla values(-1,  'rikanda17', getHash('AQhaLjhk')); 
-insert into Klienci values(146, 'MALDONADO', 'Lester', 750979997 , 'MALDONADO.Lester@gmail.com'); 
-insert into Loginy_hasla values(-1,  'milaia14', getHash('xxfDXnZG')); 
-insert into Klienci values(147, 'GONZALES', 'Lashley', 982191757 , 'GONZALES.Lashley@gmail.com'); 
-insert into Loginy_hasla values(-1,  'gold59', getHash('blcraU9S')); 
-insert into Klienci values(148, 'COLLINS', 'Larson', 384966538 , 'COLLINS.Larson@gmail.com'); 
-insert into Loginy_hasla values(-1,  'duty15', getHash('ZXWZ9W7W')); 
-insert into Klienci values(149, 'PATTERSON', 'Lacey', 664530319 , 'PATTERSON.Lacey@gmail.com'); 
-insert into Loginy_hasla values(-1,  'SuperTone54', getHash('pCjzachX')); 
-insert into Klienci values(150, 'JACKSON', 'Lowder', 746496331 , 'JACKSON.Lowder@gmail.com'); 
-insert into Loginy_hasla values(-1,  'Klam68', getHash('fwciWInH')); 
-insert into Klienci values(151, 'VALDEZ', 'Lor', 433776755 , 'VALDEZ.Lor@gmail.com'); 
-insert into Loginy_hasla values(-1,  'redstaffer19', getHash('cD56lSKj')); 
-insert into Klienci values(152, 'BAILEY', 'Lester', 767302351 , 'BAILEY.Lester@gmail.com'); 
-insert into Loginy_hasla values(-1,  'Marly83', getHash('UcedpGYR')); 
-insert into Klienci values(153, 'NICHOLS', 'Lorenzo', 239025680 , 'NICHOLS.Lorenzo@gmail.com'); 
-insert into Loginy_hasla values(-1,  'koruna11223364', getHash('QBQXlRfl')); 
-insert into Klienci values(154, 'ROSS', 'Landis', 791370145 , 'ROSS.Landis@gmail.com'); 
-insert into Loginy_hasla values(-1,  'anime3', getHash('fUpEvjeQ')); 
-insert into Klienci values(155, 'ROGERS', 'Laster', 738251928 , 'ROGERS.Laster@gmail.com'); 
-insert into Loginy_hasla values(-1,  'sweet34', getHash('UPe6Em1T')); 
-insert into Klienci values(156, 'MOORE', 'Llewellyn', 859971877 , 'MOORE.Llewellyn@gmail.com'); 
-insert into Loginy_hasla values(-1,  'druid49', getHash('QAQK58Wl')); 
-insert into Klienci values(157, 'BRADLEY', 'Lash', 149336367 , 'BRADLEY.Lash@gmail.com'); 
-insert into Loginy_hasla values(-1,  'marva70', getHash('eKeheYwi')); 
-insert into Klienci values(158, 'WILSON', 'Luster', 297703118 , 'WILSON.Luster@gmail.com'); 
-insert into Loginy_hasla values(-1,  'Klam96', getHash('dQyTcmsx')); 
-insert into Klienci values(159, 'MOORE', 'Lees', 551176315 , 'MOORE.Lees@gmail.com'); 
-insert into Loginy_hasla values(-1,  'rusinborg88', getHash('GVdrSYdG')); 
-insert into Klienci values(160, 'GUZMAN', 'Langdon', 923067398 , 'GUZMAN.Langdon@gmail.com'); 
-insert into Loginy_hasla values(-1,  'rikanda67', getHash('umubcVQS')); 
-insert into Klienci values(161, 'HARPER', 'Leonard', 737645562 , 'HARPER.Leonard@gmail.com'); 
-insert into Loginy_hasla values(-1,  'king72', getHash('fRlS1fiS')); 
-insert into Klienci values(162, 'ROBINSON', 'Leahy', 136732519 , 'ROBINSON.Leahy@gmail.com'); 
-insert into Loginy_hasla values(-1,  'pain5', getHash('PJVqTZR1')); 
-insert into Klienci values(163, 'ROMERO', 'Luttrell', 661026231 , 'ROMERO.Luttrell@gmail.com'); 
-insert into Loginy_hasla values(-1,  'alex16', getHash('QlQlGYDM')); 
-insert into Klienci values(164, 'GUZMAN', 'Lawless', 498553751 , 'GUZMAN.Lawless@gmail.com'); 
-insert into Loginy_hasla values(-1,  'sasuke59', getHash('USUHhljE')); 
-insert into Klienci values(165, 'HENRY', 'Loza', 500459165 , 'HENRY.Loza@gmail.com'); 
-insert into Loginy_hasla values(-1,  'andy1', getHash('cgcYXSDi')); 
-insert into Klienci values(166, 'RIVERA', 'Lujan', 147050690 , 'RIVERA.Lujan@gmail.com'); 
-insert into Loginy_hasla values(-1,  'Albert78', getHash('Yjkhm3ir')); 
-insert into Klienci values(167, 'ROMERO', 'Luttrell', 653658160 , 'ROMERO.Luttrell@gmail.com'); 
-insert into Loginy_hasla values(-1,  'kakuzu82', getHash('VmfMRG7m')); 
-insert into Klienci values(168, 'BRYANT', 'Larkins', 571598684 , 'BRYANT.Larkins@gmail.com'); 
-insert into Loginy_hasla values(-1,  'roman70', getHash('ZqQjxuh3')); 
-insert into Klienci values(169, 'BURNS', 'Lanza', 045251606 , 'BURNS.Lanza@gmail.com'); 
-insert into Loginy_hasla values(-1,  'Gau2', getHash('meqVQWGU')); 
-insert into Klienci values(170, 'PERRY', 'Loveland', 785344378 , 'PERRY.Loveland@gmail.com'); 
-insert into Loginy_hasla values(-1,  'pupsik47', getHash('eewRUlUa')); 
-insert into Klienci values(171, 'WATSON', 'Laney', 253588263 , 'WATSON.Laney@gmail.com'); 
-insert into Loginy_hasla values(-1,  'no67', getHash('piOwcNwr')); 
-insert into Klienci values(172, 'COLE', 'Locklear', 513080948 , 'COLE.Locklear@gmail.com'); 
-insert into Loginy_hasla values(-1,  'sergej_a_g8', getHash('s487h8XK')); 
-insert into Klienci values(173, 'BARNES', 'Lima', 002490893 , 'BARNES.Lima@gmail.com'); 
-insert into Loginy_hasla values(-1,  'rap74', getHash('XcRLyVbh')); 
-insert into Klienci values(174, 'GARZA', 'Lazar', 616596647 , 'GARZA.Lazar@gmail.com'); 
-insert into Loginy_hasla values(-1,  'rikanda55', getHash('gSXYebbh')); 
-insert into Klienci values(175, 'FERGUSON', 'Lawson', 298123268 , 'FERGUSON.Lawson@gmail.com'); 
-insert into Loginy_hasla values(-1,  'linia86', getHash('ZbVxmeY4')); 
-insert into Klienci values(176, 'RAMIREZ', 'Landon', 464583685 , 'RAMIREZ.Landon@gmail.com'); 
-insert into Loginy_hasla values(-1,  'naruto94', getHash('Psk00hUh')); 
-insert into Klienci values(177, 'FOX', 'Leong', 167078722 , 'FOX.Leong@gmail.com'); 
-insert into Loginy_hasla values(-1,  'airforlife30', getHash('dFZUpdQW')); 
-insert into Klienci values(178, 'ROBERTS', 'Leavitt', 196912561 , 'ROBERTS.Leavitt@gmail.com'); 
-insert into Loginy_hasla values(-1,  'super77', getHash('SNXhiD6c')); 
-insert into Klienci values(179, 'BOYD', 'Liang', 941114293 , 'BOYD.Liang@gmail.com'); 
-insert into Loginy_hasla values(-1,  'rap51', getHash('HqXhzZga')); 
-insert into Klienci values(180, 'ANDERSON', 'Longoria', 953656605 , 'ANDERSON.Longoria@gmail.com'); 
-insert into Loginy_hasla values(-1,  'war20', getHash('HwbvjobK')); 
-insert into Klienci values(181, 'OLSON', 'Larsen', 477029587 , 'OLSON.Larsen@gmail.com'); 
-insert into Loginy_hasla values(-1,  'andby10', getHash('fjrRZ0fD')); 
-insert into Klienci values(182, 'JOHNSON', 'Lowell', 314578944 , 'JOHNSON.Lowell@gmail.com'); 
-insert into Loginy_hasla values(-1,  'sg20', getHash('PtwM2pdP')); 
-insert into Klienci values(183, 'ORTEGA', 'Lavigne', 184559767 , 'ORTEGA.Lavigne@gmail.com'); 
-insert into Loginy_hasla values(-1,  'comando14', getHash('YdadRlhe')); 
-insert into Klienci values(184, 'HAMILTON', 'Locklear', 424636215 , 'HAMILTON.Locklear@gmail.com'); 
-insert into Loginy_hasla values(-1,  'etalon_admin86', getHash('o6AfUala')); 
-insert into Klienci values(185, 'FERNANDEZ', 'Lawhorn', 798653590 , 'FERNANDEZ.Lawhorn@gmail.com'); 
-insert into Loginy_hasla values(-1,  'helpinv81', getHash('XVQakIPf')); 
-insert into Klienci values(186, 'STEPHENS', 'Loftus', 946833415 , 'STEPHENS.Loftus@gmail.com'); 
-insert into Loginy_hasla values(-1,  'Suzan6', getHash('dNaXdKhl')); 
-insert into Klienci values(187, 'BROWN', 'Leal', 619115306 , 'BROWN.Leal@gmail.com'); 
-insert into Loginy_hasla values(-1,  'war96', getHash('USURTVlZ')); 
-insert into Klienci values(188, 'ROSS', 'Large', 842551405 , 'ROSS.Large@gmail.com'); 
-insert into Loginy_hasla values(-1,  'Vell66', getHash('E0BXs2Xn')); 
-insert into Klienci values(189, 'PATTERSON', 'Lynn', 898247065 , 'PATTERSON.Lynn@gmail.com'); 
-insert into Loginy_hasla values(-1,  'andby62', getHash('9DyXNd8m')); 
-insert into Klienci values(190, 'WOOD', 'Lampkin', 439408960 , 'WOOD.Lampkin@gmail.com'); 
-insert into Loginy_hasla values(-1,  'guf31', getHash('CPlSaPRQ')); 
-insert into Klienci values(191, 'BAILEY', 'Law', 947851483 , 'BAILEY.Law@gmail.com'); 
-insert into Loginy_hasla values(-1,  'man49', getHash('YedlZfYd')); 
-insert into Klienci values(192, 'ROBERTS', 'Lofton', 700166175 , 'ROBERTS.Lofton@gmail.com'); 
-insert into Loginy_hasla values(-1,  'admin28', getHash('4FWbsTXg')); 
-insert into Klienci values(193, 'KING', 'Leija', 913495479 , 'KING.Leija@gmail.com'); 
-insert into Loginy_hasla values(-1,  'death82', getHash('QSaQlEBk')); 
-insert into Klienci values(194, 'PENA', 'Leach', 690029987 , 'PENA.Leach@gmail.com'); 
-insert into Loginy_hasla values(-1,  'judo4', getHash('x05yy619')); 
-insert into Klienci values(195, 'ADAMS', 'Lott', 432001165 , 'ADAMS.Lott@gmail.com'); 
-insert into Loginy_hasla values(-1,  'dan69', getHash('jcKcBPgs')); 
-insert into Klienci values(196, 'THOMPSON', 'Leighton', 179943715 , 'THOMPSON.Leighton@gmail.com'); 
-insert into Loginy_hasla values(-1,  'nport17', getHash('YSb1Xe0O')); 
-insert into Klienci values(197, 'HICKS', 'Loftus', 873201206 , 'HICKS.Loftus@gmail.com'); 
-insert into Loginy_hasla values(-1,  'rock77', getHash('lTaQcisQ')); 
-insert into Klienci values(198, 'SPENCER', 'Lewandowski', 456816268 , 'SPENCER.Lewandowski@gmail.com'); 
-insert into Loginy_hasla values(-1,  'miss96', getHash('5tX546RB')); 
-insert into Klienci values(199, 'GARDNER', 'Ledesma', 271256145 , 'GARDNER.Ledesma@gmail.com'); 
-insert into Loginy_hasla values(-1,  'aiko72', getHash('me73jQeZ')); 
-insert into Klienci values(200, 'COOPER', 'Lear', 143987436 , 'COOPER.Lear@gmail.com'); 
-insert into Loginy_hasla values(-1,  'heart94', getHash('hEewoZYX')); 
-insert into Klienci values(201, 'GONZALES', 'Lund', 095887326 , 'GONZALES.Lund@gmail.com'); 
-insert into Loginy_hasla values(-1,  'na_tiv31', getHash('mZhIYSVt')); 
-insert into Klienci values(202, 'MENDOZA', 'Lamb', 582182190 , 'MENDOZA.Lamb@gmail.com'); 
-insert into Loginy_hasla values(-1,  'dan88', getHash('Ny54mm3l')); 
-insert into Klienci values(203, 'FRANKLIN', 'Lawless', 530834099 , 'FRANKLIN.Lawless@gmail.com'); 
-insert into Loginy_hasla values(-1,  'death93', getHash('fiWajkU6')); 
-insert into Klienci values(204, 'KELLEY', 'Leblanc', 198115350 , 'KELLEY.Leblanc@gmail.com'); 
-insert into Loginy_hasla values(-1,  'killer59', getHash('d7mT9GVe')); 
-insert into Klienci values(205, 'KENNEDY', 'Lanham', 867287347 , 'KENNEDY.Lanham@gmail.com'); 
-insert into Loginy_hasla values(-1,  'man78', getHash('hpc1jMla')); 
-insert into Klienci values(206, 'BRADLEY', 'Lindgren', 728071675 , 'BRADLEY.Lindgren@gmail.com'); 
-insert into Loginy_hasla values(-1,  'Elvis51', getHash('PbVa9DT1')); 
-insert into Klienci values(207, 'HICKS', 'Ladner', 430249758 , 'HICKS.Ladner@gmail.com'); 
-insert into Loginy_hasla values(-1,  'evanfe14', getHash('IJ8TXQuj')); 
-insert into Klienci values(208, 'HAWKINS', 'Lemieux', 115330003 , 'HAWKINS.Lemieux@gmail.com'); 
-insert into Loginy_hasla values(-1,  'Dan9', getHash('cgdNdFkD')); 
-insert into Klienci values(209, 'LAWRENCE', 'Lee', 860101917 , 'LAWRENCE.Lee@gmail.com'); 
-insert into Loginy_hasla values(-1,  'stalker42', getHash('k3kTYh2j')); 
-insert into Klienci values(210, 'BRYANT', 'Lin', 118133192 , 'BRYANT.Lin@gmail.com'); 
-insert into Loginy_hasla values(-1,  'km95', getHash('qQ9QSfel')); 
-insert into Klienci values(211, 'COOK', 'Lindgren', 984862624 , 'COOK.Lindgren@gmail.com'); 
-insert into Loginy_hasla values(-1,  'maloy40', getHash('rPCWuiVa')); 
-insert into Klienci values(212, 'MORENO', 'Long', 719054265 , 'MORENO.Long@gmail.com'); 
-insert into Loginy_hasla values(-1,  'bob8', getHash('lNjXehTH')); 
-insert into Klienci values(213, 'RODRIGUEZ', 'Lander', 657043259 , 'RODRIGUEZ.Lander@gmail.com'); 
-insert into Loginy_hasla values(-1,  'jony8', getHash('lUjW8jmd')); 
-insert into Klienci values(214, 'GRAY', 'Levin', 662046960 , 'GRAY.Levin@gmail.com'); 
-insert into Loginy_hasla values(-1,  'rock45', getHash('ejhsSTH2')); 
-insert into Klienci values(215, 'JIMENEZ', 'Luke', 359087789 , 'JIMENEZ.Luke@gmail.com'); 
-insert into Loginy_hasla values(-1,  'girl85', getHash('hPbmdWUm')); 
-insert into Klienci values(216, 'MARTINEZ', 'Lozano', 988060194 , 'MARTINEZ.Lozano@gmail.com'); 
-insert into Loginy_hasla values(-1,  'sg55', getHash('kYDawSHA')); 
-insert into Klienci values(217, 'WEST', 'Legrand', 622928103 , 'WEST.Legrand@gmail.com'); 
-insert into Loginy_hasla values(-1,  'rap50', getHash('27kKTygB')); 
-insert into Klienci values(218, 'ANDREWS', 'Lundquist', 540339955 , 'ANDREWS.Lundquist@gmail.com'); 
-insert into Loginy_hasla values(-1,  'Vampir34', getHash('3mWZhBZs')); 
-insert into Klienci values(219, 'SANTOS', 'Lavender', 536850701 , 'SANTOS.Lavender@gmail.com'); 
-insert into Loginy_hasla values(-1,  'uzumaki43', getHash('JgZl18df')); 
-insert into Klienci values(220, 'MENDOZA', 'Longo', 079839441 , 'MENDOZA.Longo@gmail.com'); 
-insert into Loginy_hasla values(-1,  'master31', getHash('ceCaYGaw')); 
-insert into Klienci values(221, 'SANDERS', 'Laporte', 538927816 , 'SANDERS.Laporte@gmail.com'); 
-insert into Loginy_hasla values(-1,  'box020326', getHash('a2YcqkgH')); 
-insert into Klienci values(222, 'ALLEN', 'Lazo', 325644621 , 'ALLEN.Lazo@gmail.com'); 
-insert into Loginy_hasla values(-1,  'Dan7', getHash('HmXVeDBQ')); 
-insert into Klienci values(223, 'WATKINS', 'Laing', 145475938 , 'WATKINS.Laing@gmail.com'); 
-insert into Loginy_hasla values(-1,  'setcher21', getHash('VadjThQ8')); 
-insert into Klienci values(224, 'MUNOZ', 'Leary', 663662037 , 'MUNOZ.Leary@gmail.com'); 
-insert into Loginy_hasla values(-1,  'good73', getHash('UUkzVIiH')); 
-insert into Klienci values(225, 'WALKER', 'Ling', 075885650 , 'WALKER.Ling@gmail.com'); 
-insert into Loginy_hasla values(-1,  'agrorynok30', getHash('jiFGyPwA')); 
-insert into Klienci values(226, 'STEPHENS', 'Loftin', 092271565 , 'STEPHENS.Loftin@gmail.com'); 
-insert into Loginy_hasla values(-1,  'Albert38', getHash('EhtbMUlw')); 
-insert into Klienci values(227, 'ANDREWS', 'Lister', 599223129 , 'ANDREWS.Lister@gmail.com'); 
-insert into Loginy_hasla values(-1,  'user41', getHash('KcVhZMbm')); 
-insert into Klienci values(228, 'BAILEY', 'Name', 124980617 , 'BAILEY.Name@gmail.com'); 
-insert into Loginy_hasla values(-1,  'nport23', getHash('XcmZULmf')); 
-insert into Klienci values(229, 'EVANS', 'Linares', 963656267 , 'EVANS.Linares@gmail.com'); 
-insert into Loginy_hasla values(-1,  'no1z33', getHash('hznm9Tlo')); 
-insert into Klienci values(230, 'SCHMIDT', 'Little', 934318311 , 'SCHMIDT.Little@gmail.com'); 
-insert into Loginy_hasla values(-1,  'faraon59', getHash('ocAeUgJq')); 
-insert into Klienci values(231, 'GARCIA', 'Lancaster', 871753573 , 'GARCIA.Lancaster@gmail.com'); 
-insert into Loginy_hasla values(-1,  'king99', getHash('YUThsClk')); 
-insert into Klienci values(232, 'MURPHY', 'Lara', 935975682 , 'MURPHY.Lara@gmail.com'); 
-insert into Loginy_hasla values(-1,  'Dan4', getHash('QdKZPYYD')); 
-insert into Klienci values(233, 'HUGHES', 'Littleton', 863823953 , 'HUGHES.Littleton@gmail.com'); 
-insert into Loginy_hasla values(-1,  'life85', getHash('VXjkdp6V')); 
-insert into Klienci values(234, 'COLEMAN', 'Lemmon', 084057429 , 'COLEMAN.Lemmon@gmail.com'); 
-insert into Loginy_hasla values(-1,  'jony40', getHash('F2alW78l')); 
-insert into Klienci values(235, 'TUCKER', 'Lebron', 348099591 , 'TUCKER.Lebron@gmail.com'); 
-insert into Loginy_hasla values(-1,  'just58', getHash('NAYSIdIP')); 
-insert into Klienci values(236, 'ANDERSON', 'Levesque', 737437589 , 'ANDERSON.Levesque@gmail.com'); 
-insert into Loginy_hasla values(-1,  'sergei64', getHash('VXUcEPak')); 
-insert into Klienci values(237, 'RAY', 'Lira', 178302680 , 'RAY.Lira@gmail.com'); 
-insert into Loginy_hasla values(-1,  'pupsik68', getHash('SmLmSmKG')); 
-insert into Klienci values(238, 'CHAVEZ', 'Lucio', 127370796 , 'CHAVEZ.Lucio@gmail.com'); 
-insert into Loginy_hasla values(-1,  'wolf78', getHash('HQNXPQWy')); 
-insert into Klienci values(239, 'MORRISON', 'Lavender', 122419568 , 'MORRISON.Lavender@gmail.com'); 
-insert into Loginy_hasla values(-1,  'X-man74', getHash('cdWAXTXS')); 
-insert into Klienci values(240, 'BRYANT', 'Luttrell', 745517071 , 'BRYANT.Luttrell@gmail.com'); 
-insert into Loginy_hasla values(-1,  'Anonyme5', getHash('WYkT3eZh')); 
-insert into Klienci values(241, 'SANCHEZ', 'Luong', 572087862 , 'SANCHEZ.Luong@gmail.com'); 
-insert into Loginy_hasla values(-1,  'Dan31', getHash('VpbIQgPS')); 
-insert into Klienci values(242, 'JIMENEZ', 'Llamas', 253801167 , 'JIMENEZ.Llamas@gmail.com'); 
-insert into Loginy_hasla values(-1,  'flash84', getHash('U2jaXp2R')); 
-insert into Klienci values(243, 'ADAMS', 'Leong', 964669982 , 'ADAMS.Leong@gmail.com'); 
-insert into Loginy_hasla values(-1,  'vitalyacher25', getHash('Ql3RFWRc')); 
-insert into Klienci values(244, 'TORRES', 'Lofton', 504384928 , 'TORRES.Lofton@gmail.com'); 
-insert into Loginy_hasla values(-1,  'xploit65', getHash('T2ddxdfs')); 
-insert into Klienci values(245, 'HILL', 'Lippert', 929467309 , 'HILL.Lippert@gmail.com'); 
-insert into Loginy_hasla values(-1,  'wolf48', getHash('gmqSZE1k')); 
-insert into Klienci values(246, 'DOMINGUEZ', 'Lenhart', 699034026 , 'DOMINGUEZ.Lenhart@gmail.com'); 
-insert into Loginy_hasla values(-1,  'Maggy31', getHash('ubhC0eyP')); 
-insert into Klienci values(247, 'DUNCAN', 'Loy', 372199271 , 'DUNCAN.Loy@gmail.com'); 
-insert into Loginy_hasla values(-1,  'agrorynok40', getHash('XcUYlVqH')); 
-insert into Klienci values(248, 'WHITE', 'Lamar', 913924356 , 'WHITE.Lamar@gmail.com'); 
-insert into Loginy_hasla values(-1,  'evanfe58', getHash('6p5vdaeY')); 
-insert into Klienci values(249, 'MORRIS', 'Larios', 498058308 , 'MORRIS.Larios@gmail.com'); 
-insert into Loginy_hasla values(-1,  'John60', getHash('ULjMleDY')); 
-insert into Klienci values(250, 'CHAVEZ', 'Levitt', 733629448 , 'CHAVEZ.Levitt@gmail.com'); 
-insert into Loginy_hasla values(-1,  'yourdream63', getHash('liYiHfgQ')); 
-insert into Klienci values(251, 'ELLIOTT', 'Lambert', 634788913 , 'ELLIOTT.Lambert@gmail.com'); 
-insert into Loginy_hasla values(-1,  'goblin43', getHash('YvaZl0aP')); 
-insert into Klienci values(252, 'LONG', 'Loftus', 347823820 , 'LONG.Loftus@gmail.com'); 
-insert into Loginy_hasla values(-1,  'star42', getHash('cjZeu3eT')); 
-insert into Klienci values(253, 'LEWIS', 'Lilly', 329097435 , 'LEWIS.Lilly@gmail.com'); 
-insert into Loginy_hasla values(-1,  'john5', getHash('kQmAjSev')); 
-insert into Klienci values(254, 'POWELL', 'Le', 088205405 , 'POWELL.Le@gmail.com'); 
-insert into Loginy_hasla values(-1,  'rikanda52', getHash('l3cRgQDg')); 
-insert into Klienci values(255, 'FLORES', 'Lopez', 072554298 , 'FLORES.Lopez@gmail.com'); 
-insert into Loginy_hasla values(-1,  'Malcom81', getHash('ToVlV5mM')); 
-insert into Klienci values(256, 'HARPER', 'Levesque', 504914731 , 'HARPER.Levesque@gmail.com'); 
-insert into Loginy_hasla values(-1,  'judo87', getHash('ZTMsSC5c')); 
-insert into Klienci values(257, 'RILEY', 'Lowman', 952882824 , 'RILEY.Lowman@gmail.com'); 
-insert into Loginy_hasla values(-1,  'Schnuddel21', getHash('WDskmmgZ')); 
-insert into Klienci values(258, 'JENKINS', 'Leffler', 004948184 , 'JENKINS.Leffler@gmail.com'); 
-insert into Loginy_hasla values(-1,  'vitalyacher49', getHash('wfSg5wm7')); 
-insert into Klienci values(259, 'BOYD', 'Lujan', 072921376 , 'BOYD.Lujan@gmail.com'); 
-insert into Loginy_hasla values(-1,  'support4', getHash('TNkWpd5Q')); 
-insert into Klienci values(260, 'RYAN', 'Langston', 421111319 , 'RYAN.Langston@gmail.com'); 
-insert into Loginy_hasla values(-1,  'yourdream64', getHash('D7bhMWxh')); 
-insert into Klienci values(261, 'ORTIZ', 'Larson', 497299057 , 'ORTIZ.Larson@gmail.com'); 
-insert into Loginy_hasla values(-1,  'company2', getHash('X9gXTPbW')); 
-insert into Klienci values(262, 'PEREZ', 'Land', 069924814 , 'PEREZ.Land@gmail.com'); 
-insert into Loginy_hasla values(-1,  'www71', getHash('MyUPbaTB')); 
-insert into Klienci values(263, 'MORRISON', 'Landis', 882952470 , 'MORRISON.Landis@gmail.com'); 
-insert into Loginy_hasla values(-1,  'denis9', getHash('Tm8YDvgk')); 
-insert into Klienci values(264, 'CLARK', 'Lindgren', 285210558 , 'CLARK.Lindgren@gmail.com'); 
-insert into Loginy_hasla values(-1,  'lol97', getHash('2TcwSuwc')); 
-insert into Klienci values(265, 'WHEELER', 'Loy', 321528911 , 'WHEELER.Loy@gmail.com'); 
-insert into Loginy_hasla values(-1,  'spice45', getHash('TlGjjaTf')); 
-insert into Klienci values(266, 'HERRERA', 'Lamont', 717647943 , 'HERRERA.Lamont@gmail.com'); 
-insert into Loginy_hasla values(-1,  'Anonyme4', getHash('RjP9Z9Fe')); 
-insert into Klienci values(267, 'MORGAN', 'Lavallee', 321832167 , 'MORGAN.Lavallee@gmail.com'); 
-insert into Loginy_hasla values(-1,  'grey87', getHash('wRgLi2kQ')); 
-insert into Klienci values(268, 'FOSTER', 'Lavigne', 859735509 , 'FOSTER.Lavigne@gmail.com'); 
-insert into Loginy_hasla values(-1,  'tester76', getHash('bScYlRbG')); 
-insert into Klienci values(269, 'BOYD', 'Lyon', 987588516 , 'BOYD.Lyon@gmail.com'); 
-insert into Loginy_hasla values(-1,  'Julia48', getHash('a1ZViPlc')); 
-insert into Klienci values(270, 'ARNOLD', 'Name', 820122423 , 'ARNOLD.Name@gmail.com'); 
-insert into Loginy_hasla values(-1,  'Chervechok44', getHash('8mcUJQMR')); 
-insert into Klienci values(271, 'WAGNER', 'Lord', 922040542 , 'WAGNER.Lord@gmail.com'); 
-insert into Loginy_hasla values(-1,  'goblin6', getHash('aQNgRiS6')); 
-insert into Klienci values(272, 'KNIGHT', 'Lacey', 996240396 , 'KNIGHT.Lacey@gmail.com'); 
-insert into Loginy_hasla values(-1,  'test0', getHash('XPflrVKc')); 
-insert into Klienci values(273, 'HENRY', 'Loveless', 495271661 , 'HENRY.Loveless@gmail.com'); 
-insert into Loginy_hasla values(-1,  'www55', getHash('QS1YZWjX')); 
-insert into Klienci values(274, 'WOODS', 'Lott', 785872669 , 'WOODS.Lott@gmail.com'); 
-insert into Loginy_hasla values(-1,  'denis87', getHash('6YqY5QPW')); 
-insert into Klienci values(275, 'HALL', 'Lott', 750957343 , 'HALL.Lott@gmail.com'); 
-insert into Loginy_hasla values(-1,  'alex34', getHash('2JAgbLJc')); 
-insert into Klienci values(276, 'LARSON', 'Lacey', 208336798 , 'LARSON.Lacey@gmail.com'); 
-insert into Loginy_hasla values(-1,  'naruto26', getHash('fB6ROjOi')); 
-insert into Klienci values(277, 'ROMERO', 'Loera', 542642022 , 'ROMERO.Loera@gmail.com'); 
-insert into Loginy_hasla values(-1,  'Vortelio6', getHash('STRkhXyP')); 
-insert into Klienci values(278, 'OLSON', 'Laporte', 550816228 , 'OLSON.Laporte@gmail.com'); 
-insert into Loginy_hasla values(-1,  'denis22', getHash('MZDTUdZk')); 
-insert into Klienci values(279, 'PATTERSON', 'Leone', 309237231 , 'PATTERSON.Leone@gmail.com'); 
-insert into Loginy_hasla values(-1,  'sergej_a_g49', getHash('mdQlPfar')); 
-insert into Klienci values(280, 'FOSTER', 'Littrell', 420395152 , 'FOSTER.Littrell@gmail.com'); 
-insert into Loginy_hasla values(-1,  'www91', getHash('fRifdhhe')); 
-insert into Klienci values(281, 'RICHARDS', 'Loza', 586709238 , 'RICHARDS.Loza@gmail.com'); 
-insert into Loginy_hasla values(-1,  'helpinv19', getHash('4JfTVmRX')); 
-insert into Klienci values(282, 'SULLIVAN', 'Lamm', 865076166 , 'SULLIVAN.Lamm@gmail.com'); 
-insert into Loginy_hasla values(-1,  'Flatson55', getHash('klZWbIla')); 
-insert into Klienci values(283, 'COX', 'Larue', 279796124 , 'COX.Larue@gmail.com'); 
-insert into Loginy_hasla values(-1,  'tester47', getHash('XQhShgxQ')); 
-insert into Klienci values(284, 'RIOS', 'Lehr', 647163244 , 'RIOS.Lehr@gmail.com'); 
-insert into Loginy_hasla values(-1,  'vitalyacher11', getHash('prnZuW4N')); 
-insert into Klienci values(285, 'RAMOS', 'Labelle', 913266562 , 'RAMOS.Labelle@gmail.com'); 
-insert into Loginy_hasla values(-1,  'milaia22', getHash('WV8nd8cQ')); 
-insert into Klienci values(286, 'GRAHAM', 'Lemmon', 399266034 , 'GRAHAM.Lemmon@gmail.com'); 
-insert into Loginy_hasla values(-1,  'zaika72', getHash('EiWbjm2l')); 
-insert into Klienci values(287, 'CUNNINGHAM', 'Leathers', 158545929 , 'CUNNINGHAM.Leathers@gmail.com'); 
-insert into Loginy_hasla values(-1,  'bob48', getHash('b3qBjNm0')); 
-insert into Klienci values(288, 'ANDREWS', 'Le', 168630226 , 'ANDREWS.Le@gmail.com'); 
-insert into Loginy_hasla values(-1,  'stalker28', getHash('kU3aIYZh')); 
-insert into Klienci values(289, 'SANDOVAL', 'Lavelle', 250252132 , 'SANDOVAL.Lavelle@gmail.com'); 
-insert into Loginy_hasla values(-1,  'name60', getHash('6UigQUdl')); 
-insert into Klienci values(290, 'CAMPBELL', 'Luis', 154394885 , 'CAMPBELL.Luis@gmail.com'); 
-insert into Loginy_hasla values(-1,  'nick51', getHash('aLXfFYYt')); 
-insert into Klienci values(291, 'KNIGHT', 'Levine', 422597097 , 'KNIGHT.Levine@gmail.com'); 
-insert into Loginy_hasla values(-1,  'milaia51', getHash('X3e3z1gP')); 
-insert into Klienci values(292, 'WILSON', 'Luckett', 369075442 , 'WILSON.Luckett@gmail.com'); 
-insert into Loginy_hasla values(-1,  'user64', getHash('AUVRbbp2')); 
-insert into Klienci values(293, 'WOODS', 'Lake', 475067705 , 'WOODS.Lake@gmail.com'); 
-insert into Loginy_hasla values(-1,  'poster11', getHash('y1jHqjTN')); 
-insert into Klienci values(294, 'GARCIA', 'Leone', 013766351 , 'GARCIA.Leone@gmail.com'); 
-insert into Loginy_hasla values(-1,  'Robertino26', getHash('KAafRfwT')); 
-insert into Klienci values(295, 'CRAWFORD', 'Leake', 884321096 , 'CRAWFORD.Leake@gmail.com'); 
-insert into Loginy_hasla values(-1,  'koruna11223398', getHash('YKf5j6Og')); 
-insert into Klienci values(296, 'WATSON', 'Lin', 499656198 , 'WATSON.Lin@gmail.com'); 
-insert into Loginy_hasla values(-1,  'kent85', getHash('7EYQKkQe')); 
-insert into Klienci values(297, 'CASTILLO', 'Lomeli', 736849914 , 'CASTILLO.Lomeli@gmail.com'); 
-insert into Loginy_hasla values(-1,  'km11', getHash('TXXXUOZd')); 
-insert into Klienci values(298, 'PENA', 'Leahy', 253194736 , 'PENA.Leahy@gmail.com'); 
-insert into Loginy_hasla values(-1,  'stoagrand83', getHash('R8V2aafk')); 
-insert into Klienci values(299, 'CRAWFORD', 'Lawhorn', 951905206 , 'CRAWFORD.Lawhorn@gmail.com'); 
-insert into Loginy_hasla values(-1,  'narayana26', getHash('pkkCRZ4P')); 
-insert into Klienci values(300, 'MITCHELL', 'Lazar', 712747155 , 'MITCHELL.Lazar@gmail.com'); 
-insert into Loginy_hasla values(-2 ,'wtf30', getHash('IaXjl2fD')); 
-insert into Kurjery values(800000000, 2, 'HOLMES', 'Lamm', 781261758 , 'HOLMES.Lamm@gmail.com ', 10, true); 
-insert into Loginy_hasla values(-2 ,'wolf21', getHash('RsDggP7f')); 
-insert into Kurjery values(800000001, 3, 'WEBB', 'Lozano', 912993370 , 'WEBB.Lozano@gmail.com ', 80, true); 
-insert into Loginy_hasla values(-2 ,'rikanda68', getHash('icCgkgjT')); 
-insert into Kurjery values(800000002, 3, 'COLLINS', 'Lehman', 802561351 , 'COLLINS.Lehman@gmail.com ', 71, true); 
-insert into Loginy_hasla values(-2 ,'vip3', getHash('TqdLXmPZ')); 
-insert into Kurjery values(800000003, 1, 'POWELL', 'Layton', 251878470 , 'POWELL.Layton@gmail.com ', 79, true); 
-insert into Loginy_hasla values(-2 ,'koruna11223369', getHash('zumOTmXl')); 
-insert into Kurjery values(800000004, 4, 'MITCHELL', 'Ledoux', 123600468 , 'MITCHELL.Ledoux@gmail.com ', 55, true); 
-insert into Loginy_hasla values(-2 ,'solopov45', getHash('H0hbqPdX')); 
-insert into Kurjery values(800000005, 1, 'DIAZ', 'Lamm', 646822211 , 'DIAZ.Lamm@gmail.com ', 1, true); 
-insert into Loginy_hasla values(-2 ,'patti61', getHash('P4bZ2pgl')); 
-insert into Kurjery values(800000006, 2, 'CARROLL', 'Lathrop', 761999232 , 'CARROLL.Lathrop@gmail.com ', 33, true); 
-insert into Loginy_hasla values(-2 ,'alexander85', getHash('6bfk0Xch')); 
-insert into Kurjery values(800000007, 2, 'FREEMAN', 'Loucks', 790473220 , 'FREEMAN.Loucks@gmail.com ', 45, true); 
-insert into Loginy_hasla values(-2 ,'no1z41', getHash('rRb7ficR')); 
-insert into Kurjery values(800000008, 1, 'HENDERSON', 'Lanning', 570383814 , 'HENDERSON.Lanning@gmail.com ', 82, true); 
-insert into Loginy_hasla values(-2 ,'comando43', getHash('CfVWXfje')); 
-insert into Kurjery values(800000009, 4, 'RICE', 'Lara', 119328720 , 'RICE.Lara@gmail.com ', 78, true); 
-insert into Loginy_hasla values(-2 ,'anime63', getHash('QcQecZVi')); 
-insert into Kurjery values(800000010, 3, 'EVANS', 'Lamm', 186674904 , 'EVANS.Lamm@gmail.com ', 33, true); 
-insert into Loginy_hasla values(-2 ,'wtf47', getHash('00wRkKmi')); 
-insert into Kurjery values(800000011, 1, 'PENA', 'Libby', 699518819 , 'PENA.Libby@gmail.com ', 58, true); 
-insert into Loginy_hasla values(-2 ,'death42', getHash('a4QPjqBd')); 
-insert into Kurjery values(800000012, 3, 'GUZMAN', 'Lay', 428528601 , 'GUZMAN.Lay@gmail.com ', 58, true); 
-insert into Loginy_hasla values(-2 ,'Schnuddel0', getHash('kcksvaoS')); 
-insert into Kurjery values(800000013, 2, 'TAYLOR', 'Lutz', 729355295 , 'TAYLOR.Lutz@gmail.com ', 81, true); 
-insert into Loginy_hasla values(-2 ,'denis63', getHash('MTrVLmkg')); 
-insert into Kurjery values(800000014, 3, 'ROSE', 'Lomax', 733271906 , 'ROSE.Lomax@gmail.com ', 33, true); 
-insert into Loginy_hasla values(-2 ,'Gau30', getHash('KqPN262g')); 
-insert into Kurjery values(800000015, 1, 'DELGADO', 'Laing', 722572916 , 'DELGADO.Laing@gmail.com ', 13, true); 
-insert into Loginy_hasla values(-2 ,'xtro87', getHash('VLlNa0fh')); 
-insert into Kurjery values(800000016, 2, 'SNYDER', 'Luttrell', 550670591 , 'SNYDER.Luttrell@gmail.com ', 74, true); 
-insert into Loginy_hasla values(-2 ,'victor2', getHash('YSmQbcYD')); 
-insert into Kurjery values(800000017, 4, 'GARDNER', 'Lanham', 500116304 , 'GARDNER.Lanham@gmail.com ', 27, true); 
-insert into Loginy_hasla values(-2 ,'ira54', getHash('lRwvaxUm')); 
-insert into Kurjery values(800000018, 3, 'DIXON', 'Lovell', 373638964 , 'DIXON.Lovell@gmail.com ', 45, true); 
-insert into Loginy_hasla values(-2 ,'Marly39', getHash('cePbocC0')); 
-insert into Kurjery values(800000019, 2, 'NELSON', 'Lockett', 722913738 , 'NELSON.Lockett@gmail.com ', 99, true); 
-insert into Loginy_hasla values(-2 ,'snake75', getHash('iaTS5r2Y')); 
-insert into Kurjery values(800000020, 4, 'YOUNG', 'Lapointe', 221489357 , 'YOUNG.Lapointe@gmail.com ', 18, true); 
-insert into Loginy_hasla values(-2 ,'happy32', getHash('5ihHZEl5')); 
-insert into Kurjery values(800000021, 3, 'BENNETT', 'Lizarraga', 917069284 , 'BENNETT.Lizarraga@gmail.com ', 80, true); 
-insert into Loginy_hasla values(-2 ,'Chervechok11', getHash('4Rx28nbb')); 
-insert into Kurjery values(800000022, 2, 'PENA', 'Leighton', 306165285 , 'PENA.Leighton@gmail.com ', 75, true); 
-insert into Loginy_hasla values(-2 ,'zeus13', getHash('YWZVmv4w')); 
-insert into Kurjery values(800000023, 1, 'GARZA', 'Littrell', 713956737 , 'GARZA.Littrell@gmail.com ', 67, true); 
-insert into Loginy_hasla values(-2 ,'boss9', getHash('YTYSKUKX')); 
-insert into Kurjery values(800000024, 4, 'DOMINGUEZ', 'Lord', 000383189 , 'DOMINGUEZ.Lord@gmail.com ', 29, true); 
-insert into Loginy_hasla values(-2 ,'star83', getHash('jCPRS1VS')); 
-insert into Kurjery values(800000025, 2, 'GARZA', 'Lewandowski', 123680355 , 'GARZA.Lewandowski@gmail.com ', 64, true); 
-insert into Loginy_hasla values(-2 ,'yarnik53', getHash('ejzWaQwH')); 
-insert into Kurjery values(800000026, 3, 'SILVA', 'Langley', 568140204 , 'SILVA.Langley@gmail.com ', 16, true); 
-insert into Loginy_hasla values(-2 ,'yagafarov53', getHash('QX3cdSe5')); 
-insert into Kurjery values(800000027, 2, 'LEE', 'Lu', 867152800 , 'LEE.Lu@gmail.com ', 93, true); 
-insert into Loginy_hasla values(-2 ,'black98', getHash('QfAnSsvk')); 
-insert into Kurjery values(800000028, 1, 'KELLY', 'Luis', 455705536 , 'KELLY.Luis@gmail.com ', 85, true); 
-insert into Loginy_hasla values(-2 ,'Anonyme25', getHash('jghpkigm')); 
-insert into Kurjery values(800000029, 3, 'MORGAN', 'Lawless', 836587523 , 'MORGAN.Lawless@gmail.com ', 44, true); 
-insert into Loginy_hasla values(-2 ,'support54', getHash('6SUSm9Mn')); 
-insert into Kurjery values(800000030, 3, 'PALMER', 'Lafleur', 419270176 , 'PALMER.Lafleur@gmail.com ', 65, true); 
-insert into Loginy_hasla values(-2 ,'Libra4', getHash('VtcJj3xc')); 
-insert into Kurjery values(800000031, 3, 'GUZMAN', 'Lynch', 541192737 , 'GUZMAN.Lynch@gmail.com ', 64, true); 
-insert into Loginy_hasla values(-2 ,'xtro47', getHash('Scu5xgEs')); 
-insert into Kurjery values(800000032, 3, 'GONZALES', 'Latta', 993411891 , 'GONZALES.Latta@gmail.com ', 79, true); 
-insert into Loginy_hasla values(-2 ,'alexander52', getHash('lZh0fQRL')); 
-insert into Kurjery values(800000033, 3, 'GIBSON', 'Lundgren', 840712492 , 'GIBSON.Lundgren@gmail.com ', 19, true); 
-insert into Loginy_hasla values(-2 ,'zero74', getHash('hjehjCZc')); 
-insert into Kurjery values(800000034, 3, 'JOHNSTON', 'Ledoux', 179348588 , 'JOHNSTON.Ledoux@gmail.com ', 72, true); 
-insert into Loginy_hasla values(-2 ,'John0', getHash('aSyd9ayG')); 
-insert into Kurjery values(800000035, 4, 'JACKSON', 'Loftus', 691980413 , 'JACKSON.Loftus@gmail.com ', 14, true); 
-insert into Loginy_hasla values(-2 ,'Bob57', getHash('dmYlkiUg')); 
-insert into Kurjery values(800000036, 3, 'ANDREWS', 'Lupo', 130487812 , 'ANDREWS.Lupo@gmail.com ', 49, true); 
-insert into Loginy_hasla values(-2 ,'kent33', getHash('aWedeYXT')); 
-insert into Kurjery values(800000037, 2, 'WOOD', 'Lightner', 377273626 , 'WOOD.Lightner@gmail.com ', 7, true); 
-insert into Loginy_hasla values(-2 ,'no1z48', getHash('PdhVmfXb')); 
-insert into Kurjery values(800000038, 4, 'FLORES', 'Leeper', 817710962 , 'FLORES.Leeper@gmail.com ', 56, true); 
-insert into Loginy_hasla values(-2 ,'guf43', getHash('njdmmTvN')); 
-insert into Kurjery values(800000039, 1, 'TUCKER', 'Lett', 761315401 , 'TUCKER.Lett@gmail.com ', 8, true); 
-insert into Loginy_hasla values(-2 ,'guf7', getHash('elUaZLab')); 
-insert into Kurjery values(800000040, 2, 'LOPEZ', 'Liu', 229226115 , 'LOPEZ.Liu@gmail.com ', 84, true); 
-insert into Loginy_hasla values(-2 ,'kisa27', getHash('PjJ5Hvwk')); 
-insert into Kurjery values(800000041, 3, 'FORD', 'Ledezma', 835546180 , 'FORD.Ledezma@gmail.com ', 4, true); 
-insert into Loginy_hasla values(-2 ,'lady90', getHash('jkRQQSJc')); 
-insert into Kurjery values(800000042, 2, 'MURPHY', 'Loredo', 894604633 , 'MURPHY.Loredo@gmail.com ', 97, true); 
-insert into Loginy_hasla values(-2 ,'dusha53', getHash('hzkktnzx')); 
-insert into Kurjery values(800000043, 2, 'FERNANDEZ', 'Labelle', 533384821 , 'FERNANDEZ.Labelle@gmail.com ', 16, true); 
-insert into Loginy_hasla values(-2 ,'Peter.Berghausen12', getHash('SjamcgxJ')); 
-insert into Kurjery values(800000044, 3, 'NGUYEN', 'Lovelace', 168748935 , 'NGUYEN.Lovelace@gmail.com ', 47, true); 
-insert into Loginy_hasla values(-2 ,'turrus0', getHash('GcV48dWg')); 
-insert into Kurjery values(800000045, 3, 'TRAN', 'Landers', 809029778 , 'TRAN.Landers@gmail.com ', 66, true); 
-insert into Loginy_hasla values(-2 ,'helpinv75', getHash('iYaRhKlm')); 
-insert into Kurjery values(800000046, 2, 'ROSE', 'Laroche', 040612027 , 'ROSE.Laroche@gmail.com ', 1, true); 
-insert into Loginy_hasla values(-2 ,'Libra76', getHash('MtFbk7Xe')); 
-insert into Kurjery values(800000047, 3, 'JOHNSTON', 'Lankford', 917571517 , 'JOHNSTON.Lankford@gmail.com ', 28, true); 
-insert into Loginy_hasla values(-2 ,'pain10', getHash('cZfhqiCa')); 
-insert into Kurjery values(800000048, 2, 'ALVAREZ', 'Leslie', 233667157 , 'ALVAREZ.Leslie@gmail.com ', 12, true); 
-insert into Loginy_hasla values(-2 ,'victor61', getHash('hgSW3gYH')); 
-insert into Kurjery values(800000049, 1, 'HERNANDEZ', 'Lew', 471160280 , 'HERNANDEZ.Lew@gmail.com ', 43, true); 
-insert into Loginy_hasla values(-2 ,'region83', getHash('0iacoXkk')); 
-insert into Kurjery values(800000050, 4, 'RAMOS', 'Lewandowski', 267024666 , 'RAMOS.Lewandowski@gmail.com ', 35, true); 
-insert into Loginy_hasla values(-2 ,'good70', getHash('3bcLeWhC')); 
-insert into Kurjery values(800000051, 3, 'MORENO', 'Luckett', 819612667 , 'MORENO.Luckett@gmail.com ', 92, true); 
-insert into Loginy_hasla values(-2 ,'gold54', getHash('ljvjVk91')); 
-insert into Kurjery values(800000052, 2, 'MARTIN', 'Liang', 283759943 , 'MARTIN.Liang@gmail.com ', 47, true); 
-insert into Loginy_hasla values(-2 ,'wUUb22', getHash('KQGTixPb')); 
-insert into Kurjery values(800000053, 3, 'HERRERA', 'Lalonde', 478862542 , 'HERRERA.Lalonde@gmail.com ', 40, true); 
-insert into Loginy_hasla values(-2 ,'1000871650', getHash('8hcPjYYl')); 
-insert into Kurjery values(800000054, 1, 'MATTHEWS', 'Lange', 201614279 , 'MATTHEWS.Lange@gmail.com ', 87, true); 
-insert into Loginy_hasla values(-2 ,'goblin42', getHash('ioUiT0WY')); 
-insert into Kurjery values(800000055, 4, 'COOK', 'Langer', 151588922 , 'COOK.Langer@gmail.com ', 19, true); 
-insert into Loginy_hasla values(-2 ,'administrator53', getHash('xz6R8I2a')); 
-insert into Kurjery values(800000056, 4, 'PENA', 'Lankford', 992939292 , 'PENA.Lankford@gmail.com ', 62, true); 
-insert into Loginy_hasla values(-2 ,'anime88', getHash('cYlW2gRU')); 
-insert into Kurjery values(800000057, 1, 'PERRY', 'Lavelle', 509375623 , 'PERRY.Lavelle@gmail.com ', 75, true); 
-insert into Loginy_hasla values(-2 ,'stalker19', getHash('cj1vY1BE')); 
-insert into Kurjery values(800000058, 1, 'DIAZ', 'Lathrop', 943371442 , 'DIAZ.Lathrop@gmail.com ', 32, true); 
-insert into Loginy_hasla values(-2 ,'lost94', getHash('VXBdlbdl')); 
-insert into Kurjery values(800000059, 4, 'ROGERS', 'Lusk', 497903741 , 'ROGERS.Lusk@gmail.com ', 6, true); 
-insert into Loginy_hasla values(-2 ,'lady97', getHash('PX1TdWTz')); 
-insert into Kurjery values(800000060, 4, 'HUNT', 'Lankford', 940298150 , 'HUNT.Lankford@gmail.com ', 48, true); 
-insert into Loginy_hasla values(-2 ,'spice9', getHash('RTc8HmTX')); 
-insert into Kurjery values(800000061, 2, 'RYAN', 'Lowe', 731592513 , 'RYAN.Lowe@gmail.com ', 41, true); 
-insert into Loginy_hasla values(-2 ,'sergei37', getHash('pic40kdK')); 
-insert into Kurjery values(800000062, 3, 'KELLY', 'Littleton', 169099310 , 'KELLY.Littleton@gmail.com ', 6, true); 
-insert into Loginy_hasla values(-2 ,'vip17', getHash('SgAEB4XQ')); 
-insert into Kurjery values(800000063, 4, 'HARRISON', 'Lanham', 700443436 , 'HARRISON.Lanham@gmail.com ', 97, true); 
-insert into Loginy_hasla values(-2 ,'xploit3', getHash('2XHnVFRc')); 
-insert into Kurjery values(800000064, 1, 'THOMPSON', 'Landers', 520311120 , 'THOMPSON.Landers@gmail.com ', 85, true); 
-insert into Loginy_hasla values(-2 ,'lost71', getHash('VcaXXUfX')); 
-insert into Kurjery values(800000065, 3, 'WALKER', 'Lazo', 198704569 , 'WALKER.Lazo@gmail.com ', 41, true); 
-insert into Loginy_hasla values(-2 ,'king94', getHash('BhZI1pV4')); 
-insert into Kurjery values(800000066, 3, 'HILL', 'Link', 046779060 , 'HILL.Link@gmail.com ', 45, true); 
-insert into Loginy_hasla values(-2 ,'nick76', getHash('ldjST5xZ')); 
-insert into Kurjery values(800000067, 1, 'BOYD', 'Law', 604806046 , 'BOYD.Law@gmail.com ', 98, true); 
-insert into Loginy_hasla values(-2 ,'vip95', getHash('FZUIelpn')); 
-insert into Kurjery values(800000068, 4, 'DANIELS', 'Lippert', 703081885 , 'DANIELS.Lippert@gmail.com ', 60, true); 
-insert into Loginy_hasla values(-2 ,'rolcom18', getHash('ueRXDJTY')); 
-insert into Kurjery values(800000069, 2, 'ORTIZ', 'Lankford', 127829735 , 'ORTIZ.Lankford@gmail.com ', 3, true); 
-insert into Loginy_hasla values(-2 ,'Elvis36', getHash('bVWeJDR2')); 
-insert into Kurjery values(800000070, 1, 'DIXON', 'Lynch', 990595185 , 'DIXON.Lynch@gmail.com ', 30, true); 
-insert into Loginy_hasla values(-2 ,'wUUb47', getHash('yYddVmdR')); 
-insert into Kurjery values(800000071, 1, 'HART', 'Lightner', 585404184 , 'HART.Lightner@gmail.com ', 59, true); 
-insert into Loginy_hasla values(-2 ,'jony16', getHash('RyVmjkMs')); 
-insert into Kurjery values(800000072, 2, 'GREENE', 'Lewis', 956155433 , 'GREENE.Lewis@gmail.com ', 55, true); 
-insert into Loginy_hasla values(-2 ,'Robertino5', getHash('khJdgWXr')); 
-insert into Kurjery values(800000073, 4, 'WEAVER', 'Luke', 505666831 , 'WEAVER.Luke@gmail.com ', 46, true); 
-insert into Loginy_hasla values(-2 ,'rock20', getHash('Y7YjEhPh')); 
-insert into Kurjery values(800000074, 1, 'FOSTER', 'Loveland', 832192157 , 'FOSTER.Loveland@gmail.com ', 80, true); 
-insert into Loginy_hasla values(-2 ,'fhotel53', getHash('kThgwbfg')); 
-insert into Kurjery values(800000075, 1, 'BENNETT', 'Locke', 875278686 , 'BENNETT.Locke@gmail.com ', 46, true); 
-insert into Loginy_hasla values(-2 ,'Spider92', getHash('SzlFYWUY')); 
-insert into Kurjery values(800000076, 1, 'DIXON', 'Lamb', 722536494 , 'DIXON.Lamb@gmail.com ', 60, true); 
-insert into Loginy_hasla values(-2 ,'bob7', getHash('WkTdsKd7')); 
-insert into Kurjery values(800000077, 1, 'FOX', 'Layton', 906693880 , 'FOX.Layton@gmail.com ', 50, true); 
-insert into Loginy_hasla values(-2 ,'john59', getHash('hT3Bimax')); 
-insert into Kurjery values(800000078, 4, 'WELLS', 'Leary', 853758730 , 'WELLS.Leary@gmail.com ', 86, true); 
-insert into Loginy_hasla values(-2 ,'sonara43', getHash('aPLfbmTp')); 
-insert into Kurjery values(800000079, 3, 'ESTRADA', 'Loy', 803127106 , 'ESTRADA.Loy@gmail.com ', 48, true); 
-insert into Loginy_hasla values(-2 ,'sergej_a_g91', getHash('laSXH5Hd')); 
-insert into Kurjery values(800000080, 3, 'ARMSTRONG', 'Loucks', 007754951 , 'ARMSTRONG.Loucks@gmail.com ', 33, true); 
-insert into Loginy_hasla values(-2 ,'black71', getHash('lVoz1ksk')); 
-insert into Kurjery values(800000081, 3, 'CHEN', 'Loving', 223149046 , 'CHEN.Loving@gmail.com ', 19, true); 
-insert into Loginy_hasla values(-2 ,'Bob41', getHash('SjCf1Da2')); 
-insert into Kurjery values(800000082, 1, 'BRADLEY', 'Lunsford', 925612456 , 'BRADLEY.Lunsford@gmail.com ', 100, true); 
-insert into Loginy_hasla values(-2 ,'victor13', getHash('RXOzjbRC')); 
-insert into Kurjery values(800000083, 3, 'MEYER', 'Liao', 210193080 , 'MEYER.Liao@gmail.com ', 98, true); 
-insert into Loginy_hasla values(-2 ,'boss73', getHash('TmC52kcd')); 
-insert into Kurjery values(800000084, 4, 'WALLACE', 'Loza', 190582520 , 'WALLACE.Loza@gmail.com ', 63, true); 
-insert into Loginy_hasla values(-2 ,'kisa96', getHash('XjaaXcla')); 
-insert into Kurjery values(800000085, 4, 'ROMERO', 'Land', 509380789 , 'ROMERO.Land@gmail.com ', 7, true); 
-insert into Loginy_hasla values(-2 ,'zloy55', getHash('8YlQRdfV')); 
-insert into Kurjery values(800000086, 1, 'HAWKINS', 'Levitt', 826806215 , 'HAWKINS.Levitt@gmail.com ', 66, true); 
-insert into Loginy_hasla values(-2 ,'snake81', getHash('Jm9QBLg6')); 
-insert into Kurjery values(800000087, 4, 'GONZALES', 'Laurent', 344022168 , 'GONZALES.Laurent@gmail.com ', 93, true); 
-insert into Loginy_hasla values(-2 ,'jorik17', getHash('dK5IgaOa')); 
-insert into Kurjery values(800000088, 2, 'SIMPSON', 'Lumpkin', 792037706 , 'SIMPSON.Lumpkin@gmail.com ', 94, true); 
-insert into Loginy_hasla values(-2 ,'agrorynok11', getHash('aeeFT5fR')); 
-insert into Kurjery values(800000089, 4, 'MUNOZ', 'Lemieux', 558633382 , 'MUNOZ.Lemieux@gmail.com ', 17, true); 
-insert into Loginy_hasla values(-2 ,'king98', getHash('UeFRSvhT')); 
-insert into Kurjery values(800000090, 3, 'SIMMONS', 'Laws', 287199793 , 'SIMMONS.Laws@gmail.com ', 27, true); 
-insert into Loginy_hasla values(-2 ,'name54', getHash('uc0PHPkj')); 
-insert into Kurjery values(800000091, 2, 'MASON', 'Linder', 771912734 , 'MASON.Linder@gmail.com ', 22, true); 
-insert into Loginy_hasla values(-2 ,'BurnPro25', getHash('B0aeQefD')); 
-insert into Kurjery values(800000092, 4, 'COX', 'Low', 191441367 , 'COX.Low@gmail.com ', 11, true); 
-insert into Loginy_hasla values(-2 ,'miss67', getHash('7cZQmjXm')); 
-insert into Kurjery values(800000093, 2, 'HOFFMAN', 'Lupo', 343971668 , 'HOFFMAN.Lupo@gmail.com ', 36, true); 
-insert into Loginy_hasla values(-2 ,'airforlife65', getHash('XjYiOgm8')); 
-insert into Kurjery values(800000094, 4, 'MARTINEZ', 'Loeffler', 073977259 , 'MARTINEZ.Loeffler@gmail.com ', 75, true); 
-insert into Loginy_hasla values(-2 ,'pain14', getHash('TtjVbxyR')); 
-insert into Kurjery values(800000095, 4, 'ALEXANDER', 'Lantz', 333893780 , 'ALEXANDER.Lantz@gmail.com ', 83, true); 
-insert into Loginy_hasla values(-2 ,'administrator39', getHash('dRul3JXc')); 
-insert into Kurjery values(800000096, 1, 'DOMINGUEZ', 'Lawlor', 280753098 , 'DOMINGUEZ.Lawlor@gmail.com ', 50, true); 
-insert into Loginy_hasla values(-2 ,'pro10059', getHash('LmrPactk')); 
-insert into Kurjery values(800000097, 4, 'FORD', 'Ledoux', 849829215 , 'FORD.Ledoux@gmail.com ', 27, true); 
-insert into Loginy_hasla values(-2 ,'Vampir42', getHash('EUkBcTxa')); 
-insert into Kurjery values(800000098, 1, 'CHEN', 'Larry', 396646095 , 'CHEN.Larry@gmail.com ', 72, true); 
-insert into Loginy_hasla values(-2 ,'narayana97', getHash('QUn1yUiP')); 
-insert into Kurjery values(800000099, 4, 'GIBSON', 'Lindley', 464033386 , 'GIBSON.Lindley@gmail.com ', 93, true); 
-insert into Loginy_hasla values(-2 ,'root22', getHash('3i0HmhX6')); 
-insert into Kurjery values(800000100, 2, 'PIERCE', 'Lombardo', 678425995 , 'PIERCE.Lombardo@gmail.com ', 3, true); 
-insert into Loginy_hasla values(-2 ,'Marly88', getHash('iSeSjmTX')); 
-insert into Kurjery values(800000101, 1, 'GARDNER', 'Ledoux', 064851844 , 'GARDNER.Ledoux@gmail.com ', 64, true); 
-insert into Loginy_hasla values(-2 ,'Alex60', getHash('YQmrg5rv')); 
-insert into Kurjery values(800000102, 3, 'GARCIA', 'Lovelace', 498720607 , 'GARCIA.Lovelace@gmail.com ', 5, true); 
-insert into Loginy_hasla values(-2 ,'grey33', getHash('IjjU3lOW')); 
-insert into Kurjery values(800000103, 2, 'ROBERTSON', 'Laroche', 688596934 , 'ROBERTSON.Laroche@gmail.com ', 46, true); 
-insert into Loginy_hasla values(-2 ,'Ivanov7', getHash('nbVaZoaQ')); 
-insert into Kurjery values(800000104, 2, 'MURPHY', 'Long', 140984103 , 'MURPHY.Long@gmail.com ', 62, true); 
-insert into Loginy_hasla values(-2 ,'master89', getHash('gMXlfphF')); 
-insert into Kurjery values(800000105, 3, 'WILSON', 'Layton', 486795284 , 'WILSON.Layton@gmail.com ', 80, true); 
-insert into Loginy_hasla values(-2 ,'SuperTone21', getHash('acIEUjmx')); 
-insert into Kurjery values(800000106, 1, 'ROSS', 'Langston', 433975571 , 'ROSS.Langston@gmail.com ', 62, true); 
-insert into Loginy_hasla values(-2 ,'alexander54', getHash('ujOWr3hC')); 
-insert into Kurjery values(800000107, 2, 'REED', 'Lipscomb', 512490868 , 'REED.Lipscomb@gmail.com ', 55, true); 
-insert into Loginy_hasla values(-2 ,'rolcom2', getHash('VXUomVrJ')); 
-insert into Kurjery values(800000108, 3, 'GREEN', 'Lash', 939904106 , 'GREEN.Lash@gmail.com ', 70, true); 
-insert into Loginy_hasla values(-2 ,'name40', getHash('4chNgZPX')); 
-insert into Kurjery values(800000109, 2, 'GUERRERO', 'Locke', 250581287 , 'GUERRERO.Locke@gmail.com ', 11, true); 
-insert into Loginy_hasla values(-2 ,'Ivanov94', getHash('8PaVonYg')); 
-insert into Kurjery values(800000110, 2, 'CARLSON', 'Lippert', 203073237 , 'CARLSON.Lippert@gmail.com ', 96, true); 
-insert into Loginy_hasla values(-2 ,'no65', getHash('6hKjVmUY')); 
-insert into Kurjery values(800000111, 3, 'POWELL', 'Lozada', 487795810 , 'POWELL.Lozada@gmail.com ', 48, true); 
-insert into Loginy_hasla values(-2 ,'marva78', getHash('Pjh2VvXH')); 
-insert into Kurjery values(800000112, 2, 'RILEY', 'Langdon', 202128002 , 'RILEY.Langdon@gmail.com ', 59, true); 
-insert into Loginy_hasla values(-2 ,'dinis28', getHash('bb5l6QbO')); 
-insert into Kurjery values(800000113, 1, 'BAILEY', 'Lovell', 796488550 , 'BAILEY.Lovell@gmail.com ', 28, true); 
-insert into Loginy_hasla values(-2 ,'life88', getHash('cwyAbdre')); 
-insert into Kurjery values(800000114, 3, 'BOYD', 'Louis', 117638627 , 'BOYD.Louis@gmail.com ', 21, true); 
-insert into Loginy_hasla values(-2 ,'snake16', getHash('lxuQXAAY')); 
-insert into Kurjery values(800000115, 1, 'ANDERSON', 'Ladd', 410467320 , 'ANDERSON.Ladd@gmail.com ', 88, true); 
-insert into Loginy_hasla values(-2 ,'Alex68', getHash('7ccVWYXk')); 
-insert into Kurjery values(800000116, 3, 'GUERRERO', 'Lawler', 044787609 , 'GUERRERO.Lawler@gmail.com ', 19, true); 
-insert into Loginy_hasla values(-2 ,'evanfe46', getHash('W9HlAdSe')); 
-insert into Kurjery values(800000117, 3, 'ALLEN', 'Larkins', 200496103 , 'ALLEN.Larkins@gmail.com ', 57, true); 
-insert into Loginy_hasla values(-2 ,'patti21', getHash('hrbgJmaV')); 
-insert into Kurjery values(800000118, 4, 'CUNNINGHAM', 'Langlois', 837489570 , 'CUNNINGHAM.Langlois@gmail.com ', 74, true); 
-insert into Loginy_hasla values(-2 ,'support37', getHash('LrhhblgS')); 
-insert into Kurjery values(800000119, 4, 'WOODS', 'Larry', 999248260 , 'WOODS.Larry@gmail.com ', 1, true); 
-insert into Loginy_hasla values(-2 ,'rusinborg61', getHash('KAgJSnQ2')); 
-insert into Kurjery values(800000120, 2, 'GRANT', 'Leong', 855586541 , 'GRANT.Leong@gmail.com ', 93, true); 
-insert into Loginy_hasla values(-2 ,'setcher12', getHash('VyHcOVmR')); 
-insert into Kurjery values(800000121, 3, 'BARNES', 'Lockhart', 624158253 , 'BARNES.Lockhart@gmail.com ', 69, true); 
-insert into Loginy_hasla values(-2 ,'yourdream40', getHash('WZ5fZsYQ')); 
-insert into Kurjery values(800000122, 2, 'SANTOS', 'Lockard', 998496704 , 'SANTOS.Lockard@gmail.com ', 20, true); 
-insert into Loginy_hasla values(-2 ,'ksu5', getHash('biSViaZn')); 
-insert into Kurjery values(800000123, 1, 'CARTER', 'Lerner', 096900080 , 'CARTER.Lerner@gmail.com ', 57, true); 
-insert into Loginy_hasla values(-2 ,'heart40', getHash('DRcPjidO')); 
-insert into Kurjery values(800000124, 1, 'FERGUSON', 'Larry', 167850954 , 'FERGUSON.Larry@gmail.com ', 91, true); 
-insert into Loginy_hasla values(-2 ,'Anonyme85', getHash('3VPwyVAX')); 
-insert into Kurjery values(800000125, 1, 'CHEN', 'Loredo', 308171097 , 'CHEN.Loredo@gmail.com ', 47, true); 
-insert into Loginy_hasla values(-2 ,'region2', getHash('cO1mXwcm')); 
-insert into Kurjery values(800000126, 4, 'PERRY', 'Liang', 456361641 , 'PERRY.Liang@gmail.com ', 43, true); 
-insert into Loginy_hasla values(-2 ,'rusinborg96', getHash('NThWcaZV')); 
-insert into Kurjery values(800000127, 2, 'OWENS', 'Lamar', 333556162 , 'OWENS.Lamar@gmail.com ', 8, true); 
-insert into Loginy_hasla values(-2 ,'John38', getHash('ZUS2gW5I')); 
-insert into Kurjery values(800000128, 2, 'NUNEZ', 'Lujan', 079261292 , 'NUNEZ.Lujan@gmail.com ', 4, true); 
-insert into Loginy_hasla values(-2 ,'Elvis43', getHash('RWhm5qmI')); 
-insert into Kurjery values(800000129, 4, 'SPENCER', 'Locklear', 361637497 , 'SPENCER.Locklear@gmail.com ', 92, true); 
-insert into Loginy_hasla values(-2 ,'jony70', getHash('BQemccVY')); 
-insert into Kurjery values(800000130, 3, 'EVANS', 'Lemke', 935962878 , 'EVANS.Lemke@gmail.com ', 24, true); 
-insert into Loginy_hasla values(-2 ,'good15', getHash('gXa2hjPQ')); 
-insert into Kurjery values(800000131, 2, 'LANE', 'Ly', 193113824 , 'LANE.Ly@gmail.com ', 74, true); 
-insert into Loginy_hasla values(-2 ,'webmaster21', getHash('X7memeei')); 
-insert into Kurjery values(800000132, 3, 'WARREN', 'Livingston', 881964921 , 'WARREN.Livingston@gmail.com ', 65, true); 
-insert into Loginy_hasla values(-2 ,'super12', getHash('JAZaY3iY')); 
-insert into Kurjery values(800000133, 2, 'PETERS', 'Love', 933051095 , 'PETERS.Love@gmail.com ', 39, true); 
-insert into Loginy_hasla values(-2 ,'alexander30', getHash('ZjQvfelB')); 
-insert into Kurjery values(800000134, 2, 'BRYANT', 'Lachance', 656463525 , 'BRYANT.Lachance@gmail.com ', 73, true); 
-insert into Loginy_hasla values(-2 ,'snake95', getHash('PJ8em1C1')); 
-insert into Kurjery values(800000135, 3, 'ADAMS', 'Lowrey', 688346989 , 'ADAMS.Lowrey@gmail.com ', 62, true); 
-insert into Loginy_hasla values(-2 ,'stephan67', getHash('VdVoEROj')); 
-insert into Kurjery values(800000136, 2, 'PORTER', 'Labelle', 547371004 , 'PORTER.Labelle@gmail.com ', 22, true); 
-insert into Loginy_hasla values(-2 ,'Julia61', getHash('ogaBaZhc')); 
-insert into Kurjery values(800000137, 1, 'PERKINS', 'Levin', 472406378 , 'PERKINS.Levin@gmail.com ', 66, true); 
-insert into Loginy_hasla values(-2 ,'Suzan82', getHash('ijI7dPjl')); 
-insert into Kurjery values(800000138, 4, 'MYERS', 'Larue', 203690135 , 'MYERS.Larue@gmail.com ', 72, true); 
-insert into Loginy_hasla values(-2 ,'yourdream18', getHash('ZXgWZ8ji')); 
-insert into Kurjery values(800000139, 3, 'MARSHALL', 'Lafferty', 126654729 , 'MARSHALL.Lafferty@gmail.com ', 67, true); 
-insert into Loginy_hasla values(-2 ,'sasuke4', getHash('OSWV1TZY')); 
-insert into Kurjery values(800000140, 3, 'ORTIZ', 'Linn', 863169904 , 'ORTIZ.Linn@gmail.com ', 95, true); 
-insert into Loginy_hasla values(-2 ,'sergej_a_g30', getHash('U1UleaWC')); 
-insert into Kurjery values(800000141, 3, 'AGUILAR', 'Leos', 012316987 , 'AGUILAR.Leos@gmail.com ', 79, true); 
-insert into Loginy_hasla values(-2 ,'jony67', getHash('L9ecShQ2')); 
-insert into Kurjery values(800000142, 2, 'EVANS', 'Logsdon', 823040750 , 'EVANS.Logsdon@gmail.com ', 55, true); 
-insert into Loginy_hasla values(-2 ,'root76', getHash('lQmKZSbt')); 
-insert into Kurjery values(800000143, 4, 'TUCKER', 'Lau', 352012227 , 'TUCKER.Lau@gmail.com ', 70, true); 
-insert into Loginy_hasla values(-2 ,'motocross43', getHash('aPfPkbUG')); 
-insert into Kurjery values(800000144, 4, 'SCOTT', 'Libby', 128529405 , 'SCOTT.Libby@gmail.com ', 60, true); 
-insert into Loginy_hasla values(-2 ,'administrator73', getHash('k1tbZhSL')); 
-insert into Kurjery values(800000145, 2, 'OLSON', 'Lujan', 115762301 , 'OLSON.Lujan@gmail.com ', 46, true); 
-insert into Loginy_hasla values(-2 ,'Dan39', getHash('U3lKBGPe')); 
-insert into Kurjery values(800000146, 4, 'ALLEN', 'Lowell', 757420547 , 'ALLEN.Lowell@gmail.com ', 62, true); 
-insert into Loginy_hasla values(-2 ,'agrorynok90', getHash('6kcVZDNa')); 
-insert into Kurjery values(800000147, 3, 'BUTLER', 'Loftin', 754744403 , 'BUTLER.Loftin@gmail.com ', 82, true); 
-insert into Loginy_hasla values(-2 ,'wUUb46', getHash('QhqmegMX')); 
-insert into Kurjery values(800000148, 3, 'PARKER', 'Lefebvre', 119603094 , 'PARKER.Lefebvre@gmail.com ', 1, true); 
-insert into Loginy_hasla values(-2 ,'sg19', getHash('UuYRhAQc')); 
-insert into Kurjery values(800000149, 2, 'CRUZ', 'Langston', 895687829 , 'CRUZ.Langston@gmail.com ', 57, true); 
-insert into Loginy_hasla values(-2 ,'Schnuddel82', getHash('RalfZVgJ')); 
-insert into Kurjery values(800000150, 3, 'SULLIVAN', 'Linville', 871986028 , 'SULLIVAN.Linville@gmail.com ', 93, true); 
-insert into Loginy_hasla values(-2 ,'stephan69', getHash('UBmzXTcF')); 
-insert into Kurjery values(800000151, 4, 'RYAN', 'Lemmon', 890390366 , 'RYAN.Lemmon@gmail.com ', 87, true); 
-insert into Loginy_hasla values(-2 ,'rap70', getHash('eP5hFTNs')); 
-insert into Kurjery values(800000152, 1, 'WHEELER', 'Lundy', 916797635 , 'WHEELER.Lundy@gmail.com ', 48, true); 
-insert into Loginy_hasla values(-2 ,'girl60', getHash('obaanSkb')); 
-insert into Kurjery values(800000153, 1, 'WARD', 'Lathrop', 945493855 , 'WARD.Lathrop@gmail.com ', 76, true); 
-insert into Loginy_hasla values(-2 ,'victor15', getHash('dTfTURiV')); 
-insert into Kurjery values(800000154, 2, 'BERRY', 'Lam', 735081350 , 'BERRY.Lam@gmail.com ', 54, true); 
-insert into Loginy_hasla values(-2 ,'fhotel40', getHash('taiAhYca')); 
-insert into Kurjery values(800000155, 1, 'JACKSON', 'Lacroix', 733477919 , 'JACKSON.Lacroix@gmail.com ', 68, true); 
-insert into Loginy_hasla values(-2 ,'weiss66', getHash('PhLUQ4jv')); 
-insert into Kurjery values(800000156, 3, 'EVANS', 'Loftin', 284679894 , 'EVANS.Loftin@gmail.com ', 62, true); 
-insert into Loginy_hasla values(-2 ,'fkleev77', getHash('WpV01S8W')); 
-insert into Kurjery values(800000157, 3, 'GARZA', 'Logue', 991727406 , 'GARZA.Logue@gmail.com ', 11, true); 
-insert into Loginy_hasla values(-2 ,'www41', getHash('EgUTUa4g')); 
-insert into Kurjery values(800000158, 3, 'DUNCAN', 'Lai', 163487277 , 'DUNCAN.Lai@gmail.com ', 31, true); 
-insert into Loginy_hasla values(-2 ,'na_tiv62', getHash('kj9Yad9l')); 
-insert into Kurjery values(800000159, 2, 'WOODS', 'Locke', 579579841 , 'WOODS.Locke@gmail.com ', 12, true); 
-insert into Loginy_hasla values(-2 ,'Progressor83', getHash('hsVaQ3h1')); 
-insert into Kurjery values(800000160, 2, 'DOMINGUEZ', 'Ladd', 859212135 , 'DOMINGUEZ.Ladd@gmail.com ', 63, true); 
-insert into Loginy_hasla values(-2 ,'zero67', getHash('WRiX6Zil')); 
-insert into Kurjery values(800000161, 2, 'WOOD', 'Lucero', 165409454 , 'WOOD.Lucero@gmail.com ', 21, true); 
-insert into Loginy_hasla values(-2 ,'X-man61', getHash('TMc2dWlT')); 
-insert into Kurjery values(800000162, 3, 'GARZA', 'Leyva', 006904475 , 'GARZA.Leyva@gmail.com ', 87, true); 
-insert into Loginy_hasla values(-2 ,'Malcom20', getHash('SNknPRL8')); 
-insert into Kurjery values(800000163, 1, 'ARNOLD', 'Lombard', 927551253 , 'ARNOLD.Lombard@gmail.com ', 30, true); 
-insert into Loginy_hasla values(-2 ,'sergej_a_g58', getHash('OugmS9hY')); 
-insert into Kurjery values(800000164, 3, 'KNIGHT', 'Lash', 140588386 , 'KNIGHT.Lash@gmail.com ', 49, true); 
-insert into Loginy_hasla values(-2 ,'Vorona3417', getHash('lCeghdiZ')); 
-insert into Kurjery values(800000165, 3, 'CARTER', 'Lawson', 755488259 , 'CARTER.Lawson@gmail.com ', 88, true); 
-insert into Loginy_hasla values(-2 ,'dinis39', getHash('ja4wmZfS')); 
-insert into Kurjery values(800000166, 2, 'MENDEZ', 'Lantz', 067631420 , 'MENDEZ.Lantz@gmail.com ', 69, true); 
-insert into Loginy_hasla values(-2 ,'www20', getHash('9GGIBVUT')); 
-insert into Kurjery values(800000167, 2, 'ORTEGA', 'Lockwood', 938692222 , 'ORTEGA.Lockwood@gmail.com ', 22, true); 
-insert into Loginy_hasla values(-2 ,'xtro94', getHash('qOdiXkZg')); 
-insert into Kurjery values(800000168, 4, 'LARSON', 'Love', 037152365 , 'LARSON.Love@gmail.com ', 63, true); 
-insert into Loginy_hasla values(-2 ,'happy25', getHash('rduHcaSO')); 
-insert into Kurjery values(800000169, 2, 'REED', 'Lloyd', 445121009 , 'REED.Lloyd@gmail.com ', 94, true); 
-insert into Loginy_hasla values(-2 ,'maloy25', getHash('6BdPd2eP')); 
-insert into Kurjery values(800000170, 1, 'CARPENTER', 'Luckett', 765858211 , 'CARPENTER.Luckett@gmail.com ', 76, true); 
-insert into Loginy_hasla values(-2 ,'star20', getHash('NfTWOZmh')); 
-insert into Kurjery values(800000171, 1, 'EVANS', 'Lanier', 458060635 , 'EVANS.Lanier@gmail.com ', 95, true); 
-insert into Loginy_hasla values(-2 ,'roman91', getHash('P6ig2wCH')); 
-insert into Kurjery values(800000172, 4, 'RICHARDS', 'Lew', 745561712 , 'RICHARDS.Lew@gmail.com ', 54, true); 
-insert into Loginy_hasla values(-2 ,'sonara7', getHash('olfStTSO')); 
-insert into Kurjery values(800000173, 1, 'CAMPBELL', 'Lindgren', 721868562 , 'CAMPBELL.Lindgren@gmail.com ', 30, true); 
-insert into Loginy_hasla values(-2 ,'snake5', getHash('b0Ty8Ndn')); 
-insert into Kurjery values(800000174, 3, 'STEWART', 'Laird', 761320938 , 'STEWART.Laird@gmail.com ', 49, true); 
-insert into Loginy_hasla values(-2 ,'judo77', getHash('PlhQfFaz')); 
-insert into Kurjery values(800000175, 4, 'ANDREWS', 'Lu', 624337206 , 'ANDREWS.Lu@gmail.com ', 65, true); 
-insert into Loginy_hasla values(-2 ,'duty71', getHash('PyYVBkvm')); 
-insert into Kurjery values(800000176, 1, 'ORTIZ', 'Lemoine', 307518713 , 'ORTIZ.Lemoine@gmail.com ', 38, true); 
-insert into Loginy_hasla values(-2 ,'wtf40', getHash('bSohQjTW')); 
-insert into Kurjery values(800000177, 4, 'GRANT', 'Lowry', 187955013 , 'GRANT.Lowry@gmail.com ', 33, true); 
-insert into Loginy_hasla values(-2 ,'victor14', getHash('keaNslks')); 
-insert into Kurjery values(800000178, 2, 'CRUZ', 'Lockett', 005502714 , 'CRUZ.Lockett@gmail.com ', 27, true); 
-insert into Loginy_hasla values(-2 ,'helpinv91', getHash('57W9qcrU')); 
-insert into Kurjery values(800000179, 1, 'FOX', 'Leclair', 585040438 , 'FOX.Leclair@gmail.com ', 78, true); 
-insert into Loginy_hasla values(-2 ,'jaguar16', getHash('FxPbdZuK')); 
-insert into Kurjery values(800000180, 2, 'THOMPSON', 'Lunsford', 475013518 , 'THOMPSON.Lunsford@gmail.com ', 87, true); 
-insert into Loginy_hasla values(-2 ,'helpinv68', getHash('PdfEmXLa')); 
-insert into Kurjery values(800000181, 1, 'HART', 'Ledbetter', 314149570 , 'HART.Ledbetter@gmail.com ', 33, true); 
-insert into Loginy_hasla values(-2 ,'alexander65', getHash('hR3jfXOs')); 
-insert into Kurjery values(800000182, 3, 'FOSTER', 'Lu', 704373287 , 'FOSTER.Lu@gmail.com ', 24, true); 
-insert into Loginy_hasla values(-2 ,'kakuzu62', getHash('W0XakQtf')); 
-insert into Kurjery values(800000183, 3, 'ROSS', 'Lett', 667263349 , 'ROSS.Lett@gmail.com ', 88, true); 
-insert into Loginy_hasla values(-2 ,'Elvis93', getHash('SRdhZLTV')); 
-insert into Kurjery values(800000184, 2, 'CASTRO', 'Lilly', 210743006 , 'CASTRO.Lilly@gmail.com ', 77, true); 
-insert into Loginy_hasla values(-2 ,'fhotel66', getHash('jUWvVpgq')); 
-insert into Kurjery values(800000185, 4, 'BROWN', 'Lujan', 659593470 , 'BROWN.Lujan@gmail.com ', 89, true); 
-insert into Loginy_hasla values(-2 ,'Vortelio49', getHash('mGNazMZV')); 
-insert into Kurjery values(800000186, 4, 'GEORGE', 'Lyon', 211239325 , 'GEORGE.Lyon@gmail.com ', 6, true); 
-insert into Loginy_hasla values(-2 ,'anime84', getHash('5dcndSHX')); 
-insert into Kurjery values(800000187, 2, 'MOORE', 'Lacroix', 858462322 , 'MOORE.Lacroix@gmail.com ', 55, true); 
-insert into Loginy_hasla values(-2 ,'Vampir58', getHash('YVR7XJdj')); 
-insert into Kurjery values(800000188, 3, 'CHAVEZ', 'Ling', 212891985 , 'CHAVEZ.Ling@gmail.com ', 58, true); 
-insert into Loginy_hasla values(-2 ,'Alex16', getHash('lSTUULil')); 
-insert into Kurjery values(800000189, 1, 'REYES', 'Locke', 647772159 , 'REYES.Locke@gmail.com ', 6, true); 
-insert into Loginy_hasla values(-2 ,'Spider28', getHash('MXam6iZz')); 
-insert into Kurjery values(800000190, 3, 'HAMILTON', 'Leeper', 644647902 , 'HAMILTON.Leeper@gmail.com ', 55, true); 
-insert into Loginy_hasla values(-2 ,'support23', getHash('QKlRIcnp')); 
-insert into Kurjery values(800000191, 4, 'WAGNER', 'Lange', 989680385 , 'WAGNER.Lange@gmail.com ', 58, true); 
-insert into Loginy_hasla values(-2 ,'marva37', getHash('cTXmVbQp')); 
-insert into Kurjery values(800000192, 1, 'PHILLIPS', 'Luster', 777503423 , 'PHILLIPS.Luster@gmail.com ', 72, true); 
-insert into Loginy_hasla values(-2 ,'ira84', getHash('cjQrTRUW')); 
-insert into Kurjery values(800000193, 2, 'HOFFMAN', 'Lynch', 500556265 , 'HOFFMAN.Lynch@gmail.com ', 100, true); 
-insert into Loginy_hasla values(-2 ,'war16', getHash('lfaH3Zlc')); 
-insert into Kurjery values(800000194, 2, 'MILLS', 'Lomax', 224077475 , 'MILLS.Lomax@gmail.com ', 57, true); 
-insert into Loginy_hasla values(-2 ,'just93', getHash('fTPf3bQl')); 
-insert into Kurjery values(800000195, 1, 'STEPHENS', 'Lash', 991546720 , 'STEPHENS.Lash@gmail.com ', 45, true); 
-insert into Loginy_hasla values(-2 ,'sg15', getHash('UFiRievG')); 
-insert into Kurjery values(800000196, 1, 'BOYD', 'Lester', 877997435 , 'BOYD.Lester@gmail.com ', 14, true); 
-insert into Loginy_hasla values(-2 ,'region86', getHash('9T5fmhgf')); 
-insert into Kurjery values(800000197, 4, 'ROBINSON', 'Lazo', 466297116 , 'ROBINSON.Lazo@gmail.com ', 14, true); 
-insert into Loginy_hasla values(-2 ,'koird99', getHash('WRFVvYkO')); 
-insert into Kurjery values(800000198, 2, 'MITCHELL', 'Lavigne', 307400555 , 'MITCHELL.Lavigne@gmail.com ', 60, true); 
-insert into Loginy_hasla values(-2 ,'stephan0', getHash('GVeREHbi')); 
-insert into Kurjery values(800000199, 1, 'SOTO', 'Leger', 815961302 , 'SOTO.Leger@gmail.com ', 44, true); 
-insert into Loginy_hasla values(-2 ,'dusha78', getHash('be1gSRdi')); 
-insert into Kurjery values(800000200, 2, 'ROGERS', 'Lockett', 576229332 , 'ROGERS.Lockett@gmail.com ', 80, true); 
-insert into Loginy_hasla values(-2 ,'Bob17', getHash('Ipufahon')); 
-insert into Kurjery values(800000201, 4, 'WOODS', 'Larios', 708270363 , 'WOODS.Larios@gmail.com ', 26, true); 
-insert into Loginy_hasla values(-2 ,'turrus86', getHash('acYe4KaT')); 
-insert into Kurjery values(800000202, 3, 'HICKS', 'Logsdon', 558128769 , 'HICKS.Logsdon@gmail.com ', 23, true); 
-insert into Loginy_hasla values(-2 ,'master83', getHash('tXTeiQfi')); 
-insert into Kurjery values(800000203, 1, 'PETERSON', 'Lombard', 956641127 , 'PETERSON.Lombard@gmail.com ', 78, true); 
-insert into Loginy_hasla values(-2 ,'war15', getHash('Z1hk4Tki')); 
-insert into Kurjery values(800000204, 3, 'MITCHELL', 'Lay', 821448309 , 'MITCHELL.Lay@gmail.com ', 7, true); 
-insert into Loginy_hasla values(-2 ,'andy50', getHash('XJqTifVh')); 
-insert into Kurjery values(800000205, 3, 'PHILLIPS', 'Lea', 812748636 , 'PHILLIPS.Lea@gmail.com ', 23, true); 
-insert into Loginy_hasla values(-2 ,'denis0', getHash('sbcgl50T')); 
-insert into Kurjery values(800000206, 1, 'ROGERS', 'Lanning', 060968138 , 'ROGERS.Lanning@gmail.com ', 25, true); 
-insert into Loginy_hasla values(-2 ,'user44', getHash('dmYMRRTf')); 
-insert into Kurjery values(800000207, 3, 'WASHINGTON', 'Lacey', 320984664 , 'WASHINGTON.Lacey@gmail.com ', 9, true); 
-insert into Loginy_hasla values(-2 ,'xploit72', getHash('wJ1RYXeK')); 
-insert into Kurjery values(800000208, 1, 'SIMMONS', 'Long', 249850941 , 'SIMMONS.Long@gmail.com ', 53, true); 
-insert into Loginy_hasla values(-2 ,'druid23', getHash('D6YZ3m3U')); 
-insert into Kurjery values(800000209, 4, 'GARDNER', 'Lott', 229335781 , 'GARDNER.Lott@gmail.com ', 64, true); 
-insert into Loginy_hasla values(-2 ,'company69', getHash('YaSjPijj')); 
-insert into Kurjery values(800000210, 4, 'OLSON', 'Lund', 963465579 , 'OLSON.Lund@gmail.com ', 66, true); 
-insert into Loginy_hasla values(-2 ,'jusy52', getHash('ajhJbaPi')); 
-insert into Kurjery values(800000211, 3, 'ALLEN', 'Ledbetter', 449531787 , 'ALLEN.Ledbetter@gmail.com ', 32, true); 
-insert into Loginy_hasla values(-2 ,'pupsik46', getHash('RSbWYSmd')); 
-insert into Kurjery values(800000212, 2, 'SCHMIDT', 'Liao', 068224844 , 'SCHMIDT.Liao@gmail.com ', 16, true); 
-insert into Loginy_hasla values(-2 ,'Dan71', getHash('h5bPZbZm')); 
-insert into Kurjery values(800000213, 1, 'COX', 'Lemus', 003499826 , 'COX.Lemus@gmail.com ', 24, true); 
-insert into Loginy_hasla values(-2 ,'duty51', getHash('9cl3P7Qm')); 
-insert into Kurjery values(800000214, 1, 'COLLINS', 'Ludwig', 948887045 , 'COLLINS.Ludwig@gmail.com ', 42, true); 
-insert into Loginy_hasla values(-2 ,'zeus14', getHash('d1lkXUXK')); 
-insert into Kurjery values(800000215, 3, 'GONZALES', 'Leeper', 175200867 , 'GONZALES.Leeper@gmail.com ', 56, true); 
-insert into Loginy_hasla values(-2 ,'ira45', getHash('DcGjeyWI')); 
-insert into Kurjery values(800000216, 4, 'MORENO', 'Lyles', 070510574 , 'MORENO.Lyles@gmail.com ', 66, true); 
-insert into Loginy_hasla values(-2 ,'me21', getHash('cRfmSRPc')); 
-insert into Kurjery values(800000217, 3, 'MURPHY', 'Levitt', 585455943 , 'MURPHY.Levitt@gmail.com ', 89, true); 
-insert into Loginy_hasla values(-2 ,'Suzan25', getHash('dlZzcZ8d')); 
-insert into Kurjery values(800000218, 4, 'HUNT', 'Lima', 884343412 , 'HUNT.Lima@gmail.com ', 34, true); 
-insert into Loginy_hasla values(-2 ,'user82', getHash('kYS4jkuR')); 
-insert into Kurjery values(800000219, 4, 'STEPHENS', 'Lindgren', 541438056 , 'STEPHENS.Lindgren@gmail.com ', 90, true); 
-insert into Loginy_hasla values(-2 ,'Klam95', getHash('jRY9RRvR')); 
-insert into Kurjery values(800000220, 3, 'ROSS', 'Lawrence', 249013062 , 'ROSS.Lawrence@gmail.com ', 49, true); 
-insert into Loginy_hasla values(-2 ,'nport55', getHash('kPaVotiT')); 
-insert into Kurjery values(800000221, 3, 'LEE', 'Lively', 009526056 , 'LEE.Lively@gmail.com ', 76, true); 
-insert into Loginy_hasla values(-2 ,'Gau4', getHash('hVRT23TP')); 
-insert into Kurjery values(800000222, 2, 'BARNES', 'Laroche', 682942182 , 'BARNES.Laroche@gmail.com ', 65, true); 
-insert into Loginy_hasla values(-2 ,'zvonok46', getHash('7oUEZDCE')); 
-insert into Kurjery values(800000223, 1, 'FREEMAN', 'Lupo', 602297593 , 'FREEMAN.Lupo@gmail.com ', 87, true); 
-insert into Loginy_hasla values(-2 ,'wUUb82', getHash('gbcIkmLm')); 
-insert into Kurjery values(800000224, 4, 'KING', 'Leclair', 091918546 , 'KING.Leclair@gmail.com ', 63, true); 
-insert into Loginy_hasla values(-2 ,'minzov68', getHash('iXQXUmji')); 
-insert into Kurjery values(800000225, 4, 'PERRY', 'Lawson', 648264222 , 'PERRY.Lawson@gmail.com ', 15, true); 
-insert into Loginy_hasla values(-2 ,'Ivanov91', getHash('cIbIWjkZ')); 
-insert into Kurjery values(800000226, 4, 'NGUYEN', 'Lux', 468473375 , 'NGUYEN.Lux@gmail.com ', 16, true); 
-insert into Loginy_hasla values(-2 ,'miss78', getHash('cUSVe1R6')); 
-insert into Kurjery values(800000227, 1, 'HENRY', 'Loy', 214145687 , 'HENRY.Loy@gmail.com ', 81, true); 
-insert into Loginy_hasla values(-2 ,'user32', getHash('bikUalRc')); 
-insert into Kurjery values(800000228, 3, 'RILEY', 'Luck', 468678496 , 'RILEY.Luck@gmail.com ', 58, true); 
-insert into Loginy_hasla values(-2 ,'Spider71', getHash('WQdfv1Z4')); 
-insert into Kurjery values(800000229, 2, 'WILSON', 'Larson', 940275026 , 'WILSON.Larson@gmail.com ', 85, true); 
-insert into Loginy_hasla values(-2 ,'Alex13', getHash('mnVZc5ck')); 
-insert into Kurjery values(800000230, 4, 'DIXON', 'Levin', 779830183 , 'DIXON.Levin@gmail.com ', 96, true); 
-insert into Loginy_hasla values(-2 ,'box020360', getHash('iTkpPjea')); 
-insert into Kurjery values(800000231, 1, 'HART', 'Lundberg', 151296831 , 'HART.Lundberg@gmail.com ', 26, true); 
-insert into Loginy_hasla values(-2 ,'808087', getHash('kq5UcqPe')); 
-insert into Kurjery values(800000232, 4, 'MUNOZ', 'Land', 707116870 , 'MUNOZ.Land@gmail.com ', 63, true); 
-insert into Loginy_hasla values(-2 ,'weiss96', getHash('4QSOSpyj')); 
-insert into Kurjery values(800000233, 2, 'RUIZ', 'Lien', 287100572 , 'RUIZ.Lien@gmail.com ', 28, true); 
-insert into Loginy_hasla values(-2 ,'klubni4ka85', getHash('cefSl7dQ')); 
-insert into Kurjery values(800000234, 1, 'ANDREWS', 'Loera', 307030134 , 'ANDREWS.Loera@gmail.com ', 45, true); 
-insert into Loginy_hasla values(-2 ,'must15', getHash('xcgbK1Q2')); 
-insert into Kurjery values(800000235, 4, 'BURNS', 'Libby', 626824449 , 'BURNS.Libby@gmail.com ', 36, true); 
-insert into Loginy_hasla values(-2 ,'xploit75', getHash('yeUeZZVu')); 
-insert into Kurjery values(800000236, 3, 'SALAZAR', 'Littlefield', 213502597 , 'SALAZAR.Littlefield@gmail.com ', 38, true); 
-insert into Loginy_hasla values(-2 ,'Ivanov77', getHash('VhYSmbXU')); 
-insert into Kurjery values(800000237, 3, 'SANCHEZ', 'Leos', 963380532 , 'SANCHEZ.Leos@gmail.com ', 17, true); 
-insert into Loginy_hasla values(-2 ,'fkleev26', getHash('cZitj2WZ')); 
-insert into Kurjery values(800000238, 2, 'ORTEGA', 'Lyle', 313200738 , 'ORTEGA.Lyle@gmail.com ', 54, true); 
-insert into Loginy_hasla values(-2 ,'jorik62', getHash('ifbxef90')); 
-insert into Kurjery values(800000239, 1, 'VASQUEZ', 'Leigh', 328859286 , 'VASQUEZ.Leigh@gmail.com ', 12, true); 
-insert into Loginy_hasla values(-2 ,'user52', getHash('ublmMdzY')); 
-insert into Kurjery values(800000240, 3, 'STEVENS', 'Laws', 673101499 , 'STEVENS.Laws@gmail.com ', 87, true); 
-insert into Loginy_hasla values(-2 ,'alex11', getHash('PlgYFZka')); 
-insert into Kurjery values(800000241, 4, 'WEAVER', 'Lemus', 183956849 , 'WEAVER.Lemus@gmail.com ', 42, true); 
-insert into Loginy_hasla values(-2 ,'pro10086', getHash('VemhJlQt')); 
-insert into Kurjery values(800000242, 2, 'COOPER', 'Lutz', 558189723 , 'COOPER.Lutz@gmail.com ', 78, true); 
-insert into Loginy_hasla values(-2 ,'boss34', getHash('YRPSV5Cc')); 
-insert into Kurjery values(800000243, 1, 'RUIZ', 'Longoria', 332516053 , 'RUIZ.Longoria@gmail.com ', 35, true); 
-insert into Loginy_hasla values(-2 ,'man72', getHash('bahlqcnS')); 
-insert into Kurjery values(800000244, 2, 'BOYD', 'Lindsay', 526250983 , 'BOYD.Lindsay@gmail.com ', 58, true); 
-insert into Loginy_hasla values(-2 ,'zero8', getHash('fcrTdd6i')); 
-insert into Kurjery values(800000245, 2, 'TAYLOR', 'Lavigne', 429811641 , 'TAYLOR.Lavigne@gmail.com ', 94, true); 
-insert into Loginy_hasla values(-2 ,'turrus88', getHash('drgDkZCY')); 
-insert into Kurjery values(800000246, 1, 'ALVARADO', 'Leone', 953608776 , 'ALVARADO.Leone@gmail.com ', 35, true); 
-insert into Loginy_hasla values(-2 ,'supportpc2', getHash('eiZRTmgq')); 
-insert into Kurjery values(800000247, 2, 'SANTOS', 'Lankford', 673619284 , 'SANTOS.Lankford@gmail.com ', 50, true); 
-insert into Loginy_hasla values(-2 ,'lonely76', getHash('WiIVWYAW')); 
-insert into Kurjery values(800000248, 1, 'GUTIERREZ', 'Lavin', 735196973 , 'GUTIERREZ.Lavin@gmail.com ', 69, true); 
-insert into Loginy_hasla values(-2 ,'Suzan84', getHash('Wggm5sV0')); 
-insert into Kurjery values(800000249, 2, 'GUZMAN', 'Loza', 850053331 , 'GUZMAN.Loza@gmail.com ', 90, true); 
-insert into Loginy_hasla values(-2 ,'stephan22', getHash('pc54hfYU')); 
-insert into Kurjery values(800000250, 1, 'HUNT', 'Lathrop', 274787590 , 'HUNT.Lathrop@gmail.com ', 22, true); 
-insert into Loginy_hasla values(-2 ,'turrus10', getHash('hLXWmYNT')); 
-insert into Kurjery values(800000251, 3, 'ARMSTRONG', 'Lombardo', 859053556 , 'ARMSTRONG.Lombardo@gmail.com ', 20, true); 
-insert into Loginy_hasla values(-2 ,'name73', getHash('bYNXLm44')); 
-insert into Kurjery values(800000252, 2, 'WASHINGTON', 'Lett', 769709986 , 'WASHINGTON.Lett@gmail.com ', 65, true); 
-insert into Loginy_hasla values(-2 ,'Ivanov11', getHash('bdnwDi2m')); 
-insert into Kurjery values(800000253, 1, 'CARPENTER', 'Ledbetter', 948406906 , 'CARPENTER.Ledbetter@gmail.com ', 1, true); 
-insert into Loginy_hasla values(-2 ,'girl34', getHash('mrfbxa69')); 
-insert into Kurjery values(800000254, 1, 'CASTILLO', 'Lowry', 565755748 , 'CASTILLO.Lowry@gmail.com ', 6, true); 
-insert into Loginy_hasla values(-2 ,'vitatorg9', getHash('abtJjvke')); 
-insert into Kurjery values(800000255, 1, 'HAYES', 'Lefebvre', 746277692 , 'HAYES.Lefebvre@gmail.com ', 52, true); 
-insert into Loginy_hasla values(-2 ,'BurnPro53', getHash('FSTtkc5d')); 
-insert into Kurjery values(800000256, 1, 'CAMPBELL', 'Lance', 806306315 , 'CAMPBELL.Lance@gmail.com ', 76, true); 
-insert into Loginy_hasla values(-2 ,'imdi97', getHash('ubTUDbU6')); 
-insert into Kurjery values(800000257, 3, 'ADAMS', 'Leong', 068985928 , 'ADAMS.Leong@gmail.com ', 85, true); 
-insert into Loginy_hasla values(-2 ,'zvonok59', getHash('gqSBngx8')); 
-insert into Kurjery values(800000258, 1, 'RICHARDS', 'Li', 017656184 , 'RICHARDS.Li@gmail.com ', 70, true); 
-insert into Loginy_hasla values(-2 ,'no81', getHash('UbWP7WWi')); 
-insert into Kurjery values(800000259, 2, 'FRANKLIN', 'Lavigne', 627652633 , 'FRANKLIN.Lavigne@gmail.com ', 92, true); 
-insert into Loginy_hasla values(-2 ,'www18', getHash('UFyTfZzL')); 
-insert into Kurjery values(800000260, 2, 'TRAN', 'Logan', 581086197 , 'TRAN.Logan@gmail.com ', 34, true); 
-insert into Loginy_hasla values(-2 ,'rap59', getHash('VSUUQJPY')); 
-insert into Kurjery values(800000261, 3, 'RILEY', 'Leigh', 522378338 , 'RILEY.Leigh@gmail.com ', 93, true); 
-insert into Loginy_hasla values(-2 ,'Maggy54', getHash('QytTT9kU')); 
-insert into Kurjery values(800000262, 4, 'WEST', 'Leavitt', 404990206 , 'WEST.Leavitt@gmail.com ', 89, true); 
-insert into Loginy_hasla values(-2 ,'rusinborg12', getHash('oxSpUZhd')); 
-insert into Kurjery values(800000263, 4, 'MENDOZA', 'Lock', 717701719 , 'MENDOZA.Lock@gmail.com ', 13, true); 
-insert into Loginy_hasla values(-2 ,'no20', getHash('cYeLcYbj')); 
-insert into Kurjery values(800000264, 1, 'JACKSON', 'Lanier', 585533059 , 'JACKSON.Lanier@gmail.com ', 9, true); 
-insert into Loginy_hasla values(-2 ,'kill37', getHash('cLgQUf1Y')); 
-insert into Kurjery values(800000265, 4, 'STEPHENS', 'Lightner', 557090867 , 'STEPHENS.Lightner@gmail.com ', 73, true); 
-insert into Loginy_hasla values(-2 ,'killer43', getHash('kZbXlyUh')); 
-insert into Kurjery values(800000266, 4, 'OLSON', 'Labelle', 057542061 , 'OLSON.Labelle@gmail.com ', 51, true); 
-insert into Loginy_hasla values(-2 ,'Robertino8', getHash('YJpOG4Wj')); 
-insert into Kurjery values(800000267, 4, 'WHEELER', 'Lyles', 237342365 , 'WHEELER.Lyles@gmail.com ', 63, true); 
-insert into Loginy_hasla values(-2 ,'wUUb20', getHash('H9aPzi8N')); 
-insert into Kurjery values(800000268, 1, 'HANSEN', 'Logan', 577822813 , 'HANSEN.Logan@gmail.com ', 64, true); 
-insert into Loginy_hasla values(-2 ,'zaika20', getHash('QiXaFd2x')); 
-insert into Kurjery values(800000269, 3, 'ARNOLD', 'Lett', 273413667 , 'ARNOLD.Lett@gmail.com ', 77, true); 
-insert into Loginy_hasla values(-2 ,'girl30', getHash('Hk3UagRk')); 
-insert into Kurjery values(800000270, 2, 'RYAN', 'Lombard', 347341518 , 'RYAN.Lombard@gmail.com ', 51, true); 
-insert into Loginy_hasla values(-2 ,'imdi61', getHash('dJmf6bLZ')); 
-insert into Kurjery values(800000271, 3, 'ALVAREZ', 'Lockhart', 575041054 , 'ALVAREZ.Lockhart@gmail.com ', 3, true); 
-insert into Loginy_hasla values(-2 ,'klubni4ka37', getHash('hWEclGBi')); 
-insert into Kurjery values(800000272, 3, 'DELGADO', 'Laurent', 812285835 , 'DELGADO.Laurent@gmail.com ', 84, true); 
-insert into Loginy_hasla values(-2 ,'nport69', getHash('NZMczbgm')); 
-insert into Kurjery values(800000273, 1, 'VARGAS', 'Lawhorn', 691104948 , 'VARGAS.Lawhorn@gmail.com ', 73, true); 
-insert into Loginy_hasla values(-2 ,'Vortelio13', getHash('UbgOiaWa')); 
-insert into Kurjery values(800000274, 3, 'RICE', 'Leary', 407150866 , 'RICE.Leary@gmail.com ', 95, true); 
-insert into Loginy_hasla values(-2 ,'lol69', getHash('QPazjTSw')); 
-insert into Kurjery values(800000275, 2, 'HERRERA', 'Lytle', 681287911 , 'HERRERA.Lytle@gmail.com ', 75, true); 
-insert into Loginy_hasla values(-2 ,'SergejF12', getHash('UnaYeRVG')); 
-insert into Kurjery values(800000276, 4, 'FISHER', 'Larkin', 353157508 , 'FISHER.Larkin@gmail.com ', 40, true); 
-insert into Loginy_hasla values(-2 ,'Bob4', getHash('7XbyWfQa')); 
-insert into Kurjery values(800000277, 2, 'PATTERSON', 'Lavin', 575980150 , 'PATTERSON.Lavin@gmail.com ', 50, true); 
-insert into Loginy_hasla values(-2 ,'Vortelio78', getHash('LoSTi10S')); 
-insert into Kurjery values(800000278, 4, 'MEDINA', 'Lawlor', 310041884 , 'MEDINA.Lawlor@gmail.com ', 97, true); 
-insert into Loginy_hasla values(-2 ,'wUUb62', getHash('ialqPHBm')); 
-insert into Kurjery values(800000279, 2, 'DIXON', 'Loving', 914854415 , 'DIXON.Loving@gmail.com ', 64, true); 
-insert into Loginy_hasla values(-2 ,'user93', getHash('wixdVbaQ')); 
-insert into Kurjery values(800000280, 2, 'BLACK', 'Lumpkin', 467932933 , 'BLACK.Lumpkin@gmail.com ', 13, true); 
-insert into Loginy_hasla values(-2 ,'duty7', getHash('MCtZjRUD')); 
-insert into Kurjery values(800000281, 1, 'SANTIAGO', 'Lentz', 738229575 , 'SANTIAGO.Lentz@gmail.com ', 33, true); 
-insert into Loginy_hasla values(-2 ,'nport95', getHash('d2K6i1Ee')); 
-insert into Kurjery values(800000282, 2, 'LAWRENCE', 'Lunsford', 309445771 , 'LAWRENCE.Lunsford@gmail.com ', 90, true); 
-insert into Loginy_hasla values(-2 ,'poster20', getHash('SSWwdisU')); 
-insert into Kurjery values(800000283, 2, 'FERGUSON', 'Laster', 929661125 , 'FERGUSON.Laster@gmail.com ', 98, true); 
-insert into Loginy_hasla values(-2 ,'alex59', getHash('UWviEVdb')); 
-insert into Kurjery values(800000284, 4, 'STEPHENS', 'Luce', 000669182 , 'STEPHENS.Luce@gmail.com ', 51, true); 
-insert into Loginy_hasla values(-2 ,'Chervechok41', getHash('SXlnqPLh')); 
-insert into Kurjery values(800000285, 1, 'MUNOZ', 'Levy', 665655632 , 'MUNOZ.Levy@gmail.com ', 81, true); 
-insert into Loginy_hasla values(-2 ,'jorik21', getHash('ldJZh0cR')); 
-insert into Kurjery values(800000286, 1, 'RUSSELL', 'Land', 585559418 , 'RUSSELL.Land@gmail.com ', 95, true); 
-insert into Loginy_hasla values(-2 ,'super29', getHash('Rmidexdb')); 
-insert into Kurjery values(800000287, 1, 'WAGNER', 'Lindsay', 840097363 , 'WAGNER.Lindsay@gmail.com ', 48, true); 
-insert into Loginy_hasla values(-2 ,'Vampir21', getHash('Ykl4ZQRU')); 
-insert into Kurjery values(800000288, 4, 'GRIFFIN', 'Luther', 601521770 , 'GRIFFIN.Luther@gmail.com ', 24, true); 
-insert into Loginy_hasla values(-2 ,'X-man68', getHash('bSkQZUEH')); 
-insert into Kurjery values(800000289, 2, 'ROGERS', 'Lathrop', 345841310 , 'ROGERS.Lathrop@gmail.com ', 68, true); 
-insert into Loginy_hasla values(-2 ,'sergej_a_g85', getHash('kjclDdly')); 
-insert into Kurjery values(800000290, 4, 'PERRY', 'Loggins', 753465565 , 'PERRY.Loggins@gmail.com ', 8, true); 
-insert into Loginy_hasla values(-2 ,'zaika59', getHash('hPWYWkra')); 
-insert into Kurjery values(800000291, 2, 'BAKER', 'Lehmann', 358005090 , 'BAKER.Lehmann@gmail.com ', 38, true); 
-insert into Loginy_hasla values(-2 ,'abidos45', getHash('h4PuYQLP')); 
-insert into Kurjery values(800000292, 1, 'MORRIS', 'Lor', 119316672 , 'MORRIS.Lor@gmail.com ', 84, true); 
-insert into Loginy_hasla values(-2 ,'must54', getHash('2RP7gPn1')); 
-insert into Kurjery values(800000293, 2, 'LEE', 'Lewis', 905845442 , 'LEE.Lewis@gmail.com ', 86, true); 
-insert into Loginy_hasla values(-2 ,'X-man35', getHash('FOXlPLJj')); 
-insert into Kurjery values(800000294, 4, 'ESTRADA', 'Lessard', 391003488 , 'ESTRADA.Lessard@gmail.com ', 99, true); 
-insert into Loginy_hasla values(-2 ,'redstaffer77', getHash('vUvJC4YU')); 
-insert into Kurjery values(800000295, 1, 'JONES', 'Lipscomb', 216033291 , 'JONES.Lipscomb@gmail.com ', 60, true); 
-insert into Loginy_hasla values(-2 ,'dinis82', getHash('cPPXNFkW')); 
-insert into Kurjery values(800000296, 1, 'CHAVEZ', 'Lowrey', 053899507 , 'CHAVEZ.Lowrey@gmail.com ', 52, true); 
-insert into Loginy_hasla values(-2 ,'weiss49', getHash('bHYApTai')); 
-insert into Kurjery values(800000297, 1, 'BROWN', 'Lemoine', 306855821 , 'BROWN.Lemoine@gmail.com ', 95, true); 
-insert into Loginy_hasla values(-2 ,'Chervechok70', getHash('yQhRUTrj')); 
-insert into Kurjery values(800000298, 4, 'GONZALES', 'Lott', 291000222 , 'GONZALES.Lott@gmail.com ', 11, true); 
-insert into Loginy_hasla values(-2 ,'Bob97', getHash('cSbw76OR')); 
-insert into Kurjery values(800000299, 4, 'EDWARDS', 'Lemon', 407183099 , 'EDWARDS.Lemon@gmail.com ', 2, true); 
-insert into Loginy_hasla values(-2 ,'Schnuddel51', getHash('KP5Q3ajv')); 
-insert into Kurjery values(800000300, 1, 'RUIZ', 'Lawson', 833515146 , 'RUIZ.Lawson@gmail.com ', 68, true); 
-insert into Loginy_hasla values(-2 ,'alexander64', getHash('8XRuGYNm')); 
-insert into Kurjery values(800000301, 3, 'HENRY', 'Lash', 982216232 , 'HENRY.Lash@gmail.com ', 17, true); 
-insert into Loginy_hasla values(-2 ,'name14', getHash('OHReQNQC')); 
-insert into Kurjery values(800000302, 4, 'STONE', 'Laplante', 225946644 , 'STONE.Laplante@gmail.com ', 12, true); 
-insert into Loginy_hasla values(-2 ,'sasuke80', getHash('hQgcPcXX')); 
-insert into Kurjery values(800000303, 3, 'MENDEZ', 'Lemoine', 591443816 , 'MENDEZ.Lemoine@gmail.com ', 42, true); 
-insert into Loginy_hasla values(-2 ,'jusy23', getHash('vQZR1mIL')); 
-insert into Kurjery values(800000304, 2, 'GORDON', 'Lindgren', 769293206 , 'GORDON.Lindgren@gmail.com ', 58, true); 
-insert into Loginy_hasla values(-2 ,'Ivanov10', getHash('TUR4YCBe')); 
-insert into Kurjery values(800000305, 1, 'KING', 'Larue', 001148599 , 'KING.Larue@gmail.com ', 1, true); 
-insert into Loginy_hasla values(-2 ,'alex40', getHash('SYMgccRq')); 
-insert into Kurjery values(800000306, 4, 'FREEMAN', 'Lett', 827712417 , 'FREEMAN.Lett@gmail.com ', 86, true); 
-insert into Loginy_hasla values(-2 ,'honey14', getHash('Q3clgPoT')); 
-insert into Kurjery values(800000307, 2, 'JONES', 'Langlois', 842743402 , 'JONES.Langlois@gmail.com ', 78, true); 
-insert into Loginy_hasla values(-2 ,'linia82', getHash('XTibOgdk')); 
-insert into Kurjery values(800000308, 3, 'PATTERSON', 'Longo', 954720507 , 'PATTERSON.Longo@gmail.com ', 8, true); 
-insert into Loginy_hasla values(-2 ,'sexy45', getHash('icZ3XhoQ')); 
-insert into Kurjery values(800000309, 2, 'HUDSON', 'Lacroix', 736556970 , 'HUDSON.Lacroix@gmail.com ', 70, true); 
-insert into Loginy_hasla values(-2 ,'heart22', getHash('XRXX6NL4')); 
-insert into Kurjery values(800000310, 4, 'LARSON', 'Llewellyn', 618635676 , 'LARSON.Llewellyn@gmail.com ', 51, true); 
-insert into Loginy_hasla values(-2 ,'Anonyme38', getHash('Rka05KQK')); 
-insert into Kurjery values(800000311, 2, 'SANTOS', 'Leatherman', 729832691 , 'SANTOS.Leatherman@gmail.com ', 12, true); 
-insert into Loginy_hasla values(-2 ,'company56', getHash('AwkJpIlT')); 
-insert into Kurjery values(800000312, 2, 'PENA', 'Livingston', 206599237 , 'PENA.Livingston@gmail.com ', 40, true); 
-insert into Loginy_hasla values(-2 ,'zaika54', getHash('XXSl6mMW')); 
-insert into Kurjery values(800000313, 4, 'RUSSELL', 'Land', 254652146 , 'RUSSELL.Land@gmail.com ', 54, true); 
-insert into Loginy_hasla values(-2 ,'tester84', getHash('nwPhhhI1')); 
-insert into Kurjery values(800000314, 1, 'VASQUEZ', 'Langley', 749280017 , 'VASQUEZ.Langley@gmail.com ', 56, true); 
-insert into Loginy_hasla values(-2 ,'Peter.Berghausen90', getHash('El0bf2ZC')); 
-insert into Kurjery values(800000315, 3, 'DIAZ', 'Llewellyn', 825665936 , 'DIAZ.Llewellyn@gmail.com ', 68, true); 
-insert into Loginy_hasla values(-2 ,'razor23', getHash('gPnfm8Rd')); 
-insert into Kurjery values(800000316, 2, 'PATEL', 'Lujan', 313243523 , 'PATEL.Lujan@gmail.com ', 24, true); 
-insert into Loginy_hasla values(-2 ,'fhotel56', getHash('0CVxYKZu')); 
-insert into Kurjery values(800000317, 4, 'SCHMIDT', 'Lapointe', 612868208 , 'SCHMIDT.Lapointe@gmail.com ', 60, true); 
-insert into Loginy_hasla values(-2 ,'neznakomka77', getHash('i4FlWeTu')); 
-insert into Kurjery values(800000318, 3, 'MATTHEWS', 'Laplante', 754391079 , 'MATTHEWS.Laplante@gmail.com ', 100, true); 
-insert into Loginy_hasla values(-2 ,'vitalyacher84', getHash('ee3QZCng')); 
-insert into Kurjery values(800000319, 3, 'JONES', 'Levine', 926106279 , 'JONES.Levine@gmail.com ', 46, true); 
-insert into Loginy_hasla values(-2 ,'Klam77', getHash('QRSheTQh')); 
-insert into Kurjery values(800000320, 3, 'SALAZAR', 'Ledbetter', 922396627 , 'SALAZAR.Ledbetter@gmail.com ', 52, true); 
-insert into Loginy_hasla values(-2 ,'love42', getHash('hSMRVZtO')); 
-insert into Kurjery values(800000321, 2, 'KELLY', 'Larose', 069417373 , 'KELLY.Larose@gmail.com ', 43, true); 
-insert into Loginy_hasla values(-2 ,'Dan75', getHash('pq0EQ2ai')); 
-insert into Kurjery values(800000322, 3, 'WARD', 'Letourneau', 312603222 , 'WARD.Letourneau@gmail.com ', 16, true); 
-insert into Loginy_hasla values(-2 ,'andby31', getHash('xoqbsqNe')); 
-insert into Kurjery values(800000323, 4, 'THOMPSON', 'Lombardo', 480957430 , 'THOMPSON.Lombardo@gmail.com ', 83, true); 
-insert into Loginy_hasla values(-2 ,'lost89', getHash('amaulePT')); 
-insert into Kurjery values(800000324, 3, 'MUNOZ', 'Landeros', 660966603 , 'MUNOZ.Landeros@gmail.com ', 31, true); 
-insert into Loginy_hasla values(-2 ,'rusinborg16', getHash('QP2A0YGP')); 
-insert into Kurjery values(800000325, 4, 'DUNCAN', 'Leyva', 553416271 , 'DUNCAN.Leyva@gmail.com ', 83, true); 
-insert into Loginy_hasla values(-2 ,'snake30', getHash('SdXmZd2Z')); 
-insert into Kurjery values(800000326, 2, 'SANTOS', 'Lankford', 463222788 , 'SANTOS.Lankford@gmail.com ', 89, true); 
-insert into Loginy_hasla values(-2 ,'anime75', getHash('lRPSMJg8')); 
-insert into Kurjery values(800000327, 2, 'GONZALEZ', 'Loeffler', 828723337 , 'GONZALEZ.Loeffler@gmail.com ', 93, true); 
-insert into Loginy_hasla values(-2 ,'baby34', getHash('YVkUdCEl')); 
-insert into Kurjery values(800000328, 3, 'FLORES', 'Lerma', 505743023 , 'FLORES.Lerma@gmail.com ', 28, true); 
-insert into Loginy_hasla values(-2 ,'angel73', getHash('Qke7jmS0')); 
-insert into Kurjery values(800000329, 1, 'RICE', 'Lenz', 461035128 , 'RICE.Lenz@gmail.com ', 41, true); 
-insert into Loginy_hasla values(-2 ,'narayana98', getHash('llEOPHjm')); 
-insert into Kurjery values(800000330, 4, 'BELL', 'Lay', 966887928 , 'BELL.Lay@gmail.com ', 37, true); 
-insert into Loginy_hasla values(-2 ,'gold98', getHash('UbxjhumF')); 
-insert into Kurjery values(800000331, 4, 'GORDON', 'Long', 954222930 , 'GORDON.Long@gmail.com ', 46, true); 
-insert into Loginy_hasla values(-2 ,'Anonyme98', getHash('Vfoc61QV')); 
-insert into Kurjery values(800000332, 3, 'PAYNE', 'Lathrop', 392712253 , 'PAYNE.Lathrop@gmail.com ', 55, true); 
-insert into Loginy_hasla values(-2 ,'thefish57', getHash('GaEUjkjS')); 
-insert into Kurjery values(800000333, 3, 'DUNN', 'Lejeune', 387583905 , 'DUNN.Lejeune@gmail.com ', 68, true); 
-insert into Loginy_hasla values(-2 ,'Kontek96', getHash('R6dNiQWe')); 
-insert into Kurjery values(800000334, 1, 'HUNTER', 'Larios', 078995105 , 'HUNTER.Larios@gmail.com ', 60, true); 
-insert into Loginy_hasla values(-2 ,'war98', getHash('FYRx8pl9')); 
-insert into Kurjery values(800000335, 2, 'ROGERS', 'Lozada', 355024228 , 'ROGERS.Lozada@gmail.com ', 56, true); 
-insert into Loginy_hasla values(-2 ,'Peter.Berghausen5', getHash('bSgwYzRm')); 
-insert into Kurjery values(800000336, 2, 'EDWARDS', 'Lauer', 625607942 , 'EDWARDS.Lauer@gmail.com ', 51, true); 
-insert into Loginy_hasla values(-2 ,'root48', getHash('TXdBQQkb')); 
-insert into Kurjery values(800000337, 2, 'CARROLL', 'Larosa', 128358326 , 'CARROLL.Larosa@gmail.com ', 8, true); 
-insert into Loginy_hasla values(-2 ,'patti84', getHash('BPwkE10g')); 
-insert into Kurjery values(800000338, 1, 'JAMES', 'Lux', 128112394 , 'JAMES.Lux@gmail.com ', 36, true); 
-insert into Loginy_hasla values(-2 ,'honey27', getHash('jQ9W3Pdz')); 
-insert into Kurjery values(800000339, 2, 'BURNS', 'Logsdon', 634931175 , 'BURNS.Logsdon@gmail.com ', 5, true); 
-insert into Loginy_hasla values(-2 ,'webmaster50', getHash('km2PlsRX')); 
-insert into Kurjery values(800000340, 2, 'ORTIZ', 'Lippert', 904122034 , 'ORTIZ.Lippert@gmail.com ', 85, true); 
-insert into Loginy_hasla values(-2 ,'duty29', getHash('iYurLcf5')); 
-insert into Kurjery values(800000341, 2, 'ESTRADA', 'Lux', 188548854 , 'ESTRADA.Lux@gmail.com ', 35, true); 
-insert into Loginy_hasla values(-2 ,'SuperTone35', getHash('VrEllmeE')); 
-insert into Kurjery values(800000342, 4, 'PRICE', 'Lombardi', 607166986 , 'PRICE.Lombardi@gmail.com ', 100, true); 
-insert into Loginy_hasla values(-2 ,'admin65', getHash('UWAn8aef')); 
-insert into Kurjery values(800000343, 2, 'GONZALEZ', 'Linden', 282454689 , 'GONZALEZ.Linden@gmail.com ', 86, true); 
-insert into Loginy_hasla values(-2 ,'vip40', getHash('CQTTojVc')); 
-insert into Kurjery values(800000344, 1, 'LEWIS', 'Lamont', 057108353 , 'LEWIS.Lamont@gmail.com ', 6, true); 
-insert into Loginy_hasla values(-2 ,'abidos16', getHash('aWzPi3Wb')); 
-insert into Kurjery values(800000345, 1, 'HAYES', 'Loera', 004124832 , 'HAYES.Loera@gmail.com ', 15, true); 
-insert into Loginy_hasla values(-2 ,'pupsik3', getHash('2beYgYRU')); 
-insert into Kurjery values(800000346, 4, 'PERRY', 'Lawson', 045743134 , 'PERRY.Lawson@gmail.com ', 67, true); 
-insert into Loginy_hasla values(-2 ,'star10', getHash('cRkfiRMk')); 
-insert into Kurjery values(800000347, 4, 'GREENE', 'Lebron', 707867678 , 'GREENE.Lebron@gmail.com ', 4, true); 
-insert into Loginy_hasla values(-2 ,'agrorynok60', getHash('PPseaYOg')); 
-insert into Kurjery values(800000348, 3, 'BROWN', 'Langford', 405314809 , 'BROWN.Langford@gmail.com ', 44, true); 
-insert into Loginy_hasla values(-2 ,'stalker13', getHash('iVjYUg55')); 
-insert into Kurjery values(800000349, 3, 'PERKINS', 'Lazo', 073984804 , 'PERKINS.Lazo@gmail.com ', 60, true); 
-insert into Loginy_hasla values(-2 ,'user60', getHash('ZkIed6nj')); 
-insert into Kurjery values(800000350, 2, 'LONG', 'Lux', 211132223 , 'LONG.Lux@gmail.com ', 42, true); 
-insert into Loginy_hasla values(-2 ,'admin59', getHash('xJYdX4fl')); 
-insert into Kurjery values(800000351, 4, 'SANTIAGO', 'Lawson', 334367104 , 'SANTIAGO.Lawson@gmail.com ', 52, true); 
-insert into Loginy_hasla values(-2 ,'me34', getHash('mGITl1Pd')); 
-insert into Kurjery values(800000352, 2, 'PERRY', 'Lehman', 746371993 , 'PERRY.Lehman@gmail.com ', 48, true); 
-insert into Loginy_hasla values(-2 ,'rap64', getHash('PYTiTLvX')); 
-insert into Kurjery values(800000353, 2, 'COOPER', 'Liles', 000589432 , 'COOPER.Liles@gmail.com ', 53, true); 
-insert into Loginy_hasla values(-2 ,'zloy43', getHash('atqpKWRo')); 
-insert into Kurjery values(800000354, 1, 'HERNANDEZ', 'Loving', 384375502 , 'HERNANDEZ.Loving@gmail.com ', 59, true); 
-insert into Loginy_hasla values(-2 ,'SuperTone59', getHash('lUhQaZbX')); 
-insert into Kurjery values(800000355, 2, 'FOSTER', 'Lindquist', 797400903 , 'FOSTER.Lindquist@gmail.com ', 24, true); 
-insert into Loginy_hasla values(-2 ,'marva91', getHash('86mfbkON')); 
-insert into Kurjery values(800000356, 3, 'HANSEN', 'Lightfoot', 383461097 , 'HANSEN.Lightfoot@gmail.com ', 97, true); 
-insert into Loginy_hasla values(-2 ,'xploit97', getHash('eRYcRVmU')); 
-insert into Kurjery values(800000357, 4, 'RICHARDSON', 'Lea', 797661454 , 'RICHARDSON.Lea@gmail.com ', 73, true); 
-insert into Loginy_hasla values(-2 ,'Albert59', getHash('brk5QKmS')); 
-insert into Kurjery values(800000358, 4, 'PATTERSON', 'Lofton', 573641928 , 'PATTERSON.Lofton@gmail.com ', 25, true); 
-insert into Loginy_hasla values(-2 ,'sg21', getHash('qNFWbKXY')); 
-insert into Kurjery values(800000359, 4, 'JACKSON', 'Lara', 805523751 , 'JACKSON.Lara@gmail.com ', 96, true); 
-insert into Loginy_hasla values(-2 ,'Albert58', getHash('RHmVkc6H')); 
-insert into Kurjery values(800000360, 1, 'MCDONALD', 'Lock', 621529717 , 'MCDONALD.Lock@gmail.com ', 64, true); 
-insert into Loginy_hasla values(-2 ,'Sandsstorm72', getHash('cf7bdYbP')); 
-insert into Kurjery values(800000361, 4, 'PENA', 'Lake', 150221350 , 'PENA.Lake@gmail.com ', 7, true); 
-insert into Loginy_hasla values(-2 ,'gold2', getHash('Uc9jkkQs')); 
-insert into Kurjery values(800000362, 4, 'HERNANDEZ', 'Lyman', 730568485 , 'HERNANDEZ.Lyman@gmail.com ', 30, true); 
-insert into Loginy_hasla values(-2 ,'must87', getHash('SbbRSPe1')); 
-insert into Kurjery values(800000363, 3, 'GARDNER', 'Loeffler', 468440937 , 'GARDNER.Loeffler@gmail.com ', 93, true); 
-insert into Loginy_hasla values(-2 ,'uzumaki59', getHash('gTelNbTY')); 
-insert into Kurjery values(800000364, 3, 'DUNCAN', 'Lusk', 193556752 , 'DUNCAN.Lusk@gmail.com ', 46, true); 
-insert into Loginy_hasla values(-2 ,'john36', getHash('kTVg3nQw')); 
-insert into Kurjery values(800000365, 4, 'COOK', 'Lazar', 254861411 , 'COOK.Lazar@gmail.com ', 16, true); 
-insert into Loginy_hasla values(-2 ,'sonara82', getHash('kQlX2ojn')); 
-insert into Kurjery values(800000366, 3, 'CHAPMAN', 'Lombardo', 958967971 , 'CHAPMAN.Lombardo@gmail.com ', 4, true); 
-insert into Loginy_hasla values(-2 ,'abidos30', getHash('j9nDmhZT')); 
-insert into Kurjery values(800000367, 2, 'GREENE', 'Loucks', 747414092 , 'GREENE.Loucks@gmail.com ', 19, true); 
-insert into Loginy_hasla values(-2 ,'victor77', getHash('hYaTIKMO')); 
-insert into Kurjery values(800000368, 4, 'ADAMS', 'Luke', 925571284 , 'ADAMS.Luke@gmail.com ', 75, true); 
-insert into Loginy_hasla values(-2 ,'stalker36', getHash('lftVeUmU')); 
-insert into Kurjery values(800000369, 4, 'MATTHEWS', 'Loya', 537019032 , 'MATTHEWS.Loya@gmail.com ', 19, true); 
-insert into Loginy_hasla values(-2 ,'airforlife0', getHash('83aZRr3W')); 
-insert into Kurjery values(800000370, 2, 'FERGUSON', 'Lemaster', 215361715 , 'FERGUSON.Lemaster@gmail.com ', 84, true); 
-insert into Loginy_hasla values(-2 ,'linia67', getHash('UUMWUMpN')); 
-insert into Kurjery values(800000371, 2, 'CRUZ', 'Landon', 598294626 , 'CRUZ.Landon@gmail.com ', 43, true); 
-insert into Loginy_hasla values(-2 ,'name49', getHash('9QcsZHbG')); 
-insert into Kurjery values(800000372, 4, 'MORRIS', 'Lacey', 580236585 , 'MORRIS.Lacey@gmail.com ', 24, true); 
-insert into Loginy_hasla values(-2 ,'guf57', getHash('g77pb7iF')); 
-insert into Kurjery values(800000373, 3, 'YOUNG', 'Lord', 867124705 , 'YOUNG.Lord@gmail.com ', 6, true); 
-insert into Loginy_hasla values(-2 ,'rusinborg26', getHash('aEVb9Rqi')); 
-insert into Kurjery values(800000374, 2, 'OLSON', 'Lundy', 235903763 , 'OLSON.Lundy@gmail.com ', 80, true); 
-insert into Loginy_hasla values(-2 ,'yourdream1', getHash('GofZhaxQ')); 
-insert into Kurjery values(800000375, 4, 'GORDON', 'Lemay', 425340220 , 'GORDON.Lemay@gmail.com ', 54, true); 
-insert into Loginy_hasla values(-2 ,'BurnPro40', getHash('iVAaallT')); 
-insert into Kurjery values(800000376, 3, 'PETERSON', 'Lay', 730282350 , 'PETERSON.Lay@gmail.com ', 30, true); 
-insert into Loginy_hasla values(-2 ,'Gau51', getHash('iQQcqeYg')); 
-insert into Kurjery values(800000377, 4, 'RICE', 'Landa', 766776070 , 'RICE.Landa@gmail.com ', 41, true); 
-insert into Loginy_hasla values(-2 ,'neznakomka47', getHash('iWPGSdFV')); 
-insert into Kurjery values(800000378, 1, 'KENNEDY', 'Lindsey', 024447409 , 'KENNEDY.Lindsey@gmail.com ', 90, true); 
-insert into Loginy_hasla values(-2 ,'X-man40', getHash('xgPRiW89')); 
-insert into Kurjery values(800000379, 1, 'BURNS', 'Lemley', 319258298 , 'BURNS.Lemley@gmail.com ', 90, true); 
-insert into Loginy_hasla values(-2 ,'life55', getHash('EUgOidQL')); 
-insert into Kurjery values(800000380, 4, 'WILLIAMS', 'Lloyd', 871956744 , 'WILLIAMS.Lloyd@gmail.com ', 62, true); 
-insert into Loginy_hasla values(-2 ,'jony2', getHash('PfPUidXl')); 
-insert into Kurjery values(800000381, 1, 'BURKE', 'Lundy', 914019202 , 'BURKE.Lundy@gmail.com ', 89, true); 
-insert into Loginy_hasla values(-2 ,'judo57', getHash('0SeHQBwY')); 
-insert into Kurjery values(800000382, 2, 'SALAZAR', 'Loveland', 170134525 , 'SALAZAR.Loveland@gmail.com ', 88, true); 
-insert into Loginy_hasla values(-2 ,'imdi3', getHash('ZYUimAiG')); 
-insert into Kurjery values(800000383, 4, 'WARD', 'Linton', 954552937 , 'WARD.Linton@gmail.com ', 29, true); 
-insert into Loginy_hasla values(-2 ,'flash15', getHash('8TE83QjW')); 
-insert into Kurjery values(800000384, 2, 'DOMINGUEZ', 'Laws', 128572854 , 'DOMINGUEZ.Laws@gmail.com ', 9, true); 
-insert into Loginy_hasla values(-2 ,'jony37', getHash('brXlhW8Y')); 
-insert into Kurjery values(800000385, 1, 'ELLIS', 'Leblanc', 824665088 , 'ELLIS.Leblanc@gmail.com ', 48, true); 
-insert into Loginy_hasla values(-2 ,'xploit71', getHash('zaYWfGmz')); 
-insert into Kurjery values(800000386, 4, 'PAYNE', 'Lugo', 991177343 , 'PAYNE.Lugo@gmail.com ', 94, true); 
-insert into Loginy_hasla values(-2 ,'Elvis82', getHash('QeM9lpVH')); 
-insert into Kurjery values(800000387, 3, 'SMITH', 'Longoria', 110589052 , 'SMITH.Longoria@gmail.com ', 12, true); 
-insert into Loginy_hasla values(-2 ,'Jbice78', getHash('lgXUWTWd')); 
-insert into Kurjery values(800000388, 3, 'ADAMS', 'Law', 298534009 , 'ADAMS.Law@gmail.com ', 28, true); 
-insert into Loginy_hasla values(-2 ,'maloy42', getHash('adRbiqbf')); 
-insert into Kurjery values(800000389, 2, 'KELLY', 'Lavin', 340184944 , 'KELLY.Lavin@gmail.com ', 28, true); 
-insert into Loginy_hasla values(-2 ,'ira31', getHash('eXfmxdbF')); 
-insert into Kurjery values(800000390, 2, 'EVANS', 'Lapp', 797191442 , 'EVANS.Lapp@gmail.com ', 96, true); 
-insert into Loginy_hasla values(-2 ,'zaika43', getHash('bhhRhUeY')); 
-insert into Kurjery values(800000391, 4, 'THOMAS', 'Lehman', 953856012 , 'THOMAS.Lehman@gmail.com ', 3, true); 
-insert into Loginy_hasla values(-2 ,'support20', getHash('anWhXYag')); 
-insert into Kurjery values(800000392, 1, 'PARKER', 'Lassiter', 780310764 , 'PARKER.Lassiter@gmail.com ', 89, true); 
-insert into Loginy_hasla values(-2 ,'motocross45', getHash('9YmuifbW')); 
-insert into Kurjery values(800000393, 4, 'FISHER', 'Lange', 707257832 , 'FISHER.Lange@gmail.com ', 25, true); 
-insert into Loginy_hasla values(-2 ,'spice0', getHash('WdWylYf2')); 
-insert into Kurjery values(800000394, 1, 'ROSS', 'Lohr', 998969755 , 'ROSS.Lohr@gmail.com ', 29, true); 
-insert into Loginy_hasla values(-2 ,'admin20', getHash('aklsuVdY')); 
-insert into Kurjery values(800000395, 4, 'ARMSTRONG', 'Loveland', 104425438 , 'ARMSTRONG.Loveland@gmail.com ', 88, true); 
-insert into Loginy_hasla values(-2 ,'vampir96', getHash('qPmiQmvv')); 
-insert into Kurjery values(800000396, 3, 'DELGADO', 'Luna', 228358420 , 'DELGADO.Luna@gmail.com ', 48, true); 
-insert into Loginy_hasla values(-2 ,'alexander59', getHash('AjTfjhmg')); 
-insert into Kurjery values(800000397, 2, 'FOSTER', 'Lundgren', 339215554 , 'FOSTER.Lundgren@gmail.com ', 88, true); 
-insert into Loginy_hasla values(-2 ,'xtro39', getHash('QGVCqcBd')); 
-insert into Kurjery values(800000398, 2, 'ALEXANDER', 'Lamont', 481731399 , 'ALEXANDER.Lamont@gmail.com ', 80, true); 
-insert into Loginy_hasla values(-2 ,'rolcom69', getHash('GBlN8QDw')); 
-insert into Kurjery values(800000399, 3, 'CHAVEZ', 'Landau', 625606966 , 'CHAVEZ.Landau@gmail.com ', 68, true); 
-insert into Loginy_hasla values(-2 ,'airforlife68', getHash('8mglE5bX')); 
-insert into Kurjery values(800000400, 1, 'PATTERSON', 'Lefebvre', 974925091 , 'PATTERSON.Lefebvre@gmail.com ', 59, true); 
-insert into Loginy_hasla values(-2 ,'stephan92', getHash('hgklgiy4')); 
-insert into Kurjery values(800000401, 3, 'BROWN', 'Leyva', 832252158 , 'BROWN.Leyva@gmail.com ', 27, true); 
-insert into Loginy_hasla values(-2 ,'life8', getHash('c7GR3dP6')); 
-insert into Kurjery values(800000402, 2, 'FLORES', 'Lowry', 457706377 , 'FLORES.Lowry@gmail.com ', 53, true); 
-insert into Loginy_hasla values(-2 ,'lol33', getHash('mZpYPEvm')); 
-insert into Kurjery values(800000403, 3, 'ROBINSON', 'Lawlor', 998727313 , 'ROBINSON.Lawlor@gmail.com ', 51, true); 
-insert into Loginy_hasla values(-2 ,'miller97', getHash('Ji4Ui4QX')); 
-insert into Kurjery values(800000404, 1, 'TORRES', 'Larkin', 073530818 , 'TORRES.Larkin@gmail.com ', 68, true); 
-insert into Loginy_hasla values(-2 ,'zero63', getHash('8dUOePcv')); 
-insert into Kurjery values(800000405, 3, 'HUGHES', 'Larson', 601719425 , 'HUGHES.Larson@gmail.com ', 55, true); 
-insert into Loginy_hasla values(-2 ,'andy27', getHash('WazWXfSk')); 
-insert into Kurjery values(800000406, 1, 'HANSEN', 'Lumpkin', 085998034 , 'HANSEN.Lumpkin@gmail.com ', 71, true); 
-insert into Loginy_hasla values(-2 ,'comando64', getHash('9qVkViag')); 
-insert into Kurjery values(800000407, 3, 'SPENCER', 'Lindsey', 936909905 , 'SPENCER.Lindsey@gmail.com ', 88, true); 
-insert into Loginy_hasla values(-2 ,'Suzan7', getHash('RcWfRYXW')); 
-insert into Kurjery values(800000408, 2, 'PORTER', 'Laurent', 896480612 , 'PORTER.Laurent@gmail.com ', 2, true); 
-insert into Loginy_hasla values(-2 ,'wolf59', getHash('9kPbPiaW')); 
-insert into Kurjery values(800000409, 4, 'ALVARADO', 'Light', 227981700 , 'ALVARADO.Light@gmail.com ', 74, true); 
-insert into Loginy_hasla values(-2 ,'Vortelio75', getHash('YktDjcsQ')); 
-insert into Kurjery values(800000410, 1, 'WALLACE', 'Ledezma', 432528505 , 'WALLACE.Ledezma@gmail.com ', 22, true); 
-insert into Loginy_hasla values(-2 ,'star85', getHash('yIkI1bGj')); 
-insert into Kurjery values(800000411, 2, 'EVANS', 'Ladd', 749250574 , 'EVANS.Ladd@gmail.com ', 47, true); 
-insert into Loginy_hasla values(-2 ,'war41', getHash('MZDW30iP')); 
-insert into Kurjery values(800000412, 3, 'SULLIVAN', 'Lomeli', 634741751 , 'SULLIVAN.Lomeli@gmail.com ', 39, true); 
-insert into Loginy_hasla values(-2 ,'Albert93', getHash('VHcWKkkP')); 
-insert into Kurjery values(800000413, 1, 'OWENS', 'Loper', 173583709 , 'OWENS.Loper@gmail.com ', 40, true); 
-insert into Loginy_hasla values(-2 ,'Malcom16', getHash('aUphhSBP')); 
-insert into Kurjery values(800000414, 3, 'MENDOZA', 'Latham', 182971975 , 'MENDOZA.Latham@gmail.com ', 63, true); 
-insert into Loginy_hasla values(-2 ,'judo25', getHash('orPI5ctb')); 
-insert into Kurjery values(800000415, 3, 'PORTER', 'Legrand', 252757867 , 'PORTER.Legrand@gmail.com ', 66, true); 
-insert into Loginy_hasla values(-2 ,'etalon_admin4', getHash('ZaGOyfgd')); 
-insert into Kurjery values(800000416, 1, 'JOHNSON', 'Lemmon', 034711813 , 'JOHNSON.Lemmon@gmail.com ', 92, true); 
-insert into Loginy_hasla values(-2 ,'lost34', getHash('cQGRpPxc')); 
-insert into Kurjery values(800000417, 4, 'HUDSON', 'Lusk', 652114704 , 'HUDSON.Lusk@gmail.com ', 98, true); 
-insert into Loginy_hasla values(-2 ,'Ivanov0', getHash('bYzq9Iub')); 
-insert into Kurjery values(800000418, 1, 'FOSTER', 'Liu', 244891756 , 'FOSTER.Liu@gmail.com ', 50, true); 
-insert into Loginy_hasla values(-2 ,'ho4u44', getHash('brCdbkWx')); 
-insert into Kurjery values(800000419, 1, 'BERRY', 'Lee', 207024306 , 'BERRY.Lee@gmail.com ', 27, true); 
-insert into Loginy_hasla values(-2 ,'BurnPro35', getHash('LTPE8aSS')); 
-insert into Kurjery values(800000420, 4, 'LEE', 'Lanier', 481845287 , 'LEE.Lanier@gmail.com ', 75, true); 
-insert into Loginy_hasla values(-2 ,'administrator74', getHash('jjoXR9hC')); 
-insert into Kurjery values(800000421, 2, 'SIMPSON', 'Leffler', 030615087 , 'SIMPSON.Leffler@gmail.com ', 36, true); 
-insert into Loginy_hasla values(-2 ,'admin5', getHash('Wg3fbUdE')); 
-insert into Kurjery values(800000422, 2, 'WARREN', 'Lang', 989300664 , 'WARREN.Lang@gmail.com ', 90, true); 
-insert into Loginy_hasla values(-2 ,'neznakomka12', getHash('j1HdigZh')); 
-insert into Kurjery values(800000423, 2, 'BELL', 'Ling', 995918203 , 'BELL.Ling@gmail.com ', 47, true); 
-insert into Loginy_hasla values(-2 ,'kill60', getHash('fWhVmsXb')); 
-insert into Kurjery values(800000424, 4, 'LANE', 'Lively', 137338038 , 'LANE.Lively@gmail.com ', 44, true); 
-insert into Loginy_hasla values(-2 ,'Marly63', getHash('dcwVYURs')); 
-insert into Kurjery values(800000425, 2, 'TAYLOR', 'Leone', 849273716 , 'TAYLOR.Leone@gmail.com ', 22, true); 
-insert into Loginy_hasla values(-2 ,'grey50', getHash('d4mpSafs')); 
-insert into Kurjery values(800000426, 2, 'MILLER', 'Leavitt', 847523975 , 'MILLER.Leavitt@gmail.com ', 18, true); 
-insert into Loginy_hasla values(-2 ,'user35', getHash('2bjcblic')); 
-insert into Kurjery values(800000427, 4, 'WAGNER', 'Lujan', 037543147 , 'WAGNER.Lujan@gmail.com ', 25, true); 
-insert into Loginy_hasla values(-2 ,'gamer49', getHash('wmTkeWDb')); 
-insert into Kurjery values(800000428, 2, 'REYNOLDS', 'Langer', 053132969 , 'REYNOLDS.Langer@gmail.com ', 67, true); 
-insert into Loginy_hasla values(-2 ,'minzov20', getHash('1Xe4ii0f')); 
-insert into Kurjery values(800000429, 2, 'SIMPSON', 'Lehmann', 771532107 , 'SIMPSON.Lehmann@gmail.com ', 58, true); 
-insert into Loginy_hasla values(-2 ,'Progressor3', getHash('jWQBVem0')); 
-insert into Kurjery values(800000430, 1, 'CUNNINGHAM', 'Ledezma', 294727484 , 'CUNNINGHAM.Ledezma@gmail.com ', 38, true); 
-insert into Loginy_hasla values(-2 ,'grey8', getHash('lvUtJPft')); 
-insert into Kurjery values(800000431, 1, 'ROBERTS', 'Leeper', 556055955 , 'ROBERTS.Leeper@gmail.com ', 23, true); 
-insert into Loginy_hasla values(-2 ,'stoagrand21', getHash('7BEcSQsA')); 
-insert into Kurjery values(800000432, 2, 'MATTHEWS', 'Ludwig', 963156328 , 'MATTHEWS.Ludwig@gmail.com ', 17, true); 
-insert into Loginy_hasla values(-2 ,'vip2', getHash('ZeddQmfW')); 
-insert into Kurjery values(800000433, 4, 'ALVAREZ', 'Ladner', 320051279 , 'ALVAREZ.Ladner@gmail.com ', 76, true); 
-insert into Loginy_hasla values(-2 ,'death44', getHash('ZdcKAxNg')); 
-insert into Kurjery values(800000434, 4, 'HUNT', 'Lawson', 789887349 , 'HUNT.Lawson@gmail.com ', 54, true); 
-insert into Loginy_hasla values(-2 ,'kill30', getHash('PRQLHjt2')); 
-insert into Kurjery values(800000435, 4, 'BOYD', 'Lundquist', 378395134 , 'BOYD.Lundquist@gmail.com ', 5, true); 
-insert into Loginy_hasla values(-2 ,'andy30', getHash('6XuAPYTR')); 
-insert into Kurjery values(800000436, 1, 'MOORE', 'Levesque', 484972980 , 'MOORE.Levesque@gmail.com ', 97, true); 
-insert into Loginy_hasla values(-2 ,'duty11', getHash('4YXXSVhR')); 
-insert into Kurjery values(800000437, 2, 'ALLEN', 'Ling', 216350297 , 'ALLEN.Ling@gmail.com ', 96, true); 
-insert into Loginy_hasla values(-2 ,'john81', getHash('VUdPh8H9')); 
-insert into Kurjery values(800000438, 3, 'BRADLEY', 'Lilley', 265691688 , 'BRADLEY.Lilley@gmail.com ', 31, true); 
-insert into Loginy_hasla values(-2 ,'Vorona3411', getHash('P2bMGdm2')); 
-insert into Kurjery values(800000439, 1, 'PATEL', 'Linares', 820407729 , 'PATEL.Linares@gmail.com ', 33, true); 
-insert into Loginy_hasla values(-2 ,'man77', getHash('glSBitjF')); 
-insert into Kurjery values(800000440, 3, 'WALLACE', 'Lazaro', 191721506 , 'WALLACE.Lazaro@gmail.com ', 72, true); 
-insert into Loginy_hasla values(-2 ,'boss60', getHash('pyEsSYSD')); 
-insert into Kurjery values(800000441, 1, 'HAWKINS', 'Landers', 917845308 , 'HAWKINS.Landers@gmail.com ', 33, true); 
-insert into Loginy_hasla values(-2 ,'solopov49', getHash('RfXsgXi8')); 
-insert into Kurjery values(800000442, 2, 'TORRES', 'Lenz', 565192338 , 'TORRES.Lenz@gmail.com ', 63, true); 
-insert into Loginy_hasla values(-2 ,'xploit95', getHash('c2RRHnG7')); 
-insert into Kurjery values(800000443, 4, 'CUNNINGHAM', 'Lindberg', 965330702 , 'CUNNINGHAM.Lindberg@gmail.com ', 18, true); 
-insert into Loginy_hasla values(-2 ,'helpinv88', getHash('wisRtGgP')); 
-insert into Kurjery values(800000444, 2, 'VAZQUEZ', 'Landau', 417448851 , 'VAZQUEZ.Landau@gmail.com ', 44, true); 
-insert into Loginy_hasla values(-2 ,'best1', getHash('J9ePYAcE')); 
-insert into Kurjery values(800000445, 4, 'MORRISON', 'Lord', 315786021 , 'MORRISON.Lord@gmail.com ', 55, true); 
-insert into Loginy_hasla values(-2 ,'girl37', getHash('bSmnM9zD')); 
-insert into Kurjery values(800000446, 4, 'KING', 'Lightfoot', 654149137 , 'KING.Lightfoot@gmail.com ', 29, true); 
-insert into Loginy_hasla values(-2 ,'spice51', getHash('cXn2FVXF')); 
-insert into Kurjery values(800000447, 3, 'HARPER', 'Lorenz', 995891733 , 'HARPER.Lorenz@gmail.com ', 9, true); 
-insert into Loginy_hasla values(-2 ,'agrorynok80', getHash('lhdFmJgb')); 
-insert into Kurjery values(800000448, 2, 'REED', 'Lusk', 907956371 , 'REED.Lusk@gmail.com ', 15, true); 
-insert into Loginy_hasla values(-2 ,'sweet92', getHash('1hQSZUXe')); 
-insert into Kurjery values(800000449, 3, 'ANDREWS', 'Lawler', 243499777 , 'ANDREWS.Lawler@gmail.com ', 99, true); 
-insert into Loginy_hasla values(-2 ,'na_tiv45', getHash('cDwmwTMV')); 
-insert into Kurjery values(800000450, 4, 'PAYNE', 'Lash', 789584790 , 'PAYNE.Lash@gmail.com ', 62, true); 
-insert into Loginy_hasla values(-2 ,'laky94', getHash('5u3tsPR5')); 
-insert into Kurjery values(800000451, 2, 'CARLSON', 'Lum', 308737025 , 'CARLSON.Lum@gmail.com ', 90, true); 
-insert into Loginy_hasla values(-2 ,'denis90', getHash('vSrU7hLa')); 
-insert into Kurjery values(800000452, 3, 'CLARK', 'Littleton', 728041580 , 'CLARK.Littleton@gmail.com ', 73, true); 
-insert into Loginy_hasla values(-2 ,'super84', getHash('SfPPopPV')); 
-insert into Kurjery values(800000453, 2, 'MORRISON', 'Lake', 128997283 , 'MORRISON.Lake@gmail.com ', 91, true); 
-insert into Loginy_hasla values(-2 ,'sergej_a_g52', getHash('VQVlYlWW')); 
-insert into Kurjery values(800000454, 2, 'CASTILLO', 'Lancaster', 384848698 , 'CASTILLO.Lancaster@gmail.com ', 94, true); 
-insert into Loginy_hasla values(-2 ,'dark45', getHash('2vfdfw1F')); 
-insert into Kurjery values(800000455, 2, 'CASTRO', 'Linn', 899169781 , 'CASTRO.Linn@gmail.com ', 7, true); 
-insert into Loginy_hasla values(-2 ,'gold86', getHash('FlbjYicV')); 
-insert into Kurjery values(800000456, 3, 'SCOTT', 'Lashley', 352989759 , 'SCOTT.Lashley@gmail.com ', 82, true); 
-insert into Loginy_hasla values(-2 ,'Kontek16', getHash('EoUNmdii')); 
-insert into Kurjery values(800000457, 2, 'REED', 'Littleton', 475344900 , 'REED.Littleton@gmail.com ', 61, true); 
-insert into Loginy_hasla values(-2 ,'turrus1', getHash('ooVmzbR9')); 
-insert into Kurjery values(800000458, 2, 'BROOKS', 'Ling', 880757246 , 'BROOKS.Ling@gmail.com ', 52, true); 
-insert into Loginy_hasla values(-2 ,'Schnuddel36', getHash('XmRPE2ca')); 
-insert into Kurjery values(800000459, 3, 'PENA', 'Leroy', 710786473 , 'PENA.Leroy@gmail.com ', 62, true); 
-insert into Loginy_hasla values(-2 ,'ho4u71', getHash('VaQQvSVZ')); 
-insert into Kurjery values(800000460, 2, 'HOWARD', 'Lees', 683548886 , 'HOWARD.Lees@gmail.com ', 26, true); 
-insert into Loginy_hasla values(-2 ,'Bob53', getHash('iEOqieRW')); 
-insert into Kurjery values(800000461, 1, 'VALDEZ', 'Lipscomb', 113071848 , 'VALDEZ.Lipscomb@gmail.com ', 62, true); 
-insert into Loginy_hasla values(-2 ,'user65', getHash('ZQfgIccj')); 
-insert into Kurjery values(800000462, 4, 'BAILEY', 'Lanier', 190051064 , 'BAILEY.Lanier@gmail.com ', 30, true); 
-insert into Loginy_hasla values(-2 ,'sergej_a_g44', getHash('Q7UguTqZ')); 
-insert into Kurjery values(800000463, 1, 'PEREZ', 'Levinson', 703724363 , 'PEREZ.Levinson@gmail.com ', 77, true); 
-insert into Loginy_hasla values(-2 ,'Libra91', getHash('VqZlaabS')); 
-insert into Kurjery values(800000464, 3, 'ALVAREZ', 'Laurent', 151065014 , 'ALVAREZ.Laurent@gmail.com ', 87, true); 
-insert into Loginy_hasla values(-2 ,'girl50', getHash('kbZeil0h')); 
-insert into Kurjery values(800000465, 3, 'DELGADO', 'Lemke', 965338749 , 'DELGADO.Lemke@gmail.com ', 94, true); 
-insert into Loginy_hasla values(-2 ,'rusinborg14', getHash('oSCNPf97')); 
-insert into Kurjery values(800000466, 2, 'RIVERA', 'Loper', 943145848 , 'RIVERA.Loper@gmail.com ', 12, true); 
-insert into Loginy_hasla values(-2 ,'rolcom81', getHash('eVb1DP7i')); 
-insert into Kurjery values(800000467, 2, 'MARSHALL', 'Lake', 569661845 , 'MARSHALL.Lake@gmail.com ', 92, true); 
-insert into Loginy_hasla values(-2 ,'ho4u29', getHash('bbmOGl0v')); 
-insert into Kurjery values(800000468, 2, 'PRICE', 'Lemay', 782422568 , 'PRICE.Lemay@gmail.com ', 15, true); 
-insert into Loginy_hasla values(-2 ,'denis8', getHash('BbfVYdyi')); 
-insert into Kurjery values(800000469, 3, 'HUGHES', 'Landis', 861798172 , 'HUGHES.Landis@gmail.com ', 23, true); 
-insert into Loginy_hasla values(-2 ,'Ivanov67', getHash('fTgDRJbw')); 
-insert into Kurjery values(800000470, 3, 'SCHMIDT', 'Lawless', 000594541 , 'SCHMIDT.Lawless@gmail.com ', 98, true); 
-insert into Loginy_hasla values(-2 ,'black95', getHash('meQZ02fk')); 
-insert into Kurjery values(800000471, 3, 'SANDERS', 'Levesque', 876867561 , 'SANDERS.Levesque@gmail.com ', 9, true); 
-insert into Loginy_hasla values(-2 ,'root31', getHash('64bJTzho')); 
-insert into Kurjery values(800000472, 1, 'PERRY', 'Lester', 849644017 , 'PERRY.Lester@gmail.com ', 7, true); 
-insert into Loginy_hasla values(-2 ,'minherz59', getHash('hdzcQiib')); 
-insert into Kurjery values(800000473, 2, 'FRANKLIN', 'Levitt', 830361978 , 'FRANKLIN.Levitt@gmail.com ', 39, true); 
-insert into Loginy_hasla values(-2 ,'hero24', getHash('IoXqYYVa')); 
-insert into Kurjery values(800000474, 2, 'ROSE', 'Langley', 216844887 , 'ROSE.Langley@gmail.com ', 33, true); 
-insert into Loginy_hasla values(-2 ,'root35', getHash('TPe7Fmxh')); 
-insert into Kurjery values(800000475, 4, 'OLSON', 'Loftus', 698247085 , 'OLSON.Loftus@gmail.com ', 12, true); 
-insert into Loginy_hasla values(-2 ,'klubni4ka67', getHash('gZPblLcY')); 
-insert into Kurjery values(800000476, 1, 'HANSEN', 'Lyles', 120178147 , 'HANSEN.Lyles@gmail.com ', 15, true); 
-insert into Loginy_hasla values(-2 ,'helpinv70', getHash('RLhSJAZL')); 
-insert into Kurjery values(800000477, 1, 'HAWKINS', 'Langford', 834510536 , 'HAWKINS.Langford@gmail.com ', 23, true); 
-insert into Loginy_hasla values(-2 ,'grey86', getHash('Se2ZH9cl')); 
-insert into Kurjery values(800000478, 2, 'MURRAY', 'Lambert', 627825299 , 'MURRAY.Lambert@gmail.com ', 89, true); 
-insert into Loginy_hasla values(-2 ,'anime85', getHash('m7OSjJXe')); 
-insert into Kurjery values(800000479, 1, 'GONZALEZ', 'Larose', 171100307 , 'GONZALEZ.Larose@gmail.com ', 63, true); 
-insert into Loginy_hasla values(-2 ,'vampir61', getHash('QheKcJDC')); 
-insert into Kurjery values(800000480, 3, 'HOFFMAN', 'Lacy', 615833784 , 'HOFFMAN.Lacy@gmail.com ', 5, true); 
-insert into Loginy_hasla values(-2 ,'grey20', getHash('dVkYHVQ2')); 
-insert into Kurjery values(800000481, 3, 'NUNEZ', 'Lehr', 009267223 , 'NUNEZ.Lehr@gmail.com ', 88, true); 
-insert into Loginy_hasla values(-2 ,'girl48', getHash('kRelQUWc')); 
-insert into Kurjery values(800000482, 2, 'SALAZAR', 'Langford', 924272164 , 'SALAZAR.Langford@gmail.com ', 13, true); 
-insert into Loginy_hasla values(-2 ,'www28', getHash('SqWdeUH2')); 
-insert into Kurjery values(800000483, 1, 'SANTOS', 'Lacy', 989958015 , 'SANTOS.Lacy@gmail.com ', 62, true); 
-insert into Loginy_hasla values(-2 ,'girl73', getHash('lddVUUEe')); 
-insert into Kurjery values(800000484, 2, 'GIBSON', 'Landa', 263459273 , 'GIBSON.Landa@gmail.com ', 48, true); 
-insert into Loginy_hasla values(-2 ,'no76', getHash('V80uDCvf')); 
-insert into Kurjery values(800000485, 3, 'STEPHENS', 'Lanier', 256159713 , 'STEPHENS.Lanier@gmail.com ', 5, true); 
-insert into Loginy_hasla values(-2 ,'marva86', getHash('kLSfNdRm')); 
-insert into Kurjery values(800000486, 4, 'ROGERS', 'Leger', 091394813 , 'ROGERS.Leger@gmail.com ', 3, true); 
-insert into Loginy_hasla values(-2 ,'Ivanov71', getHash('XeMvUU8k')); 
-insert into Kurjery values(800000487, 3, 'MATTHEWS', 'Langlois', 049607303 , 'MATTHEWS.Langlois@gmail.com ', 77, true); 
-insert into Loginy_hasla values(-2 ,'kakuzu0', getHash('hfQ8hSeW')); 
-insert into Kurjery values(800000488, 4, 'HUNT', 'Le', 906870493 , 'HUNT.Le@gmail.com ', 9, true); 
-insert into Loginy_hasla values(-2 ,'Marly80', getHash('yoiFAhdX')); 
-insert into Kurjery values(800000489, 1, 'ESTRADA', 'Lohr', 647834292 , 'ESTRADA.Lohr@gmail.com ', 68, true); 
-insert into Loginy_hasla values(-2 ,'lost15', getHash('h0hJXd58')); 
-insert into Kurjery values(800000490, 2, 'FORD', 'Lugo', 437261141 , 'FORD.Lugo@gmail.com ', 45, true); 
-insert into Loginy_hasla values(-2 ,'jaguar63', getHash('kNmgPhUt')); 
-insert into Kurjery values(800000491, 4, 'BARNES', 'Labelle', 304661052 , 'BARNES.Labelle@gmail.com ', 97, true); 
-insert into Loginy_hasla values(-2 ,'zeus33', getHash('TobSSiBO')); 
-insert into Kurjery values(800000492, 4, 'SNYDER', 'Lopez', 303783343 , 'SNYDER.Lopez@gmail.com ', 36, true); 
-insert into Loginy_hasla values(-2 ,'girl97', getHash('0hWUVQNR')); 
-insert into Kurjery values(800000493, 4, 'HUGHES', 'Loeffler', 520385540 , 'HUGHES.Loeffler@gmail.com ', 33, true); 
-insert into Loginy_hasla values(-2 ,'andy2', getHash('d6QUlgdT')); 
-insert into Kurjery values(800000494, 3, 'ELLIOTT', 'Langston', 425518586 , 'ELLIOTT.Langston@gmail.com ', 91, true); 
-insert into Loginy_hasla values(-2 ,'comando1', getHash('vPdZhTQz')); 
-insert into Kurjery values(800000495, 2, 'ORTEGA', 'Looney', 755026385 , 'ORTEGA.Looney@gmail.com ', 94, true); 
-insert into Loginy_hasla values(-2 ,'Albert31', getHash('aYeEg1wk')); 
-insert into Kurjery values(800000496, 3, 'BOYD', 'Lapointe', 212839157 , 'BOYD.Lapointe@gmail.com ', 65, true); 
-insert into Loginy_hasla values(-2 ,'klassik44', getHash('c40bkrRX')); 
-insert into Kurjery values(800000497, 1, 'FERGUSON', 'Low', 632313511 , 'FERGUSON.Low@gmail.com ', 5, true); 
-insert into Loginy_hasla values(-2 ,'region13', getHash('hcHifHYG')); 
-insert into Kurjery values(800000498, 3, 'SIMMONS', 'Lemus', 786370744 , 'SIMMONS.Lemus@gmail.com ', 52, true); 
-insert into Loginy_hasla values(-2 ,'good51', getHash('ajPK7nRR')); 
-insert into Kurjery values(800000499, 4, 'MURRAY', 'Larsen', 105136933 , 'MURRAY.Larsen@gmail.com ', 77, true); 
-insert into Loginy_hasla values(-2 ,'lost11', getHash('xge4QNpl')); 
-insert into Kurjery values(800000500, 4, 'STEWART', 'Lemon', 282274111 , 'STEWART.Lemon@gmail.com ', 32, true); 
-insert into Loginy_hasla values(-2 ,'andy93', getHash('kMUBYd5C')); 
-insert into Kurjery values(800000501, 3, 'HOWARD', 'Lombardo', 298954640 , 'HOWARD.Lombardo@gmail.com ', 62, true); 
-insert into Loginy_hasla values(-2 ,'www62', getHash('ETVnNZYP')); 
-insert into Kurjery values(800000502, 2, 'PETERS', 'Lowe', 692735214 , 'PETERS.Lowe@gmail.com ', 55, true); 
-insert into Loginy_hasla values(-2 ,'SergejF86', getHash('UZHZPYfx')); 
-insert into Kurjery values(800000503, 4, 'JORDAN', 'Lai', 017378996 , 'JORDAN.Lai@gmail.com ', 66, true); 
-insert into Loginy_hasla values(-2 ,'miller86', getHash('sQeSuYRa')); 
-insert into Kurjery values(800000504, 1, 'JORDAN', 'Leblanc', 869031288 , 'JORDAN.Leblanc@gmail.com ', 27, true); 
-insert into Loginy_hasla values(-2 ,'na_tiv8', getHash('QWlYbtTT')); 
-insert into Kurjery values(800000505, 1, 'GIBSON', 'Leach', 173298058 , 'GIBSON.Leach@gmail.com ', 56, true); 
-insert into Loginy_hasla values(-2 ,'war85', getHash('EXfbam4j')); 
-insert into Kurjery values(800000506, 4, 'PALMER', 'Lockhart', 288525894 , 'PALMER.Lockhart@gmail.com ', 23, true); 
-insert into Loginy_hasla values(-2 ,'flash2', getHash('ecBxTuRa')); 
-insert into Kurjery values(800000507, 4, 'DOMINGUEZ', 'Ludwig', 711435383 , 'DOMINGUEZ.Ludwig@gmail.com ', 19, true); 
-insert into Loginy_hasla values(-2 ,'Progressor35', getHash('eGi0lVZ9')); 
-insert into Kurjery values(800000508, 3, 'VARGAS', 'Lovato', 708536996 , 'VARGAS.Lovato@gmail.com ', 44, true); 
-insert into Loginy_hasla values(-2 ,'anime14', getHash('ZelYSaZ7')); 
-insert into Kurjery values(800000509, 2, 'BROWN', 'Lohr', 863113583 , 'BROWN.Lohr@gmail.com ', 53, true); 
-insert into Loginy_hasla values(-2 ,'hero79', getHash('8ectevcT')); 
-insert into Kurjery values(800000510, 3, 'TORRES', 'Leonard', 961590444 , 'TORRES.Leonard@gmail.com ', 75, true); 
-insert into Loginy_hasla values(-2 ,'heart54', getHash('XjffPVOT')); 
-insert into Kurjery values(800000511, 4, 'HARPER', 'Lilley', 528659776 , 'HARPER.Lilley@gmail.com ', 35, true); 
-insert into Loginy_hasla values(-2 ,'neznakomka49', getHash('Y9jcVkkZ')); 
-insert into Kurjery values(800000512, 4, 'HARRIS', 'Lockard', 087384486 , 'HARRIS.Lockard@gmail.com ', 15, true); 
-insert into Loginy_hasla values(-2 ,'lol46', getHash('kmifQXXk')); 
-insert into Kurjery values(800000513, 1, 'NICHOLS', 'Laney', 866031586 , 'NICHOLS.Laney@gmail.com ', 52, true); 
-insert into Loginy_hasla values(-2 ,'judo2', getHash('oZiXnnrj')); 
-insert into Kurjery values(800000514, 2, 'SCOTT', 'Leighton', 479892837 , 'SCOTT.Leighton@gmail.com ', 7, true); 
-insert into Loginy_hasla values(-2 ,'Albert62', getHash('mXbaSaWe')); 
-insert into Kurjery values(800000515, 3, 'TORRES', 'Lemieux', 876040237 , 'TORRES.Lemieux@gmail.com ', 12, true); 
-insert into Loginy_hasla values(-2 ,'just34', getHash('bCuWEbuU')); 
-insert into Kurjery values(800000516, 3, 'MITCHELL', 'Lyon', 287005057 , 'MITCHELL.Lyon@gmail.com ', 45, true); 
-insert into Loginy_hasla values(-2 ,'na_tiv88', getHash('8nae2Y7m')); 
-insert into Kurjery values(800000517, 4, 'GREENE', 'Lawlor', 772312126 , 'GREENE.Lawlor@gmail.com ', 70, true); 
-insert into Loginy_hasla values(-2 ,'miller10', getHash('mMpkeUoT')); 
-insert into Kurjery values(800000518, 2, 'RODRIGUEZ', 'Littlefield', 316557738 , 'RODRIGUEZ.Littlefield@gmail.com ', 91, true); 
-insert into Loginy_hasla values(-2 ,'Vizator98', getHash('SjeHQggq')); 
-insert into Kurjery values(800000519, 4, 'GREENE', 'Lovell', 451670647 , 'GREENE.Lovell@gmail.com ', 38, true); 
-insert into Loginy_hasla values(-2 ,'rolcom24', getHash('4lj8Ijbd')); 
-insert into Kurjery values(800000520, 3, 'PAYNE', 'Logan', 620269361 , 'PAYNE.Logan@gmail.com ', 51, true); 
-insert into Loginy_hasla values(-2 ,'comando11', getHash('ZUfkxaEa')); 
-insert into Kurjery values(800000521, 3, 'GRAHAM', 'Ledbetter', 854000425 , 'GRAHAM.Ledbetter@gmail.com ', 83, true); 
-insert into Loginy_hasla values(-2 ,'star9', getHash('XpiSa9fj')); 
-insert into Kurjery values(800000522, 2, 'BURNS', 'Lally', 884522961 , 'BURNS.Lally@gmail.com ', 7, true); 
-insert into Loginy_hasla values(-2 ,'stephan96', getHash('mcLlRblP')); 
-insert into Kurjery values(800000523, 4, 'WALKER', 'Loredo', 324411280 , 'WALKER.Loredo@gmail.com ', 45, true); 
-insert into Loginy_hasla values(-2 ,'john64', getHash('eTGiXixc')); 
-insert into Kurjery values(800000524, 1, 'HOFFMAN', 'Lefebvre', 550545281 , 'HOFFMAN.Lefebvre@gmail.com ', 10, true); 
-insert into Loginy_hasla values(-2 ,'808062', getHash('JpTaaTWk')); 
-insert into Kurjery values(800000525, 4, 'OLSON', 'Lett', 001303443 , 'OLSON.Lett@gmail.com ', 85, true); 
-insert into Loginy_hasla values(-2 ,'Spider3', getHash('l2PrgscW')); 
-insert into Kurjery values(800000526, 1, 'HANSEN', 'Lomax', 777715252 , 'HANSEN.Lomax@gmail.com ', 4, true); 
-insert into Loginy_hasla values(-2 ,'80802', getHash('QuQijSyb')); 
-insert into Kurjery values(800000527, 1, 'MARTIN', 'Name', 108338284 , 'MARTIN.Name@gmail.com ', 74, true); 
-insert into Loginy_hasla values(-2 ,'minherz85', getHash('7g39Q4Zn')); 
-insert into Kurjery values(800000528, 4, 'PERKINS', 'Leiva', 742104614 , 'PERKINS.Leiva@gmail.com ', 40, true); 
-insert into Loginy_hasla values(-2 ,'Schnuddel56', getHash('pDYfwaXl')); 
-insert into Kurjery values(800000529, 2, 'COX', 'Lapointe', 875733311 , 'COX.Lapointe@gmail.com ', 71, true); 
-insert into Loginy_hasla values(-2 ,'Maggy46', getHash('mZGZHVeV')); 
-insert into Kurjery values(800000530, 1, 'PATTERSON', 'Lalonde', 689828372 , 'PATTERSON.Lalonde@gmail.com ', 39, true); 
-insert into Loginy_hasla values(-2 ,'man95', getHash('g4Ragm8X')); 
-insert into Kurjery values(800000531, 4, 'JIMENEZ', 'Lacy', 936792429 , 'JIMENEZ.Lacy@gmail.com ', 44, true); 
-insert into Loginy_hasla values(-2 ,'klassik25', getHash('tWvg9dkj')); 
-insert into Kurjery values(800000532, 1, 'JIMENEZ', 'Lo', 596275266 , 'JIMENEZ.Lo@gmail.com ', 62, true); 
-insert into Loginy_hasla values(-2 ,'rikanda35', getHash('mXdGVbva')); 
-insert into Kurjery values(800000533, 2, 'FRANKLIN', 'Lockwood', 310737460 , 'FRANKLIN.Lockwood@gmail.com ', 72, true); 
-insert into Loginy_hasla values(-2 ,'aiko93', getHash('8Hes1kxW')); 
-insert into Kurjery values(800000534, 4, 'SIMPSON', 'Lennon', 848342988 , 'SIMPSON.Lennon@gmail.com ', 3, true); 
-insert into Loginy_hasla values(-2 ,'linia55', getHash('5SQUdbnV')); 
-insert into Kurjery values(800000535, 1, 'JOHNSTON', 'Linden', 218345610 , 'JOHNSTON.Linden@gmail.com ', 82, true); 
-insert into Loginy_hasla values(-2 ,'jaguar92', getHash('aQbjPaUe')); 
-insert into Kurjery values(800000536, 2, 'HARPER', 'Lavelle', 552971084 , 'HARPER.Lavelle@gmail.com ', 4, true); 
-insert into Loginy_hasla values(-2 ,'rikanda99', getHash('LkVSaveb')); 
-insert into Kurjery values(800000537, 1, 'MALDONADO', 'Lanham', 771223029 , 'MALDONADO.Lanham@gmail.com ', 93, true); 
-insert into Loginy_hasla values(-2 ,'Bob2', getHash('febXkiAe')); 
-insert into Kurjery values(800000538, 1, 'PALMER', 'Lord', 422881232 , 'PALMER.Lord@gmail.com ', 62, true); 
-insert into Loginy_hasla values(-2 ,'zaika19', getHash('SgjYYS3G')); 
-insert into Kurjery values(800000539, 1, 'DANIELS', 'Leffler', 749650261 , 'DANIELS.Leffler@gmail.com ', 26, true); 
-insert into Loginy_hasla values(-2 ,'support17', getHash('w2hU1cSB')); 
-insert into Kurjery values(800000540, 3, 'VASQUEZ', 'Luu', 369232302 , 'VASQUEZ.Luu@gmail.com ', 56, true); 
-insert into Loginy_hasla values(-2 ,'good50', getHash('flWXTzoZ')); 
-insert into Kurjery values(800000541, 4, 'CASTRO', 'Lemke', 788769472 , 'CASTRO.Lemke@gmail.com ', 99, true); 
-insert into Loginy_hasla values(-2 ,'alex83', getHash('uhjlgVhJ')); 
-insert into Kurjery values(800000542, 1, 'ALEXANDER', 'Linn', 342175734 , 'ALEXANDER.Linn@gmail.com ', 71, true); 
-insert into Loginy_hasla values(-2 ,'seo68', getHash('cdpZYqj6')); 
-insert into Kurjery values(800000543, 3, 'DOMINGUEZ', 'Leigh', 863034230 , 'DOMINGUEZ.Leigh@gmail.com ', 16, true); 
-insert into Loginy_hasla values(-2 ,'www88', getHash('abSXOakH')); 
-insert into Kurjery values(800000544, 2, 'MITCHELL', 'Liang', 019259852 , 'MITCHELL.Liang@gmail.com ', 82, true); 
-insert into Loginy_hasla values(-2 ,'tester53', getHash('9kbWwhhV')); 
-insert into Kurjery values(800000545, 1, 'BRADLEY', 'Lewis', 426554250 , 'BRADLEY.Lewis@gmail.com ', 67, true); 
-insert into Loginy_hasla values(-2 ,'jorik35', getHash('dbmXPauB')); 
-insert into Kurjery values(800000546, 1, 'GEORGE', 'Louis', 350229606 , 'GEORGE.Louis@gmail.com ', 2, true); 
-insert into Loginy_hasla values(-2 ,'happy6', getHash('kNxgSZCq')); 
-insert into Kurjery values(800000547, 2, 'SOTO', 'Langston', 105692641 , 'SOTO.Langston@gmail.com ', 41, true); 
-insert into Loginy_hasla values(-2 ,'Chervechok79', getHash('XjSdGVPA')); 
-insert into Kurjery values(800000548, 1, 'COLEMAN', 'Leija', 452435813 , 'COLEMAN.Leija@gmail.com ', 95, true); 
-insert into Loginy_hasla values(-2 ,'minzov37', getHash('dAnZZAid')); 
-insert into Kurjery values(800000549, 4, 'RILEY', 'Larsen', 511810527 , 'RILEY.Larsen@gmail.com ', 93, true); 
-insert into Loginy_hasla values(-2 ,'808086', getHash('Fz5QtjO4')); 
-insert into Kurjery values(800000550, 1, 'BOYD', 'Low', 996427306 , 'BOYD.Low@gmail.com ', 81, true); 
-insert into Loginy_hasla values(-2 ,'sasuke29', getHash('hEuaamAO')); 
-insert into Kurjery values(800000551, 3, 'ANDREWS', 'Landers', 157895797 , 'ANDREWS.Landers@gmail.com ', 1, true); 
-insert into Loginy_hasla values(-2 ,'weiss94', getHash('gVRC7DiP')); 
-insert into Kurjery values(800000552, 1, 'PEREZ', 'Lehmann', 787911513 , 'PEREZ.Lehmann@gmail.com ', 64, true); 
-insert into Loginy_hasla values(-2 ,'sergej_a_g15', getHash('jjNV69O0')); 
-insert into Kurjery values(800000553, 2, 'MORENO', 'Ledford', 943712845 , 'MORENO.Ledford@gmail.com ', 90, true); 
-insert into Loginy_hasla values(-2 ,'etalon_admin99', getHash('SbPRPt4i')); 
-insert into Kurjery values(800000554, 2, 'TAYLOR', 'Larkin', 695456459 , 'TAYLOR.Larkin@gmail.com ', 61, true); 
-insert into Loginy_hasla values(-2 ,'etalon_admin62', getHash('iI0x6shg')); 
-insert into Kurjery values(800000555, 3, 'PENA', 'La', 693149020 , 'PENA.La@gmail.com ', 30, true); 
-insert into Loginy_hasla values(-2 ,'yourdream13', getHash('clkQvlil')); 
-insert into Kurjery values(800000556, 4, 'WRIGHT', 'Luckett', 372655142 , 'WRIGHT.Luckett@gmail.com ', 8, true); 
-insert into Loginy_hasla values(-2 ,'wtf95', getHash('XjjUXdCR')); 
-insert into Kurjery values(800000557, 4, 'ESTRADA', 'Locke', 938338503 , 'ESTRADA.Locke@gmail.com ', 54, true); 
-insert into Loginy_hasla values(-2 ,'narayana16', getHash('WGVaUBi3')); 
-insert into Kurjery values(800000558, 2, 'JOHNSON', 'Lowrey', 507832421 , 'JOHNSON.Lowrey@gmail.com ', 6, true); 
-insert into Loginy_hasla values(-2 ,'pupsik52', getHash('Zd0ZdRPT')); 
-insert into Kurjery values(800000559, 4, 'HOLMES', 'Lavin', 318196275 , 'HOLMES.Lavin@gmail.com ', 98, true); 
-insert into Loginy_hasla values(-2 ,'rikanda64', getHash('sVfaQJQx')); 
-insert into Kurjery values(800000560, 4, 'THOMAS', 'Lockhart', 365015373 , 'THOMAS.Lockhart@gmail.com ', 4, true); 
-insert into Loginy_hasla values(-2 ,'Kontek37', getHash('MfdSOTkp')); 
-insert into Kurjery values(800000561, 3, 'GUZMAN', 'Lowry', 675033713 , 'GUZMAN.Lowry@gmail.com ', 47, true); 
-insert into Loginy_hasla values(-2 ,'maxroje84', getHash('8Ptkxr2S')); 
-insert into Kurjery values(800000562, 2, 'KIM', 'Lussier', 107448246 , 'KIM.Lussier@gmail.com ', 84, true); 
-insert into Loginy_hasla values(-2 ,'agrorynok32', getHash('YDL0dUTP')); 
-insert into Kurjery values(800000563, 2, 'WEAVER', 'Lanning', 910491393 , 'WEAVER.Lanning@gmail.com ', 28, true); 
-insert into Loginy_hasla values(-2 ,'Bob22', getHash('WrWkijIV')); 
-insert into Kurjery values(800000564, 2, 'TUCKER', 'Lawson', 126219110 , 'TUCKER.Lawson@gmail.com ', 33, true); 
-insert into Loginy_hasla values(-2 ,'km70', getHash('cmTJfBfl')); 
-insert into Kurjery values(800000565, 4, 'CARTER', 'Langston', 104742218 , 'CARTER.Langston@gmail.com ', 58, true); 
-insert into Loginy_hasla values(-2 ,'jony1', getHash('TIgKKSRR')); 
-insert into Kurjery values(800000566, 3, 'ALLEN', 'Lawlor', 053950549 , 'ALLEN.Lawlor@gmail.com ', 24, true); 
-insert into Loginy_hasla values(-2 ,'airforlife19', getHash('aaBOhyXW')); 
-insert into Kurjery values(800000567, 1, 'GRAHAM', 'Lundquist', 122115400 , 'GRAHAM.Lundquist@gmail.com ', 83, true); 
-insert into Loginy_hasla values(-2 ,'fhotel71', getHash('WiZXUEee')); 
-insert into Kurjery values(800000568, 2, 'HUGHES', 'Lyon', 407461897 , 'HUGHES.Lyon@gmail.com ', 46, true); 
-insert into Loginy_hasla values(-2 ,'fkleev49', getHash('rPwjMEbF')); 
-insert into Kurjery values(800000569, 3, 'CHEN', 'Lor', 690428106 , 'CHEN.Lor@gmail.com ', 8, true); 
-insert into Loginy_hasla values(-2 ,'neznakomka67', getHash('aBTVbB6c')); 
-insert into Kurjery values(800000570, 1, 'FLORES', 'Lora', 924408127 , 'FLORES.Lora@gmail.com ', 96, true); 
-insert into Loginy_hasla values(-2 ,'andy55', getHash('fcZJJowO')); 
-insert into Kurjery values(800000571, 3, 'CARPENTER', 'Law', 609913814 , 'CARPENTER.Law@gmail.com ', 89, true); 
-insert into Loginy_hasla values(-2 ,'zerg58', getHash('ilVPSdiY')); 
-insert into Kurjery values(800000572, 1, 'FERGUSON', 'Lopez', 706421166 , 'FERGUSON.Lopez@gmail.com ', 99, true); 
-insert into Loginy_hasla values(-2 ,'yourdream90', getHash('FglSNWVI')); 
-insert into Kurjery values(800000573, 2, 'REED', 'Lockhart', 471338032 , 'REED.Lockhart@gmail.com ', 52, true); 
-insert into Loginy_hasla values(-2 ,'naruto83', getHash('ogQsfdi0')); 
-insert into Kurjery values(800000574, 2, 'BURKE', 'Levitt', 266582785 , 'BURKE.Levitt@gmail.com ', 6, true); 
-insert into Loginy_hasla values(-2 ,'alex0', getHash('EgfNek9u')); 
-insert into Kurjery values(800000575, 3, 'ALVARADO', 'Lucas', 645312283 , 'ALVARADO.Lucas@gmail.com ', 4, true); 
-insert into Loginy_hasla values(-2 ,'master11', getHash('l3v3TGe9')); 
-insert into Kurjery values(800000576, 1, 'MUNOZ', 'Liang', 298728435 , 'MUNOZ.Liang@gmail.com ', 62, true); 
-insert into Loginy_hasla values(-2 ,'lady16', getHash('wZXdHgmp')); 
-insert into Kurjery values(800000577, 2, 'WILLIS', 'Lockhart', 996946002 , 'WILLIS.Lockhart@gmail.com ', 14, true); 
-insert into Loginy_hasla values(-2 ,'ksu63', getHash('aXffiW4g')); 
-insert into Kurjery values(800000578, 4, 'DUNN', 'Landau', 211687786 , 'DUNN.Landau@gmail.com ', 55, true); 
-insert into Loginy_hasla values(-2 ,'support92', getHash('9TEOGddm')); 
-insert into Kurjery values(800000579, 1, 'HILL', 'Loyd', 821016225 , 'HILL.Loyd@gmail.com ', 54, true); 
-insert into Loginy_hasla values(-2 ,'ice21', getHash('caThfoAc')); 
-insert into Kurjery values(800000580, 3, 'CARTER', 'Lussier', 500054085 , 'CARTER.Lussier@gmail.com ', 70, true); 
-insert into Loginy_hasla values(-2 ,'Marly55', getHash('jTfOgbTa')); 
-insert into Kurjery values(800000581, 1, 'JENKINS', 'Loy', 076341271 , 'JENKINS.Loy@gmail.com ', 10, true); 
-insert into Loginy_hasla values(-2 ,'maxroje6', getHash('MbaHX3gg')); 
-insert into Kurjery values(800000582, 3, 'WOOD', 'Loera', 813137185 , 'WOOD.Loera@gmail.com ', 63, true); 
-insert into Loginy_hasla values(-2 ,'jony7', getHash('PYaIQYUP')); 
-insert into Kurjery values(800000583, 2, 'BURNS', 'Lundberg', 217644004 , 'BURNS.Lundberg@gmail.com ', 41, true); 
-insert into Loginy_hasla values(-2 ,'ice23', getHash('HVzrR6Xe')); 
-insert into Kurjery values(800000584, 4, 'VARGAS', 'Legrand', 015115159 , 'VARGAS.Legrand@gmail.com ', 26, true); 
-insert into Loginy_hasla values(-2 ,'vitalyacher80', getHash('QRWHVJZX')); 
-insert into Kurjery values(800000585, 1, 'FERGUSON', 'Laney', 478202139 , 'FERGUSON.Laney@gmail.com ', 54, true); 
-insert into Loginy_hasla values(-2 ,'zaika62', getHash('bUjvpUdT')); 
-insert into Kurjery values(800000586, 1, 'DANIELS', 'Lawhorn', 599069087 , 'DANIELS.Lawhorn@gmail.com ', 76, true); 
-insert into Loginy_hasla values(-2 ,'company5', getHash('AQfkVeoZ')); 
-insert into Kurjery values(800000587, 4, 'WATSON', 'Large', 987248265 , 'WATSON.Large@gmail.com ', 36, true); 
-insert into Loginy_hasla values(-2 ,'roman15', getHash('Kma36oQY')); 
-insert into Kurjery values(800000588, 2, 'COOK', 'Luck', 839677940 , 'COOK.Luck@gmail.com ', 74, true); 
-insert into Loginy_hasla values(-2 ,'kisa26', getHash('hjcW5hTO')); 
-insert into Kurjery values(800000589, 2, 'MURRAY', 'Laws', 456346927 , 'MURRAY.Laws@gmail.com ', 2, true); 
-insert into Loginy_hasla values(-2 ,'alex28', getHash('mk3eTRSk')); 
-insert into Kurjery values(800000590, 3, 'OWENS', 'Louis', 359346604 , 'OWENS.Louis@gmail.com ', 62, true); 
-insert into Loginy_hasla values(-2 ,'Marly81', getHash('WBSgfySv')); 
-insert into Kurjery values(800000591, 1, 'GRIFFIN', 'Larosa', 641513881 , 'GRIFFIN.Larosa@gmail.com ', 45, true); 
-insert into Loginy_hasla values(-2 ,'minzov38', getHash('PiPbdhdP')); 
-insert into Kurjery values(800000592, 1, 'JOHNSTON', 'Leon', 725718935 , 'JOHNSTON.Leon@gmail.com ', 88, true); 
-insert into Loginy_hasla values(-2 ,'vitalyacher79', getHash('kfklAR3f')); 
-insert into Kurjery values(800000593, 4, 'ROGERS', 'Laplante', 856278644 , 'ROGERS.Laplante@gmail.com ', 15, true); 
-insert into Loginy_hasla values(-2 ,'zaika69', getHash('XlaSFwcm')); 
-insert into Kurjery values(800000594, 2, 'GOMEZ', 'Livingston', 502845253 , 'GOMEZ.Livingston@gmail.com ', 39, true); 
-insert into Loginy_hasla values(-2 ,'nport77', getHash('VZfPeqcM')); 
-insert into Kurjery values(800000595, 3, 'COLLINS', 'Lomeli', 458847079 , 'COLLINS.Lomeli@gmail.com ', 97, true); 
-insert into Loginy_hasla values(-2 ,'hero27', getHash('5kUTPXQU')); 
-insert into Kurjery values(800000596, 4, 'NUNEZ', 'Larsen', 105916276 , 'NUNEZ.Larsen@gmail.com ', 38, true); 
-insert into Loginy_hasla values(-2 ,'denis79', getHash('bi7aJPdY')); 
-insert into Kurjery values(800000597, 4, 'HOLMES', 'Lewin', 930691176 , 'HOLMES.Lewin@gmail.com ', 82, true); 
-insert into Loginy_hasla values(-2 ,'jaguar94', getHash('Rebegy3i')); 
-insert into Kurjery values(800000598, 1, 'BURNS', 'Larkins', 567363554 , 'BURNS.Larkins@gmail.com ', 56, true); 
-insert into Loginy_hasla values(-2 ,'ira36', getHash('ZhVocfRc')); 
-insert into Kurjery values(800000599, 1, 'CASTRO', 'Leslie', 946339895 , 'CASTRO.Leslie@gmail.com ', 84, true); 
-insert into Loginy_hasla values(-2 ,'jaguar80', getHash('4aWlUijk')); 
-insert into Kurjery values(800000600, 1, 'VARGAS', 'Luck', 977980566 , 'VARGAS.Luck@gmail.com ', 86, true); 
-insert into Loginy_hasla values(-2 ,'Rush31', getHash('bRYRkWaR')); 
-insert into Kurjery values(800000601, 2, 'FORD', 'Limon', 289676246 , 'FORD.Limon@gmail.com ', 20, true); 
-insert into Loginy_hasla values(-2 ,'Vorona3440', getHash('WHQdgUZi')); 
-insert into Kurjery values(800000602, 1, 'MORRISON', 'Laurent', 143023792 , 'MORRISON.Laurent@gmail.com ', 75, true); 
-insert into Loginy_hasla values(-2 ,'zero48', getHash('04bMoPij')); 
-insert into Kurjery values(800000603, 4, 'HALL', 'Latimer', 992335182 , 'HALL.Latimer@gmail.com ', 10, true); 
-insert into Loginy_hasla values(-2 ,'sg37', getHash('eYffFVrP')); 
-insert into Kurjery values(800000604, 3, 'OWENS', 'Lu', 143785544 , 'OWENS.Lu@gmail.com ', 75, true); 
-insert into Loginy_hasla values(-2 ,'linia1', getHash('Y5lQUZht')); 
-insert into Kurjery values(800000605, 1, 'NICHOLS', 'Ladd', 160647949 , 'NICHOLS.Ladd@gmail.com ', 37, true); 
-insert into Loginy_hasla values(-2 ,'me33', getHash('cDfBmlUe')); 
-insert into Kurjery values(800000606, 4, 'WALLACE', 'Lebron', 174560597 , 'WALLACE.Lebron@gmail.com ', 3, true); 
-insert into Loginy_hasla values(-2 ,'zerg29', getHash('aOXeoadV')); 
-insert into Kurjery values(800000607, 1, 'ROGERS', 'Louis', 182169867 , 'ROGERS.Louis@gmail.com ', 100, true); 
-insert into Loginy_hasla values(-2 ,'seo15', getHash('aVWPvfgE')); 
-insert into Kurjery values(800000608, 2, 'MITCHELL', 'La', 322516469 , 'MITCHELL.La@gmail.com ', 97, true); 
-insert into Loginy_hasla values(-2 ,'Peter.Berghausen57', getHash('gaWUZe9S')); 
-insert into Kurjery values(800000609, 3, 'MURPHY', 'Lum', 502729557 , 'MURPHY.Lum@gmail.com ', 20, true); 
-insert into Loginy_hasla values(-2 ,'supportpc83', getHash('taeRqRAP')); 
-insert into Kurjery values(800000610, 2, 'ESTRADA', 'Lai', 406486254 , 'ESTRADA.Lai@gmail.com ', 79, true); 
-insert into Loginy_hasla values(-2 ,'goblin76', getHash('Vtn1fbPW')); 
-insert into Kurjery values(800000611, 4, 'SCOTT', 'Liles', 184924894 , 'SCOTT.Liles@gmail.com ', 75, true); 
-insert into Loginy_hasla values(-2 ,'devil38', getHash('lhYmkwtQ')); 
-insert into Kurjery values(800000612, 1, 'KENNEDY', 'Lamb', 443712675 , 'KENNEDY.Lamb@gmail.com ', 60, true); 
-insert into Loginy_hasla values(-2 ,'gold74', getHash('SgSclZDZ')); 
-insert into Kurjery values(800000613, 2, 'SANTOS', 'Lozada', 566002435 , 'SANTOS.Lozada@gmail.com ', 89, true); 
-insert into Loginy_hasla values(-2 ,'milaia76', getHash('XxAbbmRZ')); 
-insert into Kurjery values(800000614, 4, 'DAVIS', 'Liu', 804738412 , 'DAVIS.Liu@gmail.com ', 62, true); 
-insert into Loginy_hasla values(-2 ,'agrorynok1', getHash('Td0ielYU')); 
-insert into Kurjery values(800000615, 1, 'LEE', 'Lavelle', 505337172 , 'LEE.Lavelle@gmail.com ', 48, true); 
-insert into Loginy_hasla values(-2 ,'roman37', getHash('XhMm2kiV')); 
-insert into Kurjery values(800000616, 4, 'YOUNG', 'Lawton', 486264111 , 'YOUNG.Lawton@gmail.com ', 68, true); 
-insert into Loginy_hasla values(-2 ,'love88', getHash('YmjgdvV6')); 
-insert into Kurjery values(800000617, 3, 'SANCHEZ', 'Lally', 197499311 , 'SANCHEZ.Lally@gmail.com ', 71, true); 
-insert into Loginy_hasla values(-2 ,'life18', getHash('fgSSPZsN')); 
-insert into Kurjery values(800000618, 1, 'HERNANDEZ', 'Liang', 251340696 , 'HERNANDEZ.Liang@gmail.com ', 49, true); 
-insert into Loginy_hasla values(-2 ,'just71', getHash('Pd4ofhgN')); 
-insert into Kurjery values(800000619, 1, 'WARREN', 'Lovett', 354170177 , 'WARREN.Lovett@gmail.com ', 84, true); 
-insert into Loginy_hasla values(-2 ,'sergej_a_g98', getHash('TlNUVpYh')); 
-insert into Kurjery values(800000620, 3, 'MORRISON', 'Lundquist', 081456245 , 'MORRISON.Lundquist@gmail.com ', 31, true); 
-insert into Loginy_hasla values(-2 ,'thefish25', getHash('IcTnJhXl')); 
-insert into Kurjery values(800000621, 1, 'VAZQUEZ', 'Land', 134386278 , 'VAZQUEZ.Land@gmail.com ', 74, true); 
-insert into Loginy_hasla values(-2 ,'evanfe90', getHash('GcWSvd0b')); 
-insert into Kurjery values(800000622, 3, 'ORTEGA', 'Lucas', 315331904 , 'ORTEGA.Lucas@gmail.com ', 44, true); 
-insert into Loginy_hasla values(-2 ,'zaika89', getHash('NQLV5YNg')); 
-insert into Kurjery values(800000623, 4, 'HAMILTON', 'Lowrey', 624555388 , 'HAMILTON.Lowrey@gmail.com ', 24, true); 
-insert into Loginy_hasla values(-2 ,'pupsik90', getHash('mM13fhbt')); 
-insert into Kurjery values(800000624, 4, 'RUSSELL', 'Liu', 049546876 , 'RUSSELL.Liu@gmail.com ', 74, true); 
-insert into Loginy_hasla values(-2 ,'X-man71', getHash('bY0UCkhq')); 
-insert into Kurjery values(800000625, 3, 'KELLY', 'Ledezma', 551817001 , 'KELLY.Ledezma@gmail.com ', 47, true); 
-insert into Loginy_hasla values(-2 ,'fhotel44', getHash('KbZfdPYh')); 
-insert into Kurjery values(800000626, 4, 'COLLINS', 'Lindstrom', 767162928 , 'COLLINS.Lindstrom@gmail.com ', 74, true); 
-insert into Loginy_hasla values(-2 ,'wtf5', getHash('krZggSlG')); 
-insert into Kurjery values(800000627, 1, 'ORTEGA', 'Lindley', 415558170 , 'ORTEGA.Lindley@gmail.com ', 1, true); 
-insert into Loginy_hasla values(-2 ,'Vortelio91', getHash('PSWkxDN7')); 
-insert into Kurjery values(800000628, 3, 'HICKS', 'Lance', 055532533 , 'HICKS.Lance@gmail.com ', 39, true); 
-insert into Loginy_hasla values(-2 ,'support76', getHash('ERbcSb8Q')); 
-insert into Kurjery values(800000629, 2, 'BURKE', 'Legg', 706732705 , 'BURKE.Legg@gmail.com ', 42, true); 
-insert into Loginy_hasla values(-2 ,'Chervechok20', getHash('AbNmQWUw')); 
-insert into Kurjery values(800000630, 1, 'ELLIS', 'Le', 071952129 , 'ELLIS.Le@gmail.com ', 26, true); 
-insert into Loginy_hasla values(-2 ,'stalker87', getHash('nRXmJKcV')); 
-insert into Kurjery values(800000631, 2, 'GUTIERREZ', 'Lacey', 502534987 , 'GUTIERREZ.Lacey@gmail.com ', 70, true); 
-insert into Loginy_hasla values(-2 ,'alex19', getHash('mjRg1mTW')); 
-insert into Kurjery values(800000632, 2, 'CHAVEZ', 'Lyles', 069312303 , 'CHAVEZ.Lyles@gmail.com ', 14, true); 
-insert into Loginy_hasla values(-2 ,'faraon90', getHash('WMjbFMXG')); 
-insert into Kurjery values(800000633, 2, 'ROGERS', 'Linn', 631854227 , 'ROGERS.Linn@gmail.com ', 68, true); 
-insert into Loginy_hasla values(-2 ,'stephan81', getHash('4iQiWXsu')); 
-insert into Kurjery values(800000634, 4, 'HARRIS', 'Lohr', 419383828 , 'HARRIS.Lohr@gmail.com ', 71, true); 
-insert into Loginy_hasla values(-2 ,'Ivanov72', getHash('VlwrOruM')); 
-insert into Kurjery values(800000635, 3, 'MATTHEWS', 'Lejeune', 073856297 , 'MATTHEWS.Lejeune@gmail.com ', 57, true); 
-insert into Loginy_hasla values(-2 ,'Libra27', getHash('d6iPNPaf')); 
-insert into Kurjery values(800000636, 2, 'WEAVER', 'Lin', 026188647 , 'WEAVER.Lin@gmail.com ', 16, true); 
-insert into Loginy_hasla values(-2 ,'lady53', getHash('hwhW5Wbs')); 
-insert into Kurjery values(800000637, 2, 'COOPER', 'Levesque', 543024482 , 'COOPER.Levesque@gmail.com ', 58, true); 
-insert into Loginy_hasla values(-2 ,'roman78', getHash('PQPXmBXT')); 
-insert into Kurjery values(800000638, 1, 'MUNOZ', 'Laughlin', 140868728 , 'MUNOZ.Laughlin@gmail.com ', 54, true); 
-insert into Loginy_hasla values(-2 ,'life12', getHash('dahR2HR6')); 
-insert into Kurjery values(800000639, 1, 'BELL', 'Lowell', 774371344 , 'BELL.Lowell@gmail.com ', 100, true); 
-insert into Loginy_hasla values(-2 ,'Vampir26', getHash('IsQPCBRe')); 
-insert into Kurjery values(800000640, 1, 'AGUILAR', 'Langston', 248335838 , 'AGUILAR.Langston@gmail.com ', 88, true); 
-insert into Loginy_hasla values(-2 ,'goblin83', getHash('eBFaZsZY')); 
-insert into Kurjery values(800000641, 1, 'MYERS', 'La', 847548055 , 'MYERS.La@gmail.com ', 33, true); 
-insert into Loginy_hasla values(-2 ,'snake46', getHash('1CavWHgc')); 
-insert into Kurjery values(800000642, 1, 'LARSON', 'Lorenz', 242737980 , 'LARSON.Lorenz@gmail.com ', 58, true); 
-insert into Loginy_hasla values(-2 ,'wolf84', getHash('eRUlQXdS')); 
-insert into Kurjery values(800000643, 4, 'BROOKS', 'Luster', 009532999 , 'BROOKS.Luster@gmail.com ', 51, true); 
-insert into Loginy_hasla values(-2 ,'neznakomka36', getHash('H2TTVkPj')); 
-insert into Kurjery values(800000644, 1, 'MYERS', 'Lowery', 373447518 , 'MYERS.Lowery@gmail.com ', 6, true); 
-insert into Loginy_hasla values(-2 ,'roman31', getHash('Z3mzSr7H')); 
-insert into Kurjery values(800000645, 2, 'GARCIA', 'Lapointe', 262808743 , 'GARCIA.Lapointe@gmail.com ', 87, true); 
-insert into Loginy_hasla values(-2 ,'klubni4ka96', getHash('8dzgSkmf')); 
-insert into Kurjery values(800000646, 4, 'MORRISON', 'Letourneau', 573078636 , 'MORRISON.Letourneau@gmail.com ', 12, true); 
-insert into Loginy_hasla values(-2 ,'Elvis58', getHash('hTVe9CPY')); 
-insert into Kurjery values(800000647, 1, 'VALDEZ', 'Loredo', 320746675 , 'VALDEZ.Loredo@gmail.com ', 43, true); 
-insert into Loginy_hasla values(-2 ,'Ivanov84', getHash('LjXcy5bD')); 
-insert into Kurjery values(800000648, 3, 'TURNER', 'Lewis', 355926759 , 'TURNER.Lewis@gmail.com ', 74, true); 
-insert into Loginy_hasla values(-2 ,'km44', getHash('WafzlQZS')); 
-insert into Kurjery values(800000649, 1, 'KNIGHT', 'Locke', 657564878 , 'KNIGHT.Locke@gmail.com ', 64, true); 
-insert into Loginy_hasla values(-2 ,'pain45', getHash('TOQ4hlbY')); 
-insert into Kurjery values(800000650, 1, 'WATKINS', 'Law', 271256192 , 'WATKINS.Law@gmail.com ', 40, true); 
-insert into Loginy_hasla values(-2 ,'anime32', getHash('ZilekXA5')); 
-insert into Kurjery values(800000651, 1, 'KNIGHT', 'Levine', 700741410 , 'KNIGHT.Levine@gmail.com ', 50, true); 
-insert into Loginy_hasla values(-2 ,'Elvis19', getHash('TjyXchRl')); 
-insert into Kurjery values(800000652, 4, 'MARTIN', 'Ladd', 387986653 , 'MARTIN.Ladd@gmail.com ', 85, true); 
-insert into Loginy_hasla values(-2 ,'Elvis89', getHash('eQcQfXmX')); 
-insert into Kurjery values(800000653, 1, 'AUSTIN', 'Ly', 324290324 , 'AUSTIN.Ly@gmail.com ', 44, true); 
-insert into Loginy_hasla values(-2 ,'no1z6', getHash('ed6kf8Td')); 
-insert into Kurjery values(800000654, 3, 'HARRIS', 'Leeper', 456422831 , 'HARRIS.Leeper@gmail.com ', 32, true); 
-insert into Loginy_hasla values(-2 ,'andy20', getHash('YjRkzURK')); 
-insert into Kurjery values(800000655, 2, 'VARGAS', 'Leal', 976177208 , 'VARGAS.Leal@gmail.com ', 43, true); 
-insert into Loginy_hasla values(-2 ,'denis91', getHash('VZkcffdk')); 
-insert into Kurjery values(800000656, 2, 'NELSON', 'Landa', 751061639 , 'NELSON.Landa@gmail.com ', 32, true); 
-insert into Loginy_hasla values(-2 ,'rusinborg55', getHash('VioRQ4oZ')); 
-insert into Kurjery values(800000657, 4, 'FISHER', 'Levitt', 953009874 , 'FISHER.Levitt@gmail.com ', 6, true); 
-insert into Loginy_hasla values(-2 ,'yourdream11', getHash('QgJaI9yr')); 
-insert into Kurjery values(800000658, 2, 'CARPENTER', 'Liu', 106212070 , 'CARPENTER.Liu@gmail.com ', 26, true); 
-insert into Loginy_hasla values(-2 ,'devil92', getHash('gQYSgjhm')); 
-insert into Kurjery values(800000659, 3, 'RAMIREZ', 'Lofton', 896406239 , 'RAMIREZ.Lofton@gmail.com ', 24, true); 
-insert into Loginy_hasla values(-2 ,'ksu99', getHash('FPmW7gYU')); 
-insert into Kurjery values(800000660, 3, 'BLACK', 'Lord', 065464885 , 'BLACK.Lord@gmail.com ', 92, true); 
-insert into Loginy_hasla values(-2 ,'king25', getHash('HDw0bVdb')); 
-insert into Kurjery values(800000661, 4, 'HENDERSON', 'Locke', 056160517 , 'HENDERSON.Locke@gmail.com ', 78, true); 
-insert into Loginy_hasla values(-2 ,'vitalyacher70', getHash('UfrZVPeU')); 
-insert into Kurjery values(800000662, 3, 'PAYNE', 'Little', 188771793 , 'PAYNE.Little@gmail.com ', 46, true); 
-insert into Loginy_hasla values(-2 ,'roman38', getHash('QUefknZk')); 
-insert into Kurjery values(800000663, 2, 'MUNOZ', 'Lemaster', 862597101 , 'MUNOZ.Lemaster@gmail.com ', 33, true); 
-insert into Loginy_hasla values(-2 ,'pupsik21', getHash('UTiZDBfP')); 
-insert into Kurjery values(800000664, 1, 'RICHARDSON', 'Legrand', 961029904 , 'RICHARDSON.Legrand@gmail.com ', 69, true); 
-insert into Loginy_hasla values(-2 ,'wUUb27', getHash('UgrTTpga')); 
-insert into Kurjery values(800000665, 3, 'YOUNG', 'Lusk', 144559304 , 'YOUNG.Lusk@gmail.com ', 30, true); 
-insert into Loginy_hasla values(-2 ,'me94', getHash('OgvjYfVk')); 
-insert into Kurjery values(800000666, 1, 'GRIFFIN', 'Levine', 056003214 , 'GRIFFIN.Levine@gmail.com ', 26, true); 
-insert into Loginy_hasla values(-2 ,'Vortelio60', getHash('AxlyLuOQ')); 
-insert into Kurjery values(800000667, 3, 'BRYANT', 'Loeffler', 731065279 , 'BRYANT.Loeffler@gmail.com ', 39, true); 
-insert into Loginy_hasla values(-2 ,'admin8', getHash('jVvxUmBk')); 
-insert into Kurjery values(800000668, 3, 'HARRIS', 'Lugo', 456088224 , 'HARRIS.Lugo@gmail.com ', 67, true); 
-insert into Loginy_hasla values(-2 ,'etalon_admin60', getHash('RdcbVWB1')); 
-insert into Kurjery values(800000669, 3, 'ROBINSON', 'Landon', 281426132 , 'ROBINSON.Landon@gmail.com ', 20, true); 
-insert into Loginy_hasla values(-2 ,'Ivanov43', getHash('NZXX6lSm')); 
-insert into Kurjery values(800000670, 4, 'ELLIS', 'Lugo', 413575180 , 'ELLIS.Lugo@gmail.com ', 33, true); 
-insert into Loginy_hasla values(-2 ,'sasuke47', getHash('hidcRkhd')); 
-insert into Kurjery values(800000671, 4, 'CASTRO', 'Lorenzo', 596622049 , 'CASTRO.Lorenzo@gmail.com ', 36, true); 
-insert into Loginy_hasla values(-2 ,'goblin37', getHash('hK3PFKWW')); 
-insert into Kurjery values(800000672, 4, 'HILL', 'Lunsford', 931014023 , 'HILL.Lunsford@gmail.com ', 76, true); 
-insert into Loginy_hasla values(-2 ,'evanfe45', getHash('TwgnYARW')); 
-insert into Kurjery values(800000673, 3, 'WHEELER', 'Lai', 956799361 , 'WHEELER.Lai@gmail.com ', 4, true); 
-insert into Loginy_hasla values(-2 ,'Vorona3415', getHash('sAiUjiIc')); 
-insert into Kurjery values(800000674, 2, 'DUNCAN', 'Lea', 070396500 , 'DUNCAN.Lea@gmail.com ', 48, true); 
-insert into Loginy_hasla values(-2 ,'king57', getHash('Iq9kUmdi')); 
-insert into Kurjery values(800000675, 1, 'HENDERSON', 'Lawton', 619134898 , 'HENDERSON.Lawton@gmail.com ', 63, true); 
-insert into Loginy_hasla values(-2 ,'nport47', getHash('fSc7iiVi')); 
-insert into Kurjery values(800000676, 4, 'DOMINGUEZ', 'Lapp', 713496408 , 'DOMINGUEZ.Lapp@gmail.com ', 25, true); 
-insert into Loginy_hasla values(-2 ,'region48', getHash('ZSfgmAPi')); 
-insert into Kurjery values(800000677, 4, 'GREEN', 'Ling', 508367848 , 'GREEN.Ling@gmail.com ', 96, true); 
-insert into Loginy_hasla values(-2 ,'sexy35', getHash('6eeXeWU2')); 
-insert into Kurjery values(800000678, 4, 'RAMOS', 'Lalonde', 524409609 , 'RAMOS.Lalonde@gmail.com ', 47, true); 
-insert into Loginy_hasla values(-2 ,'Klam19', getHash('GVdS0inF')); 
-insert into Kurjery values(800000679, 3, 'RIVERA', 'Loftus', 068829463 , 'RIVERA.Loftus@gmail.com ', 60, true); 
-insert into Loginy_hasla values(-2 ,'andy28', getHash('MQkejfQe')); 
-insert into Kurjery values(800000680, 1, 'FOSTER', 'Lindsey', 935125396 , 'FOSTER.Lindsey@gmail.com ', 50, true); 
-insert into Loginy_hasla values(-2 ,'just4', getHash('6hEzrUSu')); 
-insert into Kurjery values(800000681, 3, 'SANDERS', 'Luu', 029726465 , 'SANDERS.Luu@gmail.com ', 65, true); 
-insert into Loginy_hasla values(-2 ,'boss18', getHash('GjGtPmkT')); 
-insert into Kurjery values(800000682, 3, 'MCDONALD', 'La', 929679805 , 'MCDONALD.La@gmail.com ', 40, true); 
-insert into Loginy_hasla values(-2 ,'Dan87', getHash('dGmihR2Q')); 
-insert into Kurjery values(800000683, 2, 'ORTEGA', 'Lockett', 979112507 , 'ORTEGA.Lockett@gmail.com ', 39, true); 
-insert into Loginy_hasla values(-2 ,'yourdream80', getHash('4clARQsd')); 
-insert into Kurjery values(800000684, 1, 'MENDEZ', 'Logan', 704952393 , 'MENDEZ.Logan@gmail.com ', 65, true); 
-insert into Loginy_hasla values(-2 ,'poster32', getHash('7RkUfl8o')); 
-insert into Kurjery values(800000685, 2, 'EDWARDS', 'Lerma', 275562297 , 'EDWARDS.Lerma@gmail.com ', 91, true); 
-insert into Loginy_hasla values(-2 ,'webmaster62', getHash('icfi4bdS')); 
-insert into Kurjery values(800000686, 4, 'WOODS', 'Lanza', 210604960 , 'WOODS.Lanza@gmail.com ', 33, true); 
-insert into Loginy_hasla values(-2 ,'jusy7', getHash('jBTXXlCB')); 
-insert into Kurjery values(800000687, 1, 'PEREZ', 'Lien', 285843657 , 'PEREZ.Lien@gmail.com ', 32, true); 
-insert into Loginy_hasla values(-2 ,'miller68', getHash('gllgNnPk')); 
-insert into Kurjery values(800000688, 4, 'FERGUSON', 'Lovejoy', 996108157 , 'FERGUSON.Lovejoy@gmail.com ', 84, true); 
-insert into Loginy_hasla values(-2 ,'anime29', getHash('7V1hbdlT')); 
-insert into Kurjery values(800000689, 3, 'WHEELER', 'Laporte', 040750302 , 'WHEELER.Laporte@gmail.com ', 68, true); 
-insert into Loginy_hasla values(-2 ,'808048', getHash('gknoO0eZ')); 
-insert into Kurjery values(800000690, 3, 'MILLS', 'Littlefield', 827842072 , 'MILLS.Littlefield@gmail.com ', 56, true); 
-insert into Loginy_hasla values(-2 ,'mr0', getHash('jhgM9ZUP')); 
-insert into Kurjery values(800000691, 4, 'RIVERA', 'Leong', 409686354 , 'RIVERA.Leong@gmail.com ', 78, true); 
-insert into Loginy_hasla values(-2 ,'maloy64', getHash('aYcgxZYO')); 
-insert into Kurjery values(800000692, 4, 'HOLMES', 'Lowman', 966901453 , 'HOLMES.Lowman@gmail.com ', 14, true); 
-insert into Loginy_hasla values(-2 ,'yourdream77', getHash('tKcFVkem')); 
-insert into Kurjery values(800000693, 3, 'MORRISON', 'Lowe', 144621563 , 'MORRISON.Lowe@gmail.com ', 50, true); 
-insert into Loginy_hasla values(-2 ,'Jbice68', getHash('6X8XejYg')); 
-insert into Kurjery values(800000694, 2, 'OLSON', 'Lowry', 815973455 , 'OLSON.Lowry@gmail.com ', 29, true); 
-insert into Loginy_hasla values(-2 ,'admin99', getHash('YGmQAlRb')); 
-insert into Kurjery values(800000695, 1, 'COOK', 'Lowrey', 234440374 , 'COOK.Lowrey@gmail.com ', 74, true); 
-insert into Loginy_hasla values(-2 ,'trustme54', getHash('MQfP9RfT')); 
-insert into Kurjery values(800000696, 1, 'GUZMAN', 'Leach', 109446517 , 'GUZMAN.Leach@gmail.com ', 35, true); 
-insert into Loginy_hasla values(-2 ,'Klam76', getHash('RJfqQtfz')); 
-insert into Kurjery values(800000697, 3, 'RUIZ', 'Lin', 910198009 , 'RUIZ.Lin@gmail.com ', 12, true); 
-insert into Loginy_hasla values(-2 ,'judo61', getHash('bWhbYYjE')); 
-insert into Kurjery values(800000698, 1, 'SHAW', 'Legrand', 477033765 , 'SHAW.Legrand@gmail.com ', 75, true); 
-insert into Loginy_hasla values(-2 ,'thefish2', getHash('1XXgjSjo')); 
-insert into Kurjery values(800000699, 3, 'STEWART', 'Lor', 739736284 , 'STEWART.Lor@gmail.com ', 32, true); 
-insert into Loginy_hasla values(-2 ,'nport66', getHash('dSf94k2N')); 
-insert into Kurjery values(800000700, 1, 'ROMERO', 'Logue', 157781985 , 'ROMERO.Logue@gmail.com ', 100, true); 
-insert into Loginy_hasla values(-2 ,'minherz45', getHash('BZ9V4uSl')); 
-insert into Kurjery values(800000701, 1, 'HOWARD', 'Locke', 559104258 , 'HOWARD.Locke@gmail.com ', 59, true); 
-insert into Loginy_hasla values(-2 ,'uzumaki88', getHash('OgdUVmUI')); 
-insert into Kurjery values(800000702, 1, 'SCOTT', 'Lowder', 569415033 , 'SCOTT.Lowder@gmail.com ', 14, true); 
-insert into Loginy_hasla values(-2 ,'Schnuddel46', getHash('bdXfdfJh')); 
-insert into Kurjery values(800000703, 2, 'PETERS', 'Lafrance', 214181115 , 'PETERS.Lafrance@gmail.com ', 93, true); 
-insert into Loginy_hasla values(-2 ,'sergej_a_g60', getHash('kcER0lMj')); 
-insert into Kurjery values(800000704, 2, 'MILLS', 'Lerner', 443216694 , 'MILLS.Lerner@gmail.com ', 47, true); 
-insert into Loginy_hasla values(-2 ,'ice82', getHash('wY1okhef')); 
-insert into Kurjery values(800000705, 3, 'NGUYEN', 'Linville', 077965253 , 'NGUYEN.Linville@gmail.com ', 11, true); 
-insert into Loginy_hasla values(-2 ,'alex36', getHash('jdD2RUWw')); 
-insert into Kurjery values(800000706, 1, 'REED', 'Liang', 037657407 , 'REED.Liang@gmail.com ', 70, true); 
-insert into Loginy_hasla values(-2 ,'nport1', getHash('VQcZW8GB')); 
-insert into Kurjery values(800000707, 2, 'PERRY', 'Lapp', 541764926 , 'PERRY.Lapp@gmail.com ', 76, true); 
-insert into Loginy_hasla values(-2 ,'flash23', getHash('0Ag1xUlD')); 
-insert into Kurjery values(800000708, 3, 'SANTIAGO', 'Lamb', 282359787 , 'SANTIAGO.Lamb@gmail.com ', 3, true); 
-insert into Loginy_hasla values(-2 ,'zloy99', getHash('1bebWKli')); 
-insert into Kurjery values(800000709, 1, 'CARLSON', 'Leffler', 332746983 , 'CARLSON.Leffler@gmail.com ', 94, true); 
-insert into Loginy_hasla values(-2 ,'admin11', getHash('mZSDlN0S')); 
-insert into Kurjery values(800000710, 1, 'SANCHEZ', 'Lieberman', 195610036 , 'SANCHEZ.Lieberman@gmail.com ', 58, true); 
-insert into Loginy_hasla values(-2 ,'trustme90', getHash('iVLlYbdh')); 
-insert into Kurjery values(800000711, 1, 'CASTRO', 'Lazo', 555622024 , 'CASTRO.Lazo@gmail.com ', 40, true); 
-insert into Loginy_hasla values(-2 ,'vip42', getHash('RLg6dkhH')); 
-insert into Kurjery values(800000712, 2, 'GARZA', 'Leighton', 362549236 , 'GARZA.Leighton@gmail.com ', 61, true); 
-insert into Loginy_hasla values(-2 ,'honey20', getHash('MINoejPQ')); 
-insert into Kurjery values(800000713, 1, 'PATTERSON', 'Lau', 006132613 , 'PATTERSON.Lau@gmail.com ', 45, true); 
-insert into Loginy_hasla values(-2 ,'Kontek77', getHash('ZkRYdUi6')); 
-insert into Kurjery values(800000714, 4, 'LARSON', 'Limon', 905805864 , 'LARSON.Limon@gmail.com ', 97, true); 
-insert into Loginy_hasla values(-2 ,'naruto53', getHash('cQceYUTa')); 
-insert into Kurjery values(800000715, 2, 'BROOKS', 'Lomax', 964704458 , 'BROOKS.Lomax@gmail.com ', 15, true); 
-insert into Loginy_hasla values(-2 ,'jorik2', getHash('wlR6W2Tm')); 
-insert into Kurjery values(800000716, 3, 'ADAMS', 'Liang', 663069638 , 'ADAMS.Liang@gmail.com ', 43, true); 
-insert into Loginy_hasla values(-2 ,'Julia18', getHash('RmbgTPhm')); 
-insert into Kurjery values(800000717, 1, 'BAILEY', 'Liang', 981023496 , 'BAILEY.Liang@gmail.com ', 50, true); 
-insert into Loginy_hasla values(-2 ,'agrorynok63', getHash('AnmrYPm4')); 
-insert into Kurjery values(800000718, 3, 'HAMILTON', 'Leatherman', 922360348 , 'HAMILTON.Leatherman@gmail.com ', 24, true); 
-insert into Loginy_hasla values(-2 ,'linia90', getHash('bsYUCpPD')); 
-insert into Kurjery values(800000719, 4, 'BLACK', 'Lim', 452245328 , 'BLACK.Lim@gmail.com ', 43, true); 
-insert into Loginy_hasla values(-2 ,'yourdream3', getHash('SGvQQeQj')); 
-insert into Kurjery values(800000720, 2, 'ELLIOTT', 'Larkins', 989231965 , 'ELLIOTT.Larkins@gmail.com ', 89, true); 
-insert into Loginy_hasla values(-2 ,'grey81', getHash('5VyjktXg')); 
-insert into Kurjery values(800000721, 1, 'RILEY', 'Lim', 031614002 , 'RILEY.Lim@gmail.com ', 63, true); 
-insert into Loginy_hasla values(-2 ,'zloy28', getHash('Shk63VgS')); 
-insert into Kurjery values(800000722, 1, 'BRYANT', 'Lees', 173325005 , 'BRYANT.Lees@gmail.com ', 19, true); 
-insert into Loginy_hasla values(-2 ,'imdi36', getHash('xiIYVkcW')); 
-insert into Kurjery values(800000723, 2, 'LEE', 'Larue', 088959261 , 'LEE.Larue@gmail.com ', 84, true); 
-insert into Loginy_hasla values(-2 ,'me71', getHash('V1kiAAkE')); 
-insert into Kurjery values(800000724, 4, 'RYAN', 'Lieberman', 730693268 , 'RYAN.Lieberman@gmail.com ', 69, true); 
-insert into Loginy_hasla values(-2 ,'Chervechok74', getHash('xTrSa9kU')); 
-insert into Kurjery values(800000725, 1, 'LEWIS', 'Lozano', 679060383 , 'LEWIS.Lozano@gmail.com ', 5, true); 
-insert into Loginy_hasla values(-2 ,'Robertino22', getHash('cPc8UmAP')); 
-insert into Kurjery values(800000726, 1, 'KENNEDY', 'Larose', 858954208 , 'KENNEDY.Larose@gmail.com ', 51, true); 
-insert into Loginy_hasla values(-2 ,'John91', getHash('R0SmoPVX')); 
-insert into Kurjery values(800000727, 2, 'DUNCAN', 'Lawless', 173936384 , 'DUNCAN.Lawless@gmail.com ', 90, true); 
-insert into Loginy_hasla values(-2 ,'Julia5', getHash('ZZel1ZZQ')); 
-insert into Kurjery values(800000728, 2, 'BAILEY', 'Lusk', 702996981 , 'BAILEY.Lusk@gmail.com ', 37, true); 
-insert into Loginy_hasla values(-2 ,'nick7', getHash('gkqihWEh')); 
-insert into Kurjery values(800000729, 4, 'CASTILLO', 'Lantz', 476090804 , 'CASTILLO.Lantz@gmail.com ', 40, true); 
-insert into Loginy_hasla values(-2 ,'Alex34', getHash('ShiWQZdQ')); 
-insert into Kurjery values(800000730, 1, 'KIM', 'Leung', 042605239 , 'KIM.Leung@gmail.com ', 70, true); 
-insert into Loginy_hasla values(-2 ,'narayana36', getHash('aUUV2CmS')); 
-insert into Kurjery values(800000731, 4, 'LANE', 'Levinson', 600807339 , 'LANE.Levinson@gmail.com ', 64, true); 
-insert into Loginy_hasla values(-2 ,'laky76', getHash('oSaXVPUl')); 
-insert into Kurjery values(800000732, 2, 'WALLACE', 'Lor', 018322502 , 'WALLACE.Lor@gmail.com ', 48, true); 
-insert into Loginy_hasla values(-2 ,'motocross36', getHash('KhYWPFSo')); 
-insert into Kurjery values(800000733, 2, 'CARPENTER', 'Leon', 004271002 , 'CARPENTER.Leon@gmail.com ', 14, true); 
-insert into Loginy_hasla values(-2 ,'gold47', getHash('GjhVQ0bQ')); 
-insert into Kurjery values(800000734, 4, 'ESTRADA', 'Lundberg', 924018427 , 'ESTRADA.Lundberg@gmail.com ', 8, true); 
-insert into Loginy_hasla values(-2 ,'yarnik66', getHash('kqz3aKqb')); 
-insert into Kurjery values(800000735, 1, 'LAWRENCE', 'Leblanc', 386627196 , 'LAWRENCE.Leblanc@gmail.com ', 29, true); 
-insert into Loginy_hasla values(-2 ,'nick72', getHash('tmjN3WS7')); 
-insert into Kurjery values(800000736, 2, 'RYAN', 'Lehmann', 725690542 , 'RYAN.Lehmann@gmail.com ', 13, true); 
-insert into Loginy_hasla values(-2 ,'black34', getHash('Q2UeMD75')); 
-insert into Kurjery values(800000737, 3, 'HILL', 'Loya', 706800166 , 'HILL.Loya@gmail.com ', 89, true); 
-insert into Loginy_hasla values(-2 ,'solopov98', getHash('lrOCSyhj')); 
-insert into Kurjery values(800000738, 3, 'KENNEDY', 'Legrand', 551945368 , 'KENNEDY.Legrand@gmail.com ', 19, true); 
-insert into Loginy_hasla values(-2 ,'rolcom54', getHash('FphT8WeQ')); 
-insert into Kurjery values(800000739, 4, 'COLE', 'Lachance', 974639780 , 'COLE.Lachance@gmail.com ', 49, true); 
-insert into Loginy_hasla values(-2 ,'pupsik8', getHash('ENsgUDci')); 
-insert into Kurjery values(800000740, 4, 'PIERCE', 'Lamar', 099456546 , 'PIERCE.Lamar@gmail.com ', 63, true); 
-insert into Loginy_hasla values(-2 ,'koruna1122330', getHash('aRWglsY4')); 
-insert into Kurjery values(800000741, 4, 'DUNN', 'Lathrop', 045732419 , 'DUNN.Lathrop@gmail.com ', 98, true); 
-insert into Loginy_hasla values(-2 ,'black67', getHash('VVwOjnhK')); 
-insert into Kurjery values(800000742, 3, 'CRUZ', 'Lett', 127825568 , 'CRUZ.Lett@gmail.com ', 14, true); 
-insert into Loginy_hasla values(-2 ,'rolcom56', getHash('j9UtjeaR')); 
-insert into Kurjery values(800000743, 2, 'SMITH', 'Lerma', 969656231 , 'SMITH.Lerma@gmail.com ', 16, true); 
-insert into Loginy_hasla values(-2 ,'Rush49', getHash('eMxl4iPf')); 
-insert into Kurjery values(800000744, 1, 'HICKS', 'Ledoux', 739249417 , 'HICKS.Ledoux@gmail.com ', 89, true); 
-insert into Loginy_hasla values(-2 ,'maxroje75', getHash('1jJgk05I')); 
-insert into Kurjery values(800000745, 1, 'BURKE', 'Leach', 748626261 , 'BURKE.Leach@gmail.com ', 29, true); 
-insert into Loginy_hasla values(-2 ,'na_tiv32', getHash('hhLMVryi')); 
-insert into Kurjery values(800000746, 2, 'YOUNG', 'Lowman', 253472156 , 'YOUNG.Lowman@gmail.com ', 60, true); 
-insert into Loginy_hasla values(-2 ,'andby23', getHash('0P6kagkW')); 
-insert into Kurjery values(800000747, 1, 'ARMSTRONG', 'Lindner', 704848823 , 'ARMSTRONG.Lindner@gmail.com ', 19, true); 
-insert into Loginy_hasla values(-2 ,'vitatorg14', getHash('1ZSw74Vg')); 
-insert into Kurjery values(800000748, 4, 'HARRIS', 'Leahy', 879844580 , 'HARRIS.Leahy@gmail.com ', 16, true); 
-insert into Loginy_hasla values(-2 ,'dark70', getHash('mFjQWwWm')); 
-insert into Kurjery values(800000749, 1, 'HERNANDEZ', 'Lombard', 956188394 , 'HERNANDEZ.Lombard@gmail.com ', 27, true); 
-insert into Loginy_hasla values(-2 ,'user83', getHash('HPYgb9ax')); 
-insert into Kurjery values(800000750, 4, 'WOOD', 'Lemay', 646250697 , 'WOOD.Lemay@gmail.com ', 67, true); 
-insert into Loginy_hasla values(-2 ,'yagafarov46', getHash('ZiS1bQOW')); 
-insert into Kurjery values(800000751, 3, 'CUNNINGHAM', 'Luong', 337520001 , 'CUNNINGHAM.Luong@gmail.com ', 97, true); 
-insert into Loginy_hasla values(-2 ,'war12', getHash('jU2axQan')); 
-insert into Kurjery values(800000752, 4, 'CRUZ', 'Leahy', 978363381 , 'CRUZ.Leahy@gmail.com ', 59, true); 
-insert into Loginy_hasla values(-2 ,'region85', getHash('TGNWQf0r')); 
-insert into Kurjery values(800000753, 1, 'HARRIS', 'Lipscomb', 904690879 , 'HARRIS.Lipscomb@gmail.com ', 43, true); 
-insert into Loginy_hasla values(-2 ,'sweet78', getHash('mcySndYb')); 
-insert into Kurjery values(800000754, 3, 'MORRISON', 'Ligon', 516466625 , 'MORRISON.Ligon@gmail.com ', 11, true); 
-insert into Loginy_hasla values(-2 ,'test27', getHash('gW1dyymV')); 
-insert into Kurjery values(800000755, 2, 'BENNETT', 'Lucero', 511255502 , 'BENNETT.Lucero@gmail.com ', 95, true); 
-insert into Loginy_hasla values(-2 ,'SuperTone25', getHash('JffbNYZa')); 
-insert into Kurjery values(800000756, 3, 'AUSTIN', 'Lamont', 927209587 , 'AUSTIN.Lamont@gmail.com ', 23, true); 
-insert into Loginy_hasla values(-2 ,'devil19', getHash('LnmcpM8b')); 
-insert into Kurjery values(800000757, 4, 'DIXON', 'Littleton', 604673652 , 'DIXON.Littleton@gmail.com ', 88, true); 
-insert into Loginy_hasla values(-2 ,'John7', getHash('1WbwZX9Q')); 
-insert into Kurjery values(800000758, 3, 'DIXON', 'Larkins', 247099348 , 'DIXON.Larkins@gmail.com ', 33, true); 
-insert into Loginy_hasla values(-2 ,'duty39', getHash('gWd7cjA8')); 
-insert into Kurjery values(800000759, 3, 'SHAW', 'Lane', 882707001 , 'SHAW.Lane@gmail.com ', 7, true); 
-insert into Loginy_hasla values(-2 ,'rikanda91', getHash('xBkRYjXw')); 
-insert into Kurjery values(800000760, 2, 'MORRIS', 'Layman', 591687187 , 'MORRIS.Layman@gmail.com ', 39, true); 
-insert into Loginy_hasla values(-2 ,'Robertino13', getHash('dLUikWPR')); 
-insert into Kurjery values(800000761, 2, 'TURNER', 'Lenz', 428068344 , 'TURNER.Lenz@gmail.com ', 25, true); 
-insert into Loginy_hasla values(-2 ,'Bob76', getHash('OFPkAYxY')); 
-insert into Kurjery values(800000762, 2, 'CONTRERAS', 'Landon', 084898899 , 'CONTRERAS.Landon@gmail.com ', 61, true); 
-insert into Loginy_hasla values(-2 ,'kill69', getHash('XzVkLx0e')); 
-insert into Kurjery values(800000763, 2, 'BRADLEY', 'Larue', 912509010 , 'BRADLEY.Larue@gmail.com ', 52, true); 
-insert into Loginy_hasla values(-2 ,'angel20', getHash('m0cQcXUm')); 
-insert into Kurjery values(800000764, 1, 'NELSON', 'Lockett', 967547199 , 'NELSON.Lockett@gmail.com ', 2, true); 
-insert into Loginy_hasla values(-2 ,'koruna11223344', getHash('jVX0dcWP')); 
-insert into Kurjery values(800000765, 1, 'KENNEDY', 'Lohr', 066683777 , 'KENNEDY.Lohr@gmail.com ', 78, true); 
-insert into Loginy_hasla values(-2 ,'xploit84', getHash('XZljVPmf')); 
-insert into Kurjery values(800000766, 4, 'PEREZ', 'Larkins', 095529151 , 'PEREZ.Larkins@gmail.com ', 2, true); 
-insert into Loginy_hasla values(-2 ,'vitatorg24', getHash('CtUU5UhY')); 
-insert into Kurjery values(800000767, 2, 'PHILLIPS', 'Lehr', 706743741 , 'PHILLIPS.Lehr@gmail.com ', 64, true); 
-insert into Loginy_hasla values(-2 ,'flash69', getHash('QltchaoI')); 
-insert into Kurjery values(800000768, 4, 'THOMAS', 'Lafleur', 402391845 , 'THOMAS.Lafleur@gmail.com ', 72, true); 
-insert into Loginy_hasla values(-2 ,'patti59', getHash('m9hmcR9e')); 
-insert into Kurjery values(800000769, 4, 'BAILEY', 'Leffler', 700243191 , 'BAILEY.Leffler@gmail.com ', 73, true); 
-insert into Loginy_hasla values(-2 ,'super11', getHash('DGZmgB0E')); 
-insert into Kurjery values(800000770, 2, 'MILLS', 'Leroy', 890056013 , 'MILLS.Leroy@gmail.com ', 64, true); 
-insert into Loginy_hasla values(-2 ,'1000871636', getHash('LtKd3W15')); 
-insert into Kurjery values(800000771, 2, 'MORALES', 'Libby', 458106791 , 'MORALES.Libby@gmail.com ', 28, true); 
-insert into Loginy_hasla values(-2 ,'Vampir31', getHash('hP7gtWsj')); 
-insert into Kurjery values(800000772, 1, 'GARZA', 'Loveless', 961174205 , 'GARZA.Loveless@gmail.com ', 27, true); 
-insert into Loginy_hasla values(-2 ,'setcher10', getHash('mZTfQQiX')); 
-insert into Kurjery values(800000773, 4, 'RIVERA', 'Lovelace', 600337004 , 'RIVERA.Lovelace@gmail.com ', 58, true); 
-insert into Loginy_hasla values(-2 ,'laky26', getHash('pSeXTREF')); 
-insert into Kurjery values(800000774, 1, 'HERNANDEZ', 'Laporte', 369848206 , 'HERNANDEZ.Laporte@gmail.com ', 81, true); 
-insert into Loginy_hasla values(-2 ,'comando51', getHash('TPBKtij9')); 
-insert into Kurjery values(800000775, 1, 'MENDEZ', 'Lash', 591999200 , 'MENDEZ.Lash@gmail.com ', 92, true); 
-insert into Loginy_hasla values(-2 ,'ho4u41', getHash('knXbSGjY')); 
-insert into Kurjery values(800000776, 3, 'VARGAS', 'Lincoln', 524680218 , 'VARGAS.Lincoln@gmail.com ', 12, true); 
-insert into Loginy_hasla values(-2 ,'SuperTone45', getHash('bwZHuvFd')); 
-insert into Kurjery values(800000777, 3, 'ROGERS', 'Lemley', 861290272 , 'ROGERS.Lemley@gmail.com ', 16, true); 
-insert into Loginy_hasla values(-2 ,'yarnik59', getHash('lIac8QKe')); 
-insert into Kurjery values(800000778, 4, 'HAYES', 'Lupo', 369726271 , 'HAYES.Lupo@gmail.com ', 14, true); 
-insert into Loginy_hasla values(-2 ,'Sandsstorm65', getHash('VosmQBS0')); 
-insert into Kurjery values(800000779, 1, 'JORDAN', 'Lindquist', 837988006 , 'JORDAN.Lindquist@gmail.com ', 69, true); 
-insert into Loginy_hasla values(-2 ,'ho4u82', getHash('RXZfUmQX')); 
-insert into Kurjery values(800000780, 2, 'CHEN', 'Leigh', 783149261 , 'CHEN.Leigh@gmail.com ', 90, true); 
-insert into Loginy_hasla values(-2 ,'must34', getHash('eWAzQcaW')); 
-insert into Kurjery values(800000781, 2, 'BENNETT', 'Larsen', 226105195 , 'BENNETT.Larsen@gmail.com ', 55, true); 
-insert into Loginy_hasla values(-2 ,'stalker83', getHash('djE9kkiR')); 
-insert into Kurjery values(800000782, 3, 'RILEY', 'Lowman', 610679850 , 'RILEY.Lowman@gmail.com ', 43, true); 
-insert into Loginy_hasla values(-2 ,'lonely89', getHash('PsXIkW5h')); 
-insert into Kurjery values(800000783, 3, 'WAGNER', 'Lewis', 911351668 , 'WAGNER.Lewis@gmail.com ', 22, true); 
-insert into Loginy_hasla values(-2 ,'snake37', getHash('aEXPdQQa')); 
-insert into Kurjery values(800000784, 1, 'HOFFMAN', 'Leos', 743942599 , 'HOFFMAN.Leos@gmail.com ', 32, true); 
-insert into Loginy_hasla values(-2 ,'vitatorg98', getHash('IS6Tbz4d')); 
-insert into Kurjery values(800000785, 2, 'HUDSON', 'Lang', 751071275 , 'HUDSON.Lang@gmail.com ', 70, true); 
-insert into Loginy_hasla values(-2 ,'Libra46', getHash('mKka8VXV')); 
-insert into Kurjery values(800000786, 4, 'ROSE', 'Lundy', 149550235 , 'ROSE.Lundy@gmail.com ', 15, true); 
-insert into Loginy_hasla values(-2 ,'Klam62', getHash('whDXX9jb')); 
-insert into Kurjery values(800000787, 2, 'PARKER', 'Lazaro', 490147039 , 'PARKER.Lazaro@gmail.com ', 45, true); 
-insert into Loginy_hasla values(-2 ,'Jbice57', getHash('pgLRRWMt')); 
-insert into Kurjery values(800000788, 2, 'WALKER', 'Lieberman', 537857876 , 'WALKER.Lieberman@gmail.com ', 4, true); 
-insert into Loginy_hasla values(-2 ,'Malcom52', getHash('1QV7gdFc')); 
-insert into Kurjery values(800000789, 2, 'HENRY', 'Lewin', 167769797 , 'HENRY.Lewin@gmail.com ', 90, true); 
-insert into Loginy_hasla values(-2 ,'abidos34', getHash('SjfWS2Ss')); 
-insert into Kurjery values(800000790, 2, 'STONE', 'Lilley', 151172103 , 'STONE.Lilley@gmail.com ', 24, true); 
-insert into Loginy_hasla values(-2 ,'death1', getHash('d7Je7w5B')); 
-insert into Kurjery values(800000791, 4, 'KELLY', 'Larson', 795845178 , 'KELLY.Larson@gmail.com ', 81, true); 
-insert into Loginy_hasla values(-2 ,'devil96', getHash('fTmOdMkm')); 
-insert into Kurjery values(800000792, 4, 'LAWRENCE', 'Link', 913714635 , 'LAWRENCE.Link@gmail.com ', 77, true); 
-insert into Loginy_hasla values(-2 ,'808013', getHash('vXKcSPOb')); 
-insert into Kurjery values(800000793, 1, 'LEE', 'Livingston', 945280769 , 'LEE.Livingston@gmail.com ', 2, true); 
-insert into Loginy_hasla values(-2 ,'pain68', getHash('YjujuUQu')); 
-insert into Kurjery values(800000794, 3, 'CUNNINGHAM', 'Lohr', 394463308 , 'CUNNINGHAM.Lohr@gmail.com ', 28, true); 
-insert into Loginy_hasla values(-2 ,'Ivanov39', getHash('ZlRMZ8Wf')); 
-insert into Kurjery values(800000795, 1, 'ARMSTRONG', 'Lees', 485869407 , 'ARMSTRONG.Lees@gmail.com ', 94, true); 
-insert into Loginy_hasla values(-2 ,'John68', getHash('lIWRwhfP')); 
-insert into Kurjery values(800000796, 2, 'WAGNER', 'Lovell', 109300006 , 'WAGNER.Lovell@gmail.com ', 67, true); 
-insert into Loginy_hasla values(-2 ,'motocross41', getHash('MfuT3mh4')); 
-insert into Kurjery values(800000797, 4, 'ORTEGA', 'Lavallee', 971443856 , 'ORTEGA.Lavallee@gmail.com ', 56, true); 
-insert into Loginy_hasla values(-2 ,'jony59', getHash('NkJGdBQH')); 
-insert into Kurjery values(800000798, 1, 'HUNTER', 'Lenhart', 102930740 , 'HUNTER.Lenhart@gmail.com ', 87, true); 
-insert into Loginy_hasla values(-2 ,'angel16', getHash('QkYfZTZX')); 
-insert into Kurjery values(800000799, 4, 'PERKINS', 'Lombard', 371742786 , 'PERKINS.Lombard@gmail.com ', 13, true); 
-
+insert into Loginy_hasla values (-1,  'linia27', getHash('NbdlGCVj')) 
+,(-1,  'people29', getHash('mVecHVR5')) 
+,(-1,  'angel58', getHash('zMQXh9zd')) 
+,(-1,  'fhotel32', getHash('ZYVweGel')) 
+,(-1,  '1000871623', getHash('x4gZWbYI')) 
+,(-1,  'thefish13', getHash('XZDwlb40')) 
+,(-1,  'rock27', getHash('QoliCaxs')) 
+,(-1,  'agrorynok58', getHash('gpSZZbVW')) 
+,(-1,  'black32', getHash('cQekjVoR')) 
+,(-1,  'turrus46', getHash('PjltVXgT')) 
+,(-1,  'BurnPro49', getHash('XHGiaTzT')) 
+,(-1,  'master96', getHash('lHcm7oSh')) 
+,(-1,  'John76', getHash('WWZP4VVB')) 
+,(-1,  'nport72', getHash('lWVxjfmm')) 
+,(-1,  'webmaster25', getHash('sWrRNmfw')) 
+,(-1,  'roman58', getHash('de1cll4l')) 
+,(-1,  'rikanda78', getHash('clk6ZrNE')) 
+,(-1,  'jusy64', getHash('scWMZdVa')) 
+,(-1,  'lost57', getHash('fli5R2U8')) 
+,(-1,  'flash31', getHash('CD7V2m8b')) 
+,(-1,  'aiko22', getHash('RkAXUUZW')) 
+,(-1,  'goblin68', getHash('g3dPlwNZ')) 
+,(-1,  'km67', getHash('VkgOSObb')) 
+,(-1,  'Ivanov2', getHash('S8ZVfeQZ')) 
+,(-1,  'wolf98', getHash('YKBmPH89')) 
+,(-1,  'Anonyme62', getHash('Y2AJShDZ')) 
+,(-1,  'me65', getHash('RxUI9Blf')) 
+,(-1,  'SuperTone71', getHash('bbWfgJ4X')) 
+,(-1,  'Alex95', getHash('WjgGLZoQ')) 
+,(-1,  'heart40', getHash('lRVjjMYX')) 
+,(-1,  'life81', getHash('cXRg2mlV')) 
+,(-1,  'xtro95', getHash('iVT5Vi0T')) 
+,(-1,  'Jbice19', getHash('TbQUSdhV')) 
+,(-1,  'klubni4ka45', getHash('ibEHh3mH')) 
+,(-1,  'miss47', getHash('a4emIijX')) 
+,(-1,  'denis58', getHash('QBglZXnZ')) 
+,(-1,  'kent77', getHash('mVEdZdbg')) 
+,(-1,  'dan72', getHash('oQQGxdlD')) 
+,(-1,  'victor99', getHash('SSgrWjVg')) 
+,(-1,  'wolf50', getHash('hQeieciX')) 
+,(-1,  'rusinborg87', getHash('JnVPVvSO')) 
+,(-1,  'happy15', getHash('jPdPUbWh')) 
+,(-1,  'ho4u11', getHash('lValaUSa')) 
+,(-1,  'dusha87', getHash('cYmYUOtb')) 
+,(-1,  'fhotel86', getHash('2ZcF7jPc')) 
+,(-1,  'alex6', getHash('fpKdblQr')) 
+,(-1,  'sergei93', getHash('HKeeEo7w')) 
+,(-1,  'good52', getHash('lZh2kkR7')) 
+,(-1,  'sonara52', getHash('HiODEu38')) 
+,(-1,  'good3', getHash('Tigrbbmb')) 
+,(-1,  'andy9', getHash('jhcUSZYG')) 
+,(-1,  'Anonyme10', getHash('9t10RUgW')) 
+,(-1,  'sergej_a_g28', getHash('ZyXQ9WcT')) 
+,(-1,  'boss40', getHash('dmefhgTS')) 
+,(-1,  'user42', getHash('jiUuECEn')) 
+,(-1,  'lonely99', getHash('VsJUpiiW')) 
+,(-1,  'heart91', getHash('VAP4elvR')) 
+,(-1,  'andby71', getHash('tBtShIpW')) 
+,(-1,  'Chervechok87', getHash('TCdkWlWQ')) 
+,(-1,  'jaguar18', getHash('ViUmZiBR')) 
+,(-1,  'Peter.Berghausen12', getHash('Ncx7dibX')) 
+,(-1,  'boss37', getHash('SmKfWeAc')) 
+,(-1,  'Sandsstorm9', getHash('NQ50P531')) 
+,(-1,  'maxroje87', getHash('JcLhYiaS')) 
+,(-1,  'master80', getHash('zSKcTKLp')) 
+,(-1,  'Vortelio20', getHash('zQ5ij4Qu')) 
+,(-1,  'uzumaki73', getHash('0qmzmiim')) 
+,(-1,  'love7', getHash('mfxcaUmm')) 
+,(-1,  'Progressor27', getHash('SpnEdLkW')) 
+,(-1,  'miss55', getHash('sZja5ZSh')) 
+,(-1,  'vip32', getHash('jldRVPYQ')) 
+,(-1,  'Vorona3491', getHash('SFjZfTiY')) 
+,(-1,  'kisa47', getHash('aaPb0b4N')) 
+,(-1,  'Alex96', getHash('VU6drUSf')) 
+,(-1,  'xploit46', getHash('wGkdV7Vw')) 
+,(-1,  'honey53', getHash('aEiOqbjR')) 
+,(-1,  'denis26', getHash('4XwXQRVf')) 
+,(-1,  'baby15', getHash('g3YVZgdd')) 
+,(-1,  'war55', getHash('deWhfRbg')) 
+,(-1,  'X-man79', getHash('9WGeBQed')) 
+,(-1,  'flash77', getHash('ylgH26hg')) 
+,(-1,  'people86', getHash('USj8mdXe')) 
+,(-1,  'people88', getHash('SSimQ9id')) 
+,(-1,  'Dan98', getHash('2W0Vb7YR')) 
+,(-1,  'koird61', getHash('2UgVFEpe')) 
+,(-1,  'Vampir52', getHash('PKUXmeX6')) 
+,(-1,  'snake68', getHash('m2dkgbN9')) 
+,(-1,  'bob27', getHash('Zllmeom9')) 
+,(-1,  'duty28', getHash('kL9UkCj4')) 
+,(-1,  'me96', getHash('hOgApdWl')) 
+,(-1,  'boss47', getHash('WsQQPpmS')) 
+,(-1,  'lost39', getHash('e1Wemfk0')) 
+,(-1,  'admin18', getHash('f7UgyVlv')) 
+,(-1,  'Albert84', getHash('ekTgbkl3')) 
+,(-1,  'John62', getHash('EhQLdwTY')) 
+,(-1,  'administrator66', getHash('ilaaUgfa')) 
+,(-1,  'war8', getHash('JKZaSVWB')) 
+,(-1,  'narayana60', getHash('jWmJUYaj')) 
+,(-1,  'spice2', getHash('bbpkgYdR')) 
+,(-1,  'airforlife74', getHash('51livkeR')) 
+;
+insert into Klienci values(1, 'SANCHEZ', 'Lander', 358315982 , 'SANCHEZ.Lander@gmail.com') 
+,(2, 'DAVIS', 'Layne', 319499400 , 'DAVIS.Layne@gmail.com') 
+,(3, 'PENA', 'Laster', 143692115 , 'PENA.Laster@gmail.com') 
+,(4, 'YOUNG', 'Leger', 997781544 , 'YOUNG.Leger@gmail.com') 
+,(5, 'PERRY', 'Leake', 990322150 , 'PERRY.Leake@gmail.com') 
+,(6, 'MEDINA', 'Leroy', 740063135 , 'MEDINA.Leroy@gmail.com') 
+,(7, 'BELL', 'Lehmann', 815173246 , 'BELL.Lehmann@gmail.com') 
+,(8, 'WARREN', 'Lujan', 032126389 , 'WARREN.Lujan@gmail.com') 
+,(9, 'LAWRENCE', 'Leung', 470606175 , 'LAWRENCE.Leung@gmail.com') 
+,(10, 'HERRERA', 'Lemaster', 924950851 , 'HERRERA.Lemaster@gmail.com') 
+,(11, 'KNIGHT', 'Ledford', 064772297 , 'KNIGHT.Ledford@gmail.com') 
+,(12, 'MALDONADO', 'Leonard', 942033947 , 'MALDONADO.Leonard@gmail.com') 
+,(13, 'SCOTT', 'Lightner', 795776203 , 'SCOTT.Lightner@gmail.com') 
+,(14, 'PALMER', 'Leighton', 859928721 , 'PALMER.Leighton@gmail.com') 
+,(15, 'VAZQUEZ', 'Loredo', 231667882 , 'VAZQUEZ.Loredo@gmail.com') 
+,(16, 'WOODS', 'Laird', 701093709 , 'WOODS.Laird@gmail.com') 
+,(17, 'HARPER', 'Lucio', 964542035 , 'HARPER.Lucio@gmail.com') 
+,(18, 'PENA', 'Littlefield', 728914019 , 'PENA.Littlefield@gmail.com') 
+,(19, 'NUNEZ', 'Luis', 389664050 , 'NUNEZ.Luis@gmail.com') 
+,(20, 'BURKE', 'Lavender', 458549792 , 'BURKE.Lavender@gmail.com') 
+,(21, 'RICHARDS', 'Lister', 637014389 , 'RICHARDS.Lister@gmail.com') 
+,(22, 'WAGNER', 'Lea', 494984082 , 'WAGNER.Lea@gmail.com') 
+,(23, 'MUNOZ', 'Lacey', 523056248 , 'MUNOZ.Lacey@gmail.com') 
+,(24, 'ROBINSON', 'Lessard', 904059285 , 'ROBINSON.Lessard@gmail.com') 
+,(25, 'HANSEN', 'Littlejohn', 737238814 , 'HANSEN.Littlejohn@gmail.com') 
+,(26, 'SNYDER', 'Lamm', 935431859 , 'SNYDER.Lamm@gmail.com') 
+,(27, 'DUNN', 'Lewis', 587647048 , 'DUNN.Lewis@gmail.com') 
+,(28, 'PORTER', 'Lemus', 383616179 , 'PORTER.Lemus@gmail.com') 
+,(29, 'YOUNG', 'Lemus', 622758303 , 'YOUNG.Lemus@gmail.com') 
+,(30, 'ANDERSON', 'Lapointe', 656736509 , 'ANDERSON.Lapointe@gmail.com') 
+,(31, 'SANTIAGO', 'Lavallee', 824851429 , 'SANTIAGO.Lavallee@gmail.com') 
+,(32, 'CHEN', 'Lazar', 950473066 , 'CHEN.Lazar@gmail.com') 
+,(33, 'GONZALES', 'Link', 618829663 , 'GONZALES.Link@gmail.com') 
+,(34, 'COX', 'Liao', 230703688 , 'COX.Liao@gmail.com') 
+,(35, 'ELLIOTT', 'Larson', 827309401 , 'ELLIOTT.Larson@gmail.com') 
+,(36, 'LAWRENCE', 'Lentz', 410613625 , 'LAWRENCE.Lentz@gmail.com') 
+,(37, 'WOODS', 'Lemmon', 006669313 , 'WOODS.Lemmon@gmail.com') 
+,(38, 'BENNETT', 'Lu', 637187451 , 'BENNETT.Lu@gmail.com') 
+,(39, 'NELSON', 'Lockett', 057410130 , 'NELSON.Lockett@gmail.com') 
+,(40, 'MARSHALL', 'Laplante', 260683043 , 'MARSHALL.Laplante@gmail.com') 
+,(41, 'CARPENTER', 'Lilley', 667371026 , 'CARPENTER.Lilley@gmail.com') 
+,(42, 'ROBERTSON', 'Le', 498044820 , 'ROBERTSON.Le@gmail.com') 
+,(43, 'GIBSON', 'Luis', 560319202 , 'GIBSON.Luis@gmail.com') 
+,(44, 'DUNN', 'Lemke', 204177950 , 'DUNN.Lemke@gmail.com') 
+,(45, 'HAWKINS', 'Luo', 730848242 , 'HAWKINS.Luo@gmail.com') 
+,(46, 'CRUZ', 'Lyon', 974942535 , 'CRUZ.Lyon@gmail.com') 
+,(47, 'DUNCAN', 'Lawrence', 770610655 , 'DUNCAN.Lawrence@gmail.com') 
+,(48, 'WRIGHT', 'Linville', 780634447 , 'WRIGHT.Linville@gmail.com') 
+,(49, 'WATKINS', 'Laws', 286961021 , 'WATKINS.Laws@gmail.com') 
+,(50, 'CRUZ', 'Lake', 504211946 , 'CRUZ.Lake@gmail.com') 
+,(51, 'ELLIOTT', 'Lindstrom', 478253873 , 'ELLIOTT.Lindstrom@gmail.com') 
+,(52, 'GUTIERREZ', 'Latta', 266171815 , 'GUTIERREZ.Latta@gmail.com') 
+,(53, 'WHITE', 'Leroy', 310787355 , 'WHITE.Leroy@gmail.com') 
+,(54, 'ELLIS', 'Lockard', 146948320 , 'ELLIS.Lockard@gmail.com') 
+,(55, 'TRAN', 'Law', 418762164 , 'TRAN.Law@gmail.com') 
+,(56, 'HUGHES', 'London', 611439145 , 'HUGHES.London@gmail.com') 
+,(57, 'VASQUEZ', 'Luther', 674963680 , 'VASQUEZ.Luther@gmail.com') 
+,(58, 'TORRES', 'Lorenzo', 887683751 , 'TORRES.Lorenzo@gmail.com') 
+,(59, 'BROWN', 'Lorenzo', 961369765 , 'BROWN.Lorenzo@gmail.com') 
+,(60, 'WATKINS', 'Lanier', 085697129 , 'WATKINS.Lanier@gmail.com') 
+,(61, 'GEORGE', 'Lightner', 331713885 , 'GEORGE.Lightner@gmail.com') 
+,(62, 'GRAHAM', 'Lindsey', 620550606 , 'GRAHAM.Lindsey@gmail.com') 
+,(63, 'RUSSELL', 'Lindsay', 357555915 , 'RUSSELL.Lindsay@gmail.com') 
+,(64, 'CUNNINGHAM', 'Lafferty', 687996869 , 'CUNNINGHAM.Lafferty@gmail.com') 
+,(65, 'REYNOLDS', 'Linder', 073660637 , 'REYNOLDS.Linder@gmail.com') 
+,(66, 'RAMIREZ', 'Lightner', 186138310 , 'RAMIREZ.Lightner@gmail.com') 
+,(67, 'FLORES', 'Luckett', 296415734 , 'FLORES.Luckett@gmail.com') 
+,(68, 'WALKER', 'Lemus', 824024538 , 'WALKER.Lemus@gmail.com') 
+,(69, 'PHILLIPS', 'Loucks', 985569319 , 'PHILLIPS.Loucks@gmail.com') 
+,(70, 'ALVAREZ', 'Lemons', 002989719 , 'ALVAREZ.Lemons@gmail.com') 
+,(71, 'MILLS', 'Lockett', 603350584 , 'MILLS.Lockett@gmail.com') 
+,(72, 'FOX', 'Lombard', 856448252 , 'FOX.Lombard@gmail.com') 
+,(73, 'FLORES', 'Langford', 149348407 , 'FLORES.Langford@gmail.com') 
+,(74, 'SULLIVAN', 'Lam', 584448439 , 'SULLIVAN.Lam@gmail.com') 
+,(75, 'NELSON', 'Langer', 580100543 , 'NELSON.Langer@gmail.com') 
+,(76, 'MUNOZ', 'Lo', 483694580 , 'MUNOZ.Lo@gmail.com') 
+,(77, 'MCDONALD', 'Lincoln', 214375091 , 'MCDONALD.Lincoln@gmail.com') 
+,(78, 'THOMPSON', 'Latta', 328293175 , 'THOMPSON.Latta@gmail.com') 
+,(79, 'ALEXANDER', 'Latimer', 159458819 , 'ALEXANDER.Latimer@gmail.com') 
+,(80, 'BAILEY', 'Lugo', 956556856 , 'BAILEY.Lugo@gmail.com') 
+,(81, 'WELLS', 'Lankford', 390508663 , 'WELLS.Lankford@gmail.com') 
+,(82, 'HAMILTON', 'Leigh', 623150956 , 'HAMILTON.Leigh@gmail.com') 
+,(83, 'YOUNG', 'Louie', 302918546 , 'YOUNG.Louie@gmail.com') 
+,(84, 'MARSHALL', 'Lemke', 823727040 , 'MARSHALL.Lemke@gmail.com') 
+,(85, 'STEVENS', 'Lanham', 512886390 , 'STEVENS.Lanham@gmail.com') 
+,(86, 'FOX', 'Lutz', 492136100 , 'FOX.Lutz@gmail.com') 
+,(87, 'SPENCER', 'Longoria', 724399364 , 'SPENCER.Longoria@gmail.com') 
+,(88, 'AGUILAR', 'Lindsey', 497347781 , 'AGUILAR.Lindsey@gmail.com') 
+,(89, 'BURNS', 'Lau', 439981890 , 'BURNS.Lau@gmail.com') 
+,(90, 'STEVENS', 'Loomis', 697918130 , 'STEVENS.Loomis@gmail.com') 
+,(91, 'CRUZ', 'Lachance', 443850214 , 'CRUZ.Lachance@gmail.com') 
+,(92, 'WEST', 'Laurent', 743509657 , 'WEST.Laurent@gmail.com') 
+,(93, 'JACKSON', 'Laroche', 596073830 , 'JACKSON.Laroche@gmail.com') 
+,(94, 'HAWKINS', 'Lincoln', 228178848 , 'HAWKINS.Lincoln@gmail.com') 
+,(95, 'SANCHEZ', 'Lizarraga', 194121031 , 'SANCHEZ.Lizarraga@gmail.com') 
+,(96, 'PERRY', 'Littlefield', 267823944 , 'PERRY.Littlefield@gmail.com') 
+,(97, 'RIOS', 'Lapointe', 893279042 , 'RIOS.Lapointe@gmail.com') 
+,(98, 'BUTLER', 'Linder', 343401242 , 'BUTLER.Linder@gmail.com') 
+,(99, 'ALLEN', 'Lofton', 800620504 , 'ALLEN.Lofton@gmail.com') 
+,(100, 'PHILLIPS', 'Lerma', 765035388 , 'PHILLIPS.Lerma@gmail.com') 
+;
+insert into Loginy_hasla values(-2 ,'alex77', getHash('lRcQbHnG'))
+,(-2 ,'stephan9', getHash('DaJfORXI'))
+,(-2 ,'pro10026', getHash('kXib1Rd0'))
+,(-2 ,'andy74', getHash('ZMSdPagZ'))
+,(-2 ,'box020380', getHash('VbrlqEHo'))
+,(-2 ,'abidos85', getHash('d7fZk5IV'))
+,(-2 ,'rolcom35', getHash('cS6FvCTY'))
+,(-2 ,'goblin74', getHash('oQfGkfRb'))
+,(-2 ,'administrator7', getHash('JkVmGWpo'))
+,(-2 ,'denis33', getHash('caYXQ7VQ'))
+,(-2 ,'nick78', getHash('fO5kXVlS'))
+,(-2 ,'flash96', getHash('WjhPjafy'))
+,(-2 ,'zero7', getHash('aXgQTOOg'))
+,(-2 ,'helpinv7', getHash('SVEt3OXd'))
+,(-2 ,'lost83', getHash('mZdfjQhw'))
+,(-2 ,'X-man88', getHash('tTVZVsKm'))
+,(-2 ,'Flatson43', getHash('MdVWCvhO'))
+,(-2 ,'helpinv88', getHash('heSflJaJ'))
+,(-2 ,'miss7', getHash('ckSGTfRW'))
+,(-2 ,'patti36', getHash('ZPP8iipK'))
+,(-2 ,'linia34', getHash('hlZUfcc4'))
+,(-2 ,'Malcom93', getHash('UdtcTjUR'))
+,(-2 ,'dan88', getHash('YRacaSPF'))
+,(-2 ,'administrator33', getHash('taPWiufq'))
+,(-2 ,'duty67', getHash('akM2ewcN'))
+,(-2 ,'pain15', getHash('wTmABPAo'))
+,(-2 ,'alex35', getHash('TdYpPiM4'))
+,(-2 ,'goblin77', getHash('coi3PRgk'))
+,(-2 ,'thefish91', getHash('nf6aZKkB'))
+,(-2 ,'kakuzu36', getHash('QDuVoV5q'))
+,(-2 ,'nick65', getHash('kDWmdHRG'))
+,(-2 ,'jaguar65', getHash('QfZaVUC3'))
+,(-2 ,'dan7', getHash('bQYZgbjj'))
+,(-2 ,'Albert25', getHash('gZxmpqJq'))
+,(-2 ,'victor13', getHash('RwXlUfk7'))
+,(-2 ,'Dan4', getHash('kKRpXkzj'))
+,(-2 ,'wUUb21', getHash('yKpalZjU'))
+,(-2 ,'imdi30', getHash('8ZRiJAiv'))
+,(-2 ,'king13', getHash('gWbUaQSS'))
+,(-2 ,'me54', getHash('djgdhhmd'))
+,(-2 ,'Maggy75', getHash('hQYRqPSf'))
+,(-2 ,'dusha90', getHash('VqXPWjXn'))
+,(-2 ,'name94', getHash('r4Zm68d0'))
+,(-2 ,'yourdream45', getHash('ikz1QlS6'))
+,(-2 ,'miller29', getHash('VVbaX5bS'))
+,(-2 ,'life77', getHash('ZgmTczam'))
+,(-2 ,'zvonok38', getHash('WhjGg2ZL'))
+,(-2 ,'dusha80', getHash('7blrQdAa'))
+,(-2 ,'Marly77', getHash('bWcfiBAa'))
+,(-2 ,'duty52', getHash('IuJdHvXl'))
+,(-2 ,'jony3', getHash('WYghfkEg'))
+,(-2 ,'naruto99', getHash('EXQTlLRg'))
+,(-2 ,'jony91', getHash('hdejXsLS'))
+,(-2 ,'miller96', getHash('cgGaUrag'))
+,(-2 ,'sergej_a_g58', getHash('XaVgQJVy'))
+,(-2 ,'andy15', getHash('mUyRGfGQ'))
+,(-2 ,'anime48', getHash('bX6iMyRU'))
+,(-2 ,'wtf53', getHash('iwknliPP'))
+,(-2 ,'SuperTone36', getHash('SaPWWYfR'))
+,(-2 ,'star69', getHash('HR1XHc4d'))
+,(-2 ,'pro10045', getHash('ocf7eKZW'))
+,(-2 ,'jusy49', getHash('eYhWqwCC'))
+,(-2 ,'mr15', getHash('rmWRzCcd'))
+,(-2 ,'jorik41', getHash('XkalNmUU'))
+,(-2 ,'druid53', getHash('XhgZeV8c'))
+,(-2 ,'klubni4ka4', getHash('OdKiHQCU'))
+,(-2 ,'kakuzu19', getHash('WsaQJReL'))
+,(-2 ,'na_tiv94', getHash('ZkWTmlRa'))
+,(-2 ,'stoagrand98', getHash('ZWf7dYHN'))
+,(-2 ,'admin9', getHash('rYXjMHkZ'))
+,(-2 ,'ksu71', getHash('2zXQkBwD'))
+,(-2 ,'region30', getHash('ef1QPSY4'))
+,(-2 ,'webmaster58', getHash('XU5Yyre1'))
+,(-2 ,'jony32', getHash('lShYNXbJ'))
+,(-2 ,'kill53', getHash('dTYzlSzh'))
+,(-2 ,'Progressor71', getHash('bnffLRkc'))
+,(-2 ,'naruto91', getHash('hc9hcaXg'))
+,(-2 ,'X-man24', getHash('f4W9sYok'))
+,(-2 ,'admin70', getHash('mFiPVlWd'))
+,(-2 ,'alex79', getHash('zcQBMbin'))
+,(-2 ,'rikanda17', getHash('DuAQhaLj'))
+,(-2 ,'john74', getHash('kkdaYahV'))
+,(-2 ,'xtro60', getHash('xfDXnZGw'))
+,(-2 ,'pro10032', getHash('o1QkPXbl'))
+,(-2 ,'best74', getHash('aU9SlmLg'))
+,(-2 ,'www26', getHash('jZXWZ9W7'))
+,(-2 ,'X-man37', getHash('h7ZgmaJR'))
+,(-2 ,'thefish57', getHash('hBchXaTB'))
+,(-2 ,'name29', getHash('tgoY0dYc'))
+,(-2 ,'administrator55', getHash('WInHhgW8'))
+,(-2 ,'narayana95', getHash('jgXcD56l'))
+,(-2 ,'wolf43', getHash('KjaagRgR'))
+,(-2 ,'jaguar24', getHash('UcedpGYR'))
+,(-2 ,'uzumaki63', getHash('PpXdxThQ'))
+,(-2 ,'X-man21', getHash('XlRflCQI'))
+,(-2 ,'kent40', getHash('eUglfUpE'))
+,(-2 ,'roman70', getHash('jeQgUYpl'))
+,(-2 ,'sweet34', getHash('wa7Pe6Em'))
+,(-2 ,'vitatorg98', getHash('cOXWMYXQ'))
+,(-2 ,'ksu66', getHash('QK58Wloh'))
+,(-2 ,'heart93', getHash('ggBdVeKe'))
+,(-2 ,'box020384', getHash('eYwiHOMu'))
+,(-2 ,'guf3', getHash('elVgdQyT'))
+,(-2 ,'SergejF56', getHash('msxUeSia'))
+,(-2 ,'gold35', getHash('eVdrSYdG'))
+,(-2 ,'jusy92', getHash('dtMIEvLW'))
+,(-2 ,'guf17', getHash('umubcVQS'))
+,(-2 ,'stephan3', getHash('CjisekWk'))
+,(-2 ,'andy92', getHash('lS1fiSoW'))
+,(-2 ,'trustme42', getHash('QTUBPJVq'))
+,(-2 ,'comando14', getHash('ZR1ttZR5'))
+,(-2 ,'trustme52', getHash('mRQlQlGY'))
+,(-2 ,'imdi17', getHash('mSUycQUS'))
+,(-2 ,'good25', getHash('HhljEdhY'))
+,(-2 ,'goblin36', getHash('U0U5cgcY'))
+,(-2 ,'star3', getHash('DiokdiFB'))
+,(-2 ,'Vell20', getHash('X68Yjkhm'))
+,(-2 ,'vitalyacher5', getHash('rigLXGZJ'))
+,(-2 ,'pain37', getHash('VmfMRG7m'))
+,(-2 ,'test87', getHash('iXlJvlZq'))
+,(-2 ,'must6', getHash('xuh3Tfe8'))
+,(-2 ,'sg66', getHash('fWmeqVQW'))
+,(-2 ,'Robertino85', getHash('lhkdCbBe'))
+,(-2 ,'Julia21', getHash('wRUlUazA'))
+,(-2 ,'admin25', getHash('lpVqicRi'))
+,(-2 ,'admin99', getHash('cNwrPld1'))
+,(-2 ,'judo38', getHash('lSs487h8'))
+,(-2 ,'vitalyacher10', getHash('FHmxlgfX'))
+,(-2 ,'Libra3', getHash('RLyVbhLj'))
+,(-2 ,'webmaster59', getHash('TMd7sgSX'))
+,(-2 ,'naruto29', getHash('ebbhYepj'))
+,(-2 ,'grey27', getHash('BCZbVxme'))
+,(-2 ,'marva72', getHash('ThbXKTiD'))
+,(-2 ,'Vorona3480', getHash('sk00hUhe'))
+,(-2 ,'tester87', getHash('dXWRnneN'))
+,(-2 ,'etalon_admin31', getHash('dZUpdQWo'))
+,(-2 ,'jony16', getHash('Qjotusll'))
+,(-2 ,'SergejF38', getHash('hiD6cmTy'))
+,(-2 ,'snake41', getHash('YYGJfqXh'))
+,(-2 ,'setcher55', getHash('ZgaUgjjB'))
+,(-2 ,'pupsik65', getHash('PXHwbvjo'))
+,(-2 ,'BurnPro75', getHash('JuPHwKWd'))
+,(-2 ,'agrorynok67', getHash('fjrRZ0fD'))
+,(-2 ,'kill21', getHash('WlTVPPtw'))
+,(-2 ,'sonara70', getHash('pdPbTKAO'))
+,(-2 ,'marva6', getHash('MT82Ydad'))
+,(-2 ,'Peter.Berghausen6', getHash('RlheRSVf'))
+,(-2 ,'man85', getHash('OB1vo6Af'))
+,(-2 ,'Progressor15', getHash('alaWENUi'))
+,(-2 ,'andy20', getHash('zQcAXVQa'))
+,(-2 ,'uzumaki77', getHash('IPfTXe7W'))
+,(-2 ,'helpinv3', getHash('ZdNaXdKh'))
+,(-2 ,'minzov54', getHash('NQUdjSUS'))
+,(-2 ,'setcher75', getHash('RTVlZvJQ'))
+,(-2 ,'sg0', getHash('VPc0BXs2'))
+,(-2 ,'supportpc54', getHash('XnY0pW2c'))
+,(-2 ,'vampir43', getHash('U9DyXNd8'))
+,(-2 ,'spider89', getHash('SZYVPjow'))
+,(-2 ,'user27', getHash('PlSaPRQw'))
+,(-2 ,'Chervechok37', getHash('b73bgCYE'))
+,(-2 ,'anime76', getHash('edlZfYdd'))
+,(-2 ,'angel91', getHash('VWblV4FW'))
+,(-2 ,'laky68', getHash('gQhiWZSQ'))
+,(-2 ,'Rush63', getHash('aQlEBkYP'))
+,(-2 ,'boss39', getHash('luJUZ05y'))
+,(-2 ,'SuperTone74', getHash('19rRPQ3i'))
+,(-2 ,'dan69', getHash('RjcKcBPg'))
+,(-2 ,'andy11', getHash('YYTgMe9k'))
+,(-2 ,'etalon_admin81', getHash('wSb1Xe0O'))
+,(-2 ,'na_tiv27', getHash('SZPVsVlT'))
+,(-2 ,'vitatorg33', getHash('QcisQrsX'))
+,(-2 ,'best36', getHash('4bVGE5tX'))
+,(-2 ,'Vell12', getHash('6RBpMezV'))
+,(-2 ,'goblin95', getHash('4Zme73jQ'))
+,(-2 ,'Ivanov44', getHash('XxgmlVaj'))
+,(-2 ,'bob84', getHash('EewoZYXm'))
+,(-2 ,'ksu28', getHash('Nuq4TGei'))
+,(-2 ,'angel99', getHash('ZhIYSVts'))
+,(-2 ,'support52', getHash('ovzeE2X0'))
+,(-2 ,'pupsik98', getHash('y54mm3lS'))
+,(-2 ,'stephan84', getHash('PmSyfiWa'))
+,(-2 ,'heart26', getHash('kU6YQSdc'))
+,(-2 ,'must48', getHash('d7mT9GVe'))
+,(-2 ,'abidos76', getHash('Cb9kCcgh'))
+,(-2 ,'Chervechok76', getHash('mjMlaRdV'))
+,(-2 ,'Malcom75', getHash('Q73PbVa9'))
+,(-2 ,'imdi44', getHash('1J5FHhOU'))
+,(-2 ,'lady0', getHash('JygJ8TXQ'))
+,(-2 ,'box020340', getHash('QiZdqYQc'))
+,(-2 ,'minherz72', getHash('dNdFkDbL'))
+,(-2 ,'root11', getHash('ZQmkafk3'))
+,(-2 ,'me87', getHash('TYh2jbeq'))
+,(-2 ,'john81', getHash('YHFsRqQ9'))
+,(-2 ,'John22', getHash('SfelXbVh'))
+,(-2 ,'maloy40', getHash('5TPCWuiV'))
+,(-2 ,'heart87', getHash('cxsjjYAl'))
+,(-2 ,'andy98', getHash('NjXehTHU'))
+,(-2 ,'lonely30', getHash('6RUbjlUj'))
+,(-2 ,'km57', getHash('8jmdjd6L'))
+,(-2 ,'koird66', getHash('PihejhsS'))
+,(-2 ,'killer92', getHash('2qmZDkla'))
+,(-2 ,'king77', getHash('hPbmdWUm'))
+,(-2 ,'boss98', getHash('P8ZoTiPR'))
+,(-2 ,'Vell47', getHash('YDawSHA8'))
+,(-2 ,'star12', getHash('f0ynkT27'))
+,(-2 ,'nick97', getHash('KTygBTxI'))
+,(-2 ,'man39', getHash('UAhwl3mW'))
+,(-2 ,'pain3', getHash('hBZsijZd'))
+,(-2 ,'dark92', getHash('SPJgZl18'))
+,(-2 ,'redstaffer0', getHash('fncl5che'))
+,(-2 ,'master31', getHash('jceCaYGa'))
+,(-2 ,'Robertino55', getHash('l1aQcjba'))
+,(-2 ,'devil91', getHash('cqkgHiTR'))
+,(-2 ,'jony72', getHash('kcHmXVeD'))
+,(-2 ,'pro10095', getHash('eiJclze9'))
+,(-2 ,'lady46', getHash('adjThQ88'))
+,(-2 ,'sexy93', getHash('LjP5WgnU'))
+,(-2 ,'Chervechok45', getHash('kzVIiHWs'))
+,(-2 ,'mr98', getHash('UZPfjiFG'))
+,(-2 ,'jony98', getHash('YAYf4it7'))
+,(-2 ,'Albert38', getHash('KdEhtbMU'))
+,(-2 ,'spice68', getHash('w7YfeRcR'))
+,(-2 ,'king3', getHash('icVhZMbm'))
+,(-2 ,'region62', getHash('cZQ9wZUX'))
+,(-2 ,'vitalyacher49', getHash('ZULmf1gU'))
+,(-2 ,'flash12', getHash('8Mgrrhzn'))
+,(-2 ,'zvonok37', getHash('TloEqQXq'))
+,(-2 ,'gamer21', getHash('YQocAeUg'))
+,(-2 ,'kakuzu13', getHash('bCaSiMYc'))
+,(-2 ,'denis6', getHash('YUThsClk'))
+,(-2 ,'Julia33', getHash('miXfhQdK'))
+,(-2 ,'region60', getHash('YYDvLlYb'))
+,(-2 ,'jony44', getHash('VXjkdp6V'))
+,(-2 ,'yarnik98', getHash('d7M6m5d2'))
+,(-2 ,'victor47', getHash('lW78lgXc'))
+,(-2 ,'dark25', getHash('eX8MNAYS'))
+,(-2 ,'sweet6', getHash('FIPSgubm'))
+,(-2 ,'sergei64', getHash('VXUcEPak'))
+,(-2 ,'zaika17', getHash('0ZVNjXiS'))
+,(-2 ,'zvonok76', getHash('mSmKGepk'))
+,(-2 ,'BurnPro97', getHash('kfQNXPQW'))
+,(-2 ,'SuperTone61', getHash('pReYVhqc'))
+,(-2 ,'airforlife20', getHash('WAXTXShU'))
+,(-2 ,'John1', getHash('dkGU7SuY'))
+,(-2 ,'neznakomka26', getHash('QeZhsCZW'))
+,(-2 ,'judo66', getHash('fef8pbIQ'))
+,(-2 ,'neznakomka63', getHash('PSUXQ3jl'))
+,(-2 ,'administrator69', getHash('nU2jaXp2'))
+,(-2 ,'region65', getHash('418Jjtmf'))
+,(-2 ,'vitalyacher25', getHash('BhQl3RFW'))
+,(-2 ,'Rush92', getHash('cdhlcliV'))
+,(-2 ,'ho4u64', getHash('2ddxdfsf'))
+,(-2 ,'judo17', getHash('5PYli4gm'))
+,(-2 ,'Elvis32', getHash('SZE1kcPh'))
+,(-2 ,'Bob2', getHash('hGkWbhC0'))
+,(-2 ,'klassik71', getHash('yPammHe3'))
+,(-2 ,'fhotel59', getHash('EXcUYlVq'))
+,(-2 ,'andy39', getHash('YgKbd6p5'))
+,(-2 ,'boss80', getHash('aeYc0xAv'))
+,(-2 ,'SergejF50', getHash('v9VkULjM'))
+,(-2 ,'king8', getHash('YkjYJXgg'))
+,(-2 ,'minherz42', getHash('iYiHfgQt'))
+,(-2 ,'stephan54', getHash('X0SgR3Yv'))
+,(-2 ,'stoagrand17', getHash('Zl0aPTaf'))
+,(-2 ,'miss68', getHash('fPQcjZeu'))
+,(-2 ,'SergejF68', getHash('eTYcaQbk'))
+,(-2 ,'spider91', getHash('mAjSevdN'))
+,(-2 ,'808025', getHash('PdHOGl3c'))
+,(-2 ,'spice62', getHash('QDgxMfKf'))
+,(-2 ,'snake38', getHash('TToVlV5m'))
+,(-2 ,'sonara95', getHash('2YhMeJhZ'))
+,(-2 ,'kisa91', getHash('TMsSC5c1'))
+,(-2 ,'wUUb82', getHash('lN4RTQTW'))
+,(-2 ,'imdi15', getHash('kmmgZFnc'))
+,(-2 ,'Chervechok8', getHash('bQEGxwfS'))
+,(-2 ,'sexy23', getHash('5wm7WcpS'))
+,(-2 ,'stephan6', getHash('hjRTNkWp'))
+,(-2 ,'lost70', getHash('5QJp3ogQ'))
+,(-2 ,'agrorynok37', getHash('jD7bhMWx'))
+,(-2 ,'maxroje52', getHash('JmfO1xUW'))
+,(-2 ,'company2', getHash('clX9gXTP'))
+,(-2 ,'BurnPro82', getHash('ZmYRlyTQ'))
+,(-2 ,'agrorynok69', getHash('UMyUPbaT'))
+,(-2 ,'region28', getHash('0pfknLRd'))
+,(-2 ,'weiss14', getHash('m8YDvgkR'))
+,(-2 ,'grey95', getHash('zZbVMXl2'))
+,(-2 ,'stalker54', getHash('cwSuwcQ7'))
+,(-2 ,'ho4u18', getHash('1GyXATlG'))
+,(-2 ,'nick26', getHash('jaTfMk8T'))
+,(-2 ,'www29', getHash('rlbRjP9Z'))
+,(-2 ,'no10', getHash('ebV9kawR'))
+,(-2 ,'linia76', getHash('i2kQcSZV'))
+,(-2 ,'narayana9', getHash('bScYlRbG'))
+,(-2 ,'jony28', getHash('ilegXTfa'))
+,(-2 ,'Gau53', getHash('ViPlcbRZ'))
+,(-2 ,'zaika92', getHash('fXTb8mcU'))
+,(-2 ,'devil50', getHash('oMRfZd7f'))
+,(-2 ,'goblin6', getHash('RaQNgRiS'))
+,(-2 ,'duty49', getHash('fT2mVSPk'))
+,(-2 ,'redstaffer60', getHash('flrVKcri'))
+,(-2 ,'Anonyme27', getHash('jGmxQS1Y'))
+,(-2 ,'etalon_admin0', getHash('WjXlXuR8'))
+,(-2 ,'name59', getHash('dWTYqY5Q'))
+,(-2 ,'ho4u20', getHash('WuimKPTP'))
+,(-2 ,'setcher5', getHash('gbLJcPSI'))
+,(-2 ,'love77', getHash('lVTfB6RO'))
+,(-2 ,'Gau94', getHash('mihzLrdZ'))
+,(-2 ,'airforlife56', getHash('oSTRkhXy'))
+,(-2 ,'flash30', getHash('iPN3j4bY'))
+,(-2 ,'baby98', getHash('sMZDTUdZ'))
+,(-2 ,'guf67', getHash('ZcRaSRYP'))
+,(-2 ,'jony12', getHash('mdQlPfar'))
+,(-2 ,'minzov82', getHash('S17i4Qdf'))
+,(-2 ,'guf45', getHash('fdhhebjC'))
+,(-2 ,'xploit89', getHash('fbmXb4Jf'))
+,(-2 ,'Alex6', getHash('mRXjPjtr'))
+,(-2 ,'faraon57', getHash('IklZWbIl'))
+,(-2 ,'Albert47', getHash('kaTnfvXQ'))
+,(-2 ,'admin63', getHash('hgxQ869o'))
+,(-2 ,'imdi93', getHash('hKmRrnZu'))
+,(-2 ,'rap37', getHash('4NQfVjfW'))
+,(-2 ,'people67', getHash('V8nd8cQY'))
+,(-2 ,'goblin32', getHash('jdSrgEiW'))
+,(-2 ,'etalon_admin68', getHash('jm2lQUii'))
+,(-2 ,'jony82', getHash('1Xhb3qBj'))
+,(-2 ,'company26', getHash('10jSPZlm'))
+,(-2 ,'me85', getHash('3aIYZhRU'))
+,(-2 ,'stoagrand32', getHash('f3qjRTUi'))
+,(-2 ,'klassik69', getHash('UdlUTcXc'))
+,(-2 ,'klubni4ka18', getHash('ZaLXfFYY'))
+,(-2 ,'zloy24', getHash('4R7km9To'))
+,(-2 ,'rap95', getHash('X3e3z1gP'))
+,(-2 ,'best96', getHash('ZaiT6zTC'))
+,(-2 ,'region25', getHash('UVRbbp2k'))
+,(-2 ,'honey40', getHash('kZU6WmjH'))
+,(-2 ,'ira4', getHash('jTNPykLL'))
+,(-2 ,'spider55', getHash('eSKKAafR'))
+,(-2 ,'ho4u82', getHash('wTvDSfQY'))
+,(-2 ,'roman20', getHash('vVVif5j6'))
+,(-2 ,'lonely34', getHash('zTEwt78Y'))
+,(-2 ,'sexy43', getHash('ib7EYQKk'))
+,(-2 ,'fkleev41', getHash('eaXmYGRZ'))
+,(-2 ,'Anonyme19', getHash('TXXXUOZd'))
+,(-2 ,'vip15', getHash('gckqXSPR'))
+,(-2 ,'BurnPro30', getHash('aafkmeOP'))
+,(-2 ,'miss22', getHash('VmQRkkCR'))
+,(-2 ,'Peter.Berghausen34', getHash('RPQakUdh'))
+,(-2 ,'master43', getHash('Xjl2fD3l'))
+,(-2 ,'black62', getHash('BalWQdRs'))
+,(-2 ,'Rush84', getHash('gP7fcR1S'))
+,(-2 ,'linia67', getHash('2RXHlicC'))
+,(-2 ,'admin73', getHash('MgjTXxUQ'))
+,(-2 ,'zeus25', getHash('GZVbiTqd'))
+,(-2 ,'lost99', getHash('vmPZxUev'))
+,(-2 ,'Gau28', getHash('WX0mITzu'))
+,(-2 ,'etalon_admin22', getHash('BTmXlgG4'))
+,(-2 ,'zeus26', getHash('dbzgHf0h'))
+,(-2 ,'super48', getHash('qPdXdtVD'))
+,(-2 ,'dinis72', getHash('eQjTMP4b'))
+,(-2 ,'Dan21', getHash('PpglkeYg'))
+,(-2 ,'www64', getHash('3Q6bfk0X'))
+,(-2 ,'Libra84', getHash('aZTaf4PX'))
+,(-2 ,'girl94', getHash('TRb7ficR'))
+,(-2 ,'milaia5', getHash('uFbXeEUa'))
+,(-2 ,'Spider2', getHash('VWXfjeQm'))
+,(-2 ,'yourdream42', getHash('aRkgXdQc'))
+,(-2 ,'roman71', getHash('ecZVife0'))
+,(-2 ,'just86', getHash('mRRdl0wR'))
+,(-2 ,'Libra72', getHash('mijcUbem'))
+,(-2 ,'koird16', getHash('R5Qa4QPj'))
+,(-2 ,'wolf66', getHash('djfNfDZk'))
+,(-2 ,'Schnuddel0', getHash('Rukcksva'))
+,(-2 ,'black63', getHash('yuzYiYdS'))
+,(-2 ,'war34', getHash('MTrVLmkg'))
+,(-2 ,'company97', getHash('IfC3ZVUF'))
+,(-2 ,'good22', getHash('KqPN262g'))
+,(-2 ,'good87', getHash('44aYjidN'))
+,(-2 ,'redstaffer26', getHash('LlNa0fh1'))
+,(-2 ,'vitalyacher55', getHash('aPKgRc9Y'))
+,(-2 ,'zeus43', getHash('mQbcYDPF'))
+,(-2 ,'miller61', getHash('ZhYJBUlR'))
+,(-2 ,'kent58', getHash('axUmNkXc'))
+,(-2 ,'tester34', getHash('hXT6cePb'))
+,(-2 ,'Suzan3', getHash('a0oWcyW5'))
+,(-2 ,'duty98', getHash('k0iaTS5r'))
+,(-2 ,'judo40', getHash('URlgWhps'))
+,(-2 ,'Chervechok93', getHash('ihHZEl5c'))
+,(-2 ,'fkleev27', getHash('Zm40YQrp'))
+,(-2 ,'lost38', getHash('Z28nbbSd'))
+,(-2 ,'km41', getHash('XifgsoYW'))
+,(-2 ,'1000871650', getHash('Vmv4wkSW'))
+,(-2 ,'narayana87', getHash('eEYTYSKU'))
+,(-2 ,'SergejF74', getHash('Qd2SlQDE'))
+,(-2 ,'super0', getHash('SsjCPRS1'))
+,(-2 ,'king96', getHash('SOySXFUK'))
+,(-2 ,'denis0', getHash('q8ejzWaQ'))
+,(-2 ,'nport32', getHash('bjhZdP5m'))
+,(-2 ,'yourdream21', getHash('X3cdSe5W'))
+,(-2 ,'killer76', getHash('MiHZfWvG'))
+,(-2 ,'Peter.Berghausen44', getHash('3fAnSsvk'))
+,(-2 ,'root94', getHash('iidifivf'))
+,(-2 ,'boss83', getHash('hpkigmJl'))
+,(-2 ,'zaika88', getHash('9V6d6SUS'))
+,(-2 ,'lonely89', getHash('9MnQRuef'))
+,(-2 ,'Libra4', getHash('mVtcJj3x'))
+,(-2 ,'dark18', getHash('ATeY49Wi'))
+,(-2 ,'klubni4ka6', getHash('Zqcu5xgE'))
+,(-2 ,'man2', getHash('YhQvlKHe'))
+,(-2 ,'Jbice34', getHash('0Zh0fQRL'))
+,(-2 ,'dinis88', getHash('6xkcb9eC'))
+,(-2 ,'wtf32', getHash('ahjehjCZ'))
+,(-2 ,'vitalyacher50', getHash('WTvAXiha'))
+,(-2 ,'km46', getHash('5yd9ayGC'))
+,(-2 ,'Chervechok9', getHash('yEDZQb9e'))
+,(-2 ,'duty33', getHash('dmYlkiUg'))
+,(-2 ,'Schnuddel31', getHash('dX9eXg1L'))
+,(-2 ,'jony87', getHash('edeYXTga'))
+,(-2 ,'ira62', getHash('k5jFXgPd'))
+,(-2 ,'gold0', getHash('8mfXbbke'))
+,(-2 ,'Schnuddel9', getHash('VRfXnjdm'))
+,(-2 ,'Marly19', getHash('TvNtCVyZ'))
+,(-2 ,'thefish89', getHash('jCWelUaZ'))
+,(-2 ,'good77', getHash('boHcRtyi'))
+,(-2 ,'Ivanov13', getHash('XejJ5Hvw'))
+,(-2 ,'jony57', getHash('JvqKhQl2'))
+,(-2 ,'box020346', getHash('nfjkRQQS'))
+,(-2 ,'life86', getHash('eYJthjSd'))
+,(-2 ,'dusha53', getHash('Vhzkktnz'))
+,(-2 ,'death41', getHash('KSlbiaQS'))
+,(-2 ,'love36', getHash('amcgxJQb'))
+,(-2 ,'me84', getHash('0EIsVZkC'))
+,(-2 ,'nport19', getHash('V48dWgNN'))
+,(-2 ,'alex49', getHash('fkubPshi'))
+,(-2 ,'denis80', getHash('ehKlmAFT'))
+,(-2 ,'administrator36', getHash('QdkLct8Q'))
+,(-2 ,'druid56', getHash('Fbk7XeJY'))
+,(-2 ,'SuperTone67', getHash('WGQmPXcZ'))
+,(-2 ,'no1z92', getHash('hqiCaRSW'))
+,(-2 ,'ira25', getHash('ijmhgSW3'))
+,(-2 ,'dusha83', getHash('YHdkdHvx'))
+,(-2 ,'happy47', getHash('gU0iacoX'))
+,(-2 ,'fhotel97', getHash('kkRVBjfL'))
+,(-2 ,'user17', getHash('k3bcLeWh'))
+,(-2 ,'Spider46', getHash('ejVabZlj'))
+,(-2 ,'km60', getHash('LVk91iz0'))
+,(-2 ,'yourdream27', getHash('chIj7RbO'))
+,(-2 ,'SergejF47', getHash('QGTixPbT'))
+,(-2 ,'heart38', getHash('jzRadIY8'))
+,(-2 ,'mr38', getHash('EPjYYldj'))
+,(-2 ,'must74', getHash('zWPglTio'))
+,(-2 ,'turrus13', getHash('UiT0WYeX'))
+,(-2 ,'grey9', getHash('fNT5lxz6'))
+,(-2 ,'Alex32', getHash('8I2acwYm'))
+,(-2 ,'love59', getHash('fXfcYlW2'))
+,(-2 ,'xtro93', getHash('RUPwa7gl'))
+,(-2 ,'dusha30', getHash('hgj1vY1B'))
+,(-2 ,'miss48', getHash('hIahrzGh'))
+,(-2 ,'sergei17', getHash('VXBdlbdl'))
+,(-2 ,'SuperTone44', getHash('WYPWTel9'))
+,(-2 ,'www82', getHash('PX1TdWTz'))
+,(-2 ,'SuperTone79', getHash('JFfOXZXE'))
+,(-2 ,'zloy46', getHash('RTc8HmTX'))
+,(-2 ,'1000871677', getHash('e7fU3SUu'))
+,(-2 ,'xtro39', getHash('40kdKcYS'))
+,(-2 ,'etalon_admin20', getHash('buVSgAEB'))
+,(-2 ,'denis59', getHash('QWMPxThd'))
+,(-2 ,'xploit3', getHash('Vj2XHnVF'))
+,(-2 ,'andy72', getHash('cRdQQzhd'))
+,(-2 ,'rap84', getHash('VcaXXUfX'))
+,(-2 ,'angel61', getHash('bZi8YkdG'))
+,(-2 ,'Flatson91', getHash('hZI1pV4P'))
+,(-2 ,'Maggy66', getHash('uudPWmil'))
+,(-2 ,'Vizator46', getHash('ST5xZV2X'))
+,(-2 ,'na_tiv26', getHash('dci8dZUI'))
+,(-2 ,'king68', getHash('pnK9PXQN'))
+,(-2 ,'boss25', getHash('clyWeRXD'))
+,(-2 ,'setcher24', getHash('YQfbYS7k'))
+,(-2 ,'mr22', getHash('bVWeJDR2'))
+,(-2 ,'alex69', getHash('cxYQiEOj'))
+,(-2 ,'marva61', getHash('YddVmdRP'))
+,(-2 ,'no28', getHash('AZehgZhR'))
+,(-2 ,'Gau98', getHash('tmjkMsYV'))
+,(-2 ,'klassik5', getHash('hkUbkhJd'))
+,(-2 ,'must43', getHash('WXrQAUVb'))
+,(-2 ,'jusy81', getHash('GZaY7YjE'))
+,(-2 ,'uzumaki70', getHash('abeQkTqy'))
+,(-2 ,'jusy87', getHash('ThgwbfgX'))
+,(-2 ,'Progressor35', getHash('kjViRaSz'))
+,(-2 ,'kissme58', getHash('FYWUYhCS'))
+,(-2 ,'stalker74', getHash('crW1WkTd'))
+,(-2 ,'rock95', getHash('d7cPYXbY'))
+,(-2 ,'john59', getHash('YT3Bimax'))
+,(-2 ,'aiko58', getHash('iIMAludg'))
+,(-2 ,'john76', getHash('aPLfbmTp'))
+,(-2 ,'victor88', getHash('QpdLW4GB'))
+,(-2 ,'narayana41', getHash('NaSXH5Hd'))
+,(-2 ,'patti20', getHash('naiYsfo3'))
+,(-2 ,'naruto74', getHash('lVoz1ksk'))
+,(-2 ,'Anonyme72', getHash('gech8bQi'))
+,(-2 ,'poster88', getHash('jCf1Da2c'))
+,(-2 ,'Bob65', getHash('ehUVORdp'))
+,(-2 ,'ksu22', getHash('mzjbRCnR'))
+,(-2 ,'admin20', getHash('GYZPugST'))
+,(-2 ,'Progressor47', getHash('52kcdedX'))
+,(-2 ,'na_tiv85', getHash('HxJujgvj'))
+,(-2 ,'minherz87', getHash('aXclaixg'))
+,(-2 ,'Flatson10', getHash('XZUi8YlQ'))
+,(-2 ,'lost60', getHash('fV4RB0PL'))
+,(-2 ,'X-man81', getHash('iSfhm9QB'))
+,(-2 ,'weiss58', getHash('g6hdHzyL'))
+,(-2 ,'good4', getHash('WidK5Iga'))
+,(-2 ,'etalon_admin57', getHash('SmdkdS3G'))
+,(-2 ,'me75', getHash('aeeFT5fR'))
+,(-2 ,'vitalyacher75', getHash('USSlZblU'))
+,(-2 ,'seo1', getHash('FRSvhTZp'))
+,(-2 ,'andy57', getHash('ecuw5dYc'))
+,(-2 ,'john37', getHash('zE0PHPkj'))
+,(-2 ,'john51', getHash('fhyUYB0a'))
+,(-2 ,'Vell21', getHash('efDOowyh'))
+,(-2 ,'heart43', getHash('aict7cZQ'))
+,(-2 ,'zaika86', getHash('XmMTcMyj'))
+,(-2 ,'wtf35', getHash('ViYXjYiO'))
+,(-2 ,'happy93', getHash('m8qda5Ou'))
+,(-2 ,'kisa2', getHash('YzBJVTtj'))
+,(-2 ,'vip37', getHash('bxyRgIbk'))
+,(-2 ,'user30', getHash('ZkdRul3J'))
+,(-2 ,'kissme98', getHash('cxlkKgcv'))
+,(-2 ,'neznakomka66', getHash('wSLmrPac'))
+,(-2 ,'alex90', getHash('lmNpfUn9'))
+,(-2 ,'km7', getHash('gEUkBcTx'))
+,(-2 ,'girl92', getHash('c8B6ZwUk'))
+,(-2 ,'minherz2', getHash('QUn1yUiP'))
+,(-2 ,'andby94', getHash('hSSDT8eQ'))
+,(-2 ,'Chervechok94', getHash('lHmhX6jM'))
+,(-2 ,'name14', getHash('pKOUXDM9'))
+,(-2 ,'Vampir83', getHash('5eSjmTXd'))
+,(-2 ,'good14', getHash('lehlxUYQ'))
+,(-2 ,'admin19', getHash('rg5rvh1a'))
+,(-2 ,'Anonyme40', getHash('ZCTlqxgj'))
+,(-2 ,'www86', getHash('U3lOWaXv'))
+,(-2 ,'Julia29', getHash('BY5hooUP'))
+,(-2 ,'kakuzu46', getHash('aZoaQWhY'))
+,(-2 ,'region54', getHash('ZImEUgMX'))
+,(-2 ,'milaia38', getHash('fphFflaU'))
+,(-2 ,'patti98', getHash('ayyeiacI'))
+,(-2 ,'kisa85', getHash('jmx8hgwU'))
+,(-2 ,'comando27', getHash('ycdWjOWr'))
+,(-2 ,'vitalyacher44', getHash('CRmxjlRH'))
+,(-2 ,'Maggy82', getHash('P8XUomVr'))
+,(-2 ,'kakuzu66', getHash('ccwFQ2mj'))
+,(-2 ,'milaia55', getHash('E4chNgZP'))
+,(-2 ,'zerg88', getHash('yfPUvQld'))
+,(-2 ,'Ivanov94', getHash('IZ8PaVon'))
+,(-2 ,'death89', getHash('gGp25x9f'))
+,(-2 ,'heart17', getHash('QPm6hKjV'))
+,(-2 ,'jusy78', getHash('UYFXWald'))
+,(-2 ,'Vorona3433', getHash('vWPjh2Vv'))
+,(-2 ,'war38', getHash('HmRxQHNP'))
+,(-2 ,'Peter.Berghausen58', getHash('lPbb5l6Q'))
+,(-2 ,'hero68', getHash('O4aVllsK'))
+,(-2 ,'Kontek69', getHash('JDi7cwyA'))
+,(-2 ,'Flatson78', getHash('dreVGagV'))
+,(-2 ,'Flatson87', getHash('YZSlxuQX'))
+,(-2 ,'Klam85', getHash('YhZVgHcX'))
+,(-2 ,'kisa57', getHash('7ccVWYXk'))
+,(-2 ,'na_tiv60', getHash('hkbad1Na'))
+,(-2 ,'andby37', getHash('HlAdSeRd'))
+,(-2 ,'koruna11223364', getHash('mBydVQbh'))
+,(-2 ,'X-man42', getHash('mIJmaVCk'))
+,(-2 ,'stalker98', getHash('EiChMTLr'))
+,(-2 ,'anime32', getHash('hblgSicY'))
+,(-2 ,'no1z34', getHash('NVZIWBKA'))
+,(-2 ,'laky13', getHash('JSnQ2Ois'))
+,(-2 ,'sweet18', getHash('LhybmVyH'))
+,(-2 ,'webmaster66', getHash('mVmRvLRe'))
+,(-2 ,'andby28', getHash('ildbWZ5f'))
+,(-2 ,'milaia86', getHash('UYQcObJO'))
+,(-2 ,'duty97', getHash('Z6OYA8bi'))
+,(-2 ,'kent93', getHash('ViaZnZwY'))
+,(-2 ,'ho4u40', getHash('FbFgdOCD'))
+,(-2 ,'poster42', getHash('cPjidOhj'))
+,(-2 ,'comando18', getHash('sZOTZAAQ'))
+,(-2 ,'duty56', getHash('PwyVAXP0'))
+,(-2 ,'1000871657', getHash('ZknobQcO'))
+,(-2 ,'heart27', getHash('OXwcmMUB'))
+,(-2 ,'Vell6', getHash('Q6a8lThW'))
+,(-2 ,'region39', getHash('aZVSISiR'))
+,(-2 ,'zero13', getHash('WZUS2gW5'))
+,(-2 ,'rusinborg77', getHash('ajROp5gf'))
+,(-2 ,'808082', getHash('Whm5qmIS'))
+,(-2 ,'no1z51', getHash('gTWdV5BQ'))
+,(-2 ,'boss81', getHash('mccVYrwi'))
+,(-2 ,'naruto6', getHash('RbaS47jg'))
+,(-2 ,'Maggy98', getHash('a2hjPQiG'))
+,(-2 ,'boss13', getHash('eSbTaWX7'))
+,(-2 ,'supportpc39', getHash('emeeibQO'))
+,(-2 ,'love4', getHash('RQHfvhAZ'))
+,(-2 ,'heart21', getHash('QiYWgdQm'))
+,(-2 ,'gamer38', getHash('cnCQZjQv'))
+,(-2 ,'box020342', getHash('elByLi8r'))
+,(-2 ,'stalker53', getHash('iTks1APJ'))
+,(-2 ,'root28', getHash('m1C1zXDS'))
+,(-2 ,'sexy6', getHash('YDkCgVdV'))
+,(-2 ,'gamer89', getHash('ROjikaZd'))
+,(-2 ,'duty21', getHash('mXTogaBa'))
+,(-2 ,'guf20', getHash('hcTfPgbo'))
+,(-2 ,'Suzan82', getHash('QijI7dPj'))
+,(-2 ,'Vampir28', getHash('RSjZgKiX'))
+,(-2 ,'people45', getHash('ZXgWZ8ji'))
+,(-2 ,'life61', getHash('ztUacUhh'))
+,(-2 ,'ira53', getHash('WV1TZYj0'))
+,(-2 ,'sg33', getHash('ocZPuMU1'))
+,(-2 ,'gamer35', getHash('leaWCdQS'))
+,(-2 ,'girl26', getHash('w0bapVL9'))
+,(-2 ,'SergejF11', getHash('cShQ2XSx'))
+,(-2 ,'sexy80', getHash('U2VRlQmK'))
+,(-2 ,'ice10', getHash('SbtRfkXY'))
+,(-2 ,'black19', getHash('RPfPkbUG'))
+,(-2 ,'bob71', getHash('b7mdAZTf'))
+,(-2 ,'john47', getHash('1tbZhSLU'))
+,(-2 ,'dusha21', getHash('kLgQPVU3'))
+,(-2 ,'xploit52', getHash('NKBGPeUM'))
+,(-2 ,'box020357', getHash('fiWsZS6k'))
+,(-2 ,'alexander26', getHash('ZDNazW76'))
+,(-2 ,'no84', getHash('PijwUQhq'))
+,(-2 ,'sg39', getHash('egMXR3GP'))
+,(-2 ,'stephan80', getHash('mhtYlUuY'))
+,(-2 ,'anime4', getHash('AQcwYULN'))
+,(-2 ,'Elvis68', getHash('mdBRvyRa'))
+,(-2 ,'guf8', getHash('fZVgJbCY'))
+,(-2 ,'Marly66', getHash('nbTmPLUB'))
+,(-2 ,'judo59', getHash('zXTcFIvO'))
+,(-2 ,'name43', getHash('ZqZPXeP5'))
+,(-2 ,'angel64', getHash('FTNsTQVM'))
+,(-2 ,'me17', getHash('VqWPToba'))
+,(-2 ,'master30', getHash('SkbYJAYb'))
+,(-2 ,'fkleev65', getHash('KUYdTfTU'))
+,(-2 ,'anime65', getHash('VkSUlGgP'))
+,(-2 ,'Klam0', getHash('PrVaiAhY'))
+,(-2 ,'redstaffer12', getHash('cahSWWQW'))
+,(-2 ,'weiss66', getHash('NlPhLUQ4'))
+,(-2 ,'guf58', getHash('RvWlc6Yg'))
+,(-2 ,'setcher27', getHash('upV01S8W'))
+,(-2 ,'Sandsstorm69', getHash('mkWP8iyg'))
+,(-2 ,'Gau9', getHash('gUTUa4gN'))
+,(-2 ,'dan36', getHash('lRWTQkj9'))
+,(-2 ,'black99', getHash('ad9lUWc7'))
+,(-2 ,'ira19', getHash('NeGmeDhs'))
+,(-2 ,'kent86', getHash('aQ3h1XmQ'))
+,(-2 ,'user11', getHash('irCW1MWR'))
+,(-2 ,'klassik95', getHash('X6Zilmjs'))
+,(-2 ,'rolcom0', getHash('PeSmTMc2'))
+,(-2 ,'good63', getHash('WlTZdtPJ'))
+,(-2 ,'wtf97', getHash('AVZiSNkn'))
+,(-2 ,'Maggy10', getHash('RL88Risf'))
+,(-2 ,'goblin43', getHash('EXZOugmS'))
+,(-2 ,'naruto22', getHash('YZXSbaUN'))
+,(-2 ,'thefish11', getHash('eghdiZ6u'))
+,(-2 ,'gamer25', getHash('lv4YCmUD'))
+,(-2 ,'maxroje36', getHash('a4wmZfSO'))
+,(-2 ,'name6', getHash('h42XP0WG'))
+,(-2 ,'klubni4ka93', getHash('BVUTkgjY'))
+,(-2 ,'death32', getHash('RcRSOdiX'))
+,(-2 ,'koird67', getHash('ZgZqkeRi'))
+,(-2 ,'baby26', getHash('UnhrduHc'))
+,(-2 ,'klassik97', getHash('SOhhepy2'))
+,(-2 ,'kakuzu69', getHash('ce6BdPd2'))
+,(-2 ,'naruto84', getHash('Y2WiX7Di'))
+,(-2 ,'star20', getHash('YNfTWOZm'))
+,(-2 ,'kissme84', getHash('h7ZBP8Ud'))
+,(-2 ,'aiko51', getHash('ZP6ig2wC'))
+,(-2 ,'flash23', getHash('UVkSeWnQ'))
+,(-2 ,'wtf88', getHash('fStTSOaQ'))
+,(-2 ,'wtf26', getHash('lsfCkRb0'))
+,(-2 ,'Suzan84', getHash('y8NdnRjg'))
+,(-2 ,'angel80', getHash('gbXkdPlh'))
+,(-2 ,'rock21', getHash('fFazVzgS'))
+,(-2 ,'no32', getHash('hQyPyYVB'))
+,(-2 ,'Vorona3457', getHash('vmgksXea'))
+,(-2 ,'wtf40', getHash('yYkSohQj'))
+,(-2 ,'SergejF44', getHash('WQkmZeqH'))
+,(-2 ,'victor14', getHash('keaNslks'))
+,(-2 ,'love85', getHash('iFfMGV23'))
+,(-2 ,'Vell75', getHash('W9qcrUld'))
+,(-2 ,'rikanda70', getHash('J5aVdxPb'))
+,(-2 ,'neznakomka60', getHash('ZuKkaUeg'))
+,(-2 ,'vitatorg86', getHash('2XpiPdfE'))
+,(-2 ,'miss99', getHash('XLaPIGrG'))
+,(-2 ,'ho4u39', getHash('Wn4KjhR3'))
+,(-2 ,'victor27', getHash('HXOsWTa5'))
+,(-2 ,'lady38', getHash('9VgW0Xak'))
+,(-2 ,'trustme1', getHash('tfjtSYXh'))
+,(-2 ,'rock69', getHash('qUSRdhZL'))
+,(-2 ,'Vampir14', getHash('V9enuhgP'))
+,(-2 ,'808076', getHash('ji3jUWvV'))
+,(-2 ,'war94', getHash('SkiOYkXf'))
+,(-2 ,'naruto58', getHash('tmGNazMZ'))
+,(-2 ,'vip56', getHash('m4fm5pQR'))
+,(-2 ,'sg53', getHash('h5dcndSH'))
+,(-2 ,'wUUb8', getHash('XX68SR69'))
+,(-2 ,'km10', getHash('CYVR7XJd'))
+,(-2 ,'roman26', getHash('XwmXaTLl'))
+,(-2 ,'Malcom28', getHash('STUULil0'))
+,(-2 ,'region74', getHash('CWkpGcgD'))
+,(-2 ,'spice29', getHash('MXam6iZz'))
+,(-2 ,'roman66', getHash('rrL6Wmdf'))
+,(-2 ,'user40', getHash('gaQKlRIc'))
+,(-2 ,'Maggy92', getHash('3wYjbnS0'))
+,(-2 ,'john39', getHash('AudcTXmV'))
+,(-2 ,'Sandsstorm67', getHash('opkkWZhS'))
+,(-2 ,'Julia13', getHash('SycjQrTR'))
+,(-2 ,'region95', getHash('WiPiWVQZ'))
+,(-2 ,'marva38', getHash('faH3ZlcR'))
+,(-2 ,'weiss54', getHash('dWWZgfTP'))
+,(-2 ,'kissme82', getHash('QbQl0O1Q'))
+,(-2 ,'man24', getHash('VkH2bKRU'))
+,(-2 ,'www24', getHash('iRievGXW'))
+,(-2 ,'ksu79', getHash('W6iIVES9'))
+,(-2 ,'grey13', getHash('fmhgfhtj'))
+,(-2 ,'grey79', getHash('QySCOUnW'))
+,(-2 ,'minherz52', getHash('FVvYkOe5'))
+,(-2 ,'Vizator97', getHash('ZiYPWGVe'))
+,(-2 ,'victor9', getHash('Hbi8ijyP'))
+,(-2 ,'death53', getHash('kgmbe1gS'))
+,(-2 ,'kisa12', getHash('diaYmPQg'))
+,(-2 ,'Marly17', getHash('fahonk2f'))
+,(-2 ,'king0', getHash('VeVyacYe'))
+,(-2 ,'Vizator35', getHash('aTUloXMY'))
+,(-2 ,'turrus89', getHash('itXTeiQf'))
+,(-2 ,'stalker75', getHash('T1UBBJGR'))
+,(-2 ,'master77', getHash('UukZ1hk4'))
+,(-2 ,'trustme44', getHash('kinRhXqx'))
+,(-2 ,'spider6', getHash('dGYhqTif'))
+,(-2 ,'helpinv54', getHash('chbkbSfq'))
+,(-2 ,'fhotel37', getHash('Ubcgl50T'))
+,(-2 ,'lost20', getHash('LcVeXprZ'))
+,(-2 ,'vampir0', getHash('dmYMRRTf'))
+,(-2 ,'stalker10', getHash('1D6Bj60W'))
+,(-2 ,'xploit72', getHash('hwJ1RYXe'))
+,(-2 ,'kill28', getHash('TXZwheHi'))
+,(-2 ,'yarnik48', getHash('6YZ3m3Uf'))
+,(-2 ,'helpinv59', getHash('U9YUYaSj'))
+,(-2 ,'star10', getHash('ijjsgTaO'))
+,(-2 ,'fkleev29', getHash('dajhJbaP'))
+,(-2 ,'weiss95', getHash('hcUeaa3V'))
+,(-2 ,'good0', getHash('RSbWYSmd'))
+,(-2 ,'supportpc20', getHash('VfXhQeU7'))
+,(-2 ,'king12', getHash('d2ZbZmZd'))
+,(-2 ,'Jbice64', getHash('YvjeWcl3'))
+,(-2 ,'angel14', getHash('UQmdTlbd'))
+,(-2 ,'poster25', getHash('ehld1lkX'))
+,(-2 ,'lol45', getHash('XKrGaiZF'))
+,(-2 ,'angel66', getHash('MeikTDcG'))
+,(-2 ,'name20', getHash('eyWIyPZs'))
+,(-2 ,'sweet0', getHash('WTeyolcR'))
+,(-2 ,'kakuzu42', getHash('mSRPcbXh'))
+,(-2 ,'naruto95', getHash('mJlhidlZ'))
+,(-2 ,'setcher64', getHash('iZ8dbDg6'))
+,(-2 ,'girl74', getHash('eSrkykYS'))
+,(-2 ,'sergej_a_g19', getHash('kuRUQrlc'))
+,(-2 ,'Klam95', getHash('OajRY9RR'))
+,(-2 ,'angel21', getHash('ph1xdbwV'))
+,(-2 ,'anime29', getHash('MPaVotiT'))
+,(-2 ,'turrus60', getHash('2wVVeykA'))
+,(-2 ,'wUUb43', getHash('hVRT23TP'))
+,(-2 ,'Vorona3486', getHash('DcRXTmjH'))
+,(-2 ,'andby95', getHash('oUEZDCEZ'))
+,(-2 ,'judo82', getHash('OCAmIUzT'))
+,(-2 ,'gamer23', getHash('bcIkmLmG'))
+,(-2 ,'dark99', getHash('yiXnWiXQ'))
+,(-2 ,'Jbice58', getHash('UmjiXRfJ'))
+,(-2 ,'Ivanov91', getHash('acIbIWjk'))
+,(-2 ,'Peter.Berghausen96', getHash('zyZ96XTM'))
+,(-2 ,'Malcom43', getHash('icblZEUS'))
+,(-2 ,'happy96', getHash('e1R6L4hh'))
+,(-2 ,'seo26', getHash('DdhjbikU'))
+,(-2 ,'minherz47', getHash('lRczjj9T'))
+,(-2 ,'hero96', getHash('a3G1WQdf'))
+,(-2 ,'patti29', getHash('Z45T24UP'))
+,(-2 ,'user6', getHash('4TmnVZc5'))
+,(-2 ,'dan29', getHash('kOuacbIe'))
+,(-2 ,'poster53', getHash('7diTkpPj'))
+,(-2 ,'razor6', getHash('eaiemlgy'))
+,(-2 ,'jony68', getHash('Ck2kq5Uc'))
+,(-2 ,'marva0', getHash('ec9WyeXZ'))
+,(-2 ,'redstaffer28', getHash('8P64QSOS'))
+,(-2 ,'no1z1', getHash('jEfWGdKf'))
+,(-2 ,'trustme67', getHash('WcefSl7d'))
+,(-2 ,'people11', getHash('S2PgxhU6'))
+,(-2 ,'must20', getHash('cgbK1Q2V'))
+,(-2 ,'Vortelio46', getHash('ThEZKeUe'))
+,(-2 ,'region10', getHash('ZVuSixRm'))
+,(-2 ,'Ivanov59', getHash('kipVhYSm'))
+,(-2 ,'seo78', getHash('UY8SbUft'))
+,(-2 ,'fkleev26', getHash('2cZitj2W'))
+,(-2 ,'naruto50', getHash('aSeP2aXI'))
+,(-2 ,'jorik62', getHash('Pifbxef9'))
+,(-2 ,'people36', getHash('RNUcbeRm'))
+,(-2 ,'kisa42', getHash('lmMdzYVa'))
+,(-2 ,'jorik51', getHash('ZTYjeXPl'))
+;
+insert into Kurjery values(800000000, 2, 'COLE', 'Louie', 050173671 , 'COLE.Louie@gmail.com ', 92, true)
+,(800000001, 2, 'REED', 'Little', 568491863 , 'REED.Little@gmail.com ', 76, true)
+,(800000002, 1, 'MORALES', 'Lindquist', 169144886 , 'MORALES.Lindquist@gmail.com ', 42, true)
+,(800000003, 2, 'CASTILLO', 'Lim', 581897239 , 'CASTILLO.Lim@gmail.com ', 62, true)
+,(800000004, 2, 'REED', 'Luther', 951623051 , 'REED.Luther@gmail.com ', 14, true)
+,(800000005, 4, 'NELSON', 'Levine', 779033251 , 'NELSON.Levine@gmail.com ', 57, true)
+,(800000006, 2, 'LEWIS', 'Linn', 432727897 , 'LEWIS.Linn@gmail.com ', 37, true)
+,(800000007, 4, 'HARRIS', 'Lemke', 829076375 , 'HARRIS.Lemke@gmail.com ', 5, true)
+,(800000008, 2, 'OLSON', 'Lessard', 098371888 , 'OLSON.Lessard@gmail.com ', 85, true)
+,(800000009, 3, 'GORDON', 'Lindstrom', 944042049 , 'GORDON.Lindstrom@gmail.com ', 12, true)
+,(800000010, 1, 'ROBERTS', 'Leiva', 981164136 , 'ROBERTS.Leiva@gmail.com ', 89, true)
+,(800000011, 1, 'ALVARADO', 'Leone', 640423817 , 'ALVARADO.Leone@gmail.com ', 97, true)
+,(800000012, 1, 'GEORGE', 'Lucas', 690953608 , 'GEORGE.Lucas@gmail.com ', 78, true)
+,(800000013, 3, 'RAY', 'Lyon', 727601520 , 'RAY.Lyon@gmail.com ', 3, true)
+,(800000014, 2, 'HARPER', 'La', 497433367 , 'HARPER.La@gmail.com ', 44, true)
+,(800000015, 2, 'WRIGHT', 'Longoria', 284956063 , 'WRIGHT.Longoria@gmail.com ', 70, true)
+,(800000016, 3, 'HAWKINS', 'Luke', 719507473 , 'HAWKINS.Luke@gmail.com ', 72, true)
+,(800000017, 1, 'SCOTT', 'Leigh', 973874747 , 'SCOTT.Leigh@gmail.com ', 68, true)
+,(800000018, 2, 'HUDSON', 'Leger', 137493586 , 'HUDSON.Leger@gmail.com ', 9, true)
+,(800000019, 2, 'GRIFFIN', 'Loeffler', 005333191 , 'GRIFFIN.Loeffler@gmail.com ', 23, true)
+,(800000020, 1, 'HUNT', 'Lathrop', 932144295 , 'HUNT.Lathrop@gmail.com ', 13, true)
+,(800000021, 1, 'POWELL', 'Lewandowski', 787590540 , 'POWELL.Lewandowski@gmail.com ', 1, true)
+,(800000022, 1, 'BRADLEY', 'Low', 678773995 , 'BRADLEY.Low@gmail.com ', 20, true)
+,(800000023, 3, 'WHEELER', 'Lister', 488590535 , 'WHEELER.Lister@gmail.com ', 32, true)
+,(800000024, 3, 'WILLIAMS', 'Lowrey', 346289984 , 'WILLIAMS.Lowrey@gmail.com ', 99, true)
+,(800000025, 1, 'ROBERTSON', 'Lomeli', 297697099 , 'ROBERTSON.Lomeli@gmail.com ', 89, true)
+,(800000026, 2, 'GOMEZ', 'Lester', 166288600 , 'GOMEZ.Lester@gmail.com ', 100, true)
+,(800000027, 4, 'POWELL', 'Lockard', 069894840 , 'POWELL.Lockard@gmail.com ', 37, true)
+,(800000028, 1, 'HANSEN', 'Ladner', 654691941 , 'HANSEN.Ladner@gmail.com ', 13, true)
+,(800000029, 1, 'WEBB', 'Loyd', 474725657 , 'WEBB.Loyd@gmail.com ', 76, true)
+,(800000030, 1, 'JIMENEZ', 'Loyd', 858921157 , 'JIMENEZ.Loyd@gmail.com ', 2, true)
+,(800000031, 3, 'CARROLL', 'Lorenz', 868371274 , 'CARROLL.Lorenz@gmail.com ', 77, true)
+,(800000032, 4, 'HOWARD', 'Lees', 692183690 , 'HOWARD.Lees@gmail.com ', 65, true)
+,(800000033, 3, 'MARTINEZ', 'Lemley', 467693088 , 'MARTINEZ.Lemley@gmail.com ', 91, true)
+,(800000034, 1, 'FREEMAN', 'Ledoux', 631512387 , 'FREEMAN.Ledoux@gmail.com ', 12, true)
+,(800000035, 1, 'HUNTER', 'Lawson', 844258785 , 'HUNTER.Lawson@gmail.com ', 76, true)
+,(800000036, 1, 'WAGNER', 'Lucero', 689859282 , 'WAGNER.Lucero@gmail.com ', 62, true)
+,(800000037, 3, 'RAY', 'Lorenz', 033036030 , 'RAY.Lorenz@gmail.com ', 97, true)
+,(800000038, 4, 'VASQUEZ', 'Lankford', 765618479 , 'VASQUEZ.Lankford@gmail.com ', 82, true)
+,(800000039, 1, 'FRANKLIN', 'Lavigne', 528370577 , 'FRANKLIN.Lavigne@gmail.com ', 46, true)
+,(800000040, 2, 'GARCIA', 'Lilly', 762765263 , 'GARCIA.Lilly@gmail.com ', 94, true)
+,(800000041, 3, 'HOFFMAN', 'Llamas', 102501334 , 'HOFFMAN.Llamas@gmail.com ', 40, true)
+,(800000042, 3, 'ALLEN', 'Linden', 695810861 , 'ALLEN.Linden@gmail.com ', 30, true)
+,(800000043, 2, 'PALMER', 'Lindberg', 982826365 , 'PALMER.Lindberg@gmail.com ', 53, true)
+,(800000044, 4, 'GREEN', 'Lombardo', 400898522 , 'GREEN.Lombardo@gmail.com ', 84, true)
+,(800000045, 2, 'HAWKINS', 'Lozada', 382442051 , 'HAWKINS.Lozada@gmail.com ', 62, true)
+,(800000046, 1, 'DIXON', 'Lange', 767514049 , 'DIXON.Lange@gmail.com ', 38, true)
+,(800000047, 1, 'SILVA', 'Lucas', 685232109 , 'SILVA.Lucas@gmail.com ', 74, true)
+,(800000048, 4, 'VAZQUEZ', 'Lomax', 520544607 , 'VAZQUEZ.Lomax@gmail.com ', 100, true)
+,(800000049, 4, 'GIBSON', 'Landers', 017192100 , 'GIBSON.Landers@gmail.com ', 8, true)
+,(800000050, 2, 'COOPER', 'Lieberman', 425961619 , 'COOPER.Lieberman@gmail.com ', 50, true)
+,(800000051, 1, 'VASQUEZ', 'Lachance', 625855330 , 'VASQUEZ.Lachance@gmail.com ', 32, true)
+,(800000052, 4, 'RUSSELL', 'Laws', 773967533 , 'RUSSELL.Laws@gmail.com ', 52, true)
+,(800000053, 3, 'PIERCE', 'Langford', 529293557 , 'PIERCE.Langford@gmail.com ', 27, true)
+,(800000054, 1, 'NUNEZ', 'Lovejoy', 672434617 , 'NUNEZ.Lovejoy@gmail.com ', 23, true)
+,(800000055, 1, 'HARPER', 'Langdon', 828081574 , 'HARPER.Langdon@gmail.com ', 63, true)
+,(800000056, 4, 'KELLY', 'Levi', 754206105 , 'KELLY.Levi@gmail.com ', 89, true)
+,(800000057, 3, 'WHEELER', 'Lyles', 942912479 , 'WHEELER.Lyles@gmail.com ', 31, true)
+,(800000058, 2, 'VALDEZ', 'Lord', 734236545 , 'VALDEZ.Lord@gmail.com ', 77, true)
+,(800000059, 1, 'HANSEN', 'Logan', 796750256 , 'HANSEN.Logan@gmail.com ', 19, true)
+,(800000060, 2, 'SALAZAR', 'Lund', 782281335 , 'SALAZAR.Lund@gmail.com ', 77, true)
+,(800000061, 4, 'ARNOLD', 'Lett', 114582700 , 'ARNOLD.Lett@gmail.com ', 91, true)
+,(800000062, 1, 'MORGAN', 'Lemons', 734136670 , 'MORGAN.Lemons@gmail.com ', 62, true)
+,(800000063, 1, 'GONZALES', 'Leonard', 271957332 , 'GONZALES.Leonard@gmail.com ', 50, true)
+,(800000064, 1, 'HICKS', 'Lindsey', 734151806 , 'HICKS.Lindsey@gmail.com ', 36, true)
+,(800000065, 1, 'ALVAREZ', 'Lockhart', 499248600 , 'ALVAREZ.Lockhart@gmail.com ', 55, true)
+,(800000066, 2, 'GUZMAN', 'Larry', 041054217 , 'GUZMAN.Larry@gmail.com ', 37, true)
+,(800000067, 3, 'CARPENTER', 'Linden', 979968165 , 'CARPENTER.Linden@gmail.com ', 7, true)
+,(800000068, 1, 'GREEN', 'Lai', 285835339 , 'GREEN.Lai@gmail.com ', 94, true)
+,(800000069, 2, 'ESTRADA', 'Legrand', 072921833 , 'ESTRADA.Legrand@gmail.com ', 1, true)
+,(800000070, 1, 'RUSSELL', 'Laughlin', 691104948 , 'RUSSELL.Laughlin@gmail.com ', 73, true)
+,(800000071, 2, 'HAMILTON', 'Lusk', 825839152 , 'HAMILTON.Lusk@gmail.com ', 2, true)
+,(800000072, 3, 'VASQUEZ', 'Locklear', 747840715 , 'VASQUEZ.Locklear@gmail.com ', 97, true)
+,(800000073, 1, 'JAMES', 'Lundquist', 269021010 , 'JAMES.Lundquist@gmail.com ', 5, true)
+,(800000074, 3, 'JOHNSON', 'Lash', 268441391 , 'JOHNSON.Lash@gmail.com ', 7, true)
+,(800000075, 1, 'AUSTIN', 'Light', 879112523 , 'AUSTIN.Light@gmail.com ', 52, true)
+,(800000076, 3, 'PENA', 'Lorenzo', 972901826 , 'PENA.Lorenzo@gmail.com ', 67, true)
+,(800000077, 4, 'SMITH', 'Lentz', 353157508 , 'SMITH.Lentz@gmail.com ', 40, true)
+,(800000078, 3, 'PETERS', 'Levesque', 458481702 , 'PETERS.Levesque@gmail.com ', 76, true)
+,(800000079, 2, 'HENDERSON', 'Levin', 575980150 , 'HENDERSON.Levin@gmail.com ', 50, true)
+,(800000080, 1, 'SILVA', 'Lombard', 561434625 , 'SILVA.Lombard@gmail.com ', 50, true)
+,(800000081, 2, 'LONG', 'Lachance', 331004188 , 'LONG.Lachance@gmail.com ', 65, true)
+,(800000082, 3, 'PERKINS', 'Looney', 893576832 , 'PERKINS.Looney@gmail.com ', 97, true)
+,(800000083, 4, 'HOLMES', 'Langer', 991485441 , 'HOLMES.Langer@gmail.com ', 72, true)
+,(800000084, 2, 'RAMOS', 'Lock', 529650063 , 'RAMOS.Lock@gmail.com ', 49, true)
+,(800000085, 4, 'EDWARDS', 'Ledbetter', 746793293 , 'EDWARDS.Ledbetter@gmail.com ', 34, true)
+,(800000086, 2, 'SPENCER', 'Lowry', 587760336 , 'SPENCER.Lowry@gmail.com ', 84, true)
+,(800000087, 4, 'WALKER', 'Lavender', 847382295 , 'WALKER.Lavender@gmail.com ', 30, true)
+,(800000088, 2, 'CRAWFORD', 'Lafferty', 554110054 , 'CRAWFORD.Lafferty@gmail.com ', 86, true)
+,(800000089, 1, 'YOUNG', 'Land', 133094457 , 'YOUNG.Land@gmail.com ', 98, true)
+,(800000090, 3, 'JORDAN', 'Lampkin', 075138397 , 'JORDAN.Lampkin@gmail.com ', 40, true)
+,(800000091, 1, 'REYES', 'Leslie', 655055392 , 'REYES.Leslie@gmail.com ', 38, true)
+,(800000092, 4, 'SILVA', 'Lantz', 125989735 , 'SILVA.Lantz@gmail.com ', 90, true)
+,(800000093, 3, 'CUNNINGHAM', 'Langlois', 596303870 , 'CUNNINGHAM.Langlois@gmail.com ', 97, true)
+,(800000094, 3, 'HOWARD', 'Lieberman', 918268117 , 'HOWARD.Lieberman@gmail.com ', 74, true)
+,(800000095, 1, 'SOTO', 'Laurent', 035062406 , 'SOTO.Laurent@gmail.com ', 51, true)
+,(800000096, 2, 'SANDERS', 'Lawson', 563267157 , 'SANDERS.Lawson@gmail.com ', 23, true)
+,(800000097, 1, 'MEYER', 'Leeper', 400748952 , 'MEYER.Leeper@gmail.com ', 49, true)
+,(800000098, 2, 'WOOD', 'Lerner', 559418289 , 'WOOD.Lerner@gmail.com ', 29, true)
+,(800000099, 2, 'REED', 'Lees', 239755031 , 'REED.Lees@gmail.com ', 77, true)
+,(800000100, 3, 'BENNETT', 'Lu', 148484009 , 'BENNETT.Lu@gmail.com ', 20, true)
+,(800000101, 2, 'FERNANDEZ', 'Lavallee', 791359821 , 'FERNANDEZ.Lavallee@gmail.com ', 48, true)
+,(800000102, 1, 'HALL', 'Lyle', 051425556 , 'HALL.Lyle@gmail.com ', 51, true)
+,(800000103, 3, 'KENNEDY', 'Loeffler', 177030834 , 'KENNEDY.Loeffler@gmail.com ', 42, true)
+,(800000104, 4, 'HART', 'Loftin', 791507592 , 'HART.Loftin@gmail.com ', 58, true)
+,(800000105, 2, 'MYERS', 'Lowell', 841310965 , 'MYERS.Lowell@gmail.com ', 1, true)
+,(800000106, 3, 'BERRY', 'Lamar', 613988604 , 'BERRY.Lamar@gmail.com ', 29, true)
+,(800000107, 2, 'GARDNER', 'Lorenzo', 534655657 , 'GARDNER.Lorenzo@gmail.com ', 28, true)
+,(800000108, 3, 'STONE', 'Libby', 401179579 , 'STONE.Libby@gmail.com ', 45, true)
+,(800000109, 1, 'KELLY', 'Lanier', 773580050 , 'KELLY.Lanier@gmail.com ', 10, true)
+,(800000110, 3, 'REYNOLDS', 'Luna', 558242073 , 'REYNOLDS.Luna@gmail.com ', 100, true)
+,(800000111, 4, 'BAILEY', 'Lowery', 021193166 , 'BAILEY.Lowery@gmail.com ', 100, true)
+,(800000112, 2, 'AUSTIN', 'Lyle', 444042305 , 'AUSTIN.Lyle@gmail.com ', 94, true)
+,(800000113, 1, 'HUDSON', 'Lovell', 097905845 , 'HUDSON.Lovell@gmail.com ', 75, true)
+,(800000114, 2, 'SPENCER', 'Lowry', 651809886 , 'SPENCER.Lowry@gmail.com ', 47, true)
+,(800000115, 3, 'OLSON', 'Ledbetter', 339100348 , 'OLSON.Ledbetter@gmail.com ', 49, true)
+,(800000116, 4, 'CARPENTER', 'Lundy', 648584729 , 'CARPENTER.Lundy@gmail.com ', 43, true)
+,(800000117, 1, 'WATKINS', 'Ledbetter', 216033291 , 'WATKINS.Ledbetter@gmail.com ', 60, true)
+,(800000118, 3, 'ROSE', 'Lincoln', 285970088 , 'ROSE.Lincoln@gmail.com ', 67, true)
+,(800000119, 2, 'REYNOLDS', 'Laroche', 780538995 , 'REYNOLDS.Laroche@gmail.com ', 97, true)
+,(800000120, 2, 'TURNER', 'Lavelle', 809788222 , 'TURNER.Lavelle@gmail.com ', 90, true)
+,(800000121, 1, 'COLE', 'Lockwood', 975030685 , 'COLE.Lockwood@gmail.com ', 52, true)
+,(800000122, 4, 'DIAZ', 'Ly', 260241461 , 'DIAZ.Ly@gmail.com ', 17, true)
+,(800000123, 2, 'REYNOLDS', 'Lash', 264425265 , 'REYNOLDS.Lash@gmail.com ', 85, true)
+,(800000124, 3, 'COLE', 'Leroy', 002220275 , 'COLE.Leroy@gmail.com ', 54, true)
+,(800000125, 2, 'ELLIOTT', 'Letourneau', 489549927 , 'ELLIOTT.Letourneau@gmail.com ', 93, true)
+,(800000126, 4, 'WALLACE', 'Lew', 830995018 , 'WALLACE.Lew@gmail.com ', 62, true)
+,(800000127, 4, 'STONE', 'Lewis', 411779426 , 'STONE.Lewis@gmail.com ', 99, true)
+,(800000128, 2, 'LARSON', 'Larsen', 351514673 , 'LARSON.Larsen@gmail.com ', 65, true)
+,(800000129, 1, 'HENRY', 'Lash', 827179898 , 'HENRY.Lash@gmail.com ', 90, true)
+,(800000130, 1, 'PENA', 'Leary', 162320847 , 'PENA.Leary@gmail.com ', 89, true)
+,(800000131, 1, 'ESTRADA', 'Loper', 221752181 , 'ESTRADA.Loper@gmail.com ', 12, true)
+,(800000132, 3, 'ESTRADA', 'Ludwig', 259466445 , 'ESTRADA.Ludwig@gmail.com ', 56, true)
+,(800000133, 3, 'PETERSON', 'Loper', 141639009 , 'PETERSON.Loper@gmail.com ', 9, true)
+,(800000134, 1, 'BROWN', 'Lee', 865914438 , 'BROWN.Lee@gmail.com ', 46, true)
+,(800000135, 4, 'LEWIS', 'Lozada', 329891255 , 'LEWIS.Lozada@gmail.com ', 6, true)
+,(800000136, 3, 'JONES', 'Laughlin', 939363769 , 'JONES.Laughlin@gmail.com ', 35, true)
+,(800000137, 1, 'GRANT', 'Lacey', 067503314 , 'GRANT.Lacey@gmail.com ', 58, true)
+,(800000138, 3, 'WATKINS', 'Langlois', 279761600 , 'WATKINS.Langlois@gmail.com ', 46, true)
+,(800000139, 3, 'GRIFFIN', 'Logan', 599040411 , 'GRIFFIN.Logan@gmail.com ', 74, true)
+,(800000140, 2, 'HARPER', 'Lea', 399912338 , 'HARPER.Lea@gmail.com ', 23, true)
+,(800000141, 4, 'CARLSON', 'Lively', 241711428 , 'CARLSON.Lively@gmail.com ', 2, true)
+,(800000142, 3, 'TURNER', 'Lamar', 968390114 , 'TURNER.Lamar@gmail.com ', 86, true)
+,(800000143, 1, 'ARMSTRONG', 'Lively', 743402912 , 'ARMSTRONG.Lively@gmail.com ', 75, true)
+,(800000144, 1, 'SIMMONS', 'Lemus', 458923307 , 'SIMMONS.Lemus@gmail.com ', 87, true)
+,(800000145, 1, 'ORTIZ', 'Leone', 720507765 , 'ORTIZ.Leone@gmail.com ', 20, true)
+,(800000146, 2, 'WELLS', 'Lerma', 301184141 , 'WELLS.Lerma@gmail.com ', 78, true)
+,(800000147, 1, 'EDWARDS', 'Lanham', 556970952 , 'EDWARDS.Lanham@gmail.com ', 59, true)
+,(800000148, 1, 'MASON', 'Lima', 028418486 , 'MASON.Lima@gmail.com ', 93, true)
+,(800000149, 2, 'LANE', 'Lenhart', 863567660 , 'LANE.Lenhart@gmail.com ', 39, true)
+,(800000150, 3, 'SANTOS', 'Leatherman', 277783591 , 'SANTOS.Leatherman@gmail.com ', 22, true)
+,(800000151, 1, 'RAY', 'Loggins', 983269110 , 'RAY.Loggins@gmail.com ', 41, true)
+,(800000152, 2, 'PENA', 'Livingston', 957423086 , 'PENA.Livingston@gmail.com ', 43, true)
+,(800000153, 3, 'VALDEZ', 'Lor', 659923795 , 'VALDEZ.Lor@gmail.com ', 43, true)
+,(800000154, 1, 'RUSSELL', 'Land', 985230841 , 'RUSSELL.Land@gmail.com ', 18, true)
+,(800000155, 4, 'GARZA', 'Lucero', 571254652 , 'GARZA.Lucero@gmail.com ', 16, true)
+,(800000156, 2, 'CHAVEZ', 'Lyman', 640209402 , 'CHAVEZ.Lyman@gmail.com ', 93, true)
+,(800000157, 3, 'GARZA', 'Laroche', 474392749 , 'GARZA.Laroche@gmail.com ', 53, true)
+,(800000158, 1, 'HENDERSON', 'Lira', 171802198 , 'HENDERSON.Lira@gmail.com ', 69, true)
+,(800000159, 2, 'HUGHES', 'Lea', 620072825 , 'HUGHES.Lea@gmail.com ', 77, true)
+,(800000160, 2, 'RILEY', 'Lett', 367834423 , 'RILEY.Lett@gmail.com ', 43, true)
+,(800000161, 3, 'PETERSON', 'Lebron', 696120331 , 'PETERSON.Lebron@gmail.com ', 44, true)
+,(800000162, 4, 'COLLINS', 'Langston', 523366448 , 'COLLINS.Langston@gmail.com ', 68, true)
+,(800000163, 3, 'SCHMIDT', 'Leighton', 959077612 , 'SCHMIDT.Leighton@gmail.com ', 79, true)
+,(800000164, 3, 'GORDON', 'Larios', 089377452 , 'GORDON.Larios@gmail.com ', 7, true)
+,(800000165, 4, 'MORENO', 'Linden', 113472754 , 'MORENO.Linden@gmail.com ', 64, true)
+,(800000166, 1, 'PHILLIPS', 'Lopez', 797146631 , 'PHILLIPS.Lopez@gmail.com ', 65, true)
+,(800000167, 4, 'BURNS', 'Lorenz', 107011389 , 'BURNS.Lorenz@gmail.com ', 23, true)
+,(800000168, 1, 'WAGNER', 'Larry', 627957781 , 'WAGNER.Larry@gmail.com ', 36, true)
+,(800000169, 4, 'CHAPMAN', 'Leger', 441644136 , 'CHAPMAN.Leger@gmail.com ', 53, true)
+,(800000170, 3, 'VASQUEZ', 'Linn', 239662754 , 'VASQUEZ.Linn@gmail.com ', 43, true)
+,(800000171, 1, 'KELLY', 'Larose', 837252606 , 'KELLY.Larose@gmail.com ', 38, true)
+,(800000172, 3, 'HUGHES', 'Lizarraga', 941737342 , 'HUGHES.Lizarraga@gmail.com ', 76, true)
+,(800000173, 1, 'WARD', 'Letourneau', 389510070 , 'WARD.Letourneau@gmail.com ', 82, true)
+,(800000174, 4, 'HILL', 'Lang', 260322251 , 'HILL.Lang@gmail.com ', 32, true)
+,(800000175, 1, 'THOMPSON', 'Lombardo', 132853811 , 'THOMPSON.Lombardo@gmail.com ', 24, true)
+,(800000176, 3, 'LARSON', 'Lacey', 957430469 , 'LARSON.Lacey@gmail.com ', 6, true)
+,(800000177, 4, 'FERGUSON', 'Louie', 789778614 , 'FERGUSON.Louie@gmail.com ', 51, true)
+,(800000178, 3, 'EVANS', 'Lor', 660966603 , 'EVANS.Lor@gmail.com ', 31, true)
+,(800000179, 4, 'BURKE', 'La', 712100587 , 'BURKE.La@gmail.com ', 10, true)
+,(800000180, 3, 'PIERCE', 'Lance', 155341627 , 'PIERCE.Lance@gmail.com ', 46, true)
+,(800000181, 3, 'DELGADO', 'Leal', 961376089 , 'DELGADO.Leal@gmail.com ', 13, true)
+,(800000182, 3, 'PERKINS', 'Lyon', 803463222 , 'PERKINS.Lyon@gmail.com ', 8, true)
+,(800000183, 1, 'JACKSON', 'Louis', 858868023 , 'JACKSON.Louis@gmail.com ', 57, true)
+,(800000184, 2, 'CARTER', 'Lund', 463678287 , 'CARTER.Lund@gmail.com ', 63, true)
+,(800000185, 2, 'OWENS', 'Luna', 742455691 , 'OWENS.Luna@gmail.com ', 57, true)
+,(800000186, 2, 'RAMIREZ', 'Leo', 407980505 , 'RAMIREZ.Leo@gmail.com ', 80, true)
+,(800000187, 1, 'DIXON', 'Lavender', 239637194 , 'DIXON.Lavender@gmail.com ', 52, true)
+,(800000188, 3, 'PRICE', 'Lorenzo', 315769743 , 'PRICE.Lorenzo@gmail.com ', 29, true)
+,(800000189, 1, 'SPENCER', 'Leary', 103512803 , 'SPENCER.Leary@gmail.com ', 99, true)
+,(800000190, 2, 'BELL', 'Lay', 858990024 , 'BELL.Lay@gmail.com ', 95, true)
+,(800000191, 4, 'HOLMES', 'Leighton', 966887928 , 'HOLMES.Leighton@gmail.com ', 37, true)
+,(800000192, 1, 'CARTER', 'Luckett', 065800601 , 'CARTER.Luckett@gmail.com ', 43, true)
+,(800000193, 1, 'GARZA', 'Leija', 901954222 , 'GARZA.Leija@gmail.com ', 90, true)
+,(800000194, 2, 'ANDREWS', 'Lohr', 680081621 , 'ANDREWS.Lohr@gmail.com ', 15, true)
+,(800000195, 3, 'EVANS', 'Lau', 915266392 , 'EVANS.Lau@gmail.com ', 48, true)
+,(800000196, 3, 'YOUNG', 'Layne', 534772716 , 'YOUNG.Layne@gmail.com ', 100, true)
+,(800000197, 4, 'RICE', 'Leong', 268766430 , 'RICE.Leong@gmail.com ', 44, true)
+,(800000198, 2, 'VASQUEZ', 'Larkins', 839059661 , 'VASQUEZ.Larkins@gmail.com ', 44, true)
+,(800000199, 1, 'RILEY', 'Lebron', 845813721 , 'RILEY.Lebron@gmail.com ', 13, true)
+,(800000200, 3, 'FRANKLIN', 'Loredo', 995105908 , 'FRANKLIN.Loredo@gmail.com ', 92, true)
+,(800000201, 4, 'CAMPBELL', 'Lawson', 942062387 , 'CAMPBELL.Lawson@gmail.com ', 74, true)
+,(800000202, 2, 'VARGAS', 'Lerner', 024228105 , 'VARGAS.Lerner@gmail.com ', 60, true)
+,(800000203, 1, 'WAGNER', 'Leger', 343992239 , 'WAGNER.Leger@gmail.com ', 74, true)
+,(800000204, 2, 'VAZQUEZ', 'Lawless', 607942028 , 'VAZQUEZ.Lawless@gmail.com ', 27, true)
+,(800000205, 1, 'MORRIS', 'Loftus', 706910147 , 'MORRIS.Loftus@gmail.com ', 59, true)
+,(800000206, 1, 'RIVERA', 'Linder', 835832678 , 'RIVERA.Linder@gmail.com ', 85, true)
+,(800000207, 3, 'JAMES', 'Lux', 209079981 , 'JAMES.Lux@gmail.com ', 56, true)
+,(800000208, 2, 'WOODS', 'Lo', 281123941 , 'WOODS.Lo@gmail.com ', 42, true)
+,(800000209, 1, 'WOOD', 'Luce', 641771400 , 'WOOD.Luce@gmail.com ', 43, true)
+,(800000210, 2, 'SANTIAGO', 'Luu', 493117523 , 'SANTIAGO.Luu@gmail.com ', 47, true)
+,(800000211, 2, 'ORTIZ', 'Lippert', 779060785 , 'ORTIZ.Lippert@gmail.com ', 83, true)
+,(800000212, 2, 'PETERS', 'Luke', 904122034 , 'PETERS.Luke@gmail.com ', 85, true)
+,(800000213, 3, 'BOYD', 'Lupo', 931529746 , 'BOYD.Lupo@gmail.com ', 19, true)
+,(800000214, 3, 'GRIFFIN', 'Lear', 331885488 , 'GRIFFIN.Lear@gmail.com ', 56, true)
+,(800000215, 2, 'STEWART', 'Lafferty', 580464908 , 'STEWART.Lafferty@gmail.com ', 9, true)
+,(800000216, 2, 'RODRIGUEZ', 'Landau', 193607166 , 'RODRIGUEZ.Landau@gmail.com ', 30, true)
+,(800000217, 4, 'GRAY', 'Lash', 550903575 , 'GRAY.Lash@gmail.com ', 47, true)
+,(800000218, 1, 'HAMILTON', 'Lacroix', 132728245 , 'HAMILTON.Lacroix@gmail.com ', 15, true)
+,(800000219, 4, 'WEST', 'Latimer', 100027143 , 'WEST.Latimer@gmail.com ', 73, true)
+,(800000220, 3, 'BAKER', 'Lockard', 601490057 , 'BAKER.Lockard@gmail.com ', 42, true)
+,(800000221, 4, 'DANIELS', 'Lindberg', 531266491 , 'DANIELS.Lindberg@gmail.com ', 38, true)
+,(800000222, 3, 'FREEMAN', 'Landrum', 505187684 , 'FREEMAN.Landrum@gmail.com ', 67, true)
+,(800000223, 2, 'CRUZ', 'Loving', 248322036 , 'CRUZ.Loving@gmail.com ', 18, true)
+,(800000224, 1, 'DUNN', 'Luo', 811913492 , 'DUNN.Luo@gmail.com ', 66, true)
+,(800000225, 3, 'LAWRENCE', 'Leggett', 574313460 , 'LAWRENCE.Leggett@gmail.com ', 11, true)
+,(800000226, 2, 'GREENE', 'Lebron', 272582279 , 'GREENE.Lebron@gmail.com ', 8, true)
+,(800000227, 3, 'BAKER', 'Lash', 786767835 , 'BAKER.Lash@gmail.com ', 37, true)
+,(800000228, 1, 'BROWN', 'Langford', 054141799 , 'BROWN.Langford@gmail.com ', 51, true)
+,(800000229, 1, 'FISHER', 'Long', 053148093 , 'FISHER.Long@gmail.com ', 13, true)
+,(800000230, 2, 'KELLY', 'Laster', 950665935 , 'KELLY.Laster@gmail.com ', 44, true)
+,(800000231, 3, 'COOPER', 'Levin', 073984804 , 'COOPER.Levin@gmail.com ', 60, true)
+,(800000232, 3, 'HERRERA', 'Lazaro', 580857310 , 'HERRERA.Lazaro@gmail.com ', 17, true)
+,(800000233, 4, 'ALLEN', 'Lieberman', 672111322 , 'ALLEN.Lieberman@gmail.com ', 73, true)
+,(800000234, 2, 'FERGUSON', 'Lincoln', 918040911 , 'FERGUSON.Lincoln@gmail.com ', 86, true)
+,(800000235, 1, 'ARNOLD', 'Lundgren', 621893343 , 'ARNOLD.Lundgren@gmail.com ', 1, true)
+,(800000236, 3, 'KING', 'Lundquist', 417465591 , 'KING.Lundquist@gmail.com ', 14, true)
+,(800000237, 1, 'TAYLOR', 'Loya', 890077463 , 'TAYLOR.Loya@gmail.com ', 78, true)
+,(800000238, 2, 'RAY', 'Name', 391471709 , 'RAY.Name@gmail.com ', 97, true)
+,(800000239, 3, 'PALMER', 'Lott', 152246887 , 'PALMER.Lott@gmail.com ', 61, true)
+,(800000240, 4, 'AUSTIN', 'Laporte', 894324032 , 'AUSTIN.Laporte@gmail.com ', 41, true)
+,(800000241, 1, 'STEVENS', 'Lerner', 325072163 , 'STEVENS.Lerner@gmail.com ', 39, true)
+,(800000242, 4, 'SALAZAR', 'Luna', 550283901 , 'SALAZAR.Luna@gmail.com ', 62, true)
+,(800000243, 4, 'THOMPSON', 'Livingston', 564917730 , 'THOMPSON.Livingston@gmail.com ', 99, true)
+,(800000244, 2, 'PAYNE', 'Lugo', 974009033 , 'PAYNE.Lugo@gmail.com ', 34, true)
+,(800000245, 3, 'MASON', 'Longoria', 645399238 , 'MASON.Longoria@gmail.com ', 95, true)
+,(800000246, 3, 'PHILLIPS', 'Lander', 238346109 , 'PHILLIPS.Lander@gmail.com ', 68, true)
+,(800000247, 2, 'RODRIGUEZ', 'Ledesma', 198612295 , 'RODRIGUEZ.Ledesma@gmail.com ', 90, true)
+,(800000248, 3, 'WALKER', 'Lizarraga', 065905379 , 'WALKER.Lizarraga@gmail.com ', 68, true)
+,(800000249, 4, 'GOMEZ', 'Loomis', 454289098 , 'GOMEZ.Loomis@gmail.com ', 29, true)
+,(800000250, 2, 'WAGNER', 'Lemus', 415293757 , 'WAGNER.Lemus@gmail.com ', 54, true)
+,(800000251, 2, 'JOHNSTON', 'Lange', 928461833 , 'JOHNSTON.Lange@gmail.com ', 39, true)
+,(800000252, 4, 'MILLER', 'Little', 685281699 , 'MILLER.Little@gmail.com ', 89, true)
+,(800000253, 4, 'GUTIERREZ', 'Laws', 237515084 , 'GUTIERREZ.Laws@gmail.com ', 43, true)
+,(800000254, 3, 'HOLMES', 'Lemay', 966794246 , 'HOLMES.Lemay@gmail.com ', 23, true)
+,(800000255, 1, 'DAVIS', 'Lavelle', 971738243 , 'DAVIS.Lavelle@gmail.com ', 53, true)
+,(800000256, 1, 'HAWKINS', 'Landis', 598830059 , 'HAWKINS.Landis@gmail.com ', 99, true)
+,(800000257, 4, 'SOTO', 'Lai', 031502213 , 'SOTO.Lai@gmail.com ', 92, true)
+,(800000258, 1, 'SILVA', 'Lapp', 283259732 , 'SILVA.Lapp@gmail.com ', 47, true)
+,(800000259, 2, 'TAYLOR', 'Lewis', 576151730 , 'TAYLOR.Lewis@gmail.com ', 32, true)
+,(800000260, 3, 'HENDERSON', 'Liu', 859375726 , 'HENDERSON.Liu@gmail.com ', 75, true)
+,(800000261, 1, 'ROBERTS', 'Luong', 858920304 , 'ROBERTS.Luong@gmail.com ', 15, true)
+,(800000262, 3, 'LANE', 'Leighton', 468440937 , 'LANE.Leighton@gmail.com ', 93, true)
+,(800000263, 2, 'HENRY', 'Love', 043548188 , 'HENRY.Love@gmail.com ', 99, true)
+,(800000264, 3, 'OLSON', 'Loyd', 490193556 , 'OLSON.Loyd@gmail.com ', 58, true)
+,(800000265, 2, 'WEAVER', 'Lachance', 166170664 , 'WEAVER.Lachance@gmail.com ', 67, true)
+,(800000266, 4, 'REED', 'Law', 101193254 , 'REED.Law@gmail.com ', 49, true)
+,(800000267, 3, 'TAYLOR', 'Lachance', 115527752 , 'TAYLOR.Lachance@gmail.com ', 40, true)
+,(800000268, 4, 'LOPEZ', 'Linares', 863801916 , 'LOPEZ.Linares@gmail.com ', 91, true)
+,(800000269, 2, 'RYAN', 'Loya', 896797132 , 'RYAN.Loya@gmail.com ', 31, true)
+,(800000270, 3, 'GREENE', 'Loucks', 708597430 , 'GREENE.Loucks@gmail.com ', 33, true)
+,(800000271, 1, 'BERRY', 'Legrand', 741409288 , 'BERRY.Legrand@gmail.com ', 78, true)
+,(800000272, 1, 'ADAMS', 'Luke', 969664744 , 'ADAMS.Luke@gmail.com ', 34, true)
+,(800000273, 2, 'NUNEZ', 'Loggins', 992557128 , 'NUNEZ.Loggins@gmail.com ', 53, true)
+,(800000274, 1, 'GREENE', 'Lindquist', 758263611 , 'GREENE.Lindquist@gmail.com ', 83, true)
+,(800000275, 4, 'GRAY', 'Luck', 155353701 , 'GRAY.Luck@gmail.com ', 58, true)
+,(800000276, 1, 'TORRES', 'Lipscomb', 851009061 , 'TORRES.Lipscomb@gmail.com ', 25, true)
+,(800000277, 1, 'FERNANDEZ', 'Lerner', 241079215 , 'FERNANDEZ.Lerner@gmail.com ', 54, true)
+,(800000278, 2, 'OLSON', 'Landa', 153974755 , 'OLSON.Landa@gmail.com ', 78, true)
+,(800000279, 4, 'CASTRO', 'Link', 728559829 , 'CASTRO.Link@gmail.com ', 63, true)
+,(800000280, 1, 'ANDERSON', 'Lindstrom', 269147169 , 'ANDERSON.Lindstrom@gmail.com ', 62, true)
+,(800000281, 1, 'LARSON', 'Lebron', 281958023 , 'LARSON.Lebron@gmail.com ', 7, true)
+,(800000282, 4, 'BOYD', 'Lane', 327311355 , 'BOYD.Lane@gmail.com ', 85, true)
+,(800000283, 2, 'DOMINGUEZ', 'Lowry', 350086712 , 'DOMINGUEZ.Lowry@gmail.com ', 65, true)
+,(800000284, 2, 'KING', 'Lyle', 576217916 , 'KING.Lyle@gmail.com ', 19, true)
+,(800000285, 2, 'BROOKS', 'Lyman', 842532359 , 'BROOKS.Lyman@gmail.com ', 41, true)
+,(800000286, 3, 'NGUYEN', 'Lash', 397140119 , 'NGUYEN.Lash@gmail.com ', 63, true)
+,(800000287, 3, 'CONTRERAS', 'Loera', 470651942 , 'CONTRERAS.Loera@gmail.com ', 86, true)
+,(800000288, 3, 'COOPER', 'Lacy', 220331402 , 'COOPER.Lacy@gmail.com ', 48, true)
+,(800000289, 3, 'LANE', 'Lund', 551773838 , 'LANE.Lund@gmail.com ', 41, true)
+,(800000290, 2, 'HAYES', 'Lieberman', 302823507 , 'HAYES.Lieberman@gmail.com ', 74, true)
+,(800000291, 3, 'THOMAS', 'Lebron', 511412693 , 'THOMAS.Lebron@gmail.com ', 42, true)
+,(800000292, 1, 'HENDERSON', 'Lombardi', 357667760 , 'HENDERSON.Lombardi@gmail.com ', 90, true)
+,(800000293, 2, 'CARPENTER', 'Lomeli', 730653701 , 'CARPENTER.Lomeli@gmail.com ', 18, true)
+,(800000294, 4, 'TURNER', 'Longo', 005640244 , 'TURNER.Longo@gmail.com ', 53, true)
+,(800000295, 3, 'HICKS', 'Lauer', 998023033 , 'HICKS.Lauer@gmail.com ', 61, true)
+,(800000296, 2, 'HARPER', 'Lilly', 656767631 , 'HARPER.Lilly@gmail.com ', 70, true)
+,(800000297, 3, 'ROMERO', 'Lockhart', 298985009 , 'ROMERO.Lockhart@gmail.com ', 75, true)
+,(800000298, 2, 'GRIFFIN', 'Lehmann', 995061618 , 'GRIFFIN.Lehmann@gmail.com ', 100, true)
+,(800000299, 4, 'HANSEN', 'Luna', 674451273 , 'HANSEN.Luna@gmail.com ', 42, true)
+,(800000300, 1, 'ALLEN', 'Lerma', 930955803 , 'ALLEN.Lerma@gmail.com ', 99, true)
+,(800000301, 1, 'CAMPBELL', 'Lanning', 914019202 , 'CAMPBELL.Lanning@gmail.com ', 89, true)
+,(800000302, 1, 'MARSHALL', 'Lindsay', 381143112 , 'MARSHALL.Lindsay@gmail.com ', 32, true)
+,(800000303, 3, 'PATEL', 'Lamar', 979717013 , 'PATEL.Lamar@gmail.com ', 53, true)
+,(800000304, 2, 'MORENO', 'Liang', 763280292 , 'MORENO.Liang@gmail.com ', 36, true)
+,(800000305, 1, 'MORGAN', 'Lafferty', 955179545 , 'MORGAN.Lafferty@gmail.com ', 42, true)
+,(800000306, 4, 'COOK', 'Leos', 780534649 , 'COOK.Leos@gmail.com ', 1, true)
+,(800000307, 2, 'CHEN', 'Legrand', 968711285 , 'CHEN.Legrand@gmail.com ', 78, true)
+,(800000308, 4, 'TAYLOR', 'Lopes', 489747484 , 'TAYLOR.Lopes@gmail.com ', 22, true)
+,(800000309, 1, 'TORRES', 'Loper', 149276515 , 'TORRES.Loper@gmail.com ', 28, true)
+,(800000310, 3, 'TAYLOR', 'Lin', 466508896 , 'TAYLOR.Lin@gmail.com ', 26, true)
+,(800000311, 3, 'PAYNE', 'Lugo', 679678219 , 'PAYNE.Lugo@gmail.com ', 23, true)
+,(800000312, 2, 'FLORES', 'Luster', 117734339 , 'FLORES.Luster@gmail.com ', 83, true)
+,(800000313, 4, 'SMITH', 'Longoria', 177028262 , 'SMITH.Longoria@gmail.com ', 71, true)
+,(800000314, 1, 'KENNEDY', 'Laster', 589052558 , 'KENNEDY.Laster@gmail.com ', 80, true)
+,(800000315, 3, 'CAMPBELL', 'Lerner', 343588251 , 'CAMPBELL.Lerner@gmail.com ', 68, true)
+,(800000316, 3, 'CAMPBELL', 'Lord', 002985340 , 'CAMPBELL.Lord@gmail.com ', 47, true)
+,(800000317, 4, 'ESTRADA', 'Loggins', 212780252 , 'ESTRADA.Loggins@gmail.com ', 85, true)
+,(800000318, 4, 'DANIELS', 'Lenz', 836253401 , 'DANIELS.Lenz@gmail.com ', 59, true)
+,(800000319, 1, 'NELSON', 'Lomeli', 473124914 , 'NELSON.Lomeli@gmail.com ', 39, true)
+,(800000320, 3, 'RYAN', 'Lange', 909080979 , 'RYAN.Lange@gmail.com ', 68, true)
+,(800000321, 2, 'STEPHENS', 'Ladner', 442153362 , 'STEPHENS.Ladner@gmail.com ', 69, true)
+,(800000322, 4, 'HAYES', 'Lafleur', 549284571 , 'HAYES.Lafleur@gmail.com ', 8, true)
+,(800000323, 2, 'ESTRADA', 'Landau', 538560124 , 'ESTRADA.Landau@gmail.com ', 69, true)
+,(800000324, 1, 'ALVARADO', 'Lemieux', 708724488 , 'ALVARADO.Lemieux@gmail.com ', 90, true)
+,(800000325, 3, 'WEBB', 'Livingston', 327803107 , 'WEBB.Livingston@gmail.com ', 1, true)
+,(800000326, 1, 'HOWARD', 'Lundgren', 556762939 , 'HOWARD.Lundgren@gmail.com ', 100, true)
+,(800000327, 4, 'GARCIA', 'Lemke', 867970725 , 'GARCIA.Lemke@gmail.com ', 88, true)
+,(800000328, 1, 'ALLEN', 'Levine', 240127765 , 'ALLEN.Levine@gmail.com ', 67, true)
+,(800000329, 2, 'TRAN', 'Liles', 288942029 , 'TRAN.Liles@gmail.com ', 10, true)
+,(800000330, 3, 'RUIZ', 'Lemieux', 975583029 , 'RUIZ.Lemieux@gmail.com ', 66, true)
+,(800000331, 4, 'RAY', 'Leslie', 857868099 , 'RAY.Leslie@gmail.com ', 72, true)
+,(800000332, 1, 'WELLS', 'Lilley', 254389068 , 'WELLS.Lilley@gmail.com ', 83, true)
+,(800000333, 1, 'JENKINS', 'Lavoie', 954126988 , 'JENKINS.Lavoie@gmail.com ', 51, true)
+,(800000334, 1, 'ANDERSON', 'Lyles', 358420739 , 'ANDERSON.Lyles@gmail.com ', 43, true)
+,(800000335, 2, 'HAYES', 'Leach', 681442653 , 'HAYES.Leach@gmail.com ', 83, true)
+,(800000336, 1, 'JONES', 'Linares', 635339215 , 'JONES.Linares@gmail.com ', 46, true)
+,(800000337, 4, 'AGUILAR', 'Lovett', 191602116 , 'AGUILAR.Lovett@gmail.com ', 75, true)
+,(800000338, 2, 'EVANS', 'Lemaster', 296407481 , 'EVANS.Lemaster@gmail.com ', 48, true)
+,(800000339, 4, 'FERGUSON', 'Leavitt', 999292216 , 'FERGUSON.Leavitt@gmail.com ', 41, true)
+,(800000340, 1, 'MORALES', 'Lang', 618966256 , 'MORALES.Lang@gmail.com ', 21, true)
+,(800000341, 3, 'STEVENS', 'Linn', 696880609 , 'STEVENS.Linn@gmail.com ', 26, true)
+,(800000342, 1, 'OLSON', 'Lux', 938386974 , 'OLSON.Lux@gmail.com ', 80, true)
+,(800000343, 3, 'TAYLOR', 'Lively', 918929774 , 'TAYLOR.Lively@gmail.com ', 69, true)
+,(800000344, 1, 'HUNTER', 'Lamont', 861351228 , 'HUNTER.Lamont@gmail.com ', 14, true)
+,(800000345, 2, 'DUNN', 'Ladd', 215806836 , 'DUNN.Ladd@gmail.com ', 98, true)
+,(800000346, 2, 'LOPEZ', 'Lamar', 211004145 , 'LOPEZ.Lamar@gmail.com ', 80, true)
+,(800000347, 1, 'MURPHY', 'Lilley', 377243501 , 'MURPHY.Lilley@gmail.com ', 28, true)
+,(800000348, 4, 'STEWART', 'Lim', 026940989 , 'STEWART.Lim@gmail.com ', 60, true)
+,(800000349, 2, 'MARSHALL', 'Lockard', 872731303 , 'MARSHALL.Lockard@gmail.com ', 100, true)
+,(800000350, 3, 'TORRES', 'Larkin', 352355241 , 'TORRES.Larkin@gmail.com ', 49, true)
+,(800000351, 4, 'CARROLL', 'Leonard', 353081873 , 'CARROLL.Leonard@gmail.com ', 34, true)
+,(800000352, 1, 'HUGHES', 'Larson', 005916009 , 'HUGHES.Larson@gmail.com ', 99, true)
+,(800000353, 3, 'MCDONALD', 'Lilly', 171942549 , 'MCDONALD.Lilly@gmail.com ', 70, true)
+,(800000354, 1, 'HANSEN', 'Lumpkin', 772656758 , 'HANSEN.Lumpkin@gmail.com ', 1, true)
+,(800000355, 4, 'PERRY', 'Lawson', 808599803 , 'PERRY.Lawson@gmail.com ', 83, true)
+,(800000356, 1, 'DIXON', 'Layman', 067356477 , 'DIXON.Layman@gmail.com ', 77, true)
+,(800000357, 3, 'BARNES', 'Lamar', 673293690 , 'BARNES.Lamar@gmail.com ', 90, true)
+,(800000358, 4, 'CRAWFORD', 'Luster', 977207269 , 'CRAWFORD.Luster@gmail.com ', 73, true)
+,(800000359, 3, 'WEBB', 'Loggins', 122497815 , 'WEBB.Loggins@gmail.com ', 90, true)
+,(800000360, 4, 'RIVERA', 'Lott', 648061217 , 'RIVERA.Lott@gmail.com ', 60, true)
+,(800000361, 4, 'ALVARADO', 'Light', 167508509 , 'ALVARADO.Light@gmail.com ', 22, true)
+,(800000362, 2, 'ALVAREZ', 'Leo', 946579227 , 'ALVAREZ.Leo@gmail.com ', 20, true)
+,(800000363, 4, 'WATSON', 'Loeffler', 003850698 , 'WATSON.Loeffler@gmail.com ', 10, true)
+,(800000364, 3, 'CASTILLO', 'Lam', 895412432 , 'CASTILLO.Lam@gmail.com ', 72, true)
+,(800000365, 2, 'PETERSON', 'Lanier', 055254613 , 'PETERSON.Lanier@gmail.com ', 8, true)
+,(800000366, 3, 'SNYDER', 'Littlejohn', 739081561 , 'SNYDER.Littlejohn@gmail.com ', 50, true)
+,(800000367, 1, 'WALLACE', 'Love', 505746218 , 'WALLACE.Love@gmail.com ', 56, true)
+,(800000368, 2, 'SULLIVAN', 'Lomeli', 660867184 , 'SULLIVAN.Lomeli@gmail.com ', 86, true)
+,(800000369, 1, 'BURNS', 'Lemon', 347417518 , 'BURNS.Lemon@gmail.com ', 3, true)
+,(800000370, 2, 'STEPHENS', 'Lima', 762927587 , 'STEPHENS.Lima@gmail.com ', 4, true)
+,(800000371, 1, 'ROBINSON', 'Levine', 173583709 , 'ROBINSON.Levine@gmail.com ', 40, true)
+,(800000372, 4, 'ROGERS', 'Laster', 257552154 , 'ROGERS.Laster@gmail.com ', 39, true)
+,(800000373, 2, 'PALMER', 'Lavin', 600182971 , 'PALMER.Lavin@gmail.com ', 50, true)
+,(800000374, 3, 'ESTRADA', 'Larsen', 052914403 , 'ESTRADA.Larsen@gmail.com ', 24, true)
+,(800000375, 1, 'RAMIREZ', 'Lavigne', 528625275 , 'RAMIREZ.Lavigne@gmail.com ', 8, true)
+,(800000376, 4, 'WATSON', 'Leach', 554724047 , 'WATSON.Leach@gmail.com ', 46, true)
+,(800000377, 1, 'TURNER', 'Littrell', 213020347 , 'TURNER.Littrell@gmail.com ', 16, true)
+,(800000378, 2, 'RAMIREZ', 'Lira', 358451911 , 'RAMIREZ.Lira@gmail.com ', 95, true)
+,(800000379, 1, 'PETERSON', 'Lange', 089165211 , 'PETERSON.Lange@gmail.com ', 13, true)
+,(800000380, 3, 'WOOD', 'Lockett', 990456892 , 'WOOD.Lockett@gmail.com ', 24, true)
+,(800000381, 2, 'WEAVER', 'Lomax', 088244891 , 'WEAVER.Lomax@gmail.com ', 30, true)
+,(800000382, 2, 'ORTIZ', 'Leslie', 643484700 , 'ORTIZ.Leslie@gmail.com ', 90, true)
+,(800000383, 4, 'WELLS', 'Lane', 470420702 , 'WELLS.Lane@gmail.com ', 65, true)
+,(800000384, 1, 'GUERRERO', 'Langdon', 685816940 , 'GUERRERO.Langdon@gmail.com ', 68, true)
+,(800000385, 1, 'ALLEN', 'Luck', 631339481 , 'ALLEN.Luck@gmail.com ', 59, true)
+,(800000386, 1, 'SPENCER', 'Lujan', 872647268 , 'SPENCER.Lujan@gmail.com ', 95, true)
+,(800000387, 1, 'STEWART', 'Light', 588274790 , 'STEWART.Light@gmail.com ', 54, true)
+,(800000388, 4, 'SULLIVAN', 'Leatherman', 508718565 , 'SULLIVAN.Leatherman@gmail.com ', 96, true)
+,(800000389, 2, 'MENDOZA', 'Lyle', 123825609 , 'MENDOZA.Lyle@gmail.com ', 38, true)
+,(800000390, 4, 'SHAW', 'Lambert', 300664912 , 'SHAW.Lambert@gmail.com ', 86, true)
+,(800000391, 3, 'CARPENTER', 'Lujan', 920205334 , 'CARPENTER.Lujan@gmail.com ', 15, true)
+,(800000392, 2, 'WALLACE', 'Lovejoy', 995918203 , 'WALLACE.Lovejoy@gmail.com ', 47, true)
+,(800000393, 4, 'SCOTT', 'Lemus', 002417416 , 'SCOTT.Lemus@gmail.com ', 65, true)
+,(800000394, 3, 'PIERCE', 'Lebron', 898713733 , 'PIERCE.Lebron@gmail.com ', 39, true)
+,(800000395, 3, 'KNIGHT', 'Love', 363091340 , 'KNIGHT.Love@gmail.com ', 100, true)
+,(800000396, 1, 'STONE', 'Lumpkin', 915425384 , 'STONE.Lumpkin@gmail.com ', 38, true)
+,(800000397, 4, 'HILL', 'Linn', 716100490 , 'HILL.Linn@gmail.com ', 65, true)
+,(800000398, 1, 'SNYDER', 'Lathrop', 351712598 , 'SNYDER.Lathrop@gmail.com ', 85, true)
+,(800000399, 1, 'JOHNSON', 'Lundquist', 397576566 , 'JOHNSON.Lundquist@gmail.com ', 71, true)
+,(800000400, 3, 'JAMES', 'Lewin', 390815334 , 'JAMES.Lewin@gmail.com ', 9, true)
+,(800000401, 2, 'ROMERO', 'Ly', 303754314 , 'ROMERO.Ly@gmail.com ', 58, true)
+,(800000402, 4, 'REYNOLDS', 'Leon', 479539647 , 'REYNOLDS.Leon@gmail.com ', 28, true)
+,(800000403, 1, 'GIBSON', 'Lilly', 683053132 , 'GIBSON.Lilly@gmail.com ', 8, true)
+,(800000404, 3, 'JOHNSTON', 'Larue', 009096812 , 'JOHNSTON.Larue@gmail.com ', 46, true)
+,(800000405, 1, 'CHAVEZ', 'Lafrance', 427771532 , 'CHAVEZ.Lafrance@gmail.com ', 62, true)
+,(800000406, 2, 'ALLEN', 'Laurent', 732767161 , 'ALLEN.Laurent@gmail.com ', 41, true)
+,(800000407, 4, 'WASHINGTON', 'Legrand', 984294727 , 'WASHINGTON.Legrand@gmail.com ', 73, true)
+,(800000408, 2, 'GOMEZ', 'Laney', 481468856 , 'GOMEZ.Laney@gmail.com ', 95, true)
+,(800000409, 2, 'COOK', 'Leiva', 262556055 , 'COOK.Leiva@gmail.com ', 40, true)
+,(800000410, 3, 'WOOD', 'Latimer', 613756949 , 'WOOD.Latimer@gmail.com ', 54, true)
+,(800000411, 4, 'MORENO', 'Leggett', 579631563 , 'MORENO.Leggett@gmail.com ', 63, true)
+,(800000412, 3, 'CLARK', 'Levy', 279621011 , 'CLARK.Levy@gmail.com ', 27, true)
+,(800000413, 2, 'GUERRERO', 'Lucas', 295220575 , 'GUERRERO.Lucas@gmail.com ', 14, true)
+,(800000414, 3, 'AUSTIN', 'Law', 512791644 , 'AUSTIN.Law@gmail.com ', 40, true)
+,(800000415, 3, 'MORALES', 'Lockett', 095508939 , 'MORALES.Lockett@gmail.com ', 28, true)
+,(800000416, 3, 'ANDERSON', 'Libby', 873493907 , 'ANDERSON.Libby@gmail.com ', 66, true)
+,(800000417, 4, 'MORRIS', 'Larkin', 621624660 , 'MORRIS.Larkin@gmail.com ', 64, true)
+,(800000418, 1, 'SANCHEZ', 'Lor', 395134470 , 'SANCHEZ.Lor@gmail.com ', 32, true)
+,(800000419, 4, 'ANDREWS', 'Laing', 875001923 , 'ANDREWS.Laing@gmail.com ', 85, true)
+,(800000420, 1, 'CONTRERAS', 'Love', 849729806 , 'CONTRERAS.Love@gmail.com ', 7, true)
+,(800000421, 2, 'PARKER', 'Lantz', 291881364 , 'PARKER.Lantz@gmail.com ', 95, true)
+,(800000422, 2, 'MATTHEWS', 'Lentz', 635029751 , 'MATTHEWS.Lentz@gmail.com ', 82, true)
+,(800000423, 3, 'BRADLEY', 'Lilley', 675403107 , 'BRADLEY.Lilley@gmail.com ', 34, true)
+,(800000424, 1, 'HAMILTON', 'Lo', 762656916 , 'HAMILTON.Lo@gmail.com ', 89, true)
+,(800000425, 4, 'FRANKLIN', 'Leatherman', 164001871 , 'FRANKLIN.Leatherman@gmail.com ', 73, true)
+,(800000426, 2, 'GUTIERREZ', 'Lockhart', 690082040 , 'GUTIERREZ.Lockhart@gmail.com ', 50, true)
+,(800000427, 4, 'WHITE', 'Limon', 457694354 , 'WHITE.Limon@gmail.com ', 9, true)
+,(800000428, 3, 'GARDNER', 'Lacroix', 756606191 , 'GARDNER.Lacroix@gmail.com ', 90, true)
+,(800000429, 2, 'WARREN', 'Ladner', 065501121 , 'WARREN.Ladner@gmail.com ', 48, true)
+,(800000430, 2, 'FOX', 'Lehman', 399388917 , 'FOX.Lehman@gmail.com ', 19, true)
+,(800000431, 4, 'WHEELER', 'Lightfoot', 082990908 , 'WHEELER.Lightfoot@gmail.com ', 52, true)
+,(800000432, 1, 'ALVARADO', 'Lacy', 553386567 , 'ALVARADO.Lacy@gmail.com ', 62, true)
+,(800000433, 2, 'GRAY', 'Legrand', 923382458 , 'GRAY.Legrand@gmail.com ', 69, true)
+,(800000434, 3, 'NUNEZ', 'Leeper', 252201559 , 'NUNEZ.Leeper@gmail.com ', 1, true)
+,(800000435, 4, 'LOPEZ', 'Lackey', 070270887 , 'LOPEZ.Lackey@gmail.com ', 58, true)
+,(800000436, 4, 'SOTO', 'Leija', 261432094 , 'SOTO.Leija@gmail.com ', 46, true)
+,(800000437, 3, 'MURPHY', 'Lamm', 885139110 , 'MURPHY.Lamm@gmail.com ', 95, true)
+,(800000438, 1, 'NGUYEN', 'Name', 310959993 , 'NGUYEN.Name@gmail.com ', 66, true)
+,(800000439, 3, 'PHILLIPS', 'Loucks', 602121779 , 'PHILLIPS.Loucks@gmail.com ', 72, true)
+,(800000440, 4, 'VASQUEZ', 'Lafleur', 690772816 , 'VASQUEZ.Lafleur@gmail.com ', 36, true)
+,(800000441, 1, 'HOWARD', 'Lara', 913784165 , 'HOWARD.Lara@gmail.com ', 6, true)
+,(800000442, 1, 'BAILEY', 'Lytle', 180006628 , 'BAILEY.Lytle@gmail.com ', 27, true)
+,(800000443, 2, 'HENRY', 'London', 589173389 , 'HENRY.London@gmail.com ', 81, true)
+,(800000444, 1, 'REED', 'Lusk', 400940348 , 'REED.Lusk@gmail.com ', 90, true)
+,(800000445, 2, 'BOYD', 'Leavitt', 956371452 , 'BOYD.Leavitt@gmail.com ', 88, true)
+,(800000446, 4, 'OWENS', 'Layman', 401130653 , 'OWENS.Layman@gmail.com ', 22, true)
+,(800000447, 3, 'CASTILLO', 'Lind', 243499777 , 'CASTILLO.Lind@gmail.com ', 99, true)
+,(800000448, 3, 'CONTRERAS', 'Ladner', 329896599 , 'CONTRERAS.Ladner@gmail.com ', 90, true)
+,(800000449, 3, 'HENRY', 'Lewin', 978958479 , 'HENRY.Lewin@gmail.com ', 61, true)
+,(800000450, 3, 'MARTINEZ', 'Langer', 323716525 , 'MARTINEZ.Langer@gmail.com ', 97, true)
+,(800000451, 4, 'VARGAS', 'Luster', 530873702 , 'VARGAS.Luster@gmail.com ', 2, true)
+,(800000452, 3, 'GUERRERO', 'Loya', 278342554 , 'GUERRERO.Loya@gmail.com ', 43, true)
+,(800000453, 2, 'TUCKER', 'Lomax', 272804158 , 'TUCKER.Lomax@gmail.com ', 11, true)
+,(800000454, 1, 'GREENE', 'Laing', 312322509 , 'GREENE.Laing@gmail.com ', 21, true)
+,(800000455, 1, 'SANCHEZ', 'Lilley', 065128997 , 'SANCHEZ.Lilley@gmail.com ', 33, true)
+,(800000456, 3, 'JONES', 'Latham', 424361514 , 'JONES.Latham@gmail.com ', 37, true)
+,(800000457, 1, 'ANDREWS', 'Lemoine', 987777384 , 'ANDREWS.Lemoine@gmail.com ', 39, true)
+,(800000458, 1, 'COLLINS', 'Ly', 983953908 , 'COLLINS.Ly@gmail.com ', 43, true)
+,(800000459, 3, 'BARNES', 'Lafrance', 990789916 , 'BARNES.Lafrance@gmail.com ', 20, true)
+,(800000460, 4, 'MORRISON', 'Lessard', 626570768 , 'MORRISON.Lessard@gmail.com ', 19, true)
+,(800000461, 1, 'CRAWFORD', 'Lutz', 985693663 , 'CRAWFORD.Lutz@gmail.com ', 42, true)
+,(800000462, 1, 'HUNT', 'Linville', 975958665 , 'HUNT.Linville@gmail.com ', 48, true)
+,(800000463, 4, 'GUERRERO', 'Lyon', 879305514 , 'GUERRERO.Lyon@gmail.com ', 80, true)
+,(800000464, 3, 'BRADLEY', 'Lanning', 490066118 , 'BRADLEY.Lanning@gmail.com ', 32, true)
+,(800000465, 4, 'LAWRENCE', 'Larkin', 921832738 , 'LAWRENCE.Larkin@gmail.com ', 39, true)
+,(800000466, 2, 'LEE', 'Lockwood', 724614683 , 'LEE.Lockwood@gmail.com ', 69, true)
+,(800000467, 3, 'REYNOLDS', 'Liu', 230909987 , 'REYNOLDS.Liu@gmail.com ', 19, true)
+,(800000468, 1, 'BELL', 'Littrell', 786473141 , 'BELL.Littrell@gmail.com ', 11, true)
+,(800000469, 2, 'MYERS', 'Lennon', 741518137 , 'MYERS.Lennon@gmail.com ', 11, true)
+,(800000470, 1, 'ORTEGA', 'Lohr', 768354888 , 'ORTEGA.Lohr@gmail.com ', 37, true)
+,(800000471, 4, 'ROGERS', 'Lyon', 799259931 , 'ROGERS.Lyon@gmail.com ', 96, true)
+,(800000472, 3, 'CHAPMAN', 'Lowell', 761130718 , 'CHAPMAN.Lowell@gmail.com ', 15, true)
+,(800000473, 3, 'HALL', 'Lemke', 550711520 , 'HALL.Lemke@gmail.com ', 82, true)
+,(800000474, 4, 'PHILLIPS', 'Lalonde', 335998611 , 'PHILLIPS.Lalonde@gmail.com ', 30, true)
+,(800000475, 4, 'GEORGE', 'Lujan', 106494499 , 'GEORGE.Lujan@gmail.com ', 7, true)
+,(800000476, 4, 'COLE', 'Lennon', 371430470 , 'COLE.Lennon@gmail.com ', 14, true)
+,(800000477, 3, 'MURPHY', 'Lira', 363071515 , 'MURPHY.Lira@gmail.com ', 41, true)
+,(800000478, 1, 'KELLY', 'Leigh', 448277028 , 'KELLY.Leigh@gmail.com ', 56, true)
+,(800000479, 2, 'BENNETT', 'Lind', 510650146 , 'BENNETT.Lind@gmail.com ', 92, true)
+,(800000480, 2, 'WALKER', 'Linville', 878052154 , 'WALKER.Linville@gmail.com ', 79, true)
+,(800000481, 1, 'FOSTER', 'Lira', 296533874 , 'FOSTER.Lira@gmail.com ', 58, true)
+,(800000482, 3, 'FISHER', 'Lew', 921378810 , 'FISHER.Lew@gmail.com ', 15, true)
+,(800000483, 2, 'AGUILAR', 'Levesque', 943145848 , 'AGUILAR.Levesque@gmail.com ', 12, true)
+,(800000484, 3, 'NICHOLS', 'Lander', 691168458 , 'NICHOLS.Lander@gmail.com ', 48, true)
+,(800000485, 4, 'AUSTIN', 'Landeros', 551569661 , 'AUSTIN.Landeros@gmail.com ', 79, true)
+,(800000486, 4, 'PATEL', 'Lindquist', 096588199 , 'PATEL.Lindquist@gmail.com ', 12, true)
+,(800000487, 3, 'PATTERSON', 'Luciano', 578242256 , 'PATTERSON.Luciano@gmail.com ', 29, true)
+,(800000488, 1, 'POWELL', 'Liles', 506812569 , 'POWELL.Liles@gmail.com ', 13, true)
+,(800000489, 2, 'FORD', 'Lazo', 250861798 , 'FORD.Lazo@gmail.com ', 62, true)
+,(800000490, 3, 'RAMOS', 'Louis', 974012843 , 'RAMOS.Louis@gmail.com ', 9, true)
+,(800000491, 3, 'RODRIGUEZ', 'Law', 980005945 , 'RODRIGUEZ.Law@gmail.com ', 85, true)
+,(800000492, 4, 'PEREZ', 'Name', 575012941 , 'PEREZ.Name@gmail.com ', 66, true)
+,(800000493, 3, 'MOORE', 'Linder', 801272876 , 'MOORE.Linder@gmail.com ', 79, true)
+,(800000494, 2, 'GRAY', 'Liao', 618410142 , 'GRAY.Liao@gmail.com ', 11, true)
+,(800000495, 3, 'FREEMAN', 'Lampkin', 424108496 , 'FREEMAN.Lampkin@gmail.com ', 75, true)
+,(800000496, 2, 'CARTER', 'Lovell', 765901450 , 'CARTER.Lovell@gmail.com ', 23, true)
+,(800000497, 2, 'ANDREWS', 'Leal', 951554898 , 'ANDREWS.Leal@gmail.com ', 94, true)
+,(800000498, 1, 'GONZALES', 'Lavallee', 197883425 , 'GONZALES.Lavallee@gmail.com ', 14, true)
+,(800000499, 4, 'FISHER', 'Lo', 919567921 , 'FISHER.Lo@gmail.com ', 97, true)
+,(800000500, 3, 'RIOS', 'Lemieux', 887405674 , 'RIOS.Lemieux@gmail.com ', 65, true)
+,(800000501, 2, 'SNYDER', 'Name', 006903476 , 'SNYDER.Name@gmail.com ', 90, true)
+,(800000502, 3, 'GUTIERREZ', 'Low', 708519775 , 'GUTIERREZ.Low@gmail.com ', 6, true)
+,(800000503, 3, 'GARCIA', 'Lindsey', 809886199 , 'GARCIA.Lindsey@gmail.com ', 9, true)
+,(800000504, 3, 'MORENO', 'Lancaster', 178147480 , 'MORENO.Lancaster@gmail.com ', 4, true)
+,(800000505, 1, 'ESTRADA', 'Langlois', 340345066 , 'ESTRADA.Langlois@gmail.com ', 39, true)
+,(800000506, 4, 'RAY', 'Langford', 105362663 , 'RAY.Langford@gmail.com ', 32, true)
+,(800000507, 3, 'KELLEY', 'Loera', 027948962 , 'KELLEY.Loera@gmail.com ', 40, true)
+,(800000508, 2, 'ALLEN', 'Lawrence', 299885009 , 'ALLEN.Lawrence@gmail.com ', 22, true)
+,(800000509, 2, 'KENNEDY', 'Liu', 136643810 , 'KENNEDY.Liu@gmail.com ', 62, true)
+,(800000510, 4, 'GARCIA', 'Lombard', 003072411 , 'GARCIA.Lombard@gmail.com ', 41, true)
+,(800000511, 3, 'COOPER', 'Llamas', 715639487 , 'COOPER.Llamas@gmail.com ', 47, true)
+,(800000512, 2, 'WALKER', 'Lemus', 833784480 , 'WALKER.Lemus@gmail.com ', 42, true)
+,(800000513, 3, 'RIOS', 'Labelle', 569792652 , 'RIOS.Labelle@gmail.com ', 83, true)
+,(800000514, 1, 'RAMOS', 'Lawless', 010200926 , 'RAMOS.Lawless@gmail.com ', 40, true)
+,(800000515, 2, 'PAYNE', 'Leake', 758229762 , 'PAYNE.Leake@gmail.com ', 2, true)
+,(800000516, 2, 'THOMAS', 'Linder', 134579792 , 'THOMAS.Linder@gmail.com ', 53, true)
+,(800000517, 1, 'HENRY', 'Liao', 164218918 , 'HENRY.Liao@gmail.com ', 77, true)
+,(800000518, 2, 'FOX', 'Lessard', 601520498 , 'FOX.Lessard@gmail.com ', 38, true)
+,(800000519, 1, 'NGUYEN', 'Lehr', 015593780 , 'NGUYEN.Lehr@gmail.com ', 49, true)
+,(800000520, 1, 'MENDEZ', 'Loving', 804635159 , 'MENDEZ.Loving@gmail.com ', 91, true)
+,(800000521, 1, 'GRANT', 'Lowe', 634592739 , 'GRANT.Lowe@gmail.com ', 26, true)
+,(800000522, 1, 'SANDOVAL', 'Laplante', 668787832 , 'SANDOVAL.Laplante@gmail.com ', 83, true)
+,(800000523, 3, 'GREENE', 'Langer', 159713456 , 'GREENE.Langer@gmail.com ', 80, true)
+,(800000524, 4, 'MUNOZ', 'Lynn', 763228032 , 'MUNOZ.Lynn@gmail.com ', 10, true)
+,(800000525, 3, 'MASON', 'Levine', 913948134 , 'MASON.Levine@gmail.com ', 4, true)
+,(800000526, 3, 'REYES', 'Lazaro', 281782556 , 'REYES.Lazaro@gmail.com ', 34, true)
+,(800000527, 1, 'GARDNER', 'Lozano', 496073030 , 'GARDNER.Lozano@gmail.com ', 27, true)
+,(800000528, 1, 'MEYER', 'Lew', 542521634 , 'MEYER.Lew@gmail.com ', 94, true)
+,(800000529, 2, 'SCOTT', 'Lang', 390687049 , 'SCOTT.Lang@gmail.com ', 14, true)
+,(800000530, 1, 'WASHINGTON', 'Lombardi', 721161505 , 'WASHINGTON.Lombardi@gmail.com ', 53, true)
+,(800000531, 1, 'ELLIS', 'Linares', 647834292 , 'ELLIS.Linares@gmail.com ', 68, true)
+,(800000532, 1, 'MEYER', 'Lett', 504844858 , 'MEYER.Lett@gmail.com ', 39, true)
+,(800000533, 1, 'WEST', 'Lafrance', 343726114 , 'WEST.Lafrance@gmail.com ', 62, true)
+,(800000534, 2, 'HAYES', 'Lopez', 131537819 , 'HAYES.Lopez@gmail.com ', 41, true)
+,(800000535, 3, 'ORTIZ', 'Lambert', 092456530 , 'ORTIZ.Lambert@gmail.com ', 43, true)
+,(800000536, 4, 'HARPER', 'Lance', 052693647 , 'HARPER.Lance@gmail.com ', 25, true)
+,(800000537, 1, 'MURPHY', 'Lavelle', 832305697 , 'MURPHY.Lavelle@gmail.com ', 84, true)
+,(800000538, 4, 'WATSON', 'Lind', 833431375 , 'WATSON.Lind@gmail.com ', 65, true)
+,(800000539, 4, 'PAYNE', 'Lux', 147753261 , 'PAYNE.Lux@gmail.com ', 66, true)
+,(800000540, 3, 'PATTERSON', 'Lees', 552038554 , 'PATTERSON.Lees@gmail.com ', 21, true)
+,(800000541, 3, 'NICHOLS', 'Lister', 590044105 , 'NICHOLS.Lister@gmail.com ', 9, true)
+,(800000542, 4, 'WRIGHT', 'Lawson', 209484255 , 'WRIGHT.Lawson@gmail.com ', 82, true)
+,(800000543, 3, 'ANDERSON', 'Landis', 669127800 , 'ANDERSON.Landis@gmail.com ', 17, true)
+,(800000544, 1, 'CARTER', 'Lyman', 943125755 , 'CARTER.Lyman@gmail.com ', 31, true)
+,(800000545, 4, 'ALLEN', 'Loving', 853817774 , 'ALLEN.Loving@gmail.com ', 38, true)
+,(800000546, 1, 'JENKINS', 'Lowe', 399976212 , 'JENKINS.Lowe@gmail.com ', 39, true)
+,(800000547, 2, 'WILSON', 'Leavitt', 572947692 , 'WILSON.Leavitt@gmail.com ', 69, true)
+,(800000548, 1, 'PAYNE', 'Lachance', 774265826 , 'PAYNE.Lachance@gmail.com ', 94, true)
+,(800000549, 4, 'ALVARADO', 'Larkin', 351146359 , 'ALVARADO.Larkin@gmail.com ', 84, true)
+,(800000550, 1, 'WHEELER', 'Lovejoy', 435220291 , 'WHEELER.Lovejoy@gmail.com ', 87, true)
+,(800000551, 1, 'BURKE', 'Lebron', 370744141 , 'BURKE.Lebron@gmail.com ', 72, true)
+,(800000552, 4, 'WEBB', 'Langston', 268055022 , 'WEBB.Langston@gmail.com ', 76, true)
+,(800000553, 4, 'HILL', 'Leathers', 051369330 , 'HILL.Leathers@gmail.com ', 89, true)
+,(800000554, 2, 'NGUYEN', 'Loggins', 023512618 , 'NGUYEN.Loggins@gmail.com ', 33, true)
+,(800000555, 4, 'SULLIVAN', 'Looney', 282274111 , 'SULLIVAN.Looney@gmail.com ', 32, true)
+,(800000556, 3, 'FISHER', 'Lavelle', 977156930 , 'FISHER.Lavelle@gmail.com ', 74, true)
+,(800000557, 1, 'ROSS', 'Lacey', 989546401 , 'ROSS.Lacey@gmail.com ', 51, true)
+,(800000558, 3, 'GOMEZ', 'Lira', 944608029 , 'GOMEZ.Lira@gmail.com ', 64, true)
+,(800000559, 1, 'NELSON', 'Landrum', 927352144 , 'NELSON.Landrum@gmail.com ', 60, true)
+,(800000560, 4, 'MEYER', 'Lindner', 214510260 , 'MEYER.Lindner@gmail.com ', 37, true)
+,(800000561, 1, 'HOFFMAN', 'Laing', 010173789 , 'HOFFMAN.Laing@gmail.com ', 58, true)
+,(800000562, 2, 'SANDOVAL', 'Lyman', 695521133 , 'SANDOVAL.Lyman@gmail.com ', 40, true)
+,(800000563, 3, 'NGUYEN', 'Lemons', 267486903 , 'NGUYEN.Lemons@gmail.com ', 32, true)
+,(800000564, 1, 'STEWART', 'Lovell', 068374517 , 'STEWART.Lovell@gmail.com ', 84, true)
+,(800000565, 2, 'HERNANDEZ', 'Loveland', 914864148 , 'HERNANDEZ.Loveland@gmail.com ', 86, true)
+,(800000566, 3, 'MORENO', 'Landon', 980581459 , 'MORENO.Landon@gmail.com ', 79, true)
+,(800000567, 3, 'TURNER', 'Lupo', 281792665 , 'TURNER.Lupo@gmail.com ', 23, true)
+,(800000568, 2, 'SALAZAR', 'Light', 258942629 , 'SALAZAR.Light@gmail.com ', 5, true)
+,(800000569, 4, 'TRAN', 'Larios', 603474214 , 'TRAN.Larios@gmail.com ', 25, true)
+,(800000570, 4, 'CARPENTER', 'Linton', 711435383 , 'CARPENTER.Linton@gmail.com ', 19, true)
+,(800000571, 4, 'JORDAN', 'Layton', 875111358 , 'JORDAN.Layton@gmail.com ', 43, true)
+,(800000572, 1, 'SALAZAR', 'Lerma', 540787085 , 'SALAZAR.Lerma@gmail.com ', 4, true)
+,(800000573, 2, 'STEWART', 'Lai', 634472709 , 'STEWART.Lai@gmail.com ', 46, true)
+,(800000574, 4, 'HAWKINS', 'Loya', 993370598 , 'HAWKINS.Loya@gmail.com ', 37, true)
+,(800000575, 4, 'HAWKINS', 'London', 358347922 , 'HAWKINS.London@gmail.com ', 61, true)
+,(800000576, 2, 'PHILLIPS', 'Lehmann', 621839469 , 'PHILLIPS.Lehmann@gmail.com ', 81, true)
+,(800000577, 4, 'FOX', 'Lindner', 044449488 , 'FOX.Lindner@gmail.com ', 60, true)
+,(800000578, 3, 'RIOS', 'Lefebvre', 624524069 , 'RIOS.Lefebvre@gmail.com ', 93, true)
+,(800000579, 3, 'GUZMAN', 'Lester', 865977641 , 'GUZMAN.Lester@gmail.com ', 48, true)
+,(800000580, 4, 'HARRIS', 'Lockard', 975671396 , 'HARRIS.Lockard@gmail.com ', 86, true)
+,(800000581, 2, 'FREEMAN', 'Leiva', 730508738 , 'FREEMAN.Leiva@gmail.com ', 65, true)
+,(800000582, 3, 'COLLINS', 'Lytle', 499868667 , 'COLLINS.Lytle@gmail.com ', 35, true)
+,(800000583, 4, 'PEREZ', 'Lazaro', 223617889 , 'PEREZ.Lazaro@gmail.com ', 50, true)
+,(800000584, 3, 'PERRY', 'Loftin', 603158614 , 'PERRY.Loftin@gmail.com ', 95, true)
+,(800000585, 2, 'SCOTT', 'Leighton', 403580043 , 'SCOTT.Leighton@gmail.com ', 91, true)
+,(800000586, 4, 'TURNER', 'Loucks', 989283762 , 'TURNER.Loucks@gmail.com ', 63, true)
+,(800000587, 2, 'TORRES', 'Lemieux', 986837739 , 'TORRES.Lemieux@gmail.com ', 70, true)
+,(800000588, 3, 'CARLSON', 'Levitt', 876040237 , 'CARLSON.Levitt@gmail.com ', 12, true)
+,(800000589, 4, 'LEWIS', 'Laplante', 878775798 , 'LEWIS.Laplante@gmail.com ', 76, true)
+,(800000590, 4, 'SALAZAR', 'Lyle', 028700505 , 'SALAZAR.Lyle@gmail.com ', 60, true)
+,(800000591, 1, 'HERRERA', 'Lieberman', 446071106 , 'HERRERA.Lieberman@gmail.com ', 58, true)
+,(800000592, 4, 'CASTRO', 'Lear', 772312126 , 'CASTRO.Lear@gmail.com ', 70, true)
+,(800000593, 3, 'SIMMONS', 'Littleton', 697204781 , 'SIMMONS.Littleton@gmail.com ', 43, true)
+,(800000594, 1, 'GARZA', 'Lively', 531655773 , 'GARZA.Lively@gmail.com ', 69, true)
+,(800000595, 3, 'PENA', 'Luna', 426439601 , 'PENA.Luna@gmail.com ', 13, true)
+,(800000596, 2, 'TORRES', 'Lew', 633545167 , 'TORRES.Lew@gmail.com ', 31, true)
+,(800000597, 2, 'THOMPSON', 'Leatherman', 944402584 , 'THOMPSON.Leatherman@gmail.com ', 81, true)
+,(800000598, 4, 'MALDONADO', 'Leone', 628006202 , 'MALDONADO.Leone@gmail.com ', 47, true)
+,(800000599, 3, 'SIMPSON', 'Lamm', 109791722 , 'SIMPSON.Lamm@gmail.com ', 81, true)
+,(800000600, 3, 'BAILEY', 'Lennon', 017097970 , 'BAILEY.Lennon@gmail.com ', 89, true)
+,(800000601, 3, 'MILLS', 'Leroy', 004254292 , 'MILLS.Leroy@gmail.com ', 97, true)
+,(800000602, 3, 'RAY', 'Lum', 253772678 , 'RAY.Lum@gmail.com ', 39, true)
+,(800000603, 3, 'THOMPSON', 'Larios', 296163607 , 'THOMPSON.Larios@gmail.com ', 55, true)
+,(800000604, 2, 'GUERRERO', 'Luna', 648288409 , 'GUERRERO.Luna@gmail.com ', 4, true)
+,(800000605, 1, 'MCDONALD', 'Ling', 112804143 , 'MCDONALD.Ling@gmail.com ', 55, true)
+,(800000606, 3, 'SIMPSON', 'Lehman', 414568500 , 'SIMPSON.Lehman@gmail.com ', 38, true)
+,(800000607, 2, 'STEVENS', 'Lanier', 054528172 , 'STEVENS.Lanier@gmail.com ', 63, true)
+,(800000608, 3, 'OLSON', 'Lett', 284477347 , 'OLSON.Lett@gmail.com ', 61, true)
+,(800000609, 1, 'ALEXANDER', 'Langley', 013034434 , 'ALEXANDER.Langley@gmail.com ', 70, true)
+,(800000610, 4, 'BURKE', 'Lamont', 880904435 , 'BURKE.Lamont@gmail.com ', 6, true)
+,(800000611, 1, 'SCOTT', 'Leigh', 777715252 , 'SCOTT.Leigh@gmail.com ', 4, true)
+,(800000612, 2, 'OLSON', 'Levy', 301710562 , 'OLSON.Levy@gmail.com ', 74, true)
+,(800000613, 3, 'HAWKINS', 'Littrell', 810833828 , 'HAWKINS.Littrell@gmail.com ', 25, true)
+,(800000614, 4, 'PALMER', 'Louie', 025831712 , 'PALMER.Louie@gmail.com ', 84, true)
+,(800000615, 4, 'HERRERA', 'Lindberg', 742104614 , 'HERRERA.Lindberg@gmail.com ', 40, true)
+,(800000616, 4, 'SALAZAR', 'Loftis', 428932917 , 'SALAZAR.Loftis@gmail.com ', 57, true)
+,(800000617, 1, 'TAYLOR', 'Lauer', 587573331 , 'TAYLOR.Lauer@gmail.com ', 16, true)
+,(800000618, 3, 'DELGADO', 'Landau', 229801402 , 'DELGADO.Landau@gmail.com ', 47, true)
+,(800000619, 1, 'VALDEZ', 'Love', 626898283 , 'VALDEZ.Love@gmail.com ', 98, true)
+,(800000620, 2, 'MALDONADO', 'Levinson', 571328273 , 'MALDONADO.Levinson@gmail.com ', 90, true)
+,(800000621, 1, 'BLACK', 'Lawton', 183936792 , 'BLACK.Lawton@gmail.com ', 75, true)
+,(800000622, 4, 'HAYES', 'Lord', 157161247 , 'HAYES.Lord@gmail.com ', 59, true)
+,(800000623, 2, 'FRANKLIN', 'Luke', 504706859 , 'FRANKLIN.Luke@gmail.com ', 71, true)
+,(800000624, 4, 'HUNT', 'Ledbetter', 266125643 , 'HUNT.Ledbetter@gmail.com ', 76, true)
+,(800000625, 1, 'MENDOZA', 'Large', 017656883 , 'MENDOZA.Large@gmail.com ', 8, true)
+,(800000626, 2, 'ALEXANDER', 'Landeros', 073746011 , 'ALEXANDER.Landeros@gmail.com ', 94, true)
+,(800000627, 1, 'SIMPSON', 'Lennon', 233159870 , 'SIMPSON.Lennon@gmail.com ', 43, true)
+,(800000628, 3, 'CRAWFORD', 'Luke', 483429882 , 'CRAWFORD.Luke@gmail.com ', 68, true)
+,(800000629, 1, 'MATTHEWS', 'Lathrop', 336150180 , 'MATTHEWS.Lathrop@gmail.com ', 11, true)
+,(800000630, 2, 'ROMERO', 'Lance', 834561019 , 'ROMERO.Lance@gmail.com ', 5, true)
+,(800000631, 2, 'HARPER', 'Lavelle', 819896004 , 'HARPER.Lavelle@gmail.com ', 68, true)
+,(800000632, 3, 'HERRERA', 'Lara', 619552971 , 'HERRERA.Lara@gmail.com ', 41, true)
+,(800000633, 4, 'MCDONALD', 'Lombard', 494565716 , 'MCDONALD.Lombard@gmail.com ', 22, true)
+,(800000634, 3, 'YOUNG', 'Littrell', 018677122 , 'YOUNG.Littrell@gmail.com ', 44, true)
+,(800000635, 2, 'HARPER', 'Lejeune', 262107281 , 'HARPER.Lejeune@gmail.com ', 95, true)
+,(800000636, 1, 'GREEN', 'Lassiter', 837755184 , 'GREEN.Lassiter@gmail.com ', 95, true)
+,(800000637, 3, 'RODRIGUEZ', 'Lombard', 123211945 , 'RODRIGUEZ.Lombard@gmail.com ', 54, true)
+,(800000638, 1, 'DAVIS', 'Leo', 699631127 , 'DAVIS.Leo@gmail.com ', 55, true)
+,(800000639, 4, 'ALVAREZ', 'Leija', 026154743 , 'ALVAREZ.Leija@gmail.com ', 40, true)
+,(800000640, 1, 'HARRISON', 'Laurent', 596936636 , 'HARRISON.Laurent@gmail.com ', 98, true)
+,(800000641, 1, 'HENDERSON', 'Lorenz', 302560952 , 'HENDERSON.Lorenz@gmail.com ', 43, true)
+,(800000642, 2, 'ELLIS', 'Luckett', 784212097 , 'ELLIS.Luckett@gmail.com ', 79, true)
+,(800000643, 3, 'HUNT', 'Logue', 947280316 , 'HUNT.Logue@gmail.com ', 38, true)
+,(800000644, 3, 'PETERSON', 'Lemmon', 261863624 , 'PETERSON.Lemmon@gmail.com ', 35, true)
+,(800000645, 1, 'OLSON', 'Lipscomb', 217573405 , 'OLSON.Lipscomb@gmail.com ', 29, true)
+,(800000646, 2, 'DOMINGUEZ', 'Leigh', 910280936 , 'DOMINGUEZ.Leigh@gmail.com ', 63, true)
+,(800000647, 1, 'PATEL', 'Lester', 303423010 , 'PATEL.Lester@gmail.com ', 9, true)
+,(800000648, 1, 'MITCHELL', 'Liang', 708439158 , 'MITCHELL.Liang@gmail.com ', 80, true)
+,(800000649, 2, 'BROOKS', 'Lancaster', 729019259 , 'BROOKS.Lancaster@gmail.com ', 49, true)
+,(800000650, 2, 'ADAMS', 'Lightfoot', 433275787 , 'ADAMS.Lightfoot@gmail.com ', 58, true)
+,(800000651, 3, 'FRANKLIN', 'Luttrell', 406242655 , 'FRANKLIN.Luttrell@gmail.com ', 45, true)
+,(800000652, 3, 'HERNANDEZ', 'Lafrance', 635050018 , 'HERNANDEZ.Lafrance@gmail.com ', 41, true)
+,(800000653, 1, 'WATKINS', 'Loredo', 405177663 , 'WATKINS.Loredo@gmail.com ', 86, true)
+,(800000654, 1, 'WARREN', 'Lord', 960618604 , 'WARREN.Lord@gmail.com ', 68, true)
+,(800000655, 3, 'WALLACE', 'Loftus', 303810733 , 'WALLACE.Loftus@gmail.com ', 2, true)
+,(800000656, 3, 'HENDERSON', 'Leary', 926410496 , 'HENDERSON.Leary@gmail.com ', 89, true)
+,(800000657, 2, 'WEST', 'Lucas', 546332201 , 'WEST.Lucas@gmail.com ', 82, true)
+,(800000658, 3, 'PHILLIPS', 'Loza', 058452435 , 'PHILLIPS.Loza@gmail.com ', 19, true)
+,(800000659, 3, 'RICHARDS', 'Lanham', 072205040 , 'RICHARDS.Lanham@gmail.com ', 95, true)
+,(800000660, 1, 'KNIGHT', 'Littrell', 590551181 , 'KNIGHT.Littrell@gmail.com ', 97, true)
+,(800000661, 2, 'FOX', 'Laroche', 206590231 , 'FOX.Laroche@gmail.com ', 41, true)
+,(800000662, 1, 'GOMEZ', 'Leung', 499642730 , 'GOMEZ.Leung@gmail.com ', 21, true)
+,(800000663, 2, 'TORRES', 'Lyles', 944349797 , 'TORRES.Lyles@gmail.com ', 26, true)
+,(800000664, 2, 'MITCHELL', 'Lawrence', 592157895 , 'MITCHELL.Lawrence@gmail.com ', 98, true)
+,(800000665, 1, 'LOPEZ', 'Lofton', 447342315 , 'LOPEZ.Lofton@gmail.com ', 47, true)
+,(800000666, 2, 'LARSON', 'Lui', 588500078 , 'LARSON.Lui@gmail.com ', 90, true)
+,(800000667, 4, 'NGUYEN', 'Letourneau', 513325976 , 'NGUYEN.Letourneau@gmail.com ', 91, true)
+,(800000668, 1, 'WASHINGTON', 'Lemus', 479819437 , 'WASHINGTON.Lemus@gmail.com ', 72, true)
+,(800000669, 1, 'HERNANDEZ', 'Lynn', 575945338 , 'HERNANDEZ.Lynn@gmail.com ', 53, true)
+,(800000670, 3, 'HERNANDEZ', 'Lipscomb', 760623536 , 'HERNANDEZ.Lipscomb@gmail.com ', 40, true)
+,(800000671, 2, 'MURPHY', 'Leo', 645901209 , 'MURPHY.Leo@gmail.com ', 58, true)
+,(800000672, 1, 'TRAN', 'Lux', 045473469 , 'TRAN.Lux@gmail.com ', 84, true)
+,(800000673, 2, 'WATKINS', 'Lamar', 020973215 , 'WATKINS.Lamar@gmail.com ', 13, true)
+,(800000674, 4, 'MARTINEZ', 'Lebron', 368070188 , 'MARTINEZ.Lebron@gmail.com ', 63, true)
+,(800000675, 3, 'HICKS', 'Lowe', 737265514 , 'HICKS.Lowe@gmail.com ', 85, true)
+,(800000676, 4, 'LOPEZ', 'Lippert', 126866856 , 'LOPEZ.Lippert@gmail.com ', 74, true)
+,(800000677, 3, 'LAWRENCE', 'Lemmon', 630752593 , 'LAWRENCE.Lemmon@gmail.com ', 19, true)
+,(800000678, 1, 'COX', 'Laplante', 503396127 , 'COX.Laplante@gmail.com ', 86, true)
+,(800000679, 1, 'FORD', 'Lavigne', 145745651 , 'FORD.Lavigne@gmail.com ', 98, true)
+,(800000680, 2, 'SANCHEZ', 'Lachance', 832421582 , 'SANCHEZ.Lachance@gmail.com ', 47, true)
+,(800000681, 1, 'COOK', 'Larsen', 080502001 , 'COOK.Larsen@gmail.com ', 55, true)
+,(800000682, 2, 'PIERCE', 'Lewandowski', 819627590 , 'PIERCE.Lewandowski@gmail.com ', 65, true)
+,(800000683, 4, 'THOMAS', 'Lockhart', 962477414 , 'THOMAS.Lockhart@gmail.com ', 46, true)
+,(800000684, 4, 'BARNES', 'Lussier', 365015373 , 'BARNES.Lussier@gmail.com ', 4, true)
+,(800000685, 2, 'SANDOVAL', 'Little', 075230839 , 'SANDOVAL.Little@gmail.com ', 3, true)
+,(800000686, 1, 'DIXON', 'Lewandowski', 667503371 , 'DIXON.Lewandowski@gmail.com ', 74, true)
+,(800000687, 1, 'CARTER', 'Leake', 276806870 , 'CARTER.Leake@gmail.com ', 43, true)
+,(800000688, 1, 'NICHOLS', 'Ligon', 351074482 , 'NICHOLS.Ligon@gmail.com ', 65, true)
+,(800000689, 4, 'LEWIS', 'Latta', 216898687 , 'LEWIS.Latta@gmail.com ', 11, true)
+,(800000690, 1, 'CHEN', 'Lett', 301910491 , 'CHEN.Lett@gmail.com ', 44, true)
+,(800000691, 4, 'MORRISON', 'Lindstrom', 826275744 , 'MORRISON.Lindstrom@gmail.com ', 62, true)
+,(800000692, 2, 'BAKER', 'Lazar', 756636312 , 'BAKER.Lazar@gmail.com ', 61, true)
+,(800000693, 4, 'GOMEZ', 'Leahy', 110451208 , 'GOMEZ.Leahy@gmail.com ', 7, true)
+,(800000694, 2, 'STEPHENS', 'Laney', 144426824 , 'STEPHENS.Laney@gmail.com ', 39, true)
+,(800000695, 1, 'BROOKS', 'Leake', 474221877 , 'BROOKS.Leake@gmail.com ', 96, true)
+,(800000696, 1, 'ALLEN', 'Lawlor', 383555342 , 'ALLEN.Lawlor@gmail.com ', 79, true)
+,(800000697, 3, 'MILLER', 'Leo', 053950549 , 'MILLER.Leo@gmail.com ', 24, true)
+,(800000698, 4, 'CAMPBELL', 'Looney', 877694186 , 'CAMPBELL.Looney@gmail.com ', 18, true)
+,(800000699, 1, 'ROSE', 'Langer', 211540022 , 'ROSE.Langer@gmail.com ', 4, true)
+,(800000700, 4, 'THOMPSON', 'Lemke', 087950885 , 'THOMPSON.Lemke@gmail.com ', 30, true)
+,(800000701, 4, 'MASON', 'Lerma', 134074618 , 'MASON.Lerma@gmail.com ', 8, true)
+,(800000702, 4, 'JORDAN', 'Lowry', 938409267 , 'JORDAN.Lowry@gmail.com ', 68, true)
+,(800000703, 3, 'WATSON', 'Lau', 690428106 , 'WATSON.Lau@gmail.com ', 8, true)
+,(800000704, 4, 'BUTLER', 'Lien', 276468649 , 'BUTLER.Lien@gmail.com ', 45, true)
+,(800000705, 3, 'RICHARDS', 'Lay', 408127145 , 'RICHARDS.Lay@gmail.com ', 85, true)
+,(800000706, 1, 'BELL', 'Leahy', 529304419 , 'BELL.Leahy@gmail.com ', 40, true)
+,(800000707, 3, 'ALVARADO', 'Lennon', 991381481 , 'ALVARADO.Lennon@gmail.com ', 39, true)
+,(800000708, 4, 'FERGUSON', 'Lopez', 555896910 , 'FERGUSON.Lopez@gmail.com ', 53, true)
+,(800000709, 2, 'GOMEZ', 'Lipscomb', 209579270 , 'GOMEZ.Lipscomb@gmail.com ', 11, true)
+,(800000710, 4, 'MORGAN', 'Ladner', 166830480 , 'MORGAN.Ladner@gmail.com ', 64, true)
+,(800000711, 4, 'ROBERTSON', 'Lewis', 817637471 , 'ROBERTSON.Lewis@gmail.com ', 14, true)
+,(800000712, 1, 'GARDNER', 'Lawhorn', 321337413 , 'GARDNER.Lawhorn@gmail.com ', 85, true)
+,(800000713, 3, 'HUGHES', 'Loveland', 205812665 , 'HUGHES.Loveland@gmail.com ', 99, true)
+,(800000714, 3, 'PERKINS', 'Lewandowski', 518002983 , 'PERKINS.Lewandowski@gmail.com ', 22, true)
+,(800000715, 1, 'STEVENS', 'Little', 187778645 , 'STEVENS.Little@gmail.com ', 94, true)
+,(800000716, 1, 'STONE', 'Lassiter', 833313881 , 'STONE.Lassiter@gmail.com ', 19, true)
+,(800000717, 1, 'PARKER', 'Link', 141762987 , 'PARKER.Link@gmail.com ', 3, true)
+,(800000718, 4, 'REED', 'Low', 518695908 , 'REED.Low@gmail.com ', 39, true)
+,(800000719, 2, 'MORGAN', 'Leong', 927996946 , 'MORGAN.Leong@gmail.com ', 31, true)
+,(800000720, 2, 'WALLACE', 'Lowell', 138978927 , 'WALLACE.Lowell@gmail.com ', 63, true)
+,(800000721, 2, 'MARTINEZ', 'Lacroix', 233721168 , 'MARTINEZ.Lacroix@gmail.com ', 18, true)
+,(800000722, 1, 'MENDOZA', 'Larue', 262807499 , 'MENDOZA.Larue@gmail.com ', 86, true)
+,(800000723, 1, 'BAKER', 'Langlois', 307928210 , 'BAKER.Langlois@gmail.com ', 96, true)
+,(800000724, 1, 'WELLS', 'Lightfoot', 537104295 , 'WELLS.Lightfoot@gmail.com ', 30, true)
+,(800000725, 3, 'KIM', 'Landers', 159925000 , 'KIM.Landers@gmail.com ', 96, true)
+,(800000726, 3, 'CARTER', 'Lange', 590550642 , 'CARTER.Lange@gmail.com ', 60, true)
+,(800000727, 3, 'CAMPBELL', 'Langlois', 474076341 , 'CAMPBELL.Langlois@gmail.com ', 63, true)
+,(800000728, 2, 'WOODS', 'Lovato', 961378672 , 'WOODS.Lovato@gmail.com ', 93, true)
+,(800000729, 2, 'FOSTER', 'Linder', 922430813 , 'FOSTER.Linder@gmail.com ', 42, true)
+,(800000730, 2, 'ANDREWS', 'Lemoine', 854178240 , 'ANDREWS.Lemoine@gmail.com ', 22, true)
+,(800000731, 1, 'ROBERTSON', 'Lavin', 735149650 , 'ROBERTSON.Lavin@gmail.com ', 10, true)
+,(800000732, 2, 'DIAZ', 'Luong', 644004693 , 'DIAZ.Luong@gmail.com ', 72, true)
+,(800000733, 1, 'PARKER', 'Lee', 624248113 , 'PARKER.Lee@gmail.com ', 7, true)
+,(800000734, 4, 'FOX', 'Langer', 151595109 , 'FOX.Langer@gmail.com ', 1, true)
+,(800000735, 4, 'ROGERS', 'Lux', 022724646 , 'ROGERS.Lux@gmail.com ', 47, true)
+,(800000736, 1, 'ALVARADO', 'Lawler', 478202139 , 'ALVARADO.Lawler@gmail.com ', 54, true)
+,(800000737, 3, 'WEAVER', 'Lejeune', 348355682 , 'WEAVER.Lejeune@gmail.com ', 58, true)
+,(800000738, 1, 'HENDERSON', 'Lett', 054659906 , 'HENDERSON.Lett@gmail.com ', 18, true)
+,(800000739, 2, 'RYAN', 'Loeffler', 105665516 , 'RYAN.Loeffler@gmail.com ', 35, true)
+,(800000740, 2, 'STEPHENS', 'Lantz', 643110798 , 'STEPHENS.Lantz@gmail.com ', 90, true)
+,(800000741, 1, 'NELSON', 'Liles', 265165625 , 'NELSON.Liles@gmail.com ', 88, true)
+,(800000742, 3, 'JAMES', 'Lang', 371411191 , 'JAMES.Lang@gmail.com ', 89, true)
+,(800000743, 3, 'SIMMONS', 'Lacroix', 779403161 , 'SIMMONS.Lacroix@gmail.com ', 3, true)
+,(800000744, 3, 'VASQUEZ', 'Lara', 973449745 , 'VASQUEZ.Lara@gmail.com ', 81, true)
+,(800000745, 1, 'ALEXANDER', 'Lemmon', 927588149 , 'ALEXANDER.Lemmon@gmail.com ', 59, true)
+,(800000746, 1, 'GRANT', 'Larsen', 124632133 , 'GRANT.Larsen@gmail.com ', 1, true)
+,(800000747, 2, 'MURRAY', 'Lawton', 593466041 , 'MURRAY.Lawton@gmail.com ', 5, true)
+,(800000748, 3, 'ALEXANDER', 'Larson', 817639632 , 'ALEXANDER.Larson@gmail.com ', 2, true)
+,(800000749, 3, 'GRIFFIN', 'Loucks', 264151388 , 'GRIFFIN.Loucks@gmail.com ', 82, true)
+,(800000750, 3, 'PENA', 'Lundy', 263036520 , 'PENA.Lundy@gmail.com ', 99, true)
+,(800000751, 4, 'WAGNER', 'Llewellyn', 000725718 , 'WAGNER.Llewellyn@gmail.com ', 38, true)
+,(800000752, 4, 'MENDEZ', 'Louis', 193507125 , 'MENDEZ.Louis@gmail.com ', 68, true)
+,(800000753, 3, 'DUNN', 'Lam', 321529856 , 'DUNN.Lam@gmail.com ', 15, true)
+,(800000754, 1, 'ORTIZ', 'Ladd', 442792588 , 'ORTIZ.Ladd@gmail.com ', 60, true)
+,(800000755, 3, 'GRAY', 'Lockard', 929697502 , 'GRAY.Lockard@gmail.com ', 9, true)
+,(800000756, 3, 'JOHNSTON', 'Lister', 538172566 , 'JOHNSTON.Lister@gmail.com ', 47, true)
+,(800000757, 1, 'ELLIS', 'Letourneau', 313978458 , 'ELLIS.Letourneau@gmail.com ', 29, true)
+,(800000758, 3, 'PENA', 'Leeper', 790575932 , 'PENA.Leeper@gmail.com ', 70, true)
+,(800000759, 1, 'GRAY', 'Lanning', 008195710 , 'GRAY.Lanning@gmail.com ', 72, true)
+,(800000760, 1, 'FERNANDEZ', 'Lett', 276979607 , 'FERNANDEZ.Lett@gmail.com ', 89, true)
+,(800000761, 2, 'LARSON', 'Ling', 746106105 , 'LARSON.Ling@gmail.com ', 48, true)
+,(800000762, 2, 'KENNEDY', 'Lieberman', 069117659 , 'KENNEDY.Lieberman@gmail.com ', 3, true)
+,(800000763, 3, 'BURNS', 'Larkins', 213486131 , 'BURNS.Larkins@gmail.com ', 92, true)
+,(800000764, 2, 'GARZA', 'Lemaster', 656736355 , 'GARZA.Lemaster@gmail.com ', 5, true)
+,(800000765, 1, 'ESTRADA', 'Libby', 586408416 , 'ESTRADA.Libby@gmail.com ', 26, true)
+,(800000766, 4, 'WHITE', 'Lenhart', 626279494 , 'WHITE.Lenhart@gmail.com ', 61, true)
+,(800000767, 4, 'DAVIS', 'Lowrey', 895370512 , 'DAVIS.Lowrey@gmail.com ', 6, true)
+,(800000768, 2, 'STEPHENS', 'Lu', 385506170 , 'STEPHENS.Lu@gmail.com ', 90, true)
+,(800000769, 4, 'MUNOZ', 'Leatherman', 805665010 , 'MUNOZ.Leatherman@gmail.com ', 78, true)
+,(800000770, 4, 'DANIELS', 'Lanza', 219329237 , 'DANIELS.Lanza@gmail.com ', 73, true)
+,(800000771, 4, 'COX', 'Locke', 429289676 , 'COX.Locke@gmail.com ', 55, true)
+,(800000772, 4, 'CARROLL', 'Locklear', 305472516 , 'CARROLL.Locklear@gmail.com ', 17, true)
+,(800000773, 2, 'EVANS', 'Lenz', 505414302 , 'EVANS.Lenz@gmail.com ', 54, true)
+,(800000774, 1, 'GARCIA', 'Lewis', 238408238 , 'GARCIA.Lewis@gmail.com ', 58, true)
+,(800000775, 3, 'GUERRERO', 'Lowman', 255679923 , 'GUERRERO.Lowman@gmail.com ', 64, true)
+,(800000776, 3, 'HICKS', 'Lindberg', 290790919 , 'HICKS.Lindberg@gmail.com ', 58, true)
+,(800000777, 3, 'KNIGHT', 'Lippert', 620964021 , 'KNIGHT.Lippert@gmail.com ', 73, true)
+,(800000778, 3, 'EDWARDS', 'Lucas', 554443104 , 'EDWARDS.Lucas@gmail.com ', 63, true)
+,(800000779, 4, 'MYERS', 'Liles', 183114450 , 'MYERS.Liles@gmail.com ', 13, true)
+,(800000780, 2, 'AUSTIN', 'Lampkin', 606479496 , 'AUSTIN.Lampkin@gmail.com ', 70, true)
+,(800000781, 2, 'BRADLEY', 'Lockett', 898626990 , 'BRADLEY.Lockett@gmail.com ', 33, true)
+,(800000782, 1, 'GREENE', 'Langlois', 111745605 , 'GREENE.Langlois@gmail.com ', 90, true)
+,(800000783, 2, 'ROSS', 'Loftis', 919179185 , 'ROSS.Loftis@gmail.com ', 96, true)
+,(800000784, 4, 'MATTHEWS', 'Leong', 305621821 , 'MATTHEWS.Leong@gmail.com ', 41, true)
+,(800000785, 3, 'JORDAN', 'Lackey', 777511273 , 'JORDAN.Lackey@gmail.com ', 97, true)
+,(800000786, 4, 'CRAWFORD', 'Lassiter', 082013913 , 'CRAWFORD.Lassiter@gmail.com ', 45, true)
+,(800000787, 2, 'ALLEN', 'Lemoine', 646968711 , 'ALLEN.Lemoine@gmail.com ', 46, true)
+,(800000788, 4, 'RAY', 'Leathers', 775809175 , 'RAY.Leathers@gmail.com ', 44, true)
+,(800000789, 3, 'HILL', 'Lantz', 272955795 , 'HILL.Lantz@gmail.com ', 14, true)
+,(800000790, 1, 'ESTRADA', 'Lai', 712222312 , 'ESTRADA.Lai@gmail.com ', 26, true)
+,(800000791, 2, 'ANDREWS', 'Leake', 406486254 , 'ANDREWS.Leake@gmail.com ', 79, true)
+,(800000792, 2, 'BURKE', 'Laster', 736609526 , 'BURKE.Laster@gmail.com ', 29, true)
+,(800000793, 4, 'MORALES', 'Libby', 184924894 , 'MORALES.Libby@gmail.com ', 75, true)
+,(800000794, 4, 'HENDERSON', 'Lovelace', 662844793 , 'HENDERSON.Lovelace@gmail.com ', 88, true)
+,(800000795, 2, 'CARROLL', 'Lozada', 616443712 , 'CARROLL.Lozada@gmail.com ', 67, true)
+,(800000796, 4, 'NUNEZ', 'Lally', 643143638 , 'NUNEZ.Lally@gmail.com ', 74, true)
+,(800000797, 1, 'ROSS', 'Lyles', 880840956 , 'ROSS.Lyles@gmail.com ', 17, true)
+,(800000798, 3, 'COOK', 'Lindsey', 435866958 , 'COOK.Lindsey@gmail.com ', 77, true)
+,(800000799, 4, 'GUERRERO', 'Lusk', 883932807 , 'GUERRERO.Lusk@gmail.com ', 9, true)
+;
 Insert into Adresy_userow values (774, 1, default )
 ,(228, 1, default )
 ,(999, 2, default )
@@ -4385,408 +3988,19 @@ Insert into Adresy_userow values (774, 1, default )
 ,(221, 99, default )
 ,(687, 100, default )
 ,(283, 100, default )
-,(170, 101, default )
-,(728, 101, default )
-,(58, 102, default )
-,(226, 102, default )
-,(856, 103, default )
-,(924, 103, default )
-,(8, 104, default )
-,(775, 104, default )
-,(234, 105, default )
-,(765, 105, default )
-,(979, 106, default )
-,(971, 106, default )
-,(178, 107, default )
-,(507, 107, default )
-,(393, 108, default )
-,(478, 108, default )
-,(235, 109, default )
-,(659, 109, default )
-,(41, 110, default )
-,(981, 110, default )
-,(336, 111, default )
-,(948, 111, default )
-,(879, 112, default )
-,(758, 112, default )
-,(569, 113, default )
-,(546, 113, default )
-,(187, 114, default )
-,(309, 114, default )
-,(313, 115, default )
-,(170, 115, default )
-,(979, 116, default )
-,(561, 116, default )
-,(19, 117, default )
-,(790, 117, default )
-,(20, 118, default )
-,(445, 118, default )
-,(849, 119, default )
-,(989, 119, default )
-,(608, 120, default )
-,(875, 120, default )
-,(975, 121, default )
-,(47, 121, default )
-,(695, 122, default )
-,(19, 122, default )
-,(128, 123, default )
-,(122, 123, default )
-,(765, 124, default )
-,(522, 124, default )
-,(624, 125, default )
-,(770, 125, default )
-,(738, 126, default )
-,(528, 126, default )
-,(98, 127, default )
-,(448, 127, default )
-,(561, 128, default )
-,(350, 128, default )
-,(201, 129, default )
-,(712, 129, default )
-,(332, 130, default )
-,(957, 130, default )
-,(478, 131, default )
-,(113, 131, default )
-,(440, 132, default )
-,(311, 132, default )
-,(295, 133, default )
-,(915, 133, default )
-,(229, 134, default )
-,(534, 134, default )
-,(332, 135, default )
-,(552, 135, default )
-,(914, 136, default )
-,(723, 136, default )
-,(895, 137, default )
-,(991, 137, default )
-,(426, 138, default )
-,(221, 138, default )
-,(709, 139, default )
-,(566, 139, default )
-,(610, 140, default )
-,(889, 140, default )
-,(356, 141, default )
-,(393, 141, default )
-,(931, 142, default )
-,(191, 142, default )
-,(328, 143, default )
-,(877, 143, default )
-,(622, 144, default )
-,(259, 144, default )
-,(316, 145, default )
-,(23, 145, default )
-,(503, 146, default )
-,(128, 146, default )
-,(12, 147, default )
-,(936, 147, default )
-,(919, 148, default )
-,(168, 148, default )
-,(486, 149, default )
-,(345, 149, default )
-,(542, 150, default )
-,(871, 150, default )
-,(777, 151, default )
-,(160, 151, default )
-,(886, 152, default )
-,(269, 152, default )
-,(4, 153, default )
-,(946, 153, default )
-,(779, 154, default )
-,(807, 154, default )
-,(185, 155, default )
-,(757, 155, default )
-,(409, 156, default )
-,(998, 156, default )
-,(699, 157, default )
-,(530, 157, default )
-,(295, 158, default )
-,(13, 158, default )
-,(751, 159, default )
-,(215, 159, default )
-,(368, 160, default )
-,(921, 160, default )
-,(311, 161, default )
-,(471, 161, default )
-,(150, 162, default )
-,(241, 162, default )
-,(834, 163, default )
-,(500, 163, default )
-,(709, 164, default )
-,(794, 164, default )
-,(158, 165, default )
-,(612, 165, default )
-,(949, 166, default )
-,(879, 166, default )
-,(260, 167, default )
-,(995, 167, default )
-,(781, 168, default )
-,(474, 168, default )
-,(621, 169, default )
-,(347, 169, default )
-,(821, 170, default )
-,(187, 170, default )
-,(3, 171, default )
-,(990, 171, default )
-,(161, 172, default )
-,(402, 172, default )
-,(789, 173, default )
-,(726, 173, default )
-,(311, 174, default )
-,(740, 174, default )
-,(499, 175, default )
-,(748, 175, default )
-,(736, 176, default )
-,(207, 176, default )
-,(30, 177, default )
-,(68, 177, default )
-,(837, 178, default )
-,(525, 178, default )
-,(637, 179, default )
-,(660, 179, default )
-,(355, 180, default )
-,(535, 180, default )
-,(347, 181, default )
-,(298, 181, default )
-,(507, 182, default )
-,(772, 182, default )
-,(43, 183, default )
-,(313, 183, default )
-,(834, 184, default )
-,(786, 184, default )
-,(155, 185, default )
-,(529, 185, default )
-,(947, 186, default )
-,(402, 186, default )
-,(466, 187, default )
-,(511, 187, default )
-,(246, 188, default )
-,(673, 188, default )
-,(101, 189, default )
-,(106, 189, default )
-,(204, 190, default )
-,(940, 190, default )
-,(811, 191, default )
-,(704, 191, default )
-,(105, 192, default )
-,(769, 192, default )
-,(733, 193, default )
-,(153, 193, default )
-,(934, 194, default )
-,(472, 194, default )
-,(727, 195, default )
-,(739, 195, default )
-,(106, 196, default )
-,(349, 196, default )
-,(725, 197, default )
-,(53, 197, default )
-,(561, 198, default )
-,(70, 198, default )
-,(923, 199, default )
-,(244, 199, default )
-,(935, 200, default )
-,(865, 200, default )
-,(435, 201, default )
-,(719, 201, default )
-,(721, 202, default )
-,(302, 202, default )
-,(178, 203, default )
-,(308, 203, default )
-,(8, 204, default )
-,(901, 204, default )
-,(694, 205, default )
-,(612, 205, default )
-,(57, 206, default )
-,(305, 206, default )
-,(151, 207, default )
-,(532, 207, default )
-,(622, 208, default )
-,(422, 208, default )
-,(157, 209, default )
-,(503, 209, default )
-,(19, 210, default )
-,(397, 210, default )
-,(543, 211, default )
-,(243, 211, default )
-,(377, 212, default )
-,(51, 212, default )
-,(948, 213, default )
-,(737, 213, default )
-,(280, 214, default )
-,(63, 214, default )
-,(830, 215, default )
-,(582, 215, default )
-,(489, 216, default )
-,(527, 216, default )
-,(382, 217, default )
-,(908, 217, default )
-,(965, 218, default )
-,(658, 218, default )
-,(744, 219, default )
-,(259, 219, default )
-,(254, 220, default )
-,(303, 220, default )
-,(840, 221, default )
-,(24, 221, default )
-,(912, 222, default )
-,(724, 222, default )
-,(71, 223, default )
-,(424, 223, default )
-,(204, 224, default )
-,(343, 224, default )
-,(518, 225, default )
-,(181, 225, default )
-,(259, 226, default )
-,(496, 226, default )
-,(933, 227, default )
-,(51, 227, default )
-,(698, 228, default )
-,(696, 228, default )
-,(246, 229, default )
-,(906, 229, default )
-,(337, 230, default )
-,(865, 230, default )
-,(784, 231, default )
-,(547, 231, default )
-,(612, 232, default )
-,(789, 232, default )
-,(470, 233, default )
-,(345, 233, default )
-,(194, 234, default )
-,(20, 234, default )
-,(34, 235, default )
-,(13, 235, default )
-,(119, 236, default )
-,(908, 236, default )
-,(386, 237, default )
-,(254, 237, default )
-,(956, 238, default )
-,(695, 238, default )
-,(206, 239, default )
-,(484, 239, default )
-,(687, 240, default )
-,(482, 240, default )
-,(371, 241, default )
-,(613, 241, default )
-,(968, 242, default )
-,(367, 242, default )
-,(846, 243, default )
-,(652, 243, default )
-,(693, 244, default )
-,(702, 244, default )
-,(564, 245, default )
-,(459, 245, default )
-,(370, 246, default )
-,(133, 246, default )
-,(565, 247, default )
-,(266, 247, default )
-,(103, 248, default )
-,(930, 248, default )
-,(893, 249, default )
-,(368, 249, default )
-,(948, 250, default )
-,(470, 250, default )
-,(758, 251, default )
-,(113, 251, default )
-,(776, 252, default )
-,(410, 252, default )
-,(924, 253, default )
-,(328, 253, default )
-,(182, 254, default )
-,(506, 254, default )
-,(617, 255, default )
-,(110, 255, default )
-,(869, 256, default )
-,(73, 256, default )
-,(139, 257, default )
-,(276, 257, default )
-,(502, 258, default )
-,(767, 258, default )
-,(684, 259, default )
-,(689, 259, default )
-,(63, 260, default )
-,(551, 260, default )
-,(389, 261, default )
-,(967, 261, default )
-,(59, 262, default )
-,(326, 262, default )
-,(641, 263, default )
-,(158, 263, default )
-,(678, 264, default )
-,(650, 264, default )
-,(401, 265, default )
-,(407, 265, default )
-,(568, 266, default )
-,(17, 266, default )
-,(996, 267, default )
-,(361, 267, default )
-,(579, 268, default )
-,(281, 268, default )
-,(819, 269, default )
-,(84, 269, default )
-,(608, 270, default )
-,(73, 270, default )
-,(932, 271, default )
-,(342, 271, default )
-,(968, 272, default )
-,(232, 272, default )
-,(932, 273, default )
-,(941, 273, default )
-,(703, 274, default )
-,(211, 274, default )
-,(409, 275, default )
-,(929, 275, default )
-,(815, 276, default )
-,(800, 276, default )
-,(55, 277, default )
-,(754, 277, default )
-,(364, 278, default )
-,(113, 278, default )
-,(34, 279, default )
-,(734, 279, default )
-,(895, 280, default )
-,(524, 280, default )
-,(893, 281, default )
-,(344, 281, default )
-,(370, 282, default )
-,(474, 282, default )
-,(521, 283, default )
-,(987, 283, default )
-,(844, 284, default )
-,(774, 284, default )
-,(22, 285, default )
-,(947, 285, default )
-,(613, 286, default )
-,(236, 286, default )
-,(176, 287, default )
-,(121, 287, default )
-,(292, 288, default )
-,(96, 288, default )
-,(812, 289, default )
-,(790, 289, default )
-,(310, 290, default )
-,(586, 290, default )
-,(952, 291, default )
-,(680, 291, default )
-,(739, 292, default )
-,(238, 292, default )
-,(910, 293, default )
-,(963, 293, default )
-,(451, 294, default )
-,(591, 294, default )
-,(99, 295, default )
-,(377, 295, default )
-,(744, 296, default )
-,(657, 296, default )
-,(399, 297, default )
-,(744, 297, default )
-,(238, 298, default )
-,(443, 298, default )
-,(816, 299, default )
-,(691, 299, default )
-,(272, 300, default )
-,(807, 300, default )
 ;
 
-insert into Rodzaj_reklamacji values(1, 'Problems with delivery');
-insert into Rodzaj_reklamacji values(2, 'Problems with meals');
-insert into Rodzaj_reklamacji values(3, 'Other');
+insert into  Promocje values(1, '10EATPROMO', 10),
+(2, '15EATPROMO', 15),
+(3, 'SECRETPROMO', 19),
+(4, 'JUSTFOREAT', 5),
+(5, '20UNREALSALE', 20),
+(6, 'IWANTTOEATMORE', 40);
+
+insert into Rodzaj_reklamacji values(1, 'Long waiting time'),
+(2, 'The product arrived cold'),
+(3, 'Rude courier'),
+(4, 'This is not my order'),
+(5, 'Improper product quality'),
+(6, 'Improper product quality');
+

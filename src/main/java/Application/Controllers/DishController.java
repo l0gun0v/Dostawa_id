@@ -52,7 +52,7 @@ public class DishController {
 
     boolean cheker() throws Exception{
         ArrayList < String > categories = new ArrayList<>(Database.getCategories());
-        if(dishName.getText() == "" || dishText.getText() == "" || dishWeight.getText() == "" || categories.size() == 0){
+        if(dishName.getText() == "" || dishText.getText() == "" || dishWeight.getText() == "" || categories.size() == 0 || costField.getText() == ""){
             return false;
         }
         return true;
@@ -116,6 +116,7 @@ public class DishController {
             SqlCommunicate.update("insert into Historia_cen values(" + mainDish.id +", " + costField.getText() + ", current_timestamp);");
             mainDish.cost = costField.getText();
         }
+        goBackToMenu();
     }
 
 

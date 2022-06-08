@@ -20,7 +20,7 @@
             <Font size="26.0" />
          </font>
       </Button>
-      <VBox fx:id="settingsMenu" layoutX="69.0" layoutY="102.0" prefHeight="651.0" prefWidth="331.0" style="-fx-spacing: 20;">
+      <VBox fx:id="settingsMenu" layoutX="69.0" layoutY="102.0" prefHeight="675.0" prefWidth="331.0" style="-fx-spacing: 20;">
          <children>
             <TextField fx:id="nicknameField" prefHeight="36.0" prefWidth="253.0" promptText="Nickname" />
             <TextField fx:id="passwordField" accessibleRole="PASSWORD_FIELD" prefHeight="36.0" prefWidth="253.0" promptText="Old Password" />
@@ -29,55 +29,11 @@
             <TextField fx:id="phoneField" prefHeight="36.0" prefWidth="253.0" promptText="Phone" />
             <TextField fx:id="mailField" prefHeight="36.0" prefWidth="253.0" promptText="Mail" />
             <TextField fx:id="nameField" prefHeight="36.0" prefWidth="253.0" promptText="Name" />
-            <HBox fx:id="timeHBox" prefHeight="59.0" prefWidth="321.0" style="-fx-spacing: 18;">
-               <children>
-                  <Pane prefHeight="51.0" prefWidth="69.0">
-                     <children>
-                        <Label layoutY="28.0" prefHeight="23.0" prefWidth="69.0" text="Open time on WeekDay" textAlignment="CENTER" wrapText="true">
-                           <font>
-                              <Font size="9.0" />
-                           </font>
-                        </Label>
-                        <ChoiceBox fx:id="inWeekDay" layoutX="2.0" layoutY="1.0" prefHeight="26.0" prefWidth="67.0" />
-                     </children>
-                  </Pane>
-                  <Pane prefHeight="51.0" prefWidth="68.0">
-                     <children>
-                        <Label layoutY="28.0" prefHeight="23.0" prefWidth="73.0" text="Close time on WeekDay" textAlignment="CENTER" wrapText="true">
-                           <font>
-                              <Font size="9.0" />
-                           </font>
-                        </Label>
-                        <ChoiceBox fx:id="outWeekDay" layoutX="1.0" layoutY="1.0" prefHeight="26.0" prefWidth="67.0" />
-                     </children>
-                  </Pane>
-                  <Pane prefHeight="51.0" prefWidth="65.0">
-                     <children>
-                        <Label layoutY="28.0" prefHeight="23.0" prefWidth="69.0" text="Open time on WeekEnd" textAlignment="CENTER" wrapText="true">
-                           <font>
-                              <Font size="9.0" />
-                           </font>
-                        </Label>
-                        <ChoiceBox fx:id="inWeekEnd" prefHeight="26.0" prefWidth="67.0" />
-                     </children>
-                  </Pane>
-                  <Pane prefHeight="57.0" prefWidth="69.0">
-                     <children>
-                        <Label layoutY="28.0" prefHeight="23.0" prefWidth="69.0" text="Close time on WeekEnd" textAlignment="CENTER" wrapText="true">
-                           <font>
-                              <Font size="9.0" />
-                           </font>
-                        </Label>
-                        <ChoiceBox fx:id="outWeekEnd" layoutX="-2.0" prefHeight="26.0" prefWidth="67.0" />
-                     </children>
-                  </Pane>
-               </children>
-            </HBox>
             <HBox fx:id="adresHBox" prefHeight="59.0" prefWidth="321.0" style="-fx-spacing: 18;">
                <children>
                   <Pane prefHeight="59.0" prefWidth="155.0">
                      <children>
-                        <Label layoutY="28.0" prefHeight="23.0" prefWidth="143.0" text="Wojewodstwo" textAlignment="CENTER" wrapText="true">
+                        <Label layoutY="28.0" prefHeight="23.0" prefWidth="143.0" text="District" textAlignment="CENTER" wrapText="true">
                            <font>
                               <Font size="17.0" />
                            </font>
@@ -87,7 +43,7 @@
                   </Pane>
                   <Pane prefHeight="59.0" prefWidth="157.0">
                      <children>
-                        <Label layoutY="28.0" prefHeight="26.0" prefWidth="143.0" text="Miasto" textAlignment="CENTER" wrapText="true">
+                        <Label layoutY="28.0" prefHeight="26.0" prefWidth="143.0" text="City" textAlignment="CENTER" wrapText="true">
                            <font>
                               <Font size="17.0" />
                            </font>
@@ -108,7 +64,7 @@
                   <Font size="22.0" />
                </font>
             </Button>
-            <Label fx:id="errorLabel" prefHeight="33.0" prefWidth="330.0" />
+            <Label fx:id="errorLabel" prefHeight="37.0" prefWidth="330.0" />
          </children>
       </VBox>
       <MenuButton fx:id="menuCoise" layoutX="437.0" layoutY="11.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="344.0" text="Choose Menu">
@@ -143,9 +99,9 @@
             </ScrollPane>
          </children>
       </Pane>
-      <Pane fx:id="openSettings" layoutX="434.0" layoutY="104.0">
+      <Pane fx:id="openSettings" layoutX="434.0" layoutY="104.0" prefHeight="195.0" prefWidth="345.0">
          <children>
-            <HBox fx:id="timeHBox17" layoutY="56.0" prefHeight="92.0" prefWidth="344.0" style="-fx-spacing: 18;">
+            <HBox fx:id="timeHBox" layoutY="56.0" prefHeight="92.0" prefWidth="344.0" style="-fx-spacing: 18;">
                <children>
                   <Pane prefHeight="92.0" prefWidth="107.0">
                      <children>
@@ -174,7 +130,7 @@
                   </CheckBox>
                </children>
             </HBox>
-            <MenuButton fx:id="selectDay" layoutX="5.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="340.0" text="Monday">
+            <MenuButton fx:id="selectDay" layoutX="5.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="340.0" text="Select day">
               <items>
                 <MenuItem mnemonicParsing="false" text="Action 1" />
                 <MenuItem mnemonicParsing="false" text="Action 2" />
@@ -183,7 +139,13 @@
                   <Font size="20.0" />
                </font>
             </MenuButton>
+            <Button fx:id="saveData" layoutX="-1.0" layoutY="156.0" mnemonicParsing="false" onAction="#saveData" prefHeight="40.0" prefWidth="345.0" text="Save">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Button>
          </children>
       </Pane>
+      <Label fx:id="errorLabelTime" layoutX="436.0" layoutY="310.0" prefHeight="37.0" prefWidth="339.0" />
    </children>
 </Pane>

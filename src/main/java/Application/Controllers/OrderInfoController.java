@@ -37,7 +37,7 @@ public class OrderInfoController {
     @FXML
     private Button costButton;
 
-    public int orderCost = 0;
+    public Double orderCost = 0.0;
 
     public void backButton() {
         try{

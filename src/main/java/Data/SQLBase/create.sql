@@ -153,7 +153,7 @@ CREATE TABLE Produkty (
 
 CREATE TABLE Promocje(
     id_promocji int   NOT NULL,
-    promocod varchar(15) NOT NULL,
+    promocod varchar(15) NOT NULL unique,
      znizka numeric(5,2)   NOT NULL,
      CONSTRAINT pk_Promocje PRIMARY KEY (
         id_promocji
@@ -164,7 +164,8 @@ CREATE TABLE Promocje_klientow (
     id_promocji int   NOT NULL,
     id_klienta int NOT NULL,
     data_od timestamp not null,
-    data_do timestamp not null
+    data_do timestamp not null,
+    PRIMARY key(id_promocji, id_klienta)
 );
 
 CREATE TABLE Kategorii_produktow (
@@ -364,7 +365,10 @@ BEGIN
                   LEFT JOIN Kategorii_produktow kp ON(p.id_produktu = kp.id_produktu)
                   LEFT JOIN Kategorie k ON(k.id_kategoria = kp.id_kategoria)
                   LEFT JOIN Adresy_userow au ON(r.id_restauracji = au.id_uzytkownika)
-                  WHERE ((k.nazwa = kategory) AND (p.active = true) and (r.active = true) and (au.id_adresu = id_adr));
+                  LEFT JOIN Adresy a ON(a.id_adresu = au.id_adresu)
+                   LEFT JOIN Harmonogram h ON(h.id_restauracji = r.id_restauracji and h.id_dnia =(SELECT extract(isodow from current_date ) AS "ISO Day of week")
+)
+                  WHERE ((k.nazwa = kategory) AND (p.active = true) and (r.active = true) and (a.id_miasta = id_adr) and (h.czynny_od <= current_time and h.czynny_do >= current_time and h.active));
 END;
 $$
 LANGUAGE plpgsql;

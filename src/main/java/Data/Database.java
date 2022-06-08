@@ -22,6 +22,33 @@ public class Database {
     public static class UserAlreadyRegistred extends Exception {}
 
     ///user and reg
+
+    static public Integer getPromoFromName(String name) throws SQLException{
+        ArrayList<ArrayList<String> > query = SqlCommunicate.execute("select id_promocji from Promocje where promocod = '" + name + "';");
+        query.remove(0);
+        if(query.size() == 0){
+            return -1;
+        }
+        return Integer.parseInt(query.get(0).get(0));
+    }
+
+    static public ArrayList<String>getAllUserPromos() throws SQLException{
+        ArrayList<String> ans = new ArrayList<>();
+        ArrayList<ArrayList<String> > query = SqlCommunicate.execute("select concat(p.promocod, ' ' , to_char(pk.data_od, 'hh:mm dd-mm-yyyy'), ' ', to_char(pk.data_do, 'hh:mm dd-mm-yyyy'), ' ', cast(znizka as int), '%') from Promocje_klientow pk join Promocje p on pk.id_promocji = p.id_promocji where pk.id_klienta = " + User.MainUser.id + ";");
+        query.remove(0);
+        for(ArrayList<String> i : query){
+            ans.add(i.get(0));
+        }
+        return ans;
+    } 
+
+    static public String getUserPromo(Integer id) throws SQLException{
+
+        ArrayList<ArrayList<String> > query = SqlCommunicate.execute("select concat(p.promocod, ' ' , to_char(pk.data_od, 'hh:mm dd-mm-yyyy'), ' ', to_char(pk.data_do, 'hh:mm dd-mm-yyyy'), ' ', cast(znizka as int), '%') from Promocje_klientow pk join Promocje p on pk.id_promocji = p.id_promocji where pk.id_klienta = " + User.MainUser.id + " and p.id_promocji = " + id + ";");
+        query.remove(0);
+        return query.get(0).get(0);
+    } 
+
     static public User getUser(String nickname, String password) throws Exception{
         try{
             new Password(password);
@@ -37,6 +64,11 @@ public class Database {
         throw new IncorrectUserException();
     }
 
+
+    static public ArrayList<String> getTimeInOut(Integer id) throws SQLException{
+        ArrayList<ArrayList<String> > query = SqlCommunicate.execute("select czynny_od, czynny_do, active from Harmonogram where id_restauracji = " + User.MainUser.id + " and id_dnia =" + id + ";");
+        return query.get(1);
+    }
     
 
     public static ArrayList < Integer > getOrderKur(int userID) throws Exception {
@@ -538,12 +570,13 @@ public class Database {
         HashSet < Integer > allRestaurans = new HashSet<>();
         for (String category : categories) {
             try {
-                String query = "select get_restaurans_by_kategory('" + category  + "'," + User.MainUser.selectedAddress +" )" + ";";
+                String query = "select get_restaurans_by_kategory('" + category  + "'," + Database.getIdMiastaByAdresId(User.MainUser.selectedAddress) +" )" + ";";
                 ArrayList < ArrayList < String > > restauransWithThisKategory = SqlCommunicate.execute(query);
                 for (ArrayList < String > currentRestauran : restauransWithThisKategory) {
                     String currentID = currentRestauran.get(0);
                     if (!Objects.equals(currentID, "get_restaurans_by_kategory")) allRestaurans.add(Integer.parseInt(currentID));
                 }
+                System.out.println(query);
             }catch(Exception e) {
                 e.printStackTrace();
                 throw new Exception();

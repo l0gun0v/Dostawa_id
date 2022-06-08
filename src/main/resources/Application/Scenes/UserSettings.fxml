@@ -4,7 +4,7 @@
 <?import javafx.scene.control.ChoiceBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.MenuButton?>
-<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
@@ -27,9 +27,9 @@
             <Label fx:id="errorLabel" prefHeight="33.0" prefWidth="330.0" />
          </children>
       </VBox>
-      <HBox fx:id="adresHBox" layoutX="446.0" layoutY="193.0" prefHeight="59.0" prefWidth="321.0" style="-fx-spacing: 18;">
+      <HBox fx:id="adresHBox" layoutX="398.0" layoutY="193.0" prefHeight="59.0" prefWidth="369.0" style="-fx-spacing: 18;">
          <children>
-            <Pane prefHeight="59.0" prefWidth="155.0">
+            <Pane prefHeight="59.0" prefWidth="198.0">
                <children>
                   <Label layoutY="28.0" prefHeight="23.0" prefWidth="143.0" text="Wojewodstwo" textAlignment="CENTER" wrapText="true">
                      <font>
@@ -39,7 +39,7 @@
                   <ChoiceBox fx:id="wojeChoice" layoutX="2.0" layoutY="1.0" prefHeight="26.0" prefWidth="143.0" />
                </children>
             </Pane>
-            <Pane prefHeight="59.0" prefWidth="157.0">
+            <Pane prefHeight="59.0" prefWidth="170.0">
                <children>
                   <Label layoutY="28.0" prefHeight="26.0" prefWidth="143.0" text="Miasto" textAlignment="CENTER" wrapText="true">
                      <font>
@@ -51,18 +51,26 @@
             </Pane>
          </children>
       </HBox>
-      <TextField fx:id="adresField" layoutX="446.0" layoutY="268.0" prefHeight="36.0" prefWidth="321.0" promptText="Address">
+      <TextField fx:id="adresField" layoutX="397.0" layoutY="268.0" prefHeight="36.0" prefWidth="370.0" promptText="Address">
          <font>
             <Font size="14.0" />
          </font>
       </TextField>
-      <Button layoutX="446.0" layoutY="318.0" mnemonicParsing="false" onAction="#addAdresButton" prefHeight="33.0" prefWidth="321.0" text="Add" />
+      <Button layoutX="399.0" layoutY="318.0" mnemonicParsing="false" onAction="#addAdresButton" prefHeight="33.0" prefWidth="368.0" text="Add" />
       <Button layoutX="39.0" layoutY="679.0" mnemonicParsing="false" onAction="#goBack" prefHeight="33.0" prefWidth="109.0" text="Back" />
-      <MenuButton fx:id="selectAddress" layoutX="448.0" layoutY="141.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="313.0" text="Select address">
-        <items>
-          <MenuItem mnemonicParsing="false" text="Action 1" />
-          <MenuItem mnemonicParsing="false" text="Action 2" />
-        </items>
-      </MenuButton>
+      <MenuButton fx:id="selectAddress" layoutX="403.0" layoutY="141.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="358.0" text="Select address" />
+      <ScrollPane layoutX="399.0" layoutY="371.0" prefHeight="145.0" prefWidth="367.0">
+         <content>
+            <VBox fx:id="promoVBox" prefHeight="141.0" prefWidth="365.0" />
+         </content>
+      </ScrollPane>
+      <TextField fx:id="promoField" layoutX="399.0" layoutY="533.0" prefHeight="36.0" prefWidth="368.0" promptText="Promocod">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Button layoutX="399.0" layoutY="591.0" mnemonicParsing="false" onAction="#addPromoButton" prefHeight="33.0" prefWidth="369.0" text="Add" />
+      <Label fx:id="errorLabel1" layoutX="399.0" layoutY="644.0" prefHeight="33.0" prefWidth="372.0" />
+      <Label fx:id="errorLabel2" layoutX="446.0" layoutY="91.0" prefHeight="33.0" prefWidth="315.0" />
    </children>
 </Pane>

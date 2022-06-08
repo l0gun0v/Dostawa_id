@@ -2,9 +2,6 @@ package Application.Controllers;
 
 import java.sql.SQLException;
 import java.util.ArrayList;
-
-import javax.xml.stream.events.EndElement;
-
 import Application.StartApplication;
 import Data.Database;
 import Data.Password;
@@ -15,9 +12,9 @@ import Utills.LoadXML;
 import javafx.beans.value.ObservableValue;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
-import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.geometry.Pos;
+import javafx.scene.chart.PieChart.Data;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.MenuButton;
@@ -28,51 +25,24 @@ import javafx.scene.layout.VBox;
 
 public class UserSettingsController{
 
-    @FXML
-    private TextField adresField;
-
-    @FXML
-    private HBox adresHBox;
-
-    @FXML
-    private TextField confPasswordField;
-
-    @FXML
-    private Label errorLabel;
-
-    @FXML
-    private TextField mailField;
-
-    @FXML
-    private ChoiceBox<String> miastoChoice;
-
-    @FXML
-    private TextField nameField;
-
-    @FXML
-    private TextField newPasswordField;
-
-    @FXML
-    private TextField nicknameField;
-
-    @FXML
-    private TextField passwordField;
-
-    @FXML
-    private TextField phoneField;
-
-    @FXML
-    private VBox settingsMenu;
-
-    @FXML
-    private TextField surnameField;
-
-    @FXML
-    private ChoiceBox<String> wojeChoice;
-
+    public TextField adresField;
+    public HBox adresHBox;
+    public TextField confPasswordField;
+    public Label errorLabel, errorLabel1, errorLabel2;
+    public TextField mailField;
+    public ChoiceBox<String> miastoChoice;
+    public TextField nameField;
+    public TextField newPasswordField;
+    public TextField nicknameField;
+    public TextField passwordField;
+    public TextField phoneField;
+    public VBox settingsMenu;
+    public TextField surnameField;
+    public ChoiceBox<String> wojeChoice;
     public MenuButton selectAddress;
-
     public Integer idm, idw;
+    public VBox promoVBox;
+    public TextField promoField;
 
     public void initialize() throws Exception{
         selectAddress.getItems().clear();
@@ -81,8 +51,14 @@ public class UserSettingsController{
         nameField.setText(User.MainUser.name);
         mailField.setText(User.MainUser.mail);
         phoneField.setText(User.MainUser.phone);
-
         selectAddress.setText(User.MainUser.selectedAddressText);
+        
+        for(String promo : Database.getAllUserPromos()){
+            Label x = new Label(promo);
+            x.setMaxSize(360, 20);
+            x.setMinSize(360, 20);
+            promoVBox.getChildren().add(0, x);
+        }
 
         for(Integer a : Database.getAllUserAddresses()){
             idm = Database.getIdMiastaByAdresId(a);
@@ -94,7 +70,6 @@ public class UserSettingsController{
                     selectAddress.setText(item.getText());
                     User.MainUser.selectedAddressText = item.getText();
                     User.MainUser.selectedAddress = a;
-                   // System.out.print(item.getText());
                 }
             });
             selectAddress.getItems().add(item);
@@ -103,10 +78,8 @@ public class UserSettingsController{
 
         wojeChoice.getSelectionModel().selectedIndexProperty().addListener(
             (ObservableValue<? extends Number> ov, Number old_val, Number new_val) -> {
-            //System.out.println("Action!!!");
             miastoChoice.getItems().clear();
-           // System.out.println(new_val);
-                int x = (int)new_val;
+            int x = (int)new_val;
             ArrayList<String> miasta = Database.getMiasta(new String(wojeChoice.getItems().get(x)));
             for(String m : miasta){
                 miastoChoice.getItems().add(m);
@@ -119,8 +92,6 @@ public class UserSettingsController{
         }
     }
 
-
-    @FXML
     public void saveChanges() {
         if(nameField.getText()=="" || passwordField.getText() == ""
         || phoneField.getText()=="" || mailField.getText()=="" || nicknameField.getText()=="" ){
@@ -182,12 +153,17 @@ public class UserSettingsController{
         }catch(Exception e){
             e.printStackTrace();
         }
-        errorLabel.setText("");
+        errorLabel.setAlignment(Pos.CENTER); 
+        errorLabel.setMaxWidth(Double.MAX_VALUE);
+        errorLabel.setText("Success");
     }
 
     public void addAdresButton() throws NumberFormatException, SQLException {
         String query1;
         if(wojeChoice.getValue() == null || miastoChoice.getValue() == null || adresField.getText() == ""){
+            errorLabel.setAlignment(Pos.CENTER); 
+            errorLabel.setMaxWidth(Double.MAX_VALUE);
+            errorLabel.setText("Not enough data");
             return;
         }
         query1 = "select insert_adres('" + adresField.getText() +"'," + Database.getMiastoId(miastoChoice.getValue())+");";
@@ -209,6 +185,9 @@ public class UserSettingsController{
         }catch(Exception e){
             e.printStackTrace();
         }
+        errorLabel2.setAlignment(Pos.CENTER); 
+        errorLabel2.setMaxWidth(Double.MAX_VALUE);
+        errorLabel2.setText("Success");
     }
 
     public void goBack() {
@@ -219,4 +198,36 @@ public class UserSettingsController{
             e.printStackTrace();
         }
     }
+
+    public void addPromoButton() throws SQLException {
+        Integer promo = Database.getPromoFromName(promoField.getText());
+       // System.out.println(promo);
+        if(promo.compareTo(-1) == 0){
+            errorLabel2.setAlignment(Pos.CENTER); 
+            errorLabel2.setMaxWidth(Double.MAX_VALUE);
+            errorLabel2.setText("There is no such promo code ((((");
+            return;
+        }
+
+        try{
+            SqlCommunicate.update("insert into Promocje_klientow values(" + promo + ", " + User.MainUser.id + ", current_timestamp, current_timestamp + interval '5' day);");
+        }catch(Exception e){
+            e.printStackTrace();
+            errorLabel2.setAlignment(Pos.CENTER); 
+            errorLabel2.setMaxWidth(Double.MAX_VALUE);
+            errorLabel2.setText("You already have this promocod ((((");
+            return;
+        }
+
+
+        Label x = new Label(Database.getUserPromo(promo));
+        x.setMaxSize(360, 20);
+        x.setMinSize(360, 20);
+        promoVBox.getChildren().add(0, x);
+
+        errorLabel2.setAlignment(Pos.CENTER); 
+        errorLabel2.setMaxWidth(Double.MAX_VALUE);
+        errorLabel2.setText("Success");
+    }
+
 }

@@ -86,7 +86,6 @@ public class OrderHistoryController {
                 try {
                     orderTime = Database.getOrderTime(orderForInfo);
                 } catch (SQLException e1) {
-                    // TODO Auto-generated catch block
                     e1.printStackTrace();
                 }
                 try{
