@@ -8,10 +8,10 @@ public class User {
     public String inWD;
     public String inWE;
     public String outWD, outWE;
-    public String name, surname;
+    public String name, surname, selectedAddressText;
     public String adres, mail, phone;
     public Boolean active;
-    public Integer transport, idm;
+    public Integer transport, idm, selectedAddress;
 
     public Integer getId(){
         return id;

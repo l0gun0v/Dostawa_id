@@ -10,6 +10,8 @@ import javafx.scene.control.Label;
 import javafx.scene.control.MenuButton;
 import javafx.scene.control.MenuItem;
 import Application.StartApplication;
+import Data.User;
+import Data.SQLBase.SqlCommunicate;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
 
@@ -143,6 +145,7 @@ public class CurrentOrderController {
         for (Integer currentProductID : chosenProducts) {
             addProductToOrder(currentProductID, it.next());
         }
+        SqlCommunicate.update("update Adresy_userow set last_time = current_timestamp where id_adresu = " + User.MainUser.selectedAddress + ";");
         try{
             FXMLLoader loader = LoadXML.load("Scenes/UserMenu.fxml");
             StartApplication.setScene(loader);

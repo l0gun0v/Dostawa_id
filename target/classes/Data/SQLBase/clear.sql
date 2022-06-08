@@ -24,6 +24,7 @@ DROP TABLE Opinie_o_kurjerach CASCADE;
 DROP TABLE Opinia_o_restauracjach CASCADE;
 DROP TABLE Wojewodstwa CASCADE;
 DROP TABLE Miasta CASCADE;
+DROP TABLE Harmonogram CASCADE;
 drop function insert_adres;
 drop function get_product_cost;
 

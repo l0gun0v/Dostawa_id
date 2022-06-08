@@ -7,6 +7,7 @@ CREATE TABLE Loginy_hasla (
      )
 );
 --------------------------------------
+
 CREATE TABLE Statusy (
     id_statusu int   NOT NULL,
     nazwa VARCHAR(22)   NOT NULL,
@@ -79,15 +80,43 @@ CREATE TABLE Restauracje (
     nazwa_restauracji VARCHAR(30)   NOT NULL,
     numer_telefonu numeric(11)   NOT NULL check(numer_telefonu > 0),
     mail VARCHAR(40)   NOT NULL,
-    dzien_powszedni_czas_otwarcja time  default '08:00',
-    dzien_powszedni_czas_zamkniecia time default '22:00',
-    dni_wolne_czas_otwarcja time  default '09:00',
-    dni_wolne_czas_zamkniecia time  default '20:00',
     active boolean not null default false,
     CONSTRAINT pk_Restauracje PRIMARY KEY (
         id_restauracji
      )
 );
+
+Create table Harmonogram(
+    id_restauracji int not null, 
+    id_dnia int not null, 
+    czynny_od time not null default '08:00',
+    czynny_do time not null default '22:00',
+    active boolean not null,
+    PRIMARY key(id_restauracji, id_dnia)
+);
+
+ALTER TABLE Harmonogram ADD CONSTRAINT fk_Harmonogram_id_restauracji FOREIGN KEY(id_restauracji)
+REFERENCES Restauracje (id_restauracji);
+
+----Harmonogram
+
+create or REPLACE function insert_into_harmonogram() returns trigger as $$
+begin
+    insert into Harmonogram values(new.id_restauracji, 1, default, default, true),
+                                  (new.id_restauracji, 2, default, default, true),
+                                  (new.id_restauracji, 3, default, default, true),
+                                  (new.id_restauracji, 4, default, default, true),
+                                  (new.id_restauracji, 5, default, default, true),
+                                  (new.id_restauracji, 6, default, default, true),
+                                  (new.id_restauracji, 7, default, default, true);
+    return new;
+end;
+$$
+LANGUAGE plpgsql;
+
+create trigger insert_into_harmonogram
+after insert on Restauracje for each 
+row execute function insert_into_harmonogram();
 
 CREATE TABLE Kurjery (
     id_kurjera numeric(9)   NOT NULL,
@@ -105,7 +134,8 @@ CREATE TABLE Kurjery (
 
 CREATE TABLE Adresy_userow (
     id_adresu int   NOT NULL,
-    id_uzytkownika int   NOT NULL
+    id_uzytkownika int   NOT NULL,
+    last_time timestamp not null default current_timestamp
 );
 
 CREATE TABLE Produkty (
@@ -324,7 +354,7 @@ LANGUAGE plpgsql;
 
 ----
 
-CREATE OR REPLACE FUNCTION get_restaurans_by_kategory(kategory TEXT)
+CREATE OR REPLACE FUNCTION get_restaurans_by_kategory(kategory TEXT, id_adr int)
       RETURNS TABLE(A NUMERIC(9, 0))
 AS
 $$
@@ -333,7 +363,8 @@ BEGIN
                   LEFT JOIN Restauracje r ON(r.id_restauracji = p.id_restauracji)
                   LEFT JOIN Kategorii_produktow kp ON(p.id_produktu = kp.id_produktu)
                   LEFT JOIN Kategorie k ON(k.id_kategoria = kp.id_kategoria)
-                  WHERE ((k.nazwa = kategory) AND (p.active = true) and (r.active = true));
+                  LEFT JOIN Adresy_userow au ON(r.id_restauracji = au.id_uzytkownika)
+                  WHERE ((k.nazwa = kategory) AND (p.active = true) and (r.active = true) and (au.id_adresu = id_adr));
 END;
 $$
 LANGUAGE plpgsql;

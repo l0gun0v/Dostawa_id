@@ -20,7 +20,7 @@
             <Font size="26.0" />
          </font>
       </Button>
-      <VBox fx:id="settingsMenu" layoutX="229.0" layoutY="102.0" prefHeight="651.0" prefWidth="331.0" style="-fx-spacing: 20;">
+      <VBox fx:id="settingsMenu" layoutX="69.0" layoutY="102.0" prefHeight="651.0" prefWidth="331.0" style="-fx-spacing: 20;">
          <children>
             <TextField fx:id="nicknameField" prefHeight="36.0" prefWidth="253.0" promptText="Nickname" />
             <TextField fx:id="passwordField" accessibleRole="PASSWORD_FIELD" prefHeight="36.0" prefWidth="253.0" promptText="Old Password" />
@@ -98,12 +98,16 @@
                </children>
             </HBox>
             <TextField fx:id="adresField" prefHeight="36.0" prefWidth="253.0" promptText="Address" />
-            <CheckBox fx:id="activeCheck" mnemonicParsing="false" prefHeight="25.0" prefWidth="330.0" text="Active">
+            <CheckBox fx:id="activeCheck" mnemonicParsing="false" prefHeight="34.0" prefWidth="330.0" text="Active">
                <font>
                   <Font size="17.0" />
                </font>
             </CheckBox>
-            <Button mnemonicParsing="false" onAction="#saveRest" prefHeight="41.0" prefWidth="345.0" text="save" />
+            <Button mnemonicParsing="false" onAction="#saveRest" prefHeight="41.0" prefWidth="345.0" text="Save">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Button>
             <Label fx:id="errorLabel" prefHeight="33.0" prefWidth="330.0" />
          </children>
       </VBox>
@@ -137,6 +141,48 @@
                   <VBox fx:id="orderList" prefHeight="557.0" prefWidth="760.0" />
                </content>
             </ScrollPane>
+         </children>
+      </Pane>
+      <Pane fx:id="openSettings" layoutX="434.0" layoutY="104.0">
+         <children>
+            <HBox fx:id="timeHBox17" layoutY="56.0" prefHeight="92.0" prefWidth="344.0" style="-fx-spacing: 18;">
+               <children>
+                  <Pane prefHeight="92.0" prefWidth="107.0">
+                     <children>
+                        <Label layoutY="29.0" prefHeight="61.0" prefWidth="102.0" text="Open time on WeekDay" textAlignment="CENTER" wrapText="true">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <ChoiceBox fx:id="inTime" layoutX="2.0" layoutY="1.0" prefHeight="26.0" prefWidth="98.0" />
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="59.0" prefWidth="112.0">
+                     <children>
+                        <Label layoutY="28.0" prefHeight="61.0" prefWidth="112.0" text="Close time on WeekDay" textAlignment="CENTER" wrapText="true">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <ChoiceBox fx:id="outTime" layoutX="-2.0" layoutY="1.0" prefHeight="26.0" prefWidth="111.0" />
+                     </children>
+                  </Pane>
+                  <CheckBox fx:id="activeDay" mnemonicParsing="false" prefHeight="59.0" prefWidth="93.0" text="Active">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </CheckBox>
+               </children>
+            </HBox>
+            <MenuButton fx:id="selectDay" layoutX="5.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="340.0" text="Monday">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Action 1" />
+                <MenuItem mnemonicParsing="false" text="Action 2" />
+              </items>
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </MenuButton>
          </children>
       </Pane>
    </children>

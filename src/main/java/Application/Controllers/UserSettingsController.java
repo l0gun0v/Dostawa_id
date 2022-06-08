@@ -3,6 +3,8 @@ package Application.Controllers;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
+import javax.xml.stream.events.EndElement;
+
 import Application.StartApplication;
 import Data.Database;
 import Data.Password;
@@ -11,11 +13,15 @@ import Data.Database.IncorrectUserException;
 import Data.SQLBase.SqlCommunicate;
 import Utills.LoadXML;
 import javafx.beans.value.ObservableValue;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.geometry.Pos;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.Label;
+import javafx.scene.control.MenuButton;
+import javafx.scene.control.MenuItem;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
@@ -56,7 +62,7 @@ public class UserSettingsController{
     private TextField phoneField;
 
     @FXML
-    private VBox settingsMenu, adresVBox;
+    private VBox settingsMenu;
 
     @FXML
     private TextField surnameField;
@@ -64,20 +70,34 @@ public class UserSettingsController{
     @FXML
     private ChoiceBox<String> wojeChoice;
 
+    public MenuButton selectAddress;
+
     public Integer idm, idw;
 
     public void initialize() throws Exception{
-       
+        selectAddress.getItems().clear();
         surnameField.setText(User.MainUser.surname);
         nicknameField.setText(User.MainUser.nickname);
         nameField.setText(User.MainUser.name);
         mailField.setText(User.MainUser.mail);
         phoneField.setText(User.MainUser.phone);
-        
+
+        selectAddress.setText(User.MainUser.selectedAddressText);
+
         for(Integer a : Database.getAllUserAddresses()){
             idm = Database.getIdMiastaByAdresId(a);
             idw = Database.getIdWojeByMiastoId(idm);
-            adresVBox.getChildren().add(new Label(Database.getWojeById(idw) + ", " + Database.getMiastoById(idm) + ", " + Database.getAdresById(a)));
+            MenuItem item = new MenuItem(Database.getWojeById(idw) + ", " + Database.getMiastoById(idm) + ", " + Database.getAdresById(a));
+            item.setOnAction(new EventHandler<ActionEvent>() {
+                public void handle(ActionEvent e)
+                {
+                    selectAddress.setText(item.getText());
+                    User.MainUser.selectedAddressText = item.getText();
+                    User.MainUser.selectedAddress = a;
+                   // System.out.print(item.getText());
+                }
+            });
+            selectAddress.getItems().add(item);
         }
 
 
@@ -175,10 +195,20 @@ public class UserSettingsController{
         try{
             query1 = "insert into Adresy_userow values(" + id_adres +", " + User.MainUser.id +");";
             SqlCommunicate.update(query1);
+            MenuItem item = new MenuItem(wojeChoice.getValue() + ", " + miastoChoice.getValue() + ", " +adresField.getText());
+            item.setOnAction(new EventHandler<ActionEvent>() {
+                public void handle(ActionEvent e)
+                {
+                    selectAddress.setText(item.getText());
+                    User.MainUser.selectedAddress = id_adres;
+                }
+            });
+            selectAddress.setText(item.getText());
+            User.MainUser.selectedAddress = id_adres;
+            selectAddress.getItems().add(item);
         }catch(Exception e){
-
+            e.printStackTrace();
         }
-        adresVBox.getChildren().add(new Label(wojeChoice.getValue() + ", " + miastoChoice.getValue() + ", " + adresField.getText()));
     }
 
     public void goBack() {

@@ -2,8 +2,6 @@ package Data;
 
 import Application.Controllers.OrderHistoryController;
 import Data.SQLBase.SqlCommunicate;
-
-import java.awt.im.InputMethodRequests;
 import java.sql.SQLException;
 import java.util.*;
 import java.util.ArrayList;
@@ -270,11 +268,7 @@ public class Database {
                 x.mail = A.get(3);
                 x.name = A.get(1);
                 x.phone = A.get(2);
-                x.inWD = A.get(4);
-                x.outWD = A.get(5);
-                x.inWE = A.get(6);
-                x.outWE = A.get(7);
-                x.active =  (A.get(8).compareTo("t") == 0 ? true : false);
+                x.active =  (A.get(4).compareTo("t") == 0 ? true : false);
                 return x;
             }
             return null;
@@ -284,7 +278,7 @@ public class Database {
         }        
     }
 
-    static public void registerUser (String nickname, String password, String name, String surname, String mail, String phone,ArrayList<String> time, Integer woje, Integer miasto, String adres, int who) throws Exception {
+    static public void registerUser (String nickname, String password, String name, String surname, String mail, String phone, Integer woje, Integer miasto, String adres, int who) throws Exception {
         try{
            new Password(password);
         }catch(Exception e){
@@ -347,12 +341,11 @@ public class Database {
                 query1 = "select insert_adres('" + adres +"'," + miasto+");";
                 id_adres = Integer.parseInt(SqlCommunicate.execute(query1).get(1).get(0));
                 try{
-                    query1 = "insert into Restauracje values(" + id + ",'" + name + "'," + Long.parseLong(phone) + ",'" +mail + "', '"
-                    + time.get(0) +"', '" + time.get(1) +"', '" + time.get(2) +"', '" + time.get(3) +"', false" + ");";
+                    query1 = "insert into Restauracje values(" + id + ",'" + name + "'," + Long.parseLong(phone) + ",'" +mail + "', false" + ");";
                  
                     SqlCommunicate.update(query1);
                 }catch(Exception e){
-
+                    e.printStackTrace();
                 }
                 try{
                     query1 = "insert into Adresy_userow values(" + id_adres +", " + id+");";
@@ -545,7 +538,7 @@ public class Database {
         HashSet < Integer > allRestaurans = new HashSet<>();
         for (String category : categories) {
             try {
-                String query = "select get_restaurans_by_kategory('" + category  + "')" + ";";
+                String query = "select get_restaurans_by_kategory('" + category  + "'," + User.MainUser.selectedAddress +" )" + ";";
                 ArrayList < ArrayList < String > > restauransWithThisKategory = SqlCommunicate.execute(query);
                 for (ArrayList < String > currentRestauran : restauransWithThisKategory) {
                     String currentID = currentRestauran.get(0);
@@ -934,14 +927,10 @@ public class Database {
         }
     }
 
-    static public void updateRest(String name, String mail, String phone, ArrayList<String> time, boolean active, Integer idw, Integer idm, String ida) throws SQLException{
+    static public void updateRest(String name, String mail, String phone, boolean active, Integer idw, Integer idm, String ida) throws SQLException{
         MainUser.name = name;
         MainUser.mail = phone;
         MainUser.phone = phone;
-        MainUser.inWD = time.get(0);
-        MainUser.outWD = time.get(1);
-        MainUser.inWE = time.get(2);
-        MainUser.outWE = time.get(3);
         MainUser.active = active;
 
         System.out.println(MainUser.adres);
@@ -953,16 +942,8 @@ public class Database {
             MainUser.adres = ida;
         }
 
-        SqlCommunicate.update("update Restauracje set nazwa_restauracji = '" + name +"', numer_telefonu = " + phone + ", mail = '" + mail + 
-        "', dzien_powszedni_czas_otwarcja = '" +  MainUser.inWD + "', dzien_powszedni_czas_zamkniecia = '" +  MainUser.outWD +
-        "', dni_wolne_czas_otwarcja = '" +  MainUser.inWE + "', dni_wolne_czas_zamkniecia = '" +  MainUser.outWE + "', active = " + active +
+        SqlCommunicate.update("update Restauracje set nazwa_restauracji = '" + name +"', numer_telefonu = " + phone + ", mail = '" + mail + "', active = " + active +
           " where id_restauracji = " + MainUser.getId()+ ";");
-        /* 
-        System.out.println("update Restauracje set nazwa_restauracji = '" + name +"', numer_telefonu = " + phone + ", mail = '" + mail + 
-        "', dzien_powszedni_czas_otwarcja = '" +  User.MainUser.inWD + "', dzien_powszedni_czas_zamkniecia = '" +  User.MainUser.outWD +
-        "', dni_wolne_czas_otwarcja = '" +  User.MainUser.inWE + "', dni_wolne_czas_zamkniecia = '" +  User.MainUser.outWE + "', active = " + active +
-          " where id_restauracji = " + User.MainUser.getId());
-          */
     }
 
     static public void updateKurjer(String name, String mail, String phone, String surname, boolean active, Integer idw, Integer idm, Integer transport) throws SQLException{
@@ -1058,7 +1039,7 @@ public class Database {
     ///Dish
     static public ArrayList<Integer> getAllUserAddresses() throws SQLException{
         ArrayList<Integer> ans = new ArrayList<>();
-        ArrayList<ArrayList<String> > query = SqlCommunicate.execute("select id_adresu from Adresy_userow where id_uzytkownika = " + MainUser.id + ";");
+        ArrayList<ArrayList<String> > query = SqlCommunicate.execute("select id_adresu from Adresy_userow where id_uzytkownika = " + MainUser.id + " order by last_time desc;");
         query.remove(0);
         for(ArrayList<String> i : query){
             ans.add(Integer.parseInt(i.get(0)));

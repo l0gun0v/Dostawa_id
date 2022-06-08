@@ -22,24 +22,9 @@ import javafx.event.ActionEvent;
 
 public class SignUpController {
 
-    @FXML
-    private HBox timeHBox; 
 
     @FXML
     private HBox adresHBox; 
-
-
-    @FXML
-    private ChoiceBox<String> inWeekDay;
-
-    @FXML
-    private ChoiceBox<String> outWeekDay;
-
-    @FXML
-    private ChoiceBox<String> inWeekEnd;
-
-    @FXML
-    private ChoiceBox<String> outWeekEnd;
     
     @FXML
     private ChoiceBox<String> wojeChoice;
@@ -111,15 +96,6 @@ public class SignUpController {
         }
 
         
-
-        for(int i = 0; i <= 24; i++){
-            String time = (i<10?"0":"")+i+":00";
-            inWeekDay.getItems().add(time);
-            inWeekEnd.getItems().add(time);
-            outWeekDay.getItems().add(time);
-            outWeekEnd.getItems().add(time);
-        }
-
         visible = false;
 
         nameField.setVisible(false);
@@ -130,7 +106,6 @@ public class SignUpController {
         mailField.setVisible(false);
         phoneField.setVisible(false);
         surnameField.setVisible(false);
-        timeHBox.setVisible(false);
         adresField.setVisible(false);
         adresHBox.setVisible(false);
 
@@ -150,7 +125,7 @@ public class SignUpController {
                     adresHBox.setVisible(true);
                     visible = true;
                 }
-                timeHBox.setVisible(false);
+              
                 whoIAmChoose.setText(((MenuItem)e.getSource()).getText());
                 surnameField.setText("");
                 surnameField.setVisible(true);
@@ -176,7 +151,7 @@ public class SignUpController {
                 whoIAmChoose.setText(((MenuItem)e.getSource()).getText());
                 surnameField.setText("");
                 surnameField.setVisible(true);
-                timeHBox.setVisible(false);
+              
                 adresField.setVisible(false);
             }
         };
@@ -201,7 +176,7 @@ public class SignUpController {
                 surnameField.setText("");
                 surnameField.setVisible(false);
                 adresField.setVisible(true);
-                timeHBox.setVisible(true);
+               
 
             }
         };
@@ -213,16 +188,9 @@ public class SignUpController {
     @FXML
     public void trySighUp() {
 
-        boolean timecheck = false;
-        if((inWeekDay.getValue() == null) || (outWeekDay.getValue() == null) || outWeekEnd.getValue()==null || inWeekEnd.getValue()==null ){
-            //System.out.println(inWeekDay.getValue());
-            if(who == 3){
-                timecheck = true;
-            }
-        }
 
         if(nameField.getText()=="" || passwordField.getText() == "" || confPasswordField.getText()==""
-        || phoneField.getText()=="" || mailField.getText()=="" || nameField.getText()=="" || (surnameField.isVisible() && surnameField.getText()=="") || timecheck){
+        || phoneField.getText()=="" || mailField.getText()=="" || nameField.getText()=="" || (surnameField.isVisible() && surnameField.getText()=="")){
             exceptionLabel.setText("Not enough data");
             exceptionLabel.setAlignment(Pos.CENTER); 
             exceptionLabel.setMaxWidth(Double.MAX_VALUE);
@@ -251,14 +219,6 @@ public class SignUpController {
           //  System.out.println(confPasswordField.getText());
             return;
         }
-        if(who == 3){
-            if(inWeekDay.getValue().compareTo(outWeekDay.getValue()) > 0 || inWeekEnd.getValue().compareTo(outWeekEnd.getValue()) > 0){
-                exceptionLabel.setAlignment(Pos.CENTER); 
-                exceptionLabel.setMaxWidth(Double.MAX_VALUE);
-                exceptionLabel.setText("Opening time is longer than closing time");
-                return;
-            }
-        }
 
         for(int i = 0; i < phoneField.getText().length(); i++){
             String s = phoneField.getText();
@@ -269,15 +229,10 @@ public class SignUpController {
             return;
         }
 
-        ArrayList<String> time = new ArrayList<>();
-        time.add(inWeekDay.getValue());
-        time.add(outWeekDay.getValue());
-        time.add(inWeekEnd.getValue());
-        time.add(outWeekEnd.getValue());
 
         try{
             Database.registerUser(nicknameField.getText(), passwordField.getText(), nameField.getText(), surnameField.getText(), 
-            mailField.getText(), phoneField.getText(), time, Database.getWojeId(wojeChoice.getValue()),  Database.getMiastoId(miastoChoice.getValue()), adresField.getText(), who);
+            mailField.getText(), phoneField.getText(), Database.getWojeId(wojeChoice.getValue()),  Database.getMiastoId(miastoChoice.getValue()), adresField.getText(), who);
         }catch(UserAlreadyRegistred e){
             exceptionLabel.setAlignment(Pos.CENTER); 
             exceptionLabel.setMaxWidth(Double.MAX_VALUE);

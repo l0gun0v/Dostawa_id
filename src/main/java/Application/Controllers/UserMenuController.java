@@ -1,7 +1,8 @@
 package Application.Controllers;
 
 import Application.StartApplication;
-
+import Data.Database;
+import Data.User;
 import Utills.LoadXML;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
@@ -27,8 +28,17 @@ public class UserMenuController {
 
     public static int chosenRestaurantID;
 
+
+    public Integer idm, idw, id_adr;
+
     public void initialize() throws Exception {
         
+        id_adr = Database.getAllUserAddresses().get(0);
+        idm = Database.getIdMiastaByAdresId(id_adr);
+        idw = Database.getIdWojeByMiastoId(idm);
+        User.MainUser.selectedAddress = id_adr;
+        User.MainUser.selectedAddressText = Database.getWojeById(idw) + ", " + Database.getMiastoById(idm) + ", " + Database.getAdresById(id_adr);
+
         ArrayList < String > categories = new ArrayList<>(getCategories());
 
         for (String currentCategoryName: categories) {

@@ -35,12 +35,6 @@ public class RestMenuController {
     public Label errorLabel;
 
     @FXML
-    private ChoiceBox<String> inWeekDay;
-
-    @FXML
-    private ChoiceBox<String> inWeekEnd;
-
-    @FXML
     private TextField mailField;
 
     @FXML
@@ -50,10 +44,13 @@ public class RestMenuController {
     private TextField nicknameField, adresField;
 
     @FXML
-    public ChoiceBox<String> outWeekDay, wojeChoice, miastoChoice;
+    public ChoiceBox<String> wojeChoice, miastoChoice;
 
-    @FXML
-    private ChoiceBox<String> outWeekEnd;
+    public MenuButton selectDay;
+    
+    public ChoiceBox<String> inTime, outTime;
+
+    public CheckBox activeDay;
 
     @FXML
     private TextField passwordField;
@@ -75,7 +72,7 @@ public class RestMenuController {
     public CheckBox activeCheck;
 
     @FXML
-    private Pane dishMenu, orderMenu;
+    private Pane dishMenu, orderMenu, openSettings;
 
     static int choosenMenu = -1;
     static Integer ida, idw, idm;
@@ -147,21 +144,11 @@ public class RestMenuController {
         dishMenu.setVisible(false);
         settingsMenu.setVisible(false);
         restName.setText(User.MainUser.name);
-        
-
-        User.MainUser.inWD = User.MainUser.inWD.substring(0, 5);
-        User.MainUser.outWD = User.MainUser.outWD.substring(0, 5);
-        User.MainUser.inWE = User.MainUser.inWE.substring(0, 5);
-        User.MainUser.outWE = User.MainUser.outWE.substring(0, 5);
-
         nicknameField.setText(User.MainUser.nickname);
         nameField.setText(User.MainUser.name);
         mailField.setText(User.MainUser.mail);
         phoneField.setText(User.MainUser.phone);
-        inWeekDay.setValue(User.MainUser.inWD);
-        inWeekEnd.setValue(User.MainUser.inWE);
-        outWeekDay.setValue(User.MainUser.outWD);
-        outWeekEnd.setValue(User.MainUser.outWE);
+        openSettings.setVisible(false);
         activeCheck.setSelected(User.MainUser.active);
         ida = Database.getIdAdresuByUserId(User.MainUser.id);
          idm = Database.getIdMiastaByAdresId(ida);
@@ -202,10 +189,8 @@ public class RestMenuController {
 
         for(int i = 0; i <= 24; i++){
             String time = (i<10?"0":"")+i+":00";
-            inWeekDay.getItems().add(time);
-            inWeekEnd.getItems().add(time);
-            outWeekDay.getItems().add(time);
-            outWeekEnd.getItems().add(time);
+            inTime.getItems().add(time);
+            outTime.getItems().add(time);
         }
 
 
@@ -216,6 +201,7 @@ public class RestMenuController {
                 dishMenu.setVisible(false);
                 settingsMenu.setVisible(true);
                 orderMenu.setVisible(false);
+                openSettings.setVisible(true);
                 choosenMenu = 1;
             }
         };
@@ -227,6 +213,7 @@ public class RestMenuController {
                 dishMenu.setVisible(true);
                 settingsMenu.setVisible(false);
                 orderMenu.setVisible(false);
+                openSettings.setVisible(false);
                 choosenMenu = 2;
             }
         };
@@ -238,6 +225,7 @@ public class RestMenuController {
                 dishMenu.setVisible(false);
                 settingsMenu.setVisible(false);
                 orderMenu.setVisible(true);
+                openSettings.setVisible(false);
                 choosenMenu = 3;
             }
         };
@@ -275,13 +263,15 @@ public class RestMenuController {
 
     @FXML
     void saveRest() {
+        /* 
         boolean timecheck = false;
         if((inWeekDay.getValue() == null) || (outWeekDay.getValue() == null) || outWeekEnd.getValue()==null || inWeekEnd.getValue()==null ){
             timecheck = true;
         }
+        */
 
         if(nameField.getText()=="" || passwordField.getText() == ""
-        || phoneField.getText()=="" || mailField.getText()=="" ||  nicknameField.getText()=="" || timecheck){
+        || phoneField.getText()=="" || mailField.getText()=="" ||  nicknameField.getText()==""){
             errorLabel.setText("Not enough data");
             errorLabel.setAlignment(Pos.CENTER); 
             errorLabel.setMaxWidth(Double.MAX_VALUE);
@@ -308,13 +298,14 @@ public class RestMenuController {
             errorLabel.setText("Different passwords");
             return;
         }
-       
+        /* 
         if(inWeekDay.getValue().compareTo(outWeekDay.getValue()) > 0 || inWeekEnd.getValue().compareTo(outWeekEnd.getValue()) > 0){
             errorLabel.setAlignment(Pos.CENTER); 
             errorLabel.setMaxWidth(Double.MAX_VALUE);
             errorLabel.setText("Opening time is longer than closing time");
             return;
         }
+        */
 
         for(int i = 0; i < phoneField.getText().length(); i++){
             String s = phoneField.getText();
@@ -324,12 +315,6 @@ public class RestMenuController {
             errorLabel.setText("Phone number with mistakes");
             return;
         }
-
-        ArrayList<String> time = new ArrayList<>();
-        time.add(inWeekDay.getValue());
-        time.add(outWeekDay.getValue());
-        time.add(inWeekEnd.getValue());
-        time.add(outWeekEnd.getValue());
 
         try{
             Database.getUser(User.MainUser.getNickname(), passwordField.getText());
@@ -360,7 +345,7 @@ public class RestMenuController {
             if(newPasswordField.getText().compareTo("") != 0){
                 Database.change_password(newPasswordField.getText());
             }
-            Database.updateRest(nameField.getText(), mailField.getText(), phoneField.getText(), time, activeCheck.isSelected(), idw, idm, adresField.getText());
+            Database.updateRest(nameField.getText(), mailField.getText(), phoneField.getText(), activeCheck.isSelected(), idw, idm, adresField.getText());
             if(User.MainUser.getNickname() != nicknameField.getText()){
                 Database.change_nickname(nicknameField.getText());
             }

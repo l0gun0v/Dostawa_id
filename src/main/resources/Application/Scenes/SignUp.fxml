@@ -33,7 +33,7 @@
                <children>
                   <Pane prefHeight="59.0" prefWidth="155.0">
                      <children>
-                        <Label layoutY="28.0" prefHeight="23.0" prefWidth="143.0" text="Wojewodstwo" textAlignment="CENTER" wrapText="true">
+                        <Label layoutY="28.0" prefHeight="23.0" prefWidth="143.0" text="District" textAlignment="CENTER" wrapText="true">
                            <font>
                               <Font size="17.0" />
                            </font>
@@ -43,7 +43,7 @@
                   </Pane>
                   <Pane prefHeight="59.0" prefWidth="157.0">
                      <children>
-                        <Label layoutY="28.0" prefHeight="26.0" prefWidth="143.0" text="Miasto" textAlignment="CENTER" wrapText="true">
+                        <Label layoutY="28.0" prefHeight="26.0" prefWidth="143.0" text="City" textAlignment="CENTER" wrapText="true">
                            <font>
                               <Font size="17.0" />
                            </font>
@@ -54,50 +54,6 @@
                </children>
             </HBox>
             <TextField fx:id="adresField" prefHeight="36.0" prefWidth="253.0" promptText="Address" />
-            <HBox fx:id="timeHBox" prefHeight="59.0" prefWidth="321.0" style="-fx-spacing: 18;">
-               <children>
-                  <Pane prefHeight="51.0" prefWidth="69.0">
-                     <children>
-                        <Label layoutY="28.0" prefHeight="23.0" prefWidth="69.0" text="Open time on WeekDay" textAlignment="CENTER" wrapText="true">
-                           <font>
-                              <Font size="9.0" />
-                           </font>
-                        </Label>
-                        <ChoiceBox fx:id="inWeekDay" layoutX="2.0" layoutY="1.0" prefHeight="26.0" prefWidth="67.0" />
-                     </children>
-                  </Pane>
-                  <Pane prefHeight="51.0" prefWidth="68.0">
-                     <children>
-                        <Label layoutY="28.0" prefHeight="23.0" prefWidth="73.0" text="Close time on WeekDay" textAlignment="CENTER" wrapText="true">
-                           <font>
-                              <Font size="9.0" />
-                           </font>
-                        </Label>
-                        <ChoiceBox fx:id="outWeekDay" layoutX="1.0" layoutY="1.0" prefHeight="26.0" prefWidth="67.0" />
-                     </children>
-                  </Pane>
-                  <Pane prefHeight="51.0" prefWidth="65.0">
-                     <children>
-                        <Label layoutY="28.0" prefHeight="23.0" prefWidth="69.0" text="Open time on WeekEnd" textAlignment="CENTER" wrapText="true">
-                           <font>
-                              <Font size="9.0" />
-                           </font>
-                        </Label>
-                        <ChoiceBox fx:id="inWeekEnd" prefHeight="26.0" prefWidth="67.0" />
-                     </children>
-                  </Pane>
-                  <Pane prefHeight="51.0" prefWidth="66.0">
-                     <children>
-                        <Label layoutY="28.0" prefHeight="23.0" prefWidth="69.0" text="Close time on WeekEnd" textAlignment="CENTER" wrapText="true">
-                           <font>
-                              <Font size="9.0" />
-                           </font>
-                        </Label>
-                        <ChoiceBox fx:id="outWeekEnd" layoutX="-2.0" prefHeight="26.0" prefWidth="67.0" />
-                     </children>
-                  </Pane>
-               </children>
-            </HBox>
          </children>
       </VBox>
       <VBox layoutX="293.0" layoutY="656.0" prefHeight="108.0" prefWidth="196.0" style="-fx-spacing: 10;">
