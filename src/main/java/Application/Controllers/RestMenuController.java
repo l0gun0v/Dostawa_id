@@ -258,6 +258,7 @@ public class RestMenuController {
                 orderMenu.setVisible(false);
                 openSettings.setVisible(true);
                 choosenMenu = 1;
+                errorLabelTime.setText("");
             }
         };
 
@@ -270,6 +271,7 @@ public class RestMenuController {
                 orderMenu.setVisible(false);
                 openSettings.setVisible(false);
                 choosenMenu = 2;
+                errorLabelTime.setText("");
             }
         };
 
@@ -282,6 +284,7 @@ public class RestMenuController {
                 orderMenu.setVisible(true);
                 openSettings.setVisible(false);
                 choosenMenu = 3;
+                errorLabelTime.setText("");
             }
         };
 
