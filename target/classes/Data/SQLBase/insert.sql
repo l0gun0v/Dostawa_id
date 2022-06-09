@@ -7731,6 +7731,47 @@ insert into Produkty(id_produktu, id_restauracji, waga, opis, nazwa, wege, activ
 insert into Produkty(id_produktu, id_restauracji, waga, opis, nazwa, wege, active) values(3401, 900000142, 150, 'Fries (Small)', 'Fries S', true, true);
 
 
+insert into Produkty(id_produktu, id_restauracji, waga, opis, nazwa, wege, active) values(3401, 900000149, 400, 'European Kebab', 'Middle Eastern Kebab', false, true);
+insert into Produkty(id_produktu, id_restauracji, waga, opis, nazwa, wege, active) values(3402, 900000149, 350, 'Dont eat meat? Here you are!', 'Vegetarian Kebab', true, true);
+insert into Produkty(id_produktu, id_restauracji, waga, opis, nazwa, wege, active) values(3403, 900000149, 1000, 'Really Big Kebab', 'King Kebab', false, true);
+insert into Produkty(id_produktu, id_restauracji, waga, opis, nazwa, wege, active) values(3404, 900000149, 400, 'Try it!!', 'Turkish Kebab', false, true);
+insert into Produkty(id_produktu, id_restauracji, waga, opis, nazwa, wege, active) values(3405, 900000149, 600, 'American Style Kebab!!', 'Kebab with Fries', false, true);
+insert into Produkty(id_produktu, id_restauracji, waga, opis, nazwa, wege, active) values(3406, 900000149, 450, 'Interesting taste', 'Pork Kebab', false, true);
+insert into Produkty(id_produktu, id_restauracji, waga, opis, nazwa, wege, active) values(3407, 900000149, 300, 'Hot veggie kebab', 'Chili Veggie Kebabs', false, true);
+insert into Produkty(id_produktu, id_restauracji, waga, opis, nazwa, wege, active) values(3408, 900000149, 450, 'VERY HOT KEBAB', 'Spicy Meat', false, true);
+insert into Produkty(id_produktu, id_restauracji, waga, opis, nazwa, wege, active) values(3409, 900000149, 170, 'Fries', 'Fries (Medium)', true, true);
+insert into Produkty(id_produktu, id_restauracji, waga, opis, nazwa, wege, active) values(3410, 900000149, 400, 'Jewish national dishes', 'Falafel', true, true);
+insert into Produkty(id_produktu, id_restauracji, waga, opis, nazwa, wege, active) values(3411, 900000149, 200, 'Fries (Large)', 'Fries L', true, true);
+insert into Produkty(id_produktu, id_restauracji, waga, opis, nazwa, wege, active) values(3412, 900000149, 150, 'Fries (Small)', 'Fries S', true, true);
+
+insert into Produkty(id_produktu, id_restauracji, waga, opis, nazwa, wege, active) values(3412, 900000017, 350, 'Havent u tasted that?', 'Sushi Sandwich', false, true);
+insert into Produkty(id_produktu, id_restauracji, waga, opis, nazwa, wege, active) values(3413, 900000017, 350, 'Rice, carrot, packet', 'Frankenstein Sushi', true, true);
+insert into Produkty(id_produktu, id_restauracji, waga, opis, nazwa, wege, active) values(3414, 900000017, 350, 'rainbow on a plate!', 'Rainbow Sushi', false, true);
+insert into Produkty(id_produktu, id_restauracji, waga, opis, nazwa, wege, active) values(3415, 900000017, 350, 'Interesting taste', ' Spicy Tuna roll', false, true);
+insert into Produkty(id_produktu, id_restauracji, waga, opis, nazwa, wege, active) values(3416, 900000017, 350, 'Just satisfy!', 'Sushi Burrito', false, true);
+insert into Produkty(id_produktu, id_restauracji, waga, opis, nazwa, wege, active) values(3417, 900000017, 350, 'Nothing to add, the best of the best!', 'Everyday Sushi', false, true);
+insert into Produkty(id_produktu, id_restauracji, waga, opis, nazwa, wege, active) values(3418, 900000017, 350, 'Extremely tasty!', 'Sushi Rice with Sushi Vinegar', false, true);
+insert into Produkty(id_produktu, id_restauracji, waga, opis, nazwa, wege, active) values(3419, 900000017, 350, 'Classic sushi with red fish', 'California Sushi', false, true);
+insert into Produkty(id_produktu, id_restauracji, waga, opis, nazwa, wege, active) values(3420, 900000017, 350, 'Light summer fare', 'Sushi Salad', true, true);
+
+insert into Produkty(id_produktu, id_restauracji, waga, opis, nazwa, wege, active) values(3421, 900000107, 300, 'Espresso with milk', 'Latte', true, true);
+insert into Produkty(id_produktu, id_restauracji, waga, opis, nazwa, wege, active) values(3422, 900000107, 300, 'Espresso with Milk&Foam', 'Cappuccino', true, true);
+insert into Produkty(id_produktu, id_restauracji, waga, opis, nazwa, wege, active) values(3423, 900000107, 100, 'Just coffee :)', 'Espresso', true, true);
+insert into Produkty(id_produktu, id_restauracji, waga, opis, nazwa, wege, active) values(3424, 900000107, 300, 'Long pulled espresso', 'Lungo', true, true);
+insert into Produkty(id_produktu, id_restauracji, waga, opis, nazwa, wege, active) values(3425, 900000107, 300, 'Espresso with streamed milk', 'Flat White', true, true);
+insert into Produkty(id_produktu, id_restauracji, waga, opis, nazwa, wege, active) values(3426, 900000107, 300, 'Espresso with chocolate&streamed milk', 'Mocha', true, true);
+insert into Produkty(id_produktu, id_restauracji, waga, opis, nazwa, wege, active) values(3427, 900000107, 200, '2oz espresso', 'Doppio', true, true);
+insert into Produkty(id_produktu, id_restauracji, waga, opis, nazwa, wege, active) values(3428, 900000107, 300, 'Espresso with water', 'Americano', true, true);
+insert into Produkty(id_produktu, id_restauracji, waga, opis, nazwa, wege, active) values(3429, 900000107, 300, 'Espresso&Streamed milk', 'Cortado', true, true);
+insert into Produkty(id_produktu, id_restauracji, waga, opis, nazwa, wege, active) values(3430, 900000107, 300, 'Just tea', 'Black tea', true, true);
+insert into Produkty(id_produktu, id_restauracji, waga, opis, nazwa, wege, active) values(3431, 900000107, 200, 'Very tasty sandwich!', 'Sandwich with chicken', true, true);
+insert into Produkty(id_produktu, id_restauracji, waga, opis, nazwa, wege, active) values(3432, 900000107, 150, 'YOU MUST TASTE IT!', 'Chocolate cookie', true, true);
+
+
+
+insert into Kategorie values(3, 'Vege dishes');
+
+
 Insert into Adresy_userow values (774, 900000000, default )
 ,(228, 900000001, default )
 ,(999, 900000002, default )
