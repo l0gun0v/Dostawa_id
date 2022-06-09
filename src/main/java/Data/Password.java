@@ -3,7 +3,7 @@ package Data;
 public class Password {
     String password;
 
-    static String correctChars = ".!,?-+";
+    static String correctChars = ".!,?-+_";
 
     static public void checkIncorrectPasswordChar(Character x) throws Exception{
         if(x >= 'A' && x <= 'Z'){

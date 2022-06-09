@@ -29,7 +29,7 @@ insert into Kategorie values(1, 'FastFood'),
 (22, 'Sweets'),
 (23, 'Sandwiches'),
 (24, 'Tea and Coffee'),
-(25, 'Kebabs'),
+(25, 'Vege dishes'),
 (26, 'Snacks'),
 (27, 'Polish'),
 (28, 'Chicken');
@@ -3995,7 +3995,8 @@ insert into  Promocje values(1, '10EATPROMO', 10),
 (3, 'SECRETPROMO', 19),
 (4, 'JUSTFOREAT', 5),
 (5, '20UNREALSALE', 20),
-(6, 'IWANTTOEATMORE', 40);
+(6, 'IWANTTOEATMORE', 40),
+(6, 'GOODPROMO', 12);
 
 insert into Rodzaj_reklamacji values(1, 'Long waiting time'),
 (2, 'The product arrived cold'),
@@ -4005,321 +4006,321 @@ insert into Rodzaj_reklamacji values(1, 'Long waiting time'),
 (6, 'Improper product quality');
 
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'McDonalds', getHash('QTOs7xDSTX'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000000, 'McDonalds', 919469425, 'McDonaldsfood.pl', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000000, 'McDonalds', 919469425, 'McDonaldsfood.pl', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'KFC', getHash('GyZhuV5Y84'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000001, 'KFC', 769492463, 'KFCrest.pl', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000001, 'KFC', 769492463, 'KFCrest.pl', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'Burger King', getHash('bV6HLFChVN'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000002, 'Burger King', 771563581, 'BurgerKingmail.com', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000002, 'Burger King', 771563581, 'BurgerKingmail.com', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'Gogo Burger', getHash('+aRU52CXcc'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000003, 'Gogo Burger', 817483284, 'GogoBurgergmail.com', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000003, 'Gogo Burger', 817483284, 'GogoBurgergmail.com', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'Moo moo Steak&Burger Club', getHash('PCFUiMYXvv'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000004, 'Moo moo Steak&Burger Club', 159241956, 'MoomooSteakBurgerClumail.com', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000004, 'Moo moo Steak&Burger Club', 159241956, 'MoomooSteakBurgerClumail.com', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'Beef burger bar', getHash('hgOkzUDku1'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000005, 'Beef burger bar', 244376638, 'Beefburgerbarmail.com', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000005, 'Beef burger bar', 244376638, 'Beefburgerbarmail.com', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'Mr Burger', getHash('7LIR+Oo+BH'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000006, 'Mr Burger', 060270545, 'MrBurgergmail.com', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000006, 'Mr Burger', 060270545, 'MrBurgergmail.com', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'Bobby burger', getHash('4KJa_8r_WL'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000007, 'Bobby burger', 204747685, 'Bobbyburgermail.com', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000007, 'Bobby burger', 204747685, 'Bobbyburgermail.com', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'Bush Burger', getHash('ULavekwJ7q'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000008, 'Bush Burger', 487510776, 'BushBurgerrest.pl', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000008, 'Bush Burger', 487510776, 'BushBurgerrest.pl', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'Lepsze burgery', getHash('muo+rCl3kP'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000009, 'Lepsze burgery', 829742806, 'Lepszeburgeryfood.pl', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000009, 'Lepsze burgery', 829742806, 'Lepszeburgeryfood.pl', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'Teasty Beast Burger', getHash('ttKCn_889r'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000010, 'Teasty Beast Burger', 754539197, 'TeastyBeastBurgermail.com', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000010, 'Teasty Beast Burger', 754539197, 'TeastyBeastBurgermail.com', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'Nago Sushi&Sake', getHash('DyW.19YPM6'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000011, 'Nago Sushi&Sake', 807644387, 'NagoSushiSakemail.com', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000011, 'Nago Sushi&Sake', 807644387, 'NagoSushiSakemail.com', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'Hanzo Sushi', getHash('IWnyV1.FzM'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000012, 'Hanzo Sushi', 129650191, 'HanzoSushimail.com', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000012, 'Hanzo Sushi', 129650191, 'HanzoSushimail.com', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'Urara sushi', getHash('bxJ_p_jD1f'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000013, 'Urara sushi', 090722829, 'Urarasushifood.pl', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000013, 'Urara sushi', 090722829, 'Urarasushifood.pl', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'Sushi Koi Fish', getHash('xv1c0oYDBq'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000014, 'Sushi Koi Fish', 055069571, 'SushiKoiFishgmail.com', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000014, 'Sushi Koi Fish', 055069571, 'SushiKoiFishgmail.com', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'Soko Sushi & Udon', getHash('DVo1S+fTKN'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000015, 'Soko Sushi & Udon', 454527682, 'SokoSushiUdonrest.pl', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000015, 'Soko Sushi & Udon', 454527682, 'SokoSushiUdonrest.pl', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'Yana Sushi', getHash('MbxHqVGESD'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000016, 'Yana Sushi', 179073509, 'YanaSushigmail.com', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000016, 'Yana Sushi', 179073509, 'YanaSushigmail.com', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, '77Sushi', getHash('liHukRKzC9'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000017, '77Sushi', 789959918, 'Sushirest.pl', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000017, '77Sushi', 789959918, 'Sushirest.pl', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'Pod Norenami', getHash('+gMnvNagc3'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000018, 'Pod Norenami', 069571125, 'PodNorenamifood.pl', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000018, 'Pod Norenami', 069571125, 'PodNorenamifood.pl', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'Sushi Pro', getHash('3PfW8_Z6E4'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000019, 'Sushi Pro', 134867088, 'SushiProfood.pl', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000019, 'Sushi Pro', 134867088, 'SushiProfood.pl', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'Makarun', getHash('lkMr-jZKU8'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000020, 'Makarun', 303274682, 'Makarunmail.com', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000020, 'Makarun', 303274682, 'Makarunmail.com', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'The Spaghetti', getHash('OC5lpUtPn9'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000021, 'The Spaghetti', 558498022, 'TheSpaghettimail.com', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000021, 'The Spaghetti', 558498022, 'TheSpaghettimail.com', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'Makaroniarnia', getHash('Rh6q4GJ5Qh'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000022, 'Makaroniarnia', 624164262, 'Makaroniarniafood.pl', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000022, 'Makaroniarnia', 624164262, 'Makaroniarniafood.pl', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'PastaBar', getHash('ep6y-uJUmy'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000023, 'PastaBar', 085227369, 'PastaBarmail.com', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000023, 'PastaBar', 085227369, 'PastaBarmail.com', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'Asian Bowl', getHash('8BQp0dadeZ'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000024, 'Asian Bowl', 464643078, 'AsianBowlfood.pl', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000024, 'Asian Bowl', 464643078, 'AsianBowlfood.pl', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'Edo Fushion Asian cusine & Ram', getHash('+nJAlRm6OS'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000025, 'Edo Fushion Asian cusine & Ram', 441170746, 'EdoFushionAsiancusinfood.pl', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000025, 'Edo Fushion Asian cusine & Ram', 441170746, 'EdoFushionAsiancusinfood.pl', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'Kuku Taiwanesse Food', getHash('3PPU+kk8df'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000026, 'Kuku Taiwanesse Food', 487012025, 'KukuTaiwanesseFoodgmail.com', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000026, 'Kuku Taiwanesse Food', 487012025, 'KukuTaiwanesseFoodgmail.com', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'Asia Hung', getHash('H53ilrkxpP'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000027, 'Asia Hung', 935080311, 'AsiaHunggmail.com', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000027, 'Asia Hung', 935080311, 'AsiaHunggmail.com', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'Phong hai', getHash('zr_rcQh45f'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000028, 'Phong hai', 505827043, 'Phonghaifood.pl', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000028, 'Phong hai', 505827043, 'Phonghaifood.pl', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'Doza Asia Food', getHash('ixnVOri4u-'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000029, 'Doza Asia Food', 827966805, 'DozaAsiaFoodgmail.com', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000029, 'Doza Asia Food', 827966805, 'DozaAsiaFoodgmail.com', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'Asiana Kuchnia', getHash('UcFZIGFify'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000030, 'Asiana Kuchnia', 465929200, 'AsianaKuchniamail.com', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000030, 'Asiana Kuchnia', 465929200, 'AsianaKuchniamail.com', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'Hard Rock Cafe', getHash('EI2LC+wB8d'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000031, 'Hard Rock Cafe', 817178765, 'HardRockCafegmail.com', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000031, 'Hard Rock Cafe', 817178765, 'HardRockCafegmail.com', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'Arizona Drinks&Food', getHash('ppN26cj2kT'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000032, 'Arizona Drinks&Food', 292685155, 'ArizonaDrinksFoodrest.pl', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000032, 'Arizona Drinks&Food', 292685155, 'ArizonaDrinksFoodrest.pl', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'American Burgers & Buffer', getHash('n2r3jX1Eoa'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000033, 'American Burgers & Buffer', 714593116, 'AmericanBurgersBuffemail.com', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000033, 'American Burgers & Buffer', 714593116, 'AmericanBurgersBuffemail.com', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'Well Done Restauracja', getHash('Y+Jy76vHv8'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000034, 'Well Done Restauracja', 021214126, 'WellDoneRestauracjamail.com', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000034, 'Well Done Restauracja', 021214126, 'WellDoneRestauracjamail.com', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'Mr Pancake', getHash('Fdm1g+K4Jq'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000035, 'Mr Pancake', 044506086, 'MrPancakefood.pl', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000035, 'Mr Pancake', 044506086, 'MrPancakefood.pl', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'Pan Nalesnik', getHash('TynxdBBSdR'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000036, 'Pan Nalesnik', 027037520, 'PanNalesnikrest.pl', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000036, 'Pan Nalesnik', 027037520, 'PanNalesnikrest.pl', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'Nalesniki Polskie', getHash('f7C8W2ySkv'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000037, 'Nalesniki Polskie', 241330630, 'NalesnikiPolskiefood.pl', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000037, 'Nalesniki Polskie', 241330630, 'NalesnikiPolskiefood.pl', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'Pancakes from Canada', getHash('fO8fgaGlDS'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000038, 'Pancakes from Canada', 838777198, 'PancakesfromCanadagmail.com', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000038, 'Pancakes from Canada', 838777198, 'PancakesfromCanadagmail.com', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'Baron', getHash('3Anjr9DYyV'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000039, 'Baron', 105571484, 'Barongmail.com', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000039, 'Baron', 105571484, 'Barongmail.com', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'Laziza', getHash('8tCyiJtb8N'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000040, 'Laziza', 874869971, 'Lazizagmail.com', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000040, 'Laziza', 874869971, 'Lazizagmail.com', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'Jamra', getHash('+x4IvO6Eqy'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000041, 'Jamra', 939653625, 'Jamramail.com', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000041, 'Jamra', 939653625, 'Jamramail.com', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'Klimaty Poludnia', getHash('J4ai2pCf40'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000042, 'Klimaty Poludnia', 731272753, 'KlimatyPoludniafood.pl', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000042, 'Klimaty Poludnia', 731272753, 'KlimatyPoludniafood.pl', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'Cukiernia', getHash('ftzjqCscV.'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000043, 'Cukiernia', 228571167, 'Cukierniamail.com', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000043, 'Cukiernia', 228571167, 'Cukierniamail.com', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'Lajkonik | Bakery&Cafe', getHash('g-.-uV+r9C'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000044, 'Lajkonik | Bakery&Cafe', 191824596, 'LajkonikBakeryCafefood.pl', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000044, 'Lajkonik | Bakery&Cafe', 191824596, 'LajkonikBakeryCafefood.pl', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'Piekarnia Mojego Taty', getHash('tZg8g3ksoJ'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000045, 'Piekarnia Mojego Taty', 038357046, 'PiekarniaMojegoTatygmail.com', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000045, 'Piekarnia Mojego Taty', 038357046, 'PiekarniaMojegoTatygmail.com', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'Piekarnia Pawlak', getHash('H---JlRW95'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000046, 'Piekarnia Pawlak', 241194921, 'PiekarniaPawlakrest.pl', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000046, 'Piekarnia Pawlak', 241194921, 'PiekarniaPawlakrest.pl', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'Bun Bakery', getHash('eYYlyJAGQJ'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000047, 'Bun Bakery', 040594382, 'BunBakerygmail.com', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000047, 'Bun Bakery', 040594382, 'BunBakerygmail.com', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'Slodycze', getHash('iJ_To8w4a5'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000048, 'Slodycze', 268747662, 'Slodyczefood.pl', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000048, 'Slodycze', 268747662, 'Slodyczefood.pl', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'Mr Cookie', getHash('WibZ2dfYSs'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000049, 'Mr Cookie', 357701306, 'MrCookierest.pl', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000049, 'Mr Cookie', 357701306, 'MrCookierest.pl', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'GORACE WYPIEKI', getHash('xBAO6pcuvl'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000050, 'GORACE WYPIEKI', 907495280, 'GORACEWYPIEKIgmail.com', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000050, 'GORACE WYPIEKI', 907495280, 'GORACEWYPIEKIgmail.com', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'Charlotte', getHash('FjOPgnk__t'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000051, 'Charlotte', 493649502, 'Charlottemail.com', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000051, 'Charlotte', 493649502, 'Charlottemail.com', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'GMT - Georgian Wine&Art Galler', getHash('4UBOZR-Ds+'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000052, 'GMT - Georgian Wine&Art Galler', 932236755, 'GMTGeorgianWineArtGarest.pl', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000052, 'GMT - Georgian Wine&Art Galler', 932236755, 'GMTGeorgianWineArtGarest.pl', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'Chinkalnia Restauracja Gruzins', getHash('mTF_BkM_0R'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000053, 'Chinkalnia Restauracja Gruzins', 335311274, 'ChinkalniaRestauracjmail.com', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000053, 'Chinkalnia Restauracja Gruzins', 335311274, 'ChinkalniaRestauracjmail.com', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'Khachapuri Restaurant', getHash('m7DCObgVV4'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000054, 'Khachapuri Restaurant', 604261092, 'KhachapuriRestaurantgmail.com', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000054, 'Khachapuri Restaurant', 604261092, 'KhachapuriRestaurantgmail.com', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'Smaki Gruzji', getHash('9UW16VnABy'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000055, 'Smaki Gruzji', 985618028, 'SmakiGruzjigmail.com', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000055, 'Smaki Gruzji', 985618028, 'SmakiGruzjigmail.com', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'Gruzinskie Specjaly', getHash('Bi2v1m8Qur'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000056, 'Gruzinskie Specjaly', 719391505, 'GruzinskieSpecjalygmail.com', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000056, 'Gruzinskie Specjaly', 719391505, 'GruzinskieSpecjalygmail.com', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'Tiffany Ice Cream', getHash('tAsS6jbL5y'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000057, 'Tiffany Ice Cream', 300237580, 'TiffanyIceCreamrest.pl', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000057, 'Tiffany Ice Cream', 300237580, 'TiffanyIceCreamrest.pl', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'Karmello Chocolatier', getHash('j2.VWAVk0Y'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000058, 'Karmello Chocolatier', 769159933, 'KarmelloChocolatierrest.pl', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000058, 'Karmello Chocolatier', 769159933, 'KarmelloChocolatierrest.pl', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'Lodziarnia Rinella Gelato', getHash('3G9JbskF-I'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000059, 'Lodziarnia Rinella Gelato', 308650027, 'LodziarniaRinellaGelgmail.com', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000059, 'Lodziarnia Rinella Gelato', 308650027, 'LodziarniaRinellaGelgmail.com', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'Good Lood', getHash('GhdpXlLxgW'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000060, 'Good Lood', 480991445, 'GoodLoodfood.pl', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000060, 'Good Lood', 480991445, 'GoodLoodfood.pl', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'Goralskie Praliny', getHash('hIIe6MY8tw'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000061, 'Goralskie Praliny', 784669505, 'GoralskiePralinyfood.pl', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000061, 'Goralskie Praliny', 784669505, 'GoralskiePralinyfood.pl', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'Katane', getHash('N75hw67cxL'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000062, 'Katane', 699653047, 'Katanefood.pl', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000062, 'Katane', 699653047, 'Katanefood.pl', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'Miod Malina Restaurant', getHash('-COeRmhXkM'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000063, 'Miod Malina Restaurant', 411744306, 'MiodMalinaRestaurantgmail.com', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000063, 'Miod Malina Restaurant', 411744306, 'MiodMalinaRestaurantgmail.com', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'Dystrykt One', getHash('mYjmhRboso'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000064, 'Dystrykt One', 549506994, 'DystryktOnegmail.com', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000064, 'Dystrykt One', 549506994, 'DystryktOnegmail.com', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'Zielona Kuchnia Restaurant', getHash('0l97GZ_efu'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000065, 'Zielona Kuchnia Restaurant', 595551464, 'ZielonaKuchniaRestaurest.pl', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000065, 'Zielona Kuchnia Restaurant', 595551464, 'ZielonaKuchniaRestaurest.pl', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'Europejska Cafe', getHash('8ccT.Fqsxi'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000066, 'Europejska Cafe', 887419149, 'EuropejskaCaferest.pl', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000066, 'Europejska Cafe', 887419149, 'EuropejskaCaferest.pl', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'Delhi Curry House', getHash('a+ijKAB8Es'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000067, 'Delhi Curry House', 262139398, 'DelhiCurryHouserest.pl', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000067, 'Delhi Curry House', 262139398, 'DelhiCurryHouserest.pl', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'Indus Tandoor Restauracja indy', getHash('drzwUNJUKU'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000068, 'Indus Tandoor Restauracja indy', 807263897, 'IndusTandoorRestauramail.com', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000068, 'Indus Tandoor Restauracja indy', 807263897, 'IndusTandoorRestauramail.com', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'Bombay Curry Indian Restaurant', getHash('1miKJg3QDn'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000069, 'Bombay Curry Indian Restaurant', 580433894, 'BombayCurryIndianResmail.com', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000069, 'Bombay Curry Indian Restaurant', 580433894, 'BombayCurryIndianResmail.com', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'India Masala | Authentic India', getHash('mUhg55WqO7'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000070, 'India Masala | Authentic India', 720089429, 'IndiaMasalaAuthenticmail.com', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000070, 'India Masala | Authentic India', 720089429, 'IndiaMasalaAuthenticmail.com', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'Zayka Indian Restaurant', getHash('s25Sq+6SqA'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000071, 'Zayka Indian Restaurant', 083842443, 'ZaykaIndianRestaurangmail.com', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000071, 'Zayka Indian Restaurant', 083842443, 'ZaykaIndianRestaurangmail.com', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'Hot Chili - Restauracja Indyjs', getHash('iTSeX6L._8'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000072, 'Hot Chili - Restauracja Indyjs', 820866244, 'HotChiliRestauracjaIgmail.com', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000072, 'Hot Chili - Restauracja Indyjs', 820866244, 'HotChiliRestauracjaIgmail.com', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'Spice of India', getHash('6BiTbWG4OR'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000073, 'Spice of India', 885795762, 'SpiceofIndiafood.pl', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000073, 'Spice of India', 885795762, 'SpiceofIndiafood.pl', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'Boccanera - Restauracja Wloska', getHash('QL3TaUyCOc'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000074, 'Boccanera - Restauracja Wloska', 021437267, 'BoccaneraRestauracjamail.com', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000074, 'Boccanera - Restauracja Wloska', 021437267, 'BoccaneraRestauracjamail.com', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'La Grande Mamma', getHash('jGPS-6hD+U'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000075, 'La Grande Mamma', 024918410, 'LaGrandeMammamail.com', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000075, 'La Grande Mamma', 024918410, 'LaGrandeMammamail.com', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'Restauracja Corleone', getHash('DikPcT0Le6'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000076, 'Restauracja Corleone', 245046444, 'RestauracjaCorleonemail.com', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000076, 'Restauracja Corleone', 245046444, 'RestauracjaCorleonemail.com', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'Del Papa Ristorante', getHash('6P7+kG-Htw'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000077, 'Del Papa Ristorante', 013402611, 'DelPapaRistorantefood.pl', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000077, 'Del Papa Ristorante', 013402611, 'DelPapaRistorantefood.pl', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'Nolio Restaurant', getHash('vBmTsZNNqG'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000078, 'Nolio Restaurant', 505781847, 'NolioRestaurantgmail.com', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000078, 'Nolio Restaurant', 505781847, 'NolioRestaurantgmail.com', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'Trattoria Soprano', getHash('8Db2+gebnr'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000079, 'Trattoria Soprano', 646015764, 'TrattoriaSopranogmail.com', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000079, 'Trattoria Soprano', 646015764, 'TrattoriaSopranogmail.com', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'The Mexican', getHash('_HVdXl43Vn'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000080, 'The Mexican', 561642789, 'TheMexicangmail.com', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000080, 'The Mexican', 561642789, 'TheMexicangmail.com', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'Taco Mexicano', getHash('HiJ4qLZj_L'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000081, 'Taco Mexicano', 816569859, 'TacoMexicanogmail.com', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000081, 'Taco Mexicano', 816569859, 'TacoMexicanogmail.com', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'Del Jero', getHash('Zs-z_PiAnY'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000082, 'Del Jero', 748992302, 'DelJerogmail.com', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000082, 'Del Jero', 748992302, 'DelJerogmail.com', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'Mexican Food', getHash('Er+Hv+si8Z'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000083, 'Mexican Food', 741575064, 'MexicanFoodmail.com', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000083, 'Mexican Food', 741575064, 'MexicanFoodmail.com', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'Manzana Restaurant', getHash('gqJIQB9I.v'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000084, 'Manzana Restaurant', 809023423, 'ManzanaRestaurantgmail.com', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000084, 'Manzana Restaurant', 809023423, 'ManzanaRestaurantgmail.com', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'Fish House', getHash('ySJS8A9awP'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000085, 'Fish House', 367040610, 'FishHouserest.pl', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000085, 'Fish House', 367040610, 'FishHouserest.pl', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'Farina Restaurant', getHash('z_Bu8tEmF6'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000086, 'Farina Restaurant', 493170423, 'FarinaRestaurantmail.com', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000086, 'Farina Restaurant', 493170423, 'FarinaRestaurantmail.com', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'Shrimp House', getHash('.SYNX+S45d'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000087, 'Shrimp House', 661930450, 'ShrimpHousegmail.com', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000087, 'Shrimp House', 661930450, 'ShrimpHousegmail.com', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'FOLGA', getHash('5.bwiONsUS'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000088, 'FOLGA', 505324752, 'FOLGAmail.com', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000088, 'FOLGA', 505324752, 'FOLGAmail.com', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'Prosecco oyster bar', getHash('P3gFJBiS-p'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000089, 'Prosecco oyster bar', 609702318, 'Proseccooysterbarrest.pl', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000089, 'Prosecco oyster bar', 609702318, 'Proseccooysterbarrest.pl', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'Salad Story', getHash('4kOKAhZTHO'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000090, 'Salad Story', 814648961, 'SaladStoryfood.pl', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000090, 'Salad Story', 814648961, 'SaladStoryfood.pl', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'Happy Salads', getHash('tZHSj2wUYY'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000091, 'Happy Salads', 313403198, 'HappySaladsfood.pl', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000091, 'Happy Salads', 313403198, 'HappySaladsfood.pl', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'Sweet factory', getHash('OYksICiAeB'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000092, 'Sweet factory', 150297313, 'Sweetfactorygmail.com', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000092, 'Sweet factory', 150297313, 'Sweetfactorygmail.com', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'Sweet Life Concept', getHash('pouZAk4nHs'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000093, 'Sweet Life Concept', 252545219, 'SweetLifeConceptgmail.com', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000093, 'Sweet Life Concept', 252545219, 'SweetLifeConceptgmail.com', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'Candy Shop', getHash('c_tSmvEtse'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000094, 'Candy Shop', 755754564, 'CandyShopmail.com', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000094, 'Candy Shop', 755754564, 'CandyShopmail.com', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'Sweet Factory Store', getHash('SElpotPZ+C'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000095, 'Sweet Factory Store', 448485634, 'SweetFactoryStorefood.pl', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000095, 'Sweet Factory Store', 448485634, 'SweetFactoryStorefood.pl', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'Castle sweet', getHash('mSbT.dfUoM'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000096, 'Castle sweet', 584896937, 'Castlesweetgmail.com', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000096, 'Castle sweet', 584896937, 'Castlesweetgmail.com', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'Zapiecek', getHash('VHBs6cmqf+'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000097, 'Zapiecek', 267541115, 'Zapiecekrest.pl', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000097, 'Zapiecek', 267541115, 'Zapiecekrest.pl', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'Subway', getHash('wCRC0FsW6x'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000098, 'Subway', 972631054, 'Subwayrest.pl', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000098, 'Subway', 972631054, 'Subwayrest.pl', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'Deli Sandwich', getHash('oFNn8YShEj'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000099, 'Deli Sandwich', 184662393, 'DeliSandwichgmail.com', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000099, 'Deli Sandwich', 184662393, 'DeliSandwichgmail.com', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'Herbs Tea & Coffee', getHash('_-yjt6STft'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000100, 'Herbs Tea & Coffee', 970851298, 'HerbsTeaCoffeefood.pl', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000100, 'Herbs Tea & Coffee', 970851298, 'HerbsTeaCoffeefood.pl', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'Czarka Tearoom', getHash('0D8Y4jkcX2'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000101, 'Czarka Tearoom', 757466494, 'CzarkaTearoomgmail.com', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000101, 'Czarka Tearoom', 757466494, 'CzarkaTearoomgmail.com', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'Czajownia Tea Room & Tea Shop', getHash('kUSXv94Tk1'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000102, 'Czajownia Tea Room & Tea Shop', 389232124, 'CzajowniaTeaRoomTeaSmail.com', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000102, 'Czajownia Tea Room & Tea Shop', 389232124, 'CzajowniaTeaRoomTeaSmail.com', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'Costa Coffee', getHash('QGHZP3p+yy'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000103, 'Costa Coffee', 217601980, 'CostaCoffeefood.pl', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000103, 'Costa Coffee', 217601980, 'CostaCoffeefood.pl', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'Coffee To Go', getHash('VbBTjg-T1Q'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000104, 'Coffee To Go', 451621256, 'CoffeeToGomail.com', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000104, 'Coffee To Go', 451621256, 'CoffeeToGomail.com', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'Starbucks', getHash('C08D1+OjJF'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000105, 'Starbucks', 392467846, 'Starbucksmail.com', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000105, 'Starbucks', 392467846, 'Starbucksmail.com', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'Zarowka Cafe', getHash('5.pt+H3fVO'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000106, 'Zarowka Cafe', 293796545, 'ZarowkaCafefood.pl', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000106, 'Zarowka Cafe', 293796545, 'ZarowkaCafefood.pl', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'Umieblowana Cafe', getHash('glHH45GtIa'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000107, 'Umieblowana Cafe', 740537609, 'UmieblowanaCafemail.com', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000107, 'Umieblowana Cafe', 740537609, 'UmieblowanaCafemail.com', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'Albo tak caffee', getHash('VGkLHZNVAZ'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000108, 'Albo tak caffee', 190668235, 'Albotakcaffeegmail.com', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000108, 'Albo tak caffee', 190668235, 'Albotakcaffeegmail.com', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'Cat cafe Kociarnia', getHash('TFmN1Qx2NR'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000109, 'Cat cafe Kociarnia', 153705110, 'CatcafeKociarniafood.pl', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000109, 'Cat cafe Kociarnia', 153705110, 'CatcafeKociarniafood.pl', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'Cafe Tektura', getHash('yjlo8FNAyu'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000110, 'Cafe Tektura', 143092772, 'CafeTekturarest.pl', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000110, 'Cafe Tektura', 143092772, 'CafeTekturarest.pl', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'Good Snack', getHash('R0rXD3OFjI'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000111, 'Good Snack', 028323842, 'GoodSnackfood.pl', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000111, 'Good Snack', 028323842, 'GoodSnackfood.pl', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'Chipsy King', getHash('YzE6xhMWnC'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000112, 'Chipsy King', 777900696, 'ChipsyKingrest.pl', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000112, 'Chipsy King', 777900696, 'ChipsyKingrest.pl', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'MURAL - Street Food', getHash('bZO7ScibRF'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000113, 'MURAL - Street Food', 841653967, 'MURALStreetFoodmail.com', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000113, 'MURAL - Street Food', 841653967, 'MURALStreetFoodmail.com', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'Wings Burgers Chips', getHash('kPiyg7Cj4q'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000114, 'Wings Burgers Chips', 369988649, 'WingsBurgersChipsfood.pl', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000114, 'Wings Burgers Chips', 369988649, 'WingsBurgersChipsfood.pl', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'House of Beer', getHash('wfyi_7x81U'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000115, 'House of Beer', 616244797, 'HouseofBeerrest.pl', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000115, 'House of Beer', 616244797, 'HouseofBeerrest.pl', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'Beer House', getHash('8w07p.Xh7e'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000116, 'Beer House', 745630813, 'BeerHousegmail.com', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000116, 'Beer House', 745630813, 'BeerHousegmail.com', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'BeerGallery - Luxury', getHash('TysRssYdTD'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000117, 'BeerGallery - Luxury', 892513755, 'BeerGalleryLuxuryrest.pl', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000117, 'BeerGallery - Luxury', 892513755, 'BeerGalleryLuxuryrest.pl', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'BroPub | Craft Beer & Burgers', getHash('gEOn.B-FKL'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000118, 'BroPub | Craft Beer & Burgers', 829444250, 'BroPubCraftBeerBurgerest.pl', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000118, 'BroPub | Craft Beer & Burgers', 829444250, 'BroPubCraftBeerBurgerest.pl', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'Viva la Pinta', getHash('7-865D-Pev'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000119, 'Viva la Pinta', 317836531, 'VivalaPintafood.pl', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000119, 'Viva la Pinta', 317836531, 'VivalaPintafood.pl', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'Strefa Piwa', getHash('r_87KluFlG'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000120, 'Strefa Piwa', 270456376, 'StrefaPiwafood.pl', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000120, 'Strefa Piwa', 270456376, 'StrefaPiwafood.pl', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'Swiat Piwa', getHash('2utyOQJA7C'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000121, 'Swiat Piwa', 635418073, 'SwiatPiwafood.pl', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000121, 'Swiat Piwa', 635418073, 'SwiatPiwafood.pl', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'Bar Mleczny', getHash('++KC-8OVk8'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000122, 'Bar Mleczny', 725181113, 'BarMlecznyrest.pl', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000122, 'Bar Mleczny', 725181113, 'BarMlecznyrest.pl', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'Polish Cuisine', getHash('Wu65WR1x+A'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000123, 'Polish Cuisine', 727479042, 'PolishCuisinefood.pl', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000123, 'Polish Cuisine', 727479042, 'PolishCuisinefood.pl', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'Talerz', getHash('kiMTiKjMws'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000124, 'Talerz', 162211714, 'Talerzgmail.com', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000124, 'Talerz', 162211714, 'Talerzgmail.com', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'Dobra Kasza Nasza', getHash('Y+FRT2Aef6'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000125, 'Dobra Kasza Nasza', 552291403, 'DobraKaszaNaszarest.pl', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000125, 'Dobra Kasza Nasza', 552291403, 'DobraKaszaNaszarest.pl', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'Tradycyja', getHash('Ls9YE-XJda'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000126, 'Tradycyja', 583836377, 'Tradycyjarest.pl', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000126, 'Tradycyja', 583836377, 'Tradycyjarest.pl', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'Smakolyki Restaurant', getHash('sJ_nsnCoUb'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000127, 'Smakolyki Restaurant', 202029669, 'SmakolykiRestaurantmail.com', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000127, 'Smakolyki Restaurant', 202029669, 'SmakolykiRestaurantmail.com', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'Kogel Mogel Restaurant', getHash('m3oL0JeL+r'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000128, 'Kogel Mogel Restaurant', 980335723, 'KogelMogelRestaurantfood.pl', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000128, 'Kogel Mogel Restaurant', 980335723, 'KogelMogelRestaurantfood.pl', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'Just Spicy Chicken', getHash('6Xe-Wuza0w'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000129, 'Just Spicy Chicken', 567979755, 'JustSpicyChickenfood.pl', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000129, 'Just Spicy Chicken', 567979755, 'JustSpicyChickenfood.pl', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'Kurczak z Rozna', getHash('I7wNasWN.x'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000130, 'Kurczak z Rozna', 128407575, 'KurczakzRoznarest.pl', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000130, 'Kurczak z Rozna', 128407575, 'KurczakzRoznarest.pl', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'Pizzeria Cyklop', getHash('yCaGRbdSe.'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000131, 'Pizzeria Cyklop', 628438849, 'PizzeriaCyklopmail.com', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000131, 'Pizzeria Cyklop', 628438849, 'PizzeriaCyklopmail.com', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'Pizzeria Salame', getHash('hcT.cQfkxt'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000132, 'Pizzeria Salame', 369963471, 'PizzeriaSalamegmail.com', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000132, 'Pizzeria Salame', 369963471, 'PizzeriaSalamegmail.com', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'Pizzatopia', getHash('J9E_ktHBny'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000133, 'Pizzatopia', 309621616, 'Pizzatopiamail.com', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000133, 'Pizzatopia', 309621616, 'Pizzatopiamail.com', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'To!Pizza', getHash('cSHGs4pBLE'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000134, 'To!Pizza', 681370228, 'ToPizzagmail.com', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000134, 'To!Pizza', 681370228, 'ToPizzagmail.com', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'Fabryka Pizzy', getHash('KZruIvVaza'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000135, 'Fabryka Pizzy', 072648305, 'FabrykaPizzyrest.pl', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000135, 'Fabryka Pizzy', 072648305, 'FabrykaPizzyrest.pl', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'Pizzeria Santa Maria', getHash('MddiIcoHCJ'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000136, 'Pizzeria Santa Maria', 597688807, 'PizzeriaSantaMariarest.pl', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000136, 'Pizzeria Santa Maria', 597688807, 'PizzeriaSantaMariarest.pl', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'Papryczki 5', getHash('Q5XQCBN7+9'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000137, 'Papryczki 5', 130317433, 'Papryczkimail.com', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000137, 'Papryczki 5', 130317433, 'Papryczkimail.com', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'Pizza Garden', getHash('nxifsl8Hew'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000138, 'Pizza Garden', 846144072, 'PizzaGardenfood.pl', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000138, 'Pizza Garden', 846144072, 'PizzaGardenfood.pl', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'Da Grasso', getHash('.W6eu1mAFX'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000139, 'Da Grasso', 442390229, 'DaGrassorest.pl', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000139, 'Da Grasso', 442390229, 'DaGrassorest.pl', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'Dominos Pizza', getHash('brpYOoVme8'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000140, 'Dominos Pizza', 111686033, 'DominosPizzagmail.com', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000140, 'Dominos Pizza', 111686033, 'DominosPizzagmail.com', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'Papa Johns', getHash('rnx-m9E29n'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000141, 'Papa Johns', 171796535, 'PapaJohnsfood.pl', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000141, 'Papa Johns', 171796535, 'PapaJohnsfood.pl', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'Maxi pizza', getHash('xDnfwjZ1_u'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000142, 'Maxi pizza', 600746893, 'Maxipizzafood.pl', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000142, 'Maxi pizza', 600746893, 'Maxipizzafood.pl', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'ITALIANO PIZZA', getHash('wrWfak4tbd'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000143, 'ITALIANO PIZZA', 030630380, 'ITALIANOPIZZAgmail.com', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000143, 'ITALIANO PIZZA', 030630380, 'ITALIANOPIZZAgmail.com', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'Pizza Hut', getHash('i-rCwBqpnq'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000144, 'Pizza Hut', 248329650, 'PizzaHutgmail.com', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000144, 'Pizza Hut', 248329650, 'PizzaHutgmail.com', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'NPizza', getHash('CepQJQpFkk'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000145, 'NPizza', 470182381, 'NPizzafood.pl', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000145, 'NPizza', 470182381, 'NPizzafood.pl', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'CONO PIZZA', getHash('1u5O1ucyJW'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000146, 'CONO PIZZA', 316396047, 'CONOPIZZAgmail.com', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000146, 'CONO PIZZA', 316396047, 'CONOPIZZAgmail.com', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'THE BEST PIZZA', getHash('JE4L.87g6K'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000147, 'THE BEST PIZZA', 687096727, 'THEBESTPIZZArest.pl', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000147, 'THE BEST PIZZA', 687096727, 'THEBESTPIZZArest.pl', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'Zaczatek Pizza', getHash('sCDGR.9nGl'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000148, 'Zaczatek Pizza', 917964846, 'ZaczatekPizzamail.com', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000148, 'Zaczatek Pizza', 917964846, 'ZaczatekPizzamail.com', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'Ali Baba Kebab', getHash('6QseTwsMxF'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000149, 'Ali Baba Kebab', 642726369, 'AliBabaKebabmail.com', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000149, 'Ali Baba Kebab', 642726369, 'AliBabaKebabmail.com', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'Boss kebab', getHash('d8.eUkDY1b'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000150, 'Boss kebab', 786817492, 'Bosskebabfood.pl', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000150, 'Boss kebab', 786817492, 'Bosskebabfood.pl', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'Kebab Cezar', getHash('CesmIDpRi7'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000151, 'Kebab Cezar', 863350735, 'KebabCezarfood.pl', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000151, 'Kebab Cezar', 863350735, 'KebabCezarfood.pl', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'U Szwagra', getHash('Fn-CNkb5Jq'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000152, 'U Szwagra', 795221519, 'USzwagramail.com', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000152, 'U Szwagra', 795221519, 'USzwagramail.com', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'Kebab soltan', getHash('n8blLf6AgK'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000153, 'Kebab soltan', 721400686, 'Kebabsoltangmail.com', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000153, 'Kebab soltan', 721400686, 'Kebabsoltangmail.com', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'Bafra Kebab', getHash('r+ZvM6ukgX'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000154, 'Bafra Kebab', 924370412, 'BafraKebabfood.pl', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000154, 'Bafra Kebab', 924370412, 'BafraKebabfood.pl', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'Premium Kebab', getHash('0.J8uUnHNz'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000155, 'Premium Kebab', 115588341, 'PremiumKebabgmail.com', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000155, 'Premium Kebab', 115588341, 'PremiumKebabgmail.com', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'Elo Kebab!', getHash('cp7guiUch+'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000156, 'Elo Kebab!', 814722546, 'EloKebabrest.pl', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000156, 'Elo Kebab!', 814722546, 'EloKebabrest.pl', true);
 insert into Loginy_hasla(id_uzytkownika, "login", hash_hasla) values(-3, 'Tata smarzy', getHash('OVlbbREUm9'));
-insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000157, 'Tata smarzy', 578880810, 'Tatasmarzymail.com', false);
+insert into Restauracje(id_restauracji, nazwa_restauracji, numer_telefonu, mail, active) values(900000157, 'Tata smarzy', 578880810, 'Tatasmarzymail.com', true);
 
 insert into Produkty(id_produktu, id_restauracji, waga, opis, nazwa, wege, active) values(1, 900000000, 200, 'Big burger with special souse', 'Big Mac', false, true);
 insert into Produkty(id_produktu, id_restauracji, waga, opis, nazwa, wege, active) values(2, 900000000, 150, 'Simple Burger :)', 'Hamburger', false, true);
@@ -7731,46 +7732,189 @@ insert into Produkty(id_produktu, id_restauracji, waga, opis, nazwa, wege, activ
 insert into Produkty(id_produktu, id_restauracji, waga, opis, nazwa, wege, active) values(3401, 900000142, 150, 'Fries (Small)', 'Fries S', true, true);
 
 
-insert into Produkty(id_produktu, id_restauracji, waga, opis, nazwa, wege, active) values(3401, 900000149, 400, 'European Kebab', 'Middle Eastern Kebab', false, true);
-insert into Produkty(id_produktu, id_restauracji, waga, opis, nazwa, wege, active) values(3402, 900000149, 350, 'Dont eat meat? Here you are!', 'Vegetarian Kebab', true, true);
-insert into Produkty(id_produktu, id_restauracji, waga, opis, nazwa, wege, active) values(3403, 900000149, 1000, 'Really Big Kebab', 'King Kebab', false, true);
-insert into Produkty(id_produktu, id_restauracji, waga, opis, nazwa, wege, active) values(3404, 900000149, 400, 'Try it!!', 'Turkish Kebab', false, true);
-insert into Produkty(id_produktu, id_restauracji, waga, opis, nazwa, wege, active) values(3405, 900000149, 600, 'American Style Kebab!!', 'Kebab with Fries', false, true);
-insert into Produkty(id_produktu, id_restauracji, waga, opis, nazwa, wege, active) values(3406, 900000149, 450, 'Interesting taste', 'Pork Kebab', false, true);
-insert into Produkty(id_produktu, id_restauracji, waga, opis, nazwa, wege, active) values(3407, 900000149, 300, 'Hot veggie kebab', 'Chili Veggie Kebabs', false, true);
-insert into Produkty(id_produktu, id_restauracji, waga, opis, nazwa, wege, active) values(3408, 900000149, 450, 'VERY HOT KEBAB', 'Spicy Meat', false, true);
-insert into Produkty(id_produktu, id_restauracji, waga, opis, nazwa, wege, active) values(3409, 900000149, 170, 'Fries', 'Fries (Medium)', true, true);
-insert into Produkty(id_produktu, id_restauracji, waga, opis, nazwa, wege, active) values(3410, 900000149, 400, 'Jewish national dishes', 'Falafel', true, true);
-insert into Produkty(id_produktu, id_restauracji, waga, opis, nazwa, wege, active) values(3411, 900000149, 200, 'Fries (Large)', 'Fries L', true, true);
-insert into Produkty(id_produktu, id_restauracji, waga, opis, nazwa, wege, active) values(3412, 900000149, 150, 'Fries (Small)', 'Fries S', true, true);
+insert into Produkty(id_produktu, id_restauracji, waga, opis, nazwa, wege, active) values(3402, 900000149, 400, 'European Kebab', 'Middle Eastern Kebab', false, true);
+insert into Produkty(id_produktu, id_restauracji, waga, opis, nazwa, wege, active) values(3403, 900000149, 350, 'Dont eat meat? Here you are!', 'Vegetarian Kebab', true, true);
+insert into Produkty(id_produktu, id_restauracji, waga, opis, nazwa, wege, active) values(3404, 900000149, 1000, 'Really Big Kebab', 'King Kebab', false, true);
+insert into Produkty(id_produktu, id_restauracji, waga, opis, nazwa, wege, active) values(3405, 900000149, 400, 'Try it!!', 'Turkish Kebab', false, true);
+insert into Produkty(id_produktu, id_restauracji, waga, opis, nazwa, wege, active) values(3406, 900000149, 600, 'American Style Kebab!!', 'Kebab with Fries', false, true);
+insert into Produkty(id_produktu, id_restauracji, waga, opis, nazwa, wege, active) values(3407, 900000149, 450, 'Interesting taste', 'Pork Kebab', false, true);
+insert into Produkty(id_produktu, id_restauracji, waga, opis, nazwa, wege, active) values(3408, 900000149, 300, 'Hot veggie kebab', 'Chili Veggie Kebabs', false, true);
+insert into Produkty(id_produktu, id_restauracji, waga, opis, nazwa, wege, active) values(3409, 900000149, 450, 'VERY HOT KEBAB', 'Spicy Meat', false, true);
+insert into Produkty(id_produktu, id_restauracji, waga, opis, nazwa, wege, active) values(3410, 900000149, 170, 'Fries', 'Fries (Medium)', true, true);
+insert into Produkty(id_produktu, id_restauracji, waga, opis, nazwa, wege, active) values(3411, 900000149, 400, 'Jewish national dishes', 'Falafel', true, true);
+insert into Produkty(id_produktu, id_restauracji, waga, opis, nazwa, wege, active) values(3412, 900000149, 200, 'Fries (Large)', 'Fries L', true, true);
+insert into Produkty(id_produktu, id_restauracji, waga, opis, nazwa, wege, active) values(3413, 900000149, 150, 'Fries (Small)', 'Fries S', true, true);
 
-insert into Produkty(id_produktu, id_restauracji, waga, opis, nazwa, wege, active) values(3412, 900000017, 350, 'Havent u tasted that?', 'Sushi Sandwich', false, true);
-insert into Produkty(id_produktu, id_restauracji, waga, opis, nazwa, wege, active) values(3413, 900000017, 350, 'Rice, carrot, packet', 'Frankenstein Sushi', true, true);
-insert into Produkty(id_produktu, id_restauracji, waga, opis, nazwa, wege, active) values(3414, 900000017, 350, 'rainbow on a plate!', 'Rainbow Sushi', false, true);
-insert into Produkty(id_produktu, id_restauracji, waga, opis, nazwa, wege, active) values(3415, 900000017, 350, 'Interesting taste', ' Spicy Tuna roll', false, true);
-insert into Produkty(id_produktu, id_restauracji, waga, opis, nazwa, wege, active) values(3416, 900000017, 350, 'Just satisfy!', 'Sushi Burrito', false, true);
-insert into Produkty(id_produktu, id_restauracji, waga, opis, nazwa, wege, active) values(3417, 900000017, 350, 'Nothing to add, the best of the best!', 'Everyday Sushi', false, true);
-insert into Produkty(id_produktu, id_restauracji, waga, opis, nazwa, wege, active) values(3418, 900000017, 350, 'Extremely tasty!', 'Sushi Rice with Sushi Vinegar', false, true);
-insert into Produkty(id_produktu, id_restauracji, waga, opis, nazwa, wege, active) values(3419, 900000017, 350, 'Classic sushi with red fish', 'California Sushi', false, true);
-insert into Produkty(id_produktu, id_restauracji, waga, opis, nazwa, wege, active) values(3420, 900000017, 350, 'Light summer fare', 'Sushi Salad', true, true);
+insert into Produkty(id_produktu, id_restauracji, waga, opis, nazwa, wege, active) values(3414, 900000017, 350, 'Havent u tasted that?', 'Sushi Sandwich', false, true);
+insert into Produkty(id_produktu, id_restauracji, waga, opis, nazwa, wege, active) values(3415, 900000017, 350, 'Rice, carrot, packet', 'Frankenstein Sushi', true, true);
+insert into Produkty(id_produktu, id_restauracji, waga, opis, nazwa, wege, active) values(3416, 900000017, 350, 'rainbow on a plate!', 'Rainbow Sushi', false, true);
+insert into Produkty(id_produktu, id_restauracji, waga, opis, nazwa, wege, active) values(3417, 900000017, 350, 'Interesting taste', ' Spicy Tuna roll', false, true);
+insert into Produkty(id_produktu, id_restauracji, waga, opis, nazwa, wege, active) values(3418, 900000017, 350, 'Just satisfy!', 'Sushi Burrito', false, true);
+insert into Produkty(id_produktu, id_restauracji, waga, opis, nazwa, wege, active) values(3419, 900000017, 350, 'Nothing to add, the best of the best!', 'Everyday Sushi', false, true);
+insert into Produkty(id_produktu, id_restauracji, waga, opis, nazwa, wege, active) values(3420, 900000017, 350, 'Extremely tasty!', 'Sushi Rice with Sushi Vinegar', false, true);
+insert into Produkty(id_produktu, id_restauracji, waga, opis, nazwa, wege, active) values(3421, 900000017, 350, 'Classic sushi with red fish', 'California Sushi', false, true);
+insert into Produkty(id_produktu, id_restauracji, waga, opis, nazwa, wege, active) values(3422, 900000017, 350, 'Light summer fare', 'Sushi Salad', true, true);
 
-insert into Produkty(id_produktu, id_restauracji, waga, opis, nazwa, wege, active) values(3421, 900000107, 300, 'Espresso with milk', 'Latte', true, true);
-insert into Produkty(id_produktu, id_restauracji, waga, opis, nazwa, wege, active) values(3422, 900000107, 300, 'Espresso with Milk&Foam', 'Cappuccino', true, true);
-insert into Produkty(id_produktu, id_restauracji, waga, opis, nazwa, wege, active) values(3423, 900000107, 100, 'Just coffee :)', 'Espresso', true, true);
-insert into Produkty(id_produktu, id_restauracji, waga, opis, nazwa, wege, active) values(3424, 900000107, 300, 'Long pulled espresso', 'Lungo', true, true);
-insert into Produkty(id_produktu, id_restauracji, waga, opis, nazwa, wege, active) values(3425, 900000107, 300, 'Espresso with streamed milk', 'Flat White', true, true);
-insert into Produkty(id_produktu, id_restauracji, waga, opis, nazwa, wege, active) values(3426, 900000107, 300, 'Espresso with chocolate&streamed milk', 'Mocha', true, true);
-insert into Produkty(id_produktu, id_restauracji, waga, opis, nazwa, wege, active) values(3427, 900000107, 200, '2oz espresso', 'Doppio', true, true);
-insert into Produkty(id_produktu, id_restauracji, waga, opis, nazwa, wege, active) values(3428, 900000107, 300, 'Espresso with water', 'Americano', true, true);
-insert into Produkty(id_produktu, id_restauracji, waga, opis, nazwa, wege, active) values(3429, 900000107, 300, 'Espresso&Streamed milk', 'Cortado', true, true);
-insert into Produkty(id_produktu, id_restauracji, waga, opis, nazwa, wege, active) values(3430, 900000107, 300, 'Just tea', 'Black tea', true, true);
-insert into Produkty(id_produktu, id_restauracji, waga, opis, nazwa, wege, active) values(3431, 900000107, 200, 'Very tasty sandwich!', 'Sandwich with chicken', true, true);
-insert into Produkty(id_produktu, id_restauracji, waga, opis, nazwa, wege, active) values(3432, 900000107, 150, 'YOU MUST TASTE IT!', 'Chocolate cookie', true, true);
+insert into Produkty(id_produktu, id_restauracji, waga, opis, nazwa, wege, active) values(3423, 900000107, 300, 'Espresso with milk', 'Latte', true, true);
+insert into Produkty(id_produktu, id_restauracji, waga, opis, nazwa, wege, active) values(3424, 900000107, 300, 'Espresso with Milk&Foam', 'Cappuccino', true, true);
+insert into Produkty(id_produktu, id_restauracji, waga, opis, nazwa, wege, active) values(3425, 900000107, 100, 'Just coffee :)', 'Espresso', true, true);
+insert into Produkty(id_produktu, id_restauracji, waga, opis, nazwa, wege, active) values(3426, 900000107, 300, 'Long pulled espresso', 'Lungo', true, true);
+insert into Produkty(id_produktu, id_restauracji, waga, opis, nazwa, wege, active) values(3427, 900000107, 300, 'Espresso with streamed milk', 'Flat White', true, true);
+insert into Produkty(id_produktu, id_restauracji, waga, opis, nazwa, wege, active) values(3428, 900000107, 300, 'Espresso with chocolate&streamed milk', 'Mocha', true, true);
+insert into Produkty(id_produktu, id_restauracji, waga, opis, nazwa, wege, active) values(3429, 900000107, 200, '2oz espresso', 'Doppio', true, true);
+insert into Produkty(id_produktu, id_restauracji, waga, opis, nazwa, wege, active) values(3430, 900000107, 300, 'Espresso with water', 'Americano', true, true);
+insert into Produkty(id_produktu, id_restauracji, waga, opis, nazwa, wege, active) values(3431, 900000107, 300, 'Espresso&Streamed milk', 'Cortado', true, true);
+insert into Produkty(id_produktu, id_restauracji, waga, opis, nazwa, wege, active) values(3432, 900000107, 300, 'Just tea', 'Black tea', true, true);
+insert into Produkty(id_produktu, id_restauracji, waga, opis, nazwa, wege, active) values(3433, 900000107, 200, 'Very tasty sandwich!', 'Sandwich with chicken', true, true);
+insert into Produkty(id_produktu, id_restauracji, waga, opis, nazwa, wege, active) values(3434, 900000107, 150, 'YOU MUST TASTE IT!', 'Chocolate cookie', true, true);
 
 
+insert into Kategorii_produktow values(3390, 7);
+insert into Kategorii_produktow values(3391, 7);
+insert into Kategorii_produktow values(3392, 7);
+insert into Kategorii_produktow values(3393, 7);
+insert into Kategorii_produktow values(3394, 7);
+insert into Kategorii_produktow values(3395, 7);
+insert into Kategorii_produktow values(3396, 7);
+insert into Kategorii_produktow values(3397, 7);
 
-insert into Kategorie values(3, 'Vege dishes');
+insert into Kategorii_produktow values(3423, 24);
+insert into Kategorii_produktow values(3424, 24);
+insert into Kategorii_produktow values(3425, 24);
+insert into Kategorii_produktow values(3426, 24);
+insert into Kategorii_produktow values(3427, 24);
+insert into Kategorii_produktow values(3428, 24);
+insert into Kategorii_produktow values(3429, 24);
+insert into Kategorii_produktow values(3430, 24);
+insert into Kategorii_produktow values(3431, 24);
+insert into Kategorii_produktow values(3432, 24);
 
+insert into Kategorii_produktow values(3423, 5);
+insert into Kategorii_produktow values(3424, 5);
+insert into Kategorii_produktow values(3425, 5);
+insert into Kategorii_produktow values(3426, 5);
+insert into Kategorii_produktow values(3427, 5);
+insert into Kategorii_produktow values(3428, 5);
+insert into Kategorii_produktow values(3429, 5);
+insert into Kategorii_produktow values(3430, 5);
+insert into Kategorii_produktow values(3431, 5);
+insert into Kategorii_produktow values(3432, 5);
+
+insert into Kategorii_produktow values(3423, 16);
+insert into Kategorii_produktow values(3424, 16);
+insert into Kategorii_produktow values(3425, 16);
+insert into Kategorii_produktow values(3426, 16);
+insert into Kategorii_produktow values(3427, 16);
+insert into Kategorii_produktow values(3428, 16);
+insert into Kategorii_produktow values(3429, 16);
+insert into Kategorii_produktow values(3430, 16);
+insert into Kategorii_produktow values(3431, 16);
+insert into Kategorii_produktow values(3432, 16);
+
+
+insert into Kategorii_produktow values(3414, 6);
+insert into Kategorii_produktow values(3415, 6);
+insert into Kategorii_produktow values(3416, 6);
+insert into Kategorii_produktow values(3417, 6);
+insert into Kategorii_produktow values(3418, 6);
+insert into Kategorii_produktow values(3419, 6);
+insert into Kategorii_produktow values(3420, 6);
+insert into Kategorii_produktow values(3421, 6);
+insert into Kategorii_produktow values(3422, 6);
+
+insert into Kategorii_produktow values(3414, 8);
+insert into Kategorii_produktow values(3415, 8);
+insert into Kategorii_produktow values(3416, 8);
+insert into Kategorii_produktow values(3417, 8);
+insert into Kategorii_produktow values(3418, 8);
+insert into Kategorii_produktow values(3419, 8);
+insert into Kategorii_produktow values(3420, 8);
+insert into Kategorii_produktow values(3421, 8);
+insert into Kategorii_produktow values(3422, 8);
+
+insert into Kategorii_produktow values(3378, 1);
+insert into Kategorii_produktow values(3379, 1);
+insert into Kategorii_produktow values(3380, 1);
+insert into Kategorii_produktow values(3381, 1);
+insert into Kategorii_produktow values(3382, 1);
+insert into Kategorii_produktow values(3383, 1);
+insert into Kategorii_produktow values(3384, 1);
+insert into Kategorii_produktow values(3385, 1);
+insert into Kategorii_produktow values(3386, 1);
+insert into Kategorii_produktow values(3387, 1);
+insert into Kategorii_produktow values(3388, 1);
+insert into Kategorii_produktow values(3389, 1);
+insert into Kategorii_produktow values(3390, 1);
+insert into Kategorii_produktow values(3391, 1);
+insert into Kategorii_produktow values(3392, 1);
+insert into Kategorii_produktow values(3393, 1);
+insert into Kategorii_produktow values(3394, 1);
+insert into Kategorii_produktow values(3395, 1);
+insert into Kategorii_produktow values(3396, 1);
+insert into Kategorii_produktow values(3397, 1);
+insert into Kategorii_produktow values(3398, 1);
+insert into Kategorii_produktow values(3399, 1);
+insert into Kategorii_produktow values(3400, 1);
+insert into Kategorii_produktow values(3401, 1);
+insert into Kategorii_produktow values(3402, 1);
+insert into Kategorii_produktow values(3403, 1);
+insert into Kategorii_produktow values(3404, 1);
+insert into Kategorii_produktow values(3405, 1);
+insert into Kategorii_produktow values(3406, 1);
+insert into Kategorii_produktow values(3407, 1);
+insert into Kategorii_produktow values(3408, 1);
+insert into Kategorii_produktow values(3409, 1);
+insert into Kategorii_produktow values(3410, 1);
+insert into Kategorii_produktow values(3411, 1);
+insert into Kategorii_produktow values(3412, 1);
+insert into Kategorii_produktow values(3413, 1);
+
+insert into Kategorii_produktow values(3402, 3);
+insert into Kategorii_produktow values(3403, 3);
+insert into Kategorii_produktow values(3404, 3);
+insert into Kategorii_produktow values(3405, 3);
+insert into Kategorii_produktow values(3406, 3);
+insert into Kategorii_produktow values(3407, 3);
+insert into Kategorii_produktow values(3408, 3);
+insert into Kategorii_produktow values(3409, 3);
+insert into Kategorii_produktow values(3410, 3);
+insert into Kategorii_produktow values(3411, 3);
+insert into Kategorii_produktow values(3412, 3);
+insert into Kategorii_produktow values(3413, 3);
+
+insert into Kategorii_produktow values(3379, 2);
+insert into Kategorii_produktow values(3380, 2);
+insert into Kategorii_produktow values(3385, 2);
+
+insert into Kategorii_produktow values(3433, 23);
+insert into Kategorii_produktow values(3434, 22);
+insert into Kategorii_produktow values(3434, 12);
+
+insert into Kategorii_produktow values(3433, 28);
+insert into Kategorii_produktow values(3378, 28);
+insert into Kategorii_produktow values(3380, 28);
+insert into Kategorii_produktow values(3381, 28);
+insert into Kategorii_produktow values(3382, 28);
+insert into Kategorii_produktow values(3383, 28);
+insert into Kategorii_produktow values(6, 28);
+insert into Kategorii_produktow values(7, 28);
+
+insert into Kategorii_produktow values(9, 25);
+insert into Kategorii_produktow values(11, 25);
+insert into Kategorii_produktow values(12, 25);
+insert into Kategorii_produktow values(3434, 25);
+insert into Kategorii_produktow values(3403, 25);
+insert into Kategorii_produktow values(3413, 25);
+insert into Kategorii_produktow values(3412, 25);
+insert into Kategorii_produktow values(3410, 25);
+insert into Kategorii_produktow values(3398, 25);
+insert into Kategorii_produktow values(3399, 25);
+insert into Kategorii_produktow values(3400, 25);
+insert into Kategorii_produktow values(3401, 25);
+insert into Kategorii_produktow values(3386, 25);
+insert into Kategorii_produktow values(3387, 25);
+insert into Kategorii_produktow values(3388, 25);
+insert into Kategorii_produktow values(3389, 25);
 
 Insert into Adresy_userow values (774, 900000000, default )
 ,(228, 900000001, default )
@@ -7934,8 +8078,6828 @@ Insert into Adresy_userow values (774, 900000000, default )
 
 
 
+insert into Kategorii_produktow values(13, 5);
+insert into Kategorii_produktow values(14, 5);
+insert into Kategorii_produktow values(15, 5);
+insert into Kategorii_produktow values(16, 5);
+insert into Kategorii_produktow values(17, 5);
+insert into Kategorii_produktow values(18, 5);
+insert into Kategorii_produktow values(19, 5);
+insert into Kategorii_produktow values(20, 5);
+insert into Kategorii_produktow values(21, 5);
+insert into Kategorii_produktow values(22, 5);
+insert into Kategorii_produktow values(23, 5);
+insert into Kategorii_produktow values(24, 5);
+insert into Kategorii_produktow values(25, 5);
+insert into Kategorii_produktow values(26, 5);
+insert into Kategorii_produktow values(27, 5);
+insert into Kategorii_produktow values(28, 5);
+insert into Kategorii_produktow values(29, 5);
+insert into Kategorii_produktow values(30, 5);
+insert into Kategorii_produktow values(31, 5);
+insert into Kategorii_produktow values(32, 5);
+insert into Kategorii_produktow values(33, 5);
+insert into Kategorii_produktow values(34, 5);
+insert into Kategorii_produktow values(35, 5);
+insert into Kategorii_produktow values(36, 5);
+insert into Kategorii_produktow values(37, 5);
+insert into Kategorii_produktow values(38, 5);
+insert into Kategorii_produktow values(39, 5);
+insert into Kategorii_produktow values(40, 5);
+insert into Kategorii_produktow values(41, 5);
+insert into Kategorii_produktow values(42, 5);
+insert into Kategorii_produktow values(43, 5);
+insert into Kategorii_produktow values(44, 5);
+insert into Kategorii_produktow values(45, 5);
+insert into Kategorii_produktow values(46, 5);
+insert into Kategorii_produktow values(47, 5);
+insert into Kategorii_produktow values(48, 5);
+insert into Kategorii_produktow values(49, 5);
+insert into Kategorii_produktow values(50, 5);
+insert into Kategorii_produktow values(51, 5);
+insert into Kategorii_produktow values(52, 5);
+insert into Kategorii_produktow values(53, 5);
+insert into Kategorii_produktow values(54, 5);
+insert into Kategorii_produktow values(55, 5);
+insert into Kategorii_produktow values(56, 5);
+insert into Kategorii_produktow values(57, 5);
+insert into Kategorii_produktow values(58, 5);
+insert into Kategorii_produktow values(59, 5);
+insert into Kategorii_produktow values(60, 5);
+insert into Kategorii_produktow values(61, 5);
+insert into Kategorii_produktow values(62, 5);
+insert into Kategorii_produktow values(63, 5);
+insert into Kategorii_produktow values(64, 5);
+insert into Kategorii_produktow values(65, 5);
+insert into Kategorii_produktow values(66, 5);
+insert into Kategorii_produktow values(67, 5);
+insert into Kategorii_produktow values(68, 5);
+insert into Kategorii_produktow values(69, 5);
+insert into Kategorii_produktow values(70, 5);
+insert into Kategorii_produktow values(71, 5);
+insert into Kategorii_produktow values(72, 5);
+insert into Kategorii_produktow values(73, 5);
+insert into Kategorii_produktow values(74, 5);
+insert into Kategorii_produktow values(75, 5);
+insert into Kategorii_produktow values(76, 5);
+insert into Kategorii_produktow values(77, 5);
+insert into Kategorii_produktow values(78, 5);
+insert into Kategorii_produktow values(79, 5);
+insert into Kategorii_produktow values(80, 5);
+insert into Kategorii_produktow values(81, 5);
+insert into Kategorii_produktow values(82, 5);
+insert into Kategorii_produktow values(83, 5);
+insert into Kategorii_produktow values(84, 5);
+insert into Kategorii_produktow values(85, 5);
+insert into Kategorii_produktow values(86, 5);
+insert into Kategorii_produktow values(87, 5);
+insert into Kategorii_produktow values(88, 5);
+insert into Kategorii_produktow values(89, 5);
+insert into Kategorii_produktow values(90, 5);
+insert into Kategorii_produktow values(91, 5);
+insert into Kategorii_produktow values(92, 5);
+insert into Kategorii_produktow values(93, 5);
+insert into Kategorii_produktow values(94, 5);
+insert into Kategorii_produktow values(95, 5);
+insert into Kategorii_produktow values(96, 5);
+insert into Kategorii_produktow values(97, 5);
+insert into Kategorii_produktow values(98, 5);
+insert into Kategorii_produktow values(99, 5);
+insert into Kategorii_produktow values(100, 5);
+insert into Kategorii_produktow values(101, 5);
+insert into Kategorii_produktow values(102, 5);
+insert into Kategorii_produktow values(103, 5);
+insert into Kategorii_produktow values(104, 5);
+insert into Kategorii_produktow values(105, 5);
+insert into Kategorii_produktow values(106, 5);
+insert into Kategorii_produktow values(107, 5);
+insert into Kategorii_produktow values(108, 5);
+insert into Kategorii_produktow values(109, 5);
+insert into Kategorii_produktow values(110, 5);
+insert into Kategorii_produktow values(111, 5);
+insert into Kategorii_produktow values(112, 5);
+insert into Kategorii_produktow values(113, 5);
+insert into Kategorii_produktow values(114, 5);
+insert into Kategorii_produktow values(115, 5);
+insert into Kategorii_produktow values(116, 5);
+insert into Kategorii_produktow values(117, 5);
+insert into Kategorii_produktow values(118, 5);
+insert into Kategorii_produktow values(119, 5);
+insert into Kategorii_produktow values(120, 5);
+insert into Kategorii_produktow values(121, 5);
+insert into Kategorii_produktow values(122, 5);
+insert into Kategorii_produktow values(123, 5);
+insert into Kategorii_produktow values(124, 5);
+insert into Kategorii_produktow values(125, 5);
+insert into Kategorii_produktow values(126, 5);
+insert into Kategorii_produktow values(127, 5);
+insert into Kategorii_produktow values(128, 5);
+insert into Kategorii_produktow values(129, 5);
+insert into Kategorii_produktow values(130, 5);
+insert into Kategorii_produktow values(131, 5);
+insert into Kategorii_produktow values(132, 5);
+insert into Kategorii_produktow values(133, 5);
+insert into Kategorii_produktow values(134, 5);
+insert into Kategorii_produktow values(135, 5);
+insert into Kategorii_produktow values(136, 5);
+insert into Kategorii_produktow values(137, 5);
+insert into Kategorii_produktow values(138, 5);
+insert into Kategorii_produktow values(139, 5);
+insert into Kategorii_produktow values(140, 5);
+insert into Kategorii_produktow values(141, 5);
+insert into Kategorii_produktow values(142, 5);
+insert into Kategorii_produktow values(143, 5);
+insert into Kategorii_produktow values(144, 5);
+insert into Kategorii_produktow values(145, 5);
+insert into Kategorii_produktow values(146, 5);
+insert into Kategorii_produktow values(147, 5);
+insert into Kategorii_produktow values(148, 5);
+insert into Kategorii_produktow values(149, 5);
+insert into Kategorii_produktow values(150, 5);
+insert into Kategorii_produktow values(151, 5);
+insert into Kategorii_produktow values(152, 5);
+insert into Kategorii_produktow values(153, 5);
+insert into Kategorii_produktow values(154, 5);
+insert into Kategorii_produktow values(155, 5);
+insert into Kategorii_produktow values(156, 5);
+insert into Kategorii_produktow values(157, 5);
+insert into Kategorii_produktow values(158, 5);
+insert into Kategorii_produktow values(159, 5);
+insert into Kategorii_produktow values(160, 5);
+insert into Kategorii_produktow values(161, 5);
+insert into Kategorii_produktow values(162, 5);
+insert into Kategorii_produktow values(163, 5);
+insert into Kategorii_produktow values(164, 5);
+insert into Kategorii_produktow values(165, 5);
+insert into Kategorii_produktow values(166, 5);
+insert into Kategorii_produktow values(167, 5);
+insert into Kategorii_produktow values(168, 5);
+insert into Kategorii_produktow values(169, 5);
+insert into Kategorii_produktow values(170, 5);
+insert into Kategorii_produktow values(171, 5);
+insert into Kategorii_produktow values(172, 5);
+insert into Kategorii_produktow values(173, 5);
+insert into Kategorii_produktow values(174, 5);
+insert into Kategorii_produktow values(175, 5);
+insert into Kategorii_produktow values(176, 5);
+insert into Kategorii_produktow values(177, 5);
+insert into Kategorii_produktow values(178, 5);
+insert into Kategorii_produktow values(179, 5);
+insert into Kategorii_produktow values(180, 5);
+insert into Kategorii_produktow values(181, 5);
+insert into Kategorii_produktow values(182, 5);
+insert into Kategorii_produktow values(183, 5);
+insert into Kategorii_produktow values(184, 5);
+insert into Kategorii_produktow values(185, 5);
+insert into Kategorii_produktow values(186, 5);
+insert into Kategorii_produktow values(187, 5);
+insert into Kategorii_produktow values(188, 5);
+insert into Kategorii_produktow values(189, 5);
+insert into Kategorii_produktow values(190, 5);
+insert into Kategorii_produktow values(191, 5);
+insert into Kategorii_produktow values(192, 5);
+insert into Kategorii_produktow values(193, 5);
+insert into Kategorii_produktow values(194, 5);
+insert into Kategorii_produktow values(195, 5);
+insert into Kategorii_produktow values(196, 5);
+insert into Kategorii_produktow values(197, 5);
+insert into Kategorii_produktow values(198, 5);
+insert into Kategorii_produktow values(199, 5);
+insert into Kategorii_produktow values(200, 5);
+insert into Kategorii_produktow values(201, 5);
+insert into Kategorii_produktow values(202, 5);
+insert into Kategorii_produktow values(203, 5);
+insert into Kategorii_produktow values(204, 5);
+insert into Kategorii_produktow values(205, 5);
+insert into Kategorii_produktow values(206, 5);
+insert into Kategorii_produktow values(207, 5);
+insert into Kategorii_produktow values(208, 5);
+insert into Kategorii_produktow values(209, 5);
+insert into Kategorii_produktow values(210, 5);
+insert into Kategorii_produktow values(211, 5);
+insert into Kategorii_produktow values(212, 5);
+insert into Kategorii_produktow values(213, 5);
+insert into Kategorii_produktow values(214, 5);
+insert into Kategorii_produktow values(215, 5);
+insert into Kategorii_produktow values(216, 5);
+insert into Kategorii_produktow values(217, 5);
+insert into Kategorii_produktow values(218, 5);
+insert into Kategorii_produktow values(219, 5);
+insert into Kategorii_produktow values(220, 5);
+insert into Kategorii_produktow values(221, 5);
+insert into Kategorii_produktow values(222, 5);
+insert into Kategorii_produktow values(223, 5);
+insert into Kategorii_produktow values(224, 5);
+insert into Kategorii_produktow values(225, 5);
+insert into Kategorii_produktow values(226, 5);
+insert into Kategorii_produktow values(227, 5);
+insert into Kategorii_produktow values(228, 5);
+insert into Kategorii_produktow values(229, 5);
+insert into Kategorii_produktow values(230, 5);
+insert into Kategorii_produktow values(231, 5);
+insert into Kategorii_produktow values(232, 5);
+insert into Kategorii_produktow values(233, 5);
+insert into Kategorii_produktow values(234, 5);
+insert into Kategorii_produktow values(235, 5);
+insert into Kategorii_produktow values(236, 5);
+insert into Kategorii_produktow values(237, 5);
+insert into Kategorii_produktow values(238, 5);
+insert into Kategorii_produktow values(239, 5);
+insert into Kategorii_produktow values(240, 5);
+insert into Kategorii_produktow values(241, 5);
+insert into Kategorii_produktow values(242, 5);
+insert into Kategorii_produktow values(243, 5);
+insert into Kategorii_produktow values(244, 5);
+insert into Kategorii_produktow values(245, 5);
+insert into Kategorii_produktow values(246, 5);
+insert into Kategorii_produktow values(247, 5);
+insert into Kategorii_produktow values(248, 5);
+insert into Kategorii_produktow values(249, 5);
+insert into Kategorii_produktow values(250, 5);
+insert into Kategorii_produktow values(251, 5);
+insert into Kategorii_produktow values(252, 5);
+insert into Kategorii_produktow values(253, 5);
+insert into Kategorii_produktow values(254, 5);
+insert into Kategorii_produktow values(255, 5);
+insert into Kategorii_produktow values(256, 5);
+insert into Kategorii_produktow values(257, 5);
+insert into Kategorii_produktow values(258, 5);
+insert into Kategorii_produktow values(259, 5);
+insert into Kategorii_produktow values(260, 5);
+insert into Kategorii_produktow values(261, 5);
+insert into Kategorii_produktow values(262, 5);
+insert into Kategorii_produktow values(263, 5);
+insert into Kategorii_produktow values(264, 5);
+insert into Kategorii_produktow values(265, 5);
+insert into Kategorii_produktow values(266, 5);
+insert into Kategorii_produktow values(267, 5);
+insert into Kategorii_produktow values(268, 5);
+insert into Kategorii_produktow values(269, 5);
+insert into Kategorii_produktow values(270, 5);
+insert into Kategorii_produktow values(271, 5);
+insert into Kategorii_produktow values(272, 5);
+insert into Kategorii_produktow values(273, 5);
+insert into Kategorii_produktow values(274, 5);
+insert into Kategorii_produktow values(275, 5);
+insert into Kategorii_produktow values(276, 5);
+insert into Kategorii_produktow values(277, 5);
+insert into Kategorii_produktow values(278, 5);
+insert into Kategorii_produktow values(279, 5);
+insert into Kategorii_produktow values(280, 5);
+insert into Kategorii_produktow values(281, 5);
+insert into Kategorii_produktow values(282, 5);
+insert into Kategorii_produktow values(283, 5);
+insert into Kategorii_produktow values(284, 5);
+insert into Kategorii_produktow values(285, 5);
+insert into Kategorii_produktow values(286, 5);
+insert into Kategorii_produktow values(287, 5);
+insert into Kategorii_produktow values(288, 5);
+insert into Kategorii_produktow values(289, 5);
+insert into Kategorii_produktow values(290, 5);
+insert into Kategorii_produktow values(291, 5);
+insert into Kategorii_produktow values(292, 5);
+insert into Kategorii_produktow values(293, 5);
+insert into Kategorii_produktow values(294, 5);
+insert into Kategorii_produktow values(295, 5);
+insert into Kategorii_produktow values(296, 5);
+insert into Kategorii_produktow values(297, 5);
+insert into Kategorii_produktow values(298, 5);
+insert into Kategorii_produktow values(299, 5);
+insert into Kategorii_produktow values(300, 5);
+insert into Kategorii_produktow values(301, 5);
+insert into Kategorii_produktow values(302, 5);
+insert into Kategorii_produktow values(303, 5);
+insert into Kategorii_produktow values(304, 5);
+insert into Kategorii_produktow values(305, 5);
+insert into Kategorii_produktow values(306, 5);
+insert into Kategorii_produktow values(307, 5);
+insert into Kategorii_produktow values(308, 5);
+insert into Kategorii_produktow values(309, 5);
+insert into Kategorii_produktow values(310, 5);
+insert into Kategorii_produktow values(311, 5);
+insert into Kategorii_produktow values(312, 5);
+insert into Kategorii_produktow values(313, 5);
+insert into Kategorii_produktow values(314, 5);
+insert into Kategorii_produktow values(315, 5);
+insert into Kategorii_produktow values(316, 5);
+insert into Kategorii_produktow values(317, 5);
+insert into Kategorii_produktow values(318, 5);
+insert into Kategorii_produktow values(319, 5);
+insert into Kategorii_produktow values(320, 5);
+insert into Kategorii_produktow values(321, 5);
+insert into Kategorii_produktow values(322, 5);
+insert into Kategorii_produktow values(323, 5);
+insert into Kategorii_produktow values(324, 5);
+insert into Kategorii_produktow values(325, 5);
+insert into Kategorii_produktow values(326, 5);
+insert into Kategorii_produktow values(327, 5);
+insert into Kategorii_produktow values(328, 5);
+insert into Kategorii_produktow values(329, 5);
+insert into Kategorii_produktow values(330, 5);
+insert into Kategorii_produktow values(331, 5);
+insert into Kategorii_produktow values(332, 5);
+insert into Kategorii_produktow values(333, 5);
+insert into Kategorii_produktow values(334, 5);
+insert into Kategorii_produktow values(335, 5);
+insert into Kategorii_produktow values(336, 5);
+insert into Kategorii_produktow values(337, 5);
+insert into Kategorii_produktow values(338, 5);
+insert into Kategorii_produktow values(339, 5);
+insert into Kategorii_produktow values(340, 5);
+insert into Kategorii_produktow values(341, 5);
+insert into Kategorii_produktow values(342, 5);
+insert into Kategorii_produktow values(343, 5);
+insert into Kategorii_produktow values(344, 5);
+insert into Kategorii_produktow values(345, 5);
+insert into Kategorii_produktow values(346, 5);
+insert into Kategorii_produktow values(347, 5);
+insert into Kategorii_produktow values(348, 5);
+insert into Kategorii_produktow values(349, 5);
+insert into Kategorii_produktow values(350, 5);
+insert into Kategorii_produktow values(351, 5);
+insert into Kategorii_produktow values(352, 5);
+insert into Kategorii_produktow values(353, 5);
+insert into Kategorii_produktow values(354, 5);
+insert into Kategorii_produktow values(355, 5);
+insert into Kategorii_produktow values(356, 5);
+insert into Kategorii_produktow values(357, 5);
+insert into Kategorii_produktow values(358, 5);
+insert into Kategorii_produktow values(359, 5);
+insert into Kategorii_produktow values(360, 5);
+insert into Kategorii_produktow values(361, 5);
+insert into Kategorii_produktow values(362, 5);
+insert into Kategorii_produktow values(363, 5);
+insert into Kategorii_produktow values(364, 5);
+insert into Kategorii_produktow values(365, 5);
+insert into Kategorii_produktow values(366, 5);
+insert into Kategorii_produktow values(367, 5);
+insert into Kategorii_produktow values(368, 5);
+insert into Kategorii_produktow values(369, 5);
+insert into Kategorii_produktow values(370, 5);
+insert into Kategorii_produktow values(371, 5);
+insert into Kategorii_produktow values(372, 5);
+insert into Kategorii_produktow values(373, 5);
+insert into Kategorii_produktow values(374, 5);
+insert into Kategorii_produktow values(375, 5);
+insert into Kategorii_produktow values(376, 5);
+insert into Kategorii_produktow values(377, 5);
+insert into Kategorii_produktow values(378, 5);
+insert into Kategorii_produktow values(379, 5);
+insert into Kategorii_produktow values(380, 5);
+insert into Kategorii_produktow values(381, 5);
+insert into Kategorii_produktow values(382, 5);
+insert into Kategorii_produktow values(383, 5);
+insert into Kategorii_produktow values(384, 5);
+insert into Kategorii_produktow values(385, 5);
+insert into Kategorii_produktow values(386, 5);
+insert into Kategorii_produktow values(387, 5);
+insert into Kategorii_produktow values(388, 5);
+insert into Kategorii_produktow values(389, 5);
+insert into Kategorii_produktow values(390, 5);
+insert into Kategorii_produktow values(391, 5);
+insert into Kategorii_produktow values(392, 5);
+insert into Kategorii_produktow values(393, 5);
+insert into Kategorii_produktow values(394, 5);
+insert into Kategorii_produktow values(395, 5);
+insert into Kategorii_produktow values(396, 5);
+insert into Kategorii_produktow values(397, 5);
+insert into Kategorii_produktow values(398, 5);
+insert into Kategorii_produktow values(399, 5);
+insert into Kategorii_produktow values(400, 5);
+insert into Kategorii_produktow values(401, 5);
+insert into Kategorii_produktow values(402, 5);
+insert into Kategorii_produktow values(403, 5);
+insert into Kategorii_produktow values(404, 5);
+insert into Kategorii_produktow values(405, 5);
+insert into Kategorii_produktow values(406, 5);
+insert into Kategorii_produktow values(407, 5);
+insert into Kategorii_produktow values(408, 5);
+insert into Kategorii_produktow values(409, 5);
+insert into Kategorii_produktow values(410, 5);
+insert into Kategorii_produktow values(411, 5);
+insert into Kategorii_produktow values(412, 5);
+insert into Kategorii_produktow values(413, 5);
+insert into Kategorii_produktow values(414, 5);
+insert into Kategorii_produktow values(415, 5);
+insert into Kategorii_produktow values(416, 5);
+insert into Kategorii_produktow values(417, 5);
+insert into Kategorii_produktow values(418, 5);
+insert into Kategorii_produktow values(419, 5);
+insert into Kategorii_produktow values(420, 5);
+insert into Kategorii_produktow values(421, 5);
+insert into Kategorii_produktow values(422, 5);
+insert into Kategorii_produktow values(423, 5);
+insert into Kategorii_produktow values(424, 5);
+insert into Kategorii_produktow values(425, 5);
+insert into Kategorii_produktow values(426, 5);
+insert into Kategorii_produktow values(427, 5);
+insert into Kategorii_produktow values(428, 5);
+insert into Kategorii_produktow values(429, 5);
+insert into Kategorii_produktow values(430, 5);
+insert into Kategorii_produktow values(431, 5);
+insert into Kategorii_produktow values(432, 5);
+insert into Kategorii_produktow values(433, 5);
+insert into Kategorii_produktow values(434, 5);
+insert into Kategorii_produktow values(435, 5);
+insert into Kategorii_produktow values(436, 5);
+insert into Kategorii_produktow values(437, 5);
+insert into Kategorii_produktow values(438, 5);
+insert into Kategorii_produktow values(439, 5);
+insert into Kategorii_produktow values(440, 5);
+insert into Kategorii_produktow values(441, 5);
+insert into Kategorii_produktow values(442, 5);
+insert into Kategorii_produktow values(443, 5);
+insert into Kategorii_produktow values(444, 5);
+insert into Kategorii_produktow values(445, 5);
+insert into Kategorii_produktow values(446, 5);
+insert into Kategorii_produktow values(447, 5);
+insert into Kategorii_produktow values(448, 5);
+insert into Kategorii_produktow values(449, 5);
+insert into Kategorii_produktow values(450, 5);
+insert into Kategorii_produktow values(451, 5);
+insert into Kategorii_produktow values(452, 5);
+insert into Kategorii_produktow values(453, 5);
+insert into Kategorii_produktow values(454, 5);
+insert into Kategorii_produktow values(455, 5);
+insert into Kategorii_produktow values(456, 5);
+insert into Kategorii_produktow values(457, 5);
+insert into Kategorii_produktow values(458, 5);
+insert into Kategorii_produktow values(459, 5);
+insert into Kategorii_produktow values(460, 5);
+insert into Kategorii_produktow values(461, 5);
+insert into Kategorii_produktow values(462, 5);
+insert into Kategorii_produktow values(463, 5);
+insert into Kategorii_produktow values(464, 5);
+insert into Kategorii_produktow values(465, 5);
+insert into Kategorii_produktow values(466, 5);
+insert into Kategorii_produktow values(467, 5);
+insert into Kategorii_produktow values(468, 5);
+insert into Kategorii_produktow values(469, 5);
+insert into Kategorii_produktow values(470, 5);
+insert into Kategorii_produktow values(471, 5);
+insert into Kategorii_produktow values(472, 5);
+insert into Kategorii_produktow values(473, 5);
+insert into Kategorii_produktow values(474, 5);
+insert into Kategorii_produktow values(475, 5);
+insert into Kategorii_produktow values(476, 5);
+insert into Kategorii_produktow values(477, 5);
+insert into Kategorii_produktow values(478, 5);
+insert into Kategorii_produktow values(479, 5);
+insert into Kategorii_produktow values(480, 5);
+insert into Kategorii_produktow values(481, 5);
+insert into Kategorii_produktow values(482, 5);
+insert into Kategorii_produktow values(483, 5);
+insert into Kategorii_produktow values(484, 5);
+insert into Kategorii_produktow values(485, 5);
+insert into Kategorii_produktow values(486, 5);
+insert into Kategorii_produktow values(487, 5);
+insert into Kategorii_produktow values(488, 5);
+insert into Kategorii_produktow values(489, 5);
+insert into Kategorii_produktow values(490, 5);
+insert into Kategorii_produktow values(491, 5);
+insert into Kategorii_produktow values(492, 5);
+insert into Kategorii_produktow values(493, 5);
+insert into Kategorii_produktow values(494, 5);
+insert into Kategorii_produktow values(495, 5);
+insert into Kategorii_produktow values(496, 5);
+insert into Kategorii_produktow values(497, 5);
+insert into Kategorii_produktow values(498, 5);
+insert into Kategorii_produktow values(499, 5);
+insert into Kategorii_produktow values(500, 5);
+insert into Kategorii_produktow values(501, 5);
+insert into Kategorii_produktow values(502, 5);
+insert into Kategorii_produktow values(503, 5);
+insert into Kategorii_produktow values(504, 5);
+insert into Kategorii_produktow values(505, 5);
+insert into Kategorii_produktow values(506, 5);
+insert into Kategorii_produktow values(507, 5);
+insert into Kategorii_produktow values(508, 5);
+insert into Kategorii_produktow values(509, 5);
+insert into Kategorii_produktow values(510, 5);
+insert into Kategorii_produktow values(511, 5);
+insert into Kategorii_produktow values(512, 5);
+insert into Kategorii_produktow values(513, 5);
+insert into Kategorii_produktow values(514, 5);
+insert into Kategorii_produktow values(515, 5);
+insert into Kategorii_produktow values(516, 5);
+insert into Kategorii_produktow values(517, 5);
+insert into Kategorii_produktow values(518, 5);
+insert into Kategorii_produktow values(519, 5);
+insert into Kategorii_produktow values(520, 5);
+insert into Kategorii_produktow values(521, 5);
+insert into Kategorii_produktow values(522, 5);
+insert into Kategorii_produktow values(523, 5);
+insert into Kategorii_produktow values(524, 5);
+insert into Kategorii_produktow values(525, 5);
+insert into Kategorii_produktow values(526, 5);
+insert into Kategorii_produktow values(527, 5);
+insert into Kategorii_produktow values(528, 5);
+insert into Kategorii_produktow values(529, 5);
+insert into Kategorii_produktow values(530, 5);
+insert into Kategorii_produktow values(531, 5);
+insert into Kategorii_produktow values(532, 5);
+insert into Kategorii_produktow values(533, 5);
+insert into Kategorii_produktow values(534, 5);
+insert into Kategorii_produktow values(535, 5);
+insert into Kategorii_produktow values(536, 5);
+insert into Kategorii_produktow values(537, 5);
+insert into Kategorii_produktow values(538, 5);
+insert into Kategorii_produktow values(539, 5);
+insert into Kategorii_produktow values(540, 5);
+insert into Kategorii_produktow values(541, 5);
+insert into Kategorii_produktow values(542, 5);
+insert into Kategorii_produktow values(543, 5);
+insert into Kategorii_produktow values(544, 5);
+insert into Kategorii_produktow values(545, 5);
+insert into Kategorii_produktow values(546, 5);
+insert into Kategorii_produktow values(547, 5);
+insert into Kategorii_produktow values(548, 5);
+insert into Kategorii_produktow values(549, 5);
+insert into Kategorii_produktow values(550, 5);
+insert into Kategorii_produktow values(551, 5);
+insert into Kategorii_produktow values(552, 5);
+insert into Kategorii_produktow values(553, 5);
+insert into Kategorii_produktow values(554, 5);
+insert into Kategorii_produktow values(555, 5);
+insert into Kategorii_produktow values(556, 5);
+insert into Kategorii_produktow values(557, 5);
+insert into Kategorii_produktow values(558, 5);
+insert into Kategorii_produktow values(559, 5);
+insert into Kategorii_produktow values(560, 5);
+insert into Kategorii_produktow values(561, 5);
+insert into Kategorii_produktow values(562, 5);
+insert into Kategorii_produktow values(563, 5);
+insert into Kategorii_produktow values(564, 5);
+insert into Kategorii_produktow values(565, 5);
+insert into Kategorii_produktow values(566, 5);
+insert into Kategorii_produktow values(567, 5);
+insert into Kategorii_produktow values(568, 5);
+insert into Kategorii_produktow values(569, 5);
+insert into Kategorii_produktow values(570, 5);
+insert into Kategorii_produktow values(571, 5);
+insert into Kategorii_produktow values(572, 5);
+insert into Kategorii_produktow values(573, 5);
+insert into Kategorii_produktow values(574, 5);
+insert into Kategorii_produktow values(575, 5);
+insert into Kategorii_produktow values(576, 5);
+insert into Kategorii_produktow values(577, 5);
+insert into Kategorii_produktow values(578, 5);
+insert into Kategorii_produktow values(579, 5);
+insert into Kategorii_produktow values(580, 5);
+insert into Kategorii_produktow values(581, 5);
+insert into Kategorii_produktow values(582, 5);
+insert into Kategorii_produktow values(583, 5);
+insert into Kategorii_produktow values(584, 5);
+insert into Kategorii_produktow values(585, 5);
+insert into Kategorii_produktow values(586, 5);
+insert into Kategorii_produktow values(587, 5);
+insert into Kategorii_produktow values(588, 5);
+insert into Kategorii_produktow values(589, 5);
+insert into Kategorii_produktow values(590, 5);
+insert into Kategorii_produktow values(591, 5);
+insert into Kategorii_produktow values(592, 5);
+insert into Kategorii_produktow values(593, 5);
+insert into Kategorii_produktow values(594, 5);
+insert into Kategorii_produktow values(595, 5);
+insert into Kategorii_produktow values(596, 5);
+insert into Kategorii_produktow values(597, 5);
+insert into Kategorii_produktow values(598, 5);
+insert into Kategorii_produktow values(599, 5);
+insert into Kategorii_produktow values(600, 5);
+insert into Kategorii_produktow values(601, 5);
+insert into Kategorii_produktow values(602, 5);
+insert into Kategorii_produktow values(603, 5);
+insert into Kategorii_produktow values(604, 5);
+insert into Kategorii_produktow values(605, 5);
+insert into Kategorii_produktow values(606, 5);
+insert into Kategorii_produktow values(607, 5);
+insert into Kategorii_produktow values(608, 5);
+insert into Kategorii_produktow values(609, 5);
+insert into Kategorii_produktow values(610, 5);
+insert into Kategorii_produktow values(611, 5);
+insert into Kategorii_produktow values(612, 5);
+insert into Kategorii_produktow values(613, 5);
+insert into Kategorii_produktow values(614, 5);
+insert into Kategorii_produktow values(615, 5);
+insert into Kategorii_produktow values(616, 5);
+insert into Kategorii_produktow values(617, 5);
+insert into Kategorii_produktow values(618, 5);
+insert into Kategorii_produktow values(619, 5);
+insert into Kategorii_produktow values(620, 5);
+insert into Kategorii_produktow values(621, 5);
+insert into Kategorii_produktow values(622, 5);
+insert into Kategorii_produktow values(623, 5);
+insert into Kategorii_produktow values(624, 5);
+insert into Kategorii_produktow values(625, 5);
+insert into Kategorii_produktow values(626, 5);
+insert into Kategorii_produktow values(627, 5);
+insert into Kategorii_produktow values(628, 5);
+insert into Kategorii_produktow values(629, 5);
+insert into Kategorii_produktow values(630, 5);
+insert into Kategorii_produktow values(631, 5);
+insert into Kategorii_produktow values(632, 5);
+insert into Kategorii_produktow values(633, 5);
+insert into Kategorii_produktow values(634, 5);
+insert into Kategorii_produktow values(635, 5);
+insert into Kategorii_produktow values(636, 5);
+insert into Kategorii_produktow values(637, 5);
+insert into Kategorii_produktow values(638, 5);
+insert into Kategorii_produktow values(639, 5);
+insert into Kategorii_produktow values(640, 5);
+insert into Kategorii_produktow values(641, 5);
+insert into Kategorii_produktow values(642, 5);
+insert into Kategorii_produktow values(643, 5);
+insert into Kategorii_produktow values(644, 5);
+insert into Kategorii_produktow values(645, 5);
+insert into Kategorii_produktow values(646, 5);
+insert into Kategorii_produktow values(647, 5);
+insert into Kategorii_produktow values(648, 5);
+insert into Kategorii_produktow values(649, 5);
+insert into Kategorii_produktow values(650, 5);
+insert into Kategorii_produktow values(651, 5);
+insert into Kategorii_produktow values(652, 5);
+insert into Kategorii_produktow values(653, 5);
+insert into Kategorii_produktow values(654, 5);
+insert into Kategorii_produktow values(655, 5);
+insert into Kategorii_produktow values(656, 5);
+insert into Kategorii_produktow values(657, 5);
+insert into Kategorii_produktow values(658, 5);
+insert into Kategorii_produktow values(659, 5);
+insert into Kategorii_produktow values(660, 5);
+insert into Kategorii_produktow values(661, 5);
+insert into Kategorii_produktow values(662, 5);
+insert into Kategorii_produktow values(663, 5);
+insert into Kategorii_produktow values(664, 5);
+insert into Kategorii_produktow values(665, 5);
+insert into Kategorii_produktow values(666, 5);
+insert into Kategorii_produktow values(667, 5);
+insert into Kategorii_produktow values(668, 5);
+insert into Kategorii_produktow values(669, 5);
+insert into Kategorii_produktow values(670, 5);
+insert into Kategorii_produktow values(671, 5);
+insert into Kategorii_produktow values(672, 5);
+insert into Kategorii_produktow values(673, 5);
+insert into Kategorii_produktow values(674, 5);
+insert into Kategorii_produktow values(675, 5);
+insert into Kategorii_produktow values(676, 5);
+insert into Kategorii_produktow values(677, 5);
+insert into Kategorii_produktow values(678, 5);
+insert into Kategorii_produktow values(679, 5);
+insert into Kategorii_produktow values(680, 5);
+insert into Kategorii_produktow values(681, 5);
+insert into Kategorii_produktow values(682, 5);
+insert into Kategorii_produktow values(683, 5);
+insert into Kategorii_produktow values(684, 5);
+insert into Kategorii_produktow values(685, 5);
+insert into Kategorii_produktow values(686, 5);
+insert into Kategorii_produktow values(687, 5);
+insert into Kategorii_produktow values(688, 5);
+insert into Kategorii_produktow values(689, 5);
+insert into Kategorii_produktow values(690, 5);
+insert into Kategorii_produktow values(691, 5);
+insert into Kategorii_produktow values(692, 5);
+insert into Kategorii_produktow values(693, 5);
+insert into Kategorii_produktow values(694, 5);
+insert into Kategorii_produktow values(695, 5);
+insert into Kategorii_produktow values(696, 5);
+insert into Kategorii_produktow values(697, 5);
+insert into Kategorii_produktow values(698, 5);
+insert into Kategorii_produktow values(699, 5);
+insert into Kategorii_produktow values(700, 5);
+insert into Kategorii_produktow values(701, 5);
+insert into Kategorii_produktow values(702, 5);
+insert into Kategorii_produktow values(703, 5);
+insert into Kategorii_produktow values(704, 5);
+insert into Kategorii_produktow values(705, 5);
+insert into Kategorii_produktow values(706, 5);
+insert into Kategorii_produktow values(707, 5);
+insert into Kategorii_produktow values(708, 5);
+insert into Kategorii_produktow values(709, 5);
+insert into Kategorii_produktow values(710, 5);
+insert into Kategorii_produktow values(711, 5);
+insert into Kategorii_produktow values(712, 5);
+insert into Kategorii_produktow values(713, 5);
+insert into Kategorii_produktow values(714, 5);
+insert into Kategorii_produktow values(715, 5);
+insert into Kategorii_produktow values(716, 5);
+insert into Kategorii_produktow values(717, 5);
+insert into Kategorii_produktow values(718, 5);
+insert into Kategorii_produktow values(719, 5);
+insert into Kategorii_produktow values(720, 5);
+insert into Kategorii_produktow values(721, 5);
+insert into Kategorii_produktow values(722, 5);
+insert into Kategorii_produktow values(723, 5);
+insert into Kategorii_produktow values(724, 5);
+insert into Kategorii_produktow values(725, 5);
+insert into Kategorii_produktow values(726, 5);
+insert into Kategorii_produktow values(727, 5);
+insert into Kategorii_produktow values(728, 5);
+insert into Kategorii_produktow values(729, 5);
+insert into Kategorii_produktow values(730, 5);
+insert into Kategorii_produktow values(731, 5);
+insert into Kategorii_produktow values(732, 5);
+insert into Kategorii_produktow values(733, 5);
+insert into Kategorii_produktow values(734, 5);
+insert into Kategorii_produktow values(735, 5);
+insert into Kategorii_produktow values(736, 5);
+insert into Kategorii_produktow values(737, 5);
+insert into Kategorii_produktow values(738, 5);
+insert into Kategorii_produktow values(739, 5);
+insert into Kategorii_produktow values(740, 5);
+insert into Kategorii_produktow values(741, 5);
+insert into Kategorii_produktow values(742, 5);
+insert into Kategorii_produktow values(743, 5);
+insert into Kategorii_produktow values(744, 5);
+insert into Kategorii_produktow values(745, 5);
+insert into Kategorii_produktow values(746, 5);
+insert into Kategorii_produktow values(747, 5);
+insert into Kategorii_produktow values(748, 5);
+insert into Kategorii_produktow values(749, 5);
+insert into Kategorii_produktow values(750, 5);
+insert into Kategorii_produktow values(751, 5);
+insert into Kategorii_produktow values(752, 5);
+insert into Kategorii_produktow values(753, 5);
+insert into Kategorii_produktow values(754, 5);
+insert into Kategorii_produktow values(755, 5);
+insert into Kategorii_produktow values(756, 5);
+insert into Kategorii_produktow values(757, 5);
+insert into Kategorii_produktow values(758, 5);
+insert into Kategorii_produktow values(759, 5);
+insert into Kategorii_produktow values(760, 5);
+insert into Kategorii_produktow values(761, 5);
+insert into Kategorii_produktow values(762, 5);
+insert into Kategorii_produktow values(763, 5);
+insert into Kategorii_produktow values(764, 5);
+insert into Kategorii_produktow values(765, 5);
+insert into Kategorii_produktow values(766, 5);
+insert into Kategorii_produktow values(767, 5);
+insert into Kategorii_produktow values(768, 5);
+insert into Kategorii_produktow values(769, 5);
+insert into Kategorii_produktow values(770, 5);
+insert into Kategorii_produktow values(771, 5);
+insert into Kategorii_produktow values(772, 5);
+insert into Kategorii_produktow values(773, 5);
+insert into Kategorii_produktow values(774, 5);
+insert into Kategorii_produktow values(775, 5);
+insert into Kategorii_produktow values(776, 5);
+insert into Kategorii_produktow values(777, 5);
+insert into Kategorii_produktow values(778, 5);
+insert into Kategorii_produktow values(779, 5);
+insert into Kategorii_produktow values(780, 5);
+insert into Kategorii_produktow values(781, 5);
+insert into Kategorii_produktow values(782, 5);
+insert into Kategorii_produktow values(783, 5);
+insert into Kategorii_produktow values(784, 5);
+insert into Kategorii_produktow values(785, 5);
+insert into Kategorii_produktow values(786, 5);
+insert into Kategorii_produktow values(787, 5);
+insert into Kategorii_produktow values(788, 5);
+insert into Kategorii_produktow values(789, 5);
+insert into Kategorii_produktow values(790, 5);
+insert into Kategorii_produktow values(791, 5);
+insert into Kategorii_produktow values(792, 5);
+insert into Kategorii_produktow values(793, 5);
+insert into Kategorii_produktow values(794, 5);
+insert into Kategorii_produktow values(795, 5);
+insert into Kategorii_produktow values(796, 5);
+insert into Kategorii_produktow values(797, 5);
+insert into Kategorii_produktow values(798, 5);
+insert into Kategorii_produktow values(799, 5);
+insert into Kategorii_produktow values(800, 5);
+insert into Kategorii_produktow values(801, 5);
+insert into Kategorii_produktow values(802, 5);
+insert into Kategorii_produktow values(803, 5);
+insert into Kategorii_produktow values(804, 5);
+insert into Kategorii_produktow values(805, 5);
+insert into Kategorii_produktow values(806, 5);
+insert into Kategorii_produktow values(807, 5);
+insert into Kategorii_produktow values(808, 5);
+insert into Kategorii_produktow values(809, 5);
+insert into Kategorii_produktow values(810, 5);
+insert into Kategorii_produktow values(811, 5);
+insert into Kategorii_produktow values(812, 5);
+insert into Kategorii_produktow values(813, 5);
+insert into Kategorii_produktow values(814, 5);
+insert into Kategorii_produktow values(815, 5);
+insert into Kategorii_produktow values(816, 5);
+insert into Kategorii_produktow values(817, 5);
+insert into Kategorii_produktow values(818, 5);
+insert into Kategorii_produktow values(819, 5);
+insert into Kategorii_produktow values(820, 5);
+insert into Kategorii_produktow values(821, 5);
+insert into Kategorii_produktow values(822, 5);
+insert into Kategorii_produktow values(823, 5);
+insert into Kategorii_produktow values(824, 5);
+insert into Kategorii_produktow values(825, 5);
+insert into Kategorii_produktow values(826, 5);
+insert into Kategorii_produktow values(827, 5);
+insert into Kategorii_produktow values(828, 5);
+insert into Kategorii_produktow values(829, 5);
+insert into Kategorii_produktow values(830, 5);
+insert into Kategorii_produktow values(831, 5);
+insert into Kategorii_produktow values(832, 5);
+insert into Kategorii_produktow values(833, 5);
+insert into Kategorii_produktow values(834, 5);
+insert into Kategorii_produktow values(835, 5);
+insert into Kategorii_produktow values(836, 5);
+insert into Kategorii_produktow values(837, 5);
+insert into Kategorii_produktow values(838, 5);
+insert into Kategorii_produktow values(839, 5);
+insert into Kategorii_produktow values(840, 5);
+insert into Kategorii_produktow values(841, 5);
+insert into Kategorii_produktow values(842, 5);
+insert into Kategorii_produktow values(843, 5);
+insert into Kategorii_produktow values(844, 5);
+insert into Kategorii_produktow values(845, 5);
+insert into Kategorii_produktow values(846, 5);
+insert into Kategorii_produktow values(847, 5);
+insert into Kategorii_produktow values(848, 5);
+insert into Kategorii_produktow values(849, 5);
+insert into Kategorii_produktow values(850, 5);
+insert into Kategorii_produktow values(851, 5);
+insert into Kategorii_produktow values(852, 5);
+insert into Kategorii_produktow values(853, 5);
+insert into Kategorii_produktow values(854, 5);
+insert into Kategorii_produktow values(855, 5);
+insert into Kategorii_produktow values(856, 5);
+insert into Kategorii_produktow values(857, 5);
+insert into Kategorii_produktow values(858, 5);
+insert into Kategorii_produktow values(859, 5);
+insert into Kategorii_produktow values(860, 5);
+insert into Kategorii_produktow values(861, 5);
+insert into Kategorii_produktow values(862, 5);
+insert into Kategorii_produktow values(863, 5);
+insert into Kategorii_produktow values(864, 5);
+insert into Kategorii_produktow values(865, 5);
+insert into Kategorii_produktow values(866, 5);
+insert into Kategorii_produktow values(867, 5);
+insert into Kategorii_produktow values(868, 5);
+insert into Kategorii_produktow values(869, 5);
+insert into Kategorii_produktow values(870, 5);
+insert into Kategorii_produktow values(871, 5);
+insert into Kategorii_produktow values(872, 5);
+insert into Kategorii_produktow values(873, 5);
+insert into Kategorii_produktow values(874, 5);
+insert into Kategorii_produktow values(875, 5);
+insert into Kategorii_produktow values(876, 5);
+insert into Kategorii_produktow values(877, 5);
+insert into Kategorii_produktow values(878, 5);
+insert into Kategorii_produktow values(879, 5);
+insert into Kategorii_produktow values(880, 5);
+insert into Kategorii_produktow values(881, 5);
+insert into Kategorii_produktow values(882, 5);
+insert into Kategorii_produktow values(883, 5);
+insert into Kategorii_produktow values(884, 5);
+insert into Kategorii_produktow values(885, 5);
+insert into Kategorii_produktow values(886, 5);
+insert into Kategorii_produktow values(887, 5);
+insert into Kategorii_produktow values(888, 5);
+insert into Kategorii_produktow values(889, 5);
+insert into Kategorii_produktow values(890, 5);
+insert into Kategorii_produktow values(891, 5);
+insert into Kategorii_produktow values(892, 5);
+insert into Kategorii_produktow values(893, 5);
+insert into Kategorii_produktow values(894, 5);
+insert into Kategorii_produktow values(895, 5);
+insert into Kategorii_produktow values(896, 5);
+insert into Kategorii_produktow values(897, 5);
+insert into Kategorii_produktow values(898, 5);
+insert into Kategorii_produktow values(899, 5);
+insert into Kategorii_produktow values(900, 5);
+insert into Kategorii_produktow values(901, 5);
+insert into Kategorii_produktow values(902, 5);
+insert into Kategorii_produktow values(903, 5);
+insert into Kategorii_produktow values(904, 5);
+insert into Kategorii_produktow values(905, 5);
+insert into Kategorii_produktow values(906, 5);
+insert into Kategorii_produktow values(907, 5);
+insert into Kategorii_produktow values(908, 5);
+insert into Kategorii_produktow values(909, 5);
+insert into Kategorii_produktow values(910, 5);
+insert into Kategorii_produktow values(911, 5);
+insert into Kategorii_produktow values(912, 5);
+insert into Kategorii_produktow values(913, 5);
+insert into Kategorii_produktow values(914, 5);
+insert into Kategorii_produktow values(915, 5);
+insert into Kategorii_produktow values(916, 5);
+insert into Kategorii_produktow values(917, 5);
+insert into Kategorii_produktow values(918, 5);
+insert into Kategorii_produktow values(919, 5);
+insert into Kategorii_produktow values(920, 5);
+insert into Kategorii_produktow values(921, 5);
+insert into Kategorii_produktow values(922, 5);
+insert into Kategorii_produktow values(923, 5);
+insert into Kategorii_produktow values(924, 5);
+insert into Kategorii_produktow values(925, 5);
+insert into Kategorii_produktow values(926, 5);
+insert into Kategorii_produktow values(927, 5);
+insert into Kategorii_produktow values(928, 5);
+insert into Kategorii_produktow values(929, 5);
+insert into Kategorii_produktow values(930, 5);
+insert into Kategorii_produktow values(931, 5);
+insert into Kategorii_produktow values(932, 5);
+insert into Kategorii_produktow values(933, 5);
+insert into Kategorii_produktow values(934, 5);
+insert into Kategorii_produktow values(935, 5);
+insert into Kategorii_produktow values(936, 5);
+insert into Kategorii_produktow values(937, 5);
+insert into Kategorii_produktow values(938, 5);
+insert into Kategorii_produktow values(939, 5);
+insert into Kategorii_produktow values(940, 5);
+insert into Kategorii_produktow values(941, 5);
+insert into Kategorii_produktow values(942, 5);
+insert into Kategorii_produktow values(943, 5);
+insert into Kategorii_produktow values(944, 5);
+insert into Kategorii_produktow values(945, 5);
+insert into Kategorii_produktow values(946, 5);
+insert into Kategorii_produktow values(947, 5);
+insert into Kategorii_produktow values(948, 5);
+insert into Kategorii_produktow values(949, 5);
+insert into Kategorii_produktow values(950, 5);
+insert into Kategorii_produktow values(951, 5);
+insert into Kategorii_produktow values(952, 5);
+insert into Kategorii_produktow values(953, 5);
+insert into Kategorii_produktow values(954, 5);
+insert into Kategorii_produktow values(955, 5);
+insert into Kategorii_produktow values(956, 5);
+insert into Kategorii_produktow values(957, 5);
+insert into Kategorii_produktow values(958, 5);
+insert into Kategorii_produktow values(959, 5);
+insert into Kategorii_produktow values(960, 5);
+insert into Kategorii_produktow values(961, 5);
+insert into Kategorii_produktow values(962, 5);
+insert into Kategorii_produktow values(963, 5);
+insert into Kategorii_produktow values(964, 5);
+insert into Kategorii_produktow values(965, 5);
+insert into Kategorii_produktow values(966, 5);
+insert into Kategorii_produktow values(967, 5);
+insert into Kategorii_produktow values(968, 5);
+insert into Kategorii_produktow values(969, 5);
+insert into Kategorii_produktow values(970, 5);
+insert into Kategorii_produktow values(971, 5);
+insert into Kategorii_produktow values(972, 5);
+insert into Kategorii_produktow values(973, 5);
+insert into Kategorii_produktow values(974, 5);
+insert into Kategorii_produktow values(975, 5);
+insert into Kategorii_produktow values(976, 5);
+insert into Kategorii_produktow values(977, 5);
+insert into Kategorii_produktow values(978, 5);
+insert into Kategorii_produktow values(979, 5);
+insert into Kategorii_produktow values(980, 5);
+insert into Kategorii_produktow values(981, 5);
+insert into Kategorii_produktow values(982, 5);
+insert into Kategorii_produktow values(983, 5);
+insert into Kategorii_produktow values(984, 5);
+insert into Kategorii_produktow values(985, 5);
+insert into Kategorii_produktow values(986, 5);
+insert into Kategorii_produktow values(987, 5);
+insert into Kategorii_produktow values(988, 5);
+insert into Kategorii_produktow values(989, 5);
+insert into Kategorii_produktow values(990, 5);
+insert into Kategorii_produktow values(991, 5);
+insert into Kategorii_produktow values(992, 5);
+insert into Kategorii_produktow values(993, 5);
+insert into Kategorii_produktow values(994, 5);
+insert into Kategorii_produktow values(995, 5);
+insert into Kategorii_produktow values(996, 5);
+insert into Kategorii_produktow values(997, 5);
+insert into Kategorii_produktow values(998, 5);
+insert into Kategorii_produktow values(999, 5);
+insert into Kategorii_produktow values(1000, 5);
+insert into Kategorii_produktow values(1001, 5);
+insert into Kategorii_produktow values(1002, 5);
+insert into Kategorii_produktow values(1003, 5);
+insert into Kategorii_produktow values(1004, 5);
+insert into Kategorii_produktow values(1005, 5);
+insert into Kategorii_produktow values(1006, 5);
+insert into Kategorii_produktow values(1007, 5);
+insert into Kategorii_produktow values(1008, 5);
+insert into Kategorii_produktow values(1009, 5);
+insert into Kategorii_produktow values(1010, 5);
+insert into Kategorii_produktow values(1011, 5);
+insert into Kategorii_produktow values(1012, 5);
+insert into Kategorii_produktow values(1013, 5);
+insert into Kategorii_produktow values(1014, 5);
+insert into Kategorii_produktow values(1015, 5);
+insert into Kategorii_produktow values(1016, 5);
+insert into Kategorii_produktow values(1017, 5);
+insert into Kategorii_produktow values(1018, 5);
+insert into Kategorii_produktow values(1019, 5);
+insert into Kategorii_produktow values(1020, 5);
+insert into Kategorii_produktow values(1021, 5);
+insert into Kategorii_produktow values(1022, 5);
+insert into Kategorii_produktow values(1023, 5);
+insert into Kategorii_produktow values(1024, 5);
+insert into Kategorii_produktow values(1025, 5);
+insert into Kategorii_produktow values(1026, 5);
+insert into Kategorii_produktow values(1027, 5);
+insert into Kategorii_produktow values(1028, 5);
+insert into Kategorii_produktow values(1029, 5);
+insert into Kategorii_produktow values(1030, 5);
+insert into Kategorii_produktow values(1031, 5);
+insert into Kategorii_produktow values(1032, 5);
+insert into Kategorii_produktow values(1033, 5);
+insert into Kategorii_produktow values(1034, 5);
+insert into Kategorii_produktow values(1035, 5);
+insert into Kategorii_produktow values(1036, 5);
+insert into Kategorii_produktow values(1037, 5);
+insert into Kategorii_produktow values(1038, 5);
+insert into Kategorii_produktow values(1039, 5);
+insert into Kategorii_produktow values(1040, 5);
+insert into Kategorii_produktow values(1041, 5);
+insert into Kategorii_produktow values(1042, 5);
+insert into Kategorii_produktow values(1043, 5);
+insert into Kategorii_produktow values(1044, 5);
+insert into Kategorii_produktow values(1045, 5);
+insert into Kategorii_produktow values(1046, 5);
+insert into Kategorii_produktow values(1047, 5);
+insert into Kategorii_produktow values(1048, 5);
+insert into Kategorii_produktow values(1049, 5);
+insert into Kategorii_produktow values(1050, 5);
+insert into Kategorii_produktow values(1051, 5);
+insert into Kategorii_produktow values(1052, 5);
+insert into Kategorii_produktow values(1053, 5);
+insert into Kategorii_produktow values(1054, 5);
+insert into Kategorii_produktow values(1055, 5);
+insert into Kategorii_produktow values(1056, 5);
+insert into Kategorii_produktow values(1057, 5);
+insert into Kategorii_produktow values(1058, 5);
+insert into Kategorii_produktow values(1059, 5);
+insert into Kategorii_produktow values(1060, 5);
+insert into Kategorii_produktow values(1061, 5);
+insert into Kategorii_produktow values(1062, 5);
+insert into Kategorii_produktow values(1063, 5);
+insert into Kategorii_produktow values(1064, 5);
+insert into Kategorii_produktow values(1065, 5);
+insert into Kategorii_produktow values(1066, 5);
+insert into Kategorii_produktow values(1067, 5);
+insert into Kategorii_produktow values(1068, 5);
+insert into Kategorii_produktow values(1069, 5);
+insert into Kategorii_produktow values(1070, 5);
+insert into Kategorii_produktow values(1071, 5);
+insert into Kategorii_produktow values(1072, 5);
+insert into Kategorii_produktow values(1073, 5);
+insert into Kategorii_produktow values(1074, 5);
+insert into Kategorii_produktow values(1075, 5);
+insert into Kategorii_produktow values(1076, 5);
+insert into Kategorii_produktow values(1077, 5);
+insert into Kategorii_produktow values(1078, 5);
+insert into Kategorii_produktow values(1079, 5);
+insert into Kategorii_produktow values(1080, 5);
+insert into Kategorii_produktow values(1081, 5);
+insert into Kategorii_produktow values(1082, 5);
+insert into Kategorii_produktow values(1083, 5);
+insert into Kategorii_produktow values(1084, 5);
+insert into Kategorii_produktow values(1085, 5);
+insert into Kategorii_produktow values(1086, 5);
+insert into Kategorii_produktow values(1087, 5);
+insert into Kategorii_produktow values(1088, 5);
+insert into Kategorii_produktow values(1089, 5);
+insert into Kategorii_produktow values(1090, 5);
+insert into Kategorii_produktow values(1091, 5);
+insert into Kategorii_produktow values(1092, 5);
+insert into Kategorii_produktow values(1093, 5);
+insert into Kategorii_produktow values(1094, 5);
+insert into Kategorii_produktow values(1095, 5);
+insert into Kategorii_produktow values(1096, 5);
+insert into Kategorii_produktow values(1097, 5);
+insert into Kategorii_produktow values(1098, 5);
+insert into Kategorii_produktow values(1099, 5);
+insert into Kategorii_produktow values(1100, 5);
+insert into Kategorii_produktow values(1101, 5);
+insert into Kategorii_produktow values(1102, 5);
+insert into Kategorii_produktow values(1103, 5);
+insert into Kategorii_produktow values(1104, 5);
+insert into Kategorii_produktow values(1105, 5);
+insert into Kategorii_produktow values(1106, 5);
+insert into Kategorii_produktow values(1107, 5);
+insert into Kategorii_produktow values(1108, 5);
+insert into Kategorii_produktow values(1109, 5);
+insert into Kategorii_produktow values(1110, 5);
+insert into Kategorii_produktow values(1111, 5);
+insert into Kategorii_produktow values(1112, 5);
+insert into Kategorii_produktow values(1113, 5);
+insert into Kategorii_produktow values(1114, 5);
+insert into Kategorii_produktow values(1115, 5);
+insert into Kategorii_produktow values(1116, 5);
+insert into Kategorii_produktow values(1117, 5);
+insert into Kategorii_produktow values(1118, 5);
+insert into Kategorii_produktow values(1119, 5);
+insert into Kategorii_produktow values(1120, 5);
+insert into Kategorii_produktow values(1121, 5);
+insert into Kategorii_produktow values(1122, 5);
+insert into Kategorii_produktow values(1123, 5);
+insert into Kategorii_produktow values(1124, 5);
+insert into Kategorii_produktow values(1125, 5);
+insert into Kategorii_produktow values(1126, 5);
+insert into Kategorii_produktow values(1127, 5);
+insert into Kategorii_produktow values(1128, 5);
+insert into Kategorii_produktow values(1129, 5);
+insert into Kategorii_produktow values(1130, 5);
+insert into Kategorii_produktow values(1131, 5);
+insert into Kategorii_produktow values(1132, 5);
+insert into Kategorii_produktow values(1133, 5);
+insert into Kategorii_produktow values(1134, 5);
+insert into Kategorii_produktow values(1135, 5);
+insert into Kategorii_produktow values(1136, 5);
+insert into Kategorii_produktow values(1137, 5);
+insert into Kategorii_produktow values(1138, 5);
+insert into Kategorii_produktow values(1139, 5);
+insert into Kategorii_produktow values(1140, 5);
+insert into Kategorii_produktow values(1141, 5);
+insert into Kategorii_produktow values(1142, 5);
+insert into Kategorii_produktow values(1143, 5);
+insert into Kategorii_produktow values(1144, 5);
+insert into Kategorii_produktow values(1145, 5);
+insert into Kategorii_produktow values(1146, 5);
+insert into Kategorii_produktow values(1147, 5);
+insert into Kategorii_produktow values(1148, 5);
+insert into Kategorii_produktow values(1149, 5);
+insert into Kategorii_produktow values(1150, 5);
+insert into Kategorii_produktow values(1151, 5);
+insert into Kategorii_produktow values(1152, 5);
+insert into Kategorii_produktow values(1153, 5);
+insert into Kategorii_produktow values(1154, 5);
+insert into Kategorii_produktow values(1155, 5);
+insert into Kategorii_produktow values(1156, 5);
+insert into Kategorii_produktow values(1157, 5);
+insert into Kategorii_produktow values(1158, 5);
+insert into Kategorii_produktow values(1159, 5);
+insert into Kategorii_produktow values(1160, 5);
+insert into Kategorii_produktow values(1161, 5);
+insert into Kategorii_produktow values(1162, 5);
+insert into Kategorii_produktow values(1163, 5);
+insert into Kategorii_produktow values(1164, 5);
+insert into Kategorii_produktow values(1165, 5);
+insert into Kategorii_produktow values(1166, 5);
+insert into Kategorii_produktow values(1167, 5);
+insert into Kategorii_produktow values(1168, 5);
+insert into Kategorii_produktow values(1169, 5);
+insert into Kategorii_produktow values(1170, 5);
+insert into Kategorii_produktow values(1171, 5);
+insert into Kategorii_produktow values(1172, 5);
+insert into Kategorii_produktow values(1173, 5);
+insert into Kategorii_produktow values(1174, 5);
+insert into Kategorii_produktow values(1175, 5);
+insert into Kategorii_produktow values(1176, 5);
+insert into Kategorii_produktow values(1177, 5);
+insert into Kategorii_produktow values(1178, 5);
+insert into Kategorii_produktow values(1179, 5);
+insert into Kategorii_produktow values(1180, 5);
+insert into Kategorii_produktow values(1181, 5);
+insert into Kategorii_produktow values(1182, 5);
+insert into Kategorii_produktow values(1183, 5);
+insert into Kategorii_produktow values(1184, 5);
+insert into Kategorii_produktow values(1185, 5);
+insert into Kategorii_produktow values(1186, 5);
+insert into Kategorii_produktow values(1187, 5);
+insert into Kategorii_produktow values(1188, 5);
+insert into Kategorii_produktow values(1189, 5);
+insert into Kategorii_produktow values(1190, 5);
+insert into Kategorii_produktow values(1191, 5);
+insert into Kategorii_produktow values(1192, 5);
+insert into Kategorii_produktow values(1193, 5);
+insert into Kategorii_produktow values(1194, 5);
+insert into Kategorii_produktow values(1195, 5);
+insert into Kategorii_produktow values(1196, 5);
+insert into Kategorii_produktow values(1197, 5);
+insert into Kategorii_produktow values(1198, 5);
+insert into Kategorii_produktow values(1199, 5);
+insert into Kategorii_produktow values(1200, 5);
+insert into Kategorii_produktow values(1201, 5);
+insert into Kategorii_produktow values(1202, 5);
+insert into Kategorii_produktow values(1203, 5);
+insert into Kategorii_produktow values(1204, 5);
+insert into Kategorii_produktow values(1205, 5);
+insert into Kategorii_produktow values(1206, 5);
+insert into Kategorii_produktow values(1207, 5);
+insert into Kategorii_produktow values(1208, 5);
+insert into Kategorii_produktow values(1209, 5);
+insert into Kategorii_produktow values(1210, 5);
+insert into Kategorii_produktow values(1211, 5);
+insert into Kategorii_produktow values(1212, 5);
+insert into Kategorii_produktow values(1213, 5);
+insert into Kategorii_produktow values(1214, 5);
+insert into Kategorii_produktow values(1215, 5);
+insert into Kategorii_produktow values(1216, 5);
+insert into Kategorii_produktow values(1217, 5);
+insert into Kategorii_produktow values(1218, 5);
+insert into Kategorii_produktow values(1219, 5);
+insert into Kategorii_produktow values(1220, 5);
+insert into Kategorii_produktow values(1221, 5);
+insert into Kategorii_produktow values(1222, 5);
+insert into Kategorii_produktow values(1223, 5);
+insert into Kategorii_produktow values(1224, 5);
+insert into Kategorii_produktow values(1225, 5);
+insert into Kategorii_produktow values(1226, 5);
+insert into Kategorii_produktow values(1227, 5);
+insert into Kategorii_produktow values(1228, 5);
+insert into Kategorii_produktow values(1229, 5);
+insert into Kategorii_produktow values(1230, 5);
+insert into Kategorii_produktow values(1231, 5);
+insert into Kategorii_produktow values(1232, 5);
+insert into Kategorii_produktow values(1233, 5);
+insert into Kategorii_produktow values(1234, 5);
+insert into Kategorii_produktow values(1235, 5);
+insert into Kategorii_produktow values(1236, 5);
+insert into Kategorii_produktow values(1237, 5);
+insert into Kategorii_produktow values(1238, 5);
+insert into Kategorii_produktow values(1239, 5);
+insert into Kategorii_produktow values(1240, 5);
+insert into Kategorii_produktow values(1241, 5);
+insert into Kategorii_produktow values(1242, 5);
+insert into Kategorii_produktow values(1243, 5);
+insert into Kategorii_produktow values(1244, 5);
+insert into Kategorii_produktow values(1245, 5);
+insert into Kategorii_produktow values(1246, 5);
+insert into Kategorii_produktow values(1247, 5);
+insert into Kategorii_produktow values(1248, 5);
+insert into Kategorii_produktow values(1249, 5);
+insert into Kategorii_produktow values(1250, 5);
+insert into Kategorii_produktow values(1251, 5);
+insert into Kategorii_produktow values(1252, 5);
+insert into Kategorii_produktow values(1253, 5);
+insert into Kategorii_produktow values(1254, 5);
+insert into Kategorii_produktow values(1255, 5);
+insert into Kategorii_produktow values(1256, 5);
+insert into Kategorii_produktow values(1257, 5);
+insert into Kategorii_produktow values(1258, 5);
+insert into Kategorii_produktow values(1259, 5);
+insert into Kategorii_produktow values(1260, 5);
+insert into Kategorii_produktow values(1261, 5);
+insert into Kategorii_produktow values(1262, 5);
+insert into Kategorii_produktow values(1263, 5);
+insert into Kategorii_produktow values(1264, 5);
+insert into Kategorii_produktow values(1265, 5);
+insert into Kategorii_produktow values(1266, 5);
+insert into Kategorii_produktow values(1267, 5);
+insert into Kategorii_produktow values(1268, 5);
+insert into Kategorii_produktow values(1269, 5);
+insert into Kategorii_produktow values(1270, 5);
+insert into Kategorii_produktow values(1271, 5);
+insert into Kategorii_produktow values(1272, 5);
+insert into Kategorii_produktow values(1273, 5);
+insert into Kategorii_produktow values(1274, 5);
+insert into Kategorii_produktow values(1275, 5);
+insert into Kategorii_produktow values(1276, 5);
+insert into Kategorii_produktow values(1277, 5);
+insert into Kategorii_produktow values(1278, 5);
+insert into Kategorii_produktow values(1279, 5);
+insert into Kategorii_produktow values(1280, 5);
+insert into Kategorii_produktow values(1281, 5);
+insert into Kategorii_produktow values(1282, 5);
+insert into Kategorii_produktow values(1283, 5);
+insert into Kategorii_produktow values(1284, 5);
+insert into Kategorii_produktow values(1285, 5);
+insert into Kategorii_produktow values(1286, 5);
+insert into Kategorii_produktow values(1287, 5);
+insert into Kategorii_produktow values(1288, 5);
+insert into Kategorii_produktow values(1289, 5);
+insert into Kategorii_produktow values(1290, 5);
+insert into Kategorii_produktow values(1291, 5);
+insert into Kategorii_produktow values(1292, 5);
+insert into Kategorii_produktow values(1293, 5);
+insert into Kategorii_produktow values(1294, 5);
+insert into Kategorii_produktow values(1295, 5);
+insert into Kategorii_produktow values(1296, 5);
+insert into Kategorii_produktow values(1297, 5);
+insert into Kategorii_produktow values(1298, 5);
+insert into Kategorii_produktow values(1299, 5);
+insert into Kategorii_produktow values(1300, 5);
+insert into Kategorii_produktow values(1301, 5);
+insert into Kategorii_produktow values(1302, 5);
+insert into Kategorii_produktow values(1303, 5);
+insert into Kategorii_produktow values(1304, 5);
+insert into Kategorii_produktow values(1305, 5);
+insert into Kategorii_produktow values(1306, 5);
+insert into Kategorii_produktow values(1307, 5);
+insert into Kategorii_produktow values(1308, 5);
+insert into Kategorii_produktow values(1309, 5);
+insert into Kategorii_produktow values(1310, 5);
+insert into Kategorii_produktow values(1311, 5);
+insert into Kategorii_produktow values(1312, 5);
+insert into Kategorii_produktow values(1313, 5);
+insert into Kategorii_produktow values(1314, 5);
+insert into Kategorii_produktow values(1315, 5);
+insert into Kategorii_produktow values(1316, 5);
+insert into Kategorii_produktow values(1317, 5);
+insert into Kategorii_produktow values(1318, 5);
+insert into Kategorii_produktow values(1319, 5);
+insert into Kategorii_produktow values(1320, 5);
+insert into Kategorii_produktow values(1321, 5);
+insert into Kategorii_produktow values(1322, 5);
+insert into Kategorii_produktow values(1323, 5);
+insert into Kategorii_produktow values(1324, 5);
+insert into Kategorii_produktow values(1325, 5);
+insert into Kategorii_produktow values(1326, 5);
+insert into Kategorii_produktow values(1327, 5);
+insert into Kategorii_produktow values(1328, 5);
+insert into Kategorii_produktow values(1329, 5);
+insert into Kategorii_produktow values(1330, 5);
+insert into Kategorii_produktow values(1331, 5);
+insert into Kategorii_produktow values(1332, 5);
+insert into Kategorii_produktow values(1333, 5);
+insert into Kategorii_produktow values(1334, 5);
+insert into Kategorii_produktow values(1335, 5);
+insert into Kategorii_produktow values(1336, 5);
+insert into Kategorii_produktow values(1337, 5);
+insert into Kategorii_produktow values(1338, 5);
+insert into Kategorii_produktow values(1339, 5);
+insert into Kategorii_produktow values(1340, 5);
+insert into Kategorii_produktow values(1341, 5);
+insert into Kategorii_produktow values(1342, 5);
+insert into Kategorii_produktow values(1343, 5);
+insert into Kategorii_produktow values(1344, 5);
+insert into Kategorii_produktow values(1345, 5);
+insert into Kategorii_produktow values(1346, 5);
+insert into Kategorii_produktow values(1347, 5);
+insert into Kategorii_produktow values(1348, 5);
+insert into Kategorii_produktow values(1349, 5);
+insert into Kategorii_produktow values(1350, 5);
+insert into Kategorii_produktow values(1351, 5);
+insert into Kategorii_produktow values(1352, 5);
+insert into Kategorii_produktow values(1353, 5);
+insert into Kategorii_produktow values(1354, 5);
+insert into Kategorii_produktow values(1355, 5);
+insert into Kategorii_produktow values(1356, 5);
+insert into Kategorii_produktow values(1357, 5);
+insert into Kategorii_produktow values(1358, 5);
+insert into Kategorii_produktow values(1359, 5);
+insert into Kategorii_produktow values(1360, 5);
+insert into Kategorii_produktow values(1361, 5);
+insert into Kategorii_produktow values(1362, 5);
+insert into Kategorii_produktow values(1363, 5);
+insert into Kategorii_produktow values(1364, 5);
+insert into Kategorii_produktow values(1365, 5);
+insert into Kategorii_produktow values(1366, 5);
+insert into Kategorii_produktow values(1367, 5);
+insert into Kategorii_produktow values(1368, 5);
+insert into Kategorii_produktow values(1369, 5);
+insert into Kategorii_produktow values(1370, 5);
+insert into Kategorii_produktow values(1371, 5);
+insert into Kategorii_produktow values(1372, 5);
+insert into Kategorii_produktow values(1373, 5);
+insert into Kategorii_produktow values(1374, 5);
+insert into Kategorii_produktow values(1375, 5);
+insert into Kategorii_produktow values(1376, 5);
+insert into Kategorii_produktow values(1377, 5);
+insert into Kategorii_produktow values(1378, 5);
+insert into Kategorii_produktow values(1379, 5);
+insert into Kategorii_produktow values(1380, 5);
+insert into Kategorii_produktow values(1381, 5);
+insert into Kategorii_produktow values(1382, 5);
+insert into Kategorii_produktow values(1383, 5);
+insert into Kategorii_produktow values(1384, 5);
+insert into Kategorii_produktow values(1385, 5);
+insert into Kategorii_produktow values(1386, 5);
+insert into Kategorii_produktow values(1387, 5);
+insert into Kategorii_produktow values(1388, 5);
+insert into Kategorii_produktow values(1389, 5);
+insert into Kategorii_produktow values(1390, 5);
+insert into Kategorii_produktow values(1391, 5);
+insert into Kategorii_produktow values(1392, 5);
+insert into Kategorii_produktow values(1393, 5);
+insert into Kategorii_produktow values(1394, 5);
+insert into Kategorii_produktow values(1395, 5);
+insert into Kategorii_produktow values(1396, 5);
+insert into Kategorii_produktow values(1397, 5);
+insert into Kategorii_produktow values(1398, 5);
+insert into Kategorii_produktow values(1399, 5);
+insert into Kategorii_produktow values(1400, 5);
+insert into Kategorii_produktow values(1401, 5);
+insert into Kategorii_produktow values(1402, 5);
+insert into Kategorii_produktow values(1403, 5);
+insert into Kategorii_produktow values(1404, 5);
+insert into Kategorii_produktow values(1405, 5);
+insert into Kategorii_produktow values(1406, 5);
+insert into Kategorii_produktow values(1407, 5);
+insert into Kategorii_produktow values(1408, 5);
+insert into Kategorii_produktow values(1409, 5);
+insert into Kategorii_produktow values(1410, 5);
+insert into Kategorii_produktow values(1411, 5);
+insert into Kategorii_produktow values(1412, 5);
+insert into Kategorii_produktow values(1413, 5);
+insert into Kategorii_produktow values(1414, 5);
+insert into Kategorii_produktow values(1415, 5);
+insert into Kategorii_produktow values(1416, 5);
+insert into Kategorii_produktow values(1417, 5);
+insert into Kategorii_produktow values(1418, 5);
+insert into Kategorii_produktow values(1419, 5);
+insert into Kategorii_produktow values(1420, 5);
+insert into Kategorii_produktow values(1421, 5);
+insert into Kategorii_produktow values(1422, 5);
+insert into Kategorii_produktow values(1423, 5);
+insert into Kategorii_produktow values(1424, 5);
+insert into Kategorii_produktow values(1425, 5);
+insert into Kategorii_produktow values(1426, 5);
+insert into Kategorii_produktow values(1427, 5);
+insert into Kategorii_produktow values(1428, 5);
+insert into Kategorii_produktow values(1429, 5);
+insert into Kategorii_produktow values(1430, 5);
+insert into Kategorii_produktow values(1431, 5);
+insert into Kategorii_produktow values(1432, 5);
+insert into Kategorii_produktow values(1433, 5);
+insert into Kategorii_produktow values(1434, 5);
+insert into Kategorii_produktow values(1435, 5);
+insert into Kategorii_produktow values(1436, 5);
+insert into Kategorii_produktow values(1437, 5);
+insert into Kategorii_produktow values(1438, 5);
+insert into Kategorii_produktow values(1439, 5);
+insert into Kategorii_produktow values(1440, 5);
+insert into Kategorii_produktow values(1441, 5);
+insert into Kategorii_produktow values(1442, 5);
+insert into Kategorii_produktow values(1443, 5);
+insert into Kategorii_produktow values(1444, 5);
+insert into Kategorii_produktow values(1445, 5);
+insert into Kategorii_produktow values(1446, 5);
+insert into Kategorii_produktow values(1447, 5);
+insert into Kategorii_produktow values(1448, 5);
+insert into Kategorii_produktow values(1449, 5);
+insert into Kategorii_produktow values(1450, 5);
+insert into Kategorii_produktow values(1451, 5);
+insert into Kategorii_produktow values(1452, 5);
+insert into Kategorii_produktow values(1453, 5);
+insert into Kategorii_produktow values(1454, 5);
+insert into Kategorii_produktow values(1455, 5);
+insert into Kategorii_produktow values(1456, 5);
+insert into Kategorii_produktow values(1457, 5);
+insert into Kategorii_produktow values(1458, 5);
+insert into Kategorii_produktow values(1459, 5);
+insert into Kategorii_produktow values(1460, 5);
+insert into Kategorii_produktow values(1461, 5);
+insert into Kategorii_produktow values(1462, 5);
+insert into Kategorii_produktow values(1463, 5);
+insert into Kategorii_produktow values(1464, 5);
+insert into Kategorii_produktow values(1465, 5);
+insert into Kategorii_produktow values(1466, 5);
+insert into Kategorii_produktow values(1467, 5);
+insert into Kategorii_produktow values(1468, 5);
+insert into Kategorii_produktow values(1469, 5);
+insert into Kategorii_produktow values(1470, 5);
+insert into Kategorii_produktow values(1471, 5);
+insert into Kategorii_produktow values(1472, 5);
+insert into Kategorii_produktow values(1473, 5);
+insert into Kategorii_produktow values(1474, 5);
+insert into Kategorii_produktow values(1475, 5);
+insert into Kategorii_produktow values(1476, 5);
+insert into Kategorii_produktow values(1477, 5);
+insert into Kategorii_produktow values(1478, 5);
+insert into Kategorii_produktow values(1479, 5);
+insert into Kategorii_produktow values(1480, 5);
+insert into Kategorii_produktow values(1481, 5);
+insert into Kategorii_produktow values(1482, 5);
+insert into Kategorii_produktow values(1483, 5);
+insert into Kategorii_produktow values(1484, 5);
+insert into Kategorii_produktow values(1485, 5);
+insert into Kategorii_produktow values(1486, 5);
+insert into Kategorii_produktow values(1487, 5);
+insert into Kategorii_produktow values(1488, 5);
+insert into Kategorii_produktow values(1489, 5);
+insert into Kategorii_produktow values(1490, 5);
+insert into Kategorii_produktow values(1491, 5);
+insert into Kategorii_produktow values(1492, 5);
+insert into Kategorii_produktow values(1493, 5);
+insert into Kategorii_produktow values(1494, 5);
+insert into Kategorii_produktow values(1495, 5);
+insert into Kategorii_produktow values(1496, 5);
+insert into Kategorii_produktow values(1497, 5);
+insert into Kategorii_produktow values(1498, 5);
+insert into Kategorii_produktow values(1499, 5);
+insert into Kategorii_produktow values(1500, 5);
+insert into Kategorii_produktow values(1501, 5);
+insert into Kategorii_produktow values(1502, 5);
+insert into Kategorii_produktow values(1503, 5);
+insert into Kategorii_produktow values(1504, 5);
+insert into Kategorii_produktow values(1505, 5);
+insert into Kategorii_produktow values(1506, 5);
+insert into Kategorii_produktow values(1507, 5);
+insert into Kategorii_produktow values(1508, 5);
+insert into Kategorii_produktow values(1509, 5);
+insert into Kategorii_produktow values(1510, 5);
+insert into Kategorii_produktow values(1511, 5);
+insert into Kategorii_produktow values(1512, 5);
+insert into Kategorii_produktow values(1513, 5);
+insert into Kategorii_produktow values(1514, 5);
+insert into Kategorii_produktow values(1515, 5);
+insert into Kategorii_produktow values(1516, 5);
+insert into Kategorii_produktow values(1517, 5);
+insert into Kategorii_produktow values(1518, 5);
+insert into Kategorii_produktow values(1519, 5);
+insert into Kategorii_produktow values(1520, 5);
+insert into Kategorii_produktow values(1521, 5);
+insert into Kategorii_produktow values(1522, 5);
+insert into Kategorii_produktow values(1523, 5);
+insert into Kategorii_produktow values(1524, 5);
+insert into Kategorii_produktow values(1525, 5);
+insert into Kategorii_produktow values(1526, 5);
+insert into Kategorii_produktow values(1527, 5);
+insert into Kategorii_produktow values(1528, 5);
+insert into Kategorii_produktow values(1529, 5);
+insert into Kategorii_produktow values(1530, 5);
+insert into Kategorii_produktow values(1531, 5);
+insert into Kategorii_produktow values(1532, 5);
+insert into Kategorii_produktow values(1533, 5);
+insert into Kategorii_produktow values(1534, 5);
+insert into Kategorii_produktow values(1535, 5);
+insert into Kategorii_produktow values(1536, 5);
+insert into Kategorii_produktow values(1537, 5);
+insert into Kategorii_produktow values(1538, 5);
+insert into Kategorii_produktow values(1539, 5);
+insert into Kategorii_produktow values(1540, 5);
+insert into Kategorii_produktow values(1541, 5);
+insert into Kategorii_produktow values(1542, 5);
+insert into Kategorii_produktow values(1543, 5);
+insert into Kategorii_produktow values(1544, 5);
+insert into Kategorii_produktow values(1545, 5);
+insert into Kategorii_produktow values(1546, 5);
+insert into Kategorii_produktow values(1547, 5);
+insert into Kategorii_produktow values(1548, 5);
+insert into Kategorii_produktow values(1549, 5);
+insert into Kategorii_produktow values(1550, 5);
+insert into Kategorii_produktow values(1551, 5);
+insert into Kategorii_produktow values(1552, 5);
+insert into Kategorii_produktow values(1553, 5);
+insert into Kategorii_produktow values(1554, 5);
+insert into Kategorii_produktow values(1555, 5);
+insert into Kategorii_produktow values(1556, 5);
+insert into Kategorii_produktow values(1557, 5);
+insert into Kategorii_produktow values(1558, 5);
+insert into Kategorii_produktow values(1559, 5);
+insert into Kategorii_produktow values(1560, 5);
+insert into Kategorii_produktow values(1561, 5);
+insert into Kategorii_produktow values(1562, 5);
+insert into Kategorii_produktow values(1563, 5);
+insert into Kategorii_produktow values(1564, 5);
+insert into Kategorii_produktow values(1565, 5);
+insert into Kategorii_produktow values(1566, 5);
+insert into Kategorii_produktow values(1567, 5);
+insert into Kategorii_produktow values(1568, 5);
+insert into Kategorii_produktow values(1569, 5);
+insert into Kategorii_produktow values(1570, 5);
+insert into Kategorii_produktow values(1571, 5);
+insert into Kategorii_produktow values(1572, 5);
+insert into Kategorii_produktow values(1573, 5);
+insert into Kategorii_produktow values(1574, 5);
+insert into Kategorii_produktow values(1575, 5);
+insert into Kategorii_produktow values(1576, 5);
+insert into Kategorii_produktow values(1577, 5);
+insert into Kategorii_produktow values(1578, 5);
+insert into Kategorii_produktow values(1579, 5);
+insert into Kategorii_produktow values(1580, 5);
+insert into Kategorii_produktow values(1581, 5);
+insert into Kategorii_produktow values(1582, 5);
+insert into Kategorii_produktow values(1583, 5);
+insert into Kategorii_produktow values(1584, 5);
+insert into Kategorii_produktow values(1585, 5);
+insert into Kategorii_produktow values(1586, 5);
+insert into Kategorii_produktow values(1587, 5);
+insert into Kategorii_produktow values(1588, 5);
+insert into Kategorii_produktow values(1589, 5);
+insert into Kategorii_produktow values(1590, 5);
+insert into Kategorii_produktow values(1591, 5);
+insert into Kategorii_produktow values(1592, 5);
+insert into Kategorii_produktow values(1593, 5);
+insert into Kategorii_produktow values(1594, 5);
+insert into Kategorii_produktow values(1595, 5);
+insert into Kategorii_produktow values(1596, 5);
+insert into Kategorii_produktow values(1597, 5);
+insert into Kategorii_produktow values(1598, 5);
+insert into Kategorii_produktow values(1599, 5);
+insert into Kategorii_produktow values(1600, 5);
+insert into Kategorii_produktow values(1601, 5);
+insert into Kategorii_produktow values(1602, 5);
+insert into Kategorii_produktow values(1603, 5);
+insert into Kategorii_produktow values(1604, 5);
+insert into Kategorii_produktow values(1605, 5);
+insert into Kategorii_produktow values(1606, 5);
+insert into Kategorii_produktow values(1607, 5);
+insert into Kategorii_produktow values(1608, 5);
+insert into Kategorii_produktow values(1609, 5);
+insert into Kategorii_produktow values(1610, 5);
+insert into Kategorii_produktow values(1611, 5);
+insert into Kategorii_produktow values(1612, 5);
+insert into Kategorii_produktow values(1613, 5);
+insert into Kategorii_produktow values(1614, 5);
+insert into Kategorii_produktow values(1615, 5);
+insert into Kategorii_produktow values(1616, 5);
+insert into Kategorii_produktow values(1617, 5);
+insert into Kategorii_produktow values(1618, 5);
+insert into Kategorii_produktow values(1619, 5);
+insert into Kategorii_produktow values(1620, 5);
+insert into Kategorii_produktow values(1621, 5);
+insert into Kategorii_produktow values(1622, 5);
+insert into Kategorii_produktow values(1623, 5);
+insert into Kategorii_produktow values(1624, 5);
+insert into Kategorii_produktow values(1625, 5);
+insert into Kategorii_produktow values(1626, 5);
+insert into Kategorii_produktow values(1627, 5);
+insert into Kategorii_produktow values(1628, 5);
+insert into Kategorii_produktow values(1629, 5);
+insert into Kategorii_produktow values(1630, 5);
+insert into Kategorii_produktow values(1631, 5);
+insert into Kategorii_produktow values(1632, 5);
+insert into Kategorii_produktow values(1633, 5);
+insert into Kategorii_produktow values(1634, 5);
+insert into Kategorii_produktow values(1635, 5);
+insert into Kategorii_produktow values(1636, 5);
+insert into Kategorii_produktow values(1637, 5);
+insert into Kategorii_produktow values(1638, 5);
+insert into Kategorii_produktow values(1639, 5);
+insert into Kategorii_produktow values(1640, 5);
+insert into Kategorii_produktow values(1641, 5);
+insert into Kategorii_produktow values(1642, 5);
+insert into Kategorii_produktow values(1643, 5);
+insert into Kategorii_produktow values(1644, 5);
+insert into Kategorii_produktow values(1645, 5);
+insert into Kategorii_produktow values(1646, 5);
+insert into Kategorii_produktow values(1647, 5);
+insert into Kategorii_produktow values(1648, 5);
+insert into Kategorii_produktow values(1649, 5);
+insert into Kategorii_produktow values(1650, 5);
+insert into Kategorii_produktow values(1651, 5);
+insert into Kategorii_produktow values(1652, 5);
+insert into Kategorii_produktow values(1653, 5);
+insert into Kategorii_produktow values(1654, 5);
+insert into Kategorii_produktow values(1655, 5);
+insert into Kategorii_produktow values(1656, 5);
+insert into Kategorii_produktow values(1657, 5);
+insert into Kategorii_produktow values(1658, 5);
+insert into Kategorii_produktow values(1659, 5);
+insert into Kategorii_produktow values(1660, 5);
+insert into Kategorii_produktow values(1661, 5);
+insert into Kategorii_produktow values(1662, 5);
+insert into Kategorii_produktow values(1663, 5);
+insert into Kategorii_produktow values(1664, 5);
+insert into Kategorii_produktow values(1665, 5);
+insert into Kategorii_produktow values(1666, 5);
+insert into Kategorii_produktow values(1667, 5);
+insert into Kategorii_produktow values(1668, 5);
+insert into Kategorii_produktow values(1669, 5);
+insert into Kategorii_produktow values(1670, 5);
+insert into Kategorii_produktow values(1671, 5);
+insert into Kategorii_produktow values(1672, 5);
+insert into Kategorii_produktow values(1673, 5);
+insert into Kategorii_produktow values(1674, 5);
+insert into Kategorii_produktow values(1675, 5);
+insert into Kategorii_produktow values(1676, 5);
+insert into Kategorii_produktow values(1677, 5);
+insert into Kategorii_produktow values(1678, 5);
+insert into Kategorii_produktow values(1679, 5);
+insert into Kategorii_produktow values(1680, 5);
+insert into Kategorii_produktow values(1681, 5);
+insert into Kategorii_produktow values(1682, 5);
+insert into Kategorii_produktow values(1683, 5);
+insert into Kategorii_produktow values(1684, 5);
+insert into Kategorii_produktow values(1685, 5);
+insert into Kategorii_produktow values(1686, 5);
+insert into Kategorii_produktow values(1687, 5);
+insert into Kategorii_produktow values(1688, 5);
+insert into Kategorii_produktow values(1689, 5);
+insert into Kategorii_produktow values(1690, 5);
+insert into Kategorii_produktow values(1691, 5);
+insert into Kategorii_produktow values(1692, 5);
+insert into Kategorii_produktow values(1693, 5);
+insert into Kategorii_produktow values(1694, 5);
+insert into Kategorii_produktow values(1695, 5);
+insert into Kategorii_produktow values(1696, 5);
+insert into Kategorii_produktow values(1697, 5);
+insert into Kategorii_produktow values(1698, 5);
+insert into Kategorii_produktow values(1699, 5);
+insert into Kategorii_produktow values(1700, 5);
+insert into Kategorii_produktow values(1701, 5);
+insert into Kategorii_produktow values(1702, 5);
+insert into Kategorii_produktow values(1703, 5);
+insert into Kategorii_produktow values(1704, 5);
+insert into Kategorii_produktow values(1705, 5);
+insert into Kategorii_produktow values(1706, 5);
+insert into Kategorii_produktow values(1707, 5);
+insert into Kategorii_produktow values(1708, 5);
+insert into Kategorii_produktow values(1709, 5);
+insert into Kategorii_produktow values(1710, 5);
+insert into Kategorii_produktow values(1711, 5);
+insert into Kategorii_produktow values(1712, 5);
+insert into Kategorii_produktow values(1713, 5);
+insert into Kategorii_produktow values(1714, 5);
+insert into Kategorii_produktow values(1715, 5);
+insert into Kategorii_produktow values(1716, 5);
+insert into Kategorii_produktow values(1717, 5);
+insert into Kategorii_produktow values(1718, 5);
+insert into Kategorii_produktow values(1719, 5);
+insert into Kategorii_produktow values(1720, 5);
+insert into Kategorii_produktow values(1721, 5);
+insert into Kategorii_produktow values(1722, 5);
+insert into Kategorii_produktow values(1723, 5);
+insert into Kategorii_produktow values(1724, 5);
+insert into Kategorii_produktow values(1725, 5);
+insert into Kategorii_produktow values(1726, 5);
+insert into Kategorii_produktow values(1727, 5);
+insert into Kategorii_produktow values(1728, 5);
+insert into Kategorii_produktow values(1729, 5);
+insert into Kategorii_produktow values(1730, 5);
+insert into Kategorii_produktow values(1731, 5);
+insert into Kategorii_produktow values(1732, 5);
+insert into Kategorii_produktow values(1733, 5);
+insert into Kategorii_produktow values(1734, 5);
+insert into Kategorii_produktow values(1735, 5);
+insert into Kategorii_produktow values(1736, 5);
+insert into Kategorii_produktow values(1737, 5);
+insert into Kategorii_produktow values(1738, 5);
+insert into Kategorii_produktow values(1739, 5);
+insert into Kategorii_produktow values(1740, 5);
+insert into Kategorii_produktow values(1741, 5);
+insert into Kategorii_produktow values(1742, 5);
+insert into Kategorii_produktow values(1743, 5);
+insert into Kategorii_produktow values(1744, 5);
+insert into Kategorii_produktow values(1745, 5);
+insert into Kategorii_produktow values(1746, 5);
+insert into Kategorii_produktow values(1747, 5);
+insert into Kategorii_produktow values(1748, 5);
+insert into Kategorii_produktow values(1749, 5);
+insert into Kategorii_produktow values(1750, 5);
+insert into Kategorii_produktow values(1751, 5);
+insert into Kategorii_produktow values(1752, 5);
+insert into Kategorii_produktow values(1753, 5);
+insert into Kategorii_produktow values(1754, 5);
+insert into Kategorii_produktow values(1755, 5);
+insert into Kategorii_produktow values(1756, 5);
+insert into Kategorii_produktow values(1757, 5);
+insert into Kategorii_produktow values(1758, 5);
+insert into Kategorii_produktow values(1759, 5);
+insert into Kategorii_produktow values(1760, 5);
+insert into Kategorii_produktow values(1761, 5);
+insert into Kategorii_produktow values(1762, 5);
+insert into Kategorii_produktow values(1763, 5);
+insert into Kategorii_produktow values(1764, 5);
+insert into Kategorii_produktow values(1765, 5);
+insert into Kategorii_produktow values(1766, 5);
+insert into Kategorii_produktow values(1767, 5);
+insert into Kategorii_produktow values(1768, 5);
+insert into Kategorii_produktow values(1769, 5);
+insert into Kategorii_produktow values(1770, 5);
+insert into Kategorii_produktow values(1771, 5);
+insert into Kategorii_produktow values(1772, 5);
+insert into Kategorii_produktow values(1773, 5);
+insert into Kategorii_produktow values(1774, 5);
+insert into Kategorii_produktow values(1775, 5);
+insert into Kategorii_produktow values(1776, 5);
+insert into Kategorii_produktow values(1777, 5);
+insert into Kategorii_produktow values(1778, 5);
+insert into Kategorii_produktow values(1779, 5);
+insert into Kategorii_produktow values(1780, 5);
+insert into Kategorii_produktow values(1781, 5);
+insert into Kategorii_produktow values(1782, 5);
+insert into Kategorii_produktow values(1783, 5);
+insert into Kategorii_produktow values(1784, 5);
+insert into Kategorii_produktow values(1785, 5);
+insert into Kategorii_produktow values(1786, 5);
+insert into Kategorii_produktow values(1787, 5);
+insert into Kategorii_produktow values(1788, 5);
+insert into Kategorii_produktow values(1789, 5);
+insert into Kategorii_produktow values(1790, 5);
+insert into Kategorii_produktow values(1791, 5);
+insert into Kategorii_produktow values(1792, 5);
+insert into Kategorii_produktow values(1793, 5);
+insert into Kategorii_produktow values(1794, 5);
+insert into Kategorii_produktow values(1795, 5);
+insert into Kategorii_produktow values(1796, 5);
+insert into Kategorii_produktow values(1797, 5);
+insert into Kategorii_produktow values(1798, 5);
+insert into Kategorii_produktow values(1799, 5);
+insert into Kategorii_produktow values(1800, 5);
+insert into Kategorii_produktow values(1801, 5);
+insert into Kategorii_produktow values(1802, 5);
+insert into Kategorii_produktow values(1803, 5);
+insert into Kategorii_produktow values(1804, 5);
+insert into Kategorii_produktow values(1805, 5);
+insert into Kategorii_produktow values(1806, 5);
+insert into Kategorii_produktow values(1807, 5);
+insert into Kategorii_produktow values(1808, 5);
+insert into Kategorii_produktow values(1809, 5);
+insert into Kategorii_produktow values(1810, 5);
+insert into Kategorii_produktow values(1811, 5);
+insert into Kategorii_produktow values(1812, 5);
+insert into Kategorii_produktow values(1813, 5);
+insert into Kategorii_produktow values(1814, 5);
+insert into Kategorii_produktow values(1815, 5);
+insert into Kategorii_produktow values(1816, 5);
+insert into Kategorii_produktow values(1817, 5);
+insert into Kategorii_produktow values(1818, 5);
+insert into Kategorii_produktow values(1819, 5);
+insert into Kategorii_produktow values(1820, 5);
+insert into Kategorii_produktow values(1821, 5);
+insert into Kategorii_produktow values(1822, 5);
+insert into Kategorii_produktow values(1823, 5);
+insert into Kategorii_produktow values(1824, 5);
+insert into Kategorii_produktow values(1825, 5);
+insert into Kategorii_produktow values(1826, 5);
+insert into Kategorii_produktow values(1827, 5);
+insert into Kategorii_produktow values(1828, 5);
+insert into Kategorii_produktow values(1829, 5);
+insert into Kategorii_produktow values(1830, 5);
+insert into Kategorii_produktow values(1831, 5);
+insert into Kategorii_produktow values(1832, 5);
+insert into Kategorii_produktow values(1833, 5);
+insert into Kategorii_produktow values(1834, 5);
+insert into Kategorii_produktow values(1835, 5);
+insert into Kategorii_produktow values(1836, 5);
+insert into Kategorii_produktow values(1837, 5);
+insert into Kategorii_produktow values(1838, 5);
+insert into Kategorii_produktow values(1839, 5);
+insert into Kategorii_produktow values(1840, 5);
+insert into Kategorii_produktow values(1841, 5);
+insert into Kategorii_produktow values(1842, 5);
+insert into Kategorii_produktow values(1843, 5);
+insert into Kategorii_produktow values(1844, 5);
+insert into Kategorii_produktow values(1845, 5);
+insert into Kategorii_produktow values(1846, 5);
+insert into Kategorii_produktow values(1847, 5);
+insert into Kategorii_produktow values(1848, 5);
+insert into Kategorii_produktow values(1849, 5);
+insert into Kategorii_produktow values(1850, 5);
+insert into Kategorii_produktow values(1851, 5);
+insert into Kategorii_produktow values(1852, 5);
+insert into Kategorii_produktow values(1853, 5);
+insert into Kategorii_produktow values(1854, 5);
+insert into Kategorii_produktow values(1855, 5);
+insert into Kategorii_produktow values(1856, 5);
+insert into Kategorii_produktow values(1857, 5);
+insert into Kategorii_produktow values(1858, 5);
+insert into Kategorii_produktow values(1859, 5);
+insert into Kategorii_produktow values(1860, 5);
+insert into Kategorii_produktow values(1861, 5);
+insert into Kategorii_produktow values(1862, 5);
+insert into Kategorii_produktow values(1863, 5);
+insert into Kategorii_produktow values(1864, 5);
+insert into Kategorii_produktow values(1865, 5);
+insert into Kategorii_produktow values(1866, 5);
+insert into Kategorii_produktow values(1867, 5);
+insert into Kategorii_produktow values(1868, 5);
+insert into Kategorii_produktow values(1869, 5);
+insert into Kategorii_produktow values(1870, 5);
+insert into Kategorii_produktow values(1871, 5);
+insert into Kategorii_produktow values(1872, 5);
+insert into Kategorii_produktow values(1873, 5);
+insert into Kategorii_produktow values(1874, 5);
+insert into Kategorii_produktow values(1875, 5);
+insert into Kategorii_produktow values(1876, 5);
+insert into Kategorii_produktow values(1877, 5);
+insert into Kategorii_produktow values(1878, 5);
+insert into Kategorii_produktow values(1879, 5);
+insert into Kategorii_produktow values(1880, 5);
+insert into Kategorii_produktow values(1881, 5);
+insert into Kategorii_produktow values(1882, 5);
+insert into Kategorii_produktow values(1883, 5);
+insert into Kategorii_produktow values(1884, 5);
+insert into Kategorii_produktow values(1885, 5);
+insert into Kategorii_produktow values(1886, 5);
+insert into Kategorii_produktow values(1887, 5);
+insert into Kategorii_produktow values(1888, 5);
+insert into Kategorii_produktow values(1889, 5);
+insert into Kategorii_produktow values(1890, 5);
+insert into Kategorii_produktow values(1891, 5);
+insert into Kategorii_produktow values(1892, 5);
+insert into Kategorii_produktow values(1893, 5);
+insert into Kategorii_produktow values(1894, 5);
+insert into Kategorii_produktow values(1895, 5);
+insert into Kategorii_produktow values(1896, 5);
+insert into Kategorii_produktow values(1897, 5);
+insert into Kategorii_produktow values(1898, 5);
+insert into Kategorii_produktow values(1899, 5);
+insert into Kategorii_produktow values(1900, 5);
+insert into Kategorii_produktow values(1901, 5);
+insert into Kategorii_produktow values(1902, 5);
+insert into Kategorii_produktow values(1903, 5);
+insert into Kategorii_produktow values(1904, 5);
+insert into Kategorii_produktow values(1905, 5);
+insert into Kategorii_produktow values(1906, 5);
+insert into Kategorii_produktow values(1907, 5);
+insert into Kategorii_produktow values(1908, 5);
+insert into Kategorii_produktow values(1909, 5);
+insert into Kategorii_produktow values(1910, 5);
+insert into Kategorii_produktow values(1911, 5);
+insert into Kategorii_produktow values(1912, 5);
+insert into Kategorii_produktow values(1913, 5);
+insert into Kategorii_produktow values(1914, 5);
+insert into Kategorii_produktow values(1915, 5);
+insert into Kategorii_produktow values(1916, 5);
+insert into Kategorii_produktow values(1917, 5);
+insert into Kategorii_produktow values(1918, 5);
+insert into Kategorii_produktow values(1919, 5);
+insert into Kategorii_produktow values(1920, 5);
+insert into Kategorii_produktow values(1921, 5);
+insert into Kategorii_produktow values(1922, 5);
+insert into Kategorii_produktow values(1923, 5);
+insert into Kategorii_produktow values(1924, 5);
+insert into Kategorii_produktow values(1925, 5);
+insert into Kategorii_produktow values(1926, 5);
+insert into Kategorii_produktow values(1927, 5);
+insert into Kategorii_produktow values(1928, 5);
+insert into Kategorii_produktow values(1929, 5);
+insert into Kategorii_produktow values(1930, 5);
+insert into Kategorii_produktow values(1931, 5);
+insert into Kategorii_produktow values(1932, 5);
+insert into Kategorii_produktow values(1933, 5);
+insert into Kategorii_produktow values(1934, 5);
+insert into Kategorii_produktow values(1935, 5);
+insert into Kategorii_produktow values(1936, 5);
+insert into Kategorii_produktow values(1937, 5);
+insert into Kategorii_produktow values(1938, 5);
+insert into Kategorii_produktow values(1939, 5);
+insert into Kategorii_produktow values(1940, 5);
+insert into Kategorii_produktow values(1941, 5);
+insert into Kategorii_produktow values(1942, 5);
+insert into Kategorii_produktow values(1943, 5);
+insert into Kategorii_produktow values(1944, 5);
+insert into Kategorii_produktow values(1945, 5);
+insert into Kategorii_produktow values(1946, 5);
+insert into Kategorii_produktow values(1947, 5);
+insert into Kategorii_produktow values(1948, 5);
+insert into Kategorii_produktow values(1949, 5);
+insert into Kategorii_produktow values(1950, 5);
+insert into Kategorii_produktow values(1951, 5);
+insert into Kategorii_produktow values(1952, 5);
+insert into Kategorii_produktow values(1953, 5);
+insert into Kategorii_produktow values(1954, 5);
+insert into Kategorii_produktow values(1955, 5);
+insert into Kategorii_produktow values(1956, 5);
+insert into Kategorii_produktow values(1957, 5);
+insert into Kategorii_produktow values(1958, 5);
+insert into Kategorii_produktow values(1959, 5);
+insert into Kategorii_produktow values(1960, 5);
+insert into Kategorii_produktow values(1961, 5);
+insert into Kategorii_produktow values(1962, 5);
+insert into Kategorii_produktow values(1963, 5);
+insert into Kategorii_produktow values(1964, 5);
+insert into Kategorii_produktow values(1965, 5);
+insert into Kategorii_produktow values(1966, 5);
+insert into Kategorii_produktow values(1967, 5);
+insert into Kategorii_produktow values(1968, 5);
+insert into Kategorii_produktow values(1969, 5);
+insert into Kategorii_produktow values(1970, 5);
+insert into Kategorii_produktow values(1971, 5);
+insert into Kategorii_produktow values(1972, 5);
+insert into Kategorii_produktow values(1973, 5);
+insert into Kategorii_produktow values(1974, 5);
+insert into Kategorii_produktow values(1975, 5);
+insert into Kategorii_produktow values(1976, 5);
+insert into Kategorii_produktow values(1977, 5);
+insert into Kategorii_produktow values(1978, 5);
+insert into Kategorii_produktow values(1979, 5);
+insert into Kategorii_produktow values(1980, 5);
+insert into Kategorii_produktow values(1981, 5);
+insert into Kategorii_produktow values(1982, 5);
+insert into Kategorii_produktow values(1983, 5);
+insert into Kategorii_produktow values(1984, 5);
+insert into Kategorii_produktow values(1985, 5);
+insert into Kategorii_produktow values(1986, 5);
+insert into Kategorii_produktow values(1987, 5);
+insert into Kategorii_produktow values(1988, 5);
+insert into Kategorii_produktow values(1989, 5);
+insert into Kategorii_produktow values(1990, 5);
+insert into Kategorii_produktow values(1991, 5);
+insert into Kategorii_produktow values(1992, 5);
+insert into Kategorii_produktow values(1993, 5);
+insert into Kategorii_produktow values(1994, 5);
+insert into Kategorii_produktow values(1995, 5);
+insert into Kategorii_produktow values(1996, 5);
+insert into Kategorii_produktow values(1997, 5);
+insert into Kategorii_produktow values(1998, 5);
+insert into Kategorii_produktow values(1999, 5);
+insert into Kategorii_produktow values(2000, 5);
+insert into Kategorii_produktow values(2001, 5);
+insert into Kategorii_produktow values(2002, 5);
+insert into Kategorii_produktow values(2003, 5);
+insert into Kategorii_produktow values(2004, 5);
+insert into Kategorii_produktow values(2005, 5);
+insert into Kategorii_produktow values(2006, 5);
+insert into Kategorii_produktow values(2007, 5);
+insert into Kategorii_produktow values(2008, 5);
+insert into Kategorii_produktow values(2009, 5);
+insert into Kategorii_produktow values(2010, 5);
+insert into Kategorii_produktow values(2011, 5);
+insert into Kategorii_produktow values(2012, 5);
+insert into Kategorii_produktow values(2013, 5);
+insert into Kategorii_produktow values(2014, 5);
+insert into Kategorii_produktow values(2015, 5);
+insert into Kategorii_produktow values(2016, 5);
+insert into Kategorii_produktow values(2017, 5);
+insert into Kategorii_produktow values(2018, 5);
+insert into Kategorii_produktow values(2019, 5);
+insert into Kategorii_produktow values(2020, 5);
+insert into Kategorii_produktow values(2021, 5);
+insert into Kategorii_produktow values(2022, 5);
+insert into Kategorii_produktow values(2023, 5);
+insert into Kategorii_produktow values(2024, 5);
+insert into Kategorii_produktow values(2025, 5);
+insert into Kategorii_produktow values(2026, 5);
+insert into Kategorii_produktow values(2027, 5);
+insert into Kategorii_produktow values(2028, 5);
+insert into Kategorii_produktow values(2029, 5);
+insert into Kategorii_produktow values(2030, 5);
+insert into Kategorii_produktow values(2031, 5);
+insert into Kategorii_produktow values(2032, 5);
+insert into Kategorii_produktow values(2033, 5);
+insert into Kategorii_produktow values(2034, 5);
+insert into Kategorii_produktow values(2035, 5);
+insert into Kategorii_produktow values(2036, 5);
+insert into Kategorii_produktow values(2037, 5);
+insert into Kategorii_produktow values(2038, 5);
+insert into Kategorii_produktow values(2039, 5);
+insert into Kategorii_produktow values(2040, 5);
+insert into Kategorii_produktow values(2041, 5);
+insert into Kategorii_produktow values(2042, 5);
+insert into Kategorii_produktow values(2043, 5);
+insert into Kategorii_produktow values(2044, 5);
+insert into Kategorii_produktow values(2045, 5);
+insert into Kategorii_produktow values(2046, 5);
+insert into Kategorii_produktow values(2047, 5);
+insert into Kategorii_produktow values(2048, 5);
+insert into Kategorii_produktow values(2049, 5);
+insert into Kategorii_produktow values(2050, 5);
+insert into Kategorii_produktow values(2051, 5);
+insert into Kategorii_produktow values(2052, 5);
+insert into Kategorii_produktow values(2053, 5);
+insert into Kategorii_produktow values(2054, 5);
+insert into Kategorii_produktow values(2055, 5);
+insert into Kategorii_produktow values(2056, 5);
+insert into Kategorii_produktow values(2057, 5);
+insert into Kategorii_produktow values(2058, 5);
+insert into Kategorii_produktow values(2059, 5);
+insert into Kategorii_produktow values(2060, 5);
+insert into Kategorii_produktow values(2061, 5);
+insert into Kategorii_produktow values(2062, 5);
+insert into Kategorii_produktow values(2063, 5);
+insert into Kategorii_produktow values(2064, 5);
+insert into Kategorii_produktow values(2065, 5);
+insert into Kategorii_produktow values(2066, 5);
+insert into Kategorii_produktow values(2067, 5);
+insert into Kategorii_produktow values(2068, 5);
+insert into Kategorii_produktow values(2069, 5);
+insert into Kategorii_produktow values(2070, 5);
+insert into Kategorii_produktow values(2071, 5);
+insert into Kategorii_produktow values(2072, 5);
+insert into Kategorii_produktow values(2073, 5);
+insert into Kategorii_produktow values(2074, 5);
+insert into Kategorii_produktow values(2075, 5);
+insert into Kategorii_produktow values(2076, 5);
+insert into Kategorii_produktow values(2077, 5);
+insert into Kategorii_produktow values(2078, 5);
+insert into Kategorii_produktow values(2079, 5);
+insert into Kategorii_produktow values(2080, 5);
+insert into Kategorii_produktow values(2081, 5);
+insert into Kategorii_produktow values(2082, 5);
+insert into Kategorii_produktow values(2083, 5);
+insert into Kategorii_produktow values(2084, 5);
+insert into Kategorii_produktow values(2085, 5);
+insert into Kategorii_produktow values(2086, 5);
+insert into Kategorii_produktow values(2087, 5);
+insert into Kategorii_produktow values(2088, 5);
+insert into Kategorii_produktow values(2089, 5);
+insert into Kategorii_produktow values(2090, 5);
+insert into Kategorii_produktow values(2091, 5);
+insert into Kategorii_produktow values(2092, 5);
+insert into Kategorii_produktow values(2093, 5);
+insert into Kategorii_produktow values(2094, 5);
+insert into Kategorii_produktow values(2095, 5);
+insert into Kategorii_produktow values(2096, 5);
+insert into Kategorii_produktow values(2097, 5);
+insert into Kategorii_produktow values(2098, 5);
+insert into Kategorii_produktow values(2099, 5);
+insert into Kategorii_produktow values(2100, 5);
+insert into Kategorii_produktow values(2101, 5);
+insert into Kategorii_produktow values(2102, 5);
+insert into Kategorii_produktow values(2103, 5);
+insert into Kategorii_produktow values(2104, 5);
+insert into Kategorii_produktow values(2105, 5);
+insert into Kategorii_produktow values(2106, 5);
+insert into Kategorii_produktow values(2107, 5);
+insert into Kategorii_produktow values(2108, 5);
+insert into Kategorii_produktow values(2109, 5);
+insert into Kategorii_produktow values(2110, 5);
+insert into Kategorii_produktow values(2111, 5);
+insert into Kategorii_produktow values(2112, 5);
+insert into Kategorii_produktow values(2113, 5);
+insert into Kategorii_produktow values(2114, 5);
+insert into Kategorii_produktow values(2115, 5);
+insert into Kategorii_produktow values(2116, 5);
+insert into Kategorii_produktow values(2117, 5);
+insert into Kategorii_produktow values(2118, 5);
+insert into Kategorii_produktow values(2119, 5);
+insert into Kategorii_produktow values(2120, 5);
+insert into Kategorii_produktow values(2121, 5);
+insert into Kategorii_produktow values(2122, 5);
+insert into Kategorii_produktow values(2123, 5);
+insert into Kategorii_produktow values(2124, 5);
+insert into Kategorii_produktow values(2125, 5);
+insert into Kategorii_produktow values(2126, 5);
+insert into Kategorii_produktow values(2127, 5);
+insert into Kategorii_produktow values(2128, 5);
+insert into Kategorii_produktow values(2129, 5);
+insert into Kategorii_produktow values(2130, 5);
+insert into Kategorii_produktow values(2131, 5);
+insert into Kategorii_produktow values(2132, 5);
+insert into Kategorii_produktow values(2133, 5);
+insert into Kategorii_produktow values(2134, 5);
+insert into Kategorii_produktow values(2135, 5);
+insert into Kategorii_produktow values(2136, 5);
+insert into Kategorii_produktow values(2137, 5);
+insert into Kategorii_produktow values(2138, 5);
+insert into Kategorii_produktow values(2139, 5);
+insert into Kategorii_produktow values(2140, 5);
+insert into Kategorii_produktow values(2141, 5);
+insert into Kategorii_produktow values(2142, 5);
+insert into Kategorii_produktow values(2143, 5);
+insert into Kategorii_produktow values(2144, 5);
+insert into Kategorii_produktow values(2145, 5);
+insert into Kategorii_produktow values(2146, 5);
+insert into Kategorii_produktow values(2147, 5);
+insert into Kategorii_produktow values(2148, 5);
+insert into Kategorii_produktow values(2149, 5);
+insert into Kategorii_produktow values(2150, 5);
+insert into Kategorii_produktow values(2151, 5);
+insert into Kategorii_produktow values(2152, 5);
+insert into Kategorii_produktow values(2153, 5);
+insert into Kategorii_produktow values(2154, 5);
+insert into Kategorii_produktow values(2155, 5);
+insert into Kategorii_produktow values(2156, 5);
+insert into Kategorii_produktow values(2157, 5);
+insert into Kategorii_produktow values(2158, 5);
+insert into Kategorii_produktow values(2159, 5);
+insert into Kategorii_produktow values(2160, 5);
+insert into Kategorii_produktow values(2161, 5);
+insert into Kategorii_produktow values(2162, 5);
+insert into Kategorii_produktow values(2163, 5);
+insert into Kategorii_produktow values(2164, 5);
+insert into Kategorii_produktow values(2165, 5);
+insert into Kategorii_produktow values(2166, 5);
+insert into Kategorii_produktow values(2167, 5);
+insert into Kategorii_produktow values(2168, 5);
+insert into Kategorii_produktow values(2169, 5);
+insert into Kategorii_produktow values(2170, 5);
+insert into Kategorii_produktow values(2171, 5);
+insert into Kategorii_produktow values(2172, 5);
+insert into Kategorii_produktow values(2173, 5);
+insert into Kategorii_produktow values(2174, 5);
+insert into Kategorii_produktow values(2175, 5);
+insert into Kategorii_produktow values(2176, 5);
+insert into Kategorii_produktow values(2177, 5);
+insert into Kategorii_produktow values(2178, 5);
+insert into Kategorii_produktow values(2179, 5);
+insert into Kategorii_produktow values(2180, 5);
+insert into Kategorii_produktow values(2181, 5);
+insert into Kategorii_produktow values(2182, 5);
+insert into Kategorii_produktow values(2183, 5);
+insert into Kategorii_produktow values(2184, 5);
+insert into Kategorii_produktow values(2185, 5);
+insert into Kategorii_produktow values(2186, 5);
+insert into Kategorii_produktow values(2187, 5);
+insert into Kategorii_produktow values(2188, 5);
+insert into Kategorii_produktow values(2189, 5);
+insert into Kategorii_produktow values(2190, 5);
+insert into Kategorii_produktow values(2191, 5);
+insert into Kategorii_produktow values(2192, 5);
+insert into Kategorii_produktow values(2193, 5);
+insert into Kategorii_produktow values(2194, 5);
+insert into Kategorii_produktow values(2195, 5);
+insert into Kategorii_produktow values(2196, 5);
+insert into Kategorii_produktow values(2197, 5);
+insert into Kategorii_produktow values(2198, 5);
+insert into Kategorii_produktow values(2199, 5);
+insert into Kategorii_produktow values(2200, 5);
+insert into Kategorii_produktow values(2201, 5);
+insert into Kategorii_produktow values(2202, 5);
+insert into Kategorii_produktow values(2203, 5);
+insert into Kategorii_produktow values(2204, 5);
+insert into Kategorii_produktow values(2205, 5);
+insert into Kategorii_produktow values(2206, 5);
+insert into Kategorii_produktow values(2207, 5);
+insert into Kategorii_produktow values(2208, 5);
+insert into Kategorii_produktow values(2209, 5);
+insert into Kategorii_produktow values(2210, 5);
+insert into Kategorii_produktow values(2211, 5);
+insert into Kategorii_produktow values(2212, 5);
+insert into Kategorii_produktow values(2213, 5);
+insert into Kategorii_produktow values(2214, 5);
+insert into Kategorii_produktow values(2215, 5);
+insert into Kategorii_produktow values(2216, 5);
+insert into Kategorii_produktow values(2217, 5);
+insert into Kategorii_produktow values(2218, 5);
+insert into Kategorii_produktow values(2219, 5);
+insert into Kategorii_produktow values(2220, 5);
+insert into Kategorii_produktow values(2221, 5);
+insert into Kategorii_produktow values(2222, 5);
+insert into Kategorii_produktow values(2223, 5);
+insert into Kategorii_produktow values(2224, 5);
+insert into Kategorii_produktow values(2225, 5);
+insert into Kategorii_produktow values(2226, 5);
+insert into Kategorii_produktow values(2227, 5);
+insert into Kategorii_produktow values(2228, 5);
+insert into Kategorii_produktow values(2229, 5);
+insert into Kategorii_produktow values(2230, 5);
+insert into Kategorii_produktow values(2231, 5);
+insert into Kategorii_produktow values(2232, 5);
+insert into Kategorii_produktow values(2233, 5);
+insert into Kategorii_produktow values(2234, 5);
+insert into Kategorii_produktow values(2235, 5);
+insert into Kategorii_produktow values(2236, 5);
+insert into Kategorii_produktow values(2237, 5);
+insert into Kategorii_produktow values(2238, 5);
+insert into Kategorii_produktow values(2239, 5);
+insert into Kategorii_produktow values(2240, 5);
+insert into Kategorii_produktow values(2241, 5);
+insert into Kategorii_produktow values(2242, 5);
+insert into Kategorii_produktow values(2243, 5);
+insert into Kategorii_produktow values(2244, 5);
+insert into Kategorii_produktow values(2245, 5);
+insert into Kategorii_produktow values(2246, 5);
+insert into Kategorii_produktow values(2247, 5);
+insert into Kategorii_produktow values(2248, 5);
+insert into Kategorii_produktow values(2249, 5);
+insert into Kategorii_produktow values(2250, 5);
+insert into Kategorii_produktow values(2251, 5);
+insert into Kategorii_produktow values(2252, 5);
+insert into Kategorii_produktow values(2253, 5);
+insert into Kategorii_produktow values(2254, 5);
+insert into Kategorii_produktow values(2255, 5);
+insert into Kategorii_produktow values(2256, 5);
+insert into Kategorii_produktow values(2257, 5);
+insert into Kategorii_produktow values(2258, 5);
+insert into Kategorii_produktow values(2259, 5);
+insert into Kategorii_produktow values(2260, 5);
+insert into Kategorii_produktow values(2261, 5);
+insert into Kategorii_produktow values(2262, 5);
+insert into Kategorii_produktow values(2263, 5);
+insert into Kategorii_produktow values(2264, 5);
+insert into Kategorii_produktow values(2265, 5);
+insert into Kategorii_produktow values(2266, 5);
+insert into Kategorii_produktow values(2267, 5);
+insert into Kategorii_produktow values(2268, 5);
+insert into Kategorii_produktow values(2269, 5);
+insert into Kategorii_produktow values(2270, 5);
+insert into Kategorii_produktow values(2271, 5);
+insert into Kategorii_produktow values(2272, 5);
+insert into Kategorii_produktow values(2273, 5);
+insert into Kategorii_produktow values(2274, 5);
+insert into Kategorii_produktow values(2275, 5);
+insert into Kategorii_produktow values(2276, 5);
+insert into Kategorii_produktow values(2277, 5);
+insert into Kategorii_produktow values(2278, 5);
+insert into Kategorii_produktow values(2279, 5);
+insert into Kategorii_produktow values(2280, 5);
+insert into Kategorii_produktow values(2281, 5);
+insert into Kategorii_produktow values(2282, 5);
+insert into Kategorii_produktow values(2283, 5);
+insert into Kategorii_produktow values(2284, 5);
+insert into Kategorii_produktow values(2285, 5);
+insert into Kategorii_produktow values(2286, 5);
+insert into Kategorii_produktow values(2287, 5);
+insert into Kategorii_produktow values(2288, 5);
+insert into Kategorii_produktow values(2289, 5);
+insert into Kategorii_produktow values(2290, 5);
+insert into Kategorii_produktow values(2291, 5);
+insert into Kategorii_produktow values(2292, 5);
+insert into Kategorii_produktow values(2293, 5);
+insert into Kategorii_produktow values(2294, 5);
+insert into Kategorii_produktow values(2295, 5);
+insert into Kategorii_produktow values(2296, 5);
+insert into Kategorii_produktow values(2297, 5);
+insert into Kategorii_produktow values(2298, 5);
+insert into Kategorii_produktow values(2299, 5);
+insert into Kategorii_produktow values(2300, 5);
+insert into Kategorii_produktow values(2301, 5);
+insert into Kategorii_produktow values(2302, 5);
+insert into Kategorii_produktow values(2303, 5);
+insert into Kategorii_produktow values(2304, 5);
+insert into Kategorii_produktow values(2305, 5);
+insert into Kategorii_produktow values(2306, 5);
+insert into Kategorii_produktow values(2307, 5);
+insert into Kategorii_produktow values(2308, 5);
+insert into Kategorii_produktow values(2309, 5);
+insert into Kategorii_produktow values(2310, 5);
+insert into Kategorii_produktow values(2311, 5);
+insert into Kategorii_produktow values(2312, 5);
+insert into Kategorii_produktow values(2313, 5);
+insert into Kategorii_produktow values(2314, 5);
+insert into Kategorii_produktow values(2315, 5);
+insert into Kategorii_produktow values(2316, 5);
+insert into Kategorii_produktow values(2317, 5);
+insert into Kategorii_produktow values(2318, 5);
+insert into Kategorii_produktow values(2319, 5);
+insert into Kategorii_produktow values(2320, 5);
+insert into Kategorii_produktow values(2321, 5);
+insert into Kategorii_produktow values(2322, 5);
+insert into Kategorii_produktow values(2323, 5);
+insert into Kategorii_produktow values(2324, 5);
+insert into Kategorii_produktow values(2325, 5);
+insert into Kategorii_produktow values(2326, 5);
+insert into Kategorii_produktow values(2327, 5);
+insert into Kategorii_produktow values(2328, 5);
+insert into Kategorii_produktow values(2329, 5);
+insert into Kategorii_produktow values(2330, 5);
+insert into Kategorii_produktow values(2331, 5);
+insert into Kategorii_produktow values(2332, 5);
+insert into Kategorii_produktow values(2333, 5);
+insert into Kategorii_produktow values(2334, 5);
+insert into Kategorii_produktow values(2335, 5);
+insert into Kategorii_produktow values(2336, 5);
+insert into Kategorii_produktow values(2337, 5);
+insert into Kategorii_produktow values(2338, 5);
+insert into Kategorii_produktow values(2339, 5);
+insert into Kategorii_produktow values(2340, 5);
+insert into Kategorii_produktow values(2341, 5);
+insert into Kategorii_produktow values(2342, 5);
+insert into Kategorii_produktow values(2343, 5);
+insert into Kategorii_produktow values(2344, 5);
+insert into Kategorii_produktow values(2345, 5);
+insert into Kategorii_produktow values(2346, 5);
+insert into Kategorii_produktow values(2347, 5);
+insert into Kategorii_produktow values(2348, 5);
+insert into Kategorii_produktow values(2349, 5);
+insert into Kategorii_produktow values(2350, 5);
+insert into Kategorii_produktow values(2351, 5);
+insert into Kategorii_produktow values(2352, 5);
+insert into Kategorii_produktow values(2353, 5);
+insert into Kategorii_produktow values(2354, 5);
+insert into Kategorii_produktow values(2355, 5);
+insert into Kategorii_produktow values(2356, 5);
+insert into Kategorii_produktow values(2357, 5);
+insert into Kategorii_produktow values(2358, 5);
+insert into Kategorii_produktow values(2359, 5);
+insert into Kategorii_produktow values(2360, 5);
+insert into Kategorii_produktow values(2361, 5);
+insert into Kategorii_produktow values(2362, 5);
+insert into Kategorii_produktow values(2363, 5);
+insert into Kategorii_produktow values(2364, 5);
+insert into Kategorii_produktow values(2365, 5);
+insert into Kategorii_produktow values(2366, 5);
+insert into Kategorii_produktow values(2367, 5);
+insert into Kategorii_produktow values(2368, 5);
+insert into Kategorii_produktow values(2369, 5);
+insert into Kategorii_produktow values(2370, 5);
+insert into Kategorii_produktow values(2371, 5);
+insert into Kategorii_produktow values(2372, 5);
+insert into Kategorii_produktow values(2373, 5);
+insert into Kategorii_produktow values(2374, 5);
+insert into Kategorii_produktow values(2375, 5);
+insert into Kategorii_produktow values(2376, 5);
+insert into Kategorii_produktow values(2377, 5);
+insert into Kategorii_produktow values(2378, 5);
+insert into Kategorii_produktow values(2379, 5);
+insert into Kategorii_produktow values(2380, 5);
+insert into Kategorii_produktow values(2381, 5);
+insert into Kategorii_produktow values(2382, 5);
+insert into Kategorii_produktow values(2383, 5);
+insert into Kategorii_produktow values(2384, 5);
+insert into Kategorii_produktow values(2385, 5);
+insert into Kategorii_produktow values(2386, 5);
+insert into Kategorii_produktow values(2387, 5);
+insert into Kategorii_produktow values(2388, 5);
+insert into Kategorii_produktow values(2389, 5);
+insert into Kategorii_produktow values(2390, 5);
+insert into Kategorii_produktow values(2391, 5);
+insert into Kategorii_produktow values(2392, 5);
+insert into Kategorii_produktow values(2393, 5);
+insert into Kategorii_produktow values(2394, 5);
+insert into Kategorii_produktow values(2395, 5);
+insert into Kategorii_produktow values(2396, 5);
+insert into Kategorii_produktow values(2397, 5);
+insert into Kategorii_produktow values(2398, 5);
+insert into Kategorii_produktow values(2399, 5);
+insert into Kategorii_produktow values(2400, 5);
+insert into Kategorii_produktow values(2401, 5);
+insert into Kategorii_produktow values(2402, 5);
+insert into Kategorii_produktow values(2403, 5);
+insert into Kategorii_produktow values(2404, 5);
+insert into Kategorii_produktow values(2405, 5);
+insert into Kategorii_produktow values(2406, 5);
+insert into Kategorii_produktow values(2407, 5);
+insert into Kategorii_produktow values(2408, 5);
+insert into Kategorii_produktow values(2409, 5);
+insert into Kategorii_produktow values(2410, 5);
+insert into Kategorii_produktow values(2411, 5);
+insert into Kategorii_produktow values(2412, 5);
+insert into Kategorii_produktow values(2413, 5);
+insert into Kategorii_produktow values(2414, 5);
+insert into Kategorii_produktow values(2415, 5);
+insert into Kategorii_produktow values(2416, 5);
+insert into Kategorii_produktow values(2417, 5);
+insert into Kategorii_produktow values(2418, 5);
+insert into Kategorii_produktow values(2419, 5);
+insert into Kategorii_produktow values(2420, 5);
+insert into Kategorii_produktow values(2421, 5);
+insert into Kategorii_produktow values(2422, 5);
+insert into Kategorii_produktow values(2423, 5);
+insert into Kategorii_produktow values(2424, 5);
+insert into Kategorii_produktow values(2425, 5);
+insert into Kategorii_produktow values(2426, 5);
+insert into Kategorii_produktow values(2427, 5);
+insert into Kategorii_produktow values(2428, 5);
+insert into Kategorii_produktow values(2429, 5);
+insert into Kategorii_produktow values(2430, 5);
+insert into Kategorii_produktow values(2431, 5);
+insert into Kategorii_produktow values(2432, 5);
+insert into Kategorii_produktow values(2433, 5);
+insert into Kategorii_produktow values(2434, 5);
+insert into Kategorii_produktow values(2435, 5);
+insert into Kategorii_produktow values(2436, 5);
+insert into Kategorii_produktow values(2437, 5);
+insert into Kategorii_produktow values(2438, 5);
+insert into Kategorii_produktow values(2439, 5);
+insert into Kategorii_produktow values(2440, 5);
+insert into Kategorii_produktow values(2441, 5);
+insert into Kategorii_produktow values(2442, 5);
+insert into Kategorii_produktow values(2443, 5);
+insert into Kategorii_produktow values(2444, 5);
+insert into Kategorii_produktow values(2445, 5);
+insert into Kategorii_produktow values(2446, 5);
+insert into Kategorii_produktow values(2447, 5);
+insert into Kategorii_produktow values(2448, 5);
+insert into Kategorii_produktow values(2449, 5);
+insert into Kategorii_produktow values(2450, 5);
+insert into Kategorii_produktow values(2451, 5);
+insert into Kategorii_produktow values(2452, 5);
+insert into Kategorii_produktow values(2453, 5);
+insert into Kategorii_produktow values(2454, 5);
+insert into Kategorii_produktow values(2455, 5);
+insert into Kategorii_produktow values(2456, 5);
+insert into Kategorii_produktow values(2457, 5);
+insert into Kategorii_produktow values(2458, 5);
+insert into Kategorii_produktow values(2459, 5);
+insert into Kategorii_produktow values(2460, 5);
+insert into Kategorii_produktow values(2461, 5);
+insert into Kategorii_produktow values(2462, 5);
+insert into Kategorii_produktow values(2463, 5);
+insert into Kategorii_produktow values(2464, 5);
+insert into Kategorii_produktow values(2465, 5);
+insert into Kategorii_produktow values(2466, 5);
+insert into Kategorii_produktow values(2467, 5);
+insert into Kategorii_produktow values(2468, 5);
+insert into Kategorii_produktow values(2469, 5);
+insert into Kategorii_produktow values(2470, 5);
+insert into Kategorii_produktow values(2471, 5);
+insert into Kategorii_produktow values(2472, 5);
+insert into Kategorii_produktow values(2473, 5);
+insert into Kategorii_produktow values(2474, 5);
+insert into Kategorii_produktow values(2475, 5);
+insert into Kategorii_produktow values(2476, 5);
+insert into Kategorii_produktow values(2477, 5);
+insert into Kategorii_produktow values(2478, 5);
+insert into Kategorii_produktow values(2479, 5);
+insert into Kategorii_produktow values(2480, 5);
+insert into Kategorii_produktow values(2481, 5);
+insert into Kategorii_produktow values(2482, 5);
+insert into Kategorii_produktow values(2483, 5);
+insert into Kategorii_produktow values(2484, 5);
+insert into Kategorii_produktow values(2485, 5);
+insert into Kategorii_produktow values(2486, 5);
+insert into Kategorii_produktow values(2487, 5);
+insert into Kategorii_produktow values(2488, 5);
+insert into Kategorii_produktow values(2489, 5);
+insert into Kategorii_produktow values(2490, 5);
+insert into Kategorii_produktow values(2491, 5);
+insert into Kategorii_produktow values(2492, 5);
+insert into Kategorii_produktow values(2493, 5);
+insert into Kategorii_produktow values(2494, 5);
+insert into Kategorii_produktow values(2495, 5);
+insert into Kategorii_produktow values(2496, 5);
+insert into Kategorii_produktow values(2497, 5);
+insert into Kategorii_produktow values(2498, 5);
+insert into Kategorii_produktow values(2499, 5);
+insert into Kategorii_produktow values(2500, 5);
+insert into Kategorii_produktow values(2501, 5);
+insert into Kategorii_produktow values(2502, 5);
+insert into Kategorii_produktow values(2503, 5);
+insert into Kategorii_produktow values(2504, 5);
+insert into Kategorii_produktow values(2505, 5);
+insert into Kategorii_produktow values(2506, 5);
+insert into Kategorii_produktow values(2507, 5);
+insert into Kategorii_produktow values(2508, 5);
+insert into Kategorii_produktow values(2509, 5);
+insert into Kategorii_produktow values(2510, 5);
+insert into Kategorii_produktow values(2511, 5);
+insert into Kategorii_produktow values(2512, 5);
+insert into Kategorii_produktow values(2513, 5);
+insert into Kategorii_produktow values(2514, 5);
+insert into Kategorii_produktow values(2515, 5);
+insert into Kategorii_produktow values(2516, 5);
+insert into Kategorii_produktow values(2517, 5);
+insert into Kategorii_produktow values(2518, 5);
+insert into Kategorii_produktow values(2519, 5);
+insert into Kategorii_produktow values(2520, 5);
+insert into Kategorii_produktow values(2521, 5);
+insert into Kategorii_produktow values(2522, 5);
+insert into Kategorii_produktow values(2523, 5);
+insert into Kategorii_produktow values(2524, 5);
+insert into Kategorii_produktow values(2525, 5);
+insert into Kategorii_produktow values(2526, 5);
+insert into Kategorii_produktow values(2527, 5);
+insert into Kategorii_produktow values(2528, 5);
+insert into Kategorii_produktow values(2529, 5);
+insert into Kategorii_produktow values(2530, 5);
+insert into Kategorii_produktow values(2531, 5);
+insert into Kategorii_produktow values(2532, 5);
+insert into Kategorii_produktow values(2533, 5);
+insert into Kategorii_produktow values(2534, 5);
+insert into Kategorii_produktow values(2535, 5);
+insert into Kategorii_produktow values(2536, 5);
+insert into Kategorii_produktow values(2537, 5);
+insert into Kategorii_produktow values(2538, 5);
+insert into Kategorii_produktow values(2539, 5);
+insert into Kategorii_produktow values(2540, 5);
+insert into Kategorii_produktow values(2541, 5);
+insert into Kategorii_produktow values(2542, 5);
+insert into Kategorii_produktow values(2543, 5);
+insert into Kategorii_produktow values(2544, 5);
+insert into Kategorii_produktow values(2545, 5);
+insert into Kategorii_produktow values(2546, 5);
+insert into Kategorii_produktow values(2547, 5);
+insert into Kategorii_produktow values(2548, 5);
+insert into Kategorii_produktow values(2549, 5);
+insert into Kategorii_produktow values(2550, 5);
+insert into Kategorii_produktow values(2551, 5);
+insert into Kategorii_produktow values(2552, 5);
+insert into Kategorii_produktow values(2553, 5);
+insert into Kategorii_produktow values(2554, 5);
+insert into Kategorii_produktow values(2555, 5);
+insert into Kategorii_produktow values(2556, 5);
+insert into Kategorii_produktow values(2557, 5);
+insert into Kategorii_produktow values(2558, 5);
+insert into Kategorii_produktow values(2559, 5);
+insert into Kategorii_produktow values(2560, 5);
+insert into Kategorii_produktow values(2561, 5);
+insert into Kategorii_produktow values(2562, 5);
+insert into Kategorii_produktow values(2563, 5);
+insert into Kategorii_produktow values(2564, 5);
+insert into Kategorii_produktow values(2565, 5);
+insert into Kategorii_produktow values(2566, 5);
+insert into Kategorii_produktow values(2567, 5);
+insert into Kategorii_produktow values(2568, 5);
+insert into Kategorii_produktow values(2569, 5);
+insert into Kategorii_produktow values(2570, 5);
+insert into Kategorii_produktow values(2571, 5);
+insert into Kategorii_produktow values(2572, 5);
+insert into Kategorii_produktow values(2573, 5);
+insert into Kategorii_produktow values(2574, 5);
+insert into Kategorii_produktow values(2575, 5);
+insert into Kategorii_produktow values(2576, 5);
+insert into Kategorii_produktow values(2577, 5);
+insert into Kategorii_produktow values(2578, 5);
+insert into Kategorii_produktow values(2579, 5);
+insert into Kategorii_produktow values(2580, 5);
+insert into Kategorii_produktow values(2581, 5);
+insert into Kategorii_produktow values(2582, 5);
+insert into Kategorii_produktow values(2583, 5);
+insert into Kategorii_produktow values(2584, 5);
+insert into Kategorii_produktow values(2585, 5);
+insert into Kategorii_produktow values(2586, 5);
+insert into Kategorii_produktow values(2587, 5);
+insert into Kategorii_produktow values(2588, 5);
+insert into Kategorii_produktow values(2589, 5);
+insert into Kategorii_produktow values(2590, 5);
+insert into Kategorii_produktow values(2591, 5);
+insert into Kategorii_produktow values(2592, 5);
+insert into Kategorii_produktow values(2593, 5);
+insert into Kategorii_produktow values(2594, 5);
+insert into Kategorii_produktow values(2595, 5);
+insert into Kategorii_produktow values(2596, 5);
+insert into Kategorii_produktow values(2597, 5);
+insert into Kategorii_produktow values(2598, 5);
+insert into Kategorii_produktow values(2599, 5);
+insert into Kategorii_produktow values(2600, 5);
+insert into Kategorii_produktow values(2601, 5);
+insert into Kategorii_produktow values(2602, 5);
+insert into Kategorii_produktow values(2603, 5);
+insert into Kategorii_produktow values(2604, 5);
+insert into Kategorii_produktow values(2605, 5);
+insert into Kategorii_produktow values(2606, 5);
+insert into Kategorii_produktow values(2607, 5);
+insert into Kategorii_produktow values(2608, 5);
+insert into Kategorii_produktow values(2609, 5);
+insert into Kategorii_produktow values(2610, 5);
+insert into Kategorii_produktow values(2611, 5);
+insert into Kategorii_produktow values(2612, 5);
+insert into Kategorii_produktow values(2613, 5);
+insert into Kategorii_produktow values(2614, 5);
+insert into Kategorii_produktow values(2615, 5);
+insert into Kategorii_produktow values(2616, 5);
+insert into Kategorii_produktow values(2617, 5);
+insert into Kategorii_produktow values(2618, 5);
+insert into Kategorii_produktow values(2619, 5);
+insert into Kategorii_produktow values(2620, 5);
+insert into Kategorii_produktow values(2621, 5);
+insert into Kategorii_produktow values(2622, 5);
+insert into Kategorii_produktow values(2623, 5);
+insert into Kategorii_produktow values(2624, 5);
+insert into Kategorii_produktow values(2625, 5);
+insert into Kategorii_produktow values(2626, 5);
+insert into Kategorii_produktow values(2627, 5);
+insert into Kategorii_produktow values(2628, 5);
+insert into Kategorii_produktow values(2629, 5);
+insert into Kategorii_produktow values(2630, 5);
+insert into Kategorii_produktow values(2631, 5);
+insert into Kategorii_produktow values(2632, 5);
+insert into Kategorii_produktow values(2633, 5);
+insert into Kategorii_produktow values(2634, 5);
+insert into Kategorii_produktow values(2635, 5);
+insert into Kategorii_produktow values(2636, 5);
+insert into Kategorii_produktow values(2637, 5);
+insert into Kategorii_produktow values(2638, 5);
+insert into Kategorii_produktow values(2639, 5);
+insert into Kategorii_produktow values(2640, 5);
+insert into Kategorii_produktow values(2641, 5);
+insert into Kategorii_produktow values(2642, 5);
+insert into Kategorii_produktow values(2643, 5);
+insert into Kategorii_produktow values(2644, 5);
+insert into Kategorii_produktow values(2645, 5);
+insert into Kategorii_produktow values(2646, 5);
+insert into Kategorii_produktow values(2647, 5);
+insert into Kategorii_produktow values(2648, 5);
+insert into Kategorii_produktow values(2649, 5);
+insert into Kategorii_produktow values(2650, 5);
+insert into Kategorii_produktow values(2651, 5);
+insert into Kategorii_produktow values(2652, 5);
+insert into Kategorii_produktow values(2653, 5);
+insert into Kategorii_produktow values(2654, 5);
+insert into Kategorii_produktow values(2655, 5);
+insert into Kategorii_produktow values(2656, 5);
+insert into Kategorii_produktow values(2657, 5);
+insert into Kategorii_produktow values(2658, 5);
+insert into Kategorii_produktow values(2659, 5);
+insert into Kategorii_produktow values(2660, 5);
+insert into Kategorii_produktow values(2661, 5);
+insert into Kategorii_produktow values(2662, 5);
+insert into Kategorii_produktow values(2663, 5);
+insert into Kategorii_produktow values(2664, 5);
+insert into Kategorii_produktow values(2665, 5);
+insert into Kategorii_produktow values(2666, 5);
+insert into Kategorii_produktow values(2667, 5);
+insert into Kategorii_produktow values(2668, 5);
+insert into Kategorii_produktow values(2669, 5);
+insert into Kategorii_produktow values(2670, 5);
+insert into Kategorii_produktow values(2671, 5);
+insert into Kategorii_produktow values(2672, 5);
+insert into Kategorii_produktow values(2673, 5);
+insert into Kategorii_produktow values(2674, 5);
+insert into Kategorii_produktow values(2675, 5);
+insert into Kategorii_produktow values(2676, 5);
+insert into Kategorii_produktow values(2677, 5);
+insert into Kategorii_produktow values(2678, 5);
+insert into Kategorii_produktow values(2679, 5);
+insert into Kategorii_produktow values(2680, 5);
+insert into Kategorii_produktow values(2681, 5);
+insert into Kategorii_produktow values(2682, 5);
+insert into Kategorii_produktow values(2683, 5);
+insert into Kategorii_produktow values(2684, 5);
+insert into Kategorii_produktow values(2685, 5);
+insert into Kategorii_produktow values(2686, 5);
+insert into Kategorii_produktow values(2687, 5);
+insert into Kategorii_produktow values(2688, 5);
+insert into Kategorii_produktow values(2689, 5);
+insert into Kategorii_produktow values(2690, 5);
+insert into Kategorii_produktow values(2691, 5);
+insert into Kategorii_produktow values(2692, 5);
+insert into Kategorii_produktow values(2693, 5);
+insert into Kategorii_produktow values(2694, 5);
+insert into Kategorii_produktow values(2695, 5);
+insert into Kategorii_produktow values(2696, 5);
+insert into Kategorii_produktow values(2697, 5);
+insert into Kategorii_produktow values(2698, 5);
+insert into Kategorii_produktow values(2699, 5);
+insert into Kategorii_produktow values(2700, 5);
+insert into Kategorii_produktow values(2701, 5);
+insert into Kategorii_produktow values(2702, 5);
+insert into Kategorii_produktow values(2703, 5);
+insert into Kategorii_produktow values(2704, 5);
+insert into Kategorii_produktow values(2705, 5);
+insert into Kategorii_produktow values(2706, 5);
+insert into Kategorii_produktow values(2707, 5);
+insert into Kategorii_produktow values(2708, 5);
+insert into Kategorii_produktow values(2709, 5);
+insert into Kategorii_produktow values(2710, 5);
+insert into Kategorii_produktow values(2711, 5);
+insert into Kategorii_produktow values(2712, 5);
+insert into Kategorii_produktow values(2713, 5);
+insert into Kategorii_produktow values(2714, 5);
+insert into Kategorii_produktow values(2715, 5);
+insert into Kategorii_produktow values(2716, 5);
+insert into Kategorii_produktow values(2717, 5);
+insert into Kategorii_produktow values(2718, 5);
+insert into Kategorii_produktow values(2719, 5);
+insert into Kategorii_produktow values(2720, 5);
+insert into Kategorii_produktow values(2721, 5);
+insert into Kategorii_produktow values(2722, 5);
+insert into Kategorii_produktow values(2723, 5);
+insert into Kategorii_produktow values(2724, 5);
+insert into Kategorii_produktow values(2725, 5);
+insert into Kategorii_produktow values(2726, 5);
+insert into Kategorii_produktow values(2727, 5);
+insert into Kategorii_produktow values(2728, 5);
+insert into Kategorii_produktow values(2729, 5);
+insert into Kategorii_produktow values(2730, 5);
+insert into Kategorii_produktow values(2731, 5);
+insert into Kategorii_produktow values(2732, 5);
+insert into Kategorii_produktow values(2733, 5);
+insert into Kategorii_produktow values(2734, 5);
+insert into Kategorii_produktow values(2735, 5);
+insert into Kategorii_produktow values(2736, 5);
+insert into Kategorii_produktow values(2737, 5);
+insert into Kategorii_produktow values(2738, 5);
+insert into Kategorii_produktow values(2739, 5);
+insert into Kategorii_produktow values(2740, 5);
+insert into Kategorii_produktow values(2741, 5);
+insert into Kategorii_produktow values(2742, 5);
+insert into Kategorii_produktow values(2743, 5);
+insert into Kategorii_produktow values(2744, 5);
+insert into Kategorii_produktow values(2745, 5);
+insert into Kategorii_produktow values(2746, 5);
+insert into Kategorii_produktow values(2747, 5);
+insert into Kategorii_produktow values(2748, 5);
+insert into Kategorii_produktow values(2749, 5);
+insert into Kategorii_produktow values(2750, 5);
+insert into Kategorii_produktow values(2751, 5);
+insert into Kategorii_produktow values(2752, 5);
+insert into Kategorii_produktow values(2753, 5);
+insert into Kategorii_produktow values(2754, 5);
+insert into Kategorii_produktow values(2755, 5);
+insert into Kategorii_produktow values(2756, 5);
+insert into Kategorii_produktow values(2757, 5);
+insert into Kategorii_produktow values(2758, 5);
+insert into Kategorii_produktow values(2759, 5);
+insert into Kategorii_produktow values(2760, 5);
+insert into Kategorii_produktow values(2761, 5);
+insert into Kategorii_produktow values(2762, 5);
+insert into Kategorii_produktow values(2763, 5);
+insert into Kategorii_produktow values(2764, 5);
+insert into Kategorii_produktow values(2765, 5);
+insert into Kategorii_produktow values(2766, 5);
+insert into Kategorii_produktow values(2767, 5);
+insert into Kategorii_produktow values(2768, 5);
+insert into Kategorii_produktow values(2769, 5);
+insert into Kategorii_produktow values(2770, 5);
+insert into Kategorii_produktow values(2771, 5);
+insert into Kategorii_produktow values(2772, 5);
+insert into Kategorii_produktow values(2773, 5);
+insert into Kategorii_produktow values(2774, 5);
+insert into Kategorii_produktow values(2775, 5);
+insert into Kategorii_produktow values(2776, 5);
+insert into Kategorii_produktow values(2777, 5);
+insert into Kategorii_produktow values(2778, 5);
+insert into Kategorii_produktow values(2779, 5);
+insert into Kategorii_produktow values(2780, 5);
+insert into Kategorii_produktow values(2781, 5);
+insert into Kategorii_produktow values(2782, 5);
+insert into Kategorii_produktow values(2783, 5);
+insert into Kategorii_produktow values(2784, 5);
+insert into Kategorii_produktow values(2785, 5);
+insert into Kategorii_produktow values(2786, 5);
+insert into Kategorii_produktow values(2787, 5);
+insert into Kategorii_produktow values(2788, 5);
+insert into Kategorii_produktow values(2789, 5);
+insert into Kategorii_produktow values(2790, 5);
+insert into Kategorii_produktow values(2791, 5);
+insert into Kategorii_produktow values(2792, 5);
+insert into Kategorii_produktow values(2793, 5);
+insert into Kategorii_produktow values(2794, 5);
+insert into Kategorii_produktow values(2795, 5);
+insert into Kategorii_produktow values(2796, 5);
+insert into Kategorii_produktow values(2797, 5);
+insert into Kategorii_produktow values(2798, 5);
+insert into Kategorii_produktow values(2799, 5);
+insert into Kategorii_produktow values(2800, 5);
+insert into Kategorii_produktow values(2801, 5);
+insert into Kategorii_produktow values(2802, 5);
+insert into Kategorii_produktow values(2803, 5);
+insert into Kategorii_produktow values(2804, 5);
+insert into Kategorii_produktow values(2805, 5);
+insert into Kategorii_produktow values(2806, 5);
+insert into Kategorii_produktow values(2807, 5);
+insert into Kategorii_produktow values(2808, 5);
+insert into Kategorii_produktow values(2809, 5);
+insert into Kategorii_produktow values(2810, 5);
+insert into Kategorii_produktow values(2811, 5);
+insert into Kategorii_produktow values(2812, 5);
+insert into Kategorii_produktow values(2813, 5);
+insert into Kategorii_produktow values(2814, 5);
+insert into Kategorii_produktow values(2815, 5);
+insert into Kategorii_produktow values(2816, 5);
+insert into Kategorii_produktow values(2817, 5);
+insert into Kategorii_produktow values(2818, 5);
+insert into Kategorii_produktow values(2819, 5);
+insert into Kategorii_produktow values(2820, 5);
+insert into Kategorii_produktow values(2821, 5);
+insert into Kategorii_produktow values(2822, 5);
+insert into Kategorii_produktow values(2823, 5);
+insert into Kategorii_produktow values(2824, 5);
+insert into Kategorii_produktow values(2825, 5);
+insert into Kategorii_produktow values(2826, 5);
+insert into Kategorii_produktow values(2827, 5);
+insert into Kategorii_produktow values(2828, 5);
+insert into Kategorii_produktow values(2829, 5);
+insert into Kategorii_produktow values(2830, 5);
+insert into Kategorii_produktow values(2831, 5);
+insert into Kategorii_produktow values(2832, 5);
+insert into Kategorii_produktow values(2833, 5);
+insert into Kategorii_produktow values(2834, 5);
+insert into Kategorii_produktow values(2835, 5);
+insert into Kategorii_produktow values(2836, 5);
+insert into Kategorii_produktow values(2837, 5);
+insert into Kategorii_produktow values(2838, 5);
+insert into Kategorii_produktow values(2839, 5);
+insert into Kategorii_produktow values(2840, 5);
+insert into Kategorii_produktow values(2841, 5);
+insert into Kategorii_produktow values(2842, 5);
+insert into Kategorii_produktow values(2843, 5);
+insert into Kategorii_produktow values(2844, 5);
+insert into Kategorii_produktow values(2845, 5);
+insert into Kategorii_produktow values(2846, 5);
+insert into Kategorii_produktow values(2847, 5);
+insert into Kategorii_produktow values(2848, 5);
+insert into Kategorii_produktow values(2849, 5);
+insert into Kategorii_produktow values(2850, 5);
+insert into Kategorii_produktow values(2851, 5);
+insert into Kategorii_produktow values(2852, 5);
+insert into Kategorii_produktow values(2853, 5);
+insert into Kategorii_produktow values(2854, 5);
+insert into Kategorii_produktow values(2855, 5);
+insert into Kategorii_produktow values(2856, 5);
+insert into Kategorii_produktow values(2857, 5);
+insert into Kategorii_produktow values(2858, 5);
+insert into Kategorii_produktow values(2859, 5);
+insert into Kategorii_produktow values(2860, 5);
+insert into Kategorii_produktow values(2861, 5);
+insert into Kategorii_produktow values(2862, 5);
+insert into Kategorii_produktow values(2863, 5);
+insert into Kategorii_produktow values(2864, 5);
+insert into Kategorii_produktow values(2865, 5);
+insert into Kategorii_produktow values(2866, 5);
+insert into Kategorii_produktow values(2867, 5);
+insert into Kategorii_produktow values(2868, 5);
+insert into Kategorii_produktow values(2869, 5);
+insert into Kategorii_produktow values(2870, 5);
+insert into Kategorii_produktow values(2871, 5);
+insert into Kategorii_produktow values(2872, 5);
+insert into Kategorii_produktow values(2873, 5);
+insert into Kategorii_produktow values(2874, 5);
+insert into Kategorii_produktow values(2875, 5);
+insert into Kategorii_produktow values(2876, 5);
+insert into Kategorii_produktow values(2877, 5);
+insert into Kategorii_produktow values(2878, 5);
+insert into Kategorii_produktow values(2879, 5);
+insert into Kategorii_produktow values(2880, 5);
+insert into Kategorii_produktow values(2881, 5);
+insert into Kategorii_produktow values(2882, 5);
+insert into Kategorii_produktow values(2883, 5);
+insert into Kategorii_produktow values(2884, 5);
+insert into Kategorii_produktow values(2885, 5);
+insert into Kategorii_produktow values(2886, 5);
+insert into Kategorii_produktow values(2887, 5);
+insert into Kategorii_produktow values(2888, 5);
+insert into Kategorii_produktow values(2889, 5);
+insert into Kategorii_produktow values(2890, 5);
+insert into Kategorii_produktow values(2891, 5);
+insert into Kategorii_produktow values(2892, 5);
+insert into Kategorii_produktow values(2893, 5);
+insert into Kategorii_produktow values(2894, 5);
+insert into Kategorii_produktow values(2895, 5);
+insert into Kategorii_produktow values(2896, 5);
+insert into Kategorii_produktow values(2897, 5);
+insert into Kategorii_produktow values(2898, 5);
+insert into Kategorii_produktow values(2899, 5);
+insert into Kategorii_produktow values(2900, 5);
+insert into Kategorii_produktow values(2901, 5);
+insert into Kategorii_produktow values(2902, 5);
+insert into Kategorii_produktow values(2903, 5);
+insert into Kategorii_produktow values(2904, 5);
+insert into Kategorii_produktow values(2905, 5);
+insert into Kategorii_produktow values(2906, 5);
+insert into Kategorii_produktow values(2907, 5);
+insert into Kategorii_produktow values(2908, 5);
+insert into Kategorii_produktow values(2909, 5);
+insert into Kategorii_produktow values(2910, 5);
+insert into Kategorii_produktow values(2911, 5);
+insert into Kategorii_produktow values(2912, 5);
+insert into Kategorii_produktow values(2913, 5);
+insert into Kategorii_produktow values(2914, 5);
+insert into Kategorii_produktow values(2915, 5);
+insert into Kategorii_produktow values(2916, 5);
+insert into Kategorii_produktow values(2917, 5);
+insert into Kategorii_produktow values(2918, 5);
+insert into Kategorii_produktow values(2919, 5);
+insert into Kategorii_produktow values(2920, 5);
+insert into Kategorii_produktow values(2921, 5);
+insert into Kategorii_produktow values(2922, 5);
+insert into Kategorii_produktow values(2923, 5);
+insert into Kategorii_produktow values(2924, 5);
+insert into Kategorii_produktow values(2925, 5);
+insert into Kategorii_produktow values(2926, 5);
+insert into Kategorii_produktow values(2927, 5);
+insert into Kategorii_produktow values(2928, 5);
+insert into Kategorii_produktow values(2929, 5);
+insert into Kategorii_produktow values(2930, 5);
+insert into Kategorii_produktow values(2931, 5);
+insert into Kategorii_produktow values(2932, 5);
+insert into Kategorii_produktow values(2933, 5);
+insert into Kategorii_produktow values(2934, 5);
+insert into Kategorii_produktow values(2935, 5);
+insert into Kategorii_produktow values(2936, 5);
+insert into Kategorii_produktow values(2937, 5);
+insert into Kategorii_produktow values(2938, 5);
+insert into Kategorii_produktow values(2939, 5);
+insert into Kategorii_produktow values(2940, 5);
+insert into Kategorii_produktow values(2941, 5);
+insert into Kategorii_produktow values(2942, 5);
+insert into Kategorii_produktow values(2943, 5);
+insert into Kategorii_produktow values(2944, 5);
+insert into Kategorii_produktow values(2945, 5);
+insert into Kategorii_produktow values(2946, 5);
+insert into Kategorii_produktow values(2947, 5);
+insert into Kategorii_produktow values(2948, 5);
+insert into Kategorii_produktow values(2949, 5);
+insert into Kategorii_produktow values(2950, 5);
+insert into Kategorii_produktow values(2951, 5);
+insert into Kategorii_produktow values(2952, 5);
+insert into Kategorii_produktow values(2953, 5);
+insert into Kategorii_produktow values(2954, 5);
+insert into Kategorii_produktow values(2955, 5);
+insert into Kategorii_produktow values(2956, 5);
+insert into Kategorii_produktow values(2957, 5);
+insert into Kategorii_produktow values(2958, 5);
+insert into Kategorii_produktow values(2959, 5);
+insert into Kategorii_produktow values(2960, 5);
+insert into Kategorii_produktow values(2961, 5);
+insert into Kategorii_produktow values(2962, 5);
+insert into Kategorii_produktow values(2963, 5);
+insert into Kategorii_produktow values(2964, 5);
+insert into Kategorii_produktow values(2965, 5);
+insert into Kategorii_produktow values(2966, 5);
+insert into Kategorii_produktow values(2967, 5);
+insert into Kategorii_produktow values(2968, 5);
+insert into Kategorii_produktow values(2969, 5);
+insert into Kategorii_produktow values(2970, 5);
+insert into Kategorii_produktow values(2971, 5);
+insert into Kategorii_produktow values(2972, 5);
+insert into Kategorii_produktow values(2973, 5);
+insert into Kategorii_produktow values(2974, 5);
+insert into Kategorii_produktow values(2975, 5);
+insert into Kategorii_produktow values(2976, 5);
+insert into Kategorii_produktow values(2977, 5);
+insert into Kategorii_produktow values(2978, 5);
+insert into Kategorii_produktow values(2979, 5);
+insert into Kategorii_produktow values(2980, 5);
+insert into Kategorii_produktow values(2981, 5);
+insert into Kategorii_produktow values(2982, 5);
+insert into Kategorii_produktow values(2983, 5);
+insert into Kategorii_produktow values(2984, 5);
+insert into Kategorii_produktow values(2985, 5);
+insert into Kategorii_produktow values(2986, 5);
+insert into Kategorii_produktow values(2987, 5);
+insert into Kategorii_produktow values(2988, 5);
+insert into Kategorii_produktow values(2989, 5);
+insert into Kategorii_produktow values(2990, 5);
+insert into Kategorii_produktow values(2991, 5);
+insert into Kategorii_produktow values(2992, 5);
+insert into Kategorii_produktow values(2993, 5);
+insert into Kategorii_produktow values(2994, 5);
+insert into Kategorii_produktow values(2995, 5);
+insert into Kategorii_produktow values(2996, 5);
+insert into Kategorii_produktow values(2997, 5);
+insert into Kategorii_produktow values(2998, 5);
+insert into Kategorii_produktow values(2999, 5);
+insert into Kategorii_produktow values(3000, 5);
+insert into Kategorii_produktow values(3001, 5);
+insert into Kategorii_produktow values(3002, 5);
+insert into Kategorii_produktow values(3003, 5);
+insert into Kategorii_produktow values(3004, 5);
+insert into Kategorii_produktow values(3005, 5);
+insert into Kategorii_produktow values(3006, 5);
+insert into Kategorii_produktow values(3007, 5);
+insert into Kategorii_produktow values(3008, 5);
+insert into Kategorii_produktow values(3009, 5);
+insert into Kategorii_produktow values(3010, 5);
+insert into Kategorii_produktow values(3011, 5);
+insert into Kategorii_produktow values(3012, 5);
+insert into Kategorii_produktow values(3013, 5);
+insert into Kategorii_produktow values(3014, 5);
+insert into Kategorii_produktow values(3015, 5);
+insert into Kategorii_produktow values(3016, 5);
+insert into Kategorii_produktow values(3017, 5);
+insert into Kategorii_produktow values(3018, 5);
+insert into Kategorii_produktow values(3019, 5);
+insert into Kategorii_produktow values(3020, 5);
+insert into Kategorii_produktow values(3021, 5);
+insert into Kategorii_produktow values(3022, 5);
+insert into Kategorii_produktow values(3023, 5);
+insert into Kategorii_produktow values(3024, 5);
+insert into Kategorii_produktow values(3025, 5);
+insert into Kategorii_produktow values(3026, 5);
+insert into Kategorii_produktow values(3027, 5);
+insert into Kategorii_produktow values(3028, 5);
+insert into Kategorii_produktow values(3029, 5);
+insert into Kategorii_produktow values(3030, 5);
+insert into Kategorii_produktow values(3031, 5);
+insert into Kategorii_produktow values(3032, 5);
+insert into Kategorii_produktow values(3033, 5);
+insert into Kategorii_produktow values(3034, 5);
+insert into Kategorii_produktow values(3035, 5);
+insert into Kategorii_produktow values(3036, 5);
+insert into Kategorii_produktow values(3037, 5);
+insert into Kategorii_produktow values(3038, 5);
+insert into Kategorii_produktow values(3039, 5);
+insert into Kategorii_produktow values(3040, 5);
+insert into Kategorii_produktow values(3041, 5);
+insert into Kategorii_produktow values(3042, 5);
+insert into Kategorii_produktow values(3043, 5);
+insert into Kategorii_produktow values(3044, 5);
+insert into Kategorii_produktow values(3045, 5);
+insert into Kategorii_produktow values(3046, 5);
+insert into Kategorii_produktow values(3047, 5);
+insert into Kategorii_produktow values(3048, 5);
+insert into Kategorii_produktow values(3049, 5);
+insert into Kategorii_produktow values(3050, 5);
+insert into Kategorii_produktow values(3051, 5);
+insert into Kategorii_produktow values(3052, 5);
+insert into Kategorii_produktow values(3053, 5);
+insert into Kategorii_produktow values(3054, 5);
+insert into Kategorii_produktow values(3055, 5);
+insert into Kategorii_produktow values(3056, 5);
+insert into Kategorii_produktow values(3057, 5);
+insert into Kategorii_produktow values(3058, 5);
+insert into Kategorii_produktow values(3059, 5);
+insert into Kategorii_produktow values(3060, 5);
+insert into Kategorii_produktow values(3061, 5);
+insert into Kategorii_produktow values(3062, 5);
+insert into Kategorii_produktow values(3063, 5);
+insert into Kategorii_produktow values(3064, 5);
+insert into Kategorii_produktow values(3065, 5);
+insert into Kategorii_produktow values(3066, 5);
+insert into Kategorii_produktow values(3067, 5);
+insert into Kategorii_produktow values(3068, 5);
+insert into Kategorii_produktow values(3069, 5);
+insert into Kategorii_produktow values(3070, 5);
+insert into Kategorii_produktow values(3071, 5);
+insert into Kategorii_produktow values(3072, 5);
+insert into Kategorii_produktow values(3073, 5);
+insert into Kategorii_produktow values(3074, 5);
+insert into Kategorii_produktow values(3075, 5);
+insert into Kategorii_produktow values(3076, 5);
+insert into Kategorii_produktow values(3077, 5);
+insert into Kategorii_produktow values(3078, 5);
+insert into Kategorii_produktow values(3079, 5);
+insert into Kategorii_produktow values(3080, 5);
+insert into Kategorii_produktow values(3081, 5);
+insert into Kategorii_produktow values(3082, 5);
+insert into Kategorii_produktow values(3083, 5);
+insert into Kategorii_produktow values(3084, 5);
+insert into Kategorii_produktow values(3085, 5);
+insert into Kategorii_produktow values(3086, 5);
+insert into Kategorii_produktow values(3087, 5);
+insert into Kategorii_produktow values(3088, 5);
+insert into Kategorii_produktow values(3089, 5);
+insert into Kategorii_produktow values(3090, 5);
+insert into Kategorii_produktow values(3091, 5);
+insert into Kategorii_produktow values(3092, 5);
+insert into Kategorii_produktow values(3093, 5);
+insert into Kategorii_produktow values(3094, 5);
+insert into Kategorii_produktow values(3095, 5);
+insert into Kategorii_produktow values(3096, 5);
+insert into Kategorii_produktow values(3097, 5);
+insert into Kategorii_produktow values(3098, 5);
+insert into Kategorii_produktow values(3099, 5);
+insert into Kategorii_produktow values(3100, 5);
+insert into Kategorii_produktow values(3101, 5);
+insert into Kategorii_produktow values(3102, 5);
+insert into Kategorii_produktow values(3103, 5);
+insert into Kategorii_produktow values(3104, 5);
+insert into Kategorii_produktow values(3105, 5);
+insert into Kategorii_produktow values(3106, 5);
+insert into Kategorii_produktow values(3107, 5);
+insert into Kategorii_produktow values(3108, 5);
+insert into Kategorii_produktow values(3109, 5);
+insert into Kategorii_produktow values(3110, 5);
+insert into Kategorii_produktow values(3111, 5);
+insert into Kategorii_produktow values(3112, 5);
+insert into Kategorii_produktow values(3113, 5);
+insert into Kategorii_produktow values(3114, 5);
+insert into Kategorii_produktow values(3115, 5);
+insert into Kategorii_produktow values(3116, 5);
+insert into Kategorii_produktow values(3117, 5);
+insert into Kategorii_produktow values(3118, 5);
+insert into Kategorii_produktow values(3119, 5);
+insert into Kategorii_produktow values(3120, 5);
+insert into Kategorii_produktow values(3121, 5);
+insert into Kategorii_produktow values(3122, 5);
+insert into Kategorii_produktow values(3123, 5);
+insert into Kategorii_produktow values(3124, 5);
+insert into Kategorii_produktow values(3125, 5);
+insert into Kategorii_produktow values(3126, 5);
+insert into Kategorii_produktow values(3127, 5);
+insert into Kategorii_produktow values(3128, 5);
+insert into Kategorii_produktow values(3129, 5);
+insert into Kategorii_produktow values(3130, 5);
+insert into Kategorii_produktow values(3131, 5);
+insert into Kategorii_produktow values(3132, 5);
+insert into Kategorii_produktow values(3133, 5);
+insert into Kategorii_produktow values(3134, 5);
+insert into Kategorii_produktow values(3135, 5);
+insert into Kategorii_produktow values(3136, 5);
+insert into Kategorii_produktow values(3137, 5);
+insert into Kategorii_produktow values(3138, 5);
+insert into Kategorii_produktow values(3139, 5);
+insert into Kategorii_produktow values(3140, 5);
+insert into Kategorii_produktow values(3141, 5);
+insert into Kategorii_produktow values(3142, 5);
+insert into Kategorii_produktow values(3143, 5);
+insert into Kategorii_produktow values(3144, 5);
+insert into Kategorii_produktow values(3145, 5);
+insert into Kategorii_produktow values(3146, 5);
+insert into Kategorii_produktow values(3147, 5);
+insert into Kategorii_produktow values(3148, 5);
+insert into Kategorii_produktow values(3149, 5);
+insert into Kategorii_produktow values(3150, 5);
+insert into Kategorii_produktow values(3151, 5);
+insert into Kategorii_produktow values(3152, 5);
+insert into Kategorii_produktow values(3153, 5);
+insert into Kategorii_produktow values(3154, 5);
+insert into Kategorii_produktow values(3155, 5);
+insert into Kategorii_produktow values(3156, 5);
+insert into Kategorii_produktow values(3157, 5);
+insert into Kategorii_produktow values(3158, 5);
+insert into Kategorii_produktow values(3159, 5);
+insert into Kategorii_produktow values(3160, 5);
+insert into Kategorii_produktow values(3161, 5);
+insert into Kategorii_produktow values(3162, 5);
+insert into Kategorii_produktow values(3163, 5);
+insert into Kategorii_produktow values(3164, 5);
+insert into Kategorii_produktow values(3165, 5);
+insert into Kategorii_produktow values(3166, 5);
+insert into Kategorii_produktow values(3167, 5);
+insert into Kategorii_produktow values(3168, 5);
+insert into Kategorii_produktow values(3169, 5);
+insert into Kategorii_produktow values(3170, 5);
+insert into Kategorii_produktow values(3171, 5);
+insert into Kategorii_produktow values(3172, 5);
+insert into Kategorii_produktow values(3173, 5);
+insert into Kategorii_produktow values(3174, 5);
+insert into Kategorii_produktow values(3175, 5);
+insert into Kategorii_produktow values(3176, 5);
+insert into Kategorii_produktow values(3177, 5);
+insert into Kategorii_produktow values(3178, 5);
+insert into Kategorii_produktow values(3179, 5);
+insert into Kategorii_produktow values(3180, 5);
+insert into Kategorii_produktow values(3181, 5);
+insert into Kategorii_produktow values(3182, 5);
+insert into Kategorii_produktow values(3183, 5);
+insert into Kategorii_produktow values(3184, 5);
+insert into Kategorii_produktow values(3185, 5);
+insert into Kategorii_produktow values(3186, 5);
+insert into Kategorii_produktow values(3187, 5);
+insert into Kategorii_produktow values(3188, 5);
+insert into Kategorii_produktow values(3189, 5);
+insert into Kategorii_produktow values(3190, 5);
+insert into Kategorii_produktow values(3191, 5);
+insert into Kategorii_produktow values(3192, 5);
+insert into Kategorii_produktow values(3193, 5);
+insert into Kategorii_produktow values(3194, 5);
+insert into Kategorii_produktow values(3195, 5);
+insert into Kategorii_produktow values(3196, 5);
+insert into Kategorii_produktow values(3197, 5);
+insert into Kategorii_produktow values(3198, 5);
+insert into Kategorii_produktow values(3199, 5);
+insert into Kategorii_produktow values(3200, 5);
+insert into Kategorii_produktow values(3201, 5);
+insert into Kategorii_produktow values(3202, 5);
+insert into Kategorii_produktow values(3203, 5);
+insert into Kategorii_produktow values(3204, 5);
+insert into Kategorii_produktow values(3205, 5);
+insert into Kategorii_produktow values(3206, 5);
+insert into Kategorii_produktow values(3207, 5);
+insert into Kategorii_produktow values(3208, 5);
+insert into Kategorii_produktow values(3209, 5);
+insert into Kategorii_produktow values(3210, 5);
+insert into Kategorii_produktow values(3211, 5);
+insert into Kategorii_produktow values(3212, 5);
+insert into Kategorii_produktow values(3213, 5);
+insert into Kategorii_produktow values(3214, 5);
+insert into Kategorii_produktow values(3215, 5);
+insert into Kategorii_produktow values(3216, 5);
+insert into Kategorii_produktow values(3217, 5);
+insert into Kategorii_produktow values(3218, 5);
+insert into Kategorii_produktow values(3219, 5);
+insert into Kategorii_produktow values(3220, 5);
+insert into Kategorii_produktow values(3221, 5);
+insert into Kategorii_produktow values(3222, 5);
+insert into Kategorii_produktow values(3223, 5);
+insert into Kategorii_produktow values(3224, 5);
+insert into Kategorii_produktow values(3225, 5);
+insert into Kategorii_produktow values(3226, 5);
+insert into Kategorii_produktow values(3227, 5);
+insert into Kategorii_produktow values(3228, 5);
+insert into Kategorii_produktow values(3229, 5);
+insert into Kategorii_produktow values(3230, 5);
+insert into Kategorii_produktow values(3231, 5);
+insert into Kategorii_produktow values(3232, 5);
+insert into Kategorii_produktow values(3233, 5);
+insert into Kategorii_produktow values(3234, 5);
+insert into Kategorii_produktow values(3235, 5);
+insert into Kategorii_produktow values(3236, 5);
+insert into Kategorii_produktow values(3237, 5);
+insert into Kategorii_produktow values(3238, 5);
+insert into Kategorii_produktow values(3239, 5);
+insert into Kategorii_produktow values(3240, 5);
+insert into Kategorii_produktow values(3241, 5);
+insert into Kategorii_produktow values(3242, 5);
+insert into Kategorii_produktow values(3243, 5);
+insert into Kategorii_produktow values(3244, 5);
+insert into Kategorii_produktow values(3245, 5);
+insert into Kategorii_produktow values(3246, 5);
+insert into Kategorii_produktow values(3247, 5);
+insert into Kategorii_produktow values(3248, 5);
+insert into Kategorii_produktow values(3249, 5);
+insert into Kategorii_produktow values(3250, 5);
+insert into Kategorii_produktow values(3251, 5);
+insert into Kategorii_produktow values(3252, 5);
+insert into Kategorii_produktow values(3253, 5);
+insert into Kategorii_produktow values(3254, 5);
+insert into Kategorii_produktow values(3255, 5);
+insert into Kategorii_produktow values(3256, 5);
+insert into Kategorii_produktow values(3257, 5);
+insert into Kategorii_produktow values(3258, 5);
+insert into Kategorii_produktow values(3259, 5);
+insert into Kategorii_produktow values(3260, 5);
+insert into Kategorii_produktow values(3261, 5);
+insert into Kategorii_produktow values(3262, 5);
+insert into Kategorii_produktow values(3263, 5);
+insert into Kategorii_produktow values(3264, 5);
+insert into Kategorii_produktow values(3265, 5);
+insert into Kategorii_produktow values(3266, 5);
+insert into Kategorii_produktow values(3267, 5);
+insert into Kategorii_produktow values(3268, 5);
+insert into Kategorii_produktow values(3269, 5);
+insert into Kategorii_produktow values(3270, 5);
+insert into Kategorii_produktow values(3271, 5);
+insert into Kategorii_produktow values(3272, 5);
+insert into Kategorii_produktow values(3273, 5);
+insert into Kategorii_produktow values(3274, 5);
+insert into Kategorii_produktow values(3275, 5);
+insert into Kategorii_produktow values(3276, 5);
+insert into Kategorii_produktow values(3277, 5);
+insert into Kategorii_produktow values(3278, 5);
+insert into Kategorii_produktow values(3279, 5);
+insert into Kategorii_produktow values(3280, 5);
+insert into Kategorii_produktow values(3281, 5);
+insert into Kategorii_produktow values(3282, 5);
+insert into Kategorii_produktow values(3283, 5);
+insert into Kategorii_produktow values(3284, 5);
+insert into Kategorii_produktow values(3285, 5);
+insert into Kategorii_produktow values(3286, 5);
+insert into Kategorii_produktow values(3287, 5);
+insert into Kategorii_produktow values(3288, 5);
+insert into Kategorii_produktow values(3289, 5);
+insert into Kategorii_produktow values(3290, 5);
+insert into Kategorii_produktow values(3291, 5);
+insert into Kategorii_produktow values(3292, 5);
+insert into Kategorii_produktow values(3293, 5);
+insert into Kategorii_produktow values(3294, 5);
+insert into Kategorii_produktow values(3295, 5);
+insert into Kategorii_produktow values(3296, 5);
+insert into Kategorii_produktow values(3297, 5);
+insert into Kategorii_produktow values(3298, 5);
+insert into Kategorii_produktow values(3299, 5);
+insert into Kategorii_produktow values(3300, 5);
+insert into Kategorii_produktow values(3301, 5);
+insert into Kategorii_produktow values(3302, 5);
+insert into Kategorii_produktow values(3303, 5);
+insert into Kategorii_produktow values(3304, 5);
+insert into Kategorii_produktow values(3305, 5);
+insert into Kategorii_produktow values(3306, 5);
+insert into Kategorii_produktow values(3307, 5);
+insert into Kategorii_produktow values(3308, 5);
+insert into Kategorii_produktow values(3309, 5);
+insert into Kategorii_produktow values(3310, 5);
+insert into Kategorii_produktow values(3311, 5);
+insert into Kategorii_produktow values(3312, 5);
+insert into Kategorii_produktow values(3313, 5);
+insert into Kategorii_produktow values(3314, 5);
+insert into Kategorii_produktow values(3315, 5);
+insert into Kategorii_produktow values(3316, 5);
+insert into Kategorii_produktow values(3317, 5);
+insert into Kategorii_produktow values(3318, 5);
+insert into Kategorii_produktow values(3319, 5);
+insert into Kategorii_produktow values(3320, 5);
+insert into Kategorii_produktow values(3321, 5);
+insert into Kategorii_produktow values(3322, 5);
+insert into Kategorii_produktow values(3323, 5);
+insert into Kategorii_produktow values(3324, 5);
+insert into Kategorii_produktow values(3325, 5);
+insert into Kategorii_produktow values(3326, 5);
+insert into Kategorii_produktow values(3327, 5);
+insert into Kategorii_produktow values(3328, 5);
+insert into Kategorii_produktow values(3329, 5);
+insert into Kategorii_produktow values(3330, 5);
+insert into Kategorii_produktow values(3331, 5);
+insert into Kategorii_produktow values(3332, 5);
+insert into Kategorii_produktow values(3333, 5);
+insert into Kategorii_produktow values(3334, 5);
+insert into Kategorii_produktow values(3335, 5);
+insert into Kategorii_produktow values(3336, 5);
+insert into Kategorii_produktow values(3337, 5);
+insert into Kategorii_produktow values(3338, 5);
+insert into Kategorii_produktow values(3339, 5);
+insert into Kategorii_produktow values(3340, 5);
+insert into Kategorii_produktow values(3341, 5);
+insert into Kategorii_produktow values(3342, 5);
+insert into Kategorii_produktow values(3343, 5);
+insert into Kategorii_produktow values(3344, 5);
+insert into Kategorii_produktow values(3345, 5);
+insert into Kategorii_produktow values(3346, 5);
+insert into Kategorii_produktow values(3347, 5);
+insert into Kategorii_produktow values(3348, 5);
+insert into Kategorii_produktow values(3349, 5);
+insert into Kategorii_produktow values(3350, 5);
+insert into Kategorii_produktow values(3351, 5);
+insert into Kategorii_produktow values(3352, 5);
+insert into Kategorii_produktow values(3353, 5);
+insert into Kategorii_produktow values(3354, 5);
+insert into Kategorii_produktow values(3355, 5);
+insert into Kategorii_produktow values(3356, 5);
+insert into Kategorii_produktow values(3357, 5);
+insert into Kategorii_produktow values(3358, 5);
+insert into Kategorii_produktow values(3359, 5);
+insert into Kategorii_produktow values(3360, 5);
+insert into Kategorii_produktow values(3361, 5);
+insert into Kategorii_produktow values(3362, 5);
+insert into Kategorii_produktow values(3363, 5);
+insert into Kategorii_produktow values(3364, 5);
+insert into Kategorii_produktow values(3365, 5);
+insert into Kategorii_produktow values(3366, 5);
+insert into Kategorii_produktow values(3367, 5);
+insert into Kategorii_produktow values(3368, 5);
+insert into Kategorii_produktow values(3369, 5);
+insert into Kategorii_produktow values(3370, 5);
+insert into Kategorii_produktow values(3371, 5);
+insert into Kategorii_produktow values(3372, 5);
+insert into Kategorii_produktow values(3373, 5);
+insert into Kategorii_produktow values(3374, 5);
+insert into Kategorii_produktow values(3375, 5);
+insert into Kategorii_produktow values(3376, 5);
+insert into Kategorii_produktow values(3377, 5);
 
+insert into Kategorii_produktow values(1, 1);
+insert into Kategorii_produktow values(2, 1);
+insert into Kategorii_produktow values(3, 1);
+insert into Kategorii_produktow values(4, 1);
+insert into Kategorii_produktow values(5, 1);
+insert into Kategorii_produktow values(6, 1);
+insert into Kategorii_produktow values(7, 1);
+insert into Kategorii_produktow values(8, 1);
+insert into Kategorii_produktow values(9, 1);
+insert into Kategorii_produktow values(10, 1);
+insert into Kategorii_produktow values(11, 1);
+insert into Kategorii_produktow values(12, 1);
 
+insert into Kategorii_produktow values(1, 2);
+insert into Kategorii_produktow values(2, 2);
+insert into Kategorii_produktow values(3, 2);
+insert into Kategorii_produktow values(4, 2);
+insert into Kategorii_produktow values(5, 2);
+insert into Kategorii_produktow values(7, 2);
+insert into Kategorii_produktow values(8, 2);
+
+insert into Historia_cen values
+                             (1, 6, '2021-02-12'),
+                             (2, 2, '2021-07-25'),
+                             (3, 4, '2020-09-22'),
+                             (4, 10, '2019-09-13'),
+                             (5, 10, '2019-01-20'),
+                             (6, 10, '2021-12-14'),
+                             (7, 9, '2020-12-01'),
+                             (8, 6, '2021-02-18'),
+                             (9, 7, '2021-04-06'),
+                             (10, 10, '2019-11-15'),
+                             (11, 4, '2019-07-04'),
+                             (12, 9, '2020-08-05'),
+                             (13, 2, '2019-09-17'),
+                             (14, 5, '2019-09-06'),
+                             (15, 4, '2020-08-26'),
+                             (16, 4, '2020-07-26'),
+                             (17, 10, '2021-11-13'),
+                             (18, 3, '2020-04-18'),
+                             (19, 1, '2019-09-04'),
+                             (20, 3, '2020-11-15'),
+                             (21, 4, '2020-03-02'),
+                             (22, 5, '2021-07-28'),
+                             (23, 3, '2020-04-14'),
+                             (24, 2, '2019-07-08'),
+                             (25, 4, '2021-09-18'),
+                             (26, 6, '2021-04-02'),
+                             (27, 3, '2020-12-02'),
+                             (28, 9, '2019-05-27'),
+                             (29, 2, '2019-04-05'),
+                             (30, 6, '2020-04-18'),
+                             (31, 9, '2020-08-26'),
+                             (32, 1, '2020-03-03'),
+                             (33, 7, '2021-01-07'),
+                             (34, 10, '2020-01-17'),
+                             (35, 2, '2019-08-07'),
+                             (36, 10, '2019-04-11'),
+                             (37, 7, '2019-02-16'),
+                             (38, 8, '2019-01-28'),
+                             (39, 6, '2019-04-17'),
+                             (40, 3, '2021-06-24'),
+                             (41, 6, '2020-12-21'),
+                             (42, 8, '2019-05-19'),
+                             (43, 2, '2019-10-24'),
+                             (44, 8, '2020-02-17'),
+                             (45, 1, '2019-10-07'),
+                             (46, 4, '2019-10-02'),
+                             (47, 5, '2020-02-24'),
+                             (48, 6, '2021-07-04'),
+                             (49, 5, '2020-01-02'),
+                             (50, 5, '2020-10-05'),
+                             (51, 10, '2019-11-02'),
+                             (52, 6, '2020-02-05'),
+                             (53, 6, '2021-06-05'),
+                             (54, 2, '2021-07-21'),
+                             (55, 5, '2021-08-05'),
+                             (56, 7, '2021-09-03'),
+                             (57, 7, '2019-04-06'),
+                             (58, 4, '2020-04-07'),
+                             (59, 8, '2021-11-03'),
+                             (60, 6, '2021-11-24'),
+                             (61, 9, '2019-01-12'),
+                             (62, 3, '2019-12-14'),
+                             (63, 1, '2021-05-05'),
+                             (64, 6, '2019-08-10'),
+                             (65, 10, '2020-04-07'),
+                             (66, 6, '2020-09-25'),
+                             (67, 4, '2020-02-11'),
+                             (68, 5, '2019-11-08'),
+                             (69, 8, '2021-12-13'),
+                             (70, 1, '2021-08-11'),
+                             (71, 2, '2019-05-05'),
+                             (72, 4, '2019-12-14'),
+                             (73, 7, '2021-06-22'),
+                             (74, 1, '2019-04-01'),
+                             (75, 2, '2020-07-08'),
+                             (76, 3, '2021-07-11'),
+                             (77, 2, '2020-04-28'),
+                             (78, 8, '2019-10-20'),
+                             (79, 10, '2021-09-03'),
+                             (80, 6, '2021-02-20'),
+                             (81, 10, '2020-03-23'),
+                             (82, 6, '2021-04-14'),
+                             (83, 2, '2019-07-13'),
+                             (84, 1, '2021-03-24'),
+                             (85, 4, '2019-12-02'),
+                             (86, 3, '2020-03-08'),
+                             (87, 3, '2021-12-21'),
+                             (88, 5, '2021-12-27'),
+                             (89, 9, '2021-02-23'),
+                             (90, 3, '2019-09-23'),
+                             (91, 3, '2020-01-07'),
+                             (92, 5, '2021-10-19'),
+                             (93, 2, '2020-12-10'),
+                             (94, 10, '2020-04-05'),
+                             (95, 1, '2021-08-25'),
+                             (96, 7, '2020-08-06'),
+                             (97, 3, '2021-06-08'),
+                             (98, 3, '2019-09-22'),
+                             (99, 6, '2020-03-13'),
+                             (100, 7, '2020-01-04'),
+                             (101, 4, '2019-11-02'),
+                             (102, 10, '2020-06-08'),
+                             (103, 5, '2019-03-06'),
+                             (104, 8, '2021-11-01'),
+                             (105, 9, '2019-09-22'),
+                             (106, 8, '2020-09-17'),
+                             (107, 5, '2021-12-03'),
+                             (108, 5, '2021-01-01'),
+                             (109, 4, '2019-05-27'),
+                             (110, 10, '2020-12-23'),
+                             (111, 6, '2021-04-04'),
+                             (112, 5, '2019-07-19'),
+                             (113, 8, '2021-03-13'),
+                             (114, 8, '2020-10-10'),
+                             (115, 2, '2021-10-02'),
+                             (116, 10, '2021-08-08'),
+                             (117, 4, '2021-06-11'),
+                             (118, 8, '2019-03-04'),
+                             (119, 4, '2020-01-26'),
+                             (120, 6, '2020-11-06'),
+                             (121, 5, '2019-08-16'),
+                             (122, 6, '2019-03-17'),
+                             (123, 8, '2020-05-22'),
+                             (124, 1, '2019-06-12'),
+                             (125, 4, '2020-04-10'),
+                             (126, 9, '2019-12-23'),
+                             (127, 2, '2021-05-20'),
+                             (128, 1, '2020-05-01'),
+                             (129, 7, '2021-04-07'),
+                             (130, 8, '2019-03-18'),
+                             (131, 10, '2020-06-18'),
+                             (132, 10, '2021-06-04'),
+                             (133, 8, '2021-11-15'),
+                             (134, 4, '2020-02-15'),
+                             (135, 10, '2019-03-09'),
+                             (136, 1, '2019-08-05'),
+                             (137, 1, '2021-09-13'),
+                             (138, 3, '2019-11-11'),
+                             (139, 9, '2019-02-13'),
+                             (140, 8, '2021-07-12'),
+                             (141, 1, '2020-05-22'),
+                             (142, 1, '2020-03-21'),
+                             (143, 9, '2019-01-05'),
+                             (144, 4, '2019-02-26'),
+                             (145, 10, '2021-03-28'),
+                             (146, 8, '2019-09-13'),
+                             (147, 1, '2020-08-26'),
+                             (148, 7, '2020-05-19'),
+                             (149, 7, '2020-03-26'),
+                             (150, 4, '2021-06-09'),
+                             (151, 2, '2019-08-16'),
+                             (152, 6, '2021-12-25'),
+                             (153, 1, '2020-02-12'),
+                             (154, 7, '2019-02-05'),
+                             (155, 2, '2021-09-28'),
+                             (156, 5, '2019-10-27'),
+                             (157, 3, '2021-08-07'),
+                             (158, 6, '2020-12-06'),
+                             (159, 8, '2021-01-18'),
+                             (160, 9, '2019-12-16'),
+                             (161, 5, '2021-03-12'),
+                             (162, 2, '2021-08-06'),
+                             (163, 8, '2019-11-20'),
+                             (164, 3, '2019-03-08'),
+                             (165, 6, '2020-08-06'),
+                             (166, 2, '2021-04-06'),
+                             (167, 5, '2019-03-21'),
+                             (168, 5, '2021-05-10'),
+                             (169, 5, '2021-10-27'),
+                             (170, 10, '2020-10-22'),
+                             (171, 5, '2021-10-21'),
+                             (172, 7, '2019-04-21'),
+                             (173, 10, '2021-09-16'),
+                             (174, 4, '2019-04-16'),
+                             (175, 3, '2020-02-06'),
+                             (176, 8, '2021-08-18'),
+                             (177, 6, '2020-04-13'),
+                             (178, 10, '2021-04-24'),
+                             (179, 4, '2019-03-26'),
+                             (180, 2, '2020-08-20'),
+                             (181, 8, '2021-07-19'),
+                             (182, 8, '2021-05-01'),
+                             (183, 10, '2019-04-09'),
+                             (184, 4, '2020-08-16'),
+                             (185, 7, '2019-08-20'),
+                             (186, 3, '2021-07-14'),
+                             (187, 9, '2019-01-21'),
+                             (188, 10, '2019-12-16'),
+                             (189, 6, '2020-12-03'),
+                             (190, 1, '2021-12-27'),
+                             (191, 8, '2021-08-21'),
+                             (192, 5, '2021-06-19'),
+                             (193, 10, '2019-08-22'),
+                             (194, 7, '2020-07-07'),
+                             (195, 7, '2021-05-02'),
+                             (196, 4, '2020-09-13'),
+                             (197, 4, '2020-01-03'),
+                             (198, 10, '2021-01-26'),
+                             (199, 10, '2019-10-21'),
+                             (200, 10, '2021-05-25'),
+                             (201, 9, '2020-05-10'),
+                             (202, 8, '2019-07-08'),
+                             (203, 6, '2020-02-06'),
+                             (204, 9, '2019-07-28'),
+                             (205, 5, '2021-09-21'),
+                             (206, 4, '2021-08-04'),
+                             (207, 6, '2019-03-09'),
+                             (208, 3, '2020-08-22'),
+                             (209, 7, '2020-10-19'),
+                             (210, 9, '2021-03-03'),
+                             (211, 10, '2021-12-05'),
+                             (212, 7, '2020-06-05'),
+                             (213, 6, '2020-05-23'),
+                             (214, 1, '2020-08-14'),
+                             (215, 1, '2019-09-02'),
+                             (216, 7, '2020-05-01'),
+                             (217, 5, '2019-10-10'),
+                             (218, 1, '2021-06-26'),
+                             (219, 6, '2019-02-28'),
+                             (220, 7, '2021-01-02'),
+                             (221, 1, '2020-12-09'),
+                             (222, 8, '2019-04-05'),
+                             (223, 2, '2020-04-10'),
+                             (224, 4, '2019-04-07'),
+                             (225, 3, '2020-08-17'),
+                             (226, 9, '2021-03-08'),
+                             (227, 8, '2019-02-15'),
+                             (228, 5, '2020-09-03'),
+                             (229, 5, '2020-11-27'),
+                             (230, 9, '2021-08-02'),
+                             (231, 3, '2019-07-26'),
+                             (232, 2, '2019-01-18'),
+                             (233, 3, '2020-02-01'),
+                             (234, 10, '2020-03-04'),
+                             (235, 9, '2020-06-03'),
+                             (236, 2, '2020-03-28'),
+                             (237, 4, '2020-06-02'),
+                             (238, 3, '2021-10-22'),
+                             (239, 3, '2019-05-28'),
+                             (240, 4, '2020-10-13'),
+                             (241, 10, '2019-12-25'),
+                             (242, 8, '2019-06-17'),
+                             (243, 10, '2021-10-10'),
+                             (244, 4, '2019-11-03'),
+                             (245, 2, '2021-07-09'),
+                             (246, 2, '2021-11-19'),
+                             (247, 9, '2019-03-16'),
+                             (248, 8, '2020-05-19'),
+                             (249, 7, '2021-11-22'),
+                             (250, 1, '2020-11-16'),
+                             (251, 7, '2020-12-25'),
+                             (252, 1, '2020-06-17'),
+                             (253, 10, '2021-09-24'),
+                             (254, 1, '2020-10-28'),
+                             (255, 4, '2021-04-12'),
+                             (256, 5, '2019-11-12'),
+                             (257, 3, '2021-11-06'),
+                             (258, 4, '2021-08-02'),
+                             (259, 6, '2019-09-04'),
+                             (260, 4, '2021-02-20'),
+                             (261, 5, '2019-08-23'),
+                             (262, 10, '2021-11-20'),
+                             (263, 8, '2021-05-08'),
+                             (264, 1, '2020-04-10'),
+                             (265, 2, '2020-07-04'),
+                             (266, 9, '2019-09-19'),
+                             (267, 3, '2021-01-03'),
+                             (268, 2, '2020-06-08'),
+                             (269, 1, '2019-03-07'),
+                             (270, 3, '2019-10-01'),
+                             (271, 4, '2019-03-27'),
+                             (272, 10, '2020-01-01'),
+                             (273, 6, '2021-12-02'),
+                             (274, 6, '2021-01-18'),
+                             (275, 5, '2020-04-13'),
+                             (276, 5, '2019-03-07'),
+                             (277, 9, '2021-08-05'),
+                             (278, 2, '2021-11-16'),
+                             (279, 4, '2020-08-12'),
+                             (280, 8, '2020-01-18'),
+                             (281, 10, '2020-04-20'),
+                             (282, 9, '2021-02-02'),
+                             (283, 2, '2021-10-08'),
+                             (284, 3, '2019-01-13'),
+                             (285, 6, '2020-09-03'),
+                             (286, 4, '2019-08-01'),
+                             (287, 7, '2021-06-14'),
+                             (288, 5, '2020-08-12'),
+                             (289, 8, '2021-08-04'),
+                             (290, 6, '2020-01-14'),
+                             (291, 2, '2019-03-08'),
+                             (292, 2, '2020-04-20'),
+                             (293, 8, '2019-05-17'),
+                             (294, 1, '2019-01-25'),
+                             (295, 10, '2021-11-03'),
+                             (296, 1, '2021-02-26'),
+                             (297, 8, '2019-08-10'),
+                             (298, 4, '2021-02-21'),
+                             (299, 8, '2021-07-06'),
+                             (300, 2, '2019-04-25'),
+                             (301, 2, '2021-05-08'),
+                             (302, 3, '2020-12-15'),
+                             (303, 4, '2021-04-09'),
+                             (304, 2, '2021-03-07'),
+                             (305, 10, '2020-11-21'),
+                             (306, 10, '2021-04-28'),
+                             (307, 6, '2019-12-27'),
+                             (308, 6, '2020-12-17'),
+                             (309, 10, '2020-08-24'),
+                             (310, 4, '2021-12-13'),
+                             (311, 10, '2020-04-23'),
+                             (312, 1, '2020-08-13'),
+                             (313, 10, '2020-07-06'),
+                             (314, 6, '2021-11-24'),
+                             (315, 4, '2021-02-24'),
+                             (316, 9, '2019-04-04'),
+                             (317, 6, '2021-07-12'),
+                             (318, 6, '2019-04-06'),
+                             (319, 2, '2019-09-27'),
+                             (320, 9, '2020-11-22'),
+                             (321, 1, '2021-06-27'),
+                             (322, 6, '2021-05-02'),
+                             (323, 8, '2020-09-03'),
+                             (324, 3, '2021-11-19'),
+                             (325, 8, '2021-03-28'),
+                             (326, 8, '2021-09-07'),
+                             (327, 3, '2021-01-14'),
+                             (328, 9, '2021-01-01'),
+                             (329, 9, '2019-08-01'),
+                             (330, 9, '2019-08-11'),
+                             (331, 8, '2019-09-16'),
+                             (332, 3, '2021-10-09'),
+                             (333, 4, '2019-01-25'),
+                             (334, 7, '2021-06-06'),
+                             (335, 3, '2020-09-05'),
+                             (336, 5, '2019-12-11'),
+                             (337, 4, '2021-07-06'),
+                             (338, 2, '2020-10-28'),
+                             (339, 6, '2021-02-17'),
+                             (340, 10, '2020-12-16'),
+                             (341, 8, '2020-11-18'),
+                             (342, 9, '2021-01-08'),
+                             (343, 4, '2020-10-23'),
+                             (344, 9, '2020-05-19'),
+                             (345, 5, '2020-09-13'),
+                             (346, 2, '2020-06-02'),
+                             (347, 10, '2019-12-07'),
+                             (348, 9, '2021-12-21'),
+                             (349, 6, '2021-01-05'),
+                             (350, 8, '2020-02-06'),
+                             (351, 8, '2020-06-06'),
+                             (352, 3, '2019-05-11'),
+                             (353, 2, '2019-02-03'),
+                             (354, 10, '2020-05-18'),
+                             (355, 10, '2021-01-23'),
+                             (356, 1, '2020-09-04'),
+                             (357, 10, '2020-05-06'),
+                             (358, 1, '2020-08-04'),
+                             (359, 10, '2021-12-20'),
+                             (360, 5, '2020-09-16'),
+                             (361, 10, '2020-09-21'),
+                             (362, 4, '2021-09-25'),
+                             (363, 8, '2020-10-11'),
+                             (364, 8, '2020-06-08'),
+                             (365, 1, '2021-12-12'),
+                             (366, 10, '2021-03-02'),
+                             (367, 2, '2021-01-24'),
+                             (368, 10, '2019-05-03'),
+                             (369, 3, '2021-06-12'),
+                             (370, 6, '2020-02-22'),
+                             (371, 3, '2019-07-20'),
+                             (372, 10, '2021-11-03'),
+                             (373, 5, '2019-09-06'),
+                             (374, 7, '2020-08-22'),
+                             (375, 5, '2019-06-01'),
+                             (376, 2, '2021-01-11'),
+                             (377, 1, '2019-11-05'),
+                             (378, 9, '2020-05-02'),
+                             (379, 3, '2019-11-24'),
+                             (380, 7, '2019-06-19'),
+                             (381, 6, '2019-02-25'),
+                             (382, 8, '2019-06-04'),
+                             (383, 4, '2020-07-22'),
+                             (384, 8, '2020-09-10'),
+                             (385, 3, '2021-10-05'),
+                             (386, 5, '2020-03-22'),
+                             (387, 4, '2021-02-20'),
+                             (388, 8, '2020-11-02'),
+                             (389, 7, '2019-11-22'),
+                             (390, 3, '2019-11-24'),
+                             (391, 5, '2021-05-16'),
+                             (392, 10, '2020-09-14'),
+                             (393, 9, '2020-10-19'),
+                             (394, 1, '2021-03-05'),
+                             (395, 6, '2021-02-04'),
+                             (396, 3, '2021-01-27'),
+                             (397, 7, '2021-07-19'),
+                             (398, 3, '2021-03-16'),
+                             (399, 5, '2020-06-09'),
+                             (400, 1, '2021-05-08'),
+                             (401, 10, '2020-02-08'),
+                             (402, 8, '2019-02-27'),
+                             (403, 8, '2021-11-20'),
+                             (404, 4, '2021-09-19'),
+                             (405, 4, '2019-08-13'),
+                             (406, 8, '2021-10-06'),
+                             (407, 5, '2019-12-19'),
+                             (408, 5, '2020-02-04'),
+                             (409, 2, '2021-02-03'),
+                             (410, 6, '2020-07-05'),
+                             (411, 1, '2019-07-04'),
+                             (412, 1, '2019-04-03'),
+                             (413, 10, '2019-12-04'),
+                             (414, 5, '2020-09-28'),
+                             (415, 6, '2021-02-06'),
+                             (416, 1, '2019-01-04'),
+                             (417, 1, '2020-01-16'),
+                             (418, 6, '2021-12-06'),
+                             (419, 6, '2019-05-09'),
+                             (420, 4, '2021-02-19'),
+                             (421, 1, '2021-07-24'),
+                             (422, 10, '2021-08-16'),
+                             (423, 8, '2021-11-27'),
+                             (424, 8, '2020-01-06'),
+                             (425, 3, '2020-06-16'),
+                             (426, 6, '2020-11-07'),
+                             (427, 4, '2021-10-23'),
+                             (428, 2, '2021-05-15'),
+                             (429, 10, '2019-02-21'),
+                             (430, 6, '2019-03-17'),
+                             (431, 1, '2020-01-05'),
+                             (432, 2, '2021-04-25'),
+                             (433, 2, '2019-05-21'),
+                             (434, 7, '2021-11-20'),
+                             (435, 10, '2020-12-16'),
+                             (436, 10, '2020-01-04'),
+                             (437, 6, '2020-07-23'),
+                             (438, 7, '2019-10-01'),
+                             (439, 3, '2021-05-23'),
+                             (440, 5, '2019-07-28'),
+                             (441, 9, '2019-07-22'),
+                             (442, 3, '2020-10-08'),
+                             (443, 1, '2020-03-21'),
+                             (444, 3, '2019-11-16'),
+                             (445, 1, '2020-06-21'),
+                             (446, 4, '2021-07-20'),
+                             (447, 6, '2020-07-11'),
+                             (448, 8, '2020-03-07'),
+                             (449, 6, '2020-09-11'),
+                             (450, 7, '2021-04-23'),
+                             (451, 4, '2021-01-27'),
+                             (452, 2, '2020-05-20'),
+                             (453, 1, '2021-05-04'),
+                             (454, 6, '2020-05-18'),
+                             (455, 3, '2019-01-17'),
+                             (456, 4, '2021-08-19'),
+                             (457, 5, '2020-03-20'),
+                             (458, 7, '2021-11-08'),
+                             (459, 3, '2020-12-10'),
+                             (460, 7, '2019-05-27'),
+                             (461, 10, '2019-07-05'),
+                             (462, 1, '2019-10-27'),
+                             (463, 8, '2019-11-16'),
+                             (464, 9, '2020-09-25'),
+                             (465, 9, '2021-08-22'),
+                             (466, 2, '2021-11-06'),
+                             (467, 6, '2019-10-20'),
+                             (468, 1, '2021-10-17'),
+                             (469, 8, '2019-03-08'),
+                             (470, 4, '2020-10-25'),
+                             (471, 6, '2021-09-28'),
+                             (472, 4, '2020-09-10'),
+                             (473, 10, '2019-08-12'),
+                             (474, 2, '2019-01-05'),
+                             (475, 6, '2019-07-22'),
+                             (476, 6, '2021-07-03'),
+                             (477, 6, '2021-06-20'),
+                             (478, 4, '2021-03-13'),
+                             (479, 1, '2020-11-23'),
+                             (480, 5, '2019-11-28'),
+                             (481, 3, '2021-03-13'),
+                             (482, 6, '2019-09-24'),
+                             (483, 3, '2020-02-28'),
+                             (484, 5, '2019-11-06'),
+                             (485, 7, '2021-01-28'),
+                             (486, 5, '2020-06-06'),
+                             (487, 10, '2021-10-15'),
+                             (488, 8, '2021-10-12'),
+                             (489, 10, '2021-08-19'),
+                             (490, 9, '2020-02-27'),
+                             (491, 3, '2021-07-06'),
+                             (492, 4, '2019-07-16'),
+                             (493, 4, '2021-11-04'),
+                             (494, 9, '2019-01-28'),
+                             (495, 6, '2020-06-16'),
+                             (496, 5, '2020-09-05'),
+                             (497, 2, '2019-07-06'),
+                             (498, 5, '2019-08-17'),
+                             (499, 3, '2020-11-12'),
+                             (500, 8, '2021-08-06'),
+                             (501, 6, '2019-12-03'),
+                             (502, 5, '2021-03-01'),
+                             (503, 1, '2020-02-25'),
+                             (504, 8, '2020-09-14'),
+                             (505, 2, '2021-10-05'),
+                             (506, 5, '2020-07-20'),
+                             (507, 1, '2021-04-13'),
+                             (508, 2, '2019-06-08'),
+                             (509, 7, '2020-02-11'),
+                             (510, 6, '2020-12-28'),
+                             (511, 10, '2021-04-24'),
+                             (512, 10, '2021-07-09'),
+                             (513, 10, '2020-03-11'),
+                             (514, 10, '2021-10-14'),
+                             (515, 8, '2019-12-10'),
+                             (516, 3, '2021-06-17'),
+                             (517, 7, '2019-06-01'),
+                             (518, 9, '2020-04-08'),
+                             (519, 1, '2020-02-21'),
+                             (520, 9, '2021-06-01'),
+                             (521, 5, '2019-10-23'),
+                             (522, 9, '2020-11-28'),
+                             (523, 6, '2019-09-13'),
+                             (524, 7, '2020-11-09'),
+                             (525, 1, '2020-10-05'),
+                             (526, 2, '2021-11-03'),
+                             (527, 8, '2019-11-25'),
+                             (528, 5, '2019-07-26'),
+                             (529, 9, '2020-10-15'),
+                             (530, 2, '2020-12-08'),
+                             (531, 6, '2020-09-09'),
+                             (532, 6, '2020-05-08'),
+                             (533, 5, '2020-12-10'),
+                             (534, 3, '2019-04-09'),
+                             (535, 6, '2021-06-28'),
+                             (536, 8, '2020-07-05'),
+                             (537, 3, '2019-03-23'),
+                             (538, 9, '2021-02-04'),
+                             (539, 5, '2020-08-08'),
+                             (540, 7, '2019-04-20'),
+                             (541, 2, '2021-05-07'),
+                             (542, 4, '2020-06-28'),
+                             (543, 5, '2019-01-09'),
+                             (544, 9, '2021-08-02'),
+                             (545, 7, '2019-02-27'),
+                             (546, 10, '2019-11-27'),
+                             (547, 8, '2021-02-08'),
+                             (548, 7, '2019-12-13'),
+                             (549, 10, '2020-09-19'),
+                             (550, 7, '2020-07-10'),
+                             (551, 1, '2020-02-23'),
+                             (552, 7, '2019-01-25'),
+                             (553, 2, '2021-06-22'),
+                             (554, 9, '2021-01-20'),
+                             (555, 8, '2019-04-16'),
+                             (556, 6, '2021-05-21'),
+                             (557, 7, '2019-07-08'),
+                             (558, 2, '2021-09-14'),
+                             (559, 6, '2021-07-02'),
+                             (560, 8, '2021-10-24'),
+                             (561, 6, '2021-01-03'),
+                             (562, 10, '2019-03-16'),
+                             (563, 4, '2020-07-04'),
+                             (564, 8, '2021-07-17'),
+                             (565, 5, '2020-01-22'),
+                             (566, 1, '2021-05-26'),
+                             (567, 6, '2019-08-18'),
+                             (568, 1, '2021-02-16'),
+                             (569, 5, '2019-11-20'),
+                             (570, 1, '2021-01-19'),
+                             (571, 10, '2021-10-06'),
+                             (572, 1, '2020-07-06'),
+                             (573, 6, '2021-02-01'),
+                             (574, 9, '2021-03-09'),
+                             (575, 4, '2019-02-18'),
+                             (576, 9, '2019-11-16'),
+                             (577, 8, '2019-08-21'),
+                             (578, 10, '2019-06-05'),
+                             (579, 8, '2021-04-26'),
+                             (580, 1, '2021-10-26'),
+                             (581, 6, '2021-04-21'),
+                             (582, 6, '2021-02-13'),
+                             (583, 4, '2019-02-16'),
+                             (584, 9, '2020-06-13'),
+                             (585, 8, '2019-12-28'),
+                             (586, 1, '2021-07-16'),
+                             (587, 5, '2019-12-26'),
+                             (588, 4, '2020-12-21'),
+                             (589, 2, '2021-10-14'),
+                             (590, 5, '2019-09-09'),
+                             (591, 4, '2020-04-19'),
+                             (592, 5, '2019-02-22'),
+                             (593, 4, '2019-12-03'),
+                             (594, 3, '2019-11-16'),
+                             (595, 4, '2019-10-16'),
+                             (596, 6, '2021-05-10'),
+                             (597, 10, '2019-02-02'),
+                             (598, 2, '2021-11-15'),
+                             (599, 8, '2020-05-16'),
+                             (600, 1, '2021-10-23'),
+                             (601, 1, '2020-04-14'),
+                             (602, 5, '2020-02-22'),
+                             (603, 7, '2019-01-08'),
+                             (604, 7, '2020-01-24'),
+                             (605, 9, '2019-12-03'),
+                             (606, 9, '2020-04-17'),
+                             (607, 10, '2019-10-21'),
+                             (608, 9, '2019-10-28'),
+                             (609, 10, '2019-09-12'),
+                             (610, 5, '2020-01-01'),
+                             (611, 10, '2021-10-09'),
+                             (612, 6, '2020-02-01'),
+                             (613, 10, '2021-10-27'),
+                             (614, 4, '2021-07-01'),
+                             (615, 4, '2021-01-19'),
+                             (616, 2, '2021-10-14'),
+                             (617, 3, '2020-09-13'),
+                             (618, 4, '2019-10-12'),
+                             (619, 1, '2019-01-12'),
+                             (620, 2, '2019-07-08'),
+                             (621, 8, '2020-11-02'),
+                             (622, 6, '2020-08-18'),
+                             (623, 6, '2021-07-10'),
+                             (624, 2, '2020-02-10'),
+                             (625, 7, '2021-02-19'),
+                             (626, 7, '2021-12-27'),
+                             (627, 9, '2020-06-16'),
+                             (628, 1, '2020-01-14'),
+                             (629, 9, '2021-05-14'),
+                             (630, 6, '2020-08-17'),
+                             (631, 2, '2021-05-20'),
+                             (632, 3, '2019-12-16'),
+                             (633, 7, '2019-05-13'),
+                             (634, 7, '2021-03-12'),
+                             (635, 7, '2021-10-25'),
+                             (636, 8, '2021-08-07'),
+                             (637, 1, '2020-12-16'),
+                             (638, 1, '2021-08-21'),
+                             (639, 8, '2019-05-22'),
+                             (640, 2, '2021-11-07'),
+                             (641, 6, '2020-05-16'),
+                             (642, 4, '2020-12-04'),
+                             (643, 6, '2020-03-05'),
+                             (644, 5, '2020-10-20'),
+                             (645, 5, '2019-08-07'),
+                             (646, 8, '2021-05-05'),
+                             (647, 10, '2019-08-03'),
+                             (648, 9, '2019-11-08'),
+                             (649, 5, '2019-01-07'),
+                             (650, 8, '2020-09-14'),
+                             (651, 3, '2021-10-01'),
+                             (652, 8, '2021-11-12'),
+                             (653, 9, '2019-03-27'),
+                             (654, 5, '2021-04-14'),
+                             (655, 2, '2021-07-01'),
+                             (656, 1, '2020-07-08'),
+                             (657, 5, '2021-12-15'),
+                             (658, 9, '2021-02-22'),
+                             (659, 7, '2020-12-27'),
+                             (660, 7, '2021-04-17'),
+                             (661, 5, '2020-07-12'),
+                             (662, 4, '2019-10-16'),
+                             (663, 8, '2019-06-11'),
+                             (664, 1, '2020-03-19'),
+                             (665, 2, '2020-03-28'),
+                             (666, 10, '2020-05-13'),
+                             (667, 2, '2020-07-01'),
+                             (668, 3, '2020-03-20'),
+                             (669, 10, '2020-09-22'),
+                             (670, 1, '2020-04-04'),
+                             (671, 10, '2021-02-19'),
+                             (672, 3, '2019-11-14'),
+                             (673, 9, '2019-09-20'),
+                             (674, 4, '2019-07-22'),
+                             (675, 9, '2019-04-20'),
+                             (676, 3, '2021-03-05'),
+                             (677, 8, '2020-07-23'),
+                             (678, 8, '2019-11-03'),
+                             (679, 9, '2020-06-22'),
+                             (680, 4, '2019-06-14'),
+                             (681, 3, '2019-01-26'),
+                             (682, 6, '2020-12-02'),
+                             (683, 4, '2020-10-06'),
+                             (684, 10, '2019-06-25'),
+                             (685, 2, '2020-05-20'),
+                             (686, 3, '2019-04-19'),
+                             (687, 7, '2019-12-22'),
+                             (688, 2, '2020-08-11'),
+                             (689, 10, '2020-03-11'),
+                             (690, 4, '2020-10-09'),
+                             (691, 1, '2020-10-27'),
+                             (692, 1, '2019-04-18'),
+                             (693, 5, '2021-05-24'),
+                             (694, 8, '2021-09-28'),
+                             (695, 8, '2019-11-26'),
+                             (696, 1, '2021-06-26'),
+                             (697, 6, '2019-05-04'),
+                             (698, 1, '2021-02-08'),
+                             (699, 10, '2020-12-03'),
+                             (700, 6, '2019-10-18'),
+                             (701, 3, '2021-07-13'),
+                             (702, 9, '2019-08-21'),
+                             (703, 9, '2021-12-23'),
+                             (704, 1, '2020-07-26'),
+                             (705, 7, '2020-12-02'),
+                             (706, 9, '2019-12-05'),
+                             (707, 10, '2021-06-28'),
+                             (708, 2, '2021-02-01'),
+                             (709, 3, '2020-11-15'),
+                             (710, 1, '2020-09-13'),
+                             (711, 4, '2019-11-13'),
+                             (712, 6, '2021-06-12'),
+                             (713, 9, '2021-09-28'),
+                             (714, 4, '2020-05-26'),
+                             (715, 10, '2019-11-11'),
+                             (716, 6, '2021-05-08'),
+                             (717, 5, '2021-06-11'),
+                             (718, 10, '2019-07-06'),
+                             (719, 8, '2020-10-17'),
+                             (720, 8, '2019-01-27'),
+                             (721, 8, '2019-01-27'),
+                             (722, 10, '2021-08-05'),
+                             (723, 10, '2019-10-01'),
+                             (724, 1, '2019-09-02'),
+                             (725, 9, '2021-09-19'),
+                             (726, 2, '2021-06-01'),
+                             (727, 5, '2020-06-01'),
+                             (728, 1, '2019-05-04'),
+                             (729, 8, '2021-01-08'),
+                             (730, 7, '2019-01-20'),
+                             (731, 6, '2019-10-22'),
+                             (732, 6, '2020-12-18'),
+                             (733, 6, '2020-03-01'),
+                             (734, 1, '2019-02-27'),
+                             (735, 10, '2020-08-17'),
+                             (736, 9, '2020-07-07'),
+                             (737, 10, '2019-02-01'),
+                             (738, 4, '2019-11-24'),
+                             (739, 10, '2019-05-24'),
+                             (740, 2, '2019-04-08'),
+                             (741, 1, '2019-10-26'),
+                             (742, 3, '2021-02-04'),
+                             (743, 8, '2020-08-24'),
+                             (744, 1, '2020-04-18'),
+                             (745, 8, '2019-07-01'),
+                             (746, 1, '2021-09-26'),
+                             (747, 9, '2020-10-01'),
+                             (748, 6, '2019-06-27'),
+                             (749, 7, '2021-11-28'),
+                             (750, 10, '2019-04-18'),
+                             (751, 6, '2021-07-03'),
+                             (752, 2, '2020-11-10'),
+                             (753, 2, '2019-01-24'),
+                             (754, 9, '2021-12-13'),
+                             (755, 6, '2020-12-13'),
+                             (756, 2, '2020-05-11'),
+                             (757, 3, '2019-07-14'),
+                             (758, 3, '2020-04-25'),
+                             (759, 7, '2021-08-04'),
+                             (760, 8, '2019-08-03'),
+                             (761, 1, '2021-06-02'),
+                             (762, 4, '2019-06-16'),
+                             (763, 8, '2019-03-01'),
+                             (764, 1, '2020-01-17'),
+                             (765, 3, '2021-11-27'),
+                             (766, 4, '2020-03-02'),
+                             (767, 2, '2019-06-06'),
+                             (768, 7, '2021-05-22'),
+                             (769, 1, '2020-08-21'),
+                             (770, 3, '2019-09-16'),
+                             (771, 5, '2019-03-12'),
+                             (772, 5, '2020-10-08'),
+                             (773, 1, '2020-03-19'),
+                             (774, 10, '2019-01-25'),
+                             (775, 8, '2021-05-09'),
+                             (776, 4, '2021-08-25'),
+                             (777, 6, '2019-06-28'),
+                             (778, 4, '2020-10-17'),
+                             (779, 9, '2021-03-13'),
+                             (780, 4, '2019-03-20'),
+                             (781, 2, '2020-01-12'),
+                             (782, 2, '2020-08-03'),
+                             (783, 3, '2021-07-24'),
+                             (784, 9, '2020-06-23'),
+                             (785, 9, '2021-11-14'),
+                             (786, 6, '2021-09-09'),
+                             (787, 10, '2021-02-22'),
+                             (788, 5, '2021-08-17'),
+                             (789, 7, '2020-01-12'),
+                             (790, 7, '2021-12-11'),
+                             (791, 8, '2019-09-07'),
+                             (792, 5, '2019-09-27'),
+                             (793, 7, '2021-05-23'),
+                             (794, 4, '2019-02-08'),
+                             (795, 2, '2019-02-08'),
+                             (796, 4, '2019-02-17'),
+                             (797, 4, '2020-08-21'),
+                             (798, 5, '2021-06-17'),
+                             (799, 9, '2021-05-01'),
+                             (800, 1, '2019-08-15'),
+                             (801, 6, '2019-06-12'),
+                             (802, 4, '2020-07-15'),
+                             (803, 2, '2020-10-11'),
+                             (804, 4, '2020-06-12'),
+                             (805, 9, '2020-05-28'),
+                             (806, 6, '2019-06-02'),
+                             (807, 9, '2019-02-04'),
+                             (808, 3, '2021-12-16'),
+                             (809, 3, '2021-09-09'),
+                             (810, 4, '2020-08-07'),
+                             (811, 2, '2019-11-02'),
+                             (812, 7, '2019-03-19'),
+                             (813, 2, '2020-10-05'),
+                             (814, 4, '2020-12-11'),
+                             (815, 8, '2021-09-25'),
+                             (816, 3, '2021-05-14'),
+                             (817, 7, '2021-07-05'),
+                             (818, 7, '2021-11-28'),
+                             (819, 2, '2019-10-05'),
+                             (820, 7, '2019-09-27'),
+                             (821, 6, '2021-03-20'),
+                             (822, 4, '2019-12-03'),
+                             (823, 4, '2021-03-15'),
+                             (824, 6, '2020-09-11'),
+                             (825, 7, '2021-03-22'),
+                             (826, 7, '2019-12-09'),
+                             (827, 7, '2021-06-08'),
+                             (828, 3, '2019-02-18'),
+                             (829, 3, '2019-06-09'),
+                             (830, 3, '2021-01-07'),
+                             (831, 3, '2021-01-24'),
+                             (832, 2, '2019-02-03'),
+                             (833, 10, '2020-02-02'),
+                             (834, 2, '2020-09-08'),
+                             (835, 8, '2020-03-11'),
+                             (836, 2, '2021-05-10'),
+                             (837, 8, '2021-10-11'),
+                             (838, 1, '2021-05-04'),
+                             (839, 8, '2021-05-16'),
+                             (840, 2, '2020-12-15'),
+                             (841, 2, '2020-10-23'),
+                             (842, 9, '2019-06-16'),
+                             (843, 1, '2021-04-23'),
+                             (844, 2, '2020-12-02'),
+                             (845, 7, '2021-06-12'),
+                             (846, 9, '2021-12-03'),
+                             (847, 5, '2020-02-04'),
+                             (848, 5, '2019-08-03'),
+                             (849, 4, '2019-07-15'),
+                             (850, 5, '2020-03-14'),
+                             (851, 6, '2020-01-12'),
+                             (852, 6, '2021-12-07'),
+                             (853, 5, '2020-11-21'),
+                             (854, 1, '2021-06-05'),
+                             (855, 5, '2019-01-13'),
+                             (856, 5, '2019-03-20'),
+                             (857, 6, '2019-04-02'),
+                             (858, 5, '2021-06-16'),
+                             (859, 4, '2020-01-21'),
+                             (860, 6, '2019-02-19'),
+                             (861, 2, '2019-05-09'),
+                             (862, 7, '2021-11-22'),
+                             (863, 6, '2019-09-12'),
+                             (864, 10, '2019-11-16'),
+                             (865, 6, '2021-09-28'),
+                             (866, 9, '2020-10-01'),
+                             (867, 2, '2019-07-19'),
+                             (868, 4, '2019-10-05'),
+                             (869, 4, '2021-08-07'),
+                             (870, 10, '2020-01-13'),
+                             (871, 3, '2021-11-12'),
+                             (872, 10, '2020-10-16'),
+                             (873, 6, '2021-04-19'),
+                             (874, 3, '2021-06-04'),
+                             (875, 4, '2021-08-19'),
+                             (876, 7, '2020-12-14'),
+                             (877, 6, '2020-11-24'),
+                             (878, 6, '2021-08-23'),
+                             (879, 5, '2019-07-07'),
+                             (880, 3, '2021-07-09'),
+                             (881, 10, '2020-06-13'),
+                             (882, 3, '2019-03-18'),
+                             (883, 5, '2020-10-26'),
+                             (884, 6, '2020-02-14'),
+                             (885, 9, '2019-01-07'),
+                             (886, 9, '2021-01-10'),
+                             (887, 8, '2020-08-09'),
+                             (888, 3, '2021-06-05'),
+                             (889, 1, '2020-07-20'),
+                             (890, 5, '2020-08-08'),
+                             (891, 5, '2021-10-16'),
+                             (892, 1, '2021-09-24'),
+                             (893, 3, '2021-10-23'),
+                             (894, 3, '2020-08-07'),
+                             (895, 10, '2020-07-05'),
+                             (896, 4, '2019-03-13'),
+                             (897, 2, '2020-08-28'),
+                             (898, 7, '2020-06-01'),
+                             (899, 9, '2021-06-27'),
+                             (900, 5, '2019-11-24'),
+                             (901, 5, '2019-07-21'),
+                             (902, 9, '2019-09-04'),
+                             (903, 2, '2021-04-28'),
+                             (904, 8, '2021-01-13'),
+                             (905, 3, '2021-02-10'),
+                             (906, 4, '2020-04-28'),
+                             (907, 2, '2019-01-23'),
+                             (908, 8, '2020-04-02'),
+                             (909, 9, '2020-01-05'),
+                             (910, 5, '2019-10-14'),
+                             (911, 2, '2019-11-13'),
+                             (912, 7, '2019-09-03'),
+                             (913, 7, '2019-10-08'),
+                             (914, 6, '2019-07-02'),
+                             (915, 9, '2021-07-07'),
+                             (916, 10, '2019-04-01'),
+                             (917, 2, '2020-04-19'),
+                             (918, 9, '2019-05-06'),
+                             (919, 5, '2020-08-23'),
+                             (920, 9, '2021-03-22'),
+                             (921, 9, '2021-02-10'),
+                             (922, 6, '2021-06-02'),
+                             (923, 1, '2020-08-22'),
+                             (924, 6, '2019-01-03'),
+                             (925, 2, '2020-02-28'),
+                             (926, 6, '2019-11-21'),
+                             (927, 10, '2021-08-02'),
+                             (928, 7, '2021-11-24'),
+                             (929, 2, '2020-07-24'),
+                             (930, 10, '2019-10-15'),
+                             (931, 5, '2020-12-02'),
+                             (932, 8, '2021-08-17'),
+                             (933, 4, '2021-02-14'),
+                             (934, 10, '2020-05-27'),
+                             (935, 2, '2019-08-25'),
+                             (936, 9, '2019-01-05'),
+                             (937, 2, '2021-09-16'),
+                             (938, 5, '2021-06-05'),
+                             (939, 8, '2019-10-24'),
+                             (940, 4, '2020-03-05'),
+                             (941, 8, '2019-07-26'),
+                             (942, 4, '2020-03-03'),
+                             (943, 4, '2019-12-16'),
+                             (944, 10, '2020-10-27'),
+                             (945, 8, '2020-01-03'),
+                             (946, 8, '2020-12-01'),
+                             (947, 6, '2020-02-09'),
+                             (948, 1, '2019-04-02'),
+                             (949, 1, '2019-02-23'),
+                             (950, 6, '2020-06-14'),
+                             (951, 5, '2019-08-10'),
+                             (952, 6, '2020-05-07'),
+                             (953, 9, '2019-04-11'),
+                             (954, 4, '2020-07-18'),
+                             (955, 9, '2020-05-06'),
+                             (956, 4, '2019-12-02'),
+                             (957, 5, '2021-02-17'),
+                             (958, 6, '2019-05-01'),
+                             (959, 6, '2020-10-07'),
+                             (960, 1, '2021-03-23'),
+                             (961, 5, '2019-12-23'),
+                             (962, 5, '2020-01-16'),
+                             (963, 5, '2021-04-26'),
+                             (964, 6, '2020-11-15'),
+                             (965, 10, '2020-08-22'),
+                             (966, 4, '2021-05-21'),
+                             (967, 4, '2021-07-04'),
+                             (968, 9, '2019-10-09'),
+                             (969, 4, '2021-07-14'),
+                             (970, 6, '2020-08-20'),
+                             (971, 2, '2019-08-01'),
+                             (972, 3, '2021-10-14'),
+                             (973, 7, '2019-09-07'),
+                             (974, 1, '2020-03-22'),
+                             (975, 2, '2020-08-21'),
+                             (976, 10, '2021-01-03'),
+                             (977, 2, '2020-06-09'),
+                             (978, 5, '2020-09-17'),
+                             (979, 2, '2021-09-13'),
+                             (980, 7, '2019-04-12'),
+                             (981, 9, '2019-12-04'),
+                             (982, 1, '2020-12-11'),
+                             (983, 3, '2020-05-20'),
+                             (984, 6, '2019-05-07'),
+                             (985, 8, '2021-11-21'),
+                             (986, 9, '2021-03-17'),
+                             (987, 3, '2020-07-24'),
+                             (988, 9, '2019-01-05'),
+                             (989, 9, '2019-09-10'),
+                             (990, 9, '2021-11-21'),
+                             (991, 8, '2019-04-03'),
+                             (992, 8, '2020-07-18'),
+                             (993, 6, '2020-06-09'),
+                             (994, 9, '2021-04-09'),
+                             (995, 6, '2019-03-25'),
+                             (996, 6, '2021-06-26'),
+                             (997, 3, '2019-10-17'),
+                             (998, 10, '2020-03-01'),
+                             (999, 10, '2020-08-18'),
+                             (1000, 1, '2020-06-09'),
+                             (1001, 10, '2021-01-12'),
+                             (1002, 1, '2019-04-23'),
+                             (1003, 5, '2020-08-09'),
+                             (1004, 3, '2019-09-28'),
+                             (1005, 2, '2019-10-14'),
+                             (1006, 3, '2019-01-13'),
+                             (1007, 1, '2020-02-28'),
+                             (1008, 9, '2019-03-14'),
+                             (1009, 10, '2020-04-09'),
+                             (1010, 7, '2019-08-18'),
+                             (1011, 3, '2021-11-03'),
+                             (1012, 2, '2020-11-17'),
+                             (1013, 2, '2020-05-06'),
+                             (1014, 7, '2020-11-27'),
+                             (1015, 10, '2021-11-04'),
+                             (1016, 9, '2020-01-20'),
+                             (1017, 4, '2019-12-18'),
+                             (1018, 6, '2019-12-07'),
+                             (1019, 9, '2021-09-10'),
+                             (1020, 2, '2019-08-25'),
+                             (1021, 10, '2021-01-15'),
+                             (1022, 5, '2021-01-14'),
+                             (1023, 1, '2020-03-19'),
+                             (1024, 8, '2021-12-14'),
+                             (1025, 9, '2021-06-13'),
+                             (1026, 8, '2019-11-08'),
+                             (1027, 7, '2021-09-25'),
+                             (1028, 8, '2021-12-13'),
+                             (1029, 7, '2019-11-28'),
+                             (1030, 2, '2019-12-02'),
+                             (1031, 10, '2020-01-06'),
+                             (1032, 8, '2021-02-25'),
+                             (1033, 5, '2019-11-06'),
+                             (1034, 1, '2020-05-24'),
+                             (1035, 7, '2020-07-05'),
+                             (1036, 6, '2021-01-12'),
+                             (1037, 4, '2019-01-15'),
+                             (1038, 9, '2019-01-05'),
+                             (1039, 7, '2021-02-16'),
+                             (1040, 5, '2020-08-04'),
+                             (1041, 9, '2019-03-16'),
+                             (1042, 2, '2019-03-09'),
+                             (1043, 8, '2020-10-19'),
+                             (1044, 8, '2019-12-24'),
+                             (1045, 9, '2019-12-26'),
+                             (1046, 8, '2021-11-17'),
+                             (1047, 1, '2019-06-06'),
+                             (1048, 4, '2021-05-11'),
+                             (1049, 4, '2021-04-26'),
+                             (1050, 1, '2021-11-24'),
+                             (1051, 7, '2020-01-13'),
+                             (1052, 5, '2021-05-26'),
+                             (1053, 8, '2020-07-13'),
+                             (1054, 4, '2019-02-26'),
+                             (1055, 10, '2021-09-07'),
+                             (1056, 10, '2021-10-03'),
+                             (1057, 8, '2021-08-02'),
+                             (1058, 6, '2020-06-03'),
+                             (1059, 9, '2020-06-13'),
+                             (1060, 9, '2021-05-04'),
+                             (1061, 10, '2020-12-11'),
+                             (1062, 1, '2021-08-23'),
+                             (1063, 10, '2020-01-28'),
+                             (1064, 8, '2020-04-27'),
+                             (1065, 7, '2020-08-11'),
+                             (1066, 10, '2020-02-05'),
+                             (1067, 9, '2020-02-12'),
+                             (1068, 7, '2021-10-08'),
+                             (1069, 6, '2021-03-11'),
+                             (1070, 6, '2019-09-12'),
+                             (1071, 10, '2021-10-13'),
+                             (1072, 7, '2019-10-01'),
+                             (1073, 6, '2020-06-03'),
+                             (1074, 3, '2019-12-20'),
+                             (1075, 10, '2019-12-25'),
+                             (1076, 10, '2019-01-22'),
+                             (1077, 5, '2019-09-20'),
+                             (1078, 2, '2020-07-14'),
+                             (1079, 6, '2021-02-06'),
+                             (1080, 1, '2019-10-16'),
+                             (1081, 3, '2019-07-02'),
+                             (1082, 1, '2020-04-21'),
+                             (1083, 9, '2019-02-24'),
+                             (1084, 10, '2021-12-24'),
+                             (1085, 7, '2019-08-07'),
+                             (1086, 6, '2021-02-26'),
+                             (1087, 9, '2021-02-20'),
+                             (1088, 8, '2021-02-03'),
+                             (1089, 6, '2020-02-16'),
+                             (1090, 6, '2020-09-20'),
+                             (1091, 2, '2019-06-01'),
+                             (1092, 5, '2021-03-04'),
+                             (1093, 6, '2020-02-17'),
+                             (1094, 8, '2020-01-12'),
+                             (1095, 1, '2019-02-26'),
+                             (1096, 9, '2021-07-26'),
+                             (1097, 10, '2020-02-02'),
+                             (1098, 10, '2021-05-06'),
+                             (1099, 4, '2019-09-25'),
+                             (1100, 9, '2021-04-15'),
+                             (1101, 9, '2019-09-01'),
+                             (1102, 9, '2019-07-23'),
+                             (1103, 5, '2019-06-15'),
+                             (1104, 6, '2020-07-14'),
+                             (1105, 8, '2019-03-01'),
+                             (1106, 8, '2020-03-03'),
+                             (1107, 2, '2020-03-26'),
+                             (1108, 9, '2021-05-27'),
+                             (1109, 1, '2019-01-04'),
+                             (1110, 4, '2020-03-06'),
+                             (1111, 2, '2020-06-08'),
+                             (1112, 8, '2019-06-08'),
+                             (1113, 3, '2020-12-10'),
+                             (1114, 9, '2019-03-17'),
+                             (1115, 8, '2019-05-06'),
+                             (1116, 3, '2019-02-16'),
+                             (1117, 7, '2020-05-12'),
+                             (1118, 10, '2021-03-08'),
+                             (1119, 6, '2020-12-03'),
+                             (1120, 1, '2019-12-09'),
+                             (1121, 10, '2020-09-10'),
+                             (1122, 6, '2021-02-16'),
+                             (1123, 6, '2021-10-04'),
+                             (1124, 10, '2019-11-05'),
+                             (1125, 6, '2019-10-24'),
+                             (1126, 9, '2019-02-18'),
+                             (1127, 7, '2019-07-14'),
+                             (1128, 10, '2019-08-17'),
+                             (1129, 3, '2020-03-26'),
+                             (1130, 3, '2021-06-24'),
+                             (1131, 5, '2019-08-02'),
+                             (1132, 7, '2019-01-07'),
+                             (1133, 2, '2021-11-23'),
+                             (1134, 4, '2019-11-04'),
+                             (1135, 2, '2021-03-15'),
+                             (1136, 10, '2020-07-19'),
+                             (1137, 7, '2019-03-02'),
+                             (1138, 4, '2020-05-28'),
+                             (1139, 7, '2019-01-04'),
+                             (1140, 5, '2021-03-16'),
+                             (1141, 10, '2021-11-13'),
+                             (1142, 2, '2020-06-05'),
+                             (1143, 1, '2021-05-13'),
+                             (1144, 10, '2021-08-19'),
+                             (1145, 2, '2019-05-06'),
+                             (1146, 10, '2021-03-02'),
+                             (1147, 1, '2020-10-03'),
+                             (1148, 3, '2019-07-12'),
+                             (1149, 1, '2020-04-27'),
+                             (1150, 4, '2019-02-20'),
+                             (1151, 3, '2019-08-23'),
+                             (1152, 10, '2019-12-21'),
+                             (1153, 9, '2021-12-01'),
+                             (1154, 8, '2019-06-26'),
+                             (1155, 9, '2020-01-25'),
+                             (1156, 1, '2019-03-05'),
+                             (1157, 1, '2020-05-19'),
+                             (1158, 3, '2021-12-23'),
+                             (1159, 7, '2020-01-17'),
+                             (1160, 4, '2020-05-06'),
+                             (1161, 1, '2020-12-10'),
+                             (1162, 5, '2019-07-26'),
+                             (1163, 10, '2021-07-13'),
+                             (1164, 8, '2019-10-06'),
+                             (1165, 9, '2019-02-12'),
+                             (1166, 5, '2019-02-10'),
+                             (1167, 5, '2021-08-11'),
+                             (1168, 4, '2020-05-10'),
+                             (1169, 5, '2021-09-20'),
+                             (1170, 2, '2019-05-14'),
+                             (1171, 4, '2021-11-07'),
+                             (1172, 9, '2020-03-04'),
+                             (1173, 1, '2020-08-06'),
+                             (1174, 2, '2020-01-12'),
+                             (1175, 7, '2019-08-11'),
+                             (1176, 4, '2020-05-06'),
+                             (1177, 7, '2019-11-14'),
+                             (1178, 4, '2019-10-19'),
+                             (1179, 2, '2019-09-04'),
+                             (1180, 8, '2019-04-10'),
+                             (1181, 5, '2019-03-24'),
+                             (1182, 10, '2019-02-08'),
+                             (1183, 5, '2020-08-19'),
+                             (1184, 8, '2021-02-12'),
+                             (1185, 5, '2019-06-08'),
+                             (1186, 5, '2019-09-28'),
+                             (1187, 7, '2019-08-19'),
+                             (1188, 10, '2019-05-26'),
+                             (1189, 2, '2021-09-20'),
+                             (1190, 2, '2019-12-11'),
+                             (1191, 2, '2019-11-19'),
+                             (1192, 10, '2020-04-20'),
+                             (1193, 8, '2020-06-02'),
+                             (1194, 7, '2021-06-12'),
+                             (1195, 4, '2020-03-03'),
+                             (1196, 9, '2021-01-04'),
+                             (1197, 10, '2020-04-12'),
+                             (1198, 10, '2021-09-25'),
+                             (1199, 8, '2020-03-27'),
+                             (1200, 9, '2019-09-26'),
+                             (1201, 10, '2019-05-06'),
+                             (1202, 6, '2019-04-01'),
+                             (1203, 9, '2020-04-21'),
+                             (1204, 3, '2020-11-19'),
+                             (1205, 9, '2021-10-11'),
+                             (1206, 5, '2019-01-28'),
+                             (1207, 10, '2019-06-19'),
+                             (1208, 1, '2021-08-11'),
+                             (1209, 8, '2020-11-13'),
+                             (1210, 7, '2021-06-01'),
+                             (1211, 5, '2019-07-20'),
+                             (1212, 4, '2020-11-27'),
+                             (1213, 3, '2021-12-28'),
+                             (1214, 7, '2020-10-17'),
+                             (1215, 3, '2019-10-09'),
+                             (1216, 10, '2021-02-21'),
+                             (1217, 2, '2019-11-25'),
+                             (1218, 7, '2021-08-12'),
+                             (1219, 3, '2021-12-22'),
+                             (1220, 2, '2020-06-22'),
+                             (1221, 5, '2021-07-15'),
+                             (1222, 7, '2021-03-28'),
+                             (1223, 4, '2021-05-10'),
+                             (1224, 7, '2021-10-16'),
+                             (1225, 7, '2021-07-11'),
+                             (1226, 5, '2021-11-09'),
+                             (1227, 3, '2021-03-28'),
+                             (1228, 10, '2019-02-06'),
+                             (1229, 5, '2020-05-02'),
+                             (1230, 9, '2019-04-19'),
+                             (1231, 8, '2021-05-22'),
+                             (1232, 4, '2021-08-12'),
+                             (1233, 6, '2020-03-11'),
+                             (1234, 10, '2020-10-06'),
+                             (1235, 4, '2021-05-01'),
+                             (1236, 4, '2020-02-01'),
+                             (1237, 5, '2021-08-07'),
+                             (1238, 4, '2020-10-18'),
+                             (1239, 3, '2020-12-18'),
+                             (1240, 3, '2020-07-17'),
+                             (1241, 2, '2019-10-14'),
+                             (1242, 8, '2020-03-15'),
+                             (1243, 9, '2021-03-13'),
+                             (1244, 4, '2019-06-22'),
+                             (1245, 1, '2020-02-07'),
+                             (1246, 1, '2020-12-25'),
+                             (1247, 3, '2021-10-17'),
+                             (1248, 9, '2020-12-24'),
+                             (1249, 5, '2021-12-23'),
+                             (1250, 6, '2021-04-23'),
+                             (1251, 9, '2021-08-15'),
+                             (1252, 3, '2020-05-22'),
+                             (1253, 4, '2021-04-28'),
+                             (1254, 6, '2021-06-05'),
+                             (1255, 3, '2020-03-22'),
+                             (1256, 6, '2019-08-23'),
+                             (1257, 6, '2019-08-20'),
+                             (1258, 6, '2019-01-16'),
+                             (1259, 1, '2020-08-04'),
+                             (1260, 2, '2020-11-08'),
+                             (1261, 5, '2020-10-13'),
+                             (1262, 4, '2020-11-21'),
+                             (1263, 10, '2020-12-28'),
+                             (1264, 8, '2020-02-15'),
+                             (1265, 2, '2021-02-25'),
+                             (1266, 2, '2020-07-24'),
+                             (1267, 8, '2020-01-20'),
+                             (1268, 1, '2021-02-21'),
+                             (1269, 3, '2021-07-09'),
+                             (1270, 6, '2021-07-04'),
+                             (1271, 3, '2020-05-04'),
+                             (1272, 1, '2019-07-25'),
+                             (1273, 1, '2019-05-16'),
+                             (1274, 3, '2021-09-20'),
+                             (1275, 10, '2021-02-23'),
+                             (1276, 1, '2021-06-18'),
+                             (1277, 3, '2021-02-16'),
+                             (1278, 4, '2021-12-16'),
+                             (1279, 10, '2019-01-25'),
+                             (1280, 6, '2021-11-17'),
+                             (1281, 9, '2019-04-09'),
+                             (1282, 10, '2021-12-19'),
+                             (1283, 5, '2020-01-05'),
+                             (1284, 8, '2020-01-27'),
+                             (1285, 3, '2019-08-04'),
+                             (1286, 6, '2020-07-15'),
+                             (1287, 6, '2020-05-13'),
+                             (1288, 7, '2020-01-24'),
+                             (1289, 5, '2019-01-04'),
+                             (1290, 7, '2020-02-05'),
+                             (1291, 9, '2020-11-22'),
+                             (1292, 8, '2020-03-12'),
+                             (1293, 6, '2020-03-01'),
+                             (1294, 3, '2021-05-03'),
+                             (1295, 5, '2020-02-13'),
+                             (1296, 3, '2019-07-12'),
+                             (1297, 5, '2021-11-22'),
+                             (1298, 5, '2021-04-24'),
+                             (1299, 7, '2019-11-18'),
+                             (1300, 2, '2021-12-23'),
+                             (1301, 5, '2019-08-17'),
+                             (1302, 5, '2019-07-27'),
+                             (1303, 6, '2021-07-11'),
+                             (1304, 6, '2021-12-18'),
+                             (1305, 5, '2019-01-14'),
+                             (1306, 1, '2021-04-16'),
+                             (1307, 6, '2020-09-22'),
+                             (1308, 8, '2019-02-19'),
+                             (1309, 10, '2021-06-13'),
+                             (1310, 2, '2020-10-01'),
+                             (1311, 1, '2020-12-07'),
+                             (1312, 7, '2019-09-01'),
+                             (1313, 7, '2020-06-25'),
+                             (1314, 8, '2019-11-07'),
+                             (1315, 10, '2019-02-08'),
+                             (1316, 6, '2020-06-13'),
+                             (1317, 5, '2021-12-15'),
+                             (1318, 6, '2021-06-22'),
+                             (1319, 8, '2021-02-22'),
+                             (1320, 6, '2019-06-26'),
+                             (1321, 3, '2019-05-25'),
+                             (1322, 4, '2021-12-14'),
+                             (1323, 6, '2020-05-11'),
+                             (1324, 1, '2021-08-20'),
+                             (1325, 2, '2021-02-15'),
+                             (1326, 1, '2019-12-05'),
+                             (1327, 8, '2021-08-19'),
+                             (1328, 6, '2020-01-03'),
+                             (1329, 5, '2021-02-28'),
+                             (1330, 4, '2021-07-21'),
+                             (1331, 10, '2019-06-06'),
+                             (1332, 7, '2019-12-10'),
+                             (1333, 5, '2019-04-26'),
+                             (1334, 3, '2021-08-15'),
+                             (1335, 7, '2019-06-20'),
+                             (1336, 9, '2019-09-26'),
+                             (1337, 1, '2019-12-05'),
+                             (1338, 8, '2021-08-09'),
+                             (1339, 10, '2019-12-21'),
+                             (1340, 2, '2019-06-08'),
+                             (1341, 9, '2021-08-14'),
+                             (1342, 8, '2019-05-23'),
+                             (1343, 4, '2021-03-28'),
+                             (1344, 10, '2019-03-23'),
+                             (1345, 10, '2019-11-18'),
+                             (1346, 8, '2020-05-15'),
+                             (1347, 3, '2019-08-01'),
+                             (1348, 9, '2020-01-10'),
+                             (1349, 8, '2019-08-13'),
+                             (1350, 5, '2019-11-02'),
+                             (1351, 1, '2019-03-09'),
+                             (1352, 8, '2021-12-09'),
+                             (1353, 3, '2019-12-19'),
+                             (1354, 4, '2020-09-26'),
+                             (1355, 10, '2021-06-17'),
+                             (1356, 2, '2019-04-27'),
+                             (1357, 8, '2019-05-04'),
+                             (1358, 3, '2021-02-01'),
+                             (1359, 7, '2021-07-19'),
+                             (1360, 4, '2021-06-15'),
+                             (1361, 4, '2020-09-01'),
+                             (1362, 2, '2019-02-10'),
+                             (1363, 10, '2020-10-04'),
+                             (1364, 5, '2020-01-13'),
+                             (1365, 9, '2020-10-23'),
+                             (1366, 1, '2021-08-21'),
+                             (1367, 10, '2019-03-13'),
+                             (1368, 6, '2019-02-18'),
+                             (1369, 9, '2019-11-13'),
+                             (1370, 7, '2019-11-16'),
+                             (1371, 7, '2020-08-05'),
+                             (1372, 7, '2021-09-12'),
+                             (1373, 6, '2019-05-09'),
+                             (1374, 3, '2019-01-01'),
+                             (1375, 1, '2019-05-13'),
+                             (1376, 5, '2021-07-26'),
+                             (1377, 9, '2020-07-22'),
+                             (1378, 7, '2019-12-03'),
+                             (1379, 8, '2019-12-05'),
+                             (1380, 7, '2019-01-25'),
+                             (1381, 7, '2019-04-03'),
+                             (1382, 4, '2020-07-02'),
+                             (1383, 8, '2020-02-25'),
+                             (1384, 7, '2021-10-10'),
+                             (1385, 10, '2020-08-16'),
+                             (1386, 6, '2021-07-14'),
+                             (1387, 3, '2021-11-12'),
+                             (1388, 4, '2020-06-08'),
+                             (1389, 10, '2020-10-14'),
+                             (1390, 1, '2020-12-07'),
+                             (1391, 1, '2019-04-03'),
+                             (1392, 3, '2020-07-09'),
+                             (1393, 8, '2019-01-23'),
+                             (1394, 6, '2020-02-09'),
+                             (1395, 2, '2021-02-23'),
+                             (1396, 8, '2019-10-12'),
+                             (1397, 1, '2020-08-07'),
+                             (1398, 8, '2020-02-22'),
+                             (1399, 7, '2019-08-18'),
+                             (1400, 4, '2020-11-11'),
+                             (1401, 9, '2021-01-09'),
+                             (1402, 9, '2021-02-12'),
+                             (1403, 6, '2021-12-06'),
+                             (1404, 3, '2019-03-27'),
+                             (1405, 8, '2021-06-14'),
+                             (1406, 6, '2021-02-21'),
+                             (1407, 8, '2021-09-27'),
+                             (1408, 4, '2021-07-08'),
+                             (1409, 10, '2020-03-19'),
+                             (1410, 6, '2019-03-18'),
+                             (1411, 1, '2019-07-11'),
+                             (1412, 4, '2021-07-04'),
+                             (1413, 2, '2021-02-12'),
+                             (1414, 3, '2019-02-12'),
+                             (1415, 2, '2019-10-18'),
+                             (1416, 6, '2021-08-16'),
+                             (1417, 1, '2021-04-03'),
+                             (1418, 7, '2019-05-16'),
+                             (1419, 9, '2021-10-20'),
+                             (1420, 5, '2021-02-21'),
+                             (1421, 8, '2019-10-25'),
+                             (1422, 8, '2020-04-10'),
+                             (1423, 9, '2019-09-13'),
+                             (1424, 7, '2019-01-27'),
+                             (1425, 3, '2020-01-22'),
+                             (1426, 4, '2020-09-13'),
+                             (1427, 6, '2020-12-28'),
+                             (1428, 5, '2021-09-16'),
+                             (1429, 1, '2019-03-03'),
+                             (1430, 7, '2021-03-01'),
+                             (1431, 9, '2019-01-06'),
+                             (1432, 8, '2019-11-07'),
+                             (1433, 5, '2019-02-21'),
+                             (1434, 5, '2021-11-04'),
+                             (1435, 5, '2021-03-16'),
+                             (1436, 6, '2020-10-23'),
+                             (1437, 9, '2021-01-19'),
+                             (1438, 9, '2020-06-15'),
+                             (1439, 1, '2021-08-03'),
+                             (1440, 8, '2020-04-26'),
+                             (1441, 10, '2020-11-04'),
+                             (1442, 4, '2020-12-22'),
+                             (1443, 10, '2019-04-11'),
+                             (1444, 6, '2019-04-03'),
+                             (1445, 8, '2021-03-20'),
+                             (1446, 10, '2019-09-27'),
+                             (1447, 8, '2021-02-21'),
+                             (1448, 9, '2021-06-28'),
+                             (1449, 8, '2020-06-20'),
+                             (1450, 4, '2020-10-15'),
+                             (1451, 3, '2019-11-20'),
+                             (1452, 4, '2020-04-05'),
+                             (1453, 10, '2019-07-08'),
+                             (1454, 6, '2019-01-09'),
+                             (1455, 3, '2021-09-01'),
+                             (1456, 1, '2021-12-18'),
+                             (1457, 3, '2019-01-15'),
+                             (1458, 5, '2020-04-26'),
+                             (1459, 7, '2019-09-14'),
+                             (1460, 3, '2020-05-24'),
+                             (1461, 5, '2019-06-15'),
+                             (1462, 1, '2019-04-15'),
+                             (1463, 1, '2020-03-26'),
+                             (1464, 9, '2020-02-06'),
+                             (1465, 9, '2020-11-16'),
+                             (1466, 6, '2021-09-09'),
+                             (1467, 3, '2019-03-01'),
+                             (1468, 8, '2020-02-07'),
+                             (1469, 3, '2019-10-16'),
+                             (1470, 5, '2021-10-23'),
+                             (1471, 10, '2021-07-14'),
+                             (1472, 7, '2019-01-07'),
+                             (1473, 4, '2019-09-12'),
+                             (1474, 5, '2020-05-22'),
+                             (1475, 10, '2019-05-07'),
+                             (1476, 4, '2019-08-16'),
+                             (1477, 10, '2019-04-24'),
+                             (1478, 2, '2019-11-28'),
+                             (1479, 1, '2020-12-07'),
+                             (1480, 1, '2020-04-18'),
+                             (1481, 7, '2021-11-14'),
+                             (1482, 8, '2019-11-03'),
+                             (1483, 7, '2019-02-20'),
+                             (1484, 10, '2021-12-22'),
+                             (1485, 4, '2020-05-10'),
+                             (1486, 8, '2020-10-12'),
+                             (1487, 4, '2020-11-17'),
+                             (1488, 4, '2019-09-23'),
+                             (1489, 7, '2019-03-26'),
+                             (1490, 2, '2019-02-25'),
+                             (1491, 7, '2020-03-20'),
+                             (1492, 3, '2020-09-14'),
+                             (1493, 10, '2021-12-22'),
+                             (1494, 6, '2020-10-27'),
+                             (1495, 10, '2021-09-10'),
+                             (1496, 4, '2020-08-12'),
+                             (1497, 1, '2020-08-19'),
+                             (1498, 1, '2019-01-16'),
+                             (1499, 7, '2020-12-12'),
+                             (1500, 7, '2020-10-16'),
+                             (1501, 7, '2019-11-20'),
+                             (1502, 1, '2020-01-06'),
+                             (1503, 4, '2019-09-07'),
+                             (1504, 4, '2020-09-16'),
+                             (1505, 6, '2019-06-06'),
+                             (1506, 1, '2019-05-09'),
+                             (1507, 5, '2020-06-25'),
+                             (1508, 8, '2021-11-03'),
+                             (1509, 7, '2020-05-28'),
+                             (1510, 6, '2021-11-15'),
+                             (1511, 3, '2020-06-12'),
+                             (1512, 10, '2020-07-25'),
+                             (1513, 3, '2019-05-17'),
+                             (1514, 6, '2021-01-24'),
+                             (1515, 6, '2021-03-18'),
+                             (1516, 8, '2020-03-19'),
+                             (1517, 9, '2020-01-25'),
+                             (1518, 2, '2019-03-15'),
+                             (1519, 9, '2019-01-25'),
+                             (1520, 7, '2021-02-02'),
+                             (1521, 8, '2020-05-07'),
+                             (1522, 9, '2019-03-13'),
+                             (1523, 8, '2021-02-09'),
+                             (1524, 1, '2019-11-08'),
+                             (1525, 2, '2021-04-11'),
+                             (1526, 6, '2020-12-14'),
+                             (1527, 8, '2019-04-24'),
+                             (1528, 6, '2020-10-22'),
+                             (1529, 1, '2020-01-26'),
+                             (1530, 7, '2019-02-07'),
+                             (1531, 5, '2019-11-19'),
+                             (1532, 5, '2020-06-20'),
+                             (1533, 5, '2020-04-25'),
+                             (1534, 7, '2019-07-19'),
+                             (1535, 5, '2019-01-14'),
+                             (1536, 6, '2019-07-21'),
+                             (1537, 9, '2020-07-19'),
+                             (1538, 4, '2019-07-25'),
+                             (1539, 8, '2019-03-28'),
+                             (1540, 1, '2019-02-21'),
+                             (1541, 9, '2021-11-16'),
+                             (1542, 2, '2019-05-01'),
+                             (1543, 4, '2019-11-22'),
+                             (1544, 2, '2021-01-28'),
+                             (1545, 5, '2019-08-07'),
+                             (1546, 2, '2019-04-14'),
+                             (1547, 2, '2019-11-20'),
+                             (1548, 1, '2020-04-06'),
+                             (1549, 5, '2019-05-06'),
+                             (1550, 10, '2021-04-09'),
+                             (1551, 9, '2021-06-11'),
+                             (1552, 5, '2021-12-04'),
+                             (1553, 4, '2021-10-22'),
+                             (1554, 5, '2019-04-09'),
+                             (1555, 10, '2019-07-06'),
+                             (1556, 1, '2021-02-19'),
+                             (1557, 3, '2019-04-26'),
+                             (1558, 9, '2019-08-06'),
+                             (1559, 5, '2019-05-16'),
+                             (1560, 8, '2020-01-07'),
+                             (1561, 5, '2021-04-01'),
+                             (1562, 3, '2020-05-18'),
+                             (1563, 8, '2020-11-03'),
+                             (1564, 9, '2021-07-11'),
+                             (1565, 7, '2021-08-17'),
+                             (1566, 3, '2019-11-18'),
+                             (1567, 8, '2020-02-04'),
+                             (1568, 9, '2020-02-26'),
+                             (1569, 9, '2019-06-14'),
+                             (1570, 6, '2020-07-11'),
+                             (1571, 4, '2020-05-06'),
+                             (1572, 9, '2019-11-10'),
+                             (1573, 4, '2019-03-05'),
+                             (1574, 3, '2019-07-17'),
+                             (1575, 5, '2019-04-05'),
+                             (1576, 9, '2020-12-13'),
+                             (1577, 8, '2020-05-13'),
+                             (1578, 9, '2021-12-04'),
+                             (1579, 8, '2020-07-06'),
+                             (1580, 4, '2021-12-14'),
+                             (1581, 4, '2019-12-24'),
+                             (1582, 2, '2019-09-23'),
+                             (1583, 1, '2020-10-24'),
+                             (1584, 1, '2020-07-10'),
+                             (1585, 3, '2019-09-07'),
+                             (1586, 6, '2021-01-24'),
+                             (1587, 3, '2021-10-26'),
+                             (1588, 10, '2021-02-26'),
+                             (1589, 8, '2019-04-25'),
+                             (1590, 4, '2021-10-22'),
+                             (1591, 8, '2020-02-06'),
+                             (1592, 7, '2019-01-22'),
+                             (1593, 4, '2020-02-21'),
+                             (1594, 9, '2021-05-05'),
+                             (1595, 4, '2019-12-12'),
+                             (1596, 9, '2020-07-12'),
+                             (1597, 4, '2021-03-21'),
+                             (1598, 7, '2021-12-09'),
+                             (1599, 10, '2020-03-27'),
+                             (1600, 1, '2020-02-26'),
+                             (1601, 4, '2020-06-25'),
+                             (1602, 4, '2020-12-02'),
+                             (1603, 10, '2021-12-01'),
+                             (1604, 8, '2019-01-23'),
+                             (1605, 9, '2021-03-10'),
+                             (1606, 10, '2019-10-16'),
+                             (1607, 5, '2020-07-17'),
+                             (1608, 5, '2021-01-15'),
+                             (1609, 10, '2021-10-15'),
+                             (1610, 1, '2021-12-21'),
+                             (1611, 9, '2020-08-12'),
+                             (1612, 1, '2019-02-14'),
+                             (1613, 2, '2020-05-19'),
+                             (1614, 8, '2021-10-09'),
+                             (1615, 2, '2019-02-17'),
+                             (1616, 3, '2019-10-08'),
+                             (1617, 8, '2019-02-06'),
+                             (1618, 6, '2019-05-10'),
+                             (1619, 2, '2019-07-06'),
+                             (1620, 8, '2019-09-14'),
+                             (1621, 2, '2021-01-25'),
+                             (1622, 5, '2021-06-18'),
+                             (1623, 8, '2021-10-12'),
+                             (1624, 1, '2019-12-22'),
+                             (1625, 3, '2020-01-27'),
+                             (1626, 8, '2019-05-23'),
+                             (1627, 5, '2021-11-01'),
+                             (1628, 5, '2019-03-11'),
+                             (1629, 4, '2020-02-25'),
+                             (1630, 1, '2021-05-12'),
+                             (1631, 3, '2019-12-12'),
+                             (1632, 6, '2019-01-21'),
+                             (1633, 3, '2020-03-17'),
+                             (1634, 4, '2019-05-25'),
+                             (1635, 4, '2021-08-16'),
+                             (1636, 7, '2019-05-02'),
+                             (1637, 5, '2020-03-18'),
+                             (1638, 8, '2020-10-20'),
+                             (1639, 2, '2019-03-23'),
+                             (1640, 6, '2020-02-04'),
+                             (1641, 6, '2020-07-01'),
+                             (1642, 3, '2021-01-22'),
+                             (1643, 2, '2020-03-26'),
+                             (1644, 9, '2020-01-13'),
+                             (1645, 7, '2021-06-08'),
+                             (1646, 8, '2021-02-02'),
+                             (1647, 2, '2019-01-12'),
+                             (1648, 6, '2021-02-07'),
+                             (1649, 10, '2019-08-21'),
+                             (1650, 3, '2020-05-11'),
+                             (1651, 7, '2019-11-26'),
+                             (1652, 2, '2020-05-19'),
+                             (1653, 4, '2021-01-09'),
+                             (1654, 3, '2020-03-10'),
+                             (1655, 5, '2020-03-05'),
+                             (1656, 4, '2020-08-03'),
+                             (1657, 10, '2021-09-24'),
+                             (1658, 5, '2019-07-10'),
+                             (1659, 7, '2019-04-04'),
+                             (1660, 1, '2021-01-17'),
+                             (1661, 9, '2019-01-02'),
+                             (1662, 6, '2019-06-19'),
+                             (1663, 7, '2021-07-24'),
+                             (1664, 8, '2019-08-07'),
+                             (1665, 4, '2019-04-14'),
+                             (1666, 5, '2019-06-12'),
+                             (1667, 4, '2019-08-21'),
+                             (1668, 2, '2019-04-06'),
+                             (1669, 5, '2021-03-25'),
+                             (1670, 9, '2019-08-24'),
+                             (1671, 1, '2020-08-08'),
+                             (1672, 5, '2020-03-21'),
+                             (1673, 4, '2019-01-11'),
+                             (1674, 6, '2021-09-07'),
+                             (1675, 10, '2019-06-28'),
+                             (1676, 7, '2020-01-01'),
+                             (1677, 1, '2019-06-08'),
+                             (1678, 7, '2020-11-04'),
+                             (1679, 2, '2021-09-03'),
+                             (1680, 5, '2019-03-28'),
+                             (1681, 9, '2019-03-23'),
+                             (1682, 2, '2020-05-28'),
+                             (1683, 7, '2021-09-22'),
+                             (1684, 6, '2020-04-02'),
+                             (1685, 5, '2021-07-11'),
+                             (1686, 1, '2020-08-12'),
+                             (1687, 10, '2019-02-16'),
+                             (1688, 9, '2019-01-20'),
+                             (1689, 9, '2019-05-16'),
+                             (1690, 4, '2019-03-04'),
+                             (1691, 6, '2021-06-02'),
+                             (1692, 3, '2019-06-27'),
+                             (1693, 5, '2019-06-25'),
+                             (1694, 10, '2019-02-03'),
+                             (1695, 5, '2020-04-17'),
+                             (1696, 5, '2020-08-10'),
+                             (1697, 8, '2020-03-23'),
+                             (1698, 1, '2021-09-02'),
+                             (1699, 8, '2019-01-25'),
+                             (1700, 4, '2020-03-24'),
+                             (1701, 4, '2020-02-18'),
+                             (1702, 5, '2019-12-12'),
+                             (1703, 9, '2020-08-03'),
+                             (1704, 9, '2021-05-01'),
+                             (1705, 4, '2021-04-27'),
+                             (1706, 2, '2021-07-19'),
+                             (1707, 5, '2019-04-26'),
+                             (1708, 1, '2019-09-16'),
+                             (1709, 6, '2019-09-24'),
+                             (1710, 5, '2020-08-24'),
+                             (1711, 8, '2020-03-16'),
+                             (1712, 6, '2021-10-02'),
+                             (1713, 4, '2019-05-11'),
+                             (1714, 8, '2021-04-04'),
+                             (1715, 6, '2019-06-10'),
+                             (1716, 4, '2020-02-14'),
+                             (1717, 3, '2020-05-20'),
+                             (1718, 3, '2021-01-27'),
+                             (1719, 10, '2020-04-09'),
+                             (1720, 5, '2019-02-19'),
+                             (1721, 4, '2021-08-24'),
+                             (1722, 1, '2020-05-18'),
+                             (1723, 2, '2019-07-24'),
+                             (1724, 5, '2019-03-27'),
+                             (1725, 4, '2019-12-19'),
+                             (1726, 10, '2020-07-17'),
+                             (1727, 6, '2020-07-22'),
+                             (1728, 7, '2020-01-26'),
+                             (1729, 4, '2019-01-02'),
+                             (1730, 6, '2020-04-16'),
+                             (1731, 10, '2020-09-11'),
+                             (1732, 9, '2019-04-03'),
+                             (1733, 1, '2021-05-15'),
+                             (1734, 3, '2019-11-14'),
+                             (1735, 10, '2020-01-27'),
+                             (1736, 5, '2021-01-03'),
+                             (1737, 1, '2021-12-20'),
+                             (1738, 5, '2019-08-14'),
+                             (1739, 7, '2021-09-22'),
+                             (1740, 8, '2020-04-14'),
+                             (1741, 3, '2021-12-10'),
+                             (1742, 10, '2020-01-06'),
+                             (1743, 9, '2019-07-22'),
+                             (1744, 2, '2021-11-26'),
+                             (1745, 5, '2020-04-14'),
+                             (1746, 2, '2020-05-15'),
+                             (1747, 3, '2021-05-25'),
+                             (1748, 9, '2020-10-28'),
+                             (1749, 9, '2021-02-18'),
+                             (1750, 10, '2019-09-01'),
+                             (1751, 6, '2021-03-07'),
+                             (1752, 5, '2021-04-12'),
+                             (1753, 5, '2021-04-24'),
+                             (1754, 2, '2021-07-04'),
+                             (1755, 7, '2019-01-08'),
+                             (1756, 5, '2021-12-23'),
+                             (1757, 8, '2019-12-19'),
+                             (1758, 7, '2020-03-28'),
+                             (1759, 8, '2021-12-09'),
+                             (1760, 9, '2020-01-23'),
+                             (1761, 9, '2021-09-12'),
+                             (1762, 6, '2021-03-15'),
+                             (1763, 3, '2019-01-05'),
+                             (1764, 4, '2019-03-28'),
+                             (1765, 6, '2019-09-15'),
+                             (1766, 3, '2020-01-15'),
+                             (1767, 1, '2019-05-05'),
+                             (1768, 9, '2020-07-19'),
+                             (1769, 7, '2020-03-26'),
+                             (1770, 1, '2020-02-11'),
+                             (1771, 7, '2021-05-01'),
+                             (1772, 3, '2020-03-20'),
+                             (1773, 7, '2019-11-15'),
+                             (1774, 4, '2021-03-06'),
+                             (1775, 5, '2021-06-03'),
+                             (1776, 6, '2019-09-07'),
+                             (1777, 6, '2019-04-03'),
+                             (1778, 9, '2019-05-01'),
+                             (1779, 2, '2019-09-19'),
+                             (1780, 3, '2019-02-11'),
+                             (1781, 2, '2020-11-20'),
+                             (1782, 4, '2020-03-05'),
+                             (1783, 4, '2019-11-16'),
+                             (1784, 7, '2019-07-01'),
+                             (1785, 4, '2021-05-11'),
+                             (1786, 9, '2020-04-18'),
+                             (1787, 8, '2020-04-26'),
+                             (1788, 1, '2020-12-04'),
+                             (1789, 4, '2020-12-23'),
+                             (1790, 8, '2021-01-03'),
+                             (1791, 6, '2019-01-08'),
+                             (1792, 3, '2019-05-13'),
+                             (1793, 5, '2020-02-13'),
+                             (1794, 6, '2019-03-16'),
+                             (1795, 9, '2021-03-21'),
+                             (1796, 1, '2020-06-10'),
+                             (1797, 4, '2021-11-11'),
+                             (1798, 9, '2020-01-16'),
+                             (1799, 10, '2020-03-26'),
+                             (1800, 4, '2021-07-16'),
+                             (1801, 3, '2020-07-25'),
+                             (1802, 6, '2021-09-04'),
+                             (1803, 2, '2019-09-10'),
+                             (1804, 10, '2020-12-09'),
+                             (1805, 6, '2021-05-11'),
+                             (1806, 2, '2019-12-23'),
+                             (1807, 6, '2021-04-07'),
+                             (1808, 3, '2019-03-26'),
+                             (1809, 9, '2020-02-25'),
+                             (1810, 3, '2020-04-21'),
+                             (1811, 2, '2021-04-07'),
+                             (1812, 7, '2021-11-08'),
+                             (1813, 5, '2021-06-22'),
+                             (1814, 8, '2019-08-06'),
+                             (1815, 5, '2020-10-10'),
+                             (1816, 8, '2020-09-18'),
+                             (1817, 4, '2019-05-09'),
+                             (1818, 6, '2021-12-20'),
+                             (1819, 10, '2021-06-05'),
+                             (1820, 8, '2021-03-16'),
+                             (1821, 9, '2019-07-15'),
+                             (1822, 3, '2021-10-01'),
+                             (1823, 1, '2019-08-11'),
+                             (1824, 7, '2019-12-16'),
+                             (1825, 8, '2019-06-14'),
+                             (1826, 9, '2019-05-12'),
+                             (1827, 9, '2020-01-28'),
+                             (1828, 2, '2019-09-21'),
+                             (1829, 9, '2021-10-09'),
+                             (1830, 9, '2021-01-20'),
+                             (1831, 9, '2019-10-19'),
+                             (1832, 8, '2021-02-19'),
+                             (1833, 5, '2021-09-14'),
+                             (1834, 8, '2019-04-23'),
+                             (1835, 1, '2019-06-06'),
+                             (1836, 1, '2019-07-02'),
+                             (1837, 2, '2019-08-01'),
+                             (1838, 5, '2019-01-24'),
+                             (1839, 8, '2021-07-11'),
+                             (1840, 4, '2021-10-07'),
+                             (1841, 5, '2021-06-20'),
+                             (1842, 7, '2020-08-27'),
+                             (1843, 5, '2019-05-19'),
+                             (1844, 9, '2020-07-02'),
+                             (1845, 1, '2021-08-18'),
+                             (1846, 9, '2021-09-11'),
+                             (1847, 2, '2020-09-26'),
+                             (1848, 2, '2021-01-12'),
+                             (1849, 5, '2021-02-01'),
+                             (1850, 4, '2019-10-09'),
+                             (1851, 7, '2021-01-24'),
+                             (1852, 4, '2021-08-11'),
+                             (1853, 10, '2021-02-16'),
+                             (1854, 4, '2021-02-21'),
+                             (1855, 9, '2021-02-12'),
+                             (1856, 4, '2019-10-22'),
+                             (1857, 8, '2021-04-06'),
+                             (1858, 3, '2020-09-25'),
+                             (1859, 4, '2020-10-17'),
+                             (1860, 2, '2020-05-01'),
+                             (1861, 6, '2019-05-22'),
+                             (1862, 10, '2021-08-24'),
+                             (1863, 3, '2020-11-04'),
+                             (1864, 3, '2021-07-16'),
+                             (1865, 8, '2019-09-13'),
+                             (1866, 1, '2020-02-26'),
+                             (1867, 6, '2021-03-18'),
+                             (1868, 9, '2021-07-12'),
+                             (1869, 8, '2020-02-15'),
+                             (1870, 2, '2019-02-26'),
+                             (1871, 10, '2019-12-12'),
+                             (1872, 1, '2019-09-08'),
+                             (1873, 5, '2019-10-20'),
+                             (1874, 10, '2019-01-12'),
+                             (1875, 10, '2021-09-27'),
+                             (1876, 5, '2021-09-21'),
+                             (1877, 4, '2021-07-23'),
+                             (1878, 3, '2019-08-03'),
+                             (1879, 6, '2020-08-16'),
+                             (1880, 2, '2019-10-04'),
+                             (1881, 6, '2019-12-21'),
+                             (1882, 9, '2021-10-23'),
+                             (1883, 3, '2019-02-18'),
+                             (1884, 3, '2019-02-11'),
+                             (1885, 9, '2019-08-14'),
+                             (1886, 3, '2019-05-07'),
+                             (1887, 4, '2019-02-28'),
+                             (1888, 7, '2021-02-04'),
+                             (1889, 4, '2019-09-22'),
+                             (1890, 2, '2020-04-13'),
+                             (1891, 5, '2019-09-13'),
+                             (1892, 1, '2020-10-01'),
+                             (1893, 10, '2020-01-14'),
+                             (1894, 2, '2020-03-18'),
+                             (1895, 8, '2020-02-19'),
+                             (1896, 2, '2020-08-13'),
+                             (1897, 9, '2020-01-24'),
+                             (1898, 4, '2020-11-11'),
+                             (1899, 4, '2020-10-25'),
+                             (1900, 9, '2021-01-12'),
+                             (1901, 5, '2020-10-03'),
+                             (1902, 7, '2021-11-06'),
+                             (1903, 2, '2019-08-19'),
+                             (1904, 4, '2021-06-17'),
+                             (1905, 5, '2019-02-02'),
+                             (1906, 1, '2019-07-01'),
+                             (1907, 3, '2019-01-12'),
+                             (1908, 3, '2019-08-02'),
+                             (1909, 3, '2019-06-23'),
+                             (1910, 2, '2019-11-23'),
+                             (1911, 7, '2020-02-26'),
+                             (1912, 8, '2019-02-09'),
+                             (1913, 7, '2020-12-23'),
+                             (1914, 9, '2021-05-08'),
+                             (1915, 9, '2021-12-06'),
+                             (1916, 10, '2020-04-09'),
+                             (1917, 2, '2021-07-03'),
+                             (1918, 8, '2020-05-16'),
+                             (1919, 9, '2020-03-27'),
+                             (1920, 10, '2019-09-16'),
+                             (1921, 5, '2020-03-05'),
+                             (1922, 5, '2019-07-27'),
+                             (1923, 6, '2021-10-26'),
+                             (1924, 2, '2019-04-27'),
+                             (1925, 9, '2019-04-05'),
+                             (1926, 9, '2021-12-14'),
+                             (1927, 4, '2019-03-04'),
+                             (1928, 9, '2019-01-02'),
+                             (1929, 8, '2021-04-04'),
+                             (1930, 4, '2020-05-27'),
+                             (1931, 7, '2021-10-10'),
+                             (1932, 10, '2020-11-13'),
+                             (1933, 1, '2021-03-13'),
+                             (1934, 4, '2020-08-15'),
+                             (1935, 3, '2020-08-02'),
+                             (1936, 5, '2021-04-15'),
+                             (1937, 7, '2020-02-27'),
+                             (1938, 9, '2020-06-20'),
+                             (1939, 9, '2021-03-03'),
+                             (1940, 9, '2019-02-15'),
+                             (1941, 4, '2020-01-19'),
+                             (1942, 2, '2020-10-02'),
+                             (1943, 7, '2021-10-02'),
+                             (1944, 1, '2021-04-24'),
+                             (1945, 9, '2019-12-07'),
+                             (1946, 10, '2021-07-04'),
+                             (1947, 4, '2019-05-24'),
+                             (1948, 7, '2020-02-24'),
+                             (1949, 7, '2019-01-17'),
+                             (1950, 8, '2020-07-10'),
+                             (1951, 7, '2019-09-03'),
+                             (1952, 9, '2020-01-12'),
+                             (1953, 4, '2021-12-23'),
+                             (1954, 6, '2020-02-01'),
+                             (1955, 4, '2021-11-05'),
+                             (1956, 7, '2020-07-19'),
+                             (1957, 3, '2019-07-22'),
+                             (1958, 3, '2019-02-05'),
+                             (1959, 1, '2019-09-20'),
+                             (1960, 2, '2019-03-20'),
+                             (1961, 8, '2020-08-01'),
+                             (1962, 3, '2019-09-23'),
+                             (1963, 8, '2021-06-07'),
+                             (1964, 6, '2019-01-14'),
+                             (1965, 6, '2019-04-28'),
+                             (1966, 6, '2021-04-25'),
+                             (1967, 7, '2020-01-18'),
+                             (1968, 5, '2020-04-28'),
+                             (1969, 1, '2019-05-06'),
+                             (1970, 9, '2021-03-06'),
+                             (1971, 4, '2020-05-06'),
+                             (1972, 6, '2019-10-11'),
+                             (1973, 8, '2019-08-15'),
+                             (1974, 8, '2019-04-05'),
+                             (1975, 10, '2021-08-24'),
+                             (1976, 10, '2020-10-13'),
+                             (1977, 3, '2021-06-23'),
+                             (1978, 9, '2021-12-06'),
+                             (1979, 2, '2020-11-24'),
+                             (1980, 6, '2020-03-21'),
+                             (1981, 4, '2020-09-13'),
+                             (1982, 7, '2021-07-10'),
+                             (1983, 1, '2019-11-26'),
+                             (1984, 8, '2020-12-23'),
+                             (1985, 4, '2020-06-13'),
+                             (1986, 3, '2019-07-10'),
+                             (1987, 10, '2020-02-23'),
+                             (1988, 5, '2020-09-13'),
+                             (1989, 2, '2019-08-27'),
+                             (1990, 9, '2019-06-28'),
+                             (1991, 7, '2020-12-01'),
+                             (1992, 4, '2020-01-02'),
+                             (1993, 7, '2021-04-03'),
+                             (1994, 2, '2021-02-26'),
+                             (1995, 10, '2019-12-25'),
+                             (1996, 2, '2021-12-10'),
+                             (1997, 5, '2020-05-16'),
+                             (1998, 4, '2020-08-01'),
+                             (1999, 9, '2020-12-14'),
+                             (2000, 7, '2020-03-23'),
+                             (2001, 5, '2021-03-21'),
+                             (2002, 10, '2021-03-08'),
+                             (2003, 7, '2020-08-19'),
+                             (2004, 3, '2020-11-26'),
+                             (2005, 6, '2019-07-14'),
+                             (2006, 5, '2021-06-07'),
+                             (2007, 8, '2021-12-14'),
+                             (2008, 3, '2020-02-10'),
+                             (2009, 4, '2021-08-01'),
+                             (2010, 2, '2020-07-10'),
+                             (2011, 8, '2021-09-23'),
+                             (2012, 1, '2020-12-20'),
+                             (2013, 7, '2020-02-05'),
+                             (2014, 1, '2021-10-21'),
+                             (2015, 5, '2020-11-26'),
+                             (2016, 6, '2021-02-04'),
+                             (2017, 8, '2019-11-22'),
+                             (2018, 8, '2020-07-11'),
+                             (2019, 3, '2020-08-21'),
+                             (2020, 7, '2020-09-25'),
+                             (2021, 8, '2019-12-14'),
+                             (2022, 9, '2021-11-14'),
+                             (2023, 4, '2020-01-04'),
+                             (2024, 1, '2021-11-06'),
+                             (2025, 8, '2019-04-21'),
+                             (2026, 6, '2020-11-06'),
+                             (2027, 9, '2019-11-02'),
+                             (2028, 4, '2019-08-22'),
+                             (2029, 2, '2020-12-05'),
+                             (2030, 10, '2020-01-07'),
+                             (2031, 3, '2021-06-07'),
+                             (2032, 6, '2021-01-25'),
+                             (2033, 2, '2021-02-14'),
+                             (2034, 8, '2019-04-28'),
+                             (2035, 2, '2019-11-10'),
+                             (2036, 7, '2019-07-09'),
+                             (2037, 2, '2021-05-10'),
+                             (2038, 5, '2020-04-03'),
+                             (2039, 10, '2019-03-23'),
+                             (2040, 10, '2019-05-02'),
+                             (2041, 9, '2021-11-24'),
+                             (2042, 8, '2019-05-16'),
+                             (2043, 2, '2019-07-27'),
+                             (2044, 7, '2021-10-03'),
+                             (2045, 9, '2019-08-04'),
+                             (2046, 6, '2021-07-11'),
+                             (2047, 10, '2021-11-22'),
+                             (2048, 9, '2021-06-23'),
+                             (2049, 10, '2021-10-04'),
+                             (2050, 1, '2020-01-07'),
+                             (2051, 9, '2019-11-17'),
+                             (2052, 10, '2020-01-21'),
+                             (2053, 10, '2021-08-11'),
+                             (2054, 7, '2020-08-07'),
+                             (2055, 9, '2019-12-09'),
+                             (2056, 9, '2021-03-17'),
+                             (2057, 10, '2020-11-12'),
+                             (2058, 9, '2021-09-22'),
+                             (2059, 9, '2020-11-20'),
+                             (2060, 4, '2019-11-21'),
+                             (2061, 7, '2021-05-15'),
+                             (2062, 5, '2020-01-11'),
+                             (2063, 9, '2020-10-24'),
+                             (2064, 7, '2019-04-01'),
+                             (2065, 5, '2020-10-14'),
+                             (2066, 9, '2021-07-06'),
+                             (2067, 6, '2020-02-12'),
+                             (2068, 1, '2021-01-09'),
+                             (2069, 3, '2020-05-07'),
+                             (2070, 7, '2021-09-04'),
+                             (2071, 10, '2019-12-14'),
+                             (2072, 5, '2020-03-13'),
+                             (2073, 8, '2021-01-23'),
+                             (2074, 9, '2020-02-14'),
+                             (2075, 5, '2019-08-03'),
+                             (2076, 1, '2020-09-10'),
+                             (2077, 10, '2019-01-10'),
+                             (2078, 6, '2021-05-26'),
+                             (2079, 6, '2020-07-06'),
+                             (2080, 7, '2019-02-18'),
+                             (2081, 6, '2021-08-22'),
+                             (2082, 3, '2021-11-19'),
+                             (2083, 7, '2019-01-17'),
+                             (2084, 2, '2020-06-27'),
+                             (2085, 10, '2021-04-19'),
+                             (2086, 3, '2019-04-17'),
+                             (2087, 8, '2019-06-26'),
+                             (2088, 2, '2019-03-23'),
+                             (2089, 4, '2019-05-14'),
+                             (2090, 1, '2021-05-07'),
+                             (2091, 9, '2021-03-18'),
+                             (2092, 2, '2019-05-14'),
+                             (2093, 5, '2020-12-25'),
+                             (2094, 10, '2020-07-18'),
+                             (2095, 1, '2019-09-27'),
+                             (2096, 2, '2020-01-19'),
+                             (2097, 4, '2020-03-12'),
+                             (2098, 5, '2021-09-17'),
+                             (2099, 9, '2019-06-23'),
+                             (2100, 10, '2021-09-19'),
+                             (2101, 3, '2020-11-17'),
+                             (2102, 4, '2021-12-03'),
+                             (2103, 8, '2021-12-22'),
+                             (2104, 3, '2021-05-20'),
+                             (2105, 6, '2019-01-23'),
+                             (2106, 9, '2019-04-24'),
+                             (2107, 5, '2020-08-21'),
+                             (2108, 6, '2021-08-15'),
+                             (2109, 10, '2019-08-13'),
+                             (2110, 5, '2020-05-22'),
+                             (2111, 7, '2020-11-28'),
+                             (2112, 3, '2019-09-03'),
+                             (2113, 1, '2020-09-04'),
+                             (2114, 8, '2019-12-26'),
+                             (2115, 5, '2020-02-02'),
+                             (2116, 5, '2021-05-19'),
+                             (2117, 6, '2021-02-03'),
+                             (2118, 9, '2020-08-19'),
+                             (2119, 4, '2020-10-03'),
+                             (2120, 2, '2020-07-08'),
+                             (2121, 6, '2021-10-15'),
+                             (2122, 9, '2019-08-13'),
+                             (2123, 9, '2020-11-28'),
+                             (2124, 2, '2019-10-13'),
+                             (2125, 8, '2020-10-11'),
+                             (2126, 1, '2021-07-27'),
+                             (2127, 8, '2019-02-15'),
+                             (2128, 10, '2019-07-03'),
+                             (2129, 4, '2020-03-17'),
+                             (2130, 5, '2020-06-14'),
+                             (2131, 3, '2019-09-17'),
+                             (2132, 7, '2020-10-21'),
+                             (2133, 10, '2020-08-25'),
+                             (2134, 1, '2020-04-07'),
+                             (2135, 6, '2021-07-28'),
+                             (2136, 10, '2020-05-14'),
+                             (2137, 3, '2020-03-17'),
+                             (2138, 7, '2019-08-14'),
+                             (2139, 3, '2020-03-15'),
+                             (2140, 7, '2019-05-10'),
+                             (2141, 4, '2020-06-24'),
+                             (2142, 7, '2021-05-10'),
+                             (2143, 8, '2020-08-13'),
+                             (2144, 4, '2020-06-10'),
+                             (2145, 7, '2019-10-25'),
+                             (2146, 4, '2019-11-02'),
+                             (2147, 4, '2019-09-19'),
+                             (2148, 3, '2021-09-06'),
+                             (2149, 4, '2019-12-19'),
+                             (2150, 2, '2020-06-28'),
+                             (2151, 5, '2019-02-13'),
+                             (2152, 9, '2020-08-22'),
+                             (2153, 8, '2019-07-24'),
+                             (2154, 7, '2021-10-17'),
+                             (2155, 6, '2021-06-23'),
+                             (2156, 6, '2021-03-27'),
+                             (2157, 1, '2019-10-26'),
+                             (2158, 6, '2020-10-09'),
+                             (2159, 7, '2019-02-14'),
+                             (2160, 7, '2020-10-09'),
+                             (2161, 3, '2019-10-17'),
+                             (2162, 5, '2021-07-10'),
+                             (2163, 4, '2020-02-23'),
+                             (2164, 3, '2021-10-23'),
+                             (2165, 5, '2021-06-06'),
+                             (2166, 10, '2020-06-05'),
+                             (2167, 5, '2020-03-17'),
+                             (2168, 10, '2020-04-09'),
+                             (2169, 2, '2021-02-06'),
+                             (2170, 3, '2019-07-10'),
+                             (2171, 6, '2019-02-27'),
+                             (2172, 1, '2019-02-05'),
+                             (2173, 3, '2021-04-21'),
+                             (2174, 8, '2020-09-01'),
+                             (2175, 8, '2020-06-10'),
+                             (2176, 8, '2021-04-22'),
+                             (2177, 7, '2019-02-20'),
+                             (2178, 7, '2020-10-19'),
+                             (2179, 2, '2021-10-07'),
+                             (2180, 5, '2020-04-21'),
+                             (2181, 7, '2020-06-18'),
+                             (2182, 5, '2020-03-16'),
+                             (2183, 5, '2020-01-19'),
+                             (2184, 10, '2019-10-28'),
+                             (2185, 4, '2019-05-14'),
+                             (2186, 7, '2019-01-07'),
+                             (2187, 7, '2021-05-08'),
+                             (2188, 8, '2019-06-26'),
+                             (2189, 1, '2020-04-09'),
+                             (2190, 6, '2020-08-24'),
+                             (2191, 1, '2019-09-17'),
+                             (2192, 7, '2020-09-02'),
+                             (2193, 7, '2019-03-24'),
+                             (2194, 8, '2020-08-10'),
+                             (2195, 8, '2020-02-12'),
+                             (2196, 10, '2020-04-24'),
+                             (2197, 3, '2020-06-03'),
+                             (2198, 9, '2020-05-08'),
+                             (2199, 2, '2020-11-11'),
+                             (2200, 9, '2020-03-26'),
+                             (2201, 10, '2020-01-05'),
+                             (2202, 4, '2020-08-23'),
+                             (2203, 1, '2019-04-28'),
+                             (2204, 3, '2019-03-16'),
+                             (2205, 8, '2019-10-12'),
+                             (2206, 2, '2019-07-23'),
+                             (2207, 8, '2019-07-13'),
+                             (2208, 2, '2020-11-01'),
+                             (2209, 6, '2021-04-26'),
+                             (2210, 1, '2019-01-03'),
+                             (2211, 7, '2020-04-17'),
+                             (2212, 2, '2020-07-24'),
+                             (2213, 8, '2020-10-22'),
+                             (2214, 1, '2020-12-26'),
+                             (2215, 4, '2021-11-13'),
+                             (2216, 10, '2020-01-23'),
+                             (2217, 5, '2020-04-24'),
+                             (2218, 2, '2020-06-09'),
+                             (2219, 8, '2021-02-03'),
+                             (2220, 4, '2021-02-20'),
+                             (2221, 10, '2020-08-18'),
+                             (2222, 2, '2019-09-03'),
+                             (2223, 9, '2021-12-19'),
+                             (2224, 7, '2019-01-24'),
+                             (2225, 9, '2020-06-26'),
+                             (2226, 8, '2020-03-27'),
+                             (2227, 2, '2019-07-25'),
+                             (2228, 1, '2020-08-15'),
+                             (2229, 3, '2019-03-26'),
+                             (2230, 2, '2019-05-01'),
+                             (2231, 4, '2021-02-19'),
+                             (2232, 4, '2019-05-03'),
+                             (2233, 10, '2020-05-04'),
+                             (2234, 7, '2019-11-15'),
+                             (2235, 3, '2021-07-26'),
+                             (2236, 7, '2021-10-11'),
+                             (2237, 6, '2020-04-12'),
+                             (2238, 9, '2021-06-14'),
+                             (2239, 7, '2021-08-21'),
+                             (2240, 3, '2020-07-10'),
+                             (2241, 4, '2019-01-16'),
+                             (2242, 7, '2019-02-23'),
+                             (2243, 1, '2020-05-03'),
+                             (2244, 1, '2020-05-14'),
+                             (2245, 10, '2021-04-10'),
+                             (2246, 2, '2019-04-20'),
+                             (2247, 3, '2020-06-03'),
+                             (2248, 2, '2021-05-14'),
+                             (2249, 7, '2019-10-07'),
+                             (2250, 10, '2021-08-18'),
+                             (2251, 5, '2019-10-17'),
+                             (2252, 5, '2020-07-03'),
+                             (2253, 10, '2021-09-10'),
+                             (2254, 9, '2021-07-25'),
+                             (2255, 4, '2021-01-26'),
+                             (2256, 4, '2020-10-20'),
+                             (2257, 7, '2019-01-05'),
+                             (2258, 2, '2019-04-21'),
+                             (2259, 2, '2019-09-05'),
+                             (2260, 6, '2019-08-27'),
+                             (2261, 1, '2020-11-25'),
+                             (2262, 9, '2020-01-23'),
+                             (2263, 10, '2020-04-19'),
+                             (2264, 6, '2020-04-02'),
+                             (2265, 3, '2021-03-15'),
+                             (2266, 4, '2019-06-11'),
+                             (2267, 5, '2020-05-04'),
+                             (2268, 7, '2019-12-22'),
+                             (2269, 5, '2019-07-02'),
+                             (2270, 3, '2019-01-25'),
+                             (2271, 7, '2020-06-04'),
+                             (2272, 7, '2020-01-17'),
+                             (2273, 3, '2020-08-11'),
+                             (2274, 5, '2019-06-17'),
+                             (2275, 1, '2021-10-13'),
+                             (2276, 6, '2021-09-01'),
+                             (2277, 9, '2019-05-01'),
+                             (2278, 3, '2020-09-20'),
+                             (2279, 8, '2019-01-05'),
+                             (2280, 3, '2021-09-04'),
+                             (2281, 3, '2021-09-18'),
+                             (2282, 2, '2021-09-20'),
+                             (2283, 4, '2020-04-25'),
+                             (2284, 7, '2020-02-02'),
+                             (2285, 2, '2019-12-10'),
+                             (2286, 8, '2019-02-23'),
+                             (2287, 5, '2019-05-23'),
+                             (2288, 7, '2019-01-10'),
+                             (2289, 3, '2019-03-17'),
+                             (2290, 4, '2021-01-09'),
+                             (2291, 6, '2019-12-06'),
+                             (2292, 1, '2020-09-02'),
+                             (2293, 8, '2019-07-20'),
+                             (2294, 10, '2020-02-14'),
+                             (2295, 6, '2021-08-05'),
+                             (2296, 2, '2020-02-17'),
+                             (2297, 3, '2019-11-18'),
+                             (2298, 7, '2020-06-07'),
+                             (2299, 3, '2020-09-10'),
+                             (2300, 8, '2019-04-24'),
+                             (2301, 7, '2019-03-27'),
+                             (2302, 2, '2021-03-13'),
+                             (2303, 3, '2021-01-09'),
+                             (2304, 9, '2020-06-22'),
+                             (2305, 3, '2019-04-08'),
+                             (2306, 1, '2020-01-14'),
+                             (2307, 2, '2019-11-19'),
+                             (2308, 4, '2019-12-08'),
+                             (2309, 8, '2021-06-18'),
+                             (2310, 7, '2019-05-28'),
+                             (2311, 2, '2021-09-22'),
+                             (2312, 9, '2019-01-24'),
+                             (2313, 4, '2020-01-05'),
+                             (2314, 5, '2019-04-25'),
+                             (2315, 9, '2021-11-19'),
+                             (2316, 8, '2020-01-06'),
+                             (2317, 7, '2019-07-09'),
+                             (2318, 6, '2019-11-26'),
+                             (2319, 3, '2021-03-19'),
+                             (2320, 3, '2019-10-15'),
+                             (2321, 5, '2020-02-18'),
+                             (2322, 7, '2020-01-21'),
+                             (2323, 6, '2019-01-10'),
+                             (2324, 9, '2019-02-13'),
+                             (2325, 2, '2019-07-11'),
+                             (2326, 1, '2020-03-22'),
+                             (2327, 8, '2019-01-02'),
+                             (2328, 9, '2020-12-02'),
+                             (2329, 6, '2019-05-18'),
+                             (2330, 2, '2021-07-21'),
+                             (2331, 1, '2020-12-21'),
+                             (2332, 2, '2020-12-12'),
+                             (2333, 4, '2019-05-27'),
+                             (2334, 3, '2019-06-24'),
+                             (2335, 10, '2019-01-21'),
+                             (2336, 8, '2020-01-16'),
+                             (2337, 6, '2020-01-10'),
+                             (2338, 7, '2019-03-09'),
+                             (2339, 10, '2021-04-14'),
+                             (2340, 5, '2020-11-16'),
+                             (2341, 9, '2021-05-08'),
+                             (2342, 2, '2021-08-24'),
+                             (2343, 1, '2019-09-18'),
+                             (2344, 4, '2019-12-14'),
+                             (2345, 8, '2021-04-02'),
+                             (2346, 7, '2021-11-01'),
+                             (2347, 7, '2020-03-05'),
+                             (2348, 7, '2020-08-23'),
+                             (2349, 8, '2021-06-12'),
+                             (2350, 2, '2021-03-20'),
+                             (2351, 4, '2021-02-01'),
+                             (2352, 6, '2020-12-01'),
+                             (2353, 8, '2019-12-19'),
+                             (2354, 10, '2021-09-08'),
+                             (2355, 4, '2019-04-21'),
+                             (2356, 7, '2019-12-28'),
+                             (2357, 8, '2020-03-07'),
+                             (2358, 8, '2020-06-14'),
+                             (2359, 5, '2020-12-03'),
+                             (2360, 8, '2019-01-15'),
+                             (2361, 2, '2021-07-26'),
+                             (2362, 10, '2020-03-07'),
+                             (2363, 4, '2019-07-02'),
+                             (2364, 2, '2020-11-10'),
+                             (2365, 2, '2020-06-28'),
+                             (2366, 3, '2019-07-27'),
+                             (2367, 6, '2019-12-14'),
+                             (2368, 1, '2020-03-25'),
+                             (2369, 1, '2020-06-07'),
+                             (2370, 2, '2021-08-12'),
+                             (2371, 5, '2020-04-04'),
+                             (2372, 3, '2021-10-12'),
+                             (2373, 9, '2020-08-23'),
+                             (2374, 7, '2019-06-07'),
+                             (2375, 3, '2021-03-21'),
+                             (2376, 3, '2019-01-26'),
+                             (2377, 6, '2020-10-08'),
+                             (2378, 10, '2020-03-12'),
+                             (2379, 8, '2020-07-15'),
+                             (2380, 10, '2021-03-10'),
+                             (2381, 1, '2021-06-16'),
+                             (2382, 1, '2021-10-03'),
+                             (2383, 4, '2021-12-03'),
+                             (2384, 10, '2021-12-20'),
+                             (2385, 2, '2020-01-20'),
+                             (2386, 4, '2019-01-10'),
+                             (2387, 2, '2019-09-03'),
+                             (2388, 3, '2019-04-04'),
+                             (2389, 9, '2019-10-07'),
+                             (2390, 10, '2019-02-21'),
+                             (2391, 2, '2021-03-03'),
+                             (2392, 4, '2019-10-28'),
+                             (2393, 6, '2020-12-21'),
+                             (2394, 8, '2019-07-04'),
+                             (2395, 7, '2020-12-10'),
+                             (2396, 10, '2019-12-12'),
+                             (2397, 10, '2021-06-24'),
+                             (2398, 2, '2020-03-17'),
+                             (2399, 10, '2021-08-01'),
+                             (2400, 4, '2020-06-17'),
+                             (2401, 7, '2021-03-21'),
+                             (2402, 4, '2019-01-22'),
+                             (2403, 2, '2020-10-18'),
+                             (2404, 8, '2021-04-02'),
+                             (2405, 5, '2020-09-16'),
+                             (2406, 7, '2019-06-12'),
+                             (2407, 10, '2021-05-23'),
+                             (2408, 9, '2021-01-06'),
+                             (2409, 7, '2020-01-06'),
+                             (2410, 1, '2019-09-14'),
+                             (2411, 6, '2019-10-26'),
+                             (2412, 10, '2020-06-21'),
+                             (2413, 10, '2019-07-22'),
+                             (2414, 7, '2021-12-22'),
+                             (2415, 2, '2019-09-19'),
+                             (2416, 5, '2021-07-07'),
+                             (2417, 1, '2019-04-25'),
+                             (2418, 8, '2021-08-09'),
+                             (2419, 7, '2019-04-17'),
+                             (2420, 9, '2021-04-28'),
+                             (2421, 8, '2021-09-13'),
+                             (2422, 1, '2019-11-21'),
+                             (2423, 6, '2021-03-08'),
+                             (2424, 10, '2021-09-10'),
+                             (2425, 1, '2021-08-02'),
+                             (2426, 4, '2021-09-07'),
+                             (2427, 2, '2019-11-13'),
+                             (2428, 5, '2019-12-24'),
+                             (2429, 5, '2020-07-03'),
+                             (2430, 7, '2020-06-03'),
+                             (2431, 10, '2020-08-24'),
+                             (2432, 4, '2021-08-15'),
+                             (2433, 3, '2020-09-13'),
+                             (2434, 10, '2020-06-12'),
+                             (2435, 3, '2021-11-14'),
+                             (2436, 6, '2021-09-16'),
+                             (2437, 4, '2020-07-24'),
+                             (2438, 9, '2020-06-19'),
+                             (2439, 9, '2020-12-19'),
+                             (2440, 8, '2020-11-01'),
+                             (2441, 1, '2020-11-22'),
+                             (2442, 1, '2019-02-11'),
+                             (2443, 9, '2020-03-23'),
+                             (2444, 3, '2020-10-19'),
+                             (2445, 8, '2020-04-19'),
+                             (2446, 6, '2020-05-02'),
+                             (2447, 5, '2021-07-14'),
+                             (2448, 2, '2021-10-04'),
+                             (2449, 9, '2019-09-18'),
+                             (2450, 5, '2019-09-18'),
+                             (2451, 10, '2021-04-18'),
+                             (2452, 4, '2020-02-27'),
+                             (2453, 5, '2020-06-18'),
+                             (2454, 5, '2019-12-16'),
+                             (2455, 10, '2019-07-01'),
+                             (2456, 6, '2019-04-13'),
+                             (2457, 3, '2019-06-11'),
+                             (2458, 5, '2019-12-12'),
+                             (2459, 7, '2020-04-11'),
+                             (2460, 7, '2019-11-17'),
+                             (2461, 9, '2021-08-27'),
+                             (2462, 2, '2019-11-19'),
+                             (2463, 10, '2019-02-27'),
+                             (2464, 9, '2020-05-06'),
+                             (2465, 4, '2019-05-08'),
+                             (2466, 1, '2019-11-07'),
+                             (2467, 3, '2021-08-17'),
+                             (2468, 10, '2021-08-27'),
+                             (2469, 5, '2019-04-19'),
+                             (2470, 10, '2019-05-01'),
+                             (2471, 2, '2019-08-22'),
+                             (2472, 8, '2020-08-10'),
+                             (2473, 4, '2020-06-16'),
+                             (2474, 4, '2019-06-22'),
+                             (2475, 5, '2020-06-10'),
+                             (2476, 9, '2021-08-13'),
+                             (2477, 2, '2021-10-12'),
+                             (2478, 3, '2021-04-19'),
+                             (2479, 5, '2021-10-08'),
+                             (2480, 4, '2020-09-08'),
+                             (2481, 5, '2021-06-24'),
+                             (2482, 1, '2021-12-24'),
+                             (2483, 8, '2021-07-20'),
+                             (2484, 10, '2019-02-15'),
+                             (2485, 6, '2020-03-22'),
+                             (2486, 6, '2019-08-16'),
+                             (2487, 6, '2019-09-23'),
+                             (2488, 8, '2020-09-04'),
+                             (2489, 10, '2019-08-24'),
+                             (2490, 5, '2020-12-12'),
+                             (2491, 7, '2021-05-03'),
+                             (2492, 9, '2021-04-10'),
+                             (2493, 2, '2020-04-08'),
+                             (2494, 1, '2019-08-04'),
+                             (2495, 8, '2020-07-10'),
+                             (2496, 4, '2019-02-26'),
+                             (2497, 10, '2019-10-08'),
+                             (2498, 9, '2020-05-01'),
+                             (2499, 1, '2019-12-15'),
+                             (2500, 3, '2019-03-22'),
+                             (2501, 3, '2021-10-02'),
+                             (2502, 3, '2020-03-23'),
+                             (2503, 1, '2020-04-08'),
+                             (2504, 9, '2019-05-15'),
+                             (2505, 10, '2019-03-09'),
+                             (2506, 4, '2019-08-04'),
+                             (2507, 9, '2019-02-07'),
+                             (2508, 1, '2019-03-18'),
+                             (2509, 10, '2020-02-02'),
+                             (2510, 8, '2021-04-03'),
+                             (2511, 7, '2020-10-02'),
+                             (2512, 10, '2020-10-26'),
+                             (2513, 1, '2020-07-14'),
+                             (2514, 3, '2021-11-15'),
+                             (2515, 1, '2021-05-07'),
+                             (2516, 6, '2021-05-09'),
+                             (2517, 4, '2020-02-13'),
+                             (2518, 6, '2019-07-21'),
+                             (2519, 10, '2019-10-04'),
+                             (2520, 8, '2020-01-07'),
+                             (2521, 4, '2019-06-05'),
+                             (2522, 3, '2020-12-01'),
+                             (2523, 9, '2021-12-27'),
+                             (2524, 1, '2020-08-19'),
+                             (2525, 1, '2019-02-17'),
+                             (2526, 8, '2019-03-12'),
+                             (2527, 1, '2021-05-20'),
+                             (2528, 1, '2020-12-05'),
+                             (2529, 7, '2021-01-17'),
+                             (2530, 10, '2020-08-12'),
+                             (2531, 3, '2020-01-25'),
+                             (2532, 6, '2020-09-18'),
+                             (2533, 1, '2019-04-04'),
+                             (2534, 1, '2019-02-22'),
+                             (2535, 1, '2021-09-16'),
+                             (2536, 10, '2021-08-16'),
+                             (2537, 5, '2019-09-22'),
+                             (2538, 8, '2020-10-20'),
+                             (2539, 10, '2020-02-08'),
+                             (2540, 6, '2019-09-06'),
+                             (2541, 4, '2019-02-13'),
+                             (2542, 10, '2021-03-22'),
+                             (2543, 5, '2020-06-06'),
+                             (2544, 2, '2021-09-16'),
+                             (2545, 7, '2021-11-21'),
+                             (2546, 8, '2019-09-01'),
+                             (2547, 8, '2021-02-21'),
+                             (2548, 5, '2021-03-09'),
+                             (2549, 10, '2021-07-12'),
+                             (2550, 9, '2021-04-23'),
+                             (2551, 9, '2019-03-07'),
+                             (2552, 2, '2020-09-25'),
+                             (2553, 2, '2019-02-13'),
+                             (2554, 1, '2019-09-05'),
+                             (2555, 7, '2020-10-09'),
+                             (2556, 10, '2019-09-10'),
+                             (2557, 4, '2020-11-06'),
+                             (2558, 10, '2021-08-25'),
+                             (2559, 9, '2020-03-21'),
+                             (2560, 6, '2020-12-14'),
+                             (2561, 7, '2021-07-06'),
+                             (2562, 2, '2021-04-18'),
+                             (2563, 8, '2020-10-10'),
+                             (2564, 3, '2019-06-20'),
+                             (2565, 8, '2021-01-07'),
+                             (2566, 10, '2020-09-17'),
+                             (2567, 6, '2021-05-07'),
+                             (2568, 7, '2021-04-28'),
+                             (2569, 7, '2021-03-27'),
+                             (2570, 5, '2021-12-17'),
+                             (2571, 9, '2021-07-22'),
+                             (2572, 3, '2019-01-15'),
+                             (2573, 2, '2020-09-03'),
+                             (2574, 3, '2021-11-16'),
+                             (2575, 1, '2020-08-23'),
+                             (2576, 5, '2021-07-08'),
+                             (2577, 1, '2020-08-25'),
+                             (2578, 5, '2021-06-17'),
+                             (2579, 10, '2019-12-21'),
+                             (2580, 1, '2019-07-23'),
+                             (2581, 10, '2021-03-19'),
+                             (2582, 6, '2019-01-03'),
+                             (2583, 4, '2021-07-20'),
+                             (2584, 4, '2021-07-15'),
+                             (2585, 6, '2020-11-15'),
+                             (2586, 3, '2019-11-22'),
+                             (2587, 9, '2019-05-07'),
+                             (2588, 9, '2019-11-25'),
+                             (2589, 1, '2021-11-06'),
+                             (2590, 1, '2019-09-09'),
+                             (2591, 3, '2021-12-15'),
+                             (2592, 6, '2019-10-02'),
+                             (2593, 6, '2019-12-12'),
+                             (2594, 9, '2020-07-26'),
+                             (2595, 10, '2021-12-12'),
+                             (2596, 10, '2019-06-20'),
+                             (2597, 9, '2019-04-14'),
+                             (2598, 8, '2019-03-01'),
+                             (2599, 5, '2021-05-03'),
+                             (2600, 4, '2019-01-26'),
+                             (2601, 9, '2019-10-18'),
+                             (2602, 5, '2021-03-27'),
+                             (2603, 3, '2021-06-12'),
+                             (2604, 4, '2020-03-27'),
+                             (2605, 1, '2019-08-01'),
+                             (2606, 4, '2019-07-04'),
+                             (2607, 2, '2021-03-08'),
+                             (2608, 9, '2021-05-15'),
+                             (2609, 2, '2019-02-25'),
+                             (2610, 4, '2019-06-10'),
+                             (2611, 3, '2019-07-22'),
+                             (2612, 4, '2021-03-03'),
+                             (2613, 10, '2019-10-17'),
+                             (2614, 8, '2019-01-10'),
+                             (2615, 2, '2020-11-15'),
+                             (2616, 5, '2021-12-07'),
+                             (2617, 9, '2021-08-23'),
+                             (2618, 1, '2020-03-27'),
+                             (2619, 8, '2020-05-05'),
+                             (2620, 3, '2021-11-19'),
+                             (2621, 10, '2019-02-28'),
+                             (2622, 1, '2019-03-25'),
+                             (2623, 3, '2021-02-17'),
+                             (2624, 2, '2020-09-05'),
+                             (2625, 5, '2021-03-25'),
+                             (2626, 2, '2019-07-12'),
+                             (2627, 1, '2019-05-03'),
+                             (2628, 8, '2021-04-05'),
+                             (2629, 9, '2021-03-19'),
+                             (2630, 7, '2021-03-16'),
+                             (2631, 8, '2021-06-20'),
+                             (2632, 1, '2021-07-12'),
+                             (2633, 7, '2020-10-24'),
+                             (2634, 4, '2021-02-21'),
+                             (2635, 7, '2020-03-13'),
+                             (2636, 3, '2019-07-03'),
+                             (2637, 4, '2021-10-24'),
+                             (2638, 1, '2019-09-02'),
+                             (2639, 6, '2019-08-13'),
+                             (2640, 9, '2019-09-10'),
+                             (2641, 3, '2019-06-27'),
+                             (2642, 8, '2019-10-23'),
+                             (2643, 9, '2020-08-17'),
+                             (2644, 9, '2020-08-25'),
+                             (2645, 8, '2019-04-23'),
+                             (2646, 8, '2019-01-23'),
+                             (2647, 2, '2019-02-23'),
+                             (2648, 9, '2021-06-25'),
+                             (2649, 7, '2019-05-20'),
+                             (2650, 3, '2019-10-08'),
+                             (2651, 5, '2021-08-20'),
+                             (2652, 8, '2020-05-26'),
+                             (2653, 6, '2020-02-10'),
+                             (2654, 4, '2020-02-20'),
+                             (2655, 10, '2021-09-16'),
+                             (2656, 10, '2019-09-24'),
+                             (2657, 10, '2020-06-21'),
+                             (2658, 3, '2021-07-28'),
+                             (2659, 3, '2020-03-16'),
+                             (2660, 9, '2021-11-12'),
+                             (2661, 4, '2021-07-13'),
+                             (2662, 1, '2020-09-22'),
+                             (2663, 9, '2020-03-06'),
+                             (2664, 6, '2021-05-09'),
+                             (2665, 10, '2020-01-12'),
+                             (2666, 8, '2020-09-24'),
+                             (2667, 10, '2019-01-09'),
+                             (2668, 5, '2019-06-19'),
+                             (2669, 1, '2020-05-03'),
+                             (2670, 4, '2019-04-07'),
+                             (2671, 2, '2020-06-11'),
+                             (2672, 5, '2019-08-28'),
+                             (2673, 8, '2019-02-27'),
+                             (2674, 4, '2020-04-28'),
+                             (2675, 10, '2021-01-09'),
+                             (2676, 9, '2021-01-26'),
+                             (2677, 4, '2021-12-10'),
+                             (2678, 3, '2021-03-22'),
+                             (2679, 6, '2021-09-26'),
+                             (2680, 5, '2020-09-01'),
+                             (2681, 4, '2019-11-20'),
+                             (2682, 8, '2019-09-27'),
+                             (2683, 7, '2020-10-06'),
+                             (2684, 5, '2021-04-06'),
+                             (2685, 6, '2021-07-10'),
+                             (2686, 1, '2020-06-21'),
+                             (2687, 3, '2021-07-09'),
+                             (2688, 8, '2020-05-02'),
+                             (2689, 5, '2020-03-25'),
+                             (2690, 10, '2019-07-10'),
+                             (2691, 10, '2019-02-14'),
+                             (2692, 2, '2020-05-20'),
+                             (2693, 1, '2019-12-24'),
+                             (2694, 6, '2020-04-22'),
+                             (2695, 2, '2019-10-01'),
+                             (2696, 3, '2020-01-06'),
+                             (2697, 9, '2021-12-24'),
+                             (2698, 4, '2020-07-19'),
+                             (2699, 6, '2020-01-16'),
+                             (2700, 6, '2019-01-16'),
+                             (2701, 8, '2021-05-01'),
+                             (2702, 9, '2019-05-25'),
+                             (2703, 7, '2019-06-25'),
+                             (2704, 2, '2021-05-17'),
+                             (2705, 10, '2019-11-10'),
+                             (2706, 6, '2021-05-23'),
+                             (2707, 7, '2020-06-14'),
+                             (2708, 3, '2020-03-11'),
+                             (2709, 6, '2019-03-28'),
+                             (2710, 5, '2019-06-19'),
+                             (2711, 10, '2020-01-22'),
+                             (2712, 2, '2019-12-25'),
+                             (2713, 2, '2019-02-11'),
+                             (2714, 8, '2021-09-17'),
+                             (2715, 3, '2021-03-08'),
+                             (2716, 8, '2021-10-10'),
+                             (2717, 5, '2021-01-25'),
+                             (2718, 6, '2019-08-23'),
+                             (2719, 9, '2019-09-11'),
+                             (2720, 4, '2019-10-10'),
+                             (2721, 7, '2019-01-06'),
+                             (2722, 5, '2019-12-09'),
+                             (2723, 7, '2019-12-20'),
+                             (2724, 4, '2020-06-07'),
+                             (2725, 6, '2021-06-28'),
+                             (2726, 2, '2020-11-11'),
+                             (2727, 2, '2019-01-20'),
+                             (2728, 4, '2021-03-20'),
+                             (2729, 3, '2020-12-26'),
+                             (2730, 9, '2021-04-21'),
+                             (2731, 7, '2020-04-26'),
+                             (2732, 1, '2021-11-11'),
+                             (2733, 8, '2021-12-25'),
+                             (2734, 5, '2020-07-26'),
+                             (2735, 9, '2019-07-15'),
+                             (2736, 4, '2019-12-18'),
+                             (2737, 4, '2021-03-23'),
+                             (2738, 10, '2020-08-10'),
+                             (2739, 5, '2021-05-06'),
+                             (2740, 3, '2020-04-26'),
+                             (2741, 2, '2020-02-05'),
+                             (2742, 10, '2019-08-14'),
+                             (2743, 6, '2020-03-19'),
+                             (2744, 5, '2019-01-06'),
+                             (2745, 6, '2021-07-22'),
+                             (2746, 10, '2020-05-14'),
+                             (2747, 9, '2019-07-21'),
+                             (2748, 2, '2020-12-05'),
+                             (2749, 4, '2021-02-26'),
+                             (2750, 2, '2019-09-12'),
+                             (2751, 8, '2019-12-18'),
+                             (2752, 3, '2020-06-23'),
+                             (2753, 3, '2019-04-08'),
+                             (2754, 7, '2019-09-09'),
+                             (2755, 6, '2020-05-19'),
+                             (2756, 7, '2019-05-08'),
+                             (2757, 5, '2021-05-09'),
+                             (2758, 9, '2020-02-02'),
+                             (2759, 5, '2021-01-28'),
+                             (2760, 9, '2021-03-26'),
+                             (2761, 10, '2019-01-19'),
+                             (2762, 9, '2021-06-24'),
+                             (2763, 2, '2019-08-03'),
+                             (2764, 4, '2021-01-25'),
+                             (2765, 6, '2021-02-11'),
+                             (2766, 6, '2020-05-26'),
+                             (2767, 10, '2020-04-07'),
+                             (2768, 2, '2021-02-05'),
+                             (2769, 2, '2019-06-28'),
+                             (2770, 4, '2019-04-18'),
+                             (2771, 8, '2020-05-21'),
+                             (2772, 3, '2019-04-24'),
+                             (2773, 1, '2020-04-26'),
+                             (2774, 5, '2019-07-07'),
+                             (2775, 10, '2020-11-26'),
+                             (2776, 10, '2021-02-04'),
+                             (2777, 6, '2021-08-16'),
+                             (2778, 4, '2019-05-24'),
+                             (2779, 1, '2021-08-04'),
+                             (2780, 6, '2019-09-05'),
+                             (2781, 8, '2019-08-22'),
+                             (2782, 2, '2019-06-28'),
+                             (2783, 4, '2019-04-23'),
+                             (2784, 9, '2019-12-02'),
+                             (2785, 9, '2021-07-19'),
+                             (2786, 5, '2019-04-25'),
+                             (2787, 5, '2020-11-14'),
+                             (2788, 8, '2021-09-26'),
+                             (2789, 9, '2020-12-27'),
+                             (2790, 7, '2020-12-01'),
+                             (2791, 4, '2019-02-17'),
+                             (2792, 9, '2020-01-12'),
+                             (2793, 7, '2019-12-02'),
+                             (2794, 3, '2020-01-14'),
+                             (2795, 8, '2020-12-09'),
+                             (2796, 7, '2021-11-14'),
+                             (2797, 2, '2019-07-23'),
+                             (2798, 10, '2020-11-26'),
+                             (2799, 9, '2021-03-06'),
+                             (2800, 9, '2021-09-23'),
+                             (2801, 8, '2020-03-09'),
+                             (2802, 7, '2019-11-17'),
+                             (2803, 8, '2021-10-17'),
+                             (2804, 3, '2020-05-17'),
+                             (2805, 9, '2020-09-12'),
+                             (2806, 3, '2019-03-28'),
+                             (2807, 6, '2021-07-17'),
+                             (2808, 10, '2021-02-10'),
+                             (2809, 9, '2020-02-23'),
+                             (2810, 2, '2020-10-08'),
+                             (2811, 10, '2019-05-17'),
+                             (2812, 5, '2020-04-21'),
+                             (2813, 10, '2021-10-16'),
+                             (2814, 10, '2020-11-18'),
+                             (2815, 1, '2019-08-15'),
+                             (2816, 7, '2021-12-12'),
+                             (2817, 8, '2019-12-11'),
+                             (2818, 7, '2019-08-28'),
+                             (2819, 7, '2020-07-20'),
+                             (2820, 5, '2019-02-27'),
+                             (2821, 3, '2020-07-03'),
+                             (2822, 8, '2020-07-15'),
+                             (2823, 7, '2021-10-25'),
+                             (2824, 9, '2019-09-11'),
+                             (2825, 5, '2019-08-01'),
+                             (2826, 5, '2020-01-10'),
+                             (2827, 5, '2021-10-18'),
+                             (2828, 10, '2021-05-02'),
+                             (2829, 8, '2019-03-01'),
+                             (2830, 8, '2021-11-09'),
+                             (2831, 8, '2020-05-15'),
+                             (2832, 5, '2020-06-13'),
+                             (2833, 4, '2021-03-25'),
+                             (2834, 8, '2020-09-19'),
+                             (2835, 5, '2021-02-03'),
+                             (2836, 10, '2021-11-10'),
+                             (2837, 1, '2019-11-02'),
+                             (2838, 7, '2019-08-07'),
+                             (2839, 9, '2019-02-21'),
+                             (2840, 2, '2019-09-09'),
+                             (2841, 7, '2019-06-02'),
+                             (2842, 1, '2019-12-02'),
+                             (2843, 9, '2019-01-01'),
+                             (2844, 9, '2019-07-03'),
+                             (2845, 4, '2020-09-27'),
+                             (2846, 3, '2020-10-20'),
+                             (2847, 1, '2021-03-15'),
+                             (2848, 5, '2020-03-23'),
+                             (2849, 1, '2021-10-06'),
+                             (2850, 7, '2021-05-09'),
+                             (2851, 4, '2021-04-27'),
+                             (2852, 9, '2019-05-06'),
+                             (2853, 3, '2019-09-18'),
+                             (2854, 4, '2020-02-19'),
+                             (2855, 6, '2019-05-26'),
+                             (2856, 9, '2019-04-18'),
+                             (2857, 8, '2021-12-06'),
+                             (2858, 2, '2021-08-21'),
+                             (2859, 3, '2021-12-23'),
+                             (2860, 9, '2021-09-24'),
+                             (2861, 6, '2019-05-04'),
+                             (2862, 10, '2019-08-09'),
+                             (2863, 6, '2019-06-18'),
+                             (2864, 4, '2019-01-27'),
+                             (2865, 6, '2020-03-26'),
+                             (2866, 2, '2020-07-26'),
+                             (2867, 4, '2020-12-11'),
+                             (2868, 9, '2020-01-20'),
+                             (2869, 7, '2020-03-11'),
+                             (2870, 1, '2020-09-19'),
+                             (2871, 2, '2019-08-04'),
+                             (2872, 10, '2020-04-03'),
+                             (2873, 3, '2019-08-20'),
+                             (2874, 1, '2020-11-01'),
+                             (2875, 10, '2020-05-19'),
+                             (2876, 4, '2021-04-24'),
+                             (2877, 4, '2020-12-11'),
+                             (2878, 4, '2020-08-21'),
+                             (2879, 5, '2021-11-08'),
+                             (2880, 1, '2019-12-13'),
+                             (2881, 8, '2021-07-04'),
+                             (2882, 10, '2019-02-23'),
+                             (2883, 7, '2021-11-06'),
+                             (2884, 10, '2021-08-14'),
+                             (2885, 8, '2020-03-23'),
+                             (2886, 3, '2020-11-17'),
+                             (2887, 2, '2021-07-14'),
+                             (2888, 8, '2019-09-21'),
+                             (2889, 9, '2020-09-23'),
+                             (2890, 3, '2021-11-03'),
+                             (2891, 8, '2019-05-16'),
+                             (2892, 2, '2019-04-05'),
+                             (2893, 7, '2019-05-09'),
+                             (2894, 2, '2020-01-04'),
+                             (2895, 5, '2020-03-16'),
+                             (2896, 6, '2021-02-20'),
+                             (2897, 1, '2020-07-16'),
+                             (2898, 6, '2021-02-25'),
+                             (2899, 3, '2021-05-25'),
+                             (2900, 10, '2021-07-09'),
+                             (2901, 3, '2019-10-28'),
+                             (2902, 7, '2019-10-12'),
+                             (2903, 10, '2020-06-28'),
+                             (2904, 7, '2019-04-23'),
+                             (2905, 7, '2020-02-16'),
+                             (2906, 5, '2021-12-08'),
+                             (2907, 5, '2020-12-20'),
+                             (2908, 5, '2021-05-21'),
+                             (2909, 5, '2021-05-27'),
+                             (2910, 7, '2021-02-25'),
+                             (2911, 7, '2021-12-01'),
+                             (2912, 7, '2019-12-15'),
+                             (2913, 9, '2019-07-20'),
+                             (2914, 2, '2021-02-12'),
+                             (2915, 1, '2020-05-19'),
+                             (2916, 9, '2019-04-21'),
+                             (2917, 7, '2020-10-02'),
+                             (2918, 7, '2021-05-18'),
+                             (2919, 6, '2019-10-13'),
+                             (2920, 3, '2020-04-17'),
+                             (2921, 10, '2021-07-07'),
+                             (2922, 9, '2021-09-06'),
+                             (2923, 10, '2019-04-22'),
+                             (2924, 8, '2021-10-20'),
+                             (2925, 8, '2019-08-25'),
+                             (2926, 4, '2019-12-28'),
+                             (2927, 7, '2020-08-16'),
+                             (2928, 8, '2019-07-20'),
+                             (2929, 10, '2021-12-15'),
+                             (2930, 10, '2019-05-11'),
+                             (2931, 1, '2020-05-17'),
+                             (2932, 2, '2020-03-27'),
+                             (2933, 8, '2021-05-24'),
+                             (2934, 5, '2020-11-18'),
+                             (2935, 8, '2019-02-22'),
+                             (2936, 2, '2021-08-14'),
+                             (2937, 5, '2019-08-15'),
+                             (2938, 8, '2020-05-26'),
+                             (2939, 8, '2020-06-14'),
+                             (2940, 8, '2019-04-06'),
+                             (2941, 8, '2021-03-08'),
+                             (2942, 9, '2020-11-16'),
+                             (2943, 8, '2021-05-19'),
+                             (2944, 4, '2020-04-18'),
+                             (2945, 10, '2020-02-24'),
+                             (2946, 1, '2019-02-03'),
+                             (2947, 6, '2020-04-07'),
+                             (2948, 8, '2020-05-28'),
+                             (2949, 8, '2019-05-23'),
+                             (2950, 9, '2019-05-25'),
+                             (2951, 4, '2019-02-05'),
+                             (2952, 8, '2020-10-26'),
+                             (2953, 8, '2020-04-12'),
+                             (2954, 1, '2020-09-19'),
+                             (2955, 8, '2019-01-26'),
+                             (2956, 9, '2020-12-22'),
+                             (2957, 9, '2020-02-16'),
+                             (2958, 10, '2021-02-02'),
+                             (2959, 1, '2020-03-13'),
+                             (2960, 10, '2021-08-04'),
+                             (2961, 8, '2020-06-17'),
+                             (2962, 4, '2021-11-08'),
+                             (2963, 8, '2019-01-14'),
+                             (2964, 2, '2019-12-15'),
+                             (2965, 6, '2020-11-26'),
+                             (2966, 10, '2021-03-09'),
+                             (2967, 9, '2021-10-22'),
+                             (2968, 7, '2021-04-14'),
+                             (2969, 5, '2021-12-04'),
+                             (2970, 7, '2020-09-02'),
+                             (2971, 5, '2021-10-26'),
+                             (2972, 9, '2020-09-09'),
+                             (2973, 4, '2019-07-17'),
+                             (2974, 4, '2021-12-21'),
+                             (2975, 4, '2019-11-27'),
+                             (2976, 5, '2020-02-27'),
+                             (2977, 6, '2020-08-21'),
+                             (2978, 2, '2020-05-11'),
+                             (2979, 7, '2019-01-14'),
+                             (2980, 5, '2021-09-19'),
+                             (2981, 6, '2019-09-26'),
+                             (2982, 10, '2021-11-17'),
+                             (2983, 2, '2020-04-15'),
+                             (2984, 3, '2020-12-11'),
+                             (2985, 5, '2020-09-15'),
+                             (2986, 6, '2019-08-16'),
+                             (2987, 6, '2021-02-26'),
+                             (2988, 6, '2021-08-22'),
+                             (2989, 6, '2020-07-28'),
+                             (2990, 5, '2021-05-07'),
+                             (2991, 7, '2019-02-26'),
+                             (2992, 4, '2021-09-12'),
+                             (2993, 7, '2021-06-11'),
+                             (2994, 5, '2019-02-07'),
+                             (2995, 10, '2019-06-07'),
+                             (2996, 10, '2021-02-28'),
+                             (2997, 5, '2019-11-06'),
+                             (2998, 4, '2021-06-14'),
+                             (2999, 8, '2020-06-21'),
+                             (3000, 9, '2020-11-22'),
+                             (3001, 8, '2020-11-11'),
+                             (3002, 3, '2020-02-01'),
+                             (3003, 9, '2021-11-28'),
+                             (3004, 4, '2019-02-28'),
+                             (3005, 9, '2021-06-05'),
+                             (3006, 1, '2019-08-04'),
+                             (3007, 9, '2021-03-11'),
+                             (3008, 10, '2021-04-10'),
+                             (3009, 4, '2021-06-11'),
+                             (3010, 4, '2020-04-02'),
+                             (3011, 4, '2020-10-24'),
+                             (3012, 3, '2020-09-28'),
+                             (3013, 6, '2021-02-18'),
+                             (3014, 6, '2020-05-02'),
+                             (3015, 7, '2020-08-02'),
+                             (3016, 10, '2021-08-28'),
+                             (3017, 5, '2019-01-09'),
+                             (3018, 4, '2019-05-27'),
+                             (3019, 2, '2021-11-04'),
+                             (3020, 1, '2020-11-11'),
+                             (3021, 9, '2020-10-11'),
+                             (3022, 7, '2019-07-22'),
+                             (3023, 8, '2020-04-14'),
+                             (3024, 6, '2019-02-19'),
+                             (3025, 7, '2020-05-17'),
+                             (3026, 2, '2020-05-15'),
+                             (3027, 1, '2021-02-22'),
+                             (3028, 6, '2020-04-02'),
+                             (3029, 4, '2019-01-08'),
+                             (3030, 3, '2019-10-03'),
+                             (3031, 10, '2019-04-16'),
+                             (3032, 9, '2019-06-05'),
+                             (3033, 2, '2021-07-25'),
+                             (3034, 6, '2021-06-18'),
+                             (3035, 9, '2019-10-19'),
+                             (3036, 7, '2020-08-22'),
+                             (3037, 2, '2020-02-16'),
+                             (3038, 10, '2020-03-16'),
+                             (3039, 3, '2020-06-08'),
+                             (3040, 4, '2020-11-12'),
+                             (3041, 6, '2021-12-08'),
+                             (3042, 8, '2019-08-06'),
+                             (3043, 6, '2021-09-05'),
+                             (3044, 2, '2019-11-08'),
+                             (3045, 7, '2021-05-04'),
+                             (3046, 4, '2021-11-14'),
+                             (3047, 4, '2020-04-13'),
+                             (3048, 3, '2021-12-12'),
+                             (3049, 4, '2019-03-26'),
+                             (3050, 6, '2020-05-27'),
+                             (3051, 6, '2019-05-12'),
+                             (3052, 5, '2021-02-18'),
+                             (3053, 3, '2021-02-22'),
+                             (3054, 2, '2021-09-11'),
+                             (3055, 6, '2021-07-20'),
+                             (3056, 6, '2019-05-08'),
+                             (3057, 5, '2021-03-02'),
+                             (3058, 3, '2020-09-02'),
+                             (3059, 2, '2019-07-04'),
+                             (3060, 3, '2019-11-05'),
+                             (3061, 2, '2021-01-28'),
+                             (3062, 3, '2021-09-26'),
+                             (3063, 9, '2020-05-21'),
+                             (3064, 7, '2019-02-14'),
+                             (3065, 6, '2020-12-28'),
+                             (3066, 8, '2021-08-14'),
+                             (3067, 3, '2019-07-13'),
+                             (3068, 5, '2019-02-28'),
+                             (3069, 5, '2019-03-13'),
+                             (3070, 10, '2021-07-20'),
+                             (3071, 7, '2019-07-27'),
+                             (3072, 2, '2019-07-07'),
+                             (3073, 5, '2020-07-08'),
+                             (3074, 4, '2021-11-09'),
+                             (3075, 10, '2021-06-22'),
+                             (3076, 7, '2020-01-01'),
+                             (3077, 8, '2021-09-22'),
+                             (3078, 8, '2020-08-11'),
+                             (3079, 5, '2019-09-28'),
+                             (3080, 10, '2019-02-22'),
+                             (3081, 7, '2019-03-03'),
+                             (3082, 9, '2020-03-10'),
+                             (3083, 1, '2020-08-12'),
+                             (3084, 10, '2021-08-09'),
+                             (3085, 1, '2021-09-16'),
+                             (3086, 9, '2020-01-04'),
+                             (3087, 7, '2021-02-10'),
+                             (3088, 10, '2019-05-24'),
+                             (3089, 7, '2021-03-20'),
+                             (3090, 1, '2020-12-10'),
+                             (3091, 1, '2021-06-03'),
+                             (3092, 2, '2019-07-09'),
+                             (3093, 7, '2020-07-24'),
+                             (3094, 10, '2020-09-07'),
+                             (3095, 5, '2021-08-11'),
+                             (3096, 4, '2020-04-11'),
+                             (3097, 2, '2021-08-10'),
+                             (3098, 2, '2020-07-14'),
+                             (3099, 9, '2021-11-17'),
+                             (3100, 4, '2019-01-17'),
+                             (3101, 8, '2020-05-20'),
+                             (3102, 2, '2019-02-04'),
+                             (3103, 3, '2020-06-10'),
+                             (3104, 2, '2021-01-04'),
+                             (3105, 5, '2021-02-15'),
+                             (3106, 9, '2019-05-21'),
+                             (3107, 4, '2019-03-03'),
+                             (3108, 9, '2019-10-22'),
+                             (3109, 7, '2021-11-14'),
+                             (3110, 5, '2019-10-05'),
+                             (3111, 7, '2021-05-05'),
+                             (3112, 6, '2019-09-02'),
+                             (3113, 5, '2020-05-06'),
+                             (3114, 2, '2021-04-25'),
+                             (3115, 8, '2020-03-05'),
+                             (3116, 10, '2021-01-28'),
+                             (3117, 8, '2020-10-22'),
+                             (3118, 10, '2019-10-13'),
+                             (3119, 2, '2021-03-13'),
+                             (3120, 8, '2019-01-19'),
+                             (3121, 7, '2021-04-09'),
+                             (3122, 5, '2021-10-04'),
+                             (3123, 6, '2020-07-18'),
+                             (3124, 5, '2021-07-11'),
+                             (3125, 6, '2019-10-10'),
+                             (3126, 3, '2020-04-04'),
+                             (3127, 2, '2020-05-23'),
+                             (3128, 9, '2020-08-21'),
+                             (3129, 8, '2019-04-18'),
+                             (3130, 10, '2020-04-03'),
+                             (3131, 2, '2021-04-07'),
+                             (3132, 1, '2020-05-11'),
+                             (3133, 1, '2021-06-27'),
+                             (3134, 6, '2019-03-06'),
+                             (3135, 8, '2019-08-22'),
+                             (3136, 1, '2021-09-27'),
+                             (3137, 10, '2019-11-19'),
+                             (3138, 5, '2021-02-11'),
+                             (3139, 3, '2021-01-04'),
+                             (3140, 6, '2021-08-25'),
+                             (3141, 1, '2020-10-23'),
+                             (3142, 1, '2020-06-26'),
+                             (3143, 2, '2021-02-07'),
+                             (3144, 7, '2020-05-11'),
+                             (3145, 4, '2020-07-07'),
+                             (3146, 9, '2021-12-13'),
+                             (3147, 2, '2019-06-13'),
+                             (3148, 6, '2021-10-02'),
+                             (3149, 5, '2021-09-10'),
+                             (3150, 3, '2020-05-24'),
+                             (3151, 2, '2021-11-13'),
+                             (3152, 3, '2021-11-19'),
+                             (3153, 3, '2020-10-27'),
+                             (3154, 4, '2021-07-26'),
+                             (3155, 5, '2020-03-03'),
+                             (3156, 6, '2019-12-17'),
+                             (3157, 1, '2021-04-19'),
+                             (3158, 9, '2019-12-07'),
+                             (3159, 8, '2019-07-11'),
+                             (3160, 5, '2020-11-27'),
+                             (3161, 7, '2019-03-05'),
+                             (3162, 3, '2020-04-13'),
+                             (3163, 3, '2019-12-13'),
+                             (3164, 10, '2019-05-25'),
+                             (3165, 10, '2019-08-03'),
+                             (3166, 3, '2019-10-22'),
+                             (3167, 9, '2019-07-24'),
+                             (3168, 3, '2019-12-02'),
+                             (3169, 7, '2020-02-19'),
+                             (3170, 1, '2021-01-26'),
+                             (3171, 6, '2019-07-19'),
+                             (3172, 10, '2021-02-21'),
+                             (3173, 9, '2021-05-27'),
+                             (3174, 10, '2021-12-04'),
+                             (3175, 10, '2020-05-05'),
+                             (3176, 7, '2019-10-14'),
+                             (3177, 10, '2020-02-01'),
+                             (3178, 8, '2020-07-07'),
+                             (3179, 9, '2021-07-03'),
+                             (3180, 3, '2019-12-02'),
+                             (3181, 5, '2019-08-20'),
+                             (3182, 9, '2019-10-12'),
+                             (3183, 1, '2021-11-01'),
+                             (3184, 10, '2020-04-16'),
+                             (3185, 5, '2020-02-01'),
+                             (3186, 9, '2021-09-15'),
+                             (3187, 7, '2020-07-18'),
+                             (3188, 5, '2019-06-07'),
+                             (3189, 3, '2021-06-01'),
+                             (3190, 7, '2020-05-20'),
+                             (3191, 2, '2021-07-16'),
+                             (3192, 2, '2020-09-19'),
+                             (3193, 5, '2020-08-01'),
+                             (3194, 6, '2021-05-23'),
+                             (3195, 10, '2019-09-12'),
+                             (3196, 2, '2020-01-13'),
+                             (3197, 1, '2020-07-26'),
+                             (3198, 10, '2019-06-17'),
+                             (3199, 3, '2020-11-13'),
+                             (3200, 5, '2019-06-06'),
+                             (3201, 3, '2021-06-27'),
+                             (3202, 7, '2019-03-05'),
+                             (3203, 9, '2021-10-23'),
+                             (3204, 4, '2019-08-07'),
+                             (3205, 1, '2019-01-24'),
+                             (3206, 9, '2021-02-19'),
+                             (3207, 4, '2020-09-26'),
+                             (3208, 6, '2020-02-09'),
+                             (3209, 8, '2021-04-04'),
+                             (3210, 6, '2019-09-17'),
+                             (3211, 1, '2019-11-02'),
+                             (3212, 6, '2019-06-14'),
+                             (3213, 3, '2020-06-01'),
+                             (3214, 10, '2020-12-26'),
+                             (3215, 1, '2021-11-20'),
+                             (3216, 8, '2019-05-21'),
+                             (3217, 1, '2020-09-28'),
+                             (3218, 6, '2020-01-01'),
+                             (3219, 9, '2019-04-26'),
+                             (3220, 10, '2020-06-21'),
+                             (3221, 2, '2020-02-03'),
+                             (3222, 8, '2021-12-17'),
+                             (3223, 5, '2019-10-01'),
+                             (3224, 7, '2020-10-24'),
+                             (3225, 2, '2019-01-27'),
+                             (3226, 4, '2021-12-10'),
+                             (3227, 4, '2020-03-23'),
+                             (3228, 1, '2019-01-13'),
+                             (3229, 9, '2020-11-01'),
+                             (3230, 1, '2019-09-12'),
+                             (3231, 8, '2020-12-07'),
+                             (3232, 1, '2019-04-04'),
+                             (3233, 8, '2021-11-25'),
+                             (3234, 9, '2020-02-08'),
+                             (3235, 3, '2021-10-08'),
+                             (3236, 8, '2019-10-20'),
+                             (3237, 10, '2019-05-28'),
+                             (3238, 6, '2019-06-27'),
+                             (3239, 1, '2019-12-02'),
+                             (3240, 9, '2021-03-22'),
+                             (3241, 6, '2021-03-21'),
+                             (3242, 10, '2021-10-03'),
+                             (3243, 9, '2019-01-15'),
+                             (3244, 2, '2020-08-18'),
+                             (3245, 2, '2019-06-26'),
+                             (3246, 9, '2019-05-02'),
+                             (3247, 5, '2021-01-23'),
+                             (3248, 6, '2020-11-09'),
+                             (3249, 9, '2019-08-15'),
+                             (3250, 10, '2019-08-16'),
+                             (3251, 8, '2020-07-23'),
+                             (3252, 9, '2020-03-28'),
+                             (3253, 2, '2020-09-13'),
+                             (3254, 7, '2021-12-10'),
+                             (3255, 8, '2020-06-26'),
+                             (3256, 9, '2020-03-03'),
+                             (3257, 7, '2020-10-25'),
+                             (3258, 3, '2019-06-23'),
+                             (3259, 9, '2019-01-18'),
+                             (3260, 5, '2019-07-14'),
+                             (3261, 7, '2019-10-02'),
+                             (3262, 4, '2020-11-18'),
+                             (3263, 1, '2021-05-15'),
+                             (3264, 10, '2020-05-15'),
+                             (3265, 9, '2019-06-21'),
+                             (3266, 5, '2019-07-13'),
+                             (3267, 5, '2020-07-24'),
+                             (3268, 4, '2019-08-17'),
+                             (3269, 10, '2019-06-07'),
+                             (3270, 1, '2021-11-07'),
+                             (3271, 10, '2020-03-25'),
+                             (3272, 9, '2019-06-01'),
+                             (3273, 3, '2019-09-16'),
+                             (3274, 10, '2020-07-22'),
+                             (3275, 5, '2021-12-22'),
+                             (3276, 5, '2020-08-13'),
+                             (3277, 10, '2019-09-27'),
+                             (3278, 3, '2020-04-14'),
+                             (3279, 2, '2019-10-11'),
+                             (3280, 5, '2021-10-11'),
+                             (3281, 7, '2020-01-13'),
+                             (3282, 6, '2019-09-21'),
+                             (3283, 7, '2019-05-02'),
+                             (3284, 3, '2020-06-17'),
+                             (3285, 5, '2020-12-25'),
+                             (3286, 7, '2019-03-04'),
+                             (3287, 9, '2019-07-14'),
+                             (3288, 10, '2019-05-19'),
+                             (3289, 7, '2019-02-06'),
+                             (3290, 8, '2019-07-14'),
+                             (3291, 5, '2020-11-02'),
+                             (3292, 3, '2021-08-19'),
+                             (3293, 6, '2019-04-28'),
+                             (3294, 7, '2021-04-15'),
+                             (3295, 10, '2021-12-02'),
+                             (3296, 9, '2019-04-27'),
+                             (3297, 1, '2021-12-20'),
+                             (3298, 3, '2020-02-28'),
+                             (3299, 5, '2021-07-18'),
+                             (3300, 2, '2021-08-21'),
+                             (3301, 1, '2020-05-20'),
+                             (3302, 10, '2020-04-28'),
+                             (3303, 3, '2020-11-17'),
+                             (3304, 2, '2021-01-02'),
+                             (3305, 10, '2020-06-10'),
+                             (3306, 6, '2020-09-16'),
+                             (3307, 6, '2019-04-27'),
+                             (3308, 10, '2019-08-25'),
+                             (3309, 7, '2019-02-09'),
+                             (3310, 7, '2021-11-09'),
+                             (3311, 2, '2019-11-18'),
+                             (3312, 10, '2020-12-12'),
+                             (3313, 8, '2020-08-12'),
+                             (3314, 6, '2019-07-08'),
+                             (3315, 3, '2019-06-09'),
+                             (3316, 8, '2020-08-11'),
+                             (3317, 3, '2020-02-04'),
+                             (3318, 8, '2019-02-18'),
+                             (3319, 3, '2021-11-06'),
+                             (3320, 8, '2021-03-03'),
+                             (3321, 5, '2020-07-11'),
+                             (3322, 9, '2019-12-13'),
+                             (3323, 2, '2021-03-15'),
+                             (3324, 5, '2020-09-28'),
+                             (3325, 3, '2021-05-15'),
+                             (3326, 8, '2020-06-25'),
+                             (3327, 6, '2020-01-02'),
+                             (3328, 2, '2019-03-04'),
+                             (3329, 4, '2020-10-28'),
+                             (3330, 5, '2019-05-06'),
+                             (3331, 1, '2021-02-14'),
+                             (3332, 10, '2021-09-22'),
+                             (3333, 1, '2019-11-22'),
+                             (3334, 5, '2020-08-20'),
+                             (3335, 6, '2021-04-11'),
+                             (3336, 8, '2021-02-27'),
+                             (3337, 6, '2019-07-01'),
+                             (3338, 5, '2020-01-13'),
+                             (3339, 1, '2020-12-24'),
+                             (3340, 7, '2019-09-25'),
+                             (3341, 7, '2019-02-06'),
+                             (3342, 1, '2021-11-27'),
+                             (3343, 3, '2021-01-13'),
+                             (3344, 10, '2019-08-20'),
+                             (3345, 7, '2020-01-14'),
+                             (3346, 2, '2021-08-14'),
+                             (3347, 10, '2019-04-09'),
+                             (3348, 6, '2020-10-13'),
+                             (3349, 7, '2019-11-01'),
+                             (3350, 5, '2020-07-28'),
+                             (3351, 10, '2021-11-25'),
+                             (3352, 1, '2019-03-14'),
+                             (3353, 2, '2020-11-25'),
+                             (3354, 4, '2020-11-21'),
+                             (3355, 6, '2020-03-25'),
+                             (3356, 3, '2020-06-12'),
+                             (3357, 2, '2021-04-17'),
+                             (3358, 2, '2019-02-11'),
+                             (3359, 4, '2021-08-09'),
+                             (3360, 1, '2021-01-19'),
+                             (3361, 7, '2021-12-27'),
+                             (3362, 9, '2020-12-14'),
+                             (3363, 3, '2021-03-09'),
+                             (3364, 2, '2021-12-19'),
+                             (3365, 2, '2020-04-25'),
+                             (3366, 10, '2020-09-06'),
+                             (3367, 10, '2021-03-25'),
+                             (3368, 5, '2020-09-22'),
+                             (3369, 7, '2020-05-01'),
+                             (3370, 5, '2019-12-17'),
+                             (3371, 10, '2021-07-28'),
+                             (3372, 3, '2020-07-05'),
+                             (3373, 3, '2019-08-04'),
+                             (3374, 1, '2020-12-21'),
+                             (3375, 4, '2020-02-03'),
+                             (3376, 6, '2019-03-20'),
+                             (3377, 10, '2020-01-28'),
+                             (3378, 9, '2020-07-28'),
+                             (3379, 4, '2021-01-04'),
+                             (3380, 5, '2019-10-20'),
+                             (3381, 3, '2019-04-13'),
+                             (3382, 4, '2021-04-18'),
+                             (3383, 10, '2021-02-04'),
+                             (3384, 2, '2020-01-08'),
+                             (3385, 8, '2021-03-08'),
+                             (3386, 2, '2021-01-24'),
+                             (3387, 4, '2020-04-26'),
+                             (3388, 9, '2019-11-05'),
+                             (3389, 7, '2019-06-13'),
+                             (3390, 1, '2021-02-06'),
+                             (3391, 4, '2021-04-23'),
+                             (3392, 6, '2021-12-14'),
+                             (3393, 10, '2019-02-11'),
+                             (3394, 2, '2020-03-11'),
+                             (3395, 7, '2019-08-25'),
+                             (3396, 8, '2021-06-22'),
+                             (3397, 4, '2020-07-11'),
+                             (3398, 5, '2021-12-26'),
+                             (3399, 4, '2021-06-27'),
+                             (3400, 10, '2021-06-14'),
+                             (3401, 8, '2019-05-24'),
+                             (3402, 8, '2021-09-08'),
+                             (3403, 10, '2020-12-03'),
+                             (3404, 2, '2020-08-25'),
+                             (3405, 4, '2019-09-02'),
+                             (3406, 9, '2021-08-12'),
+                             (3407, 6, '2020-06-26'),
+                             (3408, 4, '2019-04-19'),
+                             (3409, 3, '2021-02-06'),
+                             (3410, 6, '2021-07-05'),
+                             (3411, 3, '2021-09-01'),
+                             (3412, 7, '2019-01-28'),
+                             (3413, 4, '2020-06-17'),
+                             (3414, 10, '2020-11-25'),
+                             (3415, 2, '2019-10-18'),
+                             (3416, 5, '2020-03-14'),
+                             (3417, 7, '2020-05-21'),
+                             (3418, 7, '2020-12-24'),
+                             (3419, 7, '2021-04-18'),
+                             (3420, 3, '2020-03-16'),
+                             (3421, 3, '2019-12-18'),
+                             (3422, 9, '2021-09-16'),
+                             (3423, 2, '2020-10-26'),
+                             (3424, 9, '2020-01-02'),
+                             (3425, 2, '2020-06-24'),
+                             (3426, 8, '2021-09-07'),
+                             (3427, 8, '2019-07-11'),
+                             (3428, 3, '2021-04-08'),
+                             (3429, 2, '2019-08-23'),
+                             (3430, 6, '2021-07-15'),
+                             (3431, 10, '2019-07-25'),
+                             (3432, 6, '2021-05-23'),
+                             (3433, 5, '2020-08-02'),
+                             (3434, 1, '2019-12-14');
 
 --insert into Kategorie values(3, 'Vege dishes');
 
